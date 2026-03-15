@@ -1,4 +1,0 @@
-{[classe fichier_web] [fichier "tableau16.htm"] [depuis "a16"] [jusqua "a2"] [rang 1] [cle 1] [date_oed "32"]} 
-{[classe fichier_web] [fichier "tableau128-32.htm"] [depuis "a128"] [jusqua "a32"] [rang 1] [cle 2] [date_oed "32"]} 
-{[classe fichier_web] [fichier "tableau512-256.htm"] [depuis "a512"] [jusqua "a256"] [rang 1] [cle 3] [date_oed "32"]} 
-

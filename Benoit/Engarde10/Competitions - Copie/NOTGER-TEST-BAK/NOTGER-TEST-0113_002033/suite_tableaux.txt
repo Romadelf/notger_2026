@@ -1,4 +1,0 @@
-;Formule Coupe du Monde Juniors - Individuel
-;Tableau direct sans tirage de la 3e place
-{[classe suite_tableaux] [critere_constitution classement_initial] [hasard_par_2 non] [qualifies 0] [nom "A"] [nom_etendu "tableau direct"] [nom_tableaux "tableau de ^1"] [origine1 "classement_initial 1-1000"] [cle 1] [date_oed "395"] [nomsy a] [origines ((classement_initial 1 1000))] [classement_initial (1 1000)] [nombre_entites 1000] [lestableaux (a1024 a512 a256 a128 a64 a32 a16 a8 a4 a2)]} 
-

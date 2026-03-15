@@ -1,2 +1,0 @@
-{[classe ligue] [nom "LIEGE"] [nation1 1] [modifie vrai] [date_oed "34"] [cle 1]} 
-

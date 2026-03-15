@@ -1,2 +1,0 @@
-{[classe nation] [nom "BEL"] [continent "EUR"] [nom_etendu "Belgique"] [modifie vrai] [date_oed "31"] [cle 1]} 
-

@@ -1,4 +1,0 @@
-{[classe arbitre] [titre &arbitre] [presence present] [pass_bloque non] [nom "BLANC"] [prenom "White"] [pass ""] [modifie vrai] [date_oed "90"] [cle 2]} 
-{[classe arbitre] [titre &arbitre] [presence present] [pass_bloque non] [nom "ROSE"] [prenom "Pink"] [pass ""] [modifie vrai] [date_oed "87"] [cle 1]} 
-{[classe arbitre] [titre &arbitre] [presence present] [pass_bloque non] [nom "VERT"] [prenom "Green"] [pass ""] [modifie vrai] [date_oed "94"] [cle 3]} 
-

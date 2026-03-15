@@ -1,2 +1,0 @@
-{[classe tour_de_poules] [entites_exemptees 0] [nombre_poules 6] [entites_par_poule 6] [qualifies_par_poule 0] [qualifies_indice 25] [qualifies 25] [entites_fin 25] [numero 1] [entites_depart 32] [entites_dans_poules 32] [critere_decal_1 nation] [critere_placement nation] [cle 3] [date_oed "785"]} 
-
