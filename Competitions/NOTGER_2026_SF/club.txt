@@ -1,0 +1,21 @@
+{[classe club] [nom "CE Embourg"] [nation1 1] [modifie vrai] [date_oed "44"] [cle 1]} 
+{[classe club] [nom "CE Les 3 armes"] [nation1 1] [modifie vrai] [date_oed "47"] [cle 2]} 
+{[classe club] [nom "Confrerie Gent"] [nation1 1] [modifie vrai] [date_oed "50"] [cle 3]} 
+{[classe club] [nom "La Maison de l'Escrime"] [nation1 1] [modifie vrai] [date_oed "53"] [cle 4]} 
+{[classe club] [nom "Brussels Fencing Club"] [nation1 1] [modifie vrai] [date_oed "56"] [cle 5]} 
+{[classe club] [nom "C.R.E. La Licorne"] [nation1 1] [modifie vrai] [date_oed "59"] [cle 6]} 
+{[classe club] [nom "CE Charlemagne"] [nation1 1] [modifie vrai] [date_oed "62"] [cle 7]} 
+{[classe club] [nom "SR Grande Harmonie"] [nation1 1] [modifie vrai] [date_oed "65"] [cle 8]} 
+{[classe club] [nom "SC Parcival Leuven"] [nation1 1] [modifie vrai] [date_oed "68"] [cle 9]} 
+{[classe club] [nom "CE Européen de Bruxelles"] [nation1 1] [modifie vrai] [date_oed "71"] [cle 10]} 
+{[classe club] [nom "CRE Sauvenière"] [nation1 1] [modifie vrai] [date_oed "74"] [cle 11]} 
+{[classe club] [nom "RCSC CEE Charleroi"] [nation1 1] [modifie vrai] [date_oed "77"] [cle 12]} 
+{[classe club] [nom "SC Latem-Deurle"] [nation1 1] [modifie vrai] [date_oed "80"] [cle 13]} 
+{[classe club] [nom "CE Luxembourg"] [nation1 8] [modifie vrai] [date_oed "86"] [cle 14]} 
+{[classe club] [nom "Académie Escrime Vauban Lille"] [nation1 2] [modifie vrai] [date_oed "89"] [cle 15]} 
+{[classe club] [nom "Brussels Europe Fencing Forever"] [nation1 1] [modifie vrai] [date_oed "92"] [cle 16]} 
+{[classe club] [nom "La Rapière"] [nation1 7] [modifie vrai] [date_oed "97"] [cle 17]} 
+{[classe club] [nom "Sabre Noir"] [nation1 1] [modifie vrai] [date_oed "100"] [cle 18]} 
+{[classe club] [nom "Scherma Oreste Puliti Lucca"] [nation1 9] [modifie vrai] [date_oed "106"] [cle 19]} 
+{[classe club] [nom "Schermclub Den Bosch"] [nation1 7] [modifie vrai] [date_oed "109"] [cle 20]} 
+
