@@ -1,9 +1,0 @@
-{[classe arbitre] [titre &arbitre] [presence present] [pass_bloque non] [nom "DE VISSCHER"] [prenom "Jerome"] [pass ""] [sexe masculin] [club1 3] [nation1 1] [modifie vrai] [date_oed "115"] [cle 1]} 
-{[classe arbitre] [titre &arbitre] [presence present] [pass_bloque non] [nom "DEBAISIEUX"] [prenom "Romane"] [pass ""] [sexe masculin] [club1 7] [nation1 1] [modifie vrai] [date_oed "135"] [cle 6]} 
-{[classe arbitre] [titre &arbitre] [presence present] [pass_bloque non] [nom "DELRÉE"] [prenom "César"] [pass ""] [sexe masculin] [club1 11] [nation1 1] [modifie vrai] [date_oed "119"] [cle 2] [nomprenom "DELRÉE César"]} 
-{[classe arbitre] [titre &arbitre] [presence present] [pass_bloque non] [nom "DISPAS"] [prenom "Alain"] [pass ""] [club1 11] [nation1 1] [modifie vrai] [date_oed "147"] [cle 7] [sexe masculin] [nomprenom "DISPAS Alain"]} 
-{[classe arbitre] [titre &arbitre] [presence present] [pass_bloque non] [nom "FRAIKIN"] [prenom "Laurent"] [pass ""] [sexe masculin] [club1 1] [nation1 1] [modifie vrai] [date_oed "131"] [cle 5]} 
-{[classe arbitre] [titre &arbitre] [presence present] [pass_bloque non] [nom "PETIT"] [prenom "Thibaut"] [pass ""] [sexe masculin] [club1 11] [nation1 1] [modifie vrai] [date_oed "143"] [cle 8]} 
-{[classe arbitre] [titre &arbitre] [presence present] [pass_bloque non] [nom "TERLINDEN"] [prenom "Jacques"] [pass ""] [sexe masculin] [club1 11] [nation1 1] [modifie vrai] [date_oed "123"] [cle 3]} 
-{[classe arbitre] [titre &arbitre] [presence present] [pass_bloque non] [nom "VAN LOON"] [prenom "Norbert"] [pass ""] [sexe masculin] [club1 9] [nation1 1] [modifie vrai] [date_oed "127"] [cle 4]} 
-

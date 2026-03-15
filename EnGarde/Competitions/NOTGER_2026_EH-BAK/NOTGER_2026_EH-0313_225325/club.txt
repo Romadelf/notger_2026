@@ -1,0 +1,9 @@
+{[classe club] [nom "CE Embourg"] [nation1 1] [modifie vrai] [date_oed "44"] [cle 1]} 
+{[classe club] [nom "CE Les 3 armes"] [nation1 1] [modifie vrai] [date_oed "47"] [cle 2]} 
+{[classe club] [nom "Confrerie Gent"] [nation1 1] [modifie vrai] [date_oed "50"] [cle 3]} 
+{[classe club] [nom "La Maison de l'Escrime"] [nation1 1] [modifie vrai] [date_oed "53"] [cle 4]} 
+{[classe club] [nom "Brussels Fencing Club"] [nation1 1] [modifie vrai] [date_oed "56"] [cle 5]} 
+{[classe club] [nom "C.R.E. La Licorne"] [nation1 1] [modifie vrai] [date_oed "59"] [cle 6]} 
+{[classe club] [nom "CE Charlemagne"] [nation1 1] [modifie vrai] [date_oed "62"] [cle 7]} 
+{[classe club] [nom "SR Grande Harmonie"] [nation1 1] [modifie vrai] [date_oed "65"] [cle 8]} 
+
