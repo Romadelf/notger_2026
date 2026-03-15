@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE BaseCompetitionIndividuelle> 
+<BaseCompetitionIndividuelle 
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  ID="902689"
+  Championnat="OphardtTeamSportevent"
+  Annee="2025/2026" 
+  Arme="E" 
+  Sexe="M" 
+  Category="Senior"
+  Class="" 
+  Domaine="R" 
+  Date="15.03.2026" 
+  TitreCourt="Tournoi Notger" 
+  Titrelong="Tournoi Notger" 
+  DateFichierXML="15.03.2026 07:36:03">
+  
+<Classements>
+</Classements>
+<Tireurs>
+<Tireur ID="420590" IDNat="" Ophardt_ID="420590" Nom="Allaire" Prenom="Hugo" DateNaissance="16.06.2003" Sexe="M" Lateralite="D" Licence="" Club="CE Charlemagne" Ligue="FF" Nation="FRA" Classement="99999" Points="" Attente="N" Ordre="" Payer="N" />
+<Tireur ID="414712" IDNat="" Ophardt_ID="414712" Nom="Blanchart" Prenom="Justin" DateNaissance="28.08.1990" Sexe="M" Lateralite="D" Licence="" Club="CE Embourg" Ligue="FF" Nation="BEL" Classement="99999" Points="" Attente="N" Ordre="" Payer="N" />
+<Tireur ID="546590" IDNat="" Ophardt_ID="546590" Nom="Clarke" Prenom="Noah" DateNaissance="30.12.2000" Sexe="M" Lateralite="D" Licence="" Club="SC Parcival Leuven" Ligue="VS" Nation="AUS" Classement="99999" Points="" Attente="N" Ordre="" Payer="N" />
+<Tireur ID="415503" IDNat="" Ophardt_ID="415503" Nom="De Bournonville" Prenom="Frédéric" DateNaissance="05.09.1985" Sexe="M" Lateralite="D" Licence="" Club="CE Charlemagne" Ligue="FF" Nation="BEL" Classement="99999" Points="" Attente="N" Ordre="" Payer="N" />
+<Tireur ID="537186" IDNat="" Ophardt_ID="537186" Nom="Derdeyn" Prenom="Thomas" DateNaissance="26.05.2003" Sexe="M" Lateralite="D" Licence="" Club="CE Charlemagne" Ligue="FF" Nation="BEL" Classement="99999" Points="" Attente="N" Ordre="" Payer="N" />
+<Tireur ID="469088" IDNat="" Ophardt_ID="469088" Nom="Fielz" Prenom="Antoine" DateNaissance="16.03.1973" Sexe="M" Lateralite="D" Licence="" Club="RCSC CEE Charleroi" Ligue="FF" Nation="BEL" Classement="99999" Points="" Attente="N" Ordre="" Payer="N" />
+<Tireur ID="530134" IDNat="" Ophardt_ID="530134" Nom="Gantois" Prenom="Michel" DateNaissance="29.12.1967" Sexe="M" Lateralite="D" Licence="" Club="CE Européen de Bruxelles" Ligue="FF" Nation="BEL" Classement="99999" Points="" Attente="N" Ordre="" Payer="N" />
+<Tireur ID="520138" IDNat="" Ophardt_ID="520138" Nom="Goldfein" Prenom="Peter" DateNaissance="12.10.1966" Sexe="M" Lateralite="G" Licence="" Club="CE Européen de Bruxelles" Ligue="FF" Nation="USA" Classement="99999" Points="" Attente="N" Ordre="" Payer="N" />
+<Tireur ID="419566" IDNat="" Ophardt_ID="419566" Nom="Konen" Prenom="Baptiste" DateNaissance="09.08.2010" Sexe="M" Lateralite="" Licence="" Club="CE Charlemagne" Ligue="FF" Nation="BEL" Classement="99999" Points="" Attente="N" Ordre="" Payer="N" />
+<Tireur ID="416187" IDNat="" Ophardt_ID="416187" Nom="Lapp" Prenom="Olivier" DateNaissance="25.04.1970" Sexe="M" Lateralite="D" Licence="" Club="CRE Sauvenière" Ligue="FF" Nation="BEL" Classement="99999" Points="" Attente="N" Ordre="" Payer="N" />
+<Tireur ID="34292" IDNat="" Ophardt_ID="34292" Nom="Lecocq" Prenom="Hans Joachim" DateNaissance="10.10.1991" Sexe="M" Lateralite="G" Licence="" Club="RCSC CEE Charleroi" Ligue="FF" Nation="BEL" Classement="99999" Points="" Attente="N" Ordre="" Payer="N" />
+<Tireur ID="446429" IDNat="" Ophardt_ID="446429" Nom="Lemaitre" Prenom="Sébastien" DateNaissance="08.10.1978" Sexe="M" Lateralite="D" Licence="" Club="CE Charlemagne" Ligue="FF" Nation="BEL" Classement="99999" Points="" Attente="N" Ordre="" Payer="N" />
+<Tireur ID="455404" IDNat="" Ophardt_ID="455404" Nom="Merchiers" Prenom="Mathieu" DateNaissance="26.07.1989" Sexe="M" Lateralite="D" Licence="" Club="La Maison de l&#039;Escrime" Ligue="FF" Nation="BEL" Classement="99999" Points="" Attente="N" Ordre="" Payer="N" />
+<Tireur ID="415678" IDNat="" Ophardt_ID="415678" Nom="Mesureur" Prenom="Gilles" DateNaissance="12.02.1999" Sexe="M" Lateralite="D" Licence="" Club="CE Embourg" Ligue="FF" Nation="BEL" Classement="99999" Points="" Attente="N" Ordre="" Payer="N" />
+<Tireur ID="433177" IDNat="" Ophardt_ID="433177" Nom="Michel" Prenom="Emilien" DateNaissance="29.06.1990" Sexe="M" Lateralite="D" Licence="" Club="CRE Sauvenière" Ligue="FF" Nation="BEL" Classement="99999" Points="" Attente="N" Ordre="" Payer="N" />
+<Tireur ID="211604" IDNat="" Ophardt_ID="211604" Nom="Midavaine" Prenom="Adrien" DateNaissance="09.09.1996" Sexe="M" Lateralite="" Licence="" Club="LILLE VAUBAN" Ligue="13" Nation="FRA" Classement="99999" Points="" Attente="N" Ordre="" Payer="N" />
+<Tireur ID="391952" IDNat="" Ophardt_ID="391952" Nom="Milicamp" Prenom="Cedric" DateNaissance="20.06.1984" Sexe="M" Lateralite="D" Licence="" Club="CE Embourg" Ligue="FF" Nation="BEL" Classement="99999" Points="" Attente="N" Ordre="" Payer="N" />
+<Tireur ID="545824" IDNat="" Ophardt_ID="545824" Nom="Mory" Prenom="Pierre-Alain" DateNaissance="25.03.1985" Sexe="M" Lateralite="D" Licence="" Club="CRE Sauvenière" Ligue="FF" Nation="BEL" Classement="99999" Points="" Attente="N" Ordre="" Payer="N" />
+<Tireur ID="28413" IDNat="" Ophardt_ID="28413" Nom="Oudot" Prenom="Jean-Francois" DateNaissance="22.08.1953" Sexe="M" Lateralite="D" Licence="" Club="CRE Sauvenière" Ligue="FF" Nation="BEL" Classement="99999" Points="" Attente="N" Ordre="" Payer="N" />
+<Tireur ID="368102" IDNat="" Ophardt_ID="368102" Nom="Paraskevakis" Prenom="Evangelos" DateNaissance="06.01.1980" Sexe="M" Lateralite="D" Licence="" Club="Brussels Europe Fencing Forever" Ligue="FF" Nation="GRE" Classement="99999" Points="" Attente="N" Ordre="" Payer="N" />
+<Tireur ID="415374" IDNat="" Ophardt_ID="415374" Nom="Ponce" Prenom="Thomas" DateNaissance="27.12.2007" Sexe="M" Lateralite="D" Licence="" Club="Brussels Fencing Club" Ligue="FF" Nation="BEL" Classement="99999" Points="" Attente="N" Ordre="" Payer="N" />
+<Tireur ID="447616" IDNat="" Ophardt_ID="447616" Nom="Van Den Berghe" Prenom="Janti" DateNaissance="12.11.2007" Sexe="M" Lateralite="D" Licence="" Club="SC Latem-Deurle" Ligue="VS" Nation="BEL" Classement="99999" Points="" Attente="N" Ordre="" Payer="N" />
+<Tireur ID="415569" IDNat="" Ophardt_ID="415569" Nom="Vervoort" Prenom="Virgil" DateNaissance="03.08.2010" Sexe="M" Lateralite="" Licence="" Club="CE Charlemagne" Ligue="FF" Nation="BEL" Classement="99999" Points="" Attente="N" Ordre="" Payer="N" />
+<Tireur ID="507403" IDNat="" Ophardt_ID="507403" Nom="Vervoort" Prenom="Xavier" DateNaissance="07.07.1979" Sexe="M" Lateralite="D" Licence="" Club="CE Charlemagne" Ligue="FF" Nation="BEL" Classement="99999" Points="" Attente="N" Ordre="" Payer="N" />
+</Tireurs>
+<Arbitres>
+ <Arbitre ID="199421" Ophardt_ID="199421" Nom="Debaisieux" Prenom="Romane" DateNaissance="18.03.1998" Licence="" Club="CE Embourg" Ligue="FF" Nation="BEL" Club2="CRE Sauvenière" Ligue2="FF" Nation2="BEL" Sexe="F" Categorie="Da" />
+ <Arbitre ID="199135" Ophardt_ID="199135" Nom="Fraikin" Prenom="Laurent" DateNaissance="27.07.1982" Licence="" Club="CE Embourg" Ligue="FF" Nation="BEL"  Sexe="M" Categorie="N" />
+ <Arbitre ID="207011" Ophardt_ID="207011" Nom="Petit" Prenom="Thibaut" DateNaissance="16.05.1995" Licence="" Club="FEE Eupen" Ligue="FF" Nation="BEL" Club2="CRE Sauvenière" Ligue2="FF" Nation2="BEL" Sexe="M" Categorie="" />
+</Arbitres>
+</BaseCompetitionIndividuelle> 
