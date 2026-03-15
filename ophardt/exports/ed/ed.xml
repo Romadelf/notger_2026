@@ -14,20 +14,21 @@
   Date="15.03.2026" 
   TitreCourt="Tournoi Notger" 
   Titrelong="Tournoi Notger" 
-  DateFichierXML="15.03.2026 07:28:49">
+  DateFichierXML="15.03.2026 08:59:46">
   
 <Classements>
+  <Classement ID="1793" Annee="2025" Priorite="2" Min="0" Max="0" />
 </Classements>
 <Tireurs>
-<Tireur ID="394715" IDNat="" Ophardt_ID="394715" Nom="Barbier" Prenom="Delphine" DateNaissance="22.03.1984" Sexe="F" Lateralite="D" Licence="" Club="C.R.E. La Licorne" Ligue="FF" Nation="FRA" Classement="99999" Points="" Attente="N" Ordre="" Payer="N" />
-<Tireur ID="414688" IDNat="" Ophardt_ID="414688" Nom="Bertet" Prenom="Cindy" DateNaissance="09.04.1983" Sexe="F" Lateralite="D" Licence="" Club="Brussels Fencing Club" Ligue="FF" Nation="FRA" Classement="99999" Points="" Attente="N" Ordre="" Payer="N" />
-<Tireur ID="395255" IDNat="" Ophardt_ID="395255" Nom="Daco" Prenom="Sophie" DateNaissance="15.10.2002" Sexe="F" Lateralite="D" Licence="" Club="CE Les 3 armes" Ligue="FF" Nation="BEL" Classement="99999" Points="" Attente="N" Ordre="" Payer="N" />
-<Tireur ID="431793" IDNat="" Ophardt_ID="431793" Nom="Deprez" Prenom="Bieke" DateNaissance="27.06.1995" Sexe="F" Lateralite="D" Licence="" Club="Confrerie Gent" Ligue="VS" Nation="BEL" Classement="99999" Points="" Attente="N" Ordre="" Payer="N" />
-<Tireur ID="446884" IDNat="" Ophardt_ID="446884" Nom="Gérard" Prenom="Kim" DateNaissance="12.12.1989" Sexe="F" Lateralite="D" Licence="" Club="La Maison de l&#039;Escrime" Ligue="FF" Nation="BEL" Classement="99999" Points="" Attente="N" Ordre="" Payer="N" />
-<Tireur ID="423614" IDNat="" Ophardt_ID="423614" Nom="Hariga" Prenom="Sarah" DateNaissance="28.03.1968" Sexe="F" Lateralite="" Licence="" Club="La Maison de l&#039;Escrime" Ligue="FF" Nation="BEL" Classement="99999" Points="" Attente="N" Ordre="" Payer="N" />
+<Tireur ID="394715" IDNat="" Ophardt_ID="394715" Nom="Barbier" Prenom="Delphine" DateNaissance="22.03.1984" Sexe="F" Lateralite="D" Licence="" Club="C.R.E. La Licorne" Ligue="FF" Nation="FRA" Classement="18" Points="79.3119" Attente="N" Ordre="" Payer="N" />
+<Tireur ID="414688" IDNat="" Ophardt_ID="414688" Nom="Bertet" Prenom="Cindy" DateNaissance="09.04.1983" Sexe="F" Lateralite="D" Licence="" Club="Brussels Fencing Club" Ligue="FF" Nation="FRA" Classement="34" Points="41.5619" Attente="N" Ordre="" Payer="N" />
+<Tireur ID="395255" IDNat="" Ophardt_ID="395255" Nom="Daco" Prenom="Sophie" DateNaissance="15.10.2002" Sexe="F" Lateralite="D" Licence="" Club="CE Les 3 armes" Ligue="FF" Nation="BEL" Classement="10" Points="186.2203" Attente="N" Ordre="" Payer="N" />
+<Tireur ID="431793" IDNat="" Ophardt_ID="431793" Nom="Deprez" Prenom="Bieke" DateNaissance="27.06.1995" Sexe="F" Lateralite="D" Licence="" Club="Confrerie Gent" Ligue="VS" Nation="BEL" Classement="35" Points="40.0887" Attente="N" Ordre="" Payer="N" />
+<Tireur ID="446884" IDNat="" Ophardt_ID="446884" Nom="Gérard" Prenom="Kim" DateNaissance="12.12.1989" Sexe="F" Lateralite="D" Licence="" Club="La Maison de l&#039;Escrime" Ligue="FF" Nation="BEL" Classement="41" Points="21.1383" Attente="N" Ordre="" Payer="N" />
+<Tireur ID="423614" IDNat="" Ophardt_ID="423614" Nom="Hariga" Prenom="Sarah" DateNaissance="28.03.1968" Sexe="F" Lateralite="" Licence="" Club="La Maison de l&#039;Escrime" Ligue="FF" Nation="BEL" Classement="46" Points="14.3559" Attente="N" Ordre="" Payer="N" />
 <Tireur ID="400524" IDNat="" Ophardt_ID="400524" Nom="Lengyel" Prenom="Lilla" DateNaissance="13.05.1974" Sexe="F" Lateralite="D" Licence="" Club="" Ligue="" Nation="HUN" Classement="99999" Points="" Attente="N" Ordre="" Payer="N" />
 <Tireur ID="415681" IDNat="" Ophardt_ID="415681" Nom="Poncin" Prenom="Auriane" DateNaissance="21.10.1999" Sexe="F" Lateralite="D" Licence="" Club="CE Embourg" Ligue="FF" Nation="BEL" Classement="99999" Points="" Attente="N" Ordre="" Payer="N" />
-<Tireur ID="170098" IDNat="" Ophardt_ID="170098" Nom="Salomon" Prenom="Laure" DateNaissance="17.07.1999" Sexe="F" Lateralite="" Licence="" Club="CE Charlemagne" Ligue="FF" Nation="BEL" Classement="99999" Points="" Attente="N" Ordre="" Payer="N" />
+<Tireur ID="170098" IDNat="" Ophardt_ID="170098" Nom="Salomon" Prenom="Laure" DateNaissance="17.07.1999" Sexe="F" Lateralite="" Licence="" Club="CE Charlemagne" Ligue="FF" Nation="BEL" Classement="37" Points="34.7510" Attente="N" Ordre="" Payer="N" />
 </Tireurs>
 <Arbitres>
  <Arbitre ID="199421" Ophardt_ID="199421" Nom="Debaisieux" Prenom="Romane" DateNaissance="18.03.1998" Licence="" Club="CE Embourg" Ligue="FF" Nation="BEL" Club2="CRE Sauvenière" Ligue2="FF" Nation2="BEL" Sexe="F" Categorie="Da" />
