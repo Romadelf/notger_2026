@@ -1,0 +1,23 @@
+;40A 1st Division is made with fencers of ranks 1 to 16
+;and a 2nd Division with fencers of ranks above 16
+;Division 1 fencers are ranked ahead of Division 2
+{[classe suite_tableaux]
+ [critere_constitution classement_initial]
+ [hasard_par_2 non]
+ [qualifies 0]
+ [nom "A"]
+ [nom_etendu "Division 1 tableaux"]
+ [nom_tableaux "D1 Tableau of ^1"]
+ [origine1 "classement_initial 1-16"]
+ [cle 1]
+}  
+{[classe suite_tableaux]
+ [critere_constitution classement_initial]
+ [hasard_par_2 non]
+ [qualifies 0]
+ [nom "B"]
+ [nom_etendu "Division 2 tableaux"]
+ [nom_tableaux "D2 Tableau of ^1"]
+ [origine1 "classement_initial 17-1000"]
+ [cle 2]
+}  

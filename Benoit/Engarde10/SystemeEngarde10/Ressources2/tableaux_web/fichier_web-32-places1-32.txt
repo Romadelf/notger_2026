@@ -1,0 +1,16 @@
+{[classe fichier_web] [fichier "tableau1-8.htm"] [depuis "a32"] [jusqua "a2"] [rang 1] [cle 1]}
+{[classe fichier_web] [fichier "tableau1-8.htm"] [depuis "h2"] [jusqua "h2"] [rang 2] [cle 9]}
+{[classe fichier_web] [fichier "tableau1-8.htm"] [depuis "f4"] [jusqua "f2"] [rang 3] [cle 7]}
+{[classe fichier_web] [fichier "tableau1-8.htm"] [depuis "g2"] [jusqua "g2"] [rang 4] [cle 8]}
+{[classe fichier_web] [fichier "tableau9-16.htm"] [depuis "b8"] [jusqua "b2"] [rang 1] [cle 3]}
+{[classe fichier_web] [fichier "tableau9-16.htm"] [depuis "e2"] [jusqua "e2"] [rang 2] [cle 6]}
+{[classe fichier_web] [fichier "tableau9-16.htm"] [depuis "c4"] [jusqua "c2"] [rang 3] [cle 4]}
+{[classe fichier_web] [fichier "tableau9-16.htm"] [depuis "d2"] [jusqua "d2"] [rang 4] [cle 5]}
+{[classe fichier_web] [fichier "tableau17-24.htm"] [depuis "j16"] [jusqua "j2"] [rang 1] [cle 10]}
+{[classe fichier_web] [fichier "tableau17-24.htm"] [depuis "s2"] [jusqua "s2"] [rang 2] [cle 17]}
+{[classe fichier_web] [fichier "tableau17-24.htm"] [depuis "q4"] [jusqua "q2"] [rang 3] [cle 15]}
+{[classe fichier_web] [fichier "tableau17-24.htm"] [depuis "r2"] [jusqua "r2"] [rang 4] [cle 16]}
+{[classe fichier_web] [fichier "tableau25-32.htm"] [depuis "k8"] [jusqua "k2"] [rang 1] [cle 11]}
+{[classe fichier_web] [fichier "tableau25-32.htm"] [depuis "p2"] [jusqua "p2"] [rang 2] [cle 14]}
+{[classe fichier_web] [fichier "tableau25-32.htm"] [depuis "m4"] [jusqua "m2"] [rang 3] [cle 12]}
+{[classe fichier_web] [fichier "tableau25-32.htm"] [depuis "n2"] [jusqua "n2"] [rang 4] [cle 13]}

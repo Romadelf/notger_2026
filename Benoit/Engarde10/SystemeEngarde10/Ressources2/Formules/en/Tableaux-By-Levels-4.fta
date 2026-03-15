@@ -1,0 +1,14 @@
+;60Tableaux of 4 by levels 
+;Fencers ranked 1 to 4 are placed in a 1rst tableau of 4 
+;Fencers ranked 5 to 8 are placed in a 2nd tableau of 4 etc.
+{[classe suite_tableaux]
+ [critere_constitution classement_initial]
+ [hasard_par_2 non]
+ [qualifies 0]
+ [nom "A"]
+ [nom_etendu "tableau direct"]
+ [nom_tableaux "tableau of ^1"]
+ [origine1 "classement_initial 1-1000"]
+ [tableaux_par_niveau 4]
+ [cle 1]
+}

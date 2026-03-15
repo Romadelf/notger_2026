@@ -1,0 +1,23 @@
+;42On fait une 1re Division avec les tireurs de rangs 1 à 32
+;et une 2e Division avec les tireurs de rangs supérieurs à 32
+;On classe les tireurs de Division 1 avant ceux de division 2
+{[classe suite_tableaux]
+ [critere_constitution classement_initial]
+ [hasard_par_2 non]
+ [qualifies 0]
+ [nom "A"]
+ [nom_etendu "tableaux Division 1"]
+ [nom_tableaux "tableau D1 de ^1"]
+ [origine1 "classement_initial 1-32"]
+ [cle 1]
+}  
+{[classe suite_tableaux]
+ [critere_constitution classement_initial]
+ [hasard_par_2 non]
+ [qualifies 0]
+ [nom "B"]
+ [nom_etendu "tableaux Division 2"]
+ [nom_tableaux "tableau D2 de ^1"]
+ [origine1 "classement_initial 33-1000"]
+ [cle 2]
+}  

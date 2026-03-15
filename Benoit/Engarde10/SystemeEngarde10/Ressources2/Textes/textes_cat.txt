@@ -1,0 +1,3017 @@
+#textes_engarde=Català/Catalan; Traducció de Gabriel Puig Roca-Sastre 
+
+This file contains the texts of ENGARDE. It can be translated into another language.
+For this:
+* modify the first line:
+  - keep: "#textes_engarde="
+  - write after the name of the language in the language itself then "/"
+  - write after the name of the language in English then ";"
+  - write after the name of the translator and the date day/month/year
+* then translate the lines starting by # 
+
+A line starting with # and containing = describes a text, otherwise it's a comment
+which is ignored when loading.
+The part between # and = is the symbol that should not be modified.
+The part after = is the body of the text to be translated into your language.
+
+For some texts, we also give a reduced version
+we use the same symbol with% at the end
+example:
+normal text: #categorie=catégorie
+reduced text: #categorie%=cat
+
+It is recommended to write the text in lower case. ENGARDE takes in charge for uppercase
+in general.
+
+******************************************************************************
+
+Somes sentences have places denoted ^1 or ^2 which are replaced by a number or a word by ENGARDE 
+example:  #tour_no=tour No ^1
+
+******************************************************************************
+
+In several sentences, ENGARDE manages genders and numbers.
+First example: international[/e|s/es]
+between [] there are several way to complete the word:
+"|" separates numbers: singular|plural
+"/" separates gender: male/female
+
+In some sentences, ENGARDE manages genders and numbers related to a place:
+example:  #elimine=^1 éliminé[1|/e|s/es]
+the gender and number will be this of the word replacing ^1 because of 1| after [
+
+******************************************************************************
+
+The gender of some words is indicated with (f) ou (m) before the word
+example:  #competition=(f)compétition[|s]
+
+******************************************************************************
+
+THE SENTENCES TO BE TRANSLATED HAVE A & AFTER =
+example: #tour_no=&tour No ^1
+It helps to search the sentences to be translated
+REMOVE THE & WHEN YOU TRANSLATE A SENTENCE
+
+******************************************************************************
+
+Indicate here if the language uses latine letters (write oui or non)
+When non is written, the texts are not modified:
+- no transformation in upper/lower case
+- no suppression of spaces, no gender or number consideration.
+Texts must be written without [ / | ] and without (f) and (m)
+but ^ must be kept
+
+#alphabet_latin=oui
+
+Indicate below if you want Engarde manage upercase for title or not
+
+#majuscules_automatiques=oui
+
+Indicate here the size of the labels for the input windows when you want a fixed size.
+0 means automatic size (use it for latin languages)
+another value is the precise size in pixels, usually between 100 and 200 (use it for 
+Chinese for example).
+
+#size_of_label=0
+
+******************************************************************************
+                        COMPETITION
+
+#competition=(f)competici[ó|ons]
+#parametres=paràmetres
+#parametres_principaux=paràmetres principals
+#individuelle=individual[|s]
+#par_equipes=per equips
+#type_compe=tipus de competició
+#national=nacional[|s]
+#international=internacional[|s]
+#domaine_compe=tipus de competició
+#arme=arma
+#fleuret=(m)floret
+#epee=(f)espasa
+#sabre=(m)sabre
+
+#organisateur=(m)organitzador
+#liveURL=URL Resultats en directe
+#videoURL=URL Vídeo
+#URLorganisateur=URL de l'organitzador
+#lieu=lloc de la competició
+#federation=(f)federació
+#titre_reduit=(m)títol curt
+#texte=text
+#titreCourtTournoi=Títol curt de la competició
+#titreLongTournoi=Títol de la competició
+
+#titre_ligne=títol en una línia
+#titre_diapo=Títol de DiapoEngarde
+
+#titre1=títol: línia 1
+#titre2=títol: línia 2
+#titre3=títol: línia 3
+#titre4=títol: línia 4
+
+
+******************************************************************************
+
+                       THE ENTITIES OF THE TABLES
+
+All entities have a name
+for fencers and referees, the name is the last name, e.g., DUPONT
+#nom=(m)nom[|s]1
+
+The nations have a name in 3 letters and a full name
+#nom_etendu=(m)nom[|s] complet[|s]
+
+Entities have affiliations (club, nation ...)
+#affiliation=(f)afiliaci[ó|ons]
+#affiliation_possible=(f)possible[|s] afiliaci[ó|ons]
+
+For fencers, referees and teams
+#presence=(f)assistència
+#presence%=(f)pres
+#present=present[|s]
+#present%=P
+#absent=absent[|s]
+#absent%=A
+#touspresents=Tots presents
+#tousabsents=Tots absents
+#absentpardefaut=absent per defecte
+#presentpardefaut=present per defecte
+
+For fencers and referees
+#sexe=(m)sexe[|s]
+#sexe%=(m)sexe[|s]
+les adjectifs associés [homme/dame|hommes/dames] ACCORDES AVEC LE MOT SEXE
+#masculin=mascul[í/ina|ins/ines]
+#masculin%=M
+#feminin=femen[í/ina|ins/ines]
+#feminin%=F
+
+#categorie=categoria
+#categorie%=cat
+#veteran=veter[à/ana|ans/anes]
+#veteran%=V
+
+#veteranA=veter[à/ana|ans/anes]A
+#veteranA%=VA
+#veteranB=veter[à/ana|ans/anes]B
+#veteranB%=VB
+#veteranC=veter[à/ana|ans/anes]C
+#veteranC%=VC
+
+#veteran1=veter[à/ana|ans/anes]1
+#veteran1%=V1
+#veteran2=veter[à/ana|ans/anes]2
+#veteran2%=V2
+#veteran3=veter[à/ana|ans/anes]3
+#veteran3%=V3
+#veteran4=veter[à/ana|ans/anes]4
+#veteran4%=V4
+#senior=ABS sènior[|s]
+#senior%=S
+#junior=júnior[|s] M20
+#junior%=J
+#cadet=M17 cadet[|s]
+#cadet%=C
+#minime=M15 infantil[|s]
+#minime%=A
+#benjamin=M13 alev[í|ins]
+#benjamin%=A
+#pupille=M11 benjam[í|ins]
+#pupille%=B
+#poussin=M8 prebenjam[í|ins]
+#poussin%=P
+
+for clubs, leagues, nations
+#effectif=disponible
+
+***********
+FENCERS
+
+#tireur=tirador[/a|s/es]
+
+prenom is first name
+#prenom=(m)nom[|s]2
+#prenom%=(m)nom2
+#nomprenom=(m)cognom[|s] nom[|s]
+#nomprenom%=(m)nom[|s]
+#date_nais=(f)dat[a|es] de naixement
+#date_nais%=(f)dat[a|es] naix
+#licence_fie=(f)llicènci[a|es] FIE
+#licence_fie%=(f)llic. FIE
+#cle=clau
+#licence=(f)llicènci[a|es]
+#licence%=(f)llic.
+#dossard=(m)dorsal[|s]
+#dossard%=(m)dors
+#serie=(m)núm. sèrie
+#serie%=sèrie
+#points=(m+)punts
+#points%=(m+)pts
+#rang=(m)posició
+#rang%=(m)pos
+#rang_init=&initial rank
+#rang_init%=&i.r.
+#nb_poules=nbre de poules
+#nb_poules%=poules
+#nb_matches=nbre d'assalt
+#nb_matches%=assalt
+#nb_finales=nbre de finals
+#nb_finales%=finals
+
+#groupe=grup
+#groupe%=grp
+#vic_match=vict/matx
+#vic_match%=V/M
+#vic=&victories
+#vic%=&V
+#def=&defeats
+#def%=&D
+#points_a_bonus=&points
+#points_a_bonus%=&pt
+#bonus=&bonus
+#bonus%=&bon
+#indice=índex
+#indice%=ind.
+#td=tocats donats
+#td%=TD
+#tr=tocats rebuts
+#tr%=TR
+#bonus_v=&bonus V
+#bonus_v%=&bv
+#bonus_d=&bonus D
+#bonus_d%=&bd
+#phase=fase
+#no=No
+#rnd=Vta
+#phase_incomplete=fase ^1 incompleta
+#passe_phase_suiv=passar a la següent fase
+
+***********
+
+#equipe=(f)equip[|s]
+#serie_eq=(m)núm. sèrie
+#points_eq=(m+)punts
+
+***********
+
+#club=(m)club[|s]
+
+#ville=ciutat
+
+#departement=department[|s]
+
+#ligue=(f)llig[a|ues]
+
+#etat=(m)estat[|s]
+
+#region=(f)regi[ó|ons]
+
+#nation=(f)naci[ó|ons]
+
+***********
+
+#arbitre=(m)àrbitre[|s]
+
+******************************************************************************
+
+#formule=(f)fòrmul[a|es]
+#formu_compe=fòrmula de la competició
+#pas_de_poule=la fòrmula no té poule
+#pas_de_tableau=la fòrmula no té eliminatòries directes
+#pas_fini_poules=les poules no s'han acabat
+#clasmt_origine=classificació original
+#tour_poules=^1 volt[1|a|es] de poules
+#nombre_tireurs=número de tiradors
+#nombre_tours_poules=número de voltes de poules
+#qual_fin_poules_sur=qualificació al acabar les voltes de poules
+#clas_fin_poules_sur=classificació al acabar les voltes de poules
+#qual_fin_poules_sur_x=qualificació després de ^1 volt[1|a|es] de poule[1||s]
+#clas_fin_poules_sur_x=classificació després de ^1 volt[1|a|es] de poule[1||s]
+#nombre_touches_poules=número de tocats als assalts de poule
+#nombre_touches_tableaux=número de tocats als assalts de les taules
+
+#max_touches=màxim de tocats
+#matches_en=assalts en ^1 tocat[1||s]
+#dans_poules=a les poules
+#nombre_suites_tableaux=número de voltes d'el·liminatòries directes
+#tire_3e=es tira la 3era posició
+#formule_poules=fòrmula de les poules
+#formule_tableaux=fòrmula de les taules
+#tour_no=volta núm. ^1
+#suite_tab_no=encontre núm. ^1 de les taules
+#trop_exemptes=hi ha masses exempts
+#trop_poules=hi ha masses poules
+#trop_qualifies=hi ha masses qualificats
+#trop_tireurs=hi ha masses tiradors
+
+#bar_exemptes=despempat pels exempts
+
+#modifier_valeurs=modificar aquests valors
+#nb_change=el número de ^1 a canviat
+#revoir_formule=s'ha de revisar la fòrmula
+#au_depart=^1 al començar
+#exempte=^1 exempt[1|/a|s/es]
+#il_faut=cal
+#exemptes=exempts
+#non_exemptes=^1 no exempt[1|/a|s/es]
+#pas_decalage=sense decalatge
+#decalage_par=decalatge per
+#limite_a=limitat a ^1
+#qualifies=qualificats
+#qualifie=^1 qualifica[1|t/da|ts/des]
+#elimines=el·liminats
+#elimine=^1 el·limina[1|t/da|ts/des]
+#par_poule=^1 per poule
+#a_l_indice=^1 a l'índex
+#a_la_fin=^1 al acabar
+
+#remp_auto_pou=simular les poules
+#simu=per fer la simulació
+#est_fait=feta
+#rien_faire=no fer res
+
+#poules_finies=poules acabades
+#compe_finie=competició acabada
+#on_en_est=estem a 
+#const_poules=creació de les poules
+#ameliorer_poules=Primera passada no òptima, tornar a intentar?
+#const_tableau=creació de taules
+#saisie_poule=captura de les poules
+#remplissageauto=omplir automàticament
+#feuilles_pou=fulls de poule
+#poules_const=poules constituées
+#poules_resu=resultats de les poules
+#poules_a_saisir=^1 poule[1||s] per capturar
+#tableaux_a_saisir=^1 taul[1|a|es] per capturar
+#matches_a_saisir=^1 assalt[1||s] per capturar
+#matches_a_imp=^1 assalt[1||s] per imprimir
+#poules_a_imp=^1 poule[1||s] per imprimir
+#imp_toutes_pou=imprimir totes aquestes poules
+#imp_des_pou=imprimir algunes poules
+#de_poule=de la poule
+#a_poule=a la poule
+#poule_saisie=aquesta poule ja està capturada
+#grille=graella
+#imp_match_de=imprimir els assalts de
+#imp_match_attente_de=imprimer els matchs en espera de
+
+#refaire_poules=refer les poules
+#refaire_tableau=refer les taules
+#refaire_poules_tno=refer les poules de la volta núm. ^1
+#poules_tno=poules de la volta núm. ^1
+#revenir_tour=tornar a la volta anterior
+#revenir_tour_no=tornar a la volta núm. ^1
+#modif_scores=modificar tots els resultats
+#modif_raz=modificar la poule esborrarà la captura
+#modif_poule_int=voleu modificar aquesta poule
+#repartition_poule=distribució a les poules
+
+#toutes_saisies=totes les poules estan capturades
+#bar_dans_poule=hi ha un empat a la poule
+#qual_poule=^1 qualifica[1|t|ts] a la poule
+#pas_qual_poule=NO qualificats a la poule
+#qual_indice=^1 qualific[1|a|ts] a l'índex
+#y_a_barrage=hi ha un empat
+#poules_saisies=^1 poule[1||s] [1|està|estan] capturad[1|a|es]
+
+#perdre=voleu perdre això
+#perdre_tab=voleu perdre les taules
+
+#numero=(m)n[ú|u]mero[|s]
+#numero%=No
+#total_tireurs_depart=tiradors a l'inici
+#nombre_exemptes=tiradors exempts
+#tireurs_dans_poules=tiradors a les poules
+#tireurs_dans_tableau=tiradors a les taules
+#nombre_poules=número de poules
+#tireurs_par_poule=número de tiradors per poule
+#critere_decal_1=criteri repartició 1
+#critere_decal_2=criteri repartició 2
+#critere_decal_3=criteri repartició 3
+#critere_placement=posició a les poules per
+#limite_decal=limits de repartició
+#qualifies_par_poule=número de qualificats par poule
+#qualifies_indice=nombre de qulificats à l'índex
+#total_tireurs_fin=tiradors al acabar
+#total_tireurs_depart%=tir inici
+#nombre_exemptes%=exempts
+#tireurs_dans_poules%=a les poules
+#tireurs_dans_tableau%=a les taules
+#nombre_poules%=núm. poules
+#tireurs_par_poule%=núm. tir per poule
+#critere_decal_1%=criteri 1
+#critere_decal_2%=criteri 2
+#critere_decal_3%=criteri 3
+#critere_placement%=posc. poules
+#limite_decal%=limit decal.
+#qualifies_par_poule%=qualificats per poule
+#qualifies_indice%=qualificats índex
+#qualifies%=qualificats
+#total_tireurs_fin%=tir acabar
+
+#qualif_tour=qualificació a la volta núm. ^1
+
+******************************************************************************
+                       LES POULES
+
+#deroulement=desenvolupament
+
+#poule=(f)poule[|s]
+#poules=(f)poules
+#x_poule=^1 poule[1||s]
+#x_poule_de=^1 (f)poule[1||s] de ^2
+#x_poule_de_ou=^1 (f)poule[1||s] de ^2 o ^3
+#sais_poules=captura de poules
+#sais_matches=captura d'assalts
+#sais_scores=entrada de resultats
+#sais_pistes=captura de pistes
+#sais_arbitres=captura d'àrbitres
+#sais_horaires=captura d'hores
+#sais_piste_arbi=captura de pistes i àrbitres
+#modif_poules=modificar les poules
+#poule_no=poule núm. ^1
+#match_no=assalt núm. ^1
+#piste_no=pista núm. ^1
+#piste=(f)pist[a|es]
+#piste%=P.
+#pas_bon_no_pou=no és un numéro de poule correcte
+#pas_bon_no_match=no és un numéro de assalt correcte
+#pas_bon_tab=no és un taula
+#lettre_et_nombre=calen una lletra i un número
+#reordonne=reordenar la poule
+#garde_ordre=guardar aquest ordre
+#ajout_tir_pas_ds_pou=afegir un tirador absent a les poules
+#les_tireurs=els tiradors
+#enleves_poules=es treuen de les poules
+#meme_heure_piste=mateixa hora i mateixa pista
+
+******************************************************************************
+
+#tableau=(m)taul[a|es]
+#tableaux=taules
+#ces_tableaux=aquestes taules
+#tableau_de=taula de ^1
+#tableau_prelim_de=taula preliminar de ^1
+#tableau_prince_de=taula principal de ^1
+#tableau_phase_de=taula "fase ^1" de ^2
+#tableau_final=taula final
+#demi_finales=semifinals
+#finale=final
+
+******************************************************************************
+
+#classement=(m)classificaci[ó|ons]
+#classements=classificacions
+#classement_des=classificació [dels/de les] ^1
+#classement_apres_pou=classificació al acabar les poules
+
+******************************************************************************
+
+#nouv_compe=nova competició
+#ouvrir_compe=obrir una competició
+#fermer_compe=tancar la competició
+#sauvegarde=desar
+
+#faire_fic_trans=fitxer d'intercanvi
+#fic_trans_FFF=fitxer d'intercanvi FFF
+
+#fic_resu=crear un fitxer de resultats
+#activiteArbitres=activitat dels àrbitres
+#avec_series=amb els números de sèrie
+#avec_rangs=amb la posició
+#du_rang=de la posició
+#au_rang=a la posició
+#in_tab_indiv=A les taules de competicions individuals
+#ref1_match=l'àrbitre 1 arbitra l'assalt
+#ref23_assistants=els àrbitres 2 3 són assitents
+#in_team=A les competicions per equips
+#ref123_match=els àrbitres 1 2 3 arbitren l'assalt
+
+#enreg_compe=desar la competició
+#chargement=carregar
+#prepa_tables=preparació de les taules
+#prepa_affi=configurar document
+#ecraser=esborrar ^1
+#pas_sur_elle=no es pot copiar una competició sobre si mateixa
+
+#copie_de=copia de ^1
+#choix_rpla=o escollir una competició per canviar-la
+#rep_pas_cree=el directori ^1 no s'ha creat
+
+#modif_de=modificació de ^1
+#val_convient_pas=aquest valor no és vàlid
+#pour_cela=per fer això
+#arriere=s'ha de tornar enrere
+#dans_tableaux=a les taules
+#valeur_initiale=valor inicial
+#pas_encore_tab=aquesta taula no ha començat
+
+******************************************************************************
+
+#table=(f)taul[a|es]
+#tri=selecció
+
+#fiche=(f)fitx[a|es]
+#edition=editar
+#curseur_init=cursor inicial
+#colonne1fixe=columna 1 fixa
+
+#import_fiche=importar arxiu
+#importer=importar
+#importer_tous=importar tots
+#effacer_champ=esborrar el camp
+#effacer_fiche=esborrar la fitxa
+
+#precedent=anterior[|s]
+#suivant=següent[|s]
+#premier=primer[/a|s/es]
+#dernier=últim[/a|s/es]
+#symetrique=simètric
+
+#nouveau=no[u/va|us/ves]
+#saisir=capturar
+#saisie=captura
+#saisir_affil=capturar afiliació
+#modifier=modificar
+#chercher=buscar
+#chercher_compe=buscar a la competició
+#chercher_res=buscar a la memòria
+#chercher_fic=buscar al fitxer
+#fermer=tancar
+#suite=continuar
+#enregistrer=anomenar
+#enregistrement=enregistrament
+#quitter=sortir d'Engarde
+#justequitter=sortir
+#retour_Engarde=Tornar a Engarde
+#retour_init=tornar a l'estat inicial
+#maximum=màxim
+#vic_score=victòria amb puntuació
+
+#victoire=victòria
+#defaite=derrota
+#abandon=abandonament
+#exclusion=exclusió
+#forfait=cessió
+#medical=mèdica
+#pblack=&Pblack
+#sortie_except=Sortida excepcional
+#verif_sortie_except=Voleu verificar les sortides abans d'efectuar-les
+#abandon_med_expli=Abandonament per una qüestió mèdica
+#abandon_tech_expli=Abandonament per una qüestió tècnica
+#exclusion_expli=Exclusió (qüestió disciplinària)
+#forfait_expli=Cessió (el tirador no era present al primer assalt de la competició)
+#pblack_expli=&Defeat for non-combativity
+#faire_saisie_dans_poule=Modificar la poule
+#faire_saisie_dans_tableau=Modificar la taula
+#modif_impossible=Modificació Impossible
+
+juste one latin letter for each symbol, not x, not w, all different
+#victoire%=v
+#defaite%=d
+#abandon%=a
+#exclusion%=e
+#forfait%=c
+#pblack%=&p
+
+#dns=DNS
+#dnf=DNF
+#exc=EXC
+#ncb=&NCB
+
+#efface_sym=simètric esborrat
+#sym_pas_defaite=el simètric no és una derrota
+#sym_pas_vic=el simètric no és una victòria
+#vic_inf_defaite=victòria amb puntuació inferior a la derrota
+
+#navigation=navegació
+#meme_champ=mateix camp
+#premier_champ=primer camp
+#oblige=s'ha de donar un[1|/a] ^1
+
+#deja_table=ja hi és a la taula
+#on_prend_a_la_place=el posem enlloc de
+#on_a_ici=i ara tenim aquí
+
+  ^1 will be replaced by a number, ^2 by fencer or club
+#il_y_a=^1 [1|^2]
+
+  ^1 will be replaced for example by ranking
+#existe_pas=aquest[1|/a|s/es] ^1 no existeix[1||ent]
+
+  ^1 will be replaced by fencers, rounds of poules...
+#nombre_de=número de ^1
+#ajouter=afegir
+#supprimer=suprimir
+#suppress=supressió
+#suppress_x=supressió de ^1 [1|^2]
+#pas_supp=no es pot suprimir
+#car_compe=perquè és a la competició
+#car_util=perquè aquest[1|/a|s/es] ^1 [1|el/la|els/les] utilitz[1|a|ent] per
+
+#sur_premiere=estem al primer registre
+#sur_derniere=estem a l'últim registre
+#taper_deb=posi el començament del cognom
+
+#agglomerer=fusionar
+#agglo_x=fusió de ^1 [1|^2]
+
+******************************************************************************
+
+#recherche=cerca
+#commencant_par=comença per
+#contenant=conté
+#exacte=exacta
+#approchee=aproximada
+
+#chercher_un=cercar [1|un/una|uns/unes] ^1
+#chercher_autre=cercar [1|un altre/una altra|uns altres/unes altres] ^1
+#resultat=el resultat és
+
+******************************************************************************
+
+#oui=sí
+#oui%=s
+#non=no
+#non%=n
+#vrai=vertader
+#vrai%=v
+#faux=fals
+#faux%=f
+#ok=ok
+#annuler=anul·lar
+#aide=ajuda
+#pas_aide=no s'ha trobat l'ajuda
+#pas_fic=no s'ha trobat el fitxer
+#generalites=generalitats
+#contexte=context
+
+#et=i
+#ou=o
+#date=(f)data
+#zonehoraire=Zona horària
+#au_lieu_de=en comptes de
+#repart_parfaite=repartició perfecta
+#n_imperfect=^1 imperfecci[1|ó|ons]
+
+#exemple=(m)exemple[|s]
+#signature=signatur[a|es]
+#pas_saisie=sense captura
+#dbclick=doble clic
+#use_menu=utilitzar al menú ^1
+#liste_vide=llista buida
+#liste_des=llista de ^1
+
+#reserve=memòria
+#charger=carregar
+#vider=buidar
+#fichier=(m)fitxer[|s]
+ ^1 will be replaced by file or competition
+#est_de_genre=[1|el/la] ^1 és de tipus ^2
+#on_charge_fic=es carrega el fitxer de ^1
+#chargt_de=càrrega de ^1
+#entites_chargees=^1 [1|^2] carrega[2|t/da|ts/des] a la memòria
+#entites_reserve=^1 [1|^2] a la memòria
+#reserve_vide=la memòria està buida
+#on_importe=importar ^1 [1|^2] a la competició
+#reste_importer=queda per importar:
+
+#essai_trans=prova del format "intercambi DOS"
+#prem_ligne=la primera línia dona
+#est_fic_a_charger=aquest és el fitxer per carregar
+#pas_type_connu=no es pot reconèixer el tipus de fitxer
+
+#page=(f)pàgin[a/es]
+#marge=(f)marge[/s]
+
+#concerne_tir=respecte [als/a les] tirador[s/es]
+#concerne_tir_pres=respecte [als/a les] tirador[s/es] presents
+#concerne_arbi=respecte als arbitres
+#concerne_arbi_pres=respecte als àrbitres presents
+#tous=tot[/a|s/es]
+#ordre=ordre
+#ordre_alpha=ordre alfabètic
+#ordre_structure=ordre estructurat
+#ordre_serie=ordre per núm. de sèrie
+#ordre_rang_init=&ordered by initial ranks
+#ordre_points=ordre per punts
+#ordre_rang=ordre per posició
+#ordre_club=ordre per clubs
+#ordre_ligue=ordre per lligues
+#ordre_etat=ordre per estats
+#ordre_CID=ordre per CID
+#ordre_region=ordre per regions
+#ordre_nation=ordre per nacions
+#ordre_ID=ordre per ID
+#ordre_licence=ordre per llicències
+#ordre_licence_fie=ordre per llicències FIE
+#ordre_status=ordre per estat del tirador
+
+#selection=selecció
+#reglages_imp=configuració d'impressió
+#rub_a_imp=documents per imprimir
+#document=documents
+#document_global=document global
+#contenu=contingut
+#police=font
+#mise_en_page=opcions d'impressió
+#imprimer=imprimir
+#ajuster=ajustar
+
+#non_modifiable=aquesta entitat no es pot modificar
+#non_modifiable_now=ara no es pot modificar
+#anomalie=anomalia
+#termine=acabat
+#termine_sans_AR=completat sense AR
+#vide=buit
+#preparation=en preparació
+#en_cours=en curs
+
+#dans=a
+#match_non_lance=assalt no programat
+#match_a_un=aquest assalt només té un tirador per tant està qualifica
+#match_deja_saisi=assalt ja capturat
+#jour=di[a|es]
+#heure=(f)hor[a|es]
+#heure_debut=hora d'inici
+#pas_vainqueur=sense vencedor
+#vainqueur=vencedor
+#pb_match_suiv1=aquest assalt ja té un vencedor diferent
+#pb_match_suiv2=que ja ha tirat la taula següent
+#quand_meme_enreg=voleu apuntar aquest resultat igualment
+#pb_match_suiv3=que ja s'ha posat a la taula de la fase següent
+#refaire_tab_suiv=s'ha de tornar a fer la taula de la fase següent
+
+#refaire=voleu refer-la
+#modif=voleu modificar-la
+
+#clas_init_du_tab=classificació inicial de la taula
+#tab_fin=la taula ja ha acabat
+#clas_du_tab=classificació de la taula
+#clas_des_tab=classificació de les taules
+#clas_gene=classificació general
+#tir_en_lice=tirdors lluitant
+#medaille=medalla
+#medailles=medalles
+#or=or
+#argent=plata
+#bronze=bronze
+
+#de=de
+#a=a
+#depuis=des de
+#jusqua=fins a
+
+#hasard_par_2=Sortejar a l'atzar els emparellaments per grups de 2
+#echange_2=^1 canvis de 2 tiradors sobre ^2
+
+#permut_gpe2=canviar tiradors per grups de 2
+
+#chge_formu_tab=la fòrmule de les taules ha canviat
+#on_cree=s'ha creat
+#on_conserve=es conserva
+#attention=atenció
+#type_formule=tipus de fòrmula
+#formu_classique=fòrmula clàssica
+#formu_fie_seniors=Fòrmula Copa del Món Sènior
+#formu_fie_juniors=Fòrmula Copa del Món Júnior
+#autre_formule=una altra fòrmula
+#choix_npoules=número de voltes de poule
+#choix_ntab=número de fases de taules
+
+#tous_tir_avec_series=tots els tiradors amb núm. de sèrie
+
+#en_lice_avec_rangs=tiradors lluitant amb posició
+#clas_gene_avec_rangs=resultats: classificació general amb posició
+
+#saisir_pistes=capturar pistes
+#saisir_heures=capturar hores
+#feuilles_ma_attente=fulls d'assalt en espera
+#feuilles_ma=fulls d'assalt
+#detail_rencontres=Detalls dels encontres
+#rencontres_encours=Encontres en curs
+#plusieurs_rencontres_encours=diversos encontres en curs
+#tableauetpistes=taules i pistes
+#const_tab=crear una taula
+#refaire_tab=refer una taula
+#bad_taille_tab=el tamany de la taula no és correcte
+
+for percentages, one will obtain, for example: 20% makes 34
+#fait=^1% fa ^2
+#on_peut_faire=es poden fer
+#divers=varis
+#ordre_special=ordre especial dels assalts
+#couleur=color
+
+#information=informació
+#confirmation=confirmació
+#question=pregunta
+#choix=selecció
+#nouveautes=novetats
+
+#est_absent=^1 és absent
+#nouveau_tir=^1 nou[1||s] tirador[1||s]
+
+#supp_tour=s'esborra aquesta volta
+#prend_pas=no s'inclou aquesta volta
+
+#est_ce_ok=és el que voleu
+
+#des_absents=hi ha tiradors absents
+#bon_nb_exemptes=precisar el nombre d'exempts
+
+#je_modifie=modifico
+#il_y_a_tir_dans_tab=^1 tirador[1||s] a la taula
+#nb_qualifies=número de qualificats
+
+#status=estatus
+#normal=normal
+
+#par_abandon=par abandonament
+#par_exclusion=par exclusió
+#par_forfait=par cessió
+#par_nbc=&by non-combativity
+
+example: Dupont has the status exclusion
+#a_pour_status=^1 té l'estatus ^2
+
+#faire_formu_tableau=primer s'ha fer la fòrmula de les taules
+#mettre_qual_suite=posi els qualificats al final de la taula núm. ^1
+#ou_supp_suite=o suprimir la continuació de la taula núm. ^1
+
+#modif_incoherences=corrigeixo les incoherencies
+#nb_tir_approx=número de tiradors
+#plus_deux_tours_tab=és molt estrany tenir més de dues fases de taules
+
+#creation_annulee=creacó anul·lada
+#repechage=repesca
+#poule_incomplete=poule incompleta
+#deux_fois_clas=^1 surt dos cops a la classificació
+#deux_fois_poule=^1 surt dos cops a la poule
+#pas_dans_poule=^1 no surt a la poule
+#met_tir_abs=afegim aquests tiradors absents
+
+#deja_ouverte=Aquesta competició ja està oberta o en mode de lectura,
+#pasOuvrir2efois=no la podeu a obrir un altre cop.
+
+#options=opcions
+#avec_affil=amb afiliació proposada
+#sans_affil=sense afiliació proposada
+#avec_contraintes_statut=estat AMB restriccions (recomendat)
+#sans_contraintes_statut=estat SENSE restrisccions (NO recomenat)
+#use_option_tt_poss=Utilitzi el menú d'opcions per veure totes les possibilitats. 
+#quand_meme_dans_tab=Sel posarà a la taula igualment perquè ha d'estar classificat.
+#mettre_abandon_match=Posar abandonament al seu assalt.
+#avec_menu_choix=amb caixa d'opció
+#sans_menu_choix=sense caixa d'opció
+#fermer_ouvrir_panneau=El panell s'ha de tancar i obrir
+
+#non_qual=^1 no qualificat[1||s]
+
+#non_exemp=Problema: ^1 tirador[1||s] exempt[1||s] no est[1|à|an] marcat[1||s] com exempt[1||s] al fitxer
+#non_places=Problema: hi ha ^1 tirador[1||s] no col·locat[1||s]
+
+#cherche_fic=cerca del fitxer ^1
+#fic_existe_pas=el fitxer ^1 no existeix
+#peux_pas_lire=no es pot llegir el fitxer ^1 
+#rep_existe_pas=la carpeta no existeix
+#voir_fichier_svg=Mirar el menú Fitxer
+#fic_pas_charge=el fitxer ^1 no s'ha carregat
+#charge_essai=s'ha carregat a l'intent núm. ^1
+#fic_non_trouve=no s'ha trobat el fitxer: ^1
+
+#est_deja_table=^1 ja hi és a la taula
+#que_fait_on_de=que fem de
+#on_prend_pas=no es guarda
+#on_ajoute_pas=no s'afegeix
+#on_le_prend=l'agafem?
+
+#tirage_auto=sorteig automàtic
+#tirage_manuel=sorteig manual
+#on_echange=es canvia
+#interligne=interliniat
+#coef_interligne=veure l'interliniat en percentatge, normal = 100
+
+#fic_pas_cree=no s'ha creat el fitxer ^1
+
+#base_dossard=posar per dorsal el numéro de creació augmentat per
+#mettre_dos=posar els dorsals
+#ne_pas_mettre_dos=no posar dorsals
+#efface_dos=esborar els dorsals
+
+#vouloir_copie_permente=voleu una còpia permanent actualitzada
+#fic_existe=el fitxer ^1 existe déjà
+#lecture_seule=només de lectura
+#enreg_copie=desar la còpia de la competició
+
+#est_copie1=Aquesta competició és una còpia,
+#PerteStatutCopie=si l'obriu, perdrà l'estatus de còpia.
+#nePasOuvrir=no obriu aquesta competició
+#OuvrirCetteCompe=obrir aquesta competició
+
+#avec_copie=es treballa amb una còpia a ^1
+#plus_copie=ja no es pot accedir a la còpia de ^1
+
+#entree_progressive=entrades progressives
+#ajustement_tour=ajustar la volta núm. ^1
+#entree_nouv_tir=entrada de nous tiradors
+
+#elidir=eliminatòria directa
+#type_elidir=tipus d'eliminatòria directa
+#classique=clàsssica
+#avec_exemptes=amb exempts
+#complexe=coomplexa
+#pasTableau=sense taula tableau
+
+#pas_change_type_elidir=no es pot canviar el tipus d'éliminatòria directa ara
+
+#type_3e_place=tipus de 3er lloc
+#a_indice=per índex
+#ex_aequo=ex aequo
+#par_match=per assalt
+
+#formu_avec_ex=fòrmula amb exempts
+#formule_avec_prog=fòormula amb eentrades progressives
+#ni_ex_ni_prog=sense exempts, sense entrdes progressives
+
+#avec=amb ^1
+#sans=sense ^1
+#choisir=escollir: ^1
+#special=especial
+#remiseZero=tornar a zero
+#raz_formule=tornar a zero la fòrmula
+#champ_non_modifiable=aquest camp no es pot modificar
+
+#assistant=assistent
+#assistant_de=assistent de ^1
+#choix_general=selecci[ó|ons] general[|s]
+
+#tir_pas_pris=^1 tirdor[1||s] sense agafar
+#eq_pas_pris=^1 equip[1||s] no agafat[1||s]
+#nouvelle_eq=^1 nou[1||s] equip[1||s]
+#changer_statut=per fer algun canvi, refusar la creació i canviar l'estat.
+
+#si_fermer=si tanquem ara
+#on_ferme=tanquem
+#nb_approx=número de ^1
+#ent_dans_poules=^1 a les poules
+#ent_par_poule=^1 per poule
+#ent_dans_tableau=^1 a les taules
+
+#equi_en_lice=equips lluitant
+#concerne_eq=concerneix als equips
+#concerne_eq_pres=concerneix els equips presents
+#attrib_equipe=donar un equip als que no en tenen
+#on_prend=agafem ^1
+#entite=(f)entitat[|s]
+
+#nom_une_lettre=nom en una lletra
+
+#origine1=origen 1
+#origine2=origen 2
+#origine3=origen 3
+#origine4=origen 4
+#origine5=origen 5
+#origine6=origen 6
+
+#progression_naturelle=progressió natural
+#classement_initial_par_groupes=classificació inicial per grups
+#classement_initial=classificació inicial
+#critere_constitution=criteri de constitució
+
+#tour_de_poules=volt[a|es] de poules
+#nom_tableaux=nom de les taules
+#suite_tableaux=fase[|s] de taules
+#description_tableau=descripci[ó|ons] de [la|les] taul[a|es]
+
+#description_modele=descripció del model
+#enregister_modele=desar com a model
+#charger_modele=carregar un model
+#chargerformule=carregar una fòrmula
+#sur_changer_formu=esteu segur de voler canviar la fòrmula
+
+#classique_sans3=clàssica sense tirar el 3er lloc
+#classique_avec3=clàssica tirant el 3er lloc
+
+#tab_dir_sans3=Eliminatòria directa sense tirar el 3er lloc
+#tab_dir_avec3=Eliminatòria directa tirant el 3er lloc
+
+#tableau_direct=Eliminatòries directes
+#tableau_prelim_32ex=taula preliminar amb 32 exempts
+#tableau_prince64=taula principal de 64
+#tableau_place_n=taula per la posició ^1
+#match_troisieme_place=assalt per la tercera posició
+#troisieme_place=tercera posició
+#neme_place=^1 posició
+#quart_finales=quarts de final
+
+#prelim_et_ppal=taula preliminar amb 32 exempts i taula principal
+
+#non_supprimable=no es pot suprimir aquesta entitat
+
+#err_formu_tab=error a la fòrmula de les taules
+#nom_tab_err=nom de la fase de taules incorrecte
+#nom_tab_dupli=nom de la fase de taules duplicat
+#pas_org=cap origen
+#org_err=tipus d'origen incorrecte al
+#val_err=valor incorrecte al
+#doit_etre=ha de ser
+#doit_etre_forme=ha de ser de la forma
+#lettre_etant_suite=la lletra és el nom de la fase de taules
+#suite_inconnue=fase de taules desconeguda
+#tab_incorrect_inconnu=taula desconeguda o incorrecta
+#circu_tab=fases de taules redundants
+#suites_ok=les fases correctes són
+
+#err_qualifes=número de qualificats estrany
+#zero_puis2=normalment és 0, 1, 2, 4, 8, 16, 32 ...
+
+#pas_tir_tab=alguns tiradors de la classificació d'origen no estan a les taules
+#tir_tab2fois=alguns tiradors de la classificació d'origen estan 2 cops a les taules
+
+#dest_vain_dupli=els vencedors de ^1 van a 2 fases de taules
+#dest_bat_dupli=els perdedors de ^1 van a 2 fases de taules
+
+#classe_apres= classificats després
+#destination_vainqueurs=destinació dels vencedors
+#destination_battus=destinació dels perdedors
+#groupe_clasmt_battus=grup de classificació dels perdedors
+#rang_premier_battu=posició del 1er perdedor
+#groupe_clasmt_vainqueur=groupe de classificació del vencedor
+#rang_premier_vainqueur=posició del vencedor
+
+#classe_apres%=clas desprès
+#destination_vainqueurs%=dest. vencedors
+#destination_battus%=dest. perdedors
+#groupe_clasmt_battus%=grp class perdedors
+#rang_premier_battu%=rang 1er perdedor
+#groupe_clasmt_vainqueur%=grp class vencedor
+#rang_premier_vainqueur%=pos vencedor
+
+#calcul_tableaux=càlcul de les taules
+#calcul_groupes_clas=es recalculen els grups per la classificació final
+
+#avertissement=avís
+#modif_suites=modificació de les fases de taules
+#modif_suites_expli1=si modifique les taules ara,
+#modif_suites_expli2=s'hauran de recalcular de zero
+#modif_destination=modificació de les destinacions de taules
+#modif_destination_expli1=si modifiqueu les destinacions de taules ara
+#modif_destination_expli2=els grups de classificació s'hauran de recalcular
+#modif_gpe_clas=modificació dels grups de classificació
+#modif_gpe_clas_expli1=si modifiqueu els grups de classificació ara,
+#modif_gpe_clas_expli2=les primeres posicions dels grups s'hauran de recalcular
+
+#creation_de=creació de ^1
+#creation_1er_tab=creació de la primera taula
+#suppr_du_tableau=suppressió de la taula ^1, anomenada ".old"
+#pas_tab_en_cours=no hi ha cap taula en curs
+#pas_tab_a_faire=no hi ha cap taula per crear
+
+#barrage_tableau=empat a la ^1 posició per entrar a una taula
+#garde_rang=^1 tirador[1||s] o equip[1||s] es qued[1|a|en] en aquesta posició
+#se_classe_apres=es classifiquen després
+#formule_prevue=la fòrmula està prevista per ^1
+#tableau_prevu=aquesta taula està prevista per ^1
+
+#pas_tab_refaisable=no hi ha cap taula per refer
+#tab_a_refaire=taula per refer
+
+#gpe_clas_diff=dos grups de classificació ^1 tenen 1eres posicions diferents, ^2 i ^3
+
+#pas_match_en_cours=no hi ha cap assalt en curs
+#cherche_match=cerca d'un assalt
+#les_matches_de=veure els assalts de ^1
+#en_cours_contre=assalt en curs contra ^1
+#gagne_contre=assalt guanyat contra ^1
+#perdu_contre=assalt perdut per ^1
+#match_perdu=assalt perdut
+#rec_adversaire=cerca de l'adversari
+#pas_adversaire=sense adversari
+#score_trop_grand=puntuació massa gran
+
+#erreur_ecrire=error durant l'escriptura del fitxer
+#on_ressaye=reintenar
+#ressayer=REINTENTAR
+
+#rangPoule=posició a la poule
+#rangPoule%=pos poule
+
+#tableau_inacheve=fòrmula amb taula inacabada
+#nombre_exemptes_tab=número d'exempts de la taula
+#nb_qualifies_tab=número de qualificats per la taula
+
+#on_limite_dec=limitar el decalatge a la posició ^1
+#pour_les_tir=Pels tiradors de les posicions 1 a ^1
+#on_dec_pas_plus=no es decala més que ^1
+#on_dec_plus=eventualment es pot decalar més que ^1
+
+#premier_est=el primer ^1 de la llista és ^2
+#premier_doit_etre=^1 s'ha de posar primer al fitxer
+
+#faire_sauvegarde=desar
+#echec_sauvegarde=no s'ha pogut desar
+#echec_ouverture=no s'ha pogut obrir
+
+#importer_un=importar un
+#importer_certains=importar alguns
+
+#documentation=documentació
+
+#plusieurs_pou_arbi=donar varies poules a un àrbitre
+
+#criteres_arbitres=criteris d'assignació dels àrbitres
+#affectation_manu=assignació manual
+#affectation_auto=assignació automàtica
+#affectation_arbi=assignació dels àrbitres
+#pour_n_tab=per les ^1 taules que comencen a ^2
+#affectation_arbi_quarts=assignació dels àrbitres per quarts de taula
+#reprise_arbitres=reutilitzar els àrbitres dels quarts de:
+#raz_arbitres=esborrar els àrbitres
+#tableauetarbitres=taules i àrbitres
+#continuer_alloc=Continuar el repartiment actual
+#faire_new_alloc=Tornar a repartir
+#video_to_non=Els àrbitres vídeo es tornen no-vídeo
+#non_annul_alloc=Prémer No per cancel·lar repartiment
+#ya_n_arbi=hi han ^1 àrbitre al ^2
+
+#pas_arbitre=sense arbitre
+#plus_arbitre=no hi ha prous àrbitre
+#toutes_pou_arbi=totes les poules tenen un àrbitre
+
+#pas_arbi_ds_match=no hi ha àrbitre als assalts en curs
+#pas_match_sans_arbi=no hi ha cap assalt en curs sense àrbitre
+
+#exempte1=exempt[/a|s/es]
+#qualifie1=qualifica[t/da|ts/des]
+#abandon1=abandonament
+#elimine1=elimina[t/da|ts/des]
+#exclusion1=exclusió
+#forfait1=cessió
+#exempte1%=ex
+#qualifie1%=Q
+#abandon1%=A
+#elimine1%=E
+#exclusion1%=xx
+#forfait1%=C
+#exempte_ou_hors=exempt o fora de la competició
+
+#infoRepertoires=Informació sobre els directoris...
+#CopiePermanente=còpia amb actualització permanent...
+#echec_copie=la còpia ha fallat
+#rempla_copie=canviar la còpia ^1
+#capitaine=capit[à|ans]
+#prem_dossard=començar els dorsals al número
+#faire_FicSpecial=Fitxer especial
+#faire_FicSwissTiming=Fitxer SwissTiming MTS600
+#faire_fichierKabcom=Fitxer Kabcom
+
+#ordre_interne=ordre dels números interns
+
+#champ_mesure=el camp ^1 fa ^2 cm
+#limite_champ=limitar-lo a ^1 cm
+
+#equipe_a=l'equipe ^1 té ^2 tiradors
+#equipe_devrait=hauria de tenir 3 ou 4 tiradors
+#permuter=canviar
+#erreur_equipe=Error, equipe:
+#rang_haut_bas=Utilitzar les posicions 1, 2, 3 per alt, 4, 5, 6 per baix
+#rangs_manquants=Falten posicions
+#rang_duplique=posicions duplicades
+#rang_incorrect=posicions incorrectes
+#melange_rang=Barreja entre les posicions 1, 2, 3 i 4, 5, 6 q un equip
+#mettre_rang123=Posar 1, 2, 3, R a un equip
+#mettre_rang456=Posar 4, 5, 6, R a l'altre equip
+
+#score=puntuació
+#sc=pnt.
+#touche=tocat[|s]
+
+#demi_grille=mitja-graella
+#grille_rencontre=graella d'encontre
+
+#remplacant=reserva
+#rempla_equipe=canvi a l'equip ^1
+#num_match_remplacement=número del parcial on es fa el canvi
+#zero_pas_remplacement=donar 0 si no hi ha canvi
+
+#Feuille_rencontre=full d'encontre
+#rencontres=encontre
+#rencontre_a_score=^1 encontre[1||s] amb la puntuació detallada
+#rencontres_tableau=encontres de la taula ^1
+#scores_detailles=puntuacions detallades
+#score_final=resultat final
+
+#XML=XML
+#HTML=HTML
+#faire_document=fer un document
+#faire_fichier=fer un fitxer
+#plusieurs_tableaux=diverses taules
+
+#Tableau_en_fichier_HTML=taula en fitxer HTML
+#Poules_en_fichier_HTML=poules en fitxer HTML
+
+#produit_deja_tire=a la taula hi ha[1||n] ^1 assalt[1||s] que ja s'ha[1||n] tirat 
+#decale_deja_tire=decalar els assalts que ja s'han tirat? 
+#pas_decale=^1 no s'han pogut decalar
+#deja_tire=Assalt ja s'ha tirat
+#decalage=repartició
+#traitement=processament
+#mais_aussi=però també es té
+
+#dans_ordre=a l'ordre
+#pret_decouper=llest per retallar, ^1 per pàgina
+
+#exporter_table=exportar a un fitxer de text
+#importer_table=importar un fitxer text
+#essai_texte=prova del format de text
+#pas_ligne1=suprimir la primera línia
+#ignore=ignorat
+
+#calcul_serie=Calcular els números de sèrie
+#calcul_points=Calcular els punts
+#calcul_serie_de_tireurs=Recalcular els números de sèrie amb els dels tiradors
+#calcul_points_de_tireurs=Recalcular els punts amb els dels tiradors
+#faire_avec_table_eq=Fer això a la taula d'equips
+#tireur_sans=tirador sense ^1
+#fiche_equipe=Fitxa d'equip
+#attribution_eq=atribuir equips
+
+#resultats_provisoires=resultats provisionals
+#charger_pistes_heures=canviar pistes i hores
+#pas_tableau_actif=^1 no és una taula activa
+
+#paiement=pagament
+#mode=mode
+
+#equipes_select=els equips seleccionats
+#toutes_equipes=tots els equips
+#ordre_matches=ordre dels assalts
+#equipe_adverse=equip contrari
+
+#essai_groupement=Intentar reagrupar els àrbitres amb 2 assalts consecutius?
+#echec_groupement=el reagrupament de ^1 a fallat
+#autre_tableau=Una altra taula?
+#pas_creation_poules=Sense crear poules
+
+******************************************************************************
+      the new texts of January 1rt, 2004 (version 8.1)
+******************************************************************************
+
+#id=identificador
+#idtournoi=identificador de la competició
+#annee=any
+#regional=regional[|s]
+#local=local[|s]
+#championnat=campionat
+#fic_trans_XML=fitxer d'intercanvi XML
+#fic_XML_resu=&XML results file
+#a_partir_fic_xml=a partir d'un fitxer XML
+#fic_xml_pour_comp=fitxer XML per crear una competició
+#conv_utf8_vers=Convertir un fitxer XML amb codificació UTF-8 a
+ Below, do not translate DOCTYPE
+#doctype_incorrect=DOCTYPE incorrecte
+#doctype_correct_sont=els tipus correctes són:
+#entitesGen_chargees=^1 entitat[1||s] charregad[1|a|es] a la memòria
+#affecte_pistes_heures=Assignació de pistes i hores
+#verification_pistes_heures=comprovar pistes i hores
+#Feuille_rencontre_non_faite=no s'ha fet el full d'encontre
+
+#SansLicence=^1 no té llicència FIE
+#doublonLicence=llicència FIE duplicada
+#SansID=^1 no té ID
+#doublonID=ID duplicat 
+#error_nation=^1 nació incorrecta
+#TireursSansLicence=Alguns tiradors no tenen llicència FIE
+#tireursSansID=Alguns tiradors/equips/àrbitres no tenen ID 
+#tireursBadNation=Alguns tiradors/equips/àrbitres tenen una nació incorrecta
+#DansCompeFIE=A les competicions FIE, la llicència FIE és obligatòria
+#DansCompeFIE_ID=A les competicions FIE, l'ID és obligatori
+#DansCompeFIE_nat=A les competicions FIE, és obligatori tenir la nació correcte
+#CompleterFIE=Omplir la informació FIE
+#ContinuerCompe=Continuar la competició
+
+******************************************************************************
+      the new texts of March 27, 2004 (version 8.1)
+******************************************************************************
+
+#PasDeTireur=Sense tirador
+#NbMatchPP=número de assalts per pàgina
+#ToutesLesPoulesNarbi=Totes les poules de ^1 a ^2 tenen ^3 àrbitre[3||s]
+#ToutesLesPoulesSaisies=Totes les poules de ^1 a ^2 estan capturades
+#arbitresPour=àrbitres per
+#FaireAffectation=fer la distribució?
+#MauvaiseAffecteArbi=Error a la distribució d'àrbitres als assalts número: 
+#ReprendArbi=REAGAFAR ELS ÀRBITRES DE 1/
+#affectation_arbi_8eme=distribuir els àrbitres a 1/8 de la taula
+#affectation_arbi_16eme=distribuir els àrbitres a 1/16 de la taula
+#matchesSansArbitre=hi ha assalts sense àrbitre, reintentar
+#matchs_SansArbitre=^1 assalts sense àrbitre
+#poules_SansArbitre=^1 poules sense àrbitre
+#pasDefichier=sense fitxer
+
+#pas_commence=a ^1 tiradors se'ls dona "Cessió" perquè no hi eren a l'inici de la competició
+
+#Restriction=Restricció
+#Restreindre1=Restringir una competició exclou alguns tiradors/équipes
+#Restreindre2=dona l'estatus de "Cessió" als altres. Per exemple, després d'una volta de poule,
+#Restreindre3=si volem fer uan 1era divisió amb els tiradors classificats de 1 a 64 i una
+#Restreindre4=2na divisió amb els tiradors classificats de 65 fins el final, cal començar duplicant
+#Restreindre5=2 cops la competició (fent dos arxius de guardat) i restringim un dels dos
+#Restreindre6=arxius pels tiradors de 1 a 64 i l'altre pels tiradors de 64 fins al final.
+#Restreindre7=Fer això quan es constitueixi una volta de poule 
+#Restreindre8=o quan es creï la taula.
+#Restreindre9=Voleu restringir la competició ara?
+
+#PlusTirEnCompe=No hi han més tiradors en competició
+#Ilya=Hi ha
+#tirEqEnCompe=tiradors/equips en competició
+#gardeApartirRang=es guarda a partir de la posició
+#jusquAuRang=fins a la posició
+
+#suppressTousAbsents=Suprimir tots els absents
+
+******************************************************************************
+      the new texts of December 24, 2007
+******************************************************************************
+
+#id_reseau=identificador de xarxa
+#prendre_idsmart_pour_idreseau=Utilitzar el SMART ID com a identificador de la competició (recomanat)
+#id_reseau_double=Nota: Hi ha una altra competició amb el mateix identificador web.
+#fermer_cause_id_reseau=S'ha de tancar la competició (l'identificador web ha canviat)
+#modif_id_reseau1=Modificar de l'identificador web
+#modif_id_reseau2=Modificar l'identificador web obliga a tancar i obrir les instàncies del DiapoEngarde i l'Engarde Auxiliary connectades a aquesta competició.
+#modif_id_reseau3=Vols modificar l'identificador web 
+
+#CreerRepSVG1=Crear un directori per els arxius de guardat
+#CreerRepSVGno2=Crear un 2n directori per els arxius de guardat
+anciens à conserver
+#SupprRepSVG1=Suprimir el directori per els arxius de guardat
+#SupprRepSVGno2=Suprimir el 2n directori per els arxius de guardat
+nouveaux
+#StopSVG1=Aturar els arxius de guardat
+#StopSVGno2=Aturar els arxius de guardat secundaris
+
+#CreerRepSVG2=Escollir directori.
+#no_backup=SENSE ARXIU DE GUARDAT
+#non_accessible=NO ACCESSIBLE
+
+#ouvrir_der_compe=obrir la última competició
+
+#affectation_2e_arbi=Affectation 2e arbitre
+
+#colonnes=columnes
+#entete=encapçalament
+#haut=adalt
+#bas=avall
+
+#nomSur10=nom curt
+#drapeau=bandera
+#drapeau%=band.
+#cadre_drapeau=Banderes amb marc
+
+#formule_conserve_tireurs=Seguint la fòrmula, s'ha[1||n] de conservar ^1 tirador[1||s].
+#conserve_tireurs=S'ha[1||n] de conservar ^1 tirador[1||s].
+#possible_conserver_autre=Es pot conservar un nombre diferent de tiradors.
+#Selon_FIE_series=Segons el reglament FIE, s'han d'utilitzar els números de sèrie.
+#series_entre_parentheses=Els números de sèrie estan entre parèntesis.
+
+******************************************************************************
+      the new texts of July 8, 2008
+******************************************************************************
+
+#appliquer=Aplicar
+#mode_eng=Mode
+#reseau=Xarxa
+#Listesessions=Llista de les sessions
+#configuration=configuració
+#langue=llengua
+#Languedelaide=Llengua de l'ajuda
+#done=Fet
+
+#rep_appli=Directori de l'aplicació: 
+#rep_compe=Directori de la competició: 
+#rep_copie=Directori de la còpia permanent: 
+
+exemple : par 1/4
+#par=per ^1
+#simple=simple
+
+#effacer=Esborrar
+#effacerFermer=Esborrar i tancar
+
+#web=pàgina Web
+#parametresFTP=Paràmetres FTP
+#Publierlestireurs=Publicar els tiradors a la pàgina Web
+#Publierlaformule=Publicar la fòrmula a la pàgina Web
+#PublierClasGene=Publicar la classificació general a la pàgina Web
+#PublierActiviteArbi=Publicar l'activitat dels àrbitres a la pàgina Web
+
+#cles=Claus
+#VoirLesCles=Veure les claus
+#InstallerCle=Instal·lar una clau
+#AcheterCle=Comprar una clau
+
+#EchecCreeFic=La creació del fitxer a fallat: ^1
+#PasModePro=El mode PRO no esta instal·lat
+
+#analyseCles=Anàlisi de les claus
+#supprCle=Suprimir la clau ^1
+#CleInvalide=Clau ^1 invàlidad
+#badNoMac=número MAC incorrecte
+#badOrdi=ordinador incorrecte
+#clePerimee=clau caducada
+#plus_tard=valida més tard
+#valide=valida
+#type_inconnu=tipus desconegut
+
+#nlicencesValidesToDay=^1 llicènci[1|a|es] "^2" vàlid[1|a|es] avui
+#pasLicenceValideToDay=No hi ha llicència "^1" vàlida avui
+
+#IP_incorrect=Número IP incorrecte
+#port_incorrect=Número de port incorrecte
+#pas_licence_valide_ici=No hi ha cap llicència vàlida en aquest ordinador
+#chercher_licence_reseau=Voleu buscar una a la xarxa local?
+#attente_response=Esperant resposta
+#plus_licence_disponible=No hi ha cap llicència disponible
+#licence_disponible=Llicència disponible
+#pas_reponse_recue=No s'ha rebut cap resposta
+#licenceAttribuee=Llicència adjudicada
+
+#licence_jusquau=^1 llicènci[1|a|es] "^2" vàlid[1|a|es] fins el ^3
+#cle_en_double=Clau duplicada
+
+#sessionsDisponibles=Llicències disponibles:  ^1
+#licenceObtenueDe=Llicència de ^1 Ip=^2 Port=^3
+#il_reste=Desconectat: ^1mn
+
+#session=(f)sessi[ó|ons]
+#Ip=Número IP
+#port=Port
+#No_port=Port UDP de recepció
+#No_port_des_ordi=Números de port UDP dels ordinadors que donen llicències
+#Appli=Aplicació
+#ordinateur=Ordinador
+#cet_ordi_est=Aquest ordinador és
+
+#cleAppli=(f)Clau[|s]
+#lenombre=número
+#DateDebut=data d'inici
+#DateFin=data d'acabament
+#TypeCle=tipus
+#NoMac=número MAC - adreça física
+#No_mac_cet_ordi=Número MAC d'aquest ordinador
+#pasDeNoMac0=no hi ha cap targeta de xarxa activa ara mateix 
+#unMacSuffit=Apunt: només cal un número MAC vàlid
+#config=Configuració
+#port_active=El port UDP ^1 està activat.
+#port_non_active=El port UDP ^1 no està activat. Deu estar en ús.
+#pas_de_port=no hi ha un port UDP de recepció activat
+
+#pasDeNoMac=No hi ha cap targeta de xarxa activa en aquest ordinador ara mateix. 
+
+#terminerSession=Tancar la sessió
+#ontermineSession=Tancar la sessió seleccionada?
+
+#N_appli_connectees=Hi ha ^1 sessi[1|ó|ons] d'aplicaci[1|ó|ons] conectad[1|a|es]. 
+#quitterontModePRO=Les aplicacions sortiran del mode PRO en 10mn.
+#enregistrerSessions=Voleu desar aquestes sessions per continuar el proper cop que obriu Engarde?
+
+#N_appli_connectees_avant=L'últim cop que vau sortir d'Engarde PRO, hi havia ^1 sessi[1|ó|ons] d'aplicaci[1|ó|ons] conectad[1|a|es]. 
+#reprendreSessions=Continuar les sessions?
+#N_sessions_out=^1 sessi[1|ó|ons] no s'ha[1||n] continuat.
+
+#passerModePro=Passar al mode PRO
+#quitterModePro=Sortir del mode PRO
+#passerModeFIE=Passar al mode "FIE"
+#quitterModeFIE=Sortir del mode "FIE"
+#FIEdemandePro=Per passar en mode "FIE", cal estar en mode PRO.
+
+#clesEtLicences=Claus i llicències d'aquest ordinador
+#sessionsAppli=Hi ha altres sessions a la xarxa que utilitzant une llicència d'aquest ordinador
+
+#onsupprimelacle=Suprimir la clau seleccionada?
+#supprimerPerimees=Suprimir les claus caducades
+
+#demande_licence=Demanar una llicència
+#Ordi_distrib=Hi ha ordinadors de la xarxa que distribueixen llicències en aquest port UDP
+#un_Ordi_distrib=Número IP d'un ordinador que distribueix licències
+#ChercheOrdi=Cerca ordinadors
+#CliquerOrdi=Clicar sobre un ordinador
+#DemanderLice=Demanar una llicència a aquest ordinador
+#DemanderLicePro=Demanar una llicència PRO ?
+#tapez_direct_ip=Poseu el número IP a sota.
+
+#jourOrdi=Data de l'ordinador
+#jourReference=Data de referència
+#jourReferenceUtilise=S'utilitza la data ^1 perquè l'ordinador funcionava aquest dia. En cas d'error, s'ha de sincronitzar.
+#Synchronisation=Sincronització
+#Synchroniser=Sincronitzar
+#ExlpiSynchro1=La Sincronització verifica la data de l'ordinador amb la data a la pàgina Web.
+#ExlpiSynchro2=Posar la data correcta l'ordinador, conectar-se a Internet, i clicar a "Sincronitzar". 
+
+#ErreurSynchro=Error durant la sincronització. Esteu conectat a Internet?
+#SuccesSynchro=Sincronització correcta.
+#badDateOrdi=La data de l'ordinador és incorrecta.
+#DateOrdiEst=Segons el país, la data és ^1, un dia abans o un dia després.
+#reglerDateOrdi=Posar la data a l'ordinador i refer la sincronització.
+#recul_heure=La data o l'hora de l'ordinador han disminuit. Mode PRO desactivat.
+#perte_connexion=Fa 10 minuts que no hi ha connexió amb Engarde(PRO MAIN). Mode PRO desactivat.
+#perte_connexion2=La connexió amb la competició (Engarde Main) s'ha interromput.
+#fin_licence=Les llicències s'han acabat. Es desactiva el mode BASIC/PRO.
+#repasser_pro=Podeu tornar al mode PRO si teniu llicències vàlides.
+
+#gestionVersion=Gestionar les versions
+#VersionNumero=Versió número ^1
+#NumeroVersion=Número de versió
+#VersionNo=Versió ^1
+#version0=Si el número de versió és 0, no sortirà al document.
+#version1=El número de versió 1 correspon al d'un document normal, no modificat.
+#version2=Si el número de versió és superior a 1, correspon un document modificat.
+#ModifDepuisVersion=Modificacions a partir d'aquesta versió
+#ModifToutes=Totes les modifications
+#NumVersSuiv=Passar al número de versió següent
+#MAJversion=Passar au número de versió N
+#correction=CORRECCIÓ
+#set_version=Passar a la versió ^1
+#modif_resu_poule=Modificació de la poule acabada núm. ^1
+#tableau_const=Taula creada
+#constitue=creada
+#resultats=resultats
+#modif_resu_tab=Modificació dels assalts de la taula acabada
+
+#pas_date=Aquesta competició no té data
+#pas_id_reseau=Aquesta competició no té identificador de xarxa
+#pas_ds_clasGene=Atenció, els tiradors qualificats a la última volta de poule no estan a la classificació general.
+
+#ouv_fic_aff=Obrir el fitxer per desplegar
+#pas_copie_perm=No hi ha còpia permanent
+#installer=Voleu fer-ne una?
+#copie_non_active=Còpia permanent NO ACTIVA
+#activer=Voleu activar-la?
+#echec_active_copie=ERROR al activar la còpia permanent
+#install_autre=Voleu fer-ne una altra?
+#copie_active=Còpia permanent ACTIVA
+#conserver=Voleu conservar-la?
+
+#imp_match=imprimir els assalts
+#imp_ma_toutes_pou=imprimir els assalts de totes les poules
+#imp_ma_des_pou=imprimir els assalts d'algunes poules
+#PasResultat=No hi ha cap resultat disponible
+#FaireFicWeb=Fer el fitxer Web
+#maintenant=ara
+
+#Autorisation_retour=Autorització per tornar enrere
+#Objet=Objecte
+#Motivation=Motiu
+#pourquoi=explicar perquè
+#SignaturePtDT=Signatura del president del directori tècnic
+#document_signe=El document per tornar enrere està signat?
+#imprimer_et_signer=Imprimir i signar aquest document.
+
+#historiqueDesRetours=Historial de retorns
+#DT=Directori tècnic
+#fournir_composition=Posar els membres del directori tècnic
+
+#participant=participant[|s]
+#victoires_matches=victòries/assalt
+#lateralite=lateralitat
+#droite=dreta
+#gauche=esquerra
+#centre=centre
+#inconnu=desconegut
+#lateralite%=lat.
+#droite%=D
+#gauche%=E
+#inconnu%=I
+#priorite=prioritat
+#aucune=cap
+
+#page_precedente=Pàgina anterior
+#page_suivante=Pàgina següent
+#premiere_page=Primera pàgina
+#derniere_page=Última pàgina
+#Periode_change_page=Temps per canviar de pàgina
+#Arreter_diapo=Parar les diapositives
+#DiminuerPeriode=Disminuir el temps
+#AugmenterPeriode=Augmentar el temps
+#Pause=Pausa
+#ReprendreDiapo=Començar a passar diapositives
+
+#DiapoModeEval=DiapoEngarde està en mode limitat: estarà en una finestra petita, i s'aturarà cada 5 minuts.
+#sansLimitation=Compreu una llicència per accedir al programa complet.
+#ArretDiapoModeEval=S'han parat les diapositives després de 5mn perquè està en mode limitat.
+#InterruptionDiapoModeEval=El mode PRO s'ha aturat.
+
+#nation%=na.
+#coach=ENTRENADOR
+#carton_coach =tarjeta groga a l'entrenador
+#DemandeVideo=Sol·licituds de video, M: modificació, R: rebuig - màxim: ^1 rebuigs
+#NOemplacement=No s'ha trobat la ubicació
+#banniere=bàner
+#choixBanniere=Escollir un bàner (fitxer BMP o JPG)
+#entitesPerdues=^1 entitat[1||s] de classe ^2 no trouvad[1|a|es] 
+#creeAlaPlace=Crear en lloc de les entitats @XXX
+#clasDans=Fet, la classificació està al fitxer ^1
+#doublon=duplicat
+#doublons=duplicats
+#entre=entre
+#TailleNomsCourts=Mida del nom curt
+#NomNoncalcules=Noms curts no calculats
+#CalculerCourts=Calcular els noms curts que falten
+#ReCalculerCourts=Recalcular tots els noms curts
+#doublonsCourts=Buscar els noms curts duplicats
+
+#formu_fie_equipes=fòrmula Copa del Món per Equips
+#suites_tableaux_charger=Tancar la finestra següent i anar a les fases de taules i canviar la fòrmula FIE-AvecPlaces1-16.fta
+
+#reglages=opcions
+#margehaute=Marge alt
+#margeBasse=Marge baix
+
+#clas_special=Classificació especial
+#clas_spe_rg_poule=FER UNA CLASSIFICACIÓ ESPECIAL amb les posicions de les poules com criteri principal?
+#prem_liste_nat=Primera llista de nacions separades per ";"
+#deux_liste_nat=Segona llista de nacions separades per ";"
+#pb_poule=Problema a la poule ^1
+#pas_pb_poule=No hi ha problemes entre ^1 i ^2
+#publi_clas=Publicar la classificació a la pàgina Web
+#publi_ex=Publicar els exempts a la pàgina Web
+#publi_poules=Publicar les poules a la pàgina Web
+#publi_tableau=Publicar les taules a la pàgina Web
+#definir_tableaux_web=Definir els fitxers Web de taules
+#publi_clas_tour=Publicar la classificació de la volta núm. ^1 a la pàgina Web
+#publi_ex_tour=Publicar les exemptes de la volta núm. ^1 a la pàgina Web
+#publi_poules_tour=Publicar les poules de la volta núm. ^1 a la pàgina Web
+
+#clas_gen_decale=Classificació general decalada
+#met_a_blanc_matches=Esborrar els assalts de les posicions superiors a:
+#nb_matches_vert=Número d'assalts que s'han de posar verticalment
+#moitie=meitat
+#quart=quart
+#bon_quart=quart dret
+#numero_de_aff=Número de "^1" per obrir
+#numero_dans_quart=Número d'assalt al quart
+#bad_descri_fic_web=Descripció del fitxer web incorrecta
+#pas_kabcom_eq=No hi ha fitxer Kabcom per equips
+#cle_ni_tir_ni_remp=la clau del tirador no és ni del titular ni del reserva
+#imp_rencontre=Imprimir l'encontre
+#pas_ordre_tir=No hi ha ordre dels tiradors
+#pas_detail_assaut=No hi han els detalls dels assalts
+#manque_arbi_assaut=falten àrbitres d'assalt
+#matches_en_cours=Assalts en curs
+#rencontre_affi=Encontre per ensenyar
+
+#conserve_n_tireurs=es conserven ^1 tiradors
+#memoire=Memòria de dades:
+
+#installCle=Instal·lar una clau
+#PossCle1=Es poden instal·lar claus
+#PossCle2=per que Engarde en mode BASIC o PRO i altres aplicacions puguin funcionar.
+#PossCle3=Primer s'ha de comprar la clau i aconseguir el codi de compra.
+#PossCle4=s'ha d'estar conectat a internet per instal·lar la clau.
+#PossCle5=També s'ha d'instal·lar una o més targetes de xarxa local o wi-fi,
+#PossCle6=ja que l'Engarde utilitza el número MAC -adreça física- de les targetes de xarxa.
+
+#IdClient=Identificador del client
+#codeAchat=Codi de compra de la clau
+
+#fautIdClientEtCleAchat=S'han d'omplir les camps "Identificador del client" i "Codi de compra de la clau".
+#BadCarDansCleAchat=Un codi de compra no es compra mai ^1
+#PasReponse=No hi ha resposta. Verifiqueu la connexió a internet.
+#pastrouvecleclient=Aquest client i aquest codi de compra no estan a la pàgina Web d'Engarde.
+#CleDeja=Aquesta clau ja està activada.
+#VoulezVousInstaller=Voleu instal·lar-la en aquest ordinador?
+#CleTrouveeInstallee=La clau s'ha instal·lat a l'ordinador.
+#CleNonInstallee=La clau NO S'HA POGUT INSTAL·LAR a l'ordinador.
+
+#PourActiverCle1=Per instal·lar claus noves, s'ha de sortir i entrar del mode PRO.
+#PourActiverCle2=Per activar claus noves, s'ha de posar en mode PRO.
+
+#usermanuel=Manual d'ús
+#ModeProSeulement=Aquesta funció només està disponible en mode PRO.
+#PasModeMini=Aquesta funció no està disponible en mode MINI.
+
+#continent=continent
+#statistiques=estadístiques
+
+^1 sera remplacé par participants ou participantes ou équipes
+#Nb_total=Número total de ^1
+#Nb_parmi_32=Número de ^1 entre els 32 primers de la classificació
+#Nb_AmeriqueNord=Número de ^1 d'América del Nord
+#Nb_AmeriqueSud=Número de ^1 d'América del Sud
+#Nb_afrique=Número de ^1 d'Àfrica
+#Nb_asie=Número de ^1 d'Àsia
+#Nb_europe=Número de ^1 d'Europa
+#Nb_oceanie=Número de ^1 d'Oceania
+
+#match=(m)assalt[|s]
+#round=(m)fase[|s]
+#periode=(f)període[|s]
+#Carton=(m)target[a|es]
+
+#fenetre_piste=Finestra de pista
+#table_pistes=Taula de pistes
+#con_nom_coul=Connexions - Nom - Color
+#Matchsuivantmanuel=Següent assalt manual
+#Matchsuivantautomatique=Següent assalt automàtic
+#Matchsuivantautosansnext=Assalt següent (automàtic sense esperar NEXT)
+#Matchsuivantauto_defaut=Assalt següent automàtic per defecte
+#fichierlogtousmessages=fitxer log de tots els missatges de pista
+#autreMatchMmPoule=Passar a un altre assalt de la mateixa poule
+#autreMatchMmeTab=Passar a un altre assalt de la mateixa taula
+#autreMatch=Passar a un altre assalt
+
+#ArretEnAnnulant=Aturar l'assalt i posar-lo a zero
+#ArretlaisseEncours=Aturar l'assalt i deixar-lo com està
+#ArretEnTerminant=Aturar l'assalt i acabar-lo
+#ArretParAbandon=Aturar l'assalt per abandonament, exclusió o no-combativitat
+#Mettrexcartonsrougesdroite=Posar x targetes vermelles a la dreta...
+#Mettrexcartonsrougesgauche=Posar x targetes vermelles a l'esquerra...
+
+#inverser=invertir
+#InverserLapiste=Invertir la pista
+#InverserLestireurs=Invertir els tiradors
+#Explications=explicacions
+#voir=veure
+#Roundsdecematch=Les fases d'aquest assalt
+#Matchesprcdents1=Es assalts anteriors
+#FinMatch=Final de l'assalt
+#MatchSuivant=Següent assalt
+#MatchPrecedent=Assalt anterior
+
+#manuel=manual
+#PasseAuto=Passar a automàtic
+#automatique=automàtic
+#PasseManuel=Passar a manual
+
+#EnregMatchEnCours=Guardar l'assalt en curs:
+#MatchSansVain=ASSALT ^1 - ^2 guardat dende vencedor
+
+#SimulAppPisteSerie=Simular marcador 
+
+#tireur1=1er tirador
+#tireur2=2n tirador
+
+#Connexion=Connexió
+#Deconnexion=Desconnexió
+#connexionPort=Connexió, port ^1
+#nonconnecte=no connectat
+
+#ConnexionComPour=Connexió al port COM per ^1
+#ErreurPortOccupe=Error, el port ja està ocupat
+#deconnexionPisteX=Desconnexió de la pista ^1
+#ConnexionCOM=connectar-se a un marcador: línia sèrie (port COM)
+
+#Choixmatch=Escollir un assalt
+#prevuAilleurs=Aquest assalt està programat a la pista "^1", confirmeu. 
+#Pasdematch=No hi ha assalt
+#PasdematchPiste=No hi ha assalt amb hora a la pista ^1
+#MatchTermine=Assalt acabat
+#voulez-vousLeModifier=Voleu modificar-lo?
+#ordre_equipe_par_capitaine=L'ordre de tiradors l'introdueix el capità d'equip
+#sais_ordre_equipe=Capturar ordre dels tiradors als encontres
+#pasRemplacant=No hi ha reserva en aquest equip
+#UseDejaRemplacant=El reserva ja s'utilitza des de l'assalt ^1
+#PrendRemplacantEnX=El reserva ^1 entra a l'assalt No 
+#PrendRemplacantNow=El reserva entra ^1 ara?
+#PasUseRemplacant=El reserva no s'ha utilitzat
+#ChoixMatchDe=Escollir un assalt de ^1
+#ChoixMatchPoule=Escollir un assalt de la poule ^1
+
+#nbCartonsRougesDte=Número targetes vermelles per la dreta
+#nbCartonsRougesGche=Número targetes vermelles per l'esquerra
+#inverseExpli1=Invertir la pista quan l'ordinador de l'Engarde miri cap a l'àrbitre
+#inverseExpli2=per que l'imatge de l'ordinador correspongui amb la pista.
+#inverseExpli3=Invertir els tiradors que l'àrbitre ha invertit a la piste.
+
+#machineLocale=Màquina local
+#cheminFTPexe=Directori de l'aplicació FTP, normalment c:\windows\system32\ftp.exe
+#Parcourir=Obrir
+#machineDistante=Màquina FTP distant
+#hote=anfitrió
+#user=usuari
+#passwd=contrasenya
+#passwd_initial=contrasenya inicial
+#repDistant=Repertori de la màquina distant, ex: escrime  o  escrime/compe
+#actionsGene=Accions generals
+#ActiverFTP=Activaer FTP
+#ActiverToutCourt=Activar
+#Desactiver=Desactivar
+#siActiveEchoue=Si l'activació falla (finestra DOS), s'ha desactivar, canviar allò que no funcioni i reactivar
+#ListeDistant=Llista del repertori distant
+#EnvoiTousHTML=Enviar tots els fitxers HTML
+#PoulEtTab=Poules i taules
+#publiPouAuto=Publicar les poules automàtiquement
+#publiTabAuto=Publicar les taules automàtiquement
+#dureeMini=Durada mínima entre 2 enviaments
+#min5sec=segons, min: 5
+#autorefresh=Període d'autorefrescament dels fitxers
+#min10sec=segons, min: 10
+
+#badcheFTPexe=El directori de l'aplicació FTP no és vàlid
+#remplirChamp=Omplir el camp "^1"
+#FTPinactif=FTP no està activat
+#ErreurListeFTP=Error llista FTP
+#ErreurEnvoiFTP=Error enviament FTP
+
+#AffectMatchesEntre=Distribuir esl assalts que comencin entre
+#exemple10=Exemple:  entre  les  10  i  les  11:20
+#TabConcernes=Obrir les taules afectades
+#seulsAvecHeure=Només es prendran en compte els assalts amb hora
+#seulsAvecHeurePou=Només es prendran en compte les poules amb hora
+#utiliser_groupesAB=Utilitzar els grups A i B
+#au_moins_1A=Com a mínim 1 grup A
+#selectEtPrecise=Seleccionar una taula i precisar: simple, per 1/4, 1/8e o 1/16e
+#selectPlusieursTab=O selccionar múltiples (Shift+Clic o Ctrl+Clic), distribució simple
+#pourSelectPlusieursTab=Utilitza Shift+Clic o Ctrl+Clic per seleccionar diverses taules
+#enleverTab=Treure aquesta taula de la llista
+#enleverDeListe=Esborrar de la llista
+#affectation=distribució
+#prendreTab=Agafar aquesta taula
+#prendreLaListe=Agafar tota la llista
+
+#analyse=anàlisi
+#fenetre=(f)finestr[a|es]
+#horizontal=horitzontal[|s]
+#vertical=vertical[|s]
+
+^1 will be replaced by nothing or 1 or 2, etc.
+#SupprTousArbi=Treure tots els àrbitres ^1 dels assalts
+#arbi_par_match=Número d'àrbitres per assalt
+#incluant_video=incolosos els àrbitres de vídeo
+#maxi_par_arbi=Màxim d'assalts per àrbitre
+#NbArbiToUse=Número total d'àrbitres necessaris
+#CalAffectAuto=Calcular la distribució automàtica
+#PrendreCetteAffect=Prendre aquesta distribució
+#PrendreAffectAvant=Tornar a la distribució anterior
+#affectManuelle=Distribució manual
+#AjouterArbiSel=Agafar l'àrbitre seleccionat
+#AjouterArbiVideo=Prendre àrbitres per vídeo
+#SupprArbitreN=Treure l'àrbitre ^1
+#enlever=Treure ^1 ^2
+#affectation_avancee=Distribució avançada
+#affect_avancee_arbi=Distribució avançada d'àrbitres
+#matchNum=assalt ^1
+#arbiNum=àrbitre ^1
+#pasArbiSel=No s'ha selecconat cap àrbitre
+#pasMatchSel=No s'ha selecconat cap assalt
+#pasPouleSel=No s'ha selecconat cap poule
+#arbiDejaCeMatch=L'àrbitre seleccionat ja està assignat a un assalt
+#arbiDejaCettePoule=L'àrbitre seleccionat ja està assignat a la poule
+#conflitDe=Conflicte de ^1 entre l'àrbitre i l'assalt
+#conflitDeDsPou=Conflicte de ^1 entre l'àrbitre i la poule
+#arbiDejaHeure=L'àrbitre seleccionat ja té un assalt a la mateixa hora
+#arbiDejaHeurePou=L'àrbitre seleccionat ja té una poule a la mateixa hora
+#MatchNonTrouve=L'assalt no s'ha trobat
+#PouleNonTrouvee=La poule no s'ha trobat
+#MatchSansArbi=L'assalt seleccionat no té àrbitre
+#PouleSansArbi=La poule seleccionada no té àrbitre
+#assez_de=prou ^1
+#pas_trop_de=no massa ^1
+#tropMatches=masses assalts
+#tropPoules=masses poules
+#manqueMatches=no hi ha prous assalts
+#manquePoules=no hi ha prous poules
+#matchesMemeHeure=hi han assalts a la mateixa hora
+#poulesMemeHeure=hi ha poules a la meteixa hora
+#matchesHeureProche=hi han assalts amb hores semblants
+#matchesConsecutifsPistesDifferentes=canvi de pista SENSE PAUSA
+#matchesNonConsecutifsPistesDifferentes=canvi de pista amb pausa
+#poulesHeureProche=hi han poules amb hores semblants
+#est2foisMatch=té 2 cops el mateix assalt
+#est2foisPoule=té 2 cops la mateixa poule
+#aconflitNation=hi ha un conflicte de ^1 a un assalt
+#aconflitNationPou=hi ha un conflicte de ^1 a una poule
+#supprConflit=eliminar conflictes
+#aconflitNation2=hi ha un conflicte de ^1 al 1/4, 1/8e, 1/16e
+#pas_bonquart=^1 no està al bo ^2
+#pas_bon_quart=no és al quart adequat
+#pas_groupeA=no té àrbitre del grup A
+#matchestroparbi=assalts amb masses àrbitres
+#poulestroparbi=poules amb masses àrbitres
+#matchestroppeuarbi=assalts amb pocs àrbitres
+#poulestroppeuarbi=poules amb pocs àrbitres
+#tauxSatisfation=Satisfacció global de
+#satisfaction=satissfacció
+#cross_interet=^1 té un creuament d'interessos amb ^2
+#n_fois=^1 vegades
+
+#NbMatchesVert=Número d'assalts per ensenyar verticalement
+#NumZone=Número de la zona de la taula a ensenyar
+#NbTabHz=Número de taules per ensenyar horizontalement
+
+#oldVersionFic=^1 no pot obrir les verisons molt antigues de la competició
+
+#PoulTab=Poule/Tau.
+#PoulTab%=Pou/Tau
+#comIn=Com In
+#comOut=Com Out
+#IPsortie=Sortida IP
+#Connecte=Connectat
+#Actif=Actiu
+#Score1=Score
+#Score2=Score
+
+#Montrer=ensenyar
+#Cacher=Amagar
+#CacherToutes=Amagar totes
+
+#dejaPiste=La pista ^1 ja és a la taula
+#dejaIpPiste=El número IP ja està asssignat a un marcador
+
+#fonctionnement=funcionament
+#ConnexionIP=Connexió IP a un marcador (xarxa local)   
+#ConnexionSerie=Connexió RS232 a RS422 a un marcador (cable sèrie, port COM)
+#ConnexionIPsortie=Connexió en sortida, IP o sèrie  
+#saisirIpExemple=posar els números IP i els números de port, exemple: 
+
+#versionDispo=La versió ^1 d'Engarde del ^2 ja està disponible.
+#versionComposantDispo=hi ha noves versions disponibles d'alguns components.
+#versionLaPlusRecente=Aquesta versió és la més recent.
+#InfoVersion=Informació de les versions més recents
+#pasInfoVersion=No hi ha cap informació disponible de la versió.
+#downloadMAJ=Descarregar la última actualització
+#downloadcomposant=Descarregar els últims components
+
+
+#choix_contexte=Escollir context
+#Contexte_general=Context general
+#Contexte_x=Context ^1
+#fermer_ouvrir_ctxt=S'ha d'obrir i tancar la competició
+
+#auteur=autor:
+#distribue_par=distribuit per ^1
+
+--------------------------------------------------------------------
+
+New messages of octobre 2008 
+
+--------------------------------------------------------------------
+
+#lancerLesPistes=Activar les pistes IP en espera
+#lancerPiste=Activar aquesta pista
+#pistesLancees=^1 pist[^1|a|es] IP activad[^1|a|es]
+#pistesNonLancees=^1 pist[^1|a|es] IP NO activad[^1|a|es]
+#deja_match=La pista ^1 ja té un assalt
+#pas_attente=La pista ^1 amb connexió IP no està en espera.
+#lance_simu_pistes=Començar una simulació automàtica a totes les pistes
+#stop_simu=Aturar la simulació automàtica
+
+#confirmez_manuel=Pista amb connexió IP, confirmeu que voleu passar a manual?
+
+#bad_piste=Missatge del marcador IP=^1 pista=^2: el nom de la pista és ^3
+#bad_compe=Missatge de pista ^1 competició ^2: la competició és ^3
+#pas_compe=Missatge de pista ^1 competició ^2: no hi ha competició
+#bad_phase=Missatge de pista ^1 volta No ^2: el No de volta és ^3
+#bad_poule=Missatge de pista ^1 poule No ^2: el No de poule és ^3
+#bad_tableau=Missatge de pista ^1 taula ^2: la taula és ^3
+#bad_match=Missatge de pista ^1 assalt ^2: l'assalt és ^3
+#bad_round=Missatge de pista ^1 ronda ^2: la ronda és ^3
+#bad_tireur=Missatge de pista ^1: tiradors ERRONIS
+#bad_match_fini=Missatge de pista ^1: l'assalt ha acabat
+#bad_match_rien=Missatge de pista ^1: no hi ha assalt
+#champ_piste_vide=Missatge de pista ^1: el camp ^2 està buit
+#Demande_suivant=Demanar el següent assalt de la pista ^1 (estem en mode canvi d'assalt manual)
+#suivantManuel=Passar al mode "canvi d'assalt manual"?
+
+#lampes=llums
+#blanc=blanca
+#rouge=vermella
+#jaune=groga
+#vert=verda
+#cartonrouge=targeta vermella
+#cartonjaune=targeta groga
+#non_combativite=no-combativitat
+
+#erreur=ERROR
+#auto=auto
+#chrono=cronòmetre
+
+state of the apparatus (uses also #pause defined above)
+#etatAPP=estat
+#fencing=esgrima
+#halt=alto
+#waiting=espera
+#ending=acabant
+
+#SituationENG=Situació a l'Engarde
+#APP=Marcador
+#deLarbitre=de l'àrbitre
+
+#fichier_web=fitxers Web
+#date_lim_depassee=La datee d limitu logiciel est dépassée, il faut vous procurer une mise à jour.
+
+#mode_mini=No hi ha llicènncia vàlida, Engarde funcionarà en mode MINI.
+#tousLesTextes=Per que surtin els textos en català, s'ha de tancar i obrir Engarde.
+#siPasTous=Si hi ha textos sense traduir, vol dir que la traducció no està completa.
+
+======================================
+
+#apropos=A propòsit
+#SitewebdEngarde=Pàgina Web engarde-escrime.com
+#install_update=Engarde: instal·lant una actualització
+#commande_inconnue=comandament desconegut
+#argument_manquant=falta un argument
+#fermer_ca=Tancar el fitxer o l'aplicació següent i clicar OK
+#update_complete=Actualització acabada
+#suppr_rep_install=Podeu suprimir el directori d'instal·lació.
+#update_partial=Actualització acabada, HI HA FITXERS QUE S'HAN DE MOURE A MÀ.
+
+#MontrerPnlOption=Aquesta finestra apareix quan cliqueu CTRL + K o feu doble clic.
+
+#evaluation_pro=Competició d'avaluació d'Engarde PRO
+
+#XML_FIE=XML per la FIE
+#XML_etendu=XML ampliat
+#xml_vigueur=S'UTILITZA EL FORMAT XML FIE 2019
+#xml_pas_vigueur=NO S'UTILITZA EL FORMAT XML FIE 2019
+#pas_pour_fie=ATENCIÓ, AQUETS FORMAT XML NO ÉS COMPATIBLE AMB FIE
+#pas_pour_efc=&WARNING, THIS XML FORMAT IS NOT SUITABLE FOR THE EFC
+#voulez_continuer=VOL CONTINUAR
+#cas_pb_xml=Si hi ha un problema amb els fitxer XML, enviar un correu electrònic a
+
+#extractXML=Extreure tiradors de la competició a un fitxer XML i crear una nova competició
+#extraction=Extracció
+#extraire=Extreure
+
+#cherche_doublons=Cerca de duplicats
+#doublons_possibles=Possibles duplicats:
+#n_doublons=Sembla que hi ha[1||n] ^1 duplicat[1||s]
+#Pour_fusionner=Per fusionar dos ^1, aneu a la taula de ^1
+#use_agglomerer=i utilitzeu el menú editar/fusionar 
+#pas_doublon=Sembla que no hi ha duplicats
+#faire_fusions=Voleu fusionar?
+
+======================================
+
+new texts of august 2009
+
+#badpasswd=Contrasenya incorrecta.
+#ouvrir=Obrir
+#ouvrir_aux=Obrir en auxiliar
+#client_serveur=client-servidor
+#serveur=servidor
+
+#FinRoundMatch=Fi de la volta/assalt
+
+#Placementtireurs=Distribució dels tiradors
+#PlacementEquipes=Distribució dels equips
+#prem_droite=Primer tirador a la dreta
+#droitier_droite=tirador dretà a la dreta
+#prem_eq_droite=Primer equip de la dreta
+#max_droitier_droite=L'equip amb més tiradors dretans a la dreta
+#droitier_en_plus=Si l'equip no té substitut, es compta com si hi hagués un dretà més
+#droitier=dretà
+#gaucher=esquerrà
+
+#MettreRemp=Posar ara el reserva de ^1
+#MettreRempAssautX=Posar el reserva det de ^1 a l'assalt No...
+#OterRemp=Treure el reserva de ^1
+
+#fermer_poule=Tancar la poule
+
+#ouvrir_cette_compe=Obrir aquesta competició
+#ouvrir_cette_compe_aux=Obrir aquesta competició en auxilar...
+#fermer_reouvrir=Tancar i reobrir
+#compe_non_accessible=Aquesta competició no existeix o no és accessible
+#pasdeja_ouverte=Aquesta competició no està oberta en mode normal.
+#voulezvous_aux=Voleu obrir-la en mode auxiliar?
+#gerer_liste_compe=Gestionar la llista de competicions
+#suppr_compe_caduc=Suprimir les competicions no accessibles
+#pas_aux_poules_equipes=&Auxiliary mode is not available in poules by teams
+
+#reception_aux=Rebre els resultats de les sessions auxiliars
+#supp_match_fini=Suprimir els assalts acabats acabats
+#supp_tous_match=Suprimir tots el assalts
+
+#ordre_saisi1=L'ordre dels tiradors d'aquest encontre ja s'ha posat
+#ordre_saisi2=i dels assalts d'aquest encontre ja s'han posat.
+#ordre_saisi3=Tornar a posar l'ordre dels tiradors esborrarà els assalts capturats.
+#ordre_saisi4=Voleu tornar aposar l'ordre dels tiradors?
+
+#basic_payant=Atenció, des del 15/10/2009, Engarde Basic ja no és gratuit.
+#preferer_basic=Per tenir totes les funcions, compreu una llicència "Engarde Basic".
+#plusInfoWeb=Per més informació, visiteu la pàgina Web d'Engarde.
+#ne_plus_afficher=No mostris més aquest missatge.
+#arret_fonct=El mode mini s'aturarà el ^1
+#actualiser=Actualitzar
+
+#demande_ignoree=Petició ignorada
+#contexte_defaut=Utilitzar el context per defecte
+#donner_date_debut=Llicència de 5 dies, es dona el primer dia de funcionament
+#date_avant_aujourdhui=^1 és anterior a avui ^2
+#installer_a_partir=Voleu instal·lar aquesta clau perquè funcioni cinc dies a partir de ^1 ?
+
+#RepSVG=Directori per guardar:
+#periode_svg_auto=Període de desaments automàtics
+#en_minutes=en minuts
+
+#trop_de_tireurs_compe=Hi ha masses tiradors o equips a la competició.
+#mini_limite_50=Engarde MINI està limitat a ^1 tiradors i ^2 equips.
+
+^1 will be replaced by 1/4 1/8 1/16
+#neutre_quart=Àrbitres neutres a ^1
+^1 will be replaced by nation, club
+#empecher_meme=Diferents afiliacions entre els àrbitres
+#affil_diff=Afiliacions diferents
+#arbitres_meme=^1 està amb un àrbitre del mateix ^2 
+#respecter_temps=Interval de temps mínim
+#intervalle=Interval
+#empecher_proxi=Evitar proximitat
+#empecher_cross_interet=Evitar els interessos creuats
+
+#arbiDeja=L'àrbitreje té un assalt/poule
+#arbitres_affectes=^1 àrbitre[1||s] assignat[1||s]
+#changer_para_arbi=Per millorar el percentatge, modifiqueu els paràmetres o 
+#ajouter_arbi=afegiu àrbitres o augmenteu el màxim d'assalts per àrbitre
+#Autorisation_action=Autorització per acció especial en mode FIE
+#historiqueActions=Historial d'accions especials
+#interdit_FIE=Acció prohibida en mode FIE
+#il_faut_pro_FIE=A les competicions de la FIE, s'ha de posar en mode PRO+FIE
+#il_faut_pro_FIE2=Sortir només del mode FIE temporalmente i per raons justificades
+#modif_manuelle=Fer modificacions manuals
+#changer_nom=s'ha de canviar el nom
+#dire_oui_pour_voir=Digue sí si també voleu mirar la llista
+#doublon_possible=duplicació possible:
+#n_vrais_doublons=Hi ha ^1 duplicaci[1|ó|ons], s'han de suprimir
+#faire_suppressions=Voleu suprimir-les?
+#fusion_de=fusió de
+#fusion_de_n_doublons=S'ha fet la fusió de ^1 duplicaci[1|ó|ons]
+#expli_no_quart=Botons per canviar ^1 de l'àrbitre
+#expli_groupe=Botons per canviar el grup d'àrbitres
+#arbiDejaN=L'àrbitre seleccionat ja té ^1 assalts/poules
+#proximite_tir=^1 té un interés amb el tirador de un assalt proper
+#pas_neutre_sur=^1 no és neutre a ^2
+#est_neutre_sur=&is neutral on the zones
+#pour_conflits=&has for number of conflicts
+#sont_neutre_sur=&neutral referees on zone
+#Arbi2ProSeulement=La distribució automàtica d'un 2n àrbitre només es pot fer en mode PRO.
+#affectation_auto_simple=Affectation automatique simple
+#bon_choix_arbi=Avans de distribuir, escollir bé els àrbitres
+#activiteArbitresMatch=activitat dels àrbitres d'assalts
+#activiteArbitresVideo=activitat dels àrbitres video
+
+#ajout_un_arbi=Afegir un àrbitre
+#ajout_des_arbi=Afegir àrbitres
+#ajout_tous_arbi=Afegir tots els àrbitres presents
+#ajout_arbi_table_gauche=Afegir els àrbitres de la taula de l'esquerra
+#ajout_arbi_tab_pred=Afegir els àrbitres de la taula anterior
+#suppr_un_arbi=Suprimir un àrbitre
+#suppr_tous_arbi=Supprimir tots els àrbitres
+#transfer_arbi_pred=Transferir els àrbitres de la taula anterior
+#defaire_der_act=Desfer la última acció
+#del_no_quart=Treure els numéros de ^1
+#del_groupe=Esborrar grups
+#MatchesDesArbitres=Els assalts dels àrbitres
+#ArbitresDesMatches=Els àrbitres dels assalts 
+
+#exemptes_tab=Llista d'exempts d'una taula
+
+^1 sera remplacé par 1/4 ou 1/8 
+#x_pasdefaut=^1 par defecte
+#matches_a_traiter=Assalts per assignar
+#matches_termines=Assalts acabats
+#poules_a_traiter=Poules per assignar
+#poules_termines=Poules acabades
+#matches_hors_periode=Assalts sense hores o fora de període
+#poules_hors_periode=Poules sense hora o fora de període
+#match_pas_periode=L'assalt no té hora o està fora de període
+#poule_pas_periode=La poule no té hora o està fora de període
+#match_termine=L'assalt s'ha acabat
+#poule_terminee=La poule s'ha acabat
+^1 sera remplacé par un arbitre et ^2 par 1/4 ou 1/8 
+#plusieurs_quarts=^1 sobre diversos ^2
+
+nouveaux textes du 21/6/2011
+
+#noir=negra
+#duree=durada
+#NoSerieDeReserve=Posar als tiradors els No de sèrie que tenen a la memòria
+#champ_associe=Indicar el camp on s'asocien els tiradors
+#n_tireur_a_ceci=^1 tirador[1||s] a la memòria t[1|é|enen] ^2
+#tireursNonTrouves=^1 tirador[1||s] no trova[1|t|ts]
+#prendre_serie=Agafar No de sèrie de la memòria
+
+#PoulesDesArbitres=Les poules dels àrbitres
+#ArbitresDesPoules=Els àrbitres de les poules
+#arbi_par_poule=Número d'àrbitres per poule
+#maxi_poule_arbi=Màxim de poules per àrbitre
+
+nouveaux textes du 21/7/2011
+
+#pasDansPoules=Operació impossible ja que no estem les poules
+#prendQuandMeme=Fer igualment?
+
+#tableau_non_utilise=Taula no utilitzada
+#video=vídeo
+#arbitre_video=Ajudant vídeo
+#arbitre_match=Àrbitre d'assalt
+#arbitre_assistant=Àrbitre assistent
+#matchDeja3=L'assalt seleccionat ja té 3 àrbitres
+#pouleDeja3=La poule seleccionada ja té 3 àrbitres
+#matchDejaVideo=L'assalt seleccionat ja té un àrbitre video
+#pouleDejaVideo=La poule seleccionada ja té un àrbitre video
+#afficher=Mostrar
+
+#avec_horaires=amb hores
+#sans_horaires=sense hores
+#affectation_de=Distribució d'
+#periode_matchs=període durant el qual es distribueixen els assalts
+
+#on_envoie=Enviar igualment?
+
+#matchHeure=Només assalts amb hora
+#pouleHeure=Només poules amb hora
+#tir_arbi=Entre tiradors i àrbitre:
+#natdiff=Nacions diferents
+#liguediff=Lligues diferents
+#clubdiff=Clubs diferents
+#sipossible=si és possible
+#Affiliation_affi=Afiliacions presents
+#indiquer_periode=Escollir un període
+
+#clas_init_des_tab=classificiació incial de les taules
+#clas_init_un_tab=classificiació incial d'una taula
+#clas_init_du=classificiació incial del ^1
+#clas_du=classificiació del ^1
+
+#prevu_exaequos=^1 classificats previstos, però ^2 classificatss ex-aequos
+#modif_formu=Modificar la fòrmula
+#compe_en_cours=Competició en curs
+#clas_utiliser=Classificació per utilitzar
+#toutes_cat_sexe=Totes les categories i sexes
+
+#match_consecutif=2 assalts seguits
+#non_sur_consecutif=^1 no està a un assalt proper
+
+#essais=^1 intent[1||s] efectuat[1||s]
+#remplissage=designat
+#autres_essais=Ok? Seleccioni no per fer més intents.
+
+#arbi_dispo=Hi ha ^1 àrbitre[1||s] disponible[1||s]
+#remplis_arbi_n=Omplir àrbitre ^1
+
+#cycleHeures=cicle d'hores amb la mateixa pista
+#cyclePistes=cicle de pistes amb la mateixa hora
+#pasCycle=sense cicle
+#selonListe=cicle segons la llargada de la llista
+#selonZone=cicle segons la zona de la taula
+#zone_egal=Zona= 1 /
+#sauter_matchs_term=saltar-se els assalts acabats
+
+#use_max_piste=Utilitzar el màxim de pistes
+
+#manque_heure_poule=^1 poule[1||s] sense hora
+#manque_heure_match=^1 assalt[1||s] sense hora
+#manque_piste_poule=^1 poule[1||s] sense pista
+#manque_piste_match=^1 assalt[1||s] sense pista
+#developper=desenvolupar
+
+^1 sera remplacé par tireurs, équipes ou arbitres
+#a_prendre=^1 per agafar
+^1 sera remplacé par tireurs, équipes ou arbitres
+#prendre_ces=agafar aquests ^1
+
+#alpha=alfabètic
+#structure=estructurat
+#select_all=seleccionar tot
+
+#select_multiple=Selecció múltiple amb Shift+Clic i Ctrl+Clic 
+#drag_and_drop=Es pot utilitzar arrosegant i deixant
+
+#date_lim_mini=Data límit d'ús del mode MINI: ^1
+
+#police_defaut=Font per defecte
+
+#demonstrations=Demostracions
+
+#expli_quart1=Distribuir tots els assalts del quart a un àrbitre,
+#expli_quart2=l'àrbitre no pot tenir un conflicte nació/club amb un dels tiradors del quart.
+#expli_quart3=Igual per 1/8 i 1/16.
+#expli_cross1=Hi ha interessos creuats si un assalt té un àrbitre de nació/club A i un tirador de nació/club B
+#expli_cross2=i si un altre assalt té àrbitre de nation/club B i un tirador de nació/club A.
+#expli_proxi1=Hi ha una proximitat quan un assalt té un àrbitre de nació/club A i un assalt proper
+#expli_proxi2=té un tirador de nació/club A. Els propers: el 1 i el 2, el 3 i el 4, etc. 
+#expli_affillDiff1=Hi ha una afiliació igual quan un assalt té dos àrbitres de la mateixa nació/club.
+#expli_temps=Demanar respectar els intervals de temps indicats en minuts, entre les dos poules/assalts d'un arbitre.
+#expli_deux=Demanar de posar a cada àrbitre a dos assalts propers: el 1 i el 2, el 3 i el 4, etc. 
+#expli_heures1=8:00+0:15*7 significa l'hora 8:00 i afegir 7 cops 0:15
+
+nouveaux textes 5/9/2011
+
+#choix_tableau=Escollir una taula
+#avec_arbi=amb els àrbitres
+#avec_pistes_heures=amb les hores i les pistes 
+#avec_nom_tab=amb el nom de cada taula
+#sur2lignes=nom en 2 línies
+#battus_a_gauche=Amb els perdedors a l'esquerra
+#autre_tab_a_gauche=Amb una altra taula a l'esquerra
+
+nouveaux textes 7/9/2011
+
+#matchs=assalts
+
+#clasmt_prov=Classificació provisional
+#poule_et_clas=Poules i classificació provisional
+#NbPoulesPP=número màxim de poules per pàgina
+#NbLignesPP=número màxim de línies per pàgina
+#avec_soustitre=amb subtítol
+#avec_noms_champs=amb els noms dels camps
+
+#raison=raó
+
+nouveaux textes 26/10/2011
+
+#idem_prec=El mateix que l'anterior
+#modele=model
+#selon_modele=Segons el model...
+#mauvais_modele=model incorrecte
+#pour_der_tour=per la última volta
+#pour_tour_saisi=per una volta per capturar
+
+#une_seule_piste=Cada àrbitre a una sola pista
+
+nouveaux textes 11/11/2011
+
+#une_piste_exactement=Àrbitre a tots els assalts d'una pista
+
+#plus_police=Augmentar la font
+#moins_police=Disminuir la font
+#plus_interligne=Augmentar l'interliniat
+#moins_interligne=Disminuir l'interliniat
+
+#ecran=pantalla
+#photos_dir=Imatges d'una carpeta
+#grand_diaporama=pas de diapositives en pantalla completa
+#petit_diaporama=pas de diapositives 
+#fin_diaporama_grand=Acabar pas de diapositives, finestra gran
+#fin_diaporama_petit=Acabar pas de diapositives, finestra petita
+
+#avec_pistes_heures_prets=amb les hores i les pistes dels assalts llestes
+#taille_noms_tableaux =tamany del nom de les taules
+
+#matchs_a_imp_ou_reimp=^1 assalt[1||s] en curs per imprimir o reimprimir
+#matchs_imprimables=^1 assalt[1||s] imprimible[1||s]
+#y_compris_pas_pret=Inclosos els assalts que no estan llestos
+
+#apres_match=després de cada assalt
+#au_changement_de=al canvi de ^1
+#page_pleine=quan la pàgina estigui plena
+#heure_piste=hores i pistes
+#matchs_prets=Tots els assalts que estiguin llestos
+#toutes_poules=Totes les poules
+#liste=(f)llist[a|es]
+#col_etroite=columnes estretes
+
+#ajuste_col=ajustar les columnes
+#ajuste_col_modele=ajustar les columnes a aquest modele
+#pas_ajuste_auto=sense ajustement automàtic
+#ajuste_auto_sauf=ajusteament automàtic excepte "cognom nom"
+#ajuste_auto=ajustament automàtic
+#global=global
+
+#cacher_soustitre=amagar el subtítol
+#cacher_noms_champs=amagar els noms dels camps
+
+#arbitres_moins=^1 àrbitre[1||s] que hagin arbitrat menys
+#arbitres_hasard=^1 àrbitre[1||s] a l'atzar
+#menu_special_arbi=Per fer aparèixer el quadre de distribució automàtica, utilitzeu el menú "Especial"
+#menu_special_arbi2=Per afegir un criteri, utilitzar menú «Especial»
+
+#affecter_n_arbi=repartir ^1 àrbitre[1||s] per ^2
+#incluant_arbi_video=inclosos els àrbitres de vídeo
+#using_groups=utilitzar els grups A i B
+#par_quart=per quart
+#equi_roles=Rols equilibrats
+#change_roles=Canviar rols
+#permuter_arbi=intercanviar àrbitres ^1 i àrbitres ^2
+
+#fichiers_XML_en_attente=Hi ha ^1 fitxers XML d'una sessió auxiliair en espera
+#on_detruit=destruir els fitxers
+#on_charge=carregar els fitxers
+
+#saisie_affil_nouv_dans_ppal=La captura de nous clubs, lligues  i nacions no es pot fer en mode auxiliaire, feu-la en el mode principal.
+
+#echec_enregistrement=L'enregistrement de la competició a fallat
+#nouvel_essai_enreg=intentar desar de nou
+
+#celui_appli=escollir entre les versions de l'aplicació
+#celui_avec_compe=escollir entre les versions de la competició
+#enreg_celui_appli=guardar amb les versions de l'aplicació
+#enreg_celui_avec_compe=guardar amb les versions de la competició
+#enreg_sans_les_deux=guardar els dos
+#copier_les_modeles=copiar les versions de competició dins del directori de l'aplicació
+#models_eng_diapo=les versions d'Engarde i les de DiapoEngarde
+#erase_models=i esborrar les versions amb el mateix nom?
+#err_copie=ERROR, còpia interrompuda
+#fichiers_copies=^1 fitxer[1||s] copiat[1||s]
+
+#cadre=Quadrat
+#traits_hz=Quadrat amb línies horitzontals
+#sans_traits=Sense línies
+
+#simuler_remplissage=Simular la taula incompleta
+#ImprImmediate=Imprimir inmediatament els nous assalts
+
+#sans_defilement=Zona sense diapositives
+#avec_classement=Amb classificacióo
+#nb_ligne_pp=nombre de línies per pàgina
+#numero_match=número d'assalt
+
+#FTPactif=FTP actiu
+#desactive_FTP=Desactivar FTP
+
+#panneau_web=Panell web
+#parametresHTTP=Paràmetres HTTP
+#activerHTTP=Activar HTTP
+#desactiverHTTP=Desactivar HTTP
+#HTTPactif=HTTP activat
+#desactive_HTTP=Desactivar de HTTP per enviar fitxers
+#specialPourHTTP=Especial per HTTP
+#installer_storefile1=Voleu instal·lar le fitxer ^1 per FTP 
+#installer_storefile2=al directori ^1 de la màquina distant
+#installer_storefile3=per fer que funcioni enviar el fitxer per HTTP?
+#au_moins_6=Al menys 6 caràcters
+#redonner_pass=Reintroduiu la contrasenya
+#pass_trop_court=Contrasenya massa curta
+#pass_different=Les dues contrasenyes són incorrectes
+#car_interdit=Caràcter no permès
+#utiliser=utilitzar
+
+#organisme=Organisme
+#event=Esdeveniment
+#tournoi=Competició
+#tournoi_gen=competici[ó|ons]
+
+#pret_competition=Llest per aquest competició
+#pas_de_compe=la competició no existeix
+#pas_event=l'esdeveniment no existeix
+#pas_organisme=l'organisme no existeix
+
+#pas_chemin_domaine=directori no trobat al domini
+#pas_connexion_ou=no hi ha conexió a internet o hi ha un error al domini
+#si_appli_pas_ici=Si l'aplicació ^1 no està instal·lada, la podeu l'instal·lar amb els paràmetres FTP
+#fichiers_attente=fitxers en espera
+#matchs_attente=Assalts en espera
+
+#interrompre=Interrompre
+#reprendre=Reprendre
+
+#envoi_fic_html=Enviar fitxer HTML
+#site_org=Pàginna Web de l'organisador
+#rep_depose_fic=Directori on posar els fitxers, exemple: http://www.club.org/competitions/junior
+
+#faire_tab_sans_publi=Fer les taules però no publicar-les
+
+#envoi_match=enviar encontres en curs
+#files_attente=Files d'espera
+#taille_files=Llargada de les files
+#vider_file_fichiers=Buidar les files d'espera dels fitxers
+#vider_file_matchs=Buidar les files d'espera dels assalt
+#console=Consola
+
+#useNomsCourts=Utilitzar els noms curts
+#fonc_non_acces=Aquesta funció no es pot accedir encara
+
+#compe_commencee=La competició ha començat
+#suppr_toutes_eq=Suprimir tots els equips
+
+#Licence_LicenceNat=Agafar les ^1 Llicències com a Llicències Nacionals
+#LicenceFIE_LicenceNat=Agafar les ^1 Licències FIE com a Llicències Nacionals
+#LicenceNat_LicenceFIE=Agafar les ^1 Llicències Nacionals com a Llicències FIE 
+
+#heure_avant_arbitre=ÉS MOLT RECOMANABLE posar les hores i les pistes abans que els àrbitres
+#eviter_meme_heure=per evitar que un àrbitre tingui dos assalts a la mateixa hora
+#arbitre_sans_heure=Es poden distribuir els àrbitres sense horari desclicant:
+
+#entite_deja_table=^1 entitat[1||s] suprimid[1|a|es], perquè  ja estan a la taula
+
+#PublierlesEquipes=Publicar els equips a la pàgina Web
+#RefaireIndex=Actulitzar els menú de la pàgina web
+#ViderIndex=Esborrar el menú de la pàgina web
+#refaire_doc_web=S'han d'actualitzar les menús de la pàgina web
+#Deposerlescss=Posar les CSS a la web
+#docu_actualise0=aquest document s'actualitza automàticament
+#docu_actualise1=Aquest document s'actualitza cada ^1
+#docu_actualise2=la podeu actualitzar vosaltres mateixos
+#refaire_demande=Hi ha ^1 fitxers en espera, torneu a demanar més tard
+#minute=minut[|s]
+#seconde=segon[|s]
+#info_probables=La informació "qualificada"  "+"  "-"  "eliminada" són molt probables però no són certeres
+#qual_probable=probablement qualificat
+#elim_probable=probablement eliminat
+#menu_document=Utilitzar el menú per escollir un document
+#cliquer_titre=Cliqueu al títol per obrir un document a l'esquerra
+#cliquer_ F5=Cliqueu F5 per obrir el document a una finestra completa i poder actualitzar-la amb F5 i guardar-ne la posició
+#menu_apparaitra=Un menú apareixerà quan la distribució de la competició hagi començat
+
+#site_web=Pàgina Web
+
+#pas_de_live=Aquesta competició no està abonada a LIVE
+
+#periodeAutoRefreshMatchs=Temps d'autoreferescament de les taules d'assalts, min 2s
+#onlyScoreChange=Enviar només canvis de puntuació
+#supprMatchsFinisApres=Suprimir els assalts acabats després de..., min 30s
+#supprTousMatchsApres=Suprimir tots els assalts després de..., min 300s
+#message-suppr=Enviar un missatge per suprimir totes les..., min 10s
+#supprTousMatchs=Suprimir tots els assalts
+#supprMatchsFinis=Suprimir els assalts acabats
+
+#tireurs_disponibles=^1 nou[1||s] tirador[1||s] present[1||s] disponible[1||s]
+
+#utiliser_dossards=Utilistzar els dorsals
+#cocher_si_bonne_raison=Cliqueu només si esteu segurs
+#pas_dossard=Sense dorsal
+#dossard_en_double=Dorsal duplicat
+#pb_dossard=PROBLEMA DE DORSAL
+#corriger_dossard=Corregir-ho o no es podran utilitzar els dorsals amb els marcadors
+#remplacant_pris=El reserva ^1 ha entrat al parcial ^2
+#pasRemplacement=No hi ha hagut canvi de tiradors
+#remplacementFait=S'ha fet la substitució
+#remplacementAFaire=Es fa la substitució
+#voir_ecran_piste=Veure la pantalla de la pista
+#cacher_ecran_piste=Amagar la pantalla de la pista
+
+#saut_page=Salt de pàgina
+
+#partie_tableau=Part de la taula
+#serie_non_classe_menu=Donar un No de sèrie als no classificats
+#serie_non_classe=No de sèrie per els no classificats
+
+#message_clas=missatge
+#cle_messages=Clau dels missatges
+#messages_pour_clas=Missatges per algunes classificacions
+#ecrire_lignes=Escriure les línies AMB ENGARDE, no amb DiapoEngarde, d'aquesta manera:
+#exemple_mes1=A:1-32:Qualificat per diumenge
+#exemple_mes2=A:33-64:Qualificat per la taula B de 15 hores
+#expli_mes1=A és la clau d'un grup de missatges, hi poden haver els grups A, B, C, etc.
+#expli_mes2=Quan utilitzem la clau A, si Puig té una posició 1 i 32, tindrà el missatge: Qualificat per diumenge
+
+#id_to_use=Identificadors utilitzables
+#cle_engarde=Clau Engarde (aconsellat)
+#cle_engarde_seule=Clau engarde
+#pas_id=Sense "Identificador"
+#id_en_double="Identificador" duplicat
+#pb_id=PROBLEMA AL CAMP D'IDENTIFICADOR
+#corriger_id=Corregir o no es podran utilitzar els identificadors amb els marcadors
+
+#use_langue_doc=Utilitzar la llengua dels documents 
+
+#handisport=Cadira de rodes
+#dedouble_poules=Desdoblar les poules?
+#dedouble_cette_poule=Desdoblar aquesta poule
+#dedouble_poules_a=Desdoblar les poules a partir de
+#choisir_odm=Escollir l'ordre dels assalts
+#monter=Pujar
+#descendre=Baixar
+#avecCopierColler=És possible copiar-enganxar
+#il_manque=falta
+#matchs_en_double=assalts duplicats
+#incorrect=ítem incorrecte
+#corriger_odm_incorrect=L'ordre dels assalts que s'ha donat és incorreccte, coleu canviar-lo?
+#sinon_auto=si no, es posarà per defecte o automàtic
+#poules_dedoublables=Algunes poules a més d'una pista
+#poules_sur_n_pistes=Les poules ^1 sobre quantes pistes
+#cette_poules_sur_n_pistes=&This poule  of ^1 on how many pistes
+#poule_n_pistes=poule a ^1 pistes
+#verifier=verificar
+#prendre=agafar
+#solution=^1 soluci[1|ó|ons]
+#liste_solutions=llista de solucions
+#add_liste_solutions=afegir a la llista de solucions
+#voir_liste_solutions=veure llista de solucions
+#prendre_solution=prendre aquesta solució
+#matchs_se_suivent=assalts seguits
+#ordre_fourni=ordre d'assalts que s'ha donat
+#ordre_engendre=ordre dels assalts generat
+#limite_poule_mini=Poules de ^1 màxim en mode mini
+
+#save_copy=Guardar còpia
+#connexion_pistes_ip=Connexió de les pistes IP
+#deconnexionPistes=Desconnexió les des pistes
+
+#titre=títol
+#avec_video=amb vídeo
+#lancer=Començar
+#menu=Menú
+#charger_pistes=Carregar un fitxer de pistes
+#save_copy_pistes=Guardar una còpia de les pistes
+#CacherToutesPistes=Amagar totes les pistes
+#mode_envoi=Com s'envien els assalts a l'Engarde Principal
+#depot_fichiers=per emmagatzematge de fitxers
+#par_UDP=per UDP
+#expli_depot_fichiers=Emmagatzematge de fitxers, mode d'Engarde antic, més lent
+#expli_par_UDP=UDP, mode d'Engarde nou, més ràpid, utilitza No IP i port
+#ip_engarde_ppal=Número IP de l'Engarde Principal
+#port_engarde_ppal=Port de l'Engarde Principal
+#raz=RAZ
+#si_score_modifie=quan es modifica la puntuació
+#si_situation_modifie=quan es modifica la situació
+#chaque_10s=quan la situació es modifica cada 10s
+#chaque_5s=quan la situació es modifica cada 5s
+#toujours=sense
+#sans_pilotage=sense control
+#pilotage_de=Control de
+#envoyer_principal=Enviar a Principal
+#envoyer=Enviar
+#nepasenvoyer=No enviar
+#affiche_dans_table=Posar a una taula
+
+#refus_message=Missatge refusat, la pista ^1 no està conectada
+#pas_piste_cet_ip=Missatge rebut de ^1 , aquest núm. IP no es correspon a una pista
+#next_ou_prev=Estem al final de la ronda, s'ha de fer un assalt següent o anterior
+#conflit_piste=CONFLICTE del núm. IP o del nom de la pista
+#ordi_connecte_piste=L'ordinador ^1 està connectat a la pista ^2
+
+#call_next_match=Es demana el següent assalt per la pista ^1
+#utiliser_next=Apreti "NEXT" almarcador per recuperar aquest assalt.
+#reset_possible=Provi a reinicializar el marcador per passar al següent assalt.
+#no_match_this_poule=Poule ^1 en curs en aquesta pista: no hi ha assalt per tirar.
+#match_prec_manuel=L'assalt anterior no s'ha acabat, el podreu obtenir amb Previous si la pista està en mode manual.
+#matchs_sans_heure=Encara hi ha assalts per tirar en aquesta pista, però no tenen hora.
+#no_match_other_poules=No hi ha cap altres assalt per tirar a les altres poules d'aquesta pista.
+#no_match_in_poules=No hi ha cap altres assalt per tirar a les poules d'aquesta pista.
+#no_poule_this_piste=No hi ha cap poule a aquesta pista.
+#no_match_this_piste=No hi ha cap assalt per tirar a aqusta pista.
+#no_tableau_this_piste=No hi ha cap assalt de la taula atcual utilitzant aquesta pista.
+#tab_pas_ds_tab=assalt de taula rebut, no estem a les taules.
+#est_pas_tab_en_cours=no és una taula en curs.
+#bad_num_match=mauvais numéro de match reçu
+#bad_cle_tir=la clau del tirador no és correcta
+#modif_match_fini=modificació de l'assalt acabada (acceptada)
+#modif_match_fini_non=modificació de l'assalt acabada (REBUTJADA)
+#refuse=DENEGAT
+
+#demande_con_deja=Es necessita connexió
+#progression_auto=progressió auto
+#periode_auto=Període d'enviament automàtic
+
+#remplacer=canviar
+
+#tableauWebDefaut=Definir els fitxers Web per defecte
+#change_style_css=Canviar l'estil CSS
+
+#imp_rencontre_sans_ordre=Imprimir els encontres fins i tot si no s'han introduit els tiradors
+
+18 JUILLET 2015
+
+#titulaire=titular
+#RemettreTitulaireEnX=El titular de l'equip ^1 entra al parcial núm. 
+#RemettreTitulaireNow=El titular de l'equip ^1 entra ara
+#RemettreTituAssautX=Tornar a posar el titular ^1 al parcial núm. ...
+#num_match_titulaire=número de l'assalt on entra el titular
+#zero_aucun=posar 0 als dos
+
+30 decembre 2015
+
+#id_sm=Smart ID
+#pass_sm=Contrasenya Smart
+#envoi_smart=Enviar informació a Engarde Smart
+#ConnectwithSmartId=Connectar amb Smart ID
+#pas_envoi_smart=NO s'està enviant informació a Engarde Smart
+#identifiant=Identificador
+#lancer_smart=Començar Engarde Smart
+#obtenir_identifiant=Obtenir un nou identificador de competició
+#obtenir_autre_identifiant=Obtenir un identificador del mateix grup que una altra
+#autre_identifiant=Identificador de l'altra competició
+#id_is=L'identificador és ^1
+#pass_is=La contrasenya és ^1 apunteu-la.
+#meme_pass=La contrasenya és la mateixa.
+#pass_saisi_smart=S'ha utilitzat la contrasenya a Engarde Smart
+#user_deja_pass=l'usuari ja té contrasenya 
+#clic_connex=Ara cliqueu a connexió
+#stat_du_groupe=Estadistiques del grup
+#reception_donnees_smart=Rebent dades d'Engarde Smart Assistant
+#pas_reception_donnees_smart=NO es reben dades d'Engarde Smart Assistant
+#envoyees_par=Dades de
+#renvoyer_donnees=Tornar a carregar tota la informació al servidor
+#supprimer_donnees=Aturar l'enviament de dades i esborrar-les totes del servidor.
+
+#delaientreenvoisfichiers=Intercal entre actualitzacions HTML: ^1s
+#tempsmaxicom=Temps màxim HTTP: ^1s
+#sous_titre=subtítol
+#message=missatge
+#bleu=blau
+#marron=marró
+#info_compe=La informació de la competició
+#tous_tableaux=Totes les taules
+#all_match_clas=Tots els assalts de poules i taules, i totes les classificacions
+#detruire_compe=Destruir la competició
+#detruire_compe_smart=Destruir la competició al servidor smart
+#tireurs_envoyes=tiradors enviats
+#titres_differents=Els títols de la competició 1 i el servidor smart 2 són diferents
+#veut_meme_titre=Vols mantenir els mateixos títols
+#is_it_right_id=Aquest és l'identificador correcte per la competició?
+#cliquer_modifier=Cliqueu Modificar i poseu el títol i el subtítol
+
+5 juillet 2016
+
+#mixte=mixte
+#garcons=homes
+#filles=dones
+#qui_commence=Qui comença?
+#re_qui_commence=Refer el sorteig per saber qui comença (homes o dones)?
+#garcons_commencent=Comencen els homes
+#filles_commencent=Comencen les dones
+#quand_garcons_commencent=Si comencen els homes:
+#quand_filles_commencent=Si comencen les dones:
+#devrait_gars_filles=^1 hi haurien d'haver 2 o 3 homes i 2 o 3 dones
+#melange_rang_mixte=Barrejar les posicions 1, 2, 3, 4 i 5, 6, 7, 8 a un equip
+#mettre_rang1234=Posar a un equip: 12R pels homes, 34R per les dones 
+#mettre_rang5678=Posar a un equip: 56R pels homes, 78R per les dones
+#gars1256=els homes han de tenir les posicions 1256
+#filles3478=les dones han de tenir les posicions 3478
+#erreur_gars_fille=Error: hi ha una noia amb un noi
+#n_gars=Hi han ^1 homes.
+#n_filles=Hi han ^1 noies.
+#compe_mixte=La competició és MIXTE
+#rencontre_mixte=El full d'encontre és MIXTE
+#cela_signifie=Això vol dir:
+#signifie2_2_2fois=2 homes lluiten contra 2 homes i 2 dones lluiten contra 2 dones (8 parcials)
+#compe_non_mixte=La competició és NO MIXTE
+#rencontre_non_mixte=El full d'encontre és NO MIXTE
+#signifie3_3=3 tiradors lluiten contra 3 tiradors (9 matchs)
+#changer_sexe=Voleu canviar el paràmetre 'Sexe' de la competició?
+#dabord_arbitres_moins=Prioritat pels àrbitres que menys han arbitrat
+#non_favorise=no preferible
+#pret=llest
+#deja_fait=ja està fet
+#deter_qui_commence=Sortejar qui comença
+#tableau_pas_pret=La taula no està llesta
+#on_effectue=Fer-ho igualment?
+#meme_tirage_tabs=Un sol sorteig per aquestes ^1 taules?
+#deter_qui_1-4_5-8=Sortejar qui és 1234, qui és 5678
+#qui_1-4_5-8=Qui és 1234, qui és 5678 ?
+#deter_qui_1-3_4-6=Sortejar qui és 123, qui és 456
+#qui_1-3_4-6=Qui és 123, qui és 456?
+#pas_remplacement=Sense canvi Cyrano
+#remplacement_unefois=Canvi Cyrano
+#categories=Categories
+#categories_fie=Categories de la FIE
+#cat_pas_pour_championnat=Les categories no es corresponen amb el campionat.
+
+2016/10/27
+
+#tableaux_par_niveau=Taules de ^1 per nivells
+#manque_tireurs=No hi ha prous tiradors
+#prend_tous_les_tir=Agafar tots els tiradors empatats
+
+#dernier_tour_par_niveau=Última volta de la poule per nivells
+
+#fic_pas_ecrit=El fitxer no s'ha desat
+#ajout_arbi_dispo=Afegir els àrbitres disponibles
+#presents=presents
+#disponibles=disponibles
+#tir_meme_clas=tiradors de la mateixa classificació
+#qui_devant=Indicar el que va abans dels altres
+
+#app_broadcast=Marcadors en mode Broadcast
+
+#formule_descri_tab=fòrmula amb taules personalitzades
+#utiliser_tab=Utilitzar les taules tal i com són
+#recalculer_tab=Recalcular els grups de la classificació
+#erreur_cal=Error al calcular les taules
+
+2017-05-29
+
+#Pasdepoule=Sense poule
+#enlever_contraintes=o treure restriccions
+#choix_formule=selecció de la fòrmula
+
+#nation2=nació 2
+#nation3=nació 3
+#nation4=nació 4
+#2eme=2n
+#3eme=3r
+#4eme=4rt
+
+#dabord_fermer=Abans d'ha de tancar la competició
+#rattacher=enganxar
+#detacher=desenganxar
+#suivi=seguiment
+
+#RedTermineeMaintenant=Reduir les poules acabades
+#RedNonEnCoursMaintenant=Reduir les poules que no estan en curs
+#RedTermineeAuto=Reduir les poules acabades automàticament
+#RedNonEnCoursAuto=Reduir les poules que no estan en curs automàticament
+
+#multi_nat=Multiples nacions
+
+#eviter0=CONFIGURACIÓ NOMÉS PER EXPERTS
+#eviter1=EVITAR FERAQUESTS CANVIS A UNA COMPETICIÓ COMENÇADA
+#eviter2=PRIMER FEU-HO A UNA COMPETICIÓ TEST
+#modification_importante=modificació important
+#nb_vainqueurs_clas=Número de vencedors
+#nb_battus_clas=Número de perdedors
+#recalcule_poules=recalcular les poules
+#vic_score_precise=victòria a menys de 5 tocats
+#non_supprimable_now=aquesta entitat no es pot suprimir en aquest moment
+
+#noms_pistes=Noms de les pistes
+#premier_IP=Primer número IP
+#ex_noms_pistes=Exemple: 1-15 Final Bleu Jaune Vert Rouge 
+#pistes_a_utiliser=Pistes à utiliser
+#pistes_a_utiliser_ordre_IP=Utilitzar les pistes amb l'ordre dels números IP
+#ajout_une_piste=Afegir una pista
+#ajout_pistes_ip=Afegir pistes IP
+#ajout_pistes_semi=Afegir pistes SEMI 1.0
+#piste_incorrecte=pista incorrecta
+#heure_incorrecte=hora incorrecta
+#piste_dupliquee=pista duplicada
+#ip_duplique=IP duplicat
+#descri_formule=desripció de la fòrmula
+#charger_formule_perso=canviar una fòrmula personal
+
+#mettre_no_quart=Posar els números utilitzats de ^1
+
+#maj_fichiers=Actualització de fitxers
+#maj_succes=Actualització acabada
+#maj_echecs=Error a l'actualització
+
+#poule_entiere=ha tirat una poule sencera
+#match_entier=ha acabat un assalt
+#match_tire=assalt tirat
+#classe=classificat
+#non_classe=no classificat
+#sans_rang=classificat sense posició (quan acabi la taula)
+#sans_rang_en_fin=a la llista final sense rànquing (un cop ha acabat la competició)
+#statut_different=l'estatus de la taula no es correspon amb
+#present_ni_ni=present a la llista però no a la poule ni a l'assalt
+
+#accueil=inici
+#affichage=Mostra
+#ouvert_recent=obertes recenment
+#tables_dans_fenetre=Les taules estan al menú FINESTRES
+
+#cliquer_accueil=Cliqueu Inici per tornar a l'inici
+#montrer_svg=Ensenyar els arxius de guardat principals d'aquesta competició
+#faut_quitter_engarde=CAL SORTIR DE L'ENGARDE.
+#engarde_sauve=L'Engarde la desarà.
+#relancer_engarde_svg=S'haurà de tornar a obrir l'Engarde per utilitzar l'arxiu de guardat.
+#pas_svg_compe=No hi ha cap copia de seguretat
+#passer_compe_rep=Voleu canviar la competició del directori ^1
+#vers_rep=al directori ^1
+#passer_compe_parent=Moure la competició al directori pare
+#incoherence_formule=INCOHERÈNCIA A LA FÒRMULA, FALTEN LES TAULES
+#charger_nouv_formule=CANVIAR A LA NOVA FÒRMULA
+#retour_poule_par_svg=UTILITZAR UN ARXIU DE GUARDAT O TORNAR AL FINAL DE ELS POULES PER CANVIR LA FÒRMULA
+#use_backup=UTILITZAR UN ARXIU DE GUARDAT
+#quand_meme_ouvrir=Vouleu obrir igualment aquesta competició
+#err_load_formula=ERROR AL CARREGAR LA FÒRMULA: REINICIAR LA FÒRMULA
+#err_table=ERREUR, TAULES NO CARREGADES
+
+#suppr_pistes_avant=S'han de suprimir les pistes que hi havia abans
+
+#k_meme_place=escriure k o fer ctrl+k a la finestra perquè la barra d'eines aparegui a la mateixa posició
+#esc_ferme=Les finestres es poden tancar amb la tecla ESC
+
+#connexion_eservice=Connexió a l'engarde-service
+#autre_connexion=Una altra connexió
+#transmission=La transmissió de poules i taules es fa cada ^1s.
+#aussi_periode=Aquest també és el temps que triga l'Engarde Smart en refrescar.
+#periode_defaut=Aquest és el temps per defecte.
+#periode_achetee=El temps comprat és ^1s.
+#periode_plus_grande=El temps aplicat és més gran perquè el nombre de triadors és més alt que l'indicat a la compra.
+#periode_plus_courte=Per reduir el temps connecteu-vos a la vostra compta d'engarde-service.com 
+#modif_nb_tir=i canvieu el nombre de tiradors.
+#modif_periode=i canvieu el temps.
+
+#date_diff=La data és diferent
+#arme_diff=L'arma és diferent
+#sexe_diff=El gènere és diferent
+#type_diff=El tipus és diferent
+#smartID_diff=L'ID SMART és diferent
+
+#bloque=bloquejat
+#bloquer_pass=bloquejar la contrasenya
+#debloquer_pass=desbloquejar la contrasenya
+#bloquer_les_pass=bloquejar totes les contrasenyes
+#debloquer_les_pass=desbloquejar totes les contrasenyes
+#match_bloque=bloquejar l'assalt
+#poule_bloquee=bloquejar la poule
+#modifiable=modificable
+#verifie=verificat
+
+#icone_verif=La icona "Verificat" significa "Verificat, només es pot modificar aquí".
+#icone_cadenas=La icona "Candau" significa "Només es pot modificar aquí".
+#icone_non=La icona "Candau amb creu" o cpa icona, volen dir "Es pot modificar remotament".
+#icone_clic=Clicar la icona per canviar.
+#menu_distance=El menú permet canviar tot a "Es pot modificar remotament".
+#modif_distance=Tota a "Es pot modificar remotament"
+#faible_itinerance=accès a la informaciólimitat, es gasten menys dades mòbils
+
+#Interdireouvertureparfichier=Prohibir obrir en Auxiliar i DiapoEngarde
+#InterdireouvertureparfichierQ1=Voleu prohibir que l'Engarde Auxiliar i DiapoEngarde llegeixin els arxius de la competició,
+#InterdireouvertureparfichierQ2=i obligar a utilitzar el mode client-servidor o DiapoEngarde per internet (molt recomenat)
+#dangereuxparfichier1=És perillós obrir una competició amb Auxiliar i DiapoEngarde.
+#dangereuxparfichier2=Es recomana utilitzar el mode CLIENT-SERVIDOR o DiapoEngarde per internet.
+#interditparfichier1=No es pot obrir aquesta competició en Auxiliar i amb DiapoEngarde. 
+#interditparfichier2=Utilitzi el mode CLIENT-SERVIDOR o DiapoEngarde per internet.
+#client_serveur_vert=Els arxius obert amb el mode CLIENT-SERVIDOR es mostren en verd.
+
+#a_partir_donnes_smart=De les dades SMART d'internet
+#ouvrir_internet=Obrir per internet
+#get_data_internet=Carregant les dades SMART d'internet
+#smart_id=identificador SMART
+
+#methode_globale=mètode global
+#methode_globale_val=mètode global amb intervals
+#methode_globale_formu=mètode global amb fòrmula
+
+#pasApas=pas a pas
+#phaseParPhase=fase a fase
+#generer_pass=Generar contrassenyes
+#effacer_pass=Esborrar contrassenyes
+#imprimer_pass=Imprimir contrassenyes
+
+#compe_aujourdhui=Competicions d'avui
+#saisie_identifiant=Introduir identificador de la competició
+#saisie_date=Introduir una data per cercar competicions
+#mois1=gen.
+#mois2=febr.
+#mois3=març
+#mois4=abr.
+#mois5=maig
+#mois6=juny
+#mois7=jul.
+#mois8=ag.
+#mois9=set.
+#mois10=oct.
+#mois11=nov.
+#mois12=des.
+write o or y for month_before_day to get "jan. 4" - write n to get "4 jan."
+#month_before_day=n
+
+#bienvenue=Benvinguts a ^1
+#bienvenue0=Benvinguts a Engarde 10
+
+#bienvenue11=Degut a un canvi als contextos, les versions 10.1 i posteriors no són compatibles amb les versions anteriors.
+#bienvenue12=Per més informació consultar "Help | Recent Manuals xx | versions".
+#bienvenue13=Amb Engarde SMART els àrbitres o els ajudants poden introduir els resultats dels assalts.
+
+#bienvenue14=No es recomana obrir les competicions en Auxiliar o DiapoEngarde per arxius. Pot produir conflictes de lectura/escriptura en els fitxers.
+#bienvenue15=Es recomana utilitzar el mode CLIENT-SERVIDOR (les competicions es mostren en verd) o DiapoEngarde per internet.
+
+#bienvenue16=La versió 10.2 inclou les millores de la Copa del Món de Budapest i d'agost de 2019.
+#bienvenue17=Podeu trobar una llista d'aquestes millores a engarde-service.com a l'historial de versions.
+
+============= 2022-12-20
+
+#long_time=&Long-term competition
+#forfait_par_match=&Match-by-match forfeits
+#points_bonus=&Points and bonuses
+#clas_poule_points_bonus=&Poule rankings with points and bonuses
+
+#pas_abandon1=&In "Match-by-match forfeits" mode, Engarde doesn't register abandonments.
+#pas_abandon2=&Give a victory to the competitor opposite the one who abandons.
+#pas_abandon3=&If the opposing competitor has N points and the abandoning competitor has P points and N>P, put these points.
+#pas_abandon4=&If the opposing competitor has N points and the abandoning competitor has P points and N<=P, 
+#pas_abandon5=&give P points to the competitor who abandons and P+1 points to the opposite competitor.
+
+#expli_forfait1=&In "Match-by-match forfeits" mode,  type f as score for a forfeit
+#expli_forfait2=&Engarde will put a victory on the opposing competitor.
+#expli_forfait_plus_de_2=&To put more than ^1 forfeits in a competitor's poule, use Engarde Main
+#expli_efface_score_aux=&To delete a score in a pool, it's better to use Engarde Main
+
+#modification_symetrique=&modification of the symmetrical
+#modification=&modification
+#verif_fait_modif=&The poule check made ^1 changes
+#imp_formu_points_bonus=&Print the formula to view point and forfeit parameters
+
+#points_V=&Number of points for a victory
+#points_D=&Number of points for a defeat
+
+#bonus_offensif=&Offensive bonus
+#expli_bonus_V=&The offensive bonus is noted "Bonus V" or "bv".
+#seuil_bonus_V=&Seuil de bonus offensif, TD-TR >=
+#points_bonus_V=&Points for an offensive bonus
+
+#bonus_defensif=&Defensive bonus
+#expli_bonus_D=&The defensive bonus is noted "Bonus D" or "bd".
+#seuil_bonus_D=&Defensive bonus threshold, TR-TD <=
+#points_bonus_D=&Points for a defensive bonus
+
+#seuil_forfait_total=&Total forfeit threshold
+#pas_seuil_forfait_total=&No total forfeit threshold
+#seuil_forfait_total_expli_1=&Type 4 for 4 forfeits to become a forfeit for the entire pool
+#seuil_forfait_total_expli_2=&Type 0 to have no total forfeit 
+
+============= 2023-09-14
+
+#verif_num_serie=&Checking competitor numbers for initial classification
+#num_serie_titre=&competitor numbers for initial ranking
+#sans_rang_apos=&without rank
+#mettre=&put
+#il_faut_mettre=&You have to put
+#les_non_classes=&unranked competitors
+#garder _rangs_autres=&and keep ranks for other competitors
+#certains_competiteurs=&some competitors
+#competiteurs_concernes=&competitors concerned
+#a_partir_de=&from
+#sur_de=&Are you sure you want
+#passe_no=&step number ^1
+#ancienne_methode=&old method
+#non_c_ok=&no, it's ok
+#battus_demis_exaequo=&The semi-final losers are tied

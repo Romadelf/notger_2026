@@ -1,0 +1,4 @@
+{[type general_ranking] [classedebase tireur] [champs_info_select (marge_gche rang
+ nomprenom categorie club1 nation1)] [champs_info_taille (16 97 606 216 235 138)]
+ [champs_info_format (0 110 "Arial" 36 16777215 2 8388608 2 2 22)] [ordre_select
+ ordre_rang] [tempo 7] [grille grille] [typeclas g] [decalage 0] [ajustement 1]}

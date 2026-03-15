@@ -1,0 +1,20 @@
+({[date "~16/11/2023"] [type "txt"] [chemin "SystemeEngarde10/Ressources2/Textes/aides_eng.txt"]}
+ {[date "~16/11/2023"] [type "txt"] [chemin "SystemeEngarde10/Ressources2/Textes/aides_fra.txt"]}
+ {[date "~16/11/2023"] [type "txt"] [chemin "SystemeEngarde10/Ressources2/Textes/textes_cat.txt"]}
+ {[date "~16/11/2023"] [type "txt"] [chemin "SystemeEngarde10/Ressources2/Textes/textes_cn.txt"]}
+ {[date "~16/11/2023"] [type "txt"] [chemin "SystemeEngarde10/Ressources2/Textes/textes_eng.txt"]}
+ {[date "~16/11/2023"] [type "txt"] [chemin "SystemeEngarde10/Ressources2/Textes/textes_esp.txt"]}
+ {[date "~16/11/2023"] [type "txt"] [chemin "SystemeEngarde10/Ressources2/Textes/textes_esp_esp.txt"]}
+ {[date "~16/11/2023"] [type "txt"] [chemin "SystemeEngarde10/Ressources2/Textes/textes_fra.txt"]}
+ {[date "~16/11/2023"] [type "txt"] [chemin "SystemeEngarde10/Ressources2/Textes/textes_ger.txt"]}
+ {[date "~16/11/2023"] [type "txt"] [chemin "SystemeEngarde10/Ressources2/Textes/textes_gl.txt"]}
+ {[date "~16/11/2023"] [type "txt"] [chemin "SystemeEngarde10/Ressources2/Textes/textes_hun.txt"]}
+ {[date "~16/11/2023"] [type "txt"] [chemin "SystemeEngarde10/Ressources2/Textes/textes_por.txt"]}
+ {[date "~16/11/2023"] [type "txt"] [chemin "SystemeEngarde10/Ressources2/Textes/textes_rus.txt"]}
+ {[date "~16/11/2023"] [type "txt"] [chemin "SystemeEngarde10/Ressources2/Textes/textes_ita.txt"]}
+ {[date "~25/11/2023"] [type "txt"] [chemin "Ressources1/contexte_ffe.txt"]} {[date
+ "~27/11/2023"] [type "pdf"] [chemin "SystemeEngarde10/Ressources2/Manuels/en/EngardeRefereeAllocationNov2023.pdf"]}
+ {[date "~27/11/2023"] [type "pdf"] [chemin "SystemeEngarde10/Ressources2/Manuels/fr/EngardeAffectationArbitresNov2023.pdf"]}
+ {[date "~14/10/2025"] [type "txt"] [chemin "Ressources1/ligues_ffe.txt"]} {[date
+ "~14/10/2025"] [type "csv"] [chemin "Ressources1/departements_ffe.csv"]} {[date
+ "~14/10/2025"] [type "txt"] [chemin "Ressources1/clubs_ffe.txt"]})

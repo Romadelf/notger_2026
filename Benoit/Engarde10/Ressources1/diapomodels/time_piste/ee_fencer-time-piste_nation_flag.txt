@@ -1,0 +1,5 @@
+{[type time_piste] [classedebase tireur] [champs_info_select (marge_gche nomprenom
+ drapeau nation1 heure_piste marge1 marge2 marge_dte)] [champs_info_taille (17 477
+ 84 110 440 17 17 17)] [champs_info_format (0 105 "Arial" 28 16777215 2 8388608 2
+ 2 22)] [ordre_select ordre_alpha] [grille grille] [afficherheure vrai] [afficherpiste
+ vrai] [afficherplace vrai] [ajustement 1]}

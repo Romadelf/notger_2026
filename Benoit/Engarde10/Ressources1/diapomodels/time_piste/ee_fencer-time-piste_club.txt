@@ -1,0 +1,5 @@
+{[type time_piste] [classedebase tireur] [champs_info_select (marge_gche nomprenom
+ club1 nation1 heure_piste)] [champs_info_taille (16 477 309 109 300)] [champs_info_format
+ (0 105 "Arial" 28 16777215 2 8388608 2 2 22)] [ordre_select ordre_alpha] [tempo
+ 6] [grille grille] [afficherheure vrai] [afficherpiste vrai] [afficherplace vrai]
+ [ajustement 1]}

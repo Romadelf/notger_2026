@@ -1,0 +1,8 @@
+(def contexte
+  nomFichier contexte_gene.txt
+  federation "Contexte_general"
+  texte_ligue etat
+  fichiers (ficnations)
+  ficnations {[type nation] [chemin "nations.txt"]
+              [info_champs ((nom 1 3) (continent 5 3) (nom_etendu 9 20))]})
+

@@ -1,0 +1,143 @@
+;24Formula with repechage from 64
+;Tableau final of 8 with 4 direct qualified and 4 from repechage
+{[classe suite_tableaux]
+ [critere_constitution classement_initial]
+ [hasard_par_2 non]
+ [qualifies 16]
+ [nom "A"]
+ [nom_etendu "main tableau"]
+ [nom_tableaux "tableau of ^1"]
+ [origine1 "classement-initial 1-1000"]
+ [cle 1]
+ [entites_dans_tableau 24]
+}
+{[classe suite_tableaux]
+ [critere_constitution progression_naturelle]
+ [hasard_par_2 non]
+ [qualifies 16]
+ [nom "B"]
+ [nom_etendu "tableau of losers of tableau of 64"]
+ [nom_tableaux "tableau of losers of tableau of 64"]
+ [origine1 "battus-tableau A64"]
+ [cle 2]
+}
+{[classe suite_tableaux]
+ [critere_constitution classement_initial_par_groupes]
+ [hasard_par_2 non]
+ [protege_debut oui]
+ [qualifies 16]
+ [nom "C"]
+ [nom_etendu "2nd tableau of repechage"]
+ [nom_tableaux "tableau of repechage 2"]
+ [origine1 "battus-tableau A32"]
+ [origine2 "vainqueurs-suite B"]
+ [cle 6]
+}
+{[classe suite_tableaux]
+ [critere_constitution classement_initial_par_groupes]
+ [hasard_par_2 non]
+ [protege_debut oui]
+ [qualifies 4]
+ [nom "D"]
+ [nom_etendu "Tableau A"]
+ [nom_tableaux "tableau A of ^1"]
+ [cle 7]
+ [origine1 "vainqueurs-suite A"]
+ [origine2 "vainqueurs-suite C"]
+}
+{[classe suite_tableaux]
+ [critere_constitution progression_naturelle]
+ [hasard_par_2 non]
+ [qualifies 8]
+ [nom "E"]
+ [nom_etendu "tableau D"]
+ [nom_tableaux "tableau D"]
+ [origine1 "battus-tableau D32"]
+ [cle 3]
+}
+{[classe suite_tableaux]
+ [critere_constitution classement_initial_par_groupes]
+ [hasard_par_2 non]
+ [protege_debut oui]
+ [qualifies 4]
+ [nom "F"]
+ [nom_etendu "Tableaux E-F"]
+ [nom_tableaux "tableaux E-F"]
+ [origine1 "battus-tableau D16"]
+ [origine2 "vainqueurs-suite E"]
+ [cle 8]
+}
+{[classe suite_tableaux]
+ [critere_constitution classement_initial_par_groupes]
+ [hasard_par_2 non]
+ [protege_debut oui]
+ [qualifies 4]
+ [nom "G"]
+ [nom_etendu "Tableau G"]
+ [nom_tableaux "tableau G"]
+ [origine1 "battus-tableau D8"]
+ [origine2 "vainqueurs-suite F"]
+ [cle 9]
+}
+{[classe suite_tableaux]
+ [critere_constitution classement_initial_par_groupes]
+ [hasard_par_2 non]
+ [qualifies 0]
+ [nom "H"]
+ [nom_etendu "tableau final"]
+ [nom_tableaux "tableau final of ^1"]
+ [origine1 "vainqueurs-suite D"]
+ [cle 5]
+ [origine2 "vainqueurs-suite G"]
+}
+
+{[classe multi_affichage]
+ [nom "T128-32"]
+ [nom_etendu "Tableau 128-32"]
+ [liste_tab_a_imp ( ((a128 a32)) )]
+ [cle 2]
+}
+
+{[classe multi_affichage]
+ [nom "Battus64"]
+ [nom_etendu "Losers of 64"]
+ [liste_tab_a_imp ( ((b32 b32)) )]
+ [cle 3]
+}
+
+{[classe multi_affichage]
+ [nom "Repechage2"]
+ [nom_etendu "Repechage #2"]
+ [liste_tab_a_imp ( ((c32 c32)) )]
+ [cle 5]
+}
+
+{[classe multi_affichage]
+ [nom "A32-8"]
+ [nom_etendu "Tableaux A32-8"]
+ [liste_tab_a_imp ( ((d32 d8)) )]
+ [cle 6]
+}
+
+{[classe multi_affichage]
+ [nom "D16-E16"]
+ [nom_etendu "Tableaux D E F"]
+ [liste_tab_a_imp ( ((e16 e16)) ((f16 f8)))]
+ [cle 7]
+}
+
+{[classe multi_affichage]
+ [nom "D16-E16"]
+ [nom_etendu "Tableaux G and final"]
+ [liste_tab_a_imp ( ((g8 g8)) ((h8 h2)))]
+ [cle 8]
+}
+
+{[classe fichier_web] [fichier "tableau128.htm"] [depuis "a128"] [jusqua "a32"] [rang 1] [cle 1]} 
+{[classe fichier_web] [fichier "tableauRepech1.htm"] [depuis "b32"] [jusqua "b32"] [rang 1] [cle 2]} 
+{[classe fichier_web] [fichier "tableauRepech2.htm"] [depuis "c32"] [jusqua "c32"] [rang 1] [cle 3]} 
+{[classe fichier_web] [fichier "tableauRepech3.htm"] [depuis "d32"] [jusqua "d8"] [rang 1] [cle 4]} 
+{[classe fichier_web] [fichier "tableauRepech4.htm"] [depuis "e16"] [jusqua "e16"] [rang 1] [cle 5]} 
+{[classe fichier_web] [fichier "tableauRepech4.htm"] [depuis "f16"] [jusqua "f8"] [rang 2] [cle 6]} 
+{[classe fichier_web] [fichier "tableau8.htm"] [depuis "g8"] [jusqua "g8"] [rang 1] [cle 7]} 
+{[classe fichier_web] [fichier "tableau8.htm"] [depuis "h8"] [jusqua "h2"] [rang 2] [cle 8]} 

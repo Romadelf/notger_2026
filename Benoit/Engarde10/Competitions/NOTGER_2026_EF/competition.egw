@@ -1,0 +1,754 @@
+;|compe=5564c2|encoding=iso-8859-1|date=15/3/2026|arme=epee|sexe=feminin|type_compe=individuelle|titre=Tournoi International Notger - Epée féminine /Tournoi International Notger - Epée féminine|etat=Saisie - Présence - Choix de la formule|
+(def competition
+ type competition
+ titre_reduit {[type chaine] [taillecar 16] [nomchamp titre_reduit] [texte titre_reduit]}
+ domaine_compe {[type domaine_compe] [taillecar 15] [defaut international] [nomchamp domaine_compe] [texte domaine_compe]}
+ championnat {[type chaine] [taillecar 16] [nomchamp championnat] [texte championnat]}
+ id {[type chaine] [taillecar 16] [saisie_bloquee vrai] [nomchamp id] [texte id]}
+ id_reseau {[type chaine] [taillecar 10] [maxcar 8] [nomchamp id_reseau] [texte id_reseau] [saisie_bloquee vrai]}
+ sorte {[type chaine] [taillecar 16] [sans_saisie vrai] [nomchamp sorte] [texte sorte]}
+ type_compe {[type type_compe] [taille 40] [taillecar 12] [defaut individuelle] [saisie_bloquee vrai] [nomchamp type_compe] [texte type_compe]}
+ handisport {[type oui_non] [taille 40] [taillecar 3] [defaut non] [nomchamp handisport] [texte handisport]}
+ arme {[type arme] [taillecar 10] [nomchamp arme] [texte arme]}
+ sexe {[type sexe_compe] [taillecar 10] [defaut masculin] [nomchamp sexe] [texte sexe]}
+ categorie {[type categorie] [taillecar 10] [nomchamp categorie] [texte categorie]}
+ annee {[type chaine] [taillecar 10] [nomchamp annee] [texte annee]}
+ titre1 {[type chaine] [taillecar 40] [nomchamp titre1] [texte titre1]}
+ titre2 {[type chaine] [taillecar 40] [nomchamp titre2] [texte titre2]}
+ titre3 {[type chaine] [taillecar 40] [nomchamp titre3] [texte titre3]}
+ titre4 {[type chaine] [taillecar 40] [nomchamp titre4] [texte titre4]}
+ titre_ligne {[type chaine] [taillecar 40] [nomchamp titre_ligne] [texte titre_ligne]}
+ titre_diapo {[type chaine] [taillecar 40] [nomchamp titre_diapo] [texte titre_diapo]}
+ date {[type date] [taillecar 10] [nomchamp date] [texte date]}
+ datefin {[type date] [taillecar 10] [nomchamp datefin] [texte datefin]}
+ federation {[type chaine] [taillecar 16] [nomchamp federation] [texte federation]}
+ organisateur {[type chaine] [taillecar 20] [nomchamp organisateur] [texte organisateur]}
+ lieu {[type chaine] [taillecar 40] [nomchamp lieu] [texte lieu]}
+ ville_org {[type chaine] [texte ville] [taillecar 20] [nomchamp ville_org]}
+ nation_org {[type chaine] [texte nation] [taillecar 5] [style majuscule] [maxcar 3] [nomchamp nation_org]}
+ urlorganisateur {[type chaine] [taillecar 40] [nomchamp urlorganisateur] [texte urlorganisateur]}
+ liveurl {[type chaine] [texte liveurl] [taillecar 40] [nomchamp liveurl]}
+ videourl {[type chaine] [texte videourl] [taillecar 40] [nomchamp videourl]}
+ zonehoraire {[type chaine] [texte zonehoraire] [taillecar 16] [nomchamp zonehoraire]}
+ idtournoi {[type chaine] [texte idtournoi] [taillecar 16] [saisie_bloquee vrai] [nomchamp idtournoi]}
+ titrecourttournoi {[type chaine] [texte titrecourttournoi] [taillecar 16] [nomchamp titrecourttournoi]}
+ titrelongtournoi {[type chaine] [texte titrelongtournoi] [taillecar 40] [nomchamp titrelongtournoi]}
+ entites_premieres (tireur arbitre)
+ tables (tireur arbitre assistant club ligue nation piste url_live_video fichier_web)
+ typetype entite
+ champs_affiches (titre_reduit domaine_compe championnat id id_reseau sorte type_compe handisport arme sexe categorie annee titre1 titre2 titre3 titre4 titre_ligne titre_diapo date datefin federation organisateur lieu ville_org nation_org urlorganisateur liveurl videourl zonehoraire idtournoi titrecourttournoi titrelongtournoi)
+ tous_les_champs (cle classe titre_reduit domaine_compe championnat id id_reseau sorte type_compe handisport arme sexe categorie annee titre1 titre2 titre3 titre4 titre_ligne titre_diapo date datefin federation organisateur lieu ville_org nation_org urlorganisateur liveurl videourl zonehoraire idtournoi titrecourttournoi titrelongtournoi)
+)  
+
+(def ma_competition
+ classe competition
+ domaine_compe international
+ type_compe individuelle
+ handisport non
+ sexe feminin
+ nodermodif 72
+ version "Engarde(Mini) 10.26.6 - 30/01/2024"
+ version_fic 90
+ contexte {[nomfichier contexte_gene.txt] [federation "Contexte_general"] [texte_ligue etat] [fichiers (ficnations)] [ficnations {[type nation] [chemin "nations.txt"] [info_champs ((nom 1 3) (continent 5 3) (nom_etendu 9 20))]}]}
+ texte_ligue etat
+ numsave 0
+ numsavecopie 0
+ date_oed "202"
+ info_categorie {[championnat ffceb] [saison_reference "2016-2017"] [info_categorie_dates (("Vétéran 70+" "~1/1/1900" "~31/12/1947") ("Vétéran 60-69" "~1/1/1948" "~31/12/1957") ("Vétéran 50-59" "~1/1/1958" "~31/12/1967") ("Vétéran 40-49" "~1/1/1968" "~31/12/1977") (senior "~1/1/1978" "~31/12/1996") ("U 20" "~1/1/1997" "~31/12/1999") ("U 17" "~1/1/2000" "~31/12/2002") ("U 14" "~1/1/2003" "~31/12/2004") ("U 12" "~1/1/2005" "~31/12/2006") ("U 10" "~1/1/2007" "~31/12/2008") ("Mini" "~1/1/2009" "~31/12/2015"))] [autre_categorie_dates ((veteran "~1/1/1900" "~31/12/1977") ("M23" "~1/1/1994" "~31/12/1996"))]}
+ date "~15/3/2026"
+ id_reseau "5564c2"
+ titre_reduit "Tournoi International Notger - Epée féminine"
+ id "NOTGER_LG_2026_EF"
+ arme epee
+ categorie senior
+ annee "2026"
+ titre1 "Tournoi International Notger - Epée feminine"
+ titre2 "Notger Internationaal Toornooi - Degen dames"
+ titre3 "Notger International Tournament - Epée women"
+ datefin "~15/3/2026"
+ federation "FFCEB"
+ organisateur "Cercle Royal d'Escrime de la Sauvenière"
+ lieu "Hall Omnisports de la Constitution"
+ ville_org "Liège"
+ nation_org "BEL"
+ urlorganisateur "https://escrime-sauveniere.be/"
+ titrecourttournoi "Notger 2026"
+ titrelongtournoi "Tournoi International Notger"
+ modifie vrai
+ repertoiresvg "C:\\perso\\escrime\\Engarde10\\Competitions\\NOTGER_2026_EF-BAK"
+ httpsmartenvoi vrai
+ httphtmlenvoi vrai
+ httpliveenvoi vrai
+ type_rep_statut dnf
+ html_tab_affiliation nation
+ repertoirecompe "C:\\perso\\escrime\\Engarde10\\Competitions\\NOTGER_2026_EF"
+ computername "DESKTOP-HBOIHK8"
+ typeordi "HEDPGHCBHKHMHF"
+ typedisque "CDDDCKGJDDCMGFDPHDCDHKHBHCDHCJHCDPEDECHPCAHFCHHPDEHCFFHBHOCJ"
+ organismehttpfichier "escrime_sauveniere"
+ eventhttpfichier "notger_2026"
+ compehttpfichier "notger_2026_ef"
+ smartid "5564c2"
+ passhttpfichier "!GPEBCMDMECHKHOCAFM"
+ id_smart "5564c2"
+ titre_ligne "Tournoi International Notger - Epée féminine"
+ httpactif vrai
+ tireur ()
+ arbitre ()
+ assistant ()
+ club ()
+ ligue ()
+ nation ()
+ piste ()
+ url_live_video ()
+ fichier_web ()
+)  
+
+(def formule
+ type formule
+ nombre_entites {[type entier] [taille 32] [taillecar 3] [defaut 100] [nomchamp nombre_entites] [texte nombre_entites]}
+ clasmt_origine {[type serie_points] [taille 50] [taillecar 7] [defaut serie] [nomchamp clasmt_origine] [texte clasmt_origine]}
+ entree_progressive {[type oui_non] [taille 40] [taillecar 3] [defaut non] [nomchamp entree_progressive] [texte entree_progressive]}
+ poules_dedoublables {[type oui_non] [taille 40] [taillecar 3] [defaut non] [nomchamp poules_dedoublables] [texte poules_dedoublables]}
+ nombre_touches_poules {[type entier] [defaut 5] [nomchamp nombre_touches_poules] [texte nombre_touches_poules]}
+ dernier_tour_par_niveau {[type oui_non] [taille 40] [taillecar 3] [defaut non] [nomchamp dernier_tour_par_niveau] [texte dernier_tour_par_niveau]}
+ qual_fin_poules_sur {[type entier] [taille 32] [taillecar 3] [defaut 1] [nomchamp qual_fin_poules_sur] [texte qual_fin_poules_sur]}
+ clas_fin_poules_sur {[type entier] [taille 32] [taillecar 3] [defaut 1] [nomchamp clas_fin_poules_sur] [texte clas_fin_poules_sur]}
+ clas_poule_points_bonus {[type oui_non] [taille 40] [taillecar 3] [defaut non] [nomchamp clas_poule_points_bonus] [texte clas_poule_points_bonus]}
+ forfait_par_match {[type oui_non] [taille 40] [taillecar 3] [defaut non] [nomchamp forfait_par_match] [texte forfait_par_match]}
+ points_v {[type entier] [taille 32] [taillecar 3] [sans_saisie vrai] [invisible vrai] [defaut 5] [nomchamp points_v] [texte points_v]}
+ seuil_bonus_v {[type entier] [taille 32] [taillecar 3] [sans_saisie vrai] [invisible vrai] [defaut 4] [nomchamp seuil_bonus_v] [texte seuil_bonus_v]}
+ points_bonus_v {[type entier] [taille 32] [taillecar 3] [sans_saisie vrai] [invisible vrai] [defaut 1] [nomchamp points_bonus_v] [texte points_bonus_v]}
+ points_d {[type entier] [taille 32] [taillecar 3] [sans_saisie vrai] [invisible vrai] [defaut 1] [nomchamp points_d] [texte points_d]}
+ seuil_bonus_d {[type entier] [taille 32] [taillecar 3] [sans_saisie vrai] [invisible vrai] [defaut 1] [nomchamp seuil_bonus_d] [texte seuil_bonus_d]}
+ points_bonus_d {[type entier] [taille 32] [taillecar 3] [sans_saisie vrai] [invisible vrai] [defaut 1] [nomchamp points_bonus_d] [texte points_bonus_d]}
+ param_points_confirmes {[type entier] [taille 32] [taillecar 3] [sans_saisie vrai] [invisible vrai] [defaut 0] [nomchamp param_points_confirmes] [texte param_points_confirmes]}
+ nombre_touches_tableaux {[type entier] [defaut 15] [nomchamp nombre_touches_tableaux] [texte nombre_touches_tableaux]}
+ typetype entite
+ champs_affiches (nombre_entites clasmt_origine entree_progressive poules_dedoublables nombre_touches_poules dernier_tour_par_niveau qual_fin_poules_sur clas_fin_poules_sur clas_poule_points_bonus forfait_par_match nombre_touches_tableaux)
+ tous_les_champs (cle classe nombre_entites clasmt_origine entree_progressive poules_dedoublables nombre_touches_poules dernier_tour_par_niveau qual_fin_poules_sur clas_fin_poules_sur clas_poule_points_bonus forfait_par_match points_v seuil_bonus_v points_bonus_v points_d seuil_bonus_d points_bonus_d param_points_confirmes nombre_touches_tableaux)
+)  
+
+(def ma_formule
+ classe formule
+ nombre_entites 100
+ clasmt_origine serie
+ entree_progressive non
+ poules_dedoublables non
+ nombre_touches_poules 5
+ dernier_tour_par_niveau non
+ qual_fin_poules_sur 1
+ clas_fin_poules_sur 1
+ clas_poule_points_bonus non
+ forfait_par_match non
+ points_v 5
+ seuil_bonus_v 4
+ points_bonus_v 1
+ points_d 1
+ seuil_bonus_d 1
+ points_bonus_d 1
+ param_points_confirmes 0
+ nombre_touches_tableaux 15
+ etat debut
+ date_oed "202"
+)  
+
+(def tour_de_poules
+ type tour_de_poules
+ verif_item verifier_tour_de_poules
+ verif_ajout_item verifier_ajout_tour_de_poules
+ sans_navigation vrai
+ avec_saisie_suppression vrai
+ numero {[type entier] [taille 24] [taillecar 3] [saisie_bloquee vrai] [nomchamp numero] [texte numero] [no_col 1001] [taille_doc 36] }
+ entites_depart {[type entier] [taille 60] [taillecar 3] [nomchamp entites_depart] [texte entites_depart] [no_col 1002] [taille_doc 90] }
+ entites_exemptees {[type entier] [taille 40] [taillecar 3] [defaut 0] [nomchamp entites_exemptees] [texte entites_exemptees] [no_col 1003] [taille_doc 60] }
+ entites_dans_poules {[type entier] [taille 60] [taillecar 3] [nomchamp entites_dans_poules] [texte entites_dans_poules] [no_col 1004] [taille_doc 90] }
+ nombre_poules {[type entier] [taille 60] [taillecar 3] [defaut 0] [nomchamp nombre_poules] [texte nombre_poules] [no_col 1005] [taille_doc 90] }
+ entites_par_poule {[type entier] [taille 60] [taillecar 3] [defaut 6] [nomchamp entites_par_poule] [texte entites_par_poule] [no_col 1006] [taille_doc 90] }
+ critere_decal_1 {[type affiliation] [taille 50] [taillecar 10] [nomchamp critere_decal_1] [texte critere_decal_1] [no_col 1007] [taille_doc 75] [enumere (("c" club "club") ("l" ligue "ligue") ("n" nation "nation"))] }
+ critere_decal_2 {[type affiliation] [taille 50] [taillecar 10] [nomchamp critere_decal_2] [texte critere_decal_2] [no_col 1008] [taille_doc 75] [enumere (("c" club "club") ("l" ligue "ligue") ("n" nation "nation"))] }
+ critere_decal_3 {[type affiliation] [taille 50] [taillecar 10] [nomchamp critere_decal_3] [texte critere_decal_3] [no_col 1009] [taille_doc 75] [enumere (("c" club "club") ("l" ligue "ligue") ("n" nation "nation"))] }
+ critere_placement {[type affiliation] [taille 50] [taillecar 10] [nomchamp critere_placement] [texte critere_placement] [no_col 1010] [taille_doc 75] [enumere (("c" club "club") ("l" ligue "ligue") ("n" nation "nation"))] }
+ ligue {[type chaine] [taille 60] [taillecar 3] [texte ligue_ffe] [sans_saisie vrai] [nomchamp ligue] [no_col 1011] [taille_doc 90]}
+ limite_decal {[type entier] [taille 60] [taillecar 3] [sans_saisie vrai] [invisible vrai] [nomchamp limite_decal] [texte limite_decal]}
+ qualifies_par_poule {[type entier] [taille 80] [taillecar 3] [defaut 0] [sans_saisie vrai] [invisible vrai] [nomchamp qualifies_par_poule] [texte qualifies_par_poule]}
+ qualifies_indice {[type entier] [taille 70] [taillecar 3] [defaut 0] [nomchamp qualifies_indice] [texte qualifies_indice] [no_col 1012] [taille_doc 105] }
+ qualifies {[type entier] [taille 50] [taillecar 3] [defaut 0] [sans_saisie vrai] [invisible vrai] [nomchamp qualifies] [texte qualifies]}
+ entites_fin {[type entier] [taille 60] [taillecar 3] [defaut 0] [nomchamp entites_fin] [texte entites_fin] [no_col 1013] [taille_doc 90] }
+ typetype entite
+ champs_affiches (numero entites_depart entites_exemptees entites_dans_poules nombre_poules entites_par_poule critere_decal_1 critere_decal_2 critere_decal_3 critere_placement ligue qualifies_indice entites_fin)
+ tous_les_champs (cle classe numero entites_depart entites_exemptees entites_dans_poules nombre_poules entites_par_poule critere_decal_1 critere_decal_2 critere_decal_3 critere_placement ligue limite_decal qualifies_par_poule qualifies_indice qualifies entites_fin)
+ fiche_table ()
+ genre masculin
+ nombre 0
+)  
+
+(def suite_tableaux
+ type suite_tableaux
+ verif_item verifier_suite_tableaux
+ verif_ajout_item verifier_ajout_suite_tableaux
+ sans_navigation vrai
+ avec_saisie_suppression vrai
+ avec_description vrai
+ modeles_possibles vrai
+ ordre_alpha (nom croissant)
+ nom {[type symbole] [texte nom_une_lettre] [taille 24] [taillecar 3] [style majuscule] [obligatoire vrai] [nomchamp nom] [no_col 1001] [taille_doc 36] }
+ nom_etendu {[type chaine] [taille 100] [taillecar 40] [nomchamp nom_etendu] [texte nom_etendu] [no_col 1002] [taille_doc 150] }
+ nom_tableaux {[type chaine] [taille 100] [taillecar 40] [nomchamp nom_tableaux] [texte nom_tableaux] [no_col 1003] [taille_doc 150] }
+ origine1 {[type chaine] [taille 100] [taillecar 40] [nomchamp origine1] [texte origine1] [no_col 1004] [taille_doc 150] }
+ origine2 {[type chaine] [taille 100] [taillecar 40] [nomchamp origine2] [texte origine2] [no_col 1005] [taille_doc 150] }
+ origine3 {[type chaine] [taille 100] [taillecar 40] [nomchamp origine3] [texte origine3] [no_col 1006] [taille_doc 150] }
+ origine4 {[type chaine] [taille 100] [taillecar 40] [nomchamp origine4] [texte origine4] [no_col 1007] [taille_doc 150] }
+ origine5 {[type chaine] [taille 100] [taillecar 40] [nomchamp origine5] [texte origine5] [no_col 1008] [taille_doc 150] }
+ origine6 {[type chaine] [taille 100] [taillecar 40] [nomchamp origine6] [texte origine6] [no_col 1009] [taille_doc 150] }
+ entites_exemptees {[type entier] [taille 40] [taillecar 3] [defaut 0] [nomchamp entites_exemptees] [texte entites_exemptees] [no_col 1010] [taille_doc 60] }
+ critere_constitution {[type critere_constitution] [taille 100] [taillecar 40] [defaut classement_initial] [nomchamp critere_constitution] [texte critere_constitution] [no_col 1011] [taille_doc 150] [enumere (("p" progression_naturelle "progression naturelle") ("c" classement_initial "classement initial") ("l" classement_initial_par_groupes "classement initial par groupes"))] }
+ hasard_par_2 {[type oui_non] [taille 24] [taillecar 10] [defaut non] [nomchamp hasard_par_2] [texte hasard_par_2] [no_col 1012] [taille_doc 36] [enumere (("o" oui "oui") ("n" non "non"))] }
+ critere_decal_1 {[type affiliation] [taille 50] [taillecar 10] [nomchamp critere_decal_1] [texte critere_decal_1] [no_col 1013] [taille_doc 75] [enumere (("c" club "club") ("l" ligue "ligue") ("n" nation "nation"))] }
+ critere_decal_2 {[type affiliation] [taille 50] [taillecar 10] [nomchamp critere_decal_2] [texte critere_decal_2] [no_col 1014] [taille_doc 75] [enumere (("c" club "club") ("l" ligue "ligue") ("n" nation "nation"))] }
+ critere_decal_3 {[type affiliation] [taille 50] [taillecar 10] [nomchamp critere_decal_3] [texte critere_decal_3] [no_col 1015] [taille_doc 75] [enumere (("c" club "club") ("l" ligue "ligue") ("n" nation "nation"))] }
+ ligue {[type chaine] [taille 60] [taillecar 3] [texte ligue_ffe] [sans_saisie vrai] [nomchamp ligue] [no_col 1016] [taille_doc 90]}
+ limite_decal {[type entier] [taille 60] [taillecar 3] [sans_saisie vrai] [invisible vrai] [nomchamp limite_decal] [texte limite_decal]}
+ protege_debut {[type oui_non] [taille 40] [taillecar 5] [defaut oui] [sans_saisie vrai] [invisible vrai] [nomchamp protege_debut] [texte protege_debut]}
+ entites_dans_tableau {[type entier] [taille 60] [taillecar 3] [sans_saisie vrai] [invisible vrai] [nomchamp entites_dans_tableau] [texte entites_dans_tableau]}
+ qualifies {[type entier] [taille 60] [taillecar 3] [defaut 0] [nomchamp qualifies] [texte qualifies] [no_col 1017] [taille_doc 90] }
+ typetype entite
+ champs_affiches (nom nom_etendu nom_tableaux origine1 origine2 origine3 origine4 origine5 origine6 entites_exemptees critere_constitution hasard_par_2 critere_decal_1 critere_decal_2 critere_decal_3 ligue qualifies)
+ tous_les_champs (cle classe nom nom_etendu nom_tableaux origine1 origine2 origine3 origine4 origine5 origine6 entites_exemptees critere_constitution hasard_par_2 critere_decal_1 critere_decal_2 critere_decal_3 ligue limite_decal protege_debut entites_dans_tableau qualifies)
+ fiche_table ()
+ genre masculin
+ nombre 0
+)  
+
+(def description_tableau
+ type description_tableau
+ verif_item verifier_description_tableau
+ verif_ajout_item verifier_ajout_description_tableau
+ sans_navigation vrai
+ ordre_alpha (suite croissant taille decroissant)
+ serie {[type symbole] [sans_saisie vrai] [invisible vrai] [nomchamp serie] [texte serie]}
+ nom {[type symbole] [taille 40] [taillecar 5] [style majuscule] [saisie_bloquee vrai] [nomchamp nom] [texte nom] [no_col 1001] [taille_doc 60] }
+ nom_etendu {[type chaine] [taille 140] [taillecar 40] [nomchamp nom_etendu] [texte nom_etendu] [no_col 1002] [taille_doc 210] }
+ nombre_entites {[type entier] [taille 50] [taillecar 3] [sans_saisie vrai] [invisible vrai] [nomchamp nombre_entites] [texte nombre_entites]}
+ classe_apres {[type chaine] [taille 100] [taillecar 20] [sans_saisie vrai] [invisible vrai] [nomchamp classe_apres] [texte classe_apres]}
+ destination_vainqueurs {[type symbole] [taille 80] [taillecar 5] [nomchamp destination_vainqueurs] [texte destination_vainqueurs] [no_col 1003] [taille_doc 120] }
+ destination_battus {[type symbole] [taille 80] [taillecar 5] [nomchamp destination_battus] [texte destination_battus] [no_col 1004] [taille_doc 120] }
+ groupe_clasmt_vainqueur {[type entier] [taille 90] [taillecar 3] [nomchamp groupe_clasmt_vainqueur] [texte groupe_clasmt_vainqueur] [no_col 1005] [taille_doc 135] }
+ groupe_clasmt_battus {[type entier] [taille 90] [taillecar 3] [nomchamp groupe_clasmt_battus] [texte groupe_clasmt_battus] [no_col 1006] [taille_doc 135] }
+ rang_premier_vainqueur {[type entier] [taille 80] [taillecar 3] [sans_saisie vrai] [nomchamp rang_premier_vainqueur] [texte rang_premier_vainqueur] [no_col 1007] [taille_doc 120]}
+ nb_vainqueurs_clas {[type entier] [taille 80] [taillecar 3] [sans_saisie vrai] [nomchamp nb_vainqueurs_clas] [texte nb_vainqueurs_clas] [no_col 1008] [taille_doc 120]}
+ rang_premier_battu {[type entier] [taille 80] [taillecar 3] [sans_saisie vrai] [nomchamp rang_premier_battu] [texte rang_premier_battu] [no_col 1009] [taille_doc 120]}
+ nb_battus_clas {[type entier] [taille 80] [taillecar 3] [sans_saisie vrai] [nomchamp nb_battus_clas] [texte nb_battus_clas] [no_col 1010] [taille_doc 120]}
+ typetype entite
+ champs_affiches (nom nom_etendu destination_vainqueurs destination_battus groupe_clasmt_vainqueur groupe_clasmt_battus rang_premier_vainqueur nb_vainqueurs_clas rang_premier_battu nb_battus_clas)
+ tous_les_champs (cle classe serie nom nom_etendu nombre_entites classe_apres destination_vainqueurs destination_battus groupe_clasmt_vainqueur groupe_clasmt_battus rang_premier_vainqueur nb_vainqueurs_clas rang_premier_battu nb_battus_clas)
+ fiche_table ()
+ genre masculin
+ nombre 0
+)  
+
+(def criteres_arbitres
+ type criteres_arbitres
+ critere_decal_1 {[type affiliation] [taille 50] [taillecar 10] [nomchamp critere_decal_1] [texte critere_decal_1]}
+ critere_decal_2 {[type affiliation] [taille 50] [taillecar 10] [nomchamp critere_decal_2] [texte critere_decal_2]}
+ critere_decal_3 {[type affiliation] [taille 50] [taillecar 10] [nomchamp critere_decal_3] [texte critere_decal_3]}
+ typetype entite
+ champs_affiches (critere_decal_1 critere_decal_2 critere_decal_3)
+ tous_les_champs (cle classe critere_decal_1 critere_decal_2 critere_decal_3)
+ modifie vrai
+)  
+
+(def matchencours
+ type matchencours
+ champs_doc (marge_gche phase match round nom1 nat1 score1 score2 nat2 nom2 marge_dte)
+ champs_doc_diapo (marge_gche phase match round nom1 nat1 score1 score2 nat2 nom2 marge_dte)
+ marge_gche {[type chaine] [texte marge] [sans_saisie vrai] [invisible vrai] [nomchamp marge_gche]}
+ phase {[type chaine] [taille 80] [taillecar 12] [maxcar 20] [texte phase] [nomchamp phase]}
+ match {[type chaine] [taille 42] [taillecar 5] [maxcar 3] [texte no] [nomchamp match]}
+ round {[type chaine] [taille 42] [taillecar 5] [maxcar 3] [texte rnd] [nomchamp round]}
+ nom1 {[type chaine] [taille 80] [taillecar 12] [maxcar 20] [texte nom] [nomchamp nom1]}
+ nat1 {[type chaine] [taille 42] [taillecar 5] [maxcar 3] [texte nat] [nomchamp nat1]}
+ score1 {[type chaine] [taille 42] [taillecar 5] [maxcar 3] [texte sc] [nomchamp score1]}
+ score2 {[type chaine] [taille 42] [taillecar 5] [maxcar 3] [texte sc] [nomchamp score2]}
+ nat2 {[type chaine] [taille 42] [taillecar 5] [maxcar 3] [texte nat] [nomchamp nat2]}
+ nom2 {[type chaine] [taille 80] [taillecar 12] [maxcar 20] [texte nom] [nomchamp nom2]}
+ marge_dte {[type chaine] [texte marge] [sans_saisie vrai] [invisible vrai] [nomchamp marge_dte]}
+ typetype entite
+ champs_affiches (phase match round nom1 nat1 score1 score2 nat2 nom2)
+ tous_les_champs (cle classe marge_gche phase match round nom1 nat1 score1 score2 nat2 nom2 marge_dte)
+)  
+
+(def tireur
+ type tireur
+ affichage (nom prenom presence serie nation1 ligue1 club1)
+ affichage_red (nom prenom nation1 club1)
+ de_base vrai
+ affiliations (club1 ligue1 nation1)
+ ordre_alpha (nom croissant prenom croissant)
+ ordre_structure ((nation1 nom) croissant (ligue1 nom) croissant (club1 nom) croissant nom croissant prenom croissant)
+ ordre_structure_ffe ((nation1 nom) croissant region croissant cid croissant (ligue1 nom) croissant (club1 nom) croissant nom croissant prenom croissant)
+ ordre_ligue ((ligue1 nom) croissant nom croissant prenom croissant)
+ ordre_club ((club1 nom) croissant nom croissant prenom croissant)
+ ordre_cid (cid croissant nom croissant prenom croissant)
+ ordre_region (region croissant nom croissant prenom croissant)
+ ordre_nation ((nation1 nom) croissant nom croissant prenom croissant)
+ ordre_serie (serie croissant nom croissant prenom croissant)
+ ordre_rang_init (rang_init croissant serie croissant nom croissant prenom croissant)
+ ordre_rang (rang croissant nom croissant prenom croissant)
+ ordre_points (points decroissant nom croissant prenom croissant)
+ ordre_status (status croissant nom croissant prenom croissant)
+ ordre_coach (coach croissant nom croissant prenom croissant)
+ ordre_coach_card (carton_coach decroissant nom croissant prenom croissant)
+ ordre_id (id croissant nom croissant prenom croissant)
+ ordre_licence_fie (licence_fie croissant nom croissant prenom croissant)
+ ordre_licence (licence croissant nom croissant prenom croissant)
+ champs_export (nom prenom date_nais sexe club1 ligue1 nation1 licence licence_fie serie points categorie lateralite dossard presence rang status paiement mode)
+ champs_import (nom prenom date_nais sexe club1 ligue1 nation1 licence licence_fie serie points)
+ ordres_doc (ordre_alpha ordre_structure ordre_serie ordre_rang_init ordre_club ordre_ligue ordre_cid ordre_region ordre_nation ordre_licence ordre_licence_fie ordre_id ordre_points)
+ selections_doc (present absent tous)
+ champs_doc (marge_gche nomprenom nom prenom sexe presence rang_init serie club1 ligue1 nation1 drapeau date_nais licence licence_fie points dossard categorie lateralite status id cid region paiement mode cle marge1 marge2 marge3 marge_dte)
+ champs_doc_select (marge_gche nomprenom presence rang_init serie club1 nation1 date_nais licence marge1 marge_dte)
+ champs_doc_rang (marge_gche rang_init serie nomprenom nom prenom sexe presence club1 ligue1 nation1 drapeau date_nais licence licence_fie points dossard categorie lateralite status id cid region paiement mode marge1 marge2 marge3 marge_dte)
+ champs_doc_rang_select (marge_gche rang_init serie nomprenom presence club1 nation1 date_nais marge1 marge_dte)
+ champs_doc_diapo (marge_gche nomprenom nom prenom sexe presence rang_init serie club1 ligue1 nation1 drapeau date_nais licence licence_fie points dossard categorie lateralite status cid region marge1 marge2 marge3 marge_dte)
+ champs_doc_diapo_select (marge_gche rang_init serie marge1 nomprenom nation1 presence marge1 marge_dte)
+ champs_doc_rang_diapo (marge_gche rang_init serie nomprenom nom prenom sexe presence club1 ligue1 nation1 drapeau date_nais licence licence_fie points dossard categorie lateralite status cid region marge1 marge2 marge3 marge_dte)
+ champs_doc_rang_diapo_select (marge_gche rang_init serie marge1 nomprenom nation1 presence marge1 marge_dte)
+ champs_doc_web (rang_init serie nom prenom nation1 club1)
+ ordres_clas (ordre_rang ordre_alpha ordre_structure ordre_club ordre_ligue ordre_cid ordre_region ordre_nation)
+ champs_clas (marge_gche rang nomprenom nom prenom sexe club1 ligue1 nation1 drapeau serie points date_nais licence licence_fie dossard categorie lateralite message_clas cid region marge1 marge2 marge3 marge_dte)
+ champs_clas_select (marge_gche rang nomprenom club1 nation1 marge1 marge2 marge_dte)
+ champs_clas_diapo (marge_gche rang nom prenom sexe club1 ligue1 nation1 drapeau serie points date_nais licence licence_fie dossard categorie lateralite message_clas cid region marge1 marge2 marge3 marge_dte)
+ champs_clas_diapo_select (marge_gche rang marge1 nomprenom nation1 marge1 marge2 marge_dte)
+ champs_clas_web (rang nom prenom nation1 club1 statut_clas)
+ champs_clas_tab (marge_gche medaille rang nomprenom nom prenom club1 ligue1 nation1 drapeau statut_clas groupe serie points date_nais licence licence_fie dossard categorie lateralite message_clas cid region marge1 marge2 marge3 marge_dte)
+ champs_clas_tab_select (marge_gche rang nomprenom club1 nation1 statut_clas marge1 marge_dte)
+ champs_clas_tab_select_std (marge_gche rang nomprenom club1 nation1 statut_clas marge1 marge_dte)
+ champs_medailles_select (marge_gche rang medaille nomprenom nation1 drapeau marge1 marge_dte)
+ champs_clas_tab_diapo (marge_gche medaille rang nomprenom nom prenom club1 ligue1 nation1 drapeau statut_clas groupe serie points date_nais licence licence_fie dossard categorie lateralite message_clas cid region marge1 marge2 marge3 marge_dte)
+ champs_clas_tab_diapo_select (marge_gche rang nomprenom nation1 statut_clas marge1 marge_dte)
+ champs_clas_tab_web (rang nom prenom nation1 club1)
+ champs_clas_pou_std (marge_gche rang nomprenom nom prenom sexe club1 ligue1 nation1 drapeau groupe vic_match indice td serie points date_nais licence licence_fie dossard categorie lateralite message_clas cid region marge1 marge2 marge3 marge_dte)
+ champs_clas_pou_std_select (marge_gche rang nomprenom nation1 vic_match indice td groupe marge1 marge2 marge_dte)
+ champs_clas_pou_rangpoule (marge_gche rang nomprenom nom prenom sexe club1 ligue1 nation1 drapeau groupe rangpoule vic_match indice td serie points date_nais licence licence_fie dossard categorie lateralite message_clas cid region marge1 marge2 marge3 marge_dte)
+ champs_clas_pou_rangpoule_select (marge_gche rang nomprenom nation1 rangpoule vic_match indice td groupe marge1 marge2 marge_dte)
+ champs_clas_pou_cppv (marge_gche rang nomprenom nom prenom sexe club1 ligue1 nation1 drapeau groupe indice td points_a_bonus bonus bonus_v bonus_d vic def tr serie points date_nais licence licence_fie dossard categorie lateralite message_clas cid region marge1 marge2 marge3 marge_dte)
+ champs_clas_pou_cppv_select (marge_gche rang nomprenom nation1 points_a_bonus bonus bonus_v bonus_d vic def indice td tr groupe marge1 marge2 marge_dte)
+ champs_clas_prov_std (marge_gche rangg nomprenom nom prenom sexe club1 ligue1 nation1 drapeau marge1 vic_match indice td vic tr groupeg matches raison dossard date_nais categorie cid region marge2 marge3 marge_dte)
+ champs_clas_prov_std_select (marge_gche rangg nomprenom nation1 vic_match indice td groupeg matches marge1 marge2 marge_dte)
+ champs_clas_prov_cppv (marge_gche rangg nomprenom nom prenom sexe club1 ligue1 nation1 drapeau marge1 points_a_bonus bonus bonus_v bonus_d vic def indice td tr groupeg matches raison dossard date_nais categorie cid region marge2 marge3 marge_dte)
+ champs_clas_prov_cppv_select (marge_gche rangg nomprenom nation1 points_a_bonus bonus bonus_v bonus_d vic def indice td tr groupeg matches marge1 marge2 marge_dte)
+ champs_clas_pou_web_std (rang nom prenom nation1 club1 vic_match indice td groupe)
+ champs_clas_pou_web_cppv (rang nom prenom nation1 club1 points_a_bonus bonus bonus_v bonus_d vic def indice td tr groupe)
+ champs_clas_prov_web_std (rang nom prenom nation1 club1 vic_match indice td groupeg)
+ champs_clas_prov_web_cppv (rang nom prenom nation1 club1 points_a_bonus bonus bonus_v bonus_d vic def indice td tr groupeg)
+ champs_heure_piste (marge_gche nomprenom nom prenom club1 ligue1 nation1 drapeau date_nais licence licence_fie dossard categorie lateralite heure_piste cid region marge1 marge2 marge3 marge_dte)
+ champs_heure_piste_select (marge_gche nomprenom club1 nation1 heure_piste marge1 marge2 marge_dte)
+ champs_pou_const (marge_gche nomprenom nom prenom sexe club1 ligue1 nation1 drapeau rang serie dossard date_nais categorie cid region marge1 marge2 marge3 marge_dte)
+ champs_pou_const_select (marge_gche nomprenom club1 nation1 rang serie marge1 marge2 marge_dte)
+ champs_info_pou_std (marge_gche nomprenom nom prenom sexe club1 ligue1 nation1 drapeau grille_feuille marge1 vic_match indice td rang dossard cid region marge2 marge3 marge_dte)
+ champs_info_pou_std_select (marge_gche nomprenom nation1 grille_feuille marge1 vic_match indice td rang marge2 marge_dte)
+ champs_info_pou_rangpoule (marge_gche nomprenom nom prenom sexe club1 ligue1 nation1 drapeau grille_feuille marge1 rangpoule vic_match indice td rang dossard cid region marge2 marge3 marge_dte)
+ champs_info_pou_rangpoule_select (marge_gche nomprenom nation1 grille_feuille marge1 rangpoule vic_match indice td rang marge2 marge_dte)
+ champs_info_pou_cppv (marge_gche nomprenom nom prenom sexe club1 ligue1 nation1 drapeau grille_feuille marge1 vic_match indice td tr rang points_a_bonus bonus bonus_v bonus_d vic def dossard date_nais categorie cid region marge2 marge3 marge_dte)
+ champs_info_pou_cppv_select (marge_gche nomprenom nation1 grille_feuille marge1 points_a_bonus bonus bonus_v bonus_d vic def indice td tr rang marge2 marge_dte)
+ champs_info_pou_et_clas (marge_gche rangg nomprenom nom prenom sexe club1 ligue1 nation1 drapeau grille_feuille marge1 vic_match indice td vic tr rangp groupeg raison matches dossard date_nais categorie cid region marge2 marge3 marge_dte)
+ champs_info_pou_et_clas_select (marge_gche rangg nomprenom nation1 grille_feuille marge1 vic_match indice td groupeg matches marge2 marge_dte)
+ champs_clas_prov (marge_gche rangg nomprenom nom prenom sexe club1 ligue1 nation1 drapeau marge1 vic_match indice td groupeg matches raison dossard date_nais categorie cid region marge2 marge3 marge_dte)
+ champs_clas_prov_select (marge_gche rangg nomprenom nation1 vic_match indice td groupeg matches marge1 marge2 marge_dte)
+ champs_info_tab (marge_gche num nomprenom nom prenom sexe club1 ligue1 nation1 drapeau dossard date_nais categorie cid region marge1 marge2 marge3 marge_dte)
+ champs_info_tab_select (marge_gche num nomprenom nation1)
+ champs_info_tab_et_clas (marge_gche rang num nomprenom nom prenom sexe club1 ligue1 nation1 groupe drapeau dossard date_nais categorie cid region marge1 marge2 marge3 marge_dte)
+ champs_info_tab_et_clas_select (marge_gche rang num nomprenom nation1 groupe)
+ champs_info_tab_arbi (marge_gche num titre nomprenom nom prenom sexe club1 ligue1 nation1 drapeau dossard date_nais categorie cid region marge1 marge2 marge3 marge_dte)
+ champs_info_tab_arbi_select (marge_gche num titre nomprenom nation1 marge1)
+ champs_feuilles_pou (marge_gche nomprenom nom prenom sexe club1 ligue1 nation1 drapeau num grille_feuille signature vic_match indice td vic tr rang dossard date_nais categorie cid region marge1 marge2 marge3 marge_dte)
+ champs_feuilles_pou_select (marge_gche nomprenom nation1 num grille_feuille signature marge1 marge2 marge_dte)
+ champs_feuilles_match (marge_gche rang_init nomprenom nom prenom sexe club1 ligue1 nation1 drapeau num grille_match signature titre1 dossard date_nais categorie cid region marge1 marge2 marge_dte)
+ champs_feuilles_match_select (marge_gche rang_init nomprenom nation1 grille_match signature marge_dte)
+ num {[type entier] [texte numero] [taille 24] [sans_saisie vrai] [invisible vrai] [pasclas vrai] [nomchamp num]}
+ cle {[type entier] [taille 16] [sans_saisie vrai] [invisible vrai] [nomchamp cle] [texte cle]}
+ rang {[type entier] [taille 32] [sans_saisie vrai] [invisible vrai] [pastab vrai] [nomchamp rang] [texte rang]}
+ rang_init {[type entier] [taille 32] [sans_saisie vrai] [invisible vrai] [nomchamp rang_init] [texte rang_init]}
+ rangg {[type entier] [texte rang] [taille 32] [sans_saisie vrai] [invisible vrai] [paspoule vrai] [nomchamp rangg]}
+ rangp {[type entier] [texte rang] [taille 32] [sans_saisie vrai] [invisible vrai] [pasclas vrai] [nomchamp rangp]}
+ medaille {[type chaine] [taille 80] [sans_saisie vrai] [invisible vrai] [nomchamp medaille] [texte medaille]}
+ rangpoule {[type entier] [taille 32] [sans_saisie vrai] [invisible vrai] [nomchamp rangpoule] [texte rangpoule]}
+ groupe {[type groupe] [taille 50] [sans_saisie vrai] [invisible vrai] [pastab vrai] [nomchamp groupe] [texte groupe]}
+ groupeg {[type groupe] [texte groupe] [taille 150] [sans_saisie vrai] [invisible vrai] [paspoule vrai] [nomchamp groupeg]}
+ raison {[type chaine] [taille 50] [sans_saisie vrai] [invisible vrai] [paspoule vrai] [nomchamp raison] [texte raison]}
+ matches {[type chaine] [texte nb_matches] [sans_saisie vrai] [invisible vrai] [paspoule vrai] [nomchamp matches]}
+ vic_match {[type chaine] [taille 50] [sans_saisie vrai] [invisible vrai] [nomchamp vic_match] [texte vic_match]}
+ points_a_bonus {[type chaine] [texte points_a_bonus] [taille 50] [sans_saisie vrai] [invisible vrai] [nomchamp points_a_bonus]}
+ bonus {[type entier] [texte bonus] [taille 40] [sans_saisie vrai] [invisible vrai] [nomchamp bonus]}
+ bonus_v {[type entier] [texte bonus_v] [taille 40] [sans_saisie vrai] [invisible vrai] [nomchamp bonus_v]}
+ bonus_d {[type entier] [texte bonus_d] [taille 40] [sans_saisie vrai] [invisible vrai] [nomchamp bonus_d]}
+ vic {[type entier] [taille 40] [sans_saisie vrai] [invisible vrai] [nomchamp vic] [texte vic]}
+ def {[type entier] [taille 40] [sans_saisie vrai] [invisible vrai] [nomchamp def] [texte def]}
+ tr {[type entier] [taille 40] [sans_saisie vrai] [invisible vrai] [nomchamp tr] [texte tr]}
+ indice {[type entier] [taille 40] [sans_saisie vrai] [invisible vrai] [nomchamp indice] [texte indice]}
+ td {[type entier] [taille 40] [sans_saisie vrai] [invisible vrai] [nomchamp td] [texte td]}
+ signature {[type chaine] [taille 120] [sans_saisie vrai] [invisible vrai] [nomchamp signature] [texte signature]}
+ poule {[type entier] [sans_saisie vrai] [invisible vrai] [nomchamp poule] [texte poule]}
+ piste {[type chaine] [sans_saisie vrai] [invisible vrai] [nomchamp piste] [texte piste]}
+ grille_feuille {[type chaine] [texte grille] [taille 200] [sans_saisie vrai] [invisible vrai] [pasclas vrai] [nomchamp grille_feuille]}
+ grille_match {[type chaine] [texte grille] [taille 350] [sans_saisie vrai] [invisible vrai] [nomchamp grille_match]}
+ marge_gche {[type chaine] [taille 5] [texte marge] [sans_saisie vrai] [invisible vrai] [nomchamp marge_gche]}
+ nom {[type chaine] [taille 100] [taillecar 20] [style majuscule] [obligatoire vrai] [nomchamp nom] [texte nom] [no_col 1001] [taille_doc 150] }
+ prenom {[type chaine] [taille 80] [taillecar 20] [style titre] [nomchamp prenom] [texte prenom] [no_col 1002] [taille_doc 120] }
+ categorie {[type categorie] [taille 24] [taillecar 10] [sans_saisie vrai] [si_besoin calcul_categorie] [nomchamp categorie] [texte categorie] [no_col 1003] [taille_doc 36]}
+ sexe {[type sexe] [taille 24] [taillecar 10] [nomchamp sexe] [texte sexe] [no_col 1004] [taille_doc 36] [enumere (("m" masculin "masculin") ("f" feminin "féminin"))] [defaut feminin]}
+ presence {[type presence] [taille 24] [taillecar 10] [defaut present] [nomchamp presence] [texte presence] [no_col 1005] [taille_doc 36] [enumere (("p" present "présente") ("a" absent "absente"))] }
+ serie {[type entier] [taille 103] [taillecar 3] [nomchamp serie] [texte serie] [no_col 1006] [taille_doc 48] }
+ points {[type decimal] [taille 40] [taillecar 6] [nomchamp points] [texte points] [no_col 1007] [taille_doc 60] }
+ club1 {[type club] [texte club] [taille 100] [taillecar 20] [mere ligue1] [si_modifie (verif_club maj_affiliation)] [nomchamp club1] [no_col 1008] [taille_doc 150] }
+ ligue1 {[type ligue] [texte ligue] [taille 100] [taillecar 20] [fille club1] [mere nation1] [si_modifie (verif_club maj_affiliation)] [nomchamp ligue1] [no_col 1009] [taille_doc 150] }
+ nation1 {[type nation] [texte nation] [taille 42] [taillecar 5] [fille ligue1] [maxcar 3] [si_modifie (verif_club maj_affiliation)] [nomchamp nation1] [no_col 1010] [taille_doc 63] }
+ coach {[type chaine] [taille 80] [taillecar 16] [style majuscule] [nomchamp coach] [texte coach] [no_col 1011] [taille_doc 120] }
+ carton_coach {[type oui_non] [taillecar 8] [defaut non] [nomchamp carton_coach] [texte carton_coach] [no_col 1012] [taille 64] [taille_doc 96] [enumere (("o" oui "oui") ("n" non "non"))] }
+ status {[type status] [taille 45] [taillecar 10] [defaut normal] [nomchamp status] [texte status] [no_col 1013] [taille_doc 67] [enumere (("n" normal "normal") ("a" abandon "abandon") ("e" exclusion "exclusion") ("f" forfait "forfait") ("p" pblack "pblack"))] }
+ medical {[type oui_non] [taillecar 8] [defaut non] [sans_saisie vrai] [nomchamp medical] [texte medical] [no_col 1014] [taille 64] [taille_doc 96]}
+ statut_clas {[type status] [texte status] [taille 40] [sans_saisie vrai] [invisible vrai] [nomchamp statut_clas]}
+ date_nais {[type date] [taille 70] [taillecar 12] [maxcar 12] [nomchamp date_nais] [texte date_nais] [no_col 1015] [taille_doc 105] }
+ id {[type chaine] [taille 80] [taillecar 16] [nomchamp id] [texte id] [no_col 1016] [taille_doc 120] }
+ licence_fie {[type chaine] [taille 80] [taillecar 16] [nomchamp licence_fie] [texte licence_fie] [no_col 1017] [taille_doc 120] }
+ licence {[type chaine] [taille 80] [taillecar 12] [maxcar 12] [si_modifie (verif_club)] [nomchamp licence] [texte licence] [no_col 1018] [taille_doc 120] }
+ nomsur10 {[type chaine] [taille 60] [taillecar 15] [style majuscule] [nomchamp nomsur10] [texte nomsur10] [no_col 1019] [taille_doc 90]}
+ dossard {[type entier] [taille 32] [taillecar 4] [nomchamp dossard] [texte dossard] [no_col 1020] [taille_doc 48] }
+ lateralite {[type droitegauche] [taille 40] [taillecar 10] [defaut inconnu] [nomchamp lateralite] [texte lateralite] [no_col 1021] [taille_doc 60] [enumere (("d" droite "droite") ("g" gauche "gauche") ("i" inconnu "inconnu"))] }
+ paiement {[type decimal] [texte paiement] [taille 40] [taillecar 6] [nomchamp paiement] [no_col 1022] [taille_doc 60] }
+ mode {[type chaine] [texte mode] [taille 50] [taillecar 10] [nomchamp mode] [no_col 1023] [taille_doc 75] }
+ nomprenom {[type chaine] [taille 120] [sans_saisie vrai] [invisible vrai] [si_besoin calcul_nomprenom] [nomchamp nomprenom] [texte nomprenom]}
+ titre1 {[type chaine] [texte titre] [taille 100] [sans_saisie vrai] [invisible vrai] [nomchamp titre1]}
+ heure_piste {[type chaine] [taille 200] [sans_saisie vrai] [invisible vrai] [nomchamp heure_piste] [texte heure_piste]}
+ message_clas {[type chaine] [taille 80] [taillecar 20] [nomchamp message_clas] [texte message_clas] [no_col 1024] [taille_doc 120] }
+ drapeau {[type image] [texte drapeau] [taille 42] [sans_saisie vrai] [nomchamp drapeau] [no_col 1025] [taillecar 10] [taille_doc 63]}
+ cid {[type chaine] [taille 100] [taillecar 12] [texte "CID"] [sans_saisie vrai] [si_besoin calcul_cid_ffe] [nomchamp cid] [no_col 1026] [taille_doc 150]}
+ region {[type chaine] [taille 100] [taillecar 12] [texte "Région"] [sans_saisie vrai] [si_besoin calcul_region_ffe] [nomchamp region] [no_col 1027] [taille_doc 150]}
+ marge1 {[type chaine] [texte marge] [sans_saisie vrai] [invisible vrai] [nomchamp marge1]}
+ marge2 {[type chaine] [texte marge] [sans_saisie vrai] [invisible vrai] [nomchamp marge2]}
+ marge3 {[type chaine] [texte marge] [sans_saisie vrai] [invisible vrai] [nomchamp marge3]}
+ marge_dte {[type chaine] [taille 5] [texte marge] [sans_saisie vrai] [invisible vrai] [nomchamp marge_dte]}
+ typetype entite
+ champs_affiches (nom prenom categorie sexe presence serie points club1 ligue1 nation1 coach carton_coach status medical date_nais id licence_fie licence nomsur10 dossard lateralite paiement mode message_clas drapeau cid region)
+ tous_les_champs (classe num cle rang rang_init rangg rangp medaille rangpoule groupe groupeg raison matches vic_match points_a_bonus bonus bonus_v bonus_d vic def tr indice td signature poule piste grille_feuille grille_match marge_gche nom prenom categorie sexe presence serie points club1 ligue1 nation1 coach carton_coach status medical statut_clas date_nais id licence_fie licence nomsur10 dossard lateralite paiement mode nomprenom titre1 heure_piste message_clas drapeau cid region marge1 marge2 marge3 marge_dte)
+ fiche_table ()
+ genre feminin
+ nombre 9
+ modifie vrai
+ date_oed "201"
+ nodermodif 71
+ faire_maj_smart vrai
+)  
+
+(def arbitre
+ type arbitre
+ affichage (nom prenom presence nation1 ligue1 club1 nation2 nation3 nation4)
+ affichage_red (nom prenom nation1 club1)
+ de_base vrai
+ affiliations (club1 ligue1 nation1 nation2 nation3 nation4)
+ ordre_alpha (nom croissant prenom croissant)
+ ordre_structure ((nation1 nom) croissant (ligue1 nom) croissant (club1 nom) croissant nom croissant prenom croissant)
+ ordre_structure_ffe ((nation1 nom) croissant region croissant cid croissant (ligue1 nom) croissant (club1 nom) croissant nom croissant prenom croissant)
+ ordre_ligue ((ligue1 nom) croissant nom croissant prenom croissant)
+ ordre_club ((club1 nom) croissant nom croissant prenom croissant)
+ ordre_cid (cid croissant nom croissant prenom croissant)
+ ordre_region (region croissant nom croissant prenom croissant)
+ ordre_nation ((nation1 nom) croissant nom croissant prenom croissant)
+ ordre_id (id croissant nom croissant prenom croissant)
+ ordre_licence_fie (licence_fie croissant nom croissant prenom croissant)
+ ordre_licence (licence croissant nom croissant prenom croissant)
+ ordre_groupes (groupe croissant (nation1 nom) croissant nom croissant prenom croissant)
+ ordre_quarts (quart croissant (nation1 nom) croissant nom croissant prenom croissant)
+ ordres_doc (ordre_alpha ordre_structure ordre_club ordre_ligue ordre_cid ordre_region ordre_nation ordre_licence ordre_licence_fie ordre_id)
+ selections_doc (present absent tous)
+ champs_doc (marge_gche nomprenom nom prenom presence sexe categorie club1 ligue1 nation1 nation2 nation3 nation4 groupe date_nais licence licence_fie drapeau id cid region marge1 marge2 marge_dte)
+ champs_doc_select (marge_gche nomprenom categorie nation1 marge_dte)
+ champs_doc_diapo (marge_gche nomprenom nom prenom presence sexe categorie club1 ligue1 nation1 nation2 nation3 nation4 date_nais licence licence_fie drapeau cid region marge1 marge2 marge_dte)
+ champs_doc_diapo_select (marge_gche nomprenom nation1 presence marge_dte)
+ champs_heure_piste (marge_gche nomprenom nom prenom club1 ligue1 nation1 heure_piste drapeau date_nais licence licence_fie categorie cid region marge1 marge2 marge3 marge_dte)
+ champs_heure_piste_select (marge_gche nomprenom club1 nation1 heure_piste marge1 marge2 marge_dte)
+ champs_activ (marge_gche nomprenom nom prenom presence sexe categorie club1 ligue1 nation1 drapeau nation2 nation3 nation4 groupe cid region marge1 marge2 poules matches finales marge_dte)
+ champs_activ_select (marge_gche nomprenom categorie nation1 poules matches finales marge_dte)
+ champs_activ2 (marge_gche nomprenom nom prenom presence sexe categorie club1 ligue1 nation1 drapeau nation2 nation3 nation4 groupe cid region marge1 marge2 @ marge_dte)
+ champs_activ2_select (marge_gche nomprenom categorie nation1 @ marge_dte)
+ champs_appels (marge_gche nomprenom nom prenom presence sexe categorie club1 ligue1 nation1 cid region marge1 matches finales appeal ref_remain ref_change vref_remain vref_change decision_remain decision_change requests_per_bout ratio_vref_agree ratio_decision_change marge_dte)
+ champs_appels_select (marge_gche nomprenom nation1 matches finales appeal vref_remain vref_change decision_remain decision_change requests_per_bout ratio_vref_agree ratio_decision_change marge_dte)
+ champs_doc_web (nom prenom nation1 categorie poules matches finales)
+ champs_export (nom prenom sexe categorie club1 ligue1 nation1 date_nais licence_fie licence)
+ champs_import (nom prenom sexe categorie club1 ligue1 nation1 date_nais licence_fie licence)
+ marge_gche {[type chaine] [texte marge] [sans_saisie vrai] [invisible vrai] [nomchamp marge_gche]}
+ titre {[type chaine] [sans_saisie vrai] [invisible vrai] [defaut &arbitre] [nomchamp titre] [texte titre]}
+ nom {[type chaine] [taille 100] [taillecar 16] [style majuscule] [obligatoire vrai] [nomchamp nom] [texte nom] [no_col 1001] [taille_doc 150] }
+ prenom {[type chaine] [taille 80] [taillecar 12] [style titre] [nomchamp prenom] [texte prenom] [no_col 1002] [taille_doc 120] }
+ presence {[type presence] [taille 24] [taillecar 10] [defaut present] [nomchamp presence] [texte presence] [no_col 1003] [taille_doc 36] [enumere (("p" present "présent") ("a" absent "absent"))] }
+ pass {[type pass_affi] [texte passwd] [taille 80] [taillecar 16] [nomchamp pass] [no_col 1004] [taille_doc 120] }
+ pass_bloque {[type oui_non] [texte bloque] [taille 40] [taillecar 3] [defaut non] [nomchamp pass_bloque] [no_col 1005] [taille_doc 60] [enumere (("o" oui "oui") ("n" non "non"))] }
+ sexe {[type sexe] [taille 24] [taillecar 10] [nomchamp sexe] [texte sexe] [no_col 1006] [taille_doc 36] [enumere (("m" masculin "masculin") ("f" feminin "féminin"))] }
+ categorie {[type chaine] [taille 24] [taillecar 10] [style majuscule] [nomchamp categorie] [texte categorie] [no_col 1007] [taille_doc 36] }
+ club1 {[type club] [texte club] [taille 100] [taillecar 12] [mere ligue1] [nomchamp club1] [no_col 1008] [taille_doc 150] }
+ ligue1 {[type ligue] [texte ligue] [taille 100] [taillecar 12] [fille club1] [mere nation1] [nomchamp ligue1] [no_col 1009] [taille_doc 150] }
+ nation1 {[type nation] [texte nation] [taille 52] [taillecar 5] [fille ligue1] [maxcar 3] [nomchamp nation1] [no_col 1010] [taille_doc 78] }
+ nation2 {[type nation] [texte nation2] [taille 52] [taillecar 5] [maxcar 3] [nomchamp nation2] [no_col 1011] [taille_doc 78] }
+ nation3 {[type nation] [texte nation3] [taille 52] [taillecar 5] [maxcar 3] [nomchamp nation3] [no_col 1012] [taille_doc 78] }
+ nation4 {[type nation] [texte nation4] [taille 52] [taillecar 5] [maxcar 3] [nomchamp nation4] [no_col 1013] [taille_doc 78] }
+ groupe {[type chaine] [taille 20] [taillecar 2] [style majuscule] [nomchamp groupe] [texte groupe] [no_col 1014] [taille_doc 30] }
+ date_nais {[type date] [taille 70] [taillecar 12] [maxcar 12] [nomchamp date_nais] [texte date_nais] [no_col 1015] [taille_doc 105] }
+ licence {[type chaine] [taille 80] [taillecar 12] [maxcar 12] [si_modifie (verif_club)] [nomchamp licence] [texte licence] [no_col 1016] [taille_doc 120] }
+ licence_fie {[type chaine] [taille 80] [taillecar 16] [nomchamp licence_fie] [texte licence_fie] [no_col 1017] [taille_doc 120] }
+ drapeau {[type image] [texte drapeau] [taille 42] [sans_saisie vrai] [nomchamp drapeau] [no_col 1018] [taillecar 10] [taille_doc 63]}
+ nomprenom {[type chaine] [taille 120] [sans_saisie vrai] [invisible vrai] [si_besoin calcul_nomprenom] [nomchamp nomprenom] [texte nomprenom]}
+ poules {[type chaine] [texte nb_poules] [sans_saisie vrai] [invisible vrai] [nomchamp poules]}
+ matches {[type chaine] [texte nb_matches] [sans_saisie vrai] [invisible vrai] [nomchamp matches]}
+ finales {[type chaine] [texte nb_finales] [sans_saisie vrai] [invisible vrai] [nomchamp finales]}
+ heure_piste {[type chaine] [taille 200] [sans_saisie vrai] [invisible vrai] [nomchamp heure_piste] [texte heure_piste]}
+ id {[type chaine] [taille 80] [taillecar 16] [nomchamp id] [texte id] [no_col 1019] [taille_doc 120] }
+ cid {[type chaine] [taille 100] [taillecar 12] [texte "CID"] [sans_saisie vrai] [si_besoin calcul_cid_ffe] [nomchamp cid] [no_col 1020] [taille_doc 150]}
+ region {[type chaine] [taille 100] [taillecar 12] [texte "Région"] [sans_saisie vrai] [si_besoin calcul_region_ffe] [nomchamp region] [no_col 1021] [taille_doc 150]}
+ appeal {[type entier] [texte "appeal"] [sans_saisie vrai] [invisible vrai] [nomchamp appeal]}
+ ref_remain {[type entier] [texte "Referee¤remains"] [sans_saisie vrai] [invisible vrai] [nomchamp ref_remain]}
+ ref_change {[type entier] [texte "Referee¤changes"] [sans_saisie vrai] [invisible vrai] [nomchamp ref_change]}
+ vref_remain {[type entier] [texte "Video¤referee¤agrees"] [sans_saisie vrai] [invisible vrai] [nomchamp vref_remain]}
+ vref_change {[type entier] [texte "Video¤referee¤disagrees"] [sans_saisie vrai] [invisible vrai] [nomchamp vref_change]}
+ decision_remain {[type entier] [texte "Initial¤judgment¤remains"] [sans_saisie vrai] [invisible vrai] [nomchamp decision_remain]}
+ decision_change {[type entier] [texte "Initial¤judgment¤changes"] [sans_saisie vrai] [invisible vrai] [nomchamp decision_change]}
+ requests_per_bout {[type chaine] [texte "Requests¤per_bout"] [sans_saisie vrai] [invisible vrai] [nomchamp requests_per_bout]}
+ ratio_vref_agree {[type chaine] [texte "%_video¤referee¤agrees"] [sans_saisie vrai] [invisible vrai] [nomchamp ratio_vref_agree]}
+ ratio_decision_change {[type chaine] [texte "%_Initial¤judgment¤changes"] [sans_saisie vrai] [invisible vrai] [nomchamp ratio_decision_change]}
+ marge1 {[type chaine] [texte marge] [sans_saisie vrai] [invisible vrai] [nomchamp marge1]}
+ marge2 {[type chaine] [texte marge] [sans_saisie vrai] [invisible vrai] [nomchamp marge2]}
+ marge_dte {[type chaine] [texte marge] [sans_saisie vrai] [invisible vrai] [nomchamp marge_dte]}
+ typetype entite
+ champs_affiches (nom prenom presence pass pass_bloque sexe categorie club1 ligue1 nation1 nation2 nation3 nation4 groupe date_nais licence licence_fie drapeau id cid region)
+ tous_les_champs (cle classe marge_gche titre nom prenom presence pass pass_bloque sexe categorie club1 ligue1 nation1 nation2 nation3 nation4 groupe date_nais licence licence_fie drapeau nomprenom poules matches finales heure_piste id cid region appeal ref_remain ref_change vref_remain vref_change decision_remain decision_change requests_per_bout ratio_vref_agree ratio_decision_change marge1 marge2 marge_dte)
+ fiche_table ()
+ genre masculin
+ nombre 8
+ date_oed "192"
+ nodermodif 62
+ faire_maj_smart vrai
+)  
+
+(def assistant
+ type assistant
+ affichage (nom prenom piste)
+ affichage_red (nom prenom piste)
+ de_base vrai
+ ordre_alpha (nom croissant prenom croissant)
+ ordres_doc (ordre_alpha)
+ champs_doc (marge_gche nomprenom nom prenom piste marge1 marge_dte)
+ champs_doc_select (marge_gche nomprenom piste marge_dte)
+ champs_doc_diapo (marge_gche nomprenom nom prenom piste marge1 marge_dte)
+ champs_doc_diapo_select (marge_gche nomprenom piste marge_dte)
+ champs_doc_web (nom prenom piste)
+ champs_export (nom prenom piste)
+ champs_import (nom prenom piste)
+ marge_gche {[type chaine] [texte marge] [sans_saisie vrai] [invisible vrai] [nomchamp marge_gche]}
+ nom {[type chaine] [taille 100] [taillecar 16] [style majuscule] [obligatoire vrai] [nomchamp nom] [texte nom] [no_col 1001] [taille_doc 150] }
+ prenom {[type chaine] [taille 80] [taillecar 12] [style titre] [nomchamp prenom] [texte prenom] [no_col 1002] [taille_doc 120] }
+ nomprenom {[type chaine] [taille 120] [sans_saisie vrai] [invisible vrai] [si_besoin calcul_nomprenom] [nomchamp nomprenom] [texte nomprenom]}
+ pass {[type pass_affi] [texte passwd] [taille 80] [taillecar 16] [nomchamp pass] [no_col 1003] [taille_doc 120] }
+ pass_bloque {[type oui_non] [texte bloque] [taille 40] [taillecar 3] [defaut non] [nomchamp pass_bloque] [no_col 1004] [taille_doc 60] [enumere (("o" oui "oui") ("n" non "non"))] }
+ piste {[type chaine] [taille 120] [taillecar 20] [nomchamp piste] [texte piste] [no_col 1005] [taille_doc 180] }
+ marge1 {[type chaine] [texte marge] [sans_saisie vrai] [invisible vrai] [nomchamp marge1]}
+ marge_dte {[type chaine] [texte marge] [sans_saisie vrai] [invisible vrai] [nomchamp marge_dte]}
+ typetype entite
+ champs_affiches (nom prenom pass pass_bloque piste)
+ tous_les_champs (cle classe marge_gche nom prenom nomprenom pass pass_bloque piste marge1 marge_dte)
+ fiche_table ()
+ genre masculin
+ nombre 0
+ date_oed "193"
+ nodermodif 63
+ faire_maj_smart vrai
+)  
+
+(def club
+ type club
+ affichage (nom ligue1 nation1)
+ affiliations (ligue1 nation1)
+ ordre_alpha (nom croissant)
+ ordre_structure ((nation1 nom) croissant (ligue1 nom) croissant nom croissant)
+ ordre_structure_ffe ((nation1 nom) croissant region croissant cid croissant (ligue1 nom) croissant nom croissant)
+ ordre_ligue ((ligue1 nom) croissant nom croissant prenom croissant)
+ ordre_cid (cid croissant nom croissant prenom croissant)
+ ordre_region (region croissant nom croissant prenom croissant)
+ ordre_nation ((nation1 nom) croissant nom croissant prenom croissant)
+ utilise_par (tireur arbitre)
+ ordres_doc (ordre_alpha ordre_structure ordre_ligue ordre_cid ordre_region ordre_nation)
+ selections_doc (tous concerne_tir concerne_tir_pres concerne_arbi concerne_arbi_pres)
+ champs_doc (marge_gche nom ligue1 nation1 drapeau cid region effectif marge1 marge_dte)
+ champs_doc_diapo (marge_gche nom ligue1 nation1 drapeau cid region effectif marge1 marge_dte)
+ champs_doc_web (nom nation1 drapeau effectif)
+ champs_export (nom ligue1 nation1)
+ marge_gche {[type chaine] [texte marge] [sans_saisie vrai] [invisible vrai] [nomchamp marge_gche]}
+ cle {[type entier] [taille 16] [sans_saisie vrai] [invisible vrai] [nomchamp cle] [texte cle]}
+ nom {[type chaine] [taille 100] [taillecar 12] [style majuscule] [obligatoire vrai] [nomchamp nom] [texte nom] [no_col 1001] [taille_doc 150] }
+ ligue1 {[type ligue] [taille 100] [taillecar 12] [texte ligue] [mere nation1] [nomchamp ligue1] [no_col 1002] [taille_doc 150] }
+ nation1 {[type nation] [taille 42] [taillecar 5] [texte nation] [maxcar 3] [fille ligue1] [nomchamp nation1] [no_col 1003] [taille_doc 63] }
+ cid {[type chaine] [taille 100] [taillecar 12] [texte "CID"] [sans_saisie vrai] [si_besoin calcul_cid_ffe] [nomchamp cid] [no_col 1004] [taille_doc 150]}
+ region {[type chaine] [taille 100] [taillecar 12] [texte "Région"] [sans_saisie vrai] [si_besoin calcul_region_ffe] [nomchamp region] [no_col 1005] [taille_doc 150]}
+ drapeau {[type image] [texte drapeau] [taille 42] [sans_saisie vrai] [nomchamp drapeau] [no_col 1006] [taillecar 10] [taille_doc 63]}
+ effectif {[type entier] [sans_saisie vrai] [invisible vrai] [nomchamp effectif] [texte effectif]}
+ marge1 {[type chaine] [texte marge] [sans_saisie vrai] [invisible vrai] [nomchamp marge1]}
+ marge_dte {[type chaine] [texte marge] [sans_saisie vrai] [invisible vrai] [nomchamp marge_dte]}
+ typetype entite
+ champs_affiches (nom ligue1 nation1 cid region drapeau)
+ tous_les_champs (classe marge_gche cle nom ligue1 nation1 cid region drapeau effectif marge1 marge_dte)
+ fiche_table ()
+ genre masculin
+ nombre 27
+ modifie vrai
+ date_oed "194"
+ nodermodif 64
+ faire_maj_smart vrai
+)  
+
+(def ligue
+ type ligue
+ affichage (nom nation1)
+ utilise_par (club tireur arbitre)
+ affiliations (nation1)
+ ordre_alpha (nom croissant)
+ ordre_structure ((nation1 nom) croissant nom croissant)
+ ordre_structure_ffe ((nation1 nom) croissant region croissant cid croissant nom croissant)
+ ordre_cid (cid croissant nom croissant prenom croissant)
+ ordre_region (region croissant nom croissant prenom croissant)
+ ordre_nation ((nation1 nom) croissant nom croissant prenom croissant)
+ ordres_doc (ordre_alpha ordre_structure ordre_cid ordre_region ordre_nation)
+ selections_doc (tous concerne_tir concerne_tir_pres concerne_arbi concerne_arbi_pres)
+ champs_doc (marge_gche nom nation1 drapeau cid region effectif marge1 marge_dte)
+ champs_doc_diapo (marge_gche nom nation1 drapeau cid region effectif marge1 marge_dte)
+ champs_doc_web (nom nation1 drapeau effectif)
+ champs_export (nom nation1 cid region)
+ marge_gche {[type chaine] [texte marge] [sans_saisie vrai] [invisible vrai] [nomchamp marge_gche]}
+ nom {[type chaine] [taille 100] [taillecar 12] [style majuscule] [obligatoire vrai] [nomchamp nom] [texte nom] [no_col 1001] [taille_doc 150] }
+ nation1 {[type nation] [taille 42] [taillecar 5] [texte nation] [maxcar 3] [nomchamp nation1] [no_col 1002] [taille_doc 63] }
+ drapeau {[type image] [texte drapeau] [taille 42] [sans_saisie vrai] [nomchamp drapeau] [no_col 1003] [taillecar 10] [taille_doc 63]}
+ cid {[type chaine] [taille 100] [taillecar 12] [texte "CID FFE"] [nomchamp cid] [no_col 1004] [taille_doc 150] }
+ region {[type chaine] [taille 100] [taillecar 12] [texte "Region FFE"] [nomchamp region] [no_col 1005] [taille_doc 150] }
+ effectif {[type entier] [sans_saisie vrai] [invisible vrai] [nomchamp effectif] [texte effectif]}
+ marge1 {[type chaine] [texte marge] [sans_saisie vrai] [invisible vrai] [nomchamp marge1]}
+ marge_dte {[type chaine] [texte marge] [sans_saisie vrai] [invisible vrai] [nomchamp marge_dte]}
+ typetype entite
+ champs_affiches (nom nation1 drapeau cid region)
+ tous_les_champs (cle classe marge_gche nom nation1 drapeau cid region effectif marge1 marge_dte)
+ fiche_table ()
+ genre feminin
+ nombre 3
+ modifie vrai
+ date_oed "195"
+ nodermodif 65
+ faire_maj_smart vrai
+)  
+
+(def nation
+ type nation
+ affichage (nom)
+ ordre_alpha (nom croissant)
+ ordre_structure (nom croissant)
+ utilise_par (ligue club tireur arbitre)
+ ordres_doc (ordre_alpha ordre_structure)
+ selections_doc (tous concerne_tir concerne_tir_pres concerne_arbi concerne_arbi_pres)
+ champs_doc (marge_gche nom drapeau nom_etendu effectif marge1 marge_dte)
+ champs_doc_diapo (marge_gche nom drapeau nom_etendu effectif marge1 marge_dte)
+ champs_doc_web (nom drapeau nom_etendu effectif)
+ champs_export (nom nom_etendu)
+ marge_gche {[type chaine] [texte marge] [sans_saisie vrai] [invisible vrai] [nomchamp marge_gche]}
+ nom {[type chaine] [taille 42] [taillecar 5] [maxcar 3] [style majuscule] [obligatoire vrai] [nomchamp nom] [texte nom] [no_col 1001] [taille_doc 63] }
+ drapeau {[type image] [texte drapeau] [taille 42] [sans_saisie vrai] [nomchamp drapeau] [no_col 1002] [taillecar 10] [taille_doc 63]}
+ continent {[type chaine] [taille 42] [taillecar 5] [maxcar 3] [style majuscule] [nomchamp continent] [texte continent] [no_col 1003] [taille_doc 63] }
+ nom_etendu {[type chaine] [taille 100] [taillecar 16] [style titre] [nomchamp nom_etendu] [texte nom_etendu] [no_col 1004] [taille_doc 150] }
+ effectif {[type entier] [sans_saisie vrai] [invisible vrai] [nomchamp effectif] [texte effectif]}
+ marge1 {[type chaine] [texte marge] [sans_saisie vrai] [invisible vrai] [nomchamp marge1]}
+ marge_dte {[type chaine] [texte marge] [sans_saisie vrai] [invisible vrai] [nomchamp marge_dte]}
+ typetype entite
+ champs_affiches (nom drapeau continent nom_etendu)
+ tous_les_champs (cle classe marge_gche nom drapeau continent nom_etendu effectif marge1 marge_dte)
+ fiche_table ()
+ genre feminin
+ modifie vrai
+ nombre 9
+ date_oed "196"
+ nodermodif 66
+ faire_maj_smart vrai
+)  
+
+(def piste
+ type piste
+ sans_traitement vrai
+ avec_description vrai
+ hors_menu_tables vrai
+ piste {[type chaine] [taillecar 8] [nomchamp piste] [texte piste] [no_col 1001] [taille 64] [taille_doc 96] }
+ connecte {[type oui_non] [taillecar 7] [defaut oui] [style majuscule] [nomchamp connecte] [texte connecte] [no_col 1002] [taille 56] [taille_doc 84] [enumere (("o" oui "oui") ("n" non "non"))] }
+ ip {[type chaine] [taillecar 10] [nomchamp ip] [texte ip] [no_col 1003] [taille 80] [taille_doc 120] }
+ port {[type entier] [taillecar 6] [nomchamp port] [texte port] [no_col 1004] [taille 48] [taille_doc 72] }
+ comin {[type chaine] [taillecar 6] [nomchamp comin] [texte comin] [no_col 1005] [taille 48] [taille_doc 72] }
+ actif {[type oui_non] [taillecar 4] [defaut non] [style majuscule] [nomchamp actif] [texte actif] [no_col 1006] [taille 32] [taille_doc 48] [enumere (("o" oui "oui") ("n" non "non"))] }
+ auto {[type chaine] [taillecar 6] [defaut manuel] [style majuscule] [nomchamp auto] [texte auto] [no_col 1007] [taille 48] [taille_doc 72] }
+ etatapp {[type etats_app] [taillecar 6] [nomchamp etatapp] [texte etatapp] [no_col 1008] [taille 48] [taille_doc 72] [enumere (("e" fencing "escrime") ("h" halt "halt") ("P" pause "Pause") ("a" waiting "attente") ("f" ending "finissant"))] }
+ ipsortie {[type chaine] [taillecar 10] [nomchamp ipsortie] [texte ipsortie] [no_col 1009] [taille 80] [taille_doc 120] }
+ poultab {[type chaine] [invisible vrai] [nomchamp poultab] [texte poultab]}
+ poultabaffi {[type chaine] [taillecar 24] [texte poultab] [nomchamp poultabaffi] [no_col 1010] [taille 192] [taille_doc 288] }
+ numero {[type entier] [taillecar 6] [nomchamp numero] [texte numero] [no_col 1011] [taille 48] [taille_doc 72] }
+ round {[type entier] [taillecar 6] [nomchamp round] [texte round] [no_col 1012] [taille 48] [taille_doc 72] }
+ tireur2 {[type entier] [invisible vrai] [nomchamp tireur2] [texte tireur2]}
+ nom2 {[type chaine] [taillecar 16] [texte tireur2] [nomchamp nom2] [no_col 1013] [taille 128] [taille_doc 192] }
+ nat2 {[type chaine] [taillecar 3] [texte nation] [nomchamp nat2] [no_col 1014] [taille 30] [taille_doc 45] }
+ score2 {[type entier] [taillecar 6] [nomchamp score2] [texte score2] [no_col 1015] [taille 48] [taille_doc 72] }
+ chrono {[type chaine] [taillecar 6] [nomchamp chrono] [texte chrono] [no_col 1016] [taille 48] [taille_doc 72] }
+ score1 {[type entier] [taillecar 6] [nomchamp score1] [texte score1] [no_col 1017] [taille 48] [taille_doc 72] }
+ nat1 {[type chaine] [taillecar 3] [texte nation] [nomchamp nat1] [no_col 1018] [taille 30] [taille_doc 45] }
+ nom1 {[type chaine] [taillecar 16] [texte tireur1] [nomchamp nom1] [no_col 1019] [taille 128] [taille_doc 192] }
+ tireur1 {[type entier] [invisible vrai] [nomchamp tireur1] [texte tireur1]}
+ couleur {[type chaine] [invisible vrai] [nomchamp couleur] [texte couleur]}
+ typetype entite
+ champs_affiches (piste connecte ip port comin actif auto etatapp ipsortie poultabaffi numero round nom2 nat2 score2 chrono score1 nat1 nom1)
+ tous_les_champs (cle classe piste connecte ip port comin actif auto etatapp ipsortie poultab poultabaffi numero round tireur2 nom2 nat2 score2 chrono score1 nat1 nom1 tireur1 couleur)
+ fiche_table ()
+ genre feminin
+ date_oed "197"
+ nodermodif 67
+ faire_maj_smart vrai
+)  
+
+(def url_live_video
+ type url_live_video
+ sans_navigation vrai
+ hors_menu_tables vrai
+ ordre_alpha (nom croissant)
+ nom {[type chaine] [taillecar 10] [saisie_bloquee vrai] [nomchamp nom] [texte nom] [no_col 1001] [taille 80] [taille_doc 120] }
+ actif {[type oui_non] [taillecar 5] [defaut oui] [style majuscule] [nomchamp actif] [texte actif] [no_col 1002] [taille 40] [taille_doc 60] [enumere (("o" oui "oui") ("n" non "non"))] }
+ url {[type chaine] [taillecar 100] [nomchamp url] [texte url] [no_col 1003] [taille 800] [taille_doc 1200] }
+ typetype entite
+ champs_affiches (nom actif url)
+ tous_les_champs (cle classe nom actif url)
+ fiche_table ()
+ genre masculin
+ nombre 0
+ date_oed "198"
+ nodermodif 68
+ faire_maj_smart vrai
+)  
+
+(def fichier_web
+ type fichier_web
+ sans_navigation vrai
+ avec_saisie_suppression vrai
+ hors_menu_tables vrai
+ ordre_alpha (fichier croissant rang croissant)
+ fichier {[type chaine] [taillecar 30] [nomchamp fichier] [texte fichier] [no_col 1001] [taille 240] [taille_doc 360] }
+ depuis {[type chaine] [taillecar 6] [nomchamp depuis] [texte depuis] [no_col 1002] [taille 48] [taille_doc 72] }
+ jusqua {[type chaine] [taillecar 6] [nomchamp jusqua] [texte jusqua] [no_col 1003] [taille 48] [taille_doc 72] }
+ rang {[type entier] [taillecar 6] [nomchamp rang] [texte rang] [no_col 1004] [taille 48] [taille_doc 72] }
+ typetype entite
+ champs_affiches (fichier depuis jusqua rang)
+ tous_les_champs (cle classe fichier depuis jusqua rang)
+ fiche_table ()
+ genre masculin
+ nombre 0
+ date_oed "199"
+ nodermodif 69
+ faire_maj_smart vrai
+)  
+

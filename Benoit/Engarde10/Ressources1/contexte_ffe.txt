@@ -1,0 +1,16 @@
+(def contexte
+  nomFichier contexte_ffe.txt
+  federation "Féd. Française d'Escrime"
+  texte_ligue departement
+  fichiers (ficclubs ficdptmt ficnations)
+  controles ((tireur club1 controle_club_ffe)
+             (tireur licence controle_club_ffe))
+  ; txt : on donne des zone (indice premier et longueur)
+  ficclubs {[type club] [chemin "clubs_ffe.txt"] [info_champs ((code 1 8) (nom 9 12))]}
+  ; csv on donne les noms des champs
+  ficdptmt {[type ligue] [chemin "departements_ffe.csv"] [info_champs (code nom CID NoCID Region)]}
+  ; txt : on donne des zone (indice premier et longueur)
+  ficnations {[type nation] [chemin "nations.txt"]
+              [info_champs ((nom 1 3) (continent 5 3) (nom_etendu 9 20))]})
+
+

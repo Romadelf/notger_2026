@@ -1,0 +1,17 @@
+(
+
+; show once fencer time and piste for poules
+; on affiche une fois les heures et les pistes pour les poules
+; then move to the main script / puis on affiche le script général
+(if (state poules) then 
+  (show time_piste "ee_fencer-time-piste_nation_flag.txt" 1)
+  (script "ee_script_FIE-junior_main.txt") )
+
+; show once fencer time and piste for tableaux
+; on affiche une fois les heures et les pistes pour les tableaux
+; then move to the main script / puis on affiche le script général
+(if (state tableaux) then 
+  (show time_piste "ee_fencer-time-piste_nation_flag.txt" 1)
+  (script "ee_script_FIE-Senior_main.txt") )
+
+)

@@ -1,0 +1,3017 @@
+#textes_engarde=Hungarian/Magyar; Magyar szöveg 2021 február 7.
+
+This file contains the texts of ENGARDE. It can be translated into another language.
+For this:
+* modify the first line:
+  - keep: "#textes_engarde="
+  - write after the name of the language in the language itself then "/"
+  - write after the name of the language in English then ";"
+  - write after the name of the translator and the date day/month/year
+* then translate the lines starting by # 
+
+A line starting with # and containing = describes a text, otherwise it's a comment
+which is ignored when loading.
+The part between # and = is the symbol that should not be modified.
+The part after = is the body of the text to be translated into your language.
+
+For some texts, we also give a reduced version
+we use the same symbol with% at the end
+example:
+normal text: #categorie=catégorie
+reduced text: #categorie%=cat
+
+It is recommended to write the text in lower case. ENGARDE takes in charge for uppercase
+in general.
+
+******************************************************************************
+
+Somes sentences have places denoted ^1 or ^2 which are replaced by a number or a word by ENGARDE 
+example:  #tour_no=tour No ^1
+
+******************************************************************************
+
+In several sentences, ENGARDE manages genders and numbers.
+First example: international[/e|s/es]
+between [] there are several way to complete the word:
+"|" separates numbers: singular|plural
+"/" separates gender: male/female
+
+In some sentences, ENGARDE manages genders and numbers related to a place:
+example:  #elimine=^1 éliminé[1|/e|s/es]
+the gender and number will be this of the word replacing ^1 because of 1| after [
+
+******************************************************************************
+
+The gender of some words is indicated with (f) ou (m) before the word
+example:  #competition=(f)compétition[|s]
+
+******************************************************************************
+
+THE SENTENCES TO BE TRANSLATED HAVE A & AFTER =
+example: #tour_no=&tour No ^1
+It helps to search the sentences to be translated
+REMOVE THE & WHEN YOU TRANSLATE A SENTENCE
+
+******************************************************************************
+
+Indicate here if the language uses latine letters (write oui or non)
+When non is written, the texts are not modified:
+- no transformation in upper/lower case
+- no suppression of spaces, no gender or number consideration.
+Texts must be written without [ / | ] and without (f) and (m)
+but ^ must be kept
+
+#alphabet_latin=oui
+
+Indicate below if you want Engarde manage upercase for title or not
+
+#majuscules_automatiques=oui
+
+Indicate here the size of the labels for the input windows when you want a fixed size.
+0 means automatic size (use it for latin languages)
+another value is the precise size in pixels, usually between 100 and 200 (use it for 
+Chinese for example).
+
+#size_of_label=0
+
+******************************************************************************
+                        COMPETITION
+
+#competition=()verseny[|ek]
+#parametres=paraméterek
+#parametres_principaux=fõ praméterek
+#individuelle=egyéni[]
+#par_equipes=csapat
+#type_compe=verseny típusa
+#national=nemzeti[]
+#international=nemzetközi[/e|s/s]
+#domaine_compe=verseny típusa
+#arme=fegyver
+#fleuret=tõr
+#epee=párbajtõr
+#sabre=kard
+
+#organisateur=()szervezõ
+#liveURL=Élõ eredmények URL
+#videoURL=Videó URL
+#URLorganisateur=szervezõ URL
+#lieu=verseny helye
+#federation=()szövetség
+#titre_reduit=()mappa neve a mentéshez
+#texte=szöveg
+#titreCourtTournoi=Esemény rövid címe
+#titreLongTournoi=Esemény címe
+
+#titre_ligne=egysoros cím
+#titre_diapo=DiapoEngarde cím
+
+#titre1=cím : 1. sor
+#titre2=cím : 2. sor
+#titre3=cím : 3. sor
+#titre4=cím : 4. sor
+
+
+******************************************************************************
+
+                       THE ENTITIES OF THE TABLES
+
+All entities have a name
+for fencers and referees, the name is the last name, e.g., DUPONT
+#nom=()név[|]
+
+The nations have a name in 3 letters and a full name
+#nom_etendu=()teljes név[|]
+
+Entities have affiliations (club, nation ...)
+#affiliation=felvétel
+#affiliation_possible=()lehetséges nevezés[|]
+
+For fencers, referees and teams
+#presence=()jelenlét
+#presence%=()jelenlét
+#present=jelen
+#present%=J
+#absent=távol
+#absent%=T
+#touspresents=Mind jelen
+#tousabsents=Mind távol
+#absentpardefaut=alapártelmezetten TÁVOL
+#presentpardefaut=alapértelmezetten JELEN
+
+For fencers and referees
+#sexe=()ffi/nõi[|]
+#sexe%=()ffi/nõi[|]
+les adjectifs associés [homme/dame|hommes/dames] ACCORDES AVEC LE MOT SEXE
+#masculin=férfi
+#masculin%=ffi
+#feminin=nõi
+#feminin%=nõi
+
+#categorie=korosztály
+#categorie%=kor
+#veteran=veterán[/te|s/tes]
+#veteran%=V
+
+#veteranA=veterán A[/|/]
+#veteranA%=VA
+#veteranB=veterán B[/|/]
+#veteranB%=VB
+#veteranC=veterán C[/|/]
+#veteranC%=VC
+
+#veteran1=veterán[/|s/s]1
+#veteran1%=V1
+#veteran2=veterán[/|s/s]2
+#veteran2%=V2
+#veteran3=veterán[/|s/s]3
+#veteran3%=V3
+#veteran4=veterán[/|s/s]4
+#veteran4%=V4
+#senior=felnõtt[|]
+#senior%=F
+#junior=junior[|]
+#junior%=J
+#cadet=kadett[/|/]
+#cadet%=K
+#minime=serdülõ[|]
+#minime%=S
+#benjamin=újonc[/|/]
+#benjamin%=Ú
+#pupille=gyermek[|]
+#pupille%=G
+#poussin=mini[|]
+#poussin%=M
+
+for clubs, leagues, nations
+#effectif=létszám
+
+***********
+FENCERS
+
+#tireur=vívó[/|/]
+
+prenom is first name
+#prenom=()kereszt név[|]
+#prenom%=()név
+#nomprenom=()vezetéknév[|] keresztnév[|]
+#nomprenom%=()név[|]
+#date_nais=()születési[] dátum
+#date_nais%=()szül.dát.
+#licence_fie=(f)FIE licence
+#licence_fie%=(f)FIE lic.
+#cle=kulcs
+#licence=(f)licence[|s]
+#licence%=(f)lic.
+#dossard=()sorszám[|]
+#dossard%=()ssz.
+#serie=()ranglista hely
+#serie%=rh.
+#points=()pontok
+#points%=()pt
+#rang=()rang
+#rang%=(m)RG
+#rang_init=&initial rank
+#rang_init%=&i.r.
+#nb_poules=csoport száma
+#nb_poules%=csoport
+#nb_matches=mérkõzések száma
+#nb_matches%=mérkõzések
+#nb_finales=döntõk száma
+#nb_finales%=döntõk
+
+#groupe=csoport
+#groupe%=Cs
+#vic_match=GY/M
+#vic_match%=GY/M
+#vic=&victories
+#vic%=&V
+#def=&defeats
+#def%=&D
+#points_a_bonus=&points
+#points_a_bonus%=&pt
+#bonus=&bonus
+#bonus%=&bon
+#indice=AT-KT
+#indice%=ind.
+#td=adott találatok
+#td%=AT
+#tr=kapott találatok
+#tr%=KT
+#bonus_v=&bonus V
+#bonus_v%=&bv
+#bonus_d=&bonus D
+#bonus_d%=&bd
+#phase=szakasz
+#no=Num
+#rnd=Forduló
+#phase_incomplete=&phase ^1 incomplete
+#passe_phase_suiv=&move to the next phase
+
+***********
+
+#equipe=()csapat[]
+#serie_eq=()ranglistahely
+#points_eq=()pontok
+
+***********
+
+#club=()egyesület[|]
+
+#ville=város
+
+#departement=osztály
+
+#ligue=()liga[|]
+
+#etat=régió[|]
+
+#region=régió[|]
+
+#nation=()nemzet[|]
+
+***********
+
+#arbitre=()versenybíró [|]
+
+******************************************************************************
+
+#formule=()lebonyolítás[|]
+#formu_compe=verseny lebonyolítása
+#pas_de_poule=ebben a lebonyolításban nincs körvívás
+#pas_de_tableau=ebben a lebonyolításban nincs tábla
+#pas_fini_poules=a csoportok nem fejezõdtek be
+#clasmt_origine=kezdõ rangsorolás
+#tour_poules=^1 csoportforduló[||]
+#nombre_tireurs=vívók száma
+#nombre_tours_poules=csoportfordulók száma
+#qual_fin_poules_sur=hány forduló után van kiesés
+#clas_fin_poules_sur=hány forduló után van rangsorolás
+#qual_fin_poules_sur_x=^1 forduló[||] utáni rangsorolás 
+#clas_fin_poules_sur_x=rangsorolás a csoportok végén: ^1 forduló[||]  
+#nombre_touches_poules=találatok száma a csoportmérkõzéseken
+#nombre_touches_tableaux=találatok száma a táblán
+
+#max_touches=találatok maximális száma
+#matches_en=mérkõzések ^1 találatra[||]
+#dans_poules=csoportokban
+#nombre_suites_tableaux=a táblák száma
+#tire_3e=vívás a harmadik helyért
+#formule_poules=csoportok lebonyolítása
+#formule_tableaux=táblák lebonyolítása
+#tour_no= ^1. forduló
+#suite_tab_no=a következõ tábla száma: ^1
+#trop_exemptes=túl sok a kiemelt
+#trop_poules=túl sok a csoport
+#trop_qualifies=túl sok a továbbjutó vívó
+#trop_tireurs=túl sok a vívó
+
+#bar_exemptes=holtverseny a kiemelésért
+
+#modifier_valeurs=az értékek módosítása
+#nb_change=a ^1 számát módosítottam
+#revoir_formule=újra kell ellenõrízni a lebonyolítást
+#au_depart=^1 versenyben
+#exempte=kiemelt ^1 [||/]
+#il_faut=kell
+#exemptes=kiemeltek
+#non_exemptes=^1 nem kiemelt
+#pas_decalage=nincs eltolás
+#decalage_par=eltolás kritériuma
+#limite_a=limitálás értéke ^1
+#qualifies=továbbjutottak
+#qualifie=^1 továbbjutó[|/|/]
+#elimines=kiesettek
+#elimine=^1 kiesõ
+#par_poule=^1 csoportonként
+#a_l_indice=^1 index alapján
+#a_la_fin=^1 a végén
+
+#remp_auto_pou=csoportok automatikus feltöltése !
+#simu=Szimuláció futtatása !
+#est_fait=Rendben !
+#rien_faire=Ne csinálj semmit
+
+#poules_finies=csoportok befejezõdtek
+#compe_finie=befejezett verseny
+#on_en_est=Következõ lépés:
+#const_poules=Csoportok felállítása
+#ameliorer_poules=Elsõ próbálkozás sikertelen, próbáljuk javítani?
+#const_tableau=tábla felállítása
+#saisie_poule=rögzítés a csoportba
+#remplissageauto=automatikus feltöltés!!
+#feuilles_pou=kiadatlan csoport jegyzõkönyvek
+#poules_const=Csoportbeosztás
+#poules_resu=csoportok eredményei
+#poules_a_saisir=^1 csoport[||] folyamatban
+#tableaux_a_saisir=^1 tábla[||] folyamatban
+#matches_a_saisir=^1 mérkõzés[||] folyamatban
+#matches_a_imp=^1 mérkõzés[||] kinyomtatása
+#poules_a_imp=^1 csoport[||] kinyomtatása
+#imp_toutes_pou=összes csoport nyomtatása
+#imp_des_pou=kiválasztott csoportok kinyomtatása
+#de_poule=hányadiktól:
+#a_poule=hányadikig:
+#poule_saisie=ez a csoport már le van zárva !
+#grille=rács
+#imp_match_de=mérkõzések jegyzõkönyveinek kinyomtatása
+#imp_match_attente_de=a folyamatban lévõ mérkõzések kinyomtatása
+
+#refaire_poules=csoportok újrakészítése
+#refaire_tableau=tábla újrakészítése
+#refaire_poules_tno=^1 forduló csoportjainak az újrakészítése
+#poules_tno=^1 forduló csoportjai
+#revenir_tour=vissza az elõzõ fordulóhoz
+#revenir_tour_no=Vissza a(z) ^1. fordulóhoz
+#modif_scores=minden eredményt módosít
+#modif_raz=re-enter the poule deleting the previous data
+#modif_poule_int=akarja módosítani ezt a csoportot ?
+#repartition_poule=Elosztás a csoportokban
+
+#toutes_saisies=minden csoport lezárva
+#bar_dans_poule=holtverseny a csoportban
+#qual_poule=^1 továbbjutó[||s] a csoportban
+#pas_qual_poule=nincs továbbjutó a csoportban
+#qual_indice=^1 továbbjutó[||] index alapján
+#y_a_barrage=holtverseny
+#poules_saisies=^1 csoport feltöltve eredményekkel
+
+#perdre=meg szeretne megválni tõle ?
+#perdre_tab=akarja ezt a táblát újrakészíteni ?
+
+#numero=szám
+#numero%=No
+#total_tireurs_depart=vívók versenyben
+#nombre_exemptes=kiemeltek száma:
+#tireurs_dans_poules=vívók a csoportban
+#tireurs_dans_tableau=vívók a táblán
+#nombre_poules=csoportok száma
+#tireurs_par_poule=vívók száma csoportonként
+#critere_decal_1=1. eltolási kritérium
+#critere_decal_2=2. eltolási kritérium
+#critere_decal_3=3. eltolási kritérium
+#critere_placement=elhelyezés a csoportokban
+#limite_decal=eltolási limit
+#qualifies_par_poule=továbbjutók száma csoportonként
+#qualifies_indice=index alapján továbbjutottak száma
+#total_tireurs_fin=vívók a végén
+#total_tireurs_depart%=vívók az elején
+#nombre_exemptes%=Kiemeltek
+#tireurs_dans_poules%=csoportban
+#tireurs_dans_tableau%=táblán
+#nombre_poules%=csop-ok száma
+#tireurs_par_poule%=vívók száma csoportonként
+#critere_decal_1%=1. kritérium
+#critere_decal_2%=2. kritérium
+#critere_decal_3%=3. kritérium
+#critere_placement%=elh. csop-ban
+#limite_decal%=eltolási limit
+#qualifies_par_poule%=továbbjutók csoportonként
+#qualifies_indice%=index alapján továbbjutók
+#qualifies%=továbbjutók
+#total_tireurs_fin%=vívók a végén
+
+#qualif_tour=^1. forduló továbbjutása
+
+******************************************************************************
+                       LES POULES
+
+#deroulement=Irányítás
+
+#poule=()csoport[|]
+#poules=()csoportok
+#x_poule=^1 csoport[||]
+#x_poule_de=^1 ()csoport[||] ^2 vívóval
+#x_poule_de_ou=^1 ()csoport[||]  ^2 vagy ^3 vívóval
+#sais_poules=Csoport felvitele
+#sais_matches=Mérközés rögzítése
+#sais_scores=Pontok rögzítése
+#sais_pistes=pástok hozzáadása
+#sais_arbitres=versenybírók hozzáadása
+#sais_horaires=idõpontok hozzáadása
+#sais_piste_arbi=pástok és versenybírók hozzáadása
+#modif_poules=csoportok módosítása
+#poule_no=csoport szám ^1
+#match_no=mérkõzés szám ^1
+#piste_no=Pást szám ^1
+#piste=()pást[|]
+#piste%=P.
+#pas_bon_no_pou=helytelen csoportszám
+#pas_bon_no_match=helytelen mérkõzésszám
+#pas_bon_tab=nincs tábla
+#lettre_et_nombre=egy betû és egy szám szükséges
+#reordonne=újra rendezi a csoportokat
+#garde_ordre=megtartja a megadott sorrendet
+#ajout_tir_pas_ds_pou=hozzáadja a távollévõ vívókat
+#les_tireurs=a vívók
+#enleves_poules=csoportok elhelyezve
+#meme_heure_piste=Azonos idõ, azonos pást
+
+******************************************************************************
+
+#tableau=()tábla[|]
+#tableaux=táblák
+#ces_tableaux=ezeket a táblákat
+#tableau_de=tábla ^1
+#tableau_prelim_de=elõzetes tábla ^1
+#tableau_prince_de=fõtábla ^1
+#tableau_phase_de=^1 tábla fázis ^2-nek
+#tableau_final=döntõ tábla
+#demi_finales=elõdöntõ
+#finale=döntõ
+
+******************************************************************************
+
+#classement=()rangsorolás[|]
+#classements=rangsorolások
+#classement_des=^1 rangsorolása
+#classement_apres_pou=rangsorolás a csoportok végén
+
+******************************************************************************
+
+#nouv_compe=új verseny
+#ouvrir_compe=verseny megnyitása
+#fermer_compe=verseny bezárása
+#sauvegarde=biztonsági mentés
+
+#faire_fic_trans=transfer file
+#fic_trans_FFF=FFF transfer file
+
+#fic_resu=creation of a results file
+#activiteArbitres=versenybírók aktivitása
+#avec_series=with fencer number
+#avec_rangs=with ranking
+#du_rang=from ranking
+#au_rang=to ranking
+#in_tab_indiv=Egyéni versenyeknél a táblán
+#ref1_match=Versenybíró 1 a mérkõzés vezetõ
+#ref23_assistants=Versenybíró 2 és 3 az oldalbírók
+#in_team=Csapatversenyeknél
+#ref123_match=Versenybíró 1 2 3 a mérkõzés vezetõk
+
+#enreg_compe=mentés
+#chargement=feltölt
+#prepa_tables=tábla elõkészítése
+#prepa_affi=megtekint/szerkeszt
+#ecraser=Törlés ^1
+#pas_sur_elle=you cannot copy a competition onto itself
+
+#copie_de= ^1 másolata
+#choix_rpla=or select another competition to overwrite it
+#rep_pas_cree=^1 mappa nem hozható létre
+
+#modif_de=^1 módosítása
+#val_convient_pas=response not valid
+#pour_cela=a végrehajtáshoz
+#arriere=vissza kell menni egy lépéssel
+#dans_tableaux=táblán
+#valeur_initiale=kezdõ érték
+#pas_encore_tab=a tábla vívása még nem kezdõdött el
+
+******************************************************************************
+
+#table=()Táblázatok[|]
+#tri=válogatás
+
+#fiche=()rekord[|]
+#edition=kezelõ
+#curseur_init=alapértelmezett mezõ
+#colonne1fixe=elsõ oszlop fix
+
+#import_fiche=fájl import
+#importer=import
+#importer_tous=mindet betölt
+#effacer_champ=mezõ törlése
+#effacer_fiche=üres a fájl
+
+#precedent=elõzõ
+#suivant=következõ
+#premier=elsõ
+#dernier=utolsó
+#symetrique=szimmetrikus érték
+
+#nouveau=új
+#saisir=új hozzáadása
+#saisie=hozzáadás
+#saisir_affil=hozzáadás
+#modifier=módosít
+#chercher=keresés
+#chercher_compe=keresés a versenyben
+#chercher_res=keresés a Memóriában
+#chercher_fic=keresés a fájlban
+#fermer=bezárás
+#suite=tovább
+#enregistrer=mentés
+#enregistrement=mentés
+#quitter=kilép az Engarde-ból
+#justequitter=kilép
+#retour_Engarde=vissza az Engarde-hoz
+#retour_init=vissza a kezdõ állapothoz
+#maximum=maximum
+#vic_score=gyõzelem pontszámmal
+
+#victoire=gyõzelem
+#defaite=vereség
+#abandon=visszalépés
+#exclusion=kizárás
+#forfait=vétség
+#medical=orvosi visszalépés
+#pblack=&Pblack
+#sortie_except=Rendkívüli befejezés
+#verif_sortie_except=Szeretnéd ellenõrizni a rendkívüli befejezésket elõtte
+#abandon_med_expli=Orvosi ok miatti visszalépés
+#abandon_tech_expli=Technikai ok miatti visszalépés
+#exclusion_expli=Kizárás (fegyelmi vétség)
+#forfait_expli=Vétség (nem jelent meg az elsõ mérkõzésén a versenyen)
+#pblack_expli=&Defeat for non-combativity
+#faire_saisie_dans_poule=Végrehajtja ezeket a módosításokat a csoportban
+#faire_saisie_dans_tableau=Végrehajtja ezeket a módosításokat a táblán
+#modif_impossible=Lehetetlen módosítás
+
+juste one latin letter for each symbol, not x, not w, all different
+#victoire%=v
+#defaite%=d
+#abandon%=a
+#exclusion%=e
+#forfait%=f
+#pblack%=&p
+
+#dns=DNS
+#dnf=DNF
+#exc=EXC
+#ncb=&NCB
+
+#efface_sym=szimetrikus törlés !
+#sym_pas_defaite=Átlósan nem lehet gyõzelem !
+#sym_pas_vic=Átlósan nem lehet vereség !
+#vic_inf_defaite=gyõzelem alacsonyabb pontszámma ?
+
+#navigation=navigáció
+#meme_champ=ugyanaz a mezõ
+#premier_champ=elsõ mezõ
+#oblige=meg kell adni egy ^1
+
+#deja_table=már a táblán
+#on_prend_a_la_place=elhelyezi erre a helyre
+#on_a_ici=és most itt van
+
+  ^1 will be replaced by a number, ^2 by fencer or club
+#il_y_a=^1 [1|^2]
+
+  ^1 will be replaced for example by ranking
+#existe_pas=ez a(z) ^1 nem létezik
+
+  ^1 will be replaced by fencers, rounds of poules...
+#nombre_de=^1. száma
+#ajouter=hozzáad
+#supprimer=töröl
+#suppress=törlés
+#suppress_x=^1 [1|^2] törlése
+#pas_supp=nem törölhetõ
+#car_compe=mivel szerepel a versenyben
+#car_util=mivel a ^1 [||] használja
+
+#sur_premiere=elsõ rekord
+#sur_derniere=utolsó rekord
+#taper_deb=írja be a név kezdetét
+
+#agglomerer=összevon
+#agglo_x=^1 [1|^2] egy lesz !
+
+******************************************************************************
+
+#recherche=keresés
+#commencant_par=kezdõdjön vele
+#contenant=tartalmazza
+#exacte=megegyezik
+#approchee=hasonlít
+
+#chercher_un=[|/|/]^1 keresése
+#chercher_autre=másik [|/|/] ^1 keresése
+#resultat=legyen
+
+******************************************************************************
+
+#oui=igen
+#oui%=i
+#non=nem
+#non%=n
+#vrai=igaz
+#vrai%=i
+#faux=hamis
+#faux%=h
+#ok=Ok
+#annuler=Mégsem
+#aide=Súgó
+#pas_aide=a súgó nem található
+#pas_fic=a fájl nem található
+#generalites=általános
+#contexte=menük
+
+#et=és
+#ou=vagy
+#date=()dátum
+#zonehoraire=idõzóna
+#au_lieu_de=többi csoportban
+#repart_parfaite=beosztás tökéletes Bingó!!!!!!
+#n_imperfect=^1 csoport nem tökéletes[||]
+
+#exemple=()példa[|]
+#signature=aláírás[|]
+#pas_saisie=nincs hozzáadás
+#dbclick=dupla kattintás
+#use_menu=^1 menüt használd
+#liste_vide=üres lista
+#liste_des=^1 listája üres
+
+#reserve=memória
+#charger=betölt
+#vider=ûrit
+#fichier=()fájl[|]
+ ^1 will be replaced by file or competition
+#est_de_genre=the ^1 is of type ^2
+#on_charge_fic=l^1 fájlját betölti
+#chargt_de=^1 betöltése
+#entites_chargees=^1 [1|^2] betöltve a memóriába
+#entites_reserve=^1 [1|^2] a memóriában
+#reserve_vide=a memória üres
+#on_importe=^1 [|^2] betölti a versenybe
+#reste_importer=hátra van még:
+
+#essai_trans=megmutatom "DOS transfer" formátumban
+#prem_ligne=elsõ sor megtekintése
+#est_fic_a_charger=importálhatom ezt a fájlt
+#pas_type_connu=ismeretlen fájl formátum
+
+#page=()oldal[/]
+#marge=()margó[/]
+
+#concerne_tir=vívókra vonatkozólag[/]
+#concerne_tir_pres=jelen lévõ vívókra vonatkozólag[/]
+#concerne_arbi=versenybírókra vonatkozólag
+#concerne_arbi_pres=jelen lévõ versenybírókra vonatkozólag
+#tous=mind
+#ordre=sorrend
+#ordre_alpha=abc sorrendben
+#ordre_structure=struktúrált sorrendben
+#ordre_serie=vívó sorszáma szerint
+#ordre_rang_init=&ordered by initial ranks
+#ordre_points=pontok szerint
+#ordre_rang=ranglistahely szerint
+#ordre_club=egyesület szerint
+#ordre_ligue=régió szerint
+#ordre_etat=nemzet szerint
+#ordre_CID=CID szerint
+#ordre_region=régió szerint
+#ordre_nation=nemzet szerint
+#ordre_ID=ID szerint
+#ordre_licence=licenc szerint
+#ordre_licence_fie=FIE licenc szerint
+#ordre_status=státusz szerint
+
+#selection=választás
+#reglages_imp=nyomtató beállítás
+#rub_a_imp=megjelenítendõ mezõk
+#document=lista
+#document_global=Teljes dokumentáció
+#contenu=tartalom
+#police=betûtípusok
+#mise_en_page=nyomtató beállítás
+#imprimer=nyomtatás
+#ajuster=beállít
+
+#non_modifiable=ez nem módosítható
+#non_modifiable_now=jelenleg ez most nem módosítható
+#anomalie=anomália
+#termine=befejezve
+#termine_sans_AR=Kész ACK nélkül
+#vide=üres
+#preparation=elõkészítve
+#en_cours=folyamatban
+
+#dans=vmiben
+#match_non_lance=ez a mérkõzés nincs folyamatban !
+#match_a_un=ennek a mérkõzésnek a vívója ellenfél nélkül továbbjutott
+#match_deja_saisi=már lezárt mérkõzés
+#jour=&day[|s]
+#heure=()óra[|]
+#heure_debut=kezdési idõpont
+#pas_vainqueur=nincs gyõztes
+#vainqueur=gyõztes
+#pb_match_suiv1=ennek a mérkõzésnek elõzõleg eltérõ gyõztese volt.
+#pb_match_suiv2=aki már vívott a következõ táblán
+#quand_meme_enreg=ennek ellenére akarja ezt az eredményt bevinni ?
+#pb_match_suiv3=a tábla következõ szakasza már készen van
+#refaire_tab_suiv=a tábla ezen szakaszát újra kell készíteni
+
+#refaire=akarja újból felállítani ?
+#modif=akarja módosítani ?
+
+#clas_init_du_tab=tábla kezdõ rangsorolása
+#tab_fin=befejezett tábla
+#clas_du_tab=tábla rangsorolása
+#clas_des_tab=összes tábla rangsorolása
+#clas_gene=végeredmény
+#tir_en_lice=vívók még versenyben
+#medaille=érem
+#medailles=érmek
+#or=arany
+#argent=ezüst
+#bronze=bronz
+
+#de=hányadiktól ?
+#a=hányadikig ?
+#depuis=honnan ?
+#jusqua=meddig ?
+
+#hasard_par_2=Sorsoljon véletlenszerûen?
+#echange_2=^1 permutation[1||s] of 2 fencers out of ^2
+
+#permut_gpe2=permutations of fencers by groups of 2
+
+#chge_formu_tab=the formula of the tableaux has changed
+#on_cree=létrehoz
+#on_conserve=megõríz
+#attention=figyelem
+#type_formule=lebonyolítás típusa 
+#formu_classique=klasszikus
+#formu_fie_seniors=Világkupa - Seniors
+#formu_fie_juniors=világkupa - Juniors
+#autre_formule=egyéb lebonyolítás
+#choix_npoules=válaszd ki a csoportfordulók számát
+#choix_ntab=táblák számának kiválasztása
+
+#tous_tir_avec_series=minden vívó a sorszámával
+
+#en_lice_avec_rangs=versenyben lévõ vívók rangjukkal
+#clas_gene_avec_rangs=általános rangsorolás: végeredmény
+
+#saisir_pistes=pástok hozzáadása
+#saisir_heures=idõpontok hozzáadása
+#feuilles_ma_attente=kiadatlan mérkõzésjegyzõkönyvek
+#feuilles_ma=mérkõzésjegyzõkönyvek
+#detail_rencontres=Mérkõzések részletei
+#rencontres_encours=Folyamatban lévõ mérkõzések
+#plusieurs_rencontres_encours=Számos folyamatban lévõ mérkõzés
+#tableauetpistes=táblák és pástok
+#const_tab=tábla létrehozása
+#refaire_tab=tábla újrakészítése
+#bad_taille_tab=a tábla mérete nem jó
+
+for percentages, one will obtain, for example: 20% makes 34
+#fait=^1% esetén ^2 továbbjutó
+#on_peut_faire=ajánlás
+#divers=különbözõ
+#ordre_special=speciális mérkõzésrend
+#couleur=színek
+
+#information=információ
+#confirmation=megerõsítés
+#question=kérdés
+#choix=választás
+#nouveautes=újdonságok
+
+#est_absent=^1 távol
+#nouveau_tir=^1 új[||] vívó
+
+#supp_tour=eltávolítja ebbõl a fordulóból
+#prend_pas=ezen a fordulón belül
+
+#est_ce_ok=biztosan ezt akarja
+
+#des_absents=ezek a vívók távol
+#bon_nb_exemptes=pontosítja a kiemelt vívók számát
+
+#je_modifie=módosítom
+#il_y_a_tir_dans_tab=^1 vívó[||] a táblán
+#nb_qualifies=továbbjutók száma
+
+#status=állapot
+#normal=normál
+
+#par_abandon=visszalépett
+#par_exclusion=kizárva
+#par_forfait=vétség
+#par_nbc=&by non-combativity
+
+example: Dupont has the status exclusion
+#a_pour_status=^1 státusza: ^2
+
+#faire_formu_tableau=adja meg a tábla lebonyolítását
+#mettre_qual_suite=a továbbjutottakat a következõre helyezi: tábla ^1
+#ou_supp_suite=vagy a következõ törlése: tábla ^1
+
+#modif_incoherences=hibás adatokat korrigálom
+#nb_tir_approx=vívók tényleges száma
+#plus_deux_tours_tab=it is extremely rare to have more than two phases of tableaux
+
+#creation_annulee=létrehozás megszakítva
+#repechage=vigaszág
+#poule_incomplete=befejezetlen csoport
+#deux_fois_clas=^1 kétszer a rangsorolásban
+#deux_fois_poule=^1 kétszer a csoportban
+#pas_dans_poule=^1 nincs a csoportban
+#met_tir_abs=a távollévõ vívókat megjelöltem
+
+#deja_ouverte=Ez a verseny már megvan nyitva vagy csak olvasható,
+#pasOuvrir2efois=nem lehet kétszer megnyítni.
+
+#options=opciók
+#avec_affil=ajánlott hozzáadással
+#sans_affil=ajánlott hozzáadás nélkül
+#avec_contraintes_statut=állapot megszorításokkal (ajánlott)
+#sans_contraintes_statut=állapot megszorítások nélkül (NEM ajánlott)
+#use_option_tt_poss=Használd az opciók menüt az összes lehetõséghez. 
+#quand_meme_dans_tab=Szerepelni fog a táblán, mivel muszáj rangsorolódnia.
+#mettre_abandon_match=Visszaléptetés a mérkõzésen.
+#avec_menu_choix=Check box-szal
+#sans_menu_choix=Check box nélkül
+#fermer_ouvrir_panneau=Be kell zárni a panelt, majd újra meg kell nyitni
+
+#non_qual=^1 nem jutott tovább[||]
+
+#non_exemp=Hiba: ^1 vívó[||] [||], mint kiemelt nincs megjelölve
+#non_places=Hiba: ^1 vívó[||] nincs elhelyezve
+
+#cherche_fic=keresés ^1 szerint
+#fic_existe_pas=fájl: ^1 nem létezik
+#peux_pas_lire=^1 fájl nem olvasható 
+#rep_existe_pas=mappa nem létezik
+#voir_fichier_svg=Lásd fájl/backup menüpontban
+#fic_pas_charge=fájl: ^1 nincs betöltve
+#charge_essai=betöltve ^1 próbálkozásra
+#fic_non_trouve=file: ^1 nem található
+
+#est_deja_table=^1 már szerepel a táblán
+#que_fait_on_de=döntse el
+#on_prend_pas=nem adja hozzás
+#on_ajoute_pas=nem adódik hozzá
+#on_le_prend=hozzáadja
+
+#tirage_auto=automatikus sorsolás
+#tirage_manuel=manuális sorsolás
+#on_echange=megcseréli
+#interligne=sortávolság
+#coef_interligne=Adja me a sortávolságot %-ban, alapesetbe = 100%.
+
+#fic_pas_cree=A fájl: ^1 nem lett létrehozva
+
+#base_dossard=létrehozza, mint sorszámot emelkedõ sorrendben
+#mettre_dos=sorszámoz
+#ne_pas_mettre_dos=ne használja a sorszámot
+#efface_dos=sorszámot töröl
+
+#vouloir_copie_permente=would you like to keep a permanent up to date copy
+#fic_existe=a fájl: ^1 már létezik
+#lecture_seule=csak olvasásra
+#enreg_copie=menti a verseny másolatát
+
+#est_copie1=ez a verseny egy másolat
+#PerteStatutCopie=ha megnyitja a fájlt, elveszíti a másolat státuszát
+#nePasOuvrir=NE NYISSA meg ezt a versenyt
+#OuvrirCetteCompe=megnyitja ezt a versenyt
+
+#avec_copie=dolgozik a másolatta a következõben: ^1
+#plus_copie=a másolat a következõben már nem elérhetõ: ^1
+
+#entree_progressive=progresszív belépés
+#ajustement_tour=^1. forduló módosul
+#entree_nouv_tir=új vívók belépése
+
+#elidir=direkt kiesés
+#type_elidir=direkt kiesés lebonyolítása
+#classique=klasszikus
+#avec_exemptes=kiemeltekkel
+#complexe=komplex
+#pasTableau=nincs tábla
+
+#pas_change_type_elidir=most a direkt kiesés nem változtatható
+
+#type_3e_place=harmadik hely eldöntése
+#a_indice=index alapján
+#ex_aequo=egyenlõ
+#par_match=mérkõzéssel
+
+#formu_avec_ex=lebonyolítás kiemeltekkel
+#formule_avec_prog=lebonyolítás progresszív belépéssel
+#ni_ex_ni_prog=nincsenek kiemeltek, nincs progresszív belépés
+
+#avec=következõvel: ^1
+#sans=következõ nélkül: ^1
+#choisir=választás: ^1
+#special=speciális
+#remiseZero=törlés
+#raz_formule=törli a lebonyolítást?
+#champ_non_modifiable=ez a mezõ nem módosítható
+
+#assistant=segítség
+#assistant_de=^1 segítsége
+#choix_general=éltalános választás[|]
+
+#tir_pas_pris=^1 vívó[||] nem szabad
+#eq_pas_pris=^1 csapat[||] nem szabad
+#nouvelle_eq=^1 új csapat[||]
+#changer_statut=a módosításhoz utasítsd el a létrehozást és módosítsd a státuszt.
+
+#si_fermer=ha most bezárja
+#on_ferme=bezár
+#nb_approx=tényleges létszám: ^1
+#ent_dans_poules=^1 csoportban
+#ent_par_poule=^1 csoportonként
+#ent_dans_tableau=^1 táblán
+
+#equi_en_lice=csapatok még versenyben
+#concerne_eq=csapatokra vonatkozólag
+#concerne_eq_pres=jelenlévõ csapatokra vonatkozólag
+#attrib_equipe=csapat tulajdonságának kijelölése
+#on_prend=^1 összegyûjtés
+#entite=adatok[|]
+
+#nom_une_lettre=név és egy betû
+
+#origine1=eredet 1
+#origine2=eredet 2
+#origine3=eredet 3
+#origine4=eredet 4
+#origine5=eredet 5
+#origine6=eredet 6
+
+#progression_naturelle=természetes progresszió
+#classement_initial_par_groupes=kezdõ rangsorolás csoportonként
+#classement_initial=kezdõ rangsorolás
+#critere_constitution=felállítás kritériuma
+
+#tour_de_poules=Csoport[|] forduló
+#nom_tableaux=táblák elnevezése
+#suite_tableaux=Táblák[|] szakaszai
+#description_tableau=Táblák[|] leírása[|]
+
+#description_modele=modell leírása
+#enregister_modele=mentés mint modell
+#charger_modele=modell betöltése
+#chargerFormule=lebonyolítás betöltése
+#sur_changer_formu=biztos, hogy cserélni akarja a lebonyolítást
+
+#classique_sans3=klasszikus lebonyolítás, nincs vívás a harmadik helyért
+#classique_avec3=klasszikus lebonyolítás, vívással a harmadik helyért
+
+#tab_dir_sans3=direktkieséses tábla, nincs vívás a harmadik helyért
+#tab_dir_avec3=direktkieséses tábla, vívással a harmadik helyért
+
+#tableau_direct=direkt tábla
+#tableau_prelim_32ex=elõzetes tábla 32 kiemelttel
+#tableau_prince64=64-es fõtábla
+#tableau_place_n=tába a következõ helyezésért: ^1
+#match_troisieme_place=mérkõzés a harmadik helyért
+#troisieme_place=harmadik hely
+#neme_place=^1. hely
+#quart_finales=negyeddöntõ
+
+#prelim_et_ppal=elõzetes tábla 32 kiemelttel és fõtáblával
+
+#non_supprimable=ez a tulajdonság nem törölhetõ
+
+#err_formu_tab=hiba a tábla lebonyolításában
+#nom_tab_err=a következõ tábla neve hibás
+#nom_tab_dupli=a következõ tábla neve duplikált
+#pas_org=the organism does not exist
+#org_err=a forrásdokumentumnak feltehetõleg hibás
+#val_err=értékei vannak
+#doit_etre=valószínûleg
+#doit_etre_forme=meg kell változtatni
+#lettre_etant_suite=a jegyzõkönyv a következõ tábla nevét tartalmazza
+#suite_inconnue=a következõ tábla neve ismeretlen
+#tab_incorrect_inconnu=ismeretlen vagy hibás tábla
+#circu_tab=a direktkiesés logikátlanul van elhelyezve
+#suites_ok=a következõk helyesek:
+
+#err_qualifes=hibás a továbbjutottak száma
+#zero_puis2=lehet 0, 1, 2, 4, 8, 16, 32 ...
+
+#pas_tir_tab=a vívók kezdõ rangsorolása nincs a táblában
+#tir_tab2fois=vívók kezdõ rangsorolása kétszer van a táblában
+
+#dest_vain_dupli=^1 gyõztese kétszer van a táblán
+#dest_bat_dupli=^1 vesztese kétszer van a táblán
+
+#classe_apres=rangsorolás után
+#destination_vainqueurs=gyõztesek rendeltetése
+#destination_battus=vesztesek rendeltetése
+#groupe_clasmt_battus=vesztesek csoportjának rangsorolása
+#rang_premier_battu=elsõ vesztes rangja
+#groupe_clasmt_vainqueur=gyõztesek rangsorolása
+#rang_premier_vainqueur=gyõztes rangja
+
+#classe_apres%=rangs. után
+#destination_vainqueurs%=gyõzt.rend.
+#destination_battus%=veszt.rend.
+#groupe_clasmt_battus%=veszt.cs.rangs.
+#rang_premier_battu%=1.veszt.rang
+#groupe_clasmt_vainqueur%=gyõzt.rangs.
+#rang_premier_vainqueur%=1.gyõzt.rang
+
+#calcul_tableaux=táblák kalkulásása
+#calcul_groupes_clas=csoportok végsõ rangsorolásának újraszámítása
+
+#avertissement=figyelmeztetés
+#modif_suites=táblák módosítása
+#modif_suites_expli1=Ha módosítja a táblákat
+#modif_suites_expli2=a tábla teljesen újrakalkulálódik!
+#modif_destination=táblák rendeltetésének módosítása
+#modif_destination_expli1=Ha most módosítja a táblák rendeltetését,
+#modif_destination_expli2=akkor a rangsorolási csoportok újrakalkulálódnak!
+#modif_gpe_clas=rangsorolási csoportok módosítása
+#modif_gpe_clas_expli1=Ha módosítja a rangsorolási csoportokat,
+#modif_gpe_clas_expli2=ill. a rangsorolási csoportok elsõ rangjait akkor minden újrakalkulálódik!
+
+#creation_de=^1 felállítás
+#creation_1er_tab=elsõ tábla felállítása
+#suppr_du_tableau=tábla ^1 törlése, újranevezés ".old"
+#pas_tab_en_cours=nincs tábla folyamatban
+#pas_tab_a_faire=nincs tábla létrehozva
+
+#barrage_tableau=holtverseny a következõ helyért: ^1 egy tábla létrehozása
+#garde_rang=^1 vívó[||] vagy csapat[||] tartja [||] ezt a sorrendet
+#se_classe_apres=rangsorolódik utána
+#formule_prevue=a lebonyolítás elintézve: ^1
+#tableau_prevu=ez a tábla elintézve :^1
+
+#pas_tab_refaisable=nincs olyan tábla amit újra kellene készíteni
+#tab_a_refaire=tábla újrakészítése
+
+#gpe_clas_diff=két csoport rangsorolása: ^1 az elsõ rangok különbözõek, ^2 és ^3
+
+#pas_match_en_cours=nincs mérkõzés folyamatban
+#cherche_match=mérkõzés keresése
+#les_matches_de=^1 mérkõzéseinek megtekintése
+#en_cours_contre=mérkõzés folyamatban ^1 ellen
+#gagne_contre=gyõztes mérkõzés ^1 ellen
+#perdu_contre=vesztett mérkõzés ^1 ellen
+#match_perdu=vesztett mérkõzés
+#rec_adversaire=ellenfél keresése
+#pas_adversaire=nincs ellenfél
+#score_trop_grand=túl nagy a pont
+
+#erreur_ecrire=hiba a fájl írásában
+#on_ressaye=próbáljuk újra
+#ressayer=ÚJRA
+
+#rangPoule=rang a csoportokban
+#rangPoule%=rg.csop.
+
+#tableau_inacheve=lebonyolítás befejezetlen táblával
+#nombre_exemptes_tab=Tábla kiemeltjeinek száma:
+#nb_qualifies_tab=Továbbjutók száma a tábla végén:
+
+#on_limite_dec=limitálja az eltolást a következõ rangig: ^1
+#pour_les_tir=A vívók 1. rangjától a következõig: ^1
+#on_dec_pas_plus=nem tolja messzebb, mint ^1
+#on_dec_plus=esetleg tolja messzebb, mint ^1
+
+#premier_est=az elsõ ^1 legyen ^2 ?
+#premier_doit_etre=Kezdõ ^1
+
+#faire_sauvegarde=backup
+#echec_sauvegarde=backup nem sikerült
+#echec_ouverture=megnyitás sikertelen
+
+#importer_un=egyet betölt
+#importer_certains=többet betölt
+
+#documentation=dokumentáció
+
+#plusieurs_pou_arbi=több csoportot is ad egy versenybírónak
+
+#criteres_arbitres=versenybírók beosztásának a kritériuma
+#affectation_manu=Manuális beosztás
+#affectation_auto=Automatikus beosztás
+#affectation_arbi=Versenybírók beosztása
+#pour_n_tab=&for the ^1 tableaux starting at ^2
+#affectation_arbi_quarts=versenybírók beosztása a tábla negyedeibe
+#reprise_arbitres=Beosztja a versenybírókat ennek a táblának a negyedeibe:
+#raz_arbitres=Törli a versenybírók beosztását
+#tableauetarbitres=táblák és versenybírók
+#continuer_alloc=Folytatás a jelenlegi beosztással
+#faire_new_alloc=Új beosztás készítése
+#video_to_non=Videóbírók mostmár versenybírók
+#non_annul_alloc=Válaszd a NEM-et a beosztás visszavonásához
+#ya_n_arbi=^1 zsûri a ^2-ban/ben
+
+#pas_arbitre=nincs versenybíró
+#plus_arbitre=nincs több vresenybíró
+#toutes_pou_arbi=minden csoportba egy versenybíró
+
+#pas_arbi_ds_match=nincsen versenybíró a folyamatban lévõ mérkõzésekhez
+#pas_match_sans_arbi=nincs folyamatban lévõ mérkõzés versenybíró nélkül
+
+#exempte1=kiemelt[|]
+#qualifie1=továbbjutott[|]
+#abandon1=visszalépés
+#elimine1=kiesett
+#exclusion1=kizárás
+#forfait1=vétség
+#exempte1%=kiem.
+#qualifie1%=tovább
+#abandon1%=vissza
+#elimine1%=kies.
+#exclusion1%=kizár
+#forfait1%=vét.
+#exempte_ou_hors=kiemelt vagy versenyen kívüli
+
+#infoRepertoires=mappa információk...
+#CopiePermanente=másolat állandó frissítéssel...
+#echec_copie=másolás nem sikerült
+#rempla_copie=másolat felülírása ^1
+#capitaine=kapitány[|]
+#prem_dossard=kezdõdjön a sorszámozás a következõ számmal
+#faire_FicSpecial=Speciális fájl
+#faire_FicSwissTiming=SwissTiming MTS600 fájl
+#faire_FichierKabcom=Kabcom fájl
+
+#ordre_interne=belsõ sorszámozás szerint
+
+#champ_mesure=a ^1 mezõ ^2 cm
+#limite_champ=limitálom a következõre: ^1 cm
+
+#equipe_a=^1 csapatának van ^2 vívója
+#equipe_devrait= 3 vagy 4 vívója lehet
+#permuter=megcserél
+#erreur_equipe=Hiba a következõ csapatnál:
+#rang_haut_bas=használja az 1, 2, 3 sorrendet fölül,a 4, 5, 6-ot pedig alul !
+#rangs_manquants=Hiányoznak a számok
+#rang_duplique=duplikált szám
+#rang_incorrect=hibás szám
+#melange_rang=Mix between ranks 1,2,3 és 4,5,6 a csapatban
+#mettre_rang123=Tegyen 1, 2, 3, R az egyik csapathoz
+#mettre_rang456=Tegyen 4, 5, 6, R a másik csapathoz
+
+#score=pontok
+#sc=pt.
+#touche=találat[|]
+
+#demi_grille=fél-tábla
+#grille_rencontre=egész-tábla 
+
+#remplacant=tartalék
+#rempla_equipe=tartalék becserélése a csapatban: ^1
+#num_match_remplacement=mérkõzés száma, amelyikben a cserélendõ vívó van
+#zero_pas_remplacement=adjon 0-át, ha nincs csere
+
+#Feuille_rencontre=mérközésjegyzõkönyv
+#rencontres=találkozók
+#rencontre_a_score=^1 találkozó[||]részletesen
+#rencontres_tableau=a tábla ^1 találkozói
+#scores_detailles=részletes pontok
+#score_final=&final score
+
+#XML=XML
+#HTML=Html
+#faire_document=dokumentum létrehozása
+#faire_fichier=fájl készítése
+#plusieurs_tableaux=több tábla
+
+#Tableau_en_fichier_HTML=tábla HTML fájlban
+#Poules_en_fichier_HTML=csoportok HTML fájlban
+
+#produit_deja_tire=A felállítandó táblán már ^1 pár korábban találkozott ! [||] [||] 
+#decale_deja_tire=A már levívott mérkõzéseket eltoljam ?
+#pas_decale=^1 nem tolható el
+#deja_tire=levívott mérkõzés
+#decalage=eltolás 
+#traitement=kezelés
+#mais_aussi=de van még
+
+#dans_ordre=sorrendben
+#pret_decouper=szétosztja ^1/lap részre
+
+#exporter_table=exportálás TXT formátumba
+#importer_table=importálás TXT formátumból
+#essai_texte=Szöveg formátum kipróbálása a következõvel
+#pas_ligne1=elsõ sor törlése
+#ignore=ignored
+
+#calcul_serie=csapat ranglistahelyek kalkulálása
+#calcul_points=csapat pontok kalkulálása
+#calcul_serie_de_tireurs=A csapat ranglistahelyeket mindegyik vívóval újrakalkulálja
+#calcul_points_de_tireurs=A csapat pontokat mindegyik vívóval újrakalkulálja
+#faire_avec_table_eq=Az eredményt átviszi a csapatok táblájába !
+#tireur_sans=vívó ^1 nélkül
+#fiche_equipe=csapat formula
+#attribution_eq=csapat kijelölése
+
+#resultats_provisoires=elõzetes eredmények
+#charger_pistes_heures=pástok és idõpontok betöltése
+#pas_tableau_actif=a tábla ^1  nem egy aktív tábla
+
+#paiement=fizettség
+#mode=mód
+
+#equipes_select=kijelölt csapat
+#toutes_equipes=minden csapat
+#ordre_matches=mérkõzésrend
+#equipe_adverse=ellenfél csapat
+
+#essai_groupement=Próbáljam csoportosítani a versenybírókat két egymás után következõ mérkõzéshez ?
+#echec_groupement=^1 csoportosítása nem sikerült
+#autre_tableau=Másik tábla?
+#pas_creation_poules=Csoportok nem lettek felállítva !
+
+******************************************************************************
+      the new texts of January 1rt, 2004 (version 8.1)
+******************************************************************************
+
+#id=azonosító
+#idtournoi=Esemény azonosítója
+#annee=év
+#regional=regionális
+#local=helyi
+#championnat=világbajnokság
+#fic_trans_XML=XML transzfer file
+#fic_XML_resu=&XML results file
+#a_partir_fic_xml=egy XML transzfer fájlból
+#fic_xml_pour_comp=XML verseny létrehozásához
+#conv_utf8_vers=&Conversion of an XML file with UTF-8 encoding to
+ Below, do not translate DOCTYPE
+#doctype_incorrect=hibás DOCTYPE
+#doctype_correct_sont=helyes a típusa:
+#entitesGen_chargees=^1 adatok[||] betöltve az adatbiztosítóba
+#affecte_pistes_heures=pástok és idõpontok beosztása
+#verification_pistes_heures=Pástok és idõpontok ellenõrzése
+#Feuille_rencontre_non_faite=a mérkõzések jegyzõkönyvei nem készültek el
+
+#SansLicence=^1 nem FIE licence
+#doublonLicence=Azonos FIE licencek
+#SansID=^1 azonosító nélkül
+#doublonID=Duplikált azonosító 
+#error_nation=^1-nál/nél inkorrekt nemzet
+#tireursSansLicence=Néhány vívónak nincsen FIE licence-e 
+#tireursSansID=Néhány vívó/csapat/versenybíró nem rendelkezik azonosítóval 
+#tireursBadNation=Néhány vívó/csapat/versenybírónál inkorrekt a nemzet
+#DansCompeFIE=A FIE által rendezett versenyeken kötelezõ a FIE licence 
+#DansCompeFIE_ID=FIE versenyeken kötelezõ az ID
+#DansCompeFIE_nat=FIE versenyeknél kötelezõ a pontos/korrekt nemzet
+#CompleterFIE=FIE adatok kitöltése most
+#ContinuerCompe=Folytatja a versenyt
+
+******************************************************************************
+      the new texts of March 27, 2004 (version 8.1)
+******************************************************************************
+
+#PasDeTireur=nincs vívó
+#NbMatchPP=mérkõzések száma oldalanként
+#ToutesLesPoulesNarbi=minden mérkõzés, innen: ^1 eddig: ^2 , ^3 versenybíróval[||]
+#ToutesLesPoulesSaisies=minden csoport innen: ^1 eddig: ^2 hozzáadva
+#arbitresPour=referees for
+#FaireAffectation=make the allocation?
+#MauvaiseAffecteArbi=Bad allocation of referees, matches #: 
+#ReprendArbi=USE AGAIN THE REFEREES OF 1/
+#affectation_arbi_8eme=allocation of referees by 1/8 of tableau
+#affectation_arbi_16eme=allocation of referees by 1/16 of tableau
+#matchesSansArbitre=matches without referee, make a new try
+#matchs_SansArbitre=^1 mérkõzés versenybíró nélkül
+#poules_SansArbitre=^1 csoport versenybíró nélkül
+#pasDeFichier=nincs fájl
+
+#pas_commence=^1 vívók "vétség" státuszba kerültek, mivel nem indultak el a versenyen
+
+#Restriction=Korlátozás
+#Restreindre1=Restrict a competition consists of keeping only certain fencers/teams
+#Restreindre2=by giving "Scratch" status to others. For example, after one round of poule,
+#Restreindre3=to make a first division with fencers of rank 1 to 64 and a second division 
+#Restreindre4=with fencers of rank 65 to the end, first duplicate two times the competition
+#Restreindre5=(making 2 backups) then restrict a copy to  fencers of rank 1 to 64
+#Restreindre6=and the other to fencers of rank 65 to the end.
+#Restreindre7=This has to be done before the constitution of a round of poules 
+#Restreindre8=or the creation of a tableau.
+#Restreindre9=Do you want to restrict this competition now?
+
+#PlusTirEnCompe=nincsenek vívók ebben a versenyben
+#Ilya=There is 
+#tirEqEnCompe=vívók/csapatok a versenyben
+#gardeApartirRang=one keep from the rank
+#jusquAuRang=until the rank
+
+#suppressTousAbsents=Törli az összes TÁVOL lévõ személyt
+
+******************************************************************************
+      the new texts of December 24, 2007
+******************************************************************************
+
+#id_reseau=Hálózat (network) azonosító
+#prendre_idsmart_pour_idreseau=Használd a SMART ID-t hálózati azonosítónak (ajánlott)
+#id_reseau_double=Figyelem: Másik versenynek ugyanaz a hálózati azonosítója (network id)
+#fermer_cause_id_reseau=Be kell zárni a versenyt (a hálózati azonosító megváltozott)
+#modif_id_reseau1=Hálózati azonosító módosítása
+#modif_id_reseau2=A módosítás miatt, be kell zárni majd újra meg kell nyitni a Diapo-kat és Auxiliary-eket.
+#modif_id_reseau3=Szeretnéd módosítani a hálózati azonosítót? 
+
+#CreerRepSVG1=Mappa létrehozása a backup fájl számára.
+#CreerRepSVGno2=2. biztonsági mappa létrehozása
+anciens à conserver
+#SupprRepSVG1=biztonsági mappa törlése
+#SupprRepSVGno2=2. biztonsági mappa törlése
+nouveaux
+#StopSVG1=Main backup leállítása
+#StopSVGno2=2nd backup leállítása
+
+#CreerRepSVG2=válsszon helyet
+#no_backup=nincs biztonsági mentés
+#non_accessible=This competition no more exists or is not accessible
+
+#ouvrir_der_compe=megnyitja az utolsó versenyt
+
+#affectation_2e_arbi=2. versenybíró beosztása
+
+#colonnes=oszlopok
+#entete=fejléc
+#haut=felsõ
+#bas=alsó
+
+#nomSur10=rövid név
+#drapeau=zászló
+#drapeau%=zászló
+#cadre_drapeau=zászlók kerettel
+
+#formule_conserve_tireurs=According to the formula, keep ^1 fencer[1||s].
+#conserve_tireurs=Keep ^1 fencer[1||s].
+#possible_conserver_autre=It is possible to keep a different number of fencers.
+#Selon_FIE_series=According to FIE rules, fencer numbers must be used.
+#series_entre_parentheses=Fencer numbers are written between parentheses.
+
+******************************************************************************
+      the new texts of July 8, 2008
+******************************************************************************
+
+#appliquer=Alkalmaz
+#mode_eng=Mód
+#reseau=Hálózat
+#Listesessions=Session-ök listája
+#configuration=konfigurálás
+#langue=nyelv
+#Languedelaide=A Súgó nyelve
+#done=Kész
+
+#rep_appli=Alkalmazás mappája: 
+#rep_compe=Verseny mappája: 
+#rep_copie=Állandó másolat mappája: 
+
+exemple : par 1/4
+#par=by ^1
+#simple=simple
+
+#effacer=Töröl
+#effacerFermer=Töröl és bezár
+
+#web=Web
+#parametresFTP=FTP paraméterek az internethez
+#PublierlesTireurs=Publikálja a vívókat az interneten
+#PublierlaFormule=Publikálja a lebonyolítást az interneten
+#PublierClasGene=Publikálja a végeredményt az interneten
+#PublierActiviteArbi=Publikálja a versenybírói aktívitást az interneten
+
+#cles=Kulcsok
+#VoirLesCles=Kulcsok megtekintése
+#InstallerCle=Kulcs installálása
+#AcheterCle=Kulcs vásárlása
+
+#EchecCreeFic=The creation of the file failed: ^1
+#PasModePro=A PRO mód nincs installálva
+
+#analyseCles=A kulcs elemzése
+#supprCle=A következõ kulcs törlése: ^1
+#CleInvalide=Érvénytelen kulcs ^1
+#badNoMac=hibás MAC number
+#badOrdi=hibás számítógép
+#clePerimee=Lejárt dátumú kulcs
+#plus_tard=érvényesítés késõbb
+#valide=érvényes
+#type_inconnu=ismeretelen típus
+
+#nlicencesValidesToDay=^1 érvényes licence[||] "^2" today
+#pasLicenceValideToDay=Nem érvényes licence "^1" today
+
+#IP_incorrect=Helytelen IP cím
+#port_incorrect=Helytelen port cím
+#pas_licence_valide_ici=Nincs érvényes licenc ezen a számítógépen
+#chercher_licence_reseau=Keres egy licence-t a hálózaton?
+#attente_response=várakozás válaszra
+#plus_licence_disponible=No available licence
+#licence_disponible=Available licences
+#pas_reponse_recue=Nincs válasz
+#licenceAttribuee=Allocated licence
+
+#licence_jusquau=^1 érvényes Licence[||] "^2" ^3-ig
+#cle_en_double=Duplikált kulcs
+
+#sessionsDisponibles=Available licences:  ^1 "^2"
+#licenceObtenueDe=Licence of ^1 Ip=^2 Port=^3
+#il_reste=Déconnecté : ^1mn
+
+#session=session-ök[|]
+#Ip=IP cím
+#port=Port
+#No_port=Reception UDP port
+#No_port_des_ordi=Licence elosztó számítógép UDP portja
+#Appli=alkalmazás
+#ordinateur=Számítógép
+#cet_ordi_est=Ez a számítógép
+
+#cleAppli=Kulcs
+#lenombre=number
+#DateDebut=Kezdõ dátum
+#DateFin=Vége dátum
+#TypeCle=típus
+#NoMac=MAC address - fizikai cím
+#No_mac_cet_ordi=MAC address-ek ezen a sz.gépen
+#pasDeNoMac0=Jelenleg nincs aktív hálózati kártya
+#unMacSuffit=Megjegyzés: egy érvényes MAC szám is elég
+#config=Konfiguráció
+#port_active=UDP port ^1 aktíválva
+#port_non_active=UDP port ^1 nincs aktíválva. Valószínûleg már használják..
+#pas_de_port=Nincs az UDP port aktíválva
+
+#pasDeNoMac=Nincs aktív hálózati kártya ebben a gépben.
+
+#terminerSession=Terminate the session
+#ontermineSession=Terminate the selected session?
+
+#N_appli_connectees=There are ^1 connected session[1||s] of application[1||s]. 
+#quitterontModePRO=These applications will quit the PRO mode in 10mn.
+#enregistrerSessions=Save the sessions in order to recover them at the next launch of Engarde?
+
+#N_appli_connectees_avant=On exit of Engarde PRO, there was ^1 connected session[1||s] of application[1||s]. 
+#reprendreSessions=Recover these sessions?
+#N_sessions_out=^1 session[1||s] ha[1|s|ve] not been reinstalled.
+
+#passerModePro=PRO mód beállítása
+#quitterModePro=Kilépés PRO módból
+#passerModeFIE=FIE mód beállítás
+#quitterModeFIE=Kilépés FIE módból
+#FIEdemandePro=Setting FIE mode, requires being in PRO mode.
+
+#clesEtLicences=Keys and licences of this computer
+#sessionsAppli=Other network sessions using a licence of this computer
+
+#onsupprimelacle=Delete the selected key?
+#supprimerPerimees=Delete the outdated key?
+
+#demande_licence=Licence lekérése
+#Ordi_distrib=A hálózat számítógépei, amelyek elosztják licence-eket ezen az UDP porton
+#un_Ordi_distrib=A licence elosztó szémítógép IP címe
+#ChercheOrdi=Számítógépek keresése
+#CliquerOrdi=Kattintson egy számítógépre
+#DemanderLice=Lekéri errõl a számítógéprõl a licence-et
+#DemanderLicePro=Lekéri a PRO licence-t?
+#tapez_direct_ip=Input the IP number at the bottom.
+
+#jourOrdi=Computer date
+#jourReference=Reference date
+#jourReferenceUtilise=Date ^1 is used because this computer was used this day. In the case of an error, please make synchronization.
+#Synchronisation=synchronization
+#Synchroniser=Synchronize
+#ExlpiSynchro1=A synchronization consists in verifying the computer date with the Internet date.
+#ExlpiSynchro2=Set the computer to the right date, connect to the Internet, then click on the "Synchronize" button.
+
+#ErreurSynchro=Error during synchronization. Are you connected to the Internet?
+#SuccesSynchro=successful synchronization.
+#badDateOrdi=The computer date is incorrect.
+#DateOrdiEst=According to countries, the date is ^1, one day before or one day after.
+#reglerDateOrdi=Set the computer date then redo a synchronization.
+#recul_heure=The time of the computer has moved back. PRO mode is stopped.
+#perte_connexion=10 perce nincs kapcsolat az Engarde-dal (PRO MAIN). PRO mód leállt.
+#perte_connexion2=Megszakadt a kapcsolat a versennyel (Engarde Main)
+#fin_licence=Néhány licenc megszûnt. A BASIC/PRO mód leállt
+#repasser_pro=Átválthatsz PRO módra, ha van érvényes licenced.
+
+#gestionVersion=Verzió kezelés
+#VersionNumero=Verzió szám: ^1
+#NumeroVersion=Verzió szám
+#VersionNo=verzió ^1
+#version0=Amikor a verziószám 0, nincs nyomtatva a dokumentum.
+#version1=A verziószám 1 megfelel a normál változstlsn dokumentumnak.
+#version2=Az 1-nél nagyobb verziószám megfelel a módosított dokumentumnak.
+#ModifDepuisVersion=Módosítások e verzió óta
+#ModifToutes=Minden módosítás
+#NumVersSuiv=Verziószám növelése
+#MAJversion=Verzószám beállítása N-re
+#correction=CORRECTION
+#set_version=Move to version ^1
+#modif_resu_poule=Modification of completed poule number ^1
+#tableau_const=Tábla felállítás
+#constitue=felállítás
+#resultats=eredmények
+#modif_resu_tab=Modification of a match of a completed tableau
+
+#pas_date=Ennek a versenynek nincs dátuma
+#pas_id_reseau=Ez a verseny nem tartalmaz HÁLÓZATI AZONÓSÍTÓT!!!
+#pas_ds_clasGene=Attention, qualified fencers of the last round of poules are not in the overall ranking.
+
+#ouv_fic_aff=Opening the file to be displayed
+#pas_copie_perm=Nincs állandó másolat
+#installer=Létrehoz egyet?
+#copie_non_active=Az állandó másolat INAKTÍV
+#activer=Aktiválja?
+#echec_active_copie=FAILURE of permanent copy activation
+#install_autre=Install another?
+#copie_active=AKTÍV állandó másolat
+#conserver=Megtartja?
+
+#imp_match=print the matches
+#imp_ma_toutes_pou=print the matches of all these poules
+#imp_ma_des_pou=print matches of certain poules
+#PasResultat=Nincs folyamatban lévõ mérkõzés eredménye
+#FaireFicWeb=Elkészíti most a 
+#maintenant=webfájlt.
+
+#Autorisation_retour=Visszalépési engedély
+#Objet=Tárgy 
+#Motivation=Indoklás
+#pourquoi=Magyarázat: 
+#SignaturePtDT=DT elnõkének aláírása
+#document_signe=Van aláírt visszakövetési dokumentum?
+#imprimer_et_signer=Nyomtassa ki és írassa alá.
+
+#historiqueDesRetours=Journal of backtracks
+#DT=Technical directory
+#fournir_composition=Give the list of the technical directory
+
+#participant=induló[|]
+#victoires_matches=gyõzelem/méérkõzés
+#lateralite=J/B kezes
+#droite=jobb
+#gauche=bal
+#centre=közép
+#inconnu=ismeretlen
+#lateralite%=J/B
+#droite%=J
+#gauche%=B
+#inconnu%=?
+#priorite=kedvezményezett
+#aucune=none
+
+#page_precedente=Elõzõ oldal
+#page_suivante=Következõ oldal
+#premiere_page=Elsõ oldal
+#derniere_page=Utolsó oldal
+#Periode_change_page=idõköz a következõ képernyõig
+#Arreter_diapo=Vetítés megállítása
+#DiminuerPeriode=idõköz csökkentése
+#AugmenterPeriode=idõköz növelése
+#Pause=Szünet
+#ReprendreDiapo=Vetítés indítása
+
+#DiapoModeEval=A DiapoEngarde "Eval" módban van: vetítés csak kis ablakban és megáll 5 percenként.
+#sansLimitation=Vásároljon egy licence-t az összes funkcióhoz.
+#ArretDiapoModeEval=a vetítés megáll 5 perc után, mert "Eval" módban van.
+#InterruptionDiapoModeEval=Interruption of PRO mode.
+
+#nation%=nemz.
+#coach=EDZÕ
+#carton_coach =&coach yellow card
+#DemandeVideo=Videó igény, M: változtatás, R: elutasítás (max: 2 elutasítás)
+#NOemplacement=Location not found
+#banniere=banner
+#choixBanniere=Banner választása (BMP vagy JPG fájl)
+#entitesPerdues=^1 entit[1|y|ies] of class ^2 not found
+#creeAlaPlace=Creation of entities xx
+#clasDans=Done, ranking is in file ^1
+#doublon=doubloon
+#doublons=doubloons
+#entre=között
+#TailleNomsCourts=&Short name size
+#NomNoncalcules=Rövid nevek nem generáltak
+#CalculerCourts=Hiányzó rövid nevek generálása
+#ReCalculerCourts=Összes rövidnév újra generálása
+#doublonsCourts=Search doubloons in short names
+
+#formu_fie_equipes=Csapat világ kupa formula
+#suites_tableaux_charger=Close the next window then go to phases of direct elimination to load FIE-AvecPlaces1-16.fta
+
+#reglages=beállítások
+#margehaute=Felsõ margó
+#margeBasse=Alsó margó
+
+#clas_special=Special ranking
+#clas_spe_rg_poule=DOING SPECIAL RANKING with the rank in the poules as main criterion?
+#prem_liste_nat=First list of nations separated by ";"
+#deux_liste_nat=Second list of nations separated by ";"
+#pb_poule=Problem in poule ^1
+#pas_pb_poule=No problem between ^1 and ^2
+#publi_clas=Publikálja a rangsorolást az interneten
+#publi_ex=Publikálja a kiemelt vívókat az interneten
+#publi_poules=Csoportok publikálása az interneten
+#publi_tableau=Táblák publikálása az interneten
+#definir_tableaux_web=Tábla WEB fájlok definiálása
+#publi_clas_tour=Publkálja az ^1 forduló rangsorolását az interneten
+#publi_ex_tour=Publish exempt fencers of round ^1 on the Internet
+#publi_poules_tour=Publish poules of round ^1 on the Internet
+
+#clas_gen_decale=Eltolt végeredmény
+#met_a_blanc_matches=Write blank matches with rank greater than:
+#nb_matches_vert=Mérközések száma egymás alatti megjelenítéshez
+#moitie=fél
+#quart=negyed
+#bon_quart=jó negyed
+#numero_de_aff=Hányadik "^1" a megjelenítéshez
+#numero_dans_quart=Number of the match in the quarter
+#bad_descri_fic_web=Incorrect description of the web file
+#pas_kabcom_eq=No team Kabcom file
+#cle_ni_tir_ni_remp=the fencer key is neither the permanent nor the substitute key
+#imp_rencontre=mérkõzés nyomtatása
+#pas_ordre_tir=Nincs megadva a vívók sorrendje
+#pas_detail_assaut=There are no detailed scores
+#manque_arbi_assaut=&bout referees are missing
+#matches_en_cours=folyamatban lévõ mérkõzések
+#rencontre_affi=mérkõzés a képernyõre
+
+#conserve_n_tireurs=keep ^1 fencers
+#memoire=Memória:
+
+#installCle=Kulcs installálása
+#PossCle1=It is possible to install keys
+#PossCle2=to run Engarde in BASIC or PRO mode and other applications.
+#PossCle3=For that purpose, it is necessary to purchase a key and get a purchase code.
+#PossCle4=Installing a key requires to be connected to the Internet 
+#PossCle5=A local network or Wifi card (several when possible) has also to be activated,
+#PossCle6=because Engarde uses the MAC numbers (physical addresses) of network cards.
+
+#IdClient=Client azonosító
+#CodeAchat=Purchase code
+
+#fautIdClientEtCleAchat=Please fill the fields "Client identifier" and "Purchase code of the key".
+#BadCarDansCleAchat=A purchase code never contains ^1
+#PasReponse=No answer. Please verify you are connected to the Internet.
+#pastrouvecleclient=This client with this purchase code is unknown of the Engarde website.
+#CleDeja=This key has already been provided to the client.
+#VoulezVousInstaller=Do you want to install it on this computer?
+#CleTrouveeInstallee=The key has been found on the Engarde website and has been installed on the computer.
+#CleNonInstallee=The key has NOT been installed on the computer.
+
+#PourActiverCle1=In order to activate the new keys, quit the PRO mode then set the PRO mode.
+#PourActiverCle2=In order to activate the new keys, set the PRO mode.
+
+#usermanuel=Felhasználói segédlet
+#ModeProSeulement=Ez a funkció csak PRO módban érhetõ el.
+#PasModeMini=Ez a funkció nem érhetõ el MINI módban.
+
+#continent=kontinens
+#statistiques=statisztika
+
+^1 sera remplacé par participants ou participantes ou équipes
+#Nb_total=^1k teljes száma
+#Nb_parmi_32=Azon ^1k száma, akik szerepelnek a FIE ranglista elsõ 32 helyén
+#Nb_AmeriqueNord=Észak-Amerikaiak száma: ^1
+#Nb_AmeriqueSud=Dél-Amerikaiak száma: ^1
+#Nb_afrique=Afrikaiak száma: ^1
+#Nb_asie=Ázsiaiak száma: ^1
+#Nb_europe=Európaiak száma: ^1
+#Nb_oceanie=Ausztrális és Óceániaiak száma: ^1
+
+#match=mérközés[|]
+#round=forduló[|]
+#periode=harmad[|]
+#Carton=Lap[|]
+
+#fenetre_piste=Pást ablak
+#table_pistes=Pástok táblázata
+#con_nom_coul=kapcsolat - Név - Szín
+#Matchsuivantmanuel=Következõ mérk.(manual)
+#Matchsuivantautomatique=Következõ mérk.(automata)
+#Matchsuivantautosansnext=&Next match (automatic without waiting NEXT)
+#Matchsuivantauto_defaut=&Next match automatic by default
+#Fichierlogtousmessages=Pástüzenetek Log fájlba
+#autreMatchMmPoule=Go to another match of the same poule
+#autreMatchMmeTab=Go to another match of the same tableau
+#autreMatch=Go to another match
+
+#ArretEnAnnulant=Megállítja és alaphelyzetbe állítja a mérkõzést
+#ArretlaisseEncours=Stop the match as it is
+#ArretEnTerminant=Megállítja és befejezi a mérkõzést 
+#ArretParAbandon=Mérkõzés befejezése feladás/kizárás/passzívitás miatt
+#Mettrexcartonsrougesdroite=x piros lap jobbra...
+#Mettrexcartonsrougesgauche=x piros lap balra...
+
+#inverser=cserél
+#InverserLapiste=pást megfordítása
+#InverserLestireurs=vívók megcserélése
+#Explications=magyarázatok
+#voir=Megtekint
+#Roundsdecematch=Rounds of this match
+#Matchesprcdents1=Elõzõ mérkõzés
+#FinMatch=Mérkõzés vége
+#MatchSuivant=Következõ mérk.
+#MatchPrecedent=Elõzõ mérkõzés
+
+#manuel=kézi
+#PasseAuto=Automatára vált
+#automatique=automata
+#PasseManuel=Manuálisra vált
+
+#EnregMatchEnCours=aktuális mérkõzés mentése:
+#MatchSansVain=^1 - ^2 mérkõzés mentve gyõztes nélkül
+
+#SimulAppPisteSerie=pást találatjelzõ szimuláció 
+
+#tireur1=1. vívó
+#tireur2=2. vívó
+
+#Connexion=Kapcsolódás
+#Deconnexion=Kapcsolat bontása
+#connexionPort=Kapcsolat, port: ^1
+#nonconnecte=nincs kapcsolódva
+
+#ConnexionComPour=Connection to COM port for ^1
+#ErreurPortOccupe=Error, the port is probably already busy
+#deconnexionPisteX=Disconnection of piste ^1
+#ConnexionCOM=connection to a piste apparatus: serial line (COM port)
+
+#Choixmatch=Choice of a match
+#prevuAilleurs=This match was planned on piste "^1", please confirm. 
+#Pasdematch=No match
+#PasdematchPiste=Nincs mérkõzés a(z) ^1. pástra
+#MatchTermine=Befejezett mérkõzés
+#voulez-vousLeModifier=Feltölti vagy módosítja?
+#ordre_equipe_par_capitaine=A vívók sorrendjét a csapatkapitány adta meg
+#sais_ordre_equipe=A vívók sorrendjének megadása a csapatban
+#pasRemplacant=Ennek a csapatnak nincs tartalék vívója
+#UseDejaRemplacant=The substitute has already been used from round ^1
+#PrendRemplacantEnX=Hányadik mérkõzéstõl használja a ^1 csapat a tartalék vívót?
+#PrendRemplacantNow=^1 csapatnak becseréli a tartalékot most?
+#PasUseRemplacant=The substitute has not been used
+#ChoixMatchDe=Choice of a match of ^1
+#ChoixMatchPoule=Choice of a match of poule ^1
+
+#nbCartonsRougesDte=Piros lapok száma jobbra
+#nbCartonsRougesGche=Piros lapok száma balra
+#inverseExpli1=Reverse the piste when the Engarde computer is in front of the referee
+#inverseExpli2=so that the image on the computer corresponds to the piste.
+#inverseExpli3=Reverse the fencers when they have been reversed on the piste by the referee.
+
+#machineLocale=Helyi gép
+#cheminFTPexe=Az FTP alkalmazás, általában c:\windows\system32\ftp.exe
+#Parcourir=Tallózás
+#machineDistante=Távoli FTP szerver
+#hote=host
+#user=user
+#passwd=jelszó
+#passwd_initial=Kezdeti jelszó
+#repDistant=Mappa a távoli gépen, pl.: fencing  or  fencing/compe
+#actionsGene=Általános intézkedések
+#ActiverFTP=FTP-t aktívál
+#ActiverToutCourt=aktivál
+#Desactiver=Deaktívál
+#siActiveEchoue=Ha az aktiválás nem sikerül (DOS ablak), DEAKTÍVÁLHATJA, a hiba javítása után újra Aktíválhat
+#ListeDistant=Távoli mappa listázása - dir
+#EnvoiTousHTML=Küldi az összes HTML fájlt
+#PoulEtTab=Csoportok és táblák
+#publiPouAuto=Publikálja a csoportokat automatikusan
+#publiTabAuto=Publikálja a táblákat automatikusan
+#dureeMini=2 fájl küldés közötti min. idõtartam
+#min5sec=másodperc, min: 5
+#autorefresh=HTML fájlok automatikus frissítési ideje
+#min10sec=másodperc, min: 10
+
+#badcheFTPexe=Az FTP alkalmazás útvonala hibás
+#remplirChamp=Fill field "^1"
+#FTPinactif=FTP nem aktív
+#ErreurListeFTP=Error FTP list
+#ErreurEnvoiFTP=Error sending FTP
+
+#AffectMatchesEntre=X és Y között kezdõdõ mérkõzések kiosztása
+#exemple10=Pl:  10 és 11:20 között
+#TabConcernes=Érintett táblák megjelenítése
+#seulsAvecHeure=csak idõponttal ellátott mérkõzések kezelése
+#seulsAvecHeurePou=csak idõponttal ellátott csoportok kezelése
+#utiliser_groupesAB=A és B csoport használata
+#au_moins_1A=Legalább egy A csoport
+#selectEtPrecise=Select a tableau to precise by 1/4, 1/8 or 1/16
+#selectPlusieursTab=vagy néhány tábla kiválasztása (Shift+Click or Ctrl+Click), egyszerû beosztás
+#pourSelectPlusieursTab=Használd a CTRL-t vagy a Shift-et több tábla kiválasztásához
+#enleverTab=Eltávolítja ezt a táblát a listáról 
+#enleverDeListe=Listáról levétel
+#affectation=allocation
+#prendreTab=Vegye ezt a táblát
+#prendreLaListe=Vegye az összeset a listáról
+
+#analyse=elemez
+#fenetre=ablak[|ok]
+#horizontal=ablakok egymás alatt
+#vertical=ablakok egymás mellett
+
+^1 will be replaced by nothing or 1 or 2, etc.
+#SupprTousArbi=Törli az összes bírót ^1
+#arbi_par_match=Bírók száma mérkõzésenként
+#incluant_video=Videóbíró használata
+#maxi_par_arbi=Max. mérkõzések bírónként
+#NbArbiToUse=Total number of referees to use
+#CalAffectAuto=Make an automatic allocation
+#PrendreCetteAffect=Beosztás kiválasztása
+#PrendreAffectAvant=Vissza az elõzõ sorsoláshoz
+#affectManuelle=Kézi beosztás
+#AjouterArbiSel=Hozzáadás versenybírónak
+#AjouterArbiVideo=Hozzáadás videóbírónak
+#SupprArbitreN=Versenybíró törlése ^1
+#enlever=Törlés ^1 ^2
+#affectation_avancee=Speciális elosztás
+#affect_avancee_arbi=Versenybírók speciális beosztása
+#matchNum=mérkõzés ^1
+#arbiNum=Versenybíró  ^1
+#pasArbiSel=Nincs versenybíró választva
+#pasMatchSel=Nincs mérkõzés válsztva
+#pasPouleSel=Nincs csoport választva
+#arbiDejaCeMatch=The selected referee is already allocated to the selected match
+#arbiDejaCettePoule=A kiválasztott versenybíró már be lett osztva a kiválasztott csoporthoz
+#conflitDe=Conflict of ^1 between the referee and the match
+#conflitDeDsPou=^1 db ütközés a versenybíró és a csoportok között
+#arbiDejaHeure=The selected referee has already a match at the same time
+#arbiDejaHeurePou=A kiválasztott versenybírónak már van csoportja abban az idõpontban
+#MatchNonTrouve=Mérkõzés nem található
+#PouleNonTrouvee=Csoport nem található
+#MatchSansArbi=The selected match has no referee
+#PouleSansArbi=A kiválasztott csoportnak nincs versenybírója
+#assez_de=kevesebb ^1 elkerülése
+#pas_trop_de=több ^1 elkerülése
+#tropMatches=túl sok mérkõzés
+#tropPoules=túl sok csoport
+#manqueMatches=kevesebb mérkõzés
+#manquePoules=kevesebb csoport
+#matchesMemeHeure=has matches at the same time
+#poulesMemeHeure=van csoportja abban az idõpontban
+#matchesHeureProche=has matches at near the same time
+#matchesConsecutifsPistesDifferentes=egymást követõ mérkõzés különbözõ páston
+#matchesNonConsecutifsPistesDifferentes=pást váltás szünettel
+#poulesHeureProche=van csoportja egy közeli idõpontban
+#est2foisMatch=is 2 twice on a match
+#est2foisPoule=kétszer van egy csoportban
+#aconflitNation=Konfliktus van ^1 esetben a mérkõzéseknél
+#aconflitNationPou=Konfliktus van ^1 esetben a csoportoknál
+#supprConflit=Ütközések eltávolítása
+#aconflitNation2=has a conflict of ^1 on 1/4, 1/8, 1/16
+#pas_bonquart=&^1 is not in the right ^2
+#pas_bon_quart=nem jó negyedben van
+#pas_groupeA=Nincs 'A'-s versenybírója
+#matchestroparbi=matches with too many referees
+#poulestroparbi=csoportok túl sok zsûrivel
+#matchestroppeuarbi=matches with not enough referees
+#poulestroppeuarbi=csoportok nem elég zsûrivel
+#tauxSatisfation=ELÉGEDETTSÉGI RÁTA
+#satisfaction=elégedettség
+#cross_interet=^1 has a cross-interest with ^2
+#n_fois=^1x
+
+#NbMatchesVert=Number of matches to display vertically
+#NumZone=Number of the part of the tableau to display
+#NbTabHz=Number of tableaux to display horizontally
+
+#oldVersionFic=DiapoEngarde cannot open old versions of competitions
+
+#PoulTab=csoport/Tábla
+#PoulTab%=csop./Tábl
+#comIn=Com In
+#comOut=Com Out
+#IPsortie=IP kijelzõ
+#Connecte=Kapcsolódva
+#Actif=Aktív
+#Score1=Pont
+#Score2=Pont
+
+#Montrer=Mutat
+#Cacher=Elrejt
+#CacherToutes=Összes elrejtése
+
+#dejaPiste=^1 pást már szerepel a táblázatban
+#dejaIpPiste=Az IP cím már használatban van egy találatjelzõ által
+
+#fonctionnement=mûködés
+#ConnexionIP=IP kapcsolat a pást találatjelzõhöz (helyi hálózat)   
+#ConnexionSerie=RS232 vagy RS422 kapcsolat a pást találatjelzõhöz (soros COM port)
+#ConnexionIPsortie=Megjelenítõ IP kapcsolat (helyi hálózat)  
+#saisirIpExemple=IP cím és port megadása, pl: 
+
+#versionDispo=Az Engard ^1 (^2) verziója most elérhetõ.
+#versionComposantDispo=A more recent version of a component is available.
+#versionLaPlusRecente=This version is the most recent.
+#InfoVersion=Információ régebbi verziókról
+#pasInfoVersion=Information concerning versions is not disponible.
+#downloadMAJ=Frissítés letöltése
+#downloadcomposant=Download last components
+
+
+#choix_contexte=Choice of the contexte
+#Contexte_general=General context
+#Contexte_x=Context ^1
+#fermer_ouvrir_ctxt=Kérlek zárd be és nyisd újra a versenyt.
+
+#auteur=author :
+#distribue_par=distributed by ^1
+
+--------------------------------------------------------------------
+
+New messages of octobre 2008 
+
+--------------------------------------------------------------------
+
+#lancerLesPistes=várakozó IP pástok indítása
+#lancerPiste=Pást indítása
+#pistesLancees=^1 IP piste[^1||s] elindítva
+#pistesNonLancees=^1 IP piste[^1||s] IP elindítva
+#deja_match=Piste ^1 already has a match
+#pas_attente=Piste ^1 is not waiting
+#lance_simu_pistes=Automatikus szimuláció elkezdése az összes páston
+#stop_simu=Szimuláció leállítása
+
+#confirmez_manuel=Piste with IP connection, please confirme moving to manual.
+
+#bad_piste=Message of apparatus IP=^1 piste=^2: the piste here is ^3
+#bad_compe=Message of piste ^1 competition ^2: the competition here is ^3
+#pas_compe=Message of piste ^1 competition ^2: there is no competition here
+#bad_phase=Message of piste ^1 pahse ^2: the phase number here is ^3
+#bad_poule=Message of piste ^1 poule ^2: the poule here is ^3
+#bad_tableau=Message of piste ^1 tableau ^2: the tableau here is ^3
+#bad_match=Message of piste ^1 match ^2: the match here is ^3
+#bad_round=Message of piste ^1 round ^2: the round here is ^3
+#bad_tireur=Message of piste ^1: BAD FENCERS
+#bad_match_fini=Message of piste ^1: the match here is finished
+#bad_match_rien=Message of piste ^1: there is no match here
+#champ_piste_vide=^1. pást üzenete: a ^2 mezõ üres
+#Demande_suivant=Demand of next match for piste ^1 (we are in "manual next match")
+#suivantManuel=Set the mode "manual next match"?
+
+#lampes=lámpa
+#blanc=fehér
+#rouge=piros
+#jaune=sárga
+#vert=zöld
+#cartonrouge=Piros lap
+#cartonjaune=Sárga lap
+#non_combativite=passzívitás
+
+#erreur=HIBA!
+#auto=auto
+#chrono=idõmérõ
+
+state of the apparatus (uses also #pause defined above)
+#etatAPP=állapot
+#fencing=vívás
+#halt=állj
+#waiting=várakozik
+#ending=vége
+
+#SituationENG=Situation in Engarde
+#APP=Pást találatjelzõ
+#deLarbitre=oldalán a bírónak
+
+#fichier_web=Web fájlok
+#date_lim_depassee=The application deadline is reached, please get an update.
+
+#mode_mini=Nincs érvényes licence, az Engarde futtatása MINI módban.
+#tousLesTextes=Annak érdelében, hogy az összes szöveg megjelenjen, a programot be kell zárni, majd újra meg kell nyitni.
+#siPasTous=Ha ezután bizonyos szövegek nincsenek lefordítva, akkor a fordítás nem teljes.
+
+======================================
+
+#apropos=Rólunk
+#SitewebdEngarde=Engarde honlapja
+#install_update=Engarde : egy frissítés telepítése
+#commande_inconnue=Ismeretlen utasítás
+#argument_manquant=Hiányzó argumentum
+#fermer_ca=Close the following file or application then click on OK
+#update_complete=Frissítés kész!
+#suppr_rep_install=Törölheted a telepítõ fájlok könyvtárát.
+#update_partial=A frissítés befejezõdott. THERE ARE STILL FILES TO BE MOVED BY HAND.
+
+#MontrerPnlOption=Ez a panel megjeleníthetõ: CTRL + K vagy dupla kattintás.
+
+#evaluation_pro=Competition of Engarde PRO evaluation
+
+#XML_FIE=XML for FIE
+#XML_etendu=Extended XML
+#xml_vigueur=2019-as FIE XML formátum hatályba lépett 
+#xml_pas_vigueur=2019 FIE XML formátum még NINCS hatályban
+#pas_pour_fie=FIGYELEM, ez az XML formátum nem megfelelõ a FIE-nek
+#pas_pour_efc=&WARNING, THIS XML FORMAT IS NOT SUITABLE FOR THE EFC
+#voulez_continuer=folytatod?
+#cas_pb_xml=Ha problémát észlelnél az XML fájlokkal, küldj egy emailt erre a címre:
+
+#extractXML=Extraction of fencers of the competition towards an XML file in order to create later a new competition
+#extraction=Extraction 
+#extraire=Extract
+
+#cherche_doublons=Ismétlõdések keresése
+#doublons_possibles=Lehetséges ismétlõdések:
+#n_doublons=There seams to be ^1 doubloons
+#Pour_fusionner=To merge two ^1, go to the ^1 table
+#use_agglomerer=and use the menu entry/merge
+#pas_doublon=There seams to be no doubloon
+#faire_fusions=Would you like to merge entities?
+
+======================================
+
+new texts of august 2009
+
+#badpasswd=Hibás jelszó.
+#ouvrir=Megnyit
+#ouvrir_aux=Open in auxiliary mode
+#client_serveur=kliens-szerver
+#serveur=server
+
+#FinRoundMatch=Forduló/mérkõzés vége
+
+#PlacementTireurs=Vívók helye
+#PlacementEquipes=Csapat helye
+#prem_droite=Elõször szólított vívó jobbra
+#droitier_droite=Jobb kezes vívó jobbra
+#prem_eq_droite=Elsõ csapat jobbra
+#max_droitier_droite=Több jobbkezes vívóval rendelkezõ csapat jobbra
+#droitier_en_plus=Amikor a csapat nem rendelkezik cserével, akkor +1 jobbkezessel számolunk
+#droitier=jobb kezes
+#gaucher=bal kezes
+
+#MettreRemp=^1 beteszi a tartalékot most
+#MettreRempAssautX=^1 beteszi a tartalékot az X. mérkõzésnél
+#OterRemp=^1 kiveszi a tartalékot
+
+#fermer_poule=Close the poule
+
+#ouvrir_cette_compe=Megnyitja ezt a versenyt
+#ouvrir_cette_compe_aux=Open this competition in auxiliary mode...
+#fermer_reouvrir=Bezár és újranyít
+#compe_non_accessible=Ez a verseny már nem létezik vagy nem elérhetõ
+#pasdeja_ouverte=This competition is not open in normal mode.
+#voulezvous_aux=Do you want to open it in auxiliaire mode?
+#gerer_liste_compe=Versenyek listájának kezelése
+#suppr_compe_caduc=Nem elérhetõ veresenyek törlése
+#pas_aux_poules_equipes=&Auxiliary mode is not available in poules by teams
+
+#reception_aux=Reception of "auxiliary" results
+#supp_match_fini=Suppress finished matches
+#supp_tous_match=Suppress all matches
+
+#ordre_saisi1=The fencers' order of this bout is already entered
+#ordre_saisi2=and rounds of this bout are already entered.
+#ordre_saisi3=Re-entering the fencers' order will clear the rounds.
+#ordre_saisi4=Do you want to re-enter the fencers' order?
+
+#basic_payant=Attention, from 15/10/2009, Engarde Basic will no more be free.
+#preferer_basic=Több funkció eléréséhez, szerezzen be egy "Engarde Basic" licencet.
+#plusInfoWeb=További információk az Engarde honlapján.
+#ne_plus_afficher=Stop display this message.
+#arret_fonct=Functioning will stop by ^1
+#actualiser=Frissít
+
+#demande_ignoree=The demand is ignored
+#contexte_defaut=Use of the default context
+#donner_date_debut=5 days licence, enter the first day of functioning
+#date_avant_aujourdhui=^1 is before today ^2
+#installer_a_partir=Do you want to install this key so that it functions during 5 days from ^1?
+
+#RepSVG=Biztonsági másolat mappája:
+#periode_svg_auto=Biztonsági mentés
+#en_minutes=percenként
+
+#trop_de_tireurs_compe=Túl sok a vívó ebben a versenyben.
+#mini_limite_50=Az Engarde MINI maximum ^1 vívót kezel.
+
+^1 will be replaced by 1/4 1/8 1/16
+#neutre_quart=Neutral referees over the ^1
+^1 will be replaced by nation, club
+#empecher_meme=Nem azonos a játékvezetõ ^1 mérkõzésen
+#affil_diff=Eltérõ club nemzet 
+#arbitres_meme=^1 has a referee with same ^2 on a match
+#respecter_temps=Betartsa az idõintervallumot x percenként
+#intervalle=Intervallum
+#empecher_proxi=Közelség elkerülése
+#empecher_cross_interet=Kereszt érdek elkerülése
+
+#arbiDeja=A zsûrinek már van mérkõzése
+#arbitres_affectes=^1 allocated referee[1||s] 
+#changer_para_arbi=Modify the parameters to improve the rate or add referees
+#ajouter_arbi=zsûri hozzáadása vagy a zsûri maximális mérkõzésszámainak növelése
+#Autorisation_action=Authorization for a special action in FIE mode
+#historiqueActions=Speciális események naplója
+#interdit_FIE=Forbidden action in FIE mode
+#il_faut_pro_FIE=FIE competitions must be managed in mode PRO+FIE
+#il_faut_pro_FIE2=Quit the FIE mode only briefly and for good reasons
+#modif_manuelle=Manuális módosítás
+#changer_nom=the name must be changed
+#dire_oui_pour_voir=Say yes if you just want to see the list
+#doublon_possible=possible doubloon:
+#n_vrais_doublons=There [1|is|are] ^1 doubloon[1||s], [1|it|they] must be suppressed
+#faire_suppressions=Do you want to suppress?
+#fusion_de=merging of
+#fusion_de_n_doublons=^1 doubloon[1||s] have been merged
+#expli_no_quart=Buttons for changing the referee ^1
+#expli_groupe=Gombok a zsûri csoportok módosításához
+#arbiDejaN=The selected referee already has ^1 matches
+#proximite_tir=^1 has an interest with a fencer of the nearby match
+#pas_neutre_sur=^1 is not neutral for the ^2 
+#est_neutre_sur=&is neutral on the zones
+#pour_conflits=&has for number of conflicts
+#sont_neutre_sur=&neutral referees on zone
+#Arbi2ProSeulement=A második versenybíró automatikus beosztása csak PRO módban érhetõ el.
+#affectation_auto_simple=Egyszerûsített autom. beosztás
+#bon_choix_arbi=Before performing an allocation, have a good list of referees
+#activiteArbitresMatch=Mérkõzés bírók aktivítása
+#activiteArbitresVideo=Videó bírók aktivítása
+
+#ajout_un_arbi=Versenybíró hozzáadása
+#ajout_des_arbi=Versenybírók hozzáadása
+#ajout_tous_arbi=Összes jelenlévõ bíró hozzáadása
+#ajout_arbi_table_gauche=zsûri hozzáadása a bal oldali tábláról
+#ajout_arbi_tab_pred=bírók az elözõ tábláról
+#suppr_un_arbi=bíró eltávolítása
+#suppr_tous_arbi=összes bíró eltávolítása
+#transfer_arbi_pred=zsûrik átvétele az elõzõ tábláról
+#defaire_der_act=Utolsó mûvelet visszavonása
+#del_no_quart=Delete the ^1 numbers
+#del_groupe=Csoportok törlése
+#MatchesDesArbitres=Bírók mérkõzései
+#ArbitresDesMatches=Mérkõzések bírói 
+
+#exemptes_tab=Kiemeltek listája a táblán
+
+^1 sera remplacé par 1/4 ou 1/8 
+#x_pasdefaut=^1 by default
+#matches_a_traiter=Matches to be treated
+#matches_termines=Befejezett mérkõzések
+#poules_a_traiter=Kezelt csoportok
+#poules_termines=Befejezett csoportok
+#matches_hors_periode=Matches out of the interval of time
+#poules_hors_periode=Csoportok idõpont nélkül vagy idõintervallumon kívül
+#match_pas_periode=This match is out of the interval of time
+#poule_pas_periode=A csoportnak nincs idõpontja vagy az idõintervallumon kívül van
+#match_termine=Ez a mérkõzés befejezõdött
+#poule_terminee=Befejezett csoport
+^1 sera remplacé par un arbitre et ^2 par 1/4 ou 1/8 
+#plusieurs_quarts=^1 is in several ^2
+
+nouveaux textes du 21/6/2011
+
+#noir=fekete
+#duree=duration
+#NoSerieDeReserve=Fencers of the competition are given then fencer number they have in the memory
+#champ_associe=Indicate the field on which fencers are associated
+#n_tireur_a_ceci=^1 fencer[1||s] in memor ha[1|s|ve] ^2
+#TireursNonTrouves=^1 fencer[1||s] not found
+#prendre_serie=Use the fencer number of the memory
+
+#PoulesDesArbitres=Bírók csoportjai
+#ArbitresDesPoules=Csoportok bírói
+#arbi_par_poule=Bírók száma csoportonként
+#maxi_poule_arbi=Maximum csoport egy bírónak  
+
+nouveaux textes du 21/7/2011
+
+#pasDansPoules=Impossible operation because we are not in poules
+#prendQuandMeme=Taking it even so?
+
+#tableau_non_utilise=Nem használt tábla
+#video=video
+#arbitre_video=Videó bíró 
+#arbitre_match=Mérkõzés bíró 
+#arbitre_assistant=oldalbíró
+#matchDeja3=A kiválasztott mérkõzésnek már van 3 bírója
+#pouleDeja3=A kiválasztott csoportnak már van 3 bírója
+#matchDejaVideo=A kiválasztott mérkõzésnek már van videó bírója
+#pouleDejaVideo=A kiválasztott csoportnak már van videó bírója
+#afficher=Megjelenítés
+
+#avec_horaires=órával
+#sans_horaires=óra nélkül
+#affectation_de=Allocation of
+#periode_matchs=Period on which we treat the matches
+
+#on_envoie=Sending even so?
+
+#matchHeure=Csak idõponttal rendelkezõ mérkõzések
+#pouleHeure=Csak idõponttal rendelkezõ csoportok
+#tir_arbi=Vívók és zsûrik:
+#natdiff=Különbözõ nemzetekbõl
+#liguediff=Különbözõ régiókból
+#clubdiff=Különbözõ egyesületekbõl 
+#sipossible=ha lehetséges
+#Affiliation_affi=Displayed affiliations
+#indiquer_periode=Idõszak választása
+
+#clas_init_des_tab=initial ranking for the tableau phase 
+#clas_init_un_tab=initial ranking for a tableau
+#clas_init_du=initial ranking for ^1
+#clas_du=ranking for ^1
+
+#prevu_exaequos=^1 forseen qualifiers, but ^2 qualifiers because of ex-aequos
+#modif_formu=Modification of the formula
+#compe_en_cours=On goinf competition
+#clas_utiliser=Ranking to be used
+#toutes_cat_sexe=Any categories and sexes
+
+#match_consecutif=2 egymásutáni mérkõzés
+#non_sur_consecutif=^1 is not on the nearby match
+
+#essais=^1 performed tr[1|y|ies]
+#remplissage=filling
+#autres_essais=Ok? Click on "no" to make new tries.
+
+#arbi_dispo=There [1|is|are] ^1 available referee[1||s] 
+#remplis_arbi_n=Bírók feltöltöttsége ^1
+
+#cycleHeures=ugyanarra a pástra különbözõ idõt
+#cyclePistes=ugyanarra az idõre különbözõ pástot
+#pasCycle=nincs ciklikusság
+#selonListe=cycle according to the length of the list
+#selonZone=cycle per part of the tableau
+#zone_egal=Part = 1 /
+#sauter_matchs_term=skip finished matches 
+
+#use_max_piste=Maximális pástszám használata
+
+#manque_heure_poule=^1 poule[1||s] without hour
+#manque_heure_match=^1 match[1||es] without hour
+#manque_piste_poule=^1 poule[1||s] without piste
+#manque_piste_match=^1 match[1||es] without piste
+#developper=kibont
+
+^1 sera remplacé par tireurs, équipes ou arbitres
+#a_prendre=^1 to use
+^1 sera remplacé par tireurs, équipes ou arbitres
+#prendre_ces=use these ^1
+
+#alpha=abc sorrend
+#structure=struktúrált
+#select_all=összes kiválasztása
+
+#select_multiple=Több kiválasztása: Shift+Klikk és Ctrl+Klikk 
+#drag_and_drop=Egérrel megfogás és áthelyezés lehetséges
+
+#date_lim_mini=Deadline of use in mode MINI: ^1
+
+#police_defaut=Alapértelmezett betûtípus
+
+#demonstrations=Demók
+
+#expli_quart1=An allocation by quarter places all the matches of a referee in a unique quarter,
+#expli_quart2=the referee must not have a country/club conflict with one of the fencers of the quarter.
+#expli_quart3=Analoguous by 1/8 and 1/16.
+#expli_cross1=There is a cross-interest when a match has a referee of country/club A and a fencer of country/club B
+#expli_cross2=and when another match has a referee of country/club B and a fencer of country/club A.
+#expli_proxi1=There is proximity when a match has a referee of country/club A and when the nearby match
+#expli_proxi2=has a fencer of country/club A. Nearby matches are: 1 and 2, 3 and 4, etc. 
+#expli_affillDiff1=There is same affiliation when a match has two referees of same country/club.
+#expli_temps=Demand to respect the indicated time interval, expressed in minutes, between two poules/matches of a referee.
+#expli_deux=Demand to place each referee on two nearby matches: 1 and 2, and 4, etc. 
+#expli_heures1=8:00+0:15*7 means use time 8:00 then add 7 times 0:15, same thing for 8+15*7 
+
+nouveaux textes 5/9/2011
+
+#choix_tableau=Tábla választása
+#avec_arbi=versenybíróval
+#avec_pistes_heures=órával és pástokkal 
+#avec_nom_tab=névvel minden tábla
+#sur2lignes=name over 2 lines
+#battus_a_gauche=a vesztessel a baloldalon
+#autre_tab_a_gauche=másik táblával a baloldalon
+
+nouveaux textes 7/9/2011
+
+#matchs=matches
+
+#clasmt_prov=Ideiglenes rangsorolás
+#poule_et_clas=Csoportok és ideiglenes rangsor
+#NbPoulesPP=csoportok száma oldalanként
+#NbLignesPP=sorok száma oldalanként
+#avec_soustitre=alcímmel
+#avec_noms_champs=a mezõk neveivel
+
+#raison=reason
+
+nouveaux textes 26/10/2011
+
+#idem_prec=Ugyanaz, mint korábban
+#modele=model
+#selon_modele=E model szerint...
+#mauvais_modele=hibás model
+#pour_der_tour=for the last round
+#pour_tour_saisi=for a round to enter
+
+#une_seule_piste=Minden zsûri külön páston
+
+nouveaux textes 11/11/2011
+
+#une_piste_exactement=Zsûri a pást összes mérkõzésén
+
+#plus_police=Betûméret növelése
+#moins_police=Betûméret csökkentése
+#plus_interligne=Sorköz növelése
+#moins_interligne=Sorköz csökkentése
+
+#ecran=képernyõ
+#photos_dir=Képek egy mappából
+#grand_diaporama=Teljes képernyõs vetítés
+#petit_diaporama=Vetítés 
+#fin_diaporama_grand=Vetítés vége, nagy ablak
+#fin_diaporama_petit=vetítés vége, kis ablak
+
+#avec_pistes_heures_prets=with hours and pistes of ready matchs
+#taille_noms_tableaux =size of the names of the tableaux
+
+#matchs_a_imp_ou_reimp=^1 folyamatban lévõ mérközések nyomtatása vagy újranyomtatása
+#matchs_imprimables=^1 újranyomtatható folyamatban lévõ meccse  
+#y_compris_pas_pret=Nem készen levõ mérkõzésekkel együtt
+
+#apres_match=minden mérkõzés után
+#au_changement_de=when changing ^1
+#page_pleine=amikor az oldal tele van
+#heure_piste=órák és pástok
+#matchs_prets=All the matchs which not ready
+#toutes_poules=All the poules
+#liste=(f)list[|s]
+#col_etroite=keskeny oszlopok
+
+#ajuste_col=oszlopok beállítása
+#ajuste_col_modele=adjustment of columns for this model
+#pas_ajuste_auto=nincs automatikus beállítás
+#ajuste_auto_sauf=automatikus beállítás, kivéve "név vezeték név"
+#ajuste_auto=automatikus beállítás
+#global=globális
+
+#cacher_soustitre=Alcím elrejtése
+#cacher_noms_champs=Mezõnevek elrejtése
+
+#arbitres_moins=^1 referee[1||s] having the least worked
+#arbitres_hasard=^1 referee[1||s] at random
+#menu_special_arbi=Use the "Special" menu to show the panel of manual allocation
+#menu_special_arbi2=Kritérium hozzáadásához használt a "Speciális" menüt
+
+#affecter_n_arbi=Versenybírók száma mérkõzésenként: ^1
+#incluant_arbi_video=videóbírót is hozzáadva
+#using_groups=A és B csoport használata
+#par_quart=negyedenként
+#equi_roles=&Balancing roles
+#change_roles=feladat cserék
+#permuter_arbi=versenybíró ^1 és versenybíró ^2 megcserélése
+
+#fichiers_XML_en_attente=There are ^1 waiting XML files of an auxiliary session
+#on_detruit=törli a fájlokat
+#on_charge=betölti a fájlokat
+
+#saisie_affil_nouv_dans_ppal=Új clubot, régiót és országot nem lehet felvinni Auxiliary módban, ezeket felvinni csak Normál módban lehet
+
+#echec_enregistrement=A verseny elmentése nem sikerült
+#nouvel_essai_enreg=megpróbálja újra menteni?
+
+#celui_appli=choose among the models of the application
+#celui_avec_compe=choose among the models of the competition
+#enreg_celui_appli=save among the models of the application
+#enreg_celui_avec_compe=save among the models of the competition
+#enreg_sans_les_deux=save among both
+#copier_les_modeles=copy models of the competition in the application folder
+#models_eng_diapo=models of 'Engarde and models of DiapoEngarde
+#erase_models=erasing the models having the same name?
+#err_copie=HIBA, megszakadt másolás
+#fichiers_copies=^1 copied file[1||s]
+
+#cadre=Keret
+#traits_hz=Keret és vízszintes vonalak
+#sans_traits=Nincsenek vonalak
+
+#simuler_remplissage=Simulate the filling of an incomplete tableau 
+#ImprImmediate=Új mérkõzések azonnali nyomtatása
+
+#sans_defilement=Area without scrolling
+#avec_classement=With ranking
+#nb_ligne_pp=sorok száma laponként
+#numero_match=mérkõzések száma
+
+#FTPactif=FTP aktív
+#desactive_FTP=Deactivation of FTP
+
+#panneau_web=Web panel
+#parametresHTTP=HTTP paraméterek 
+#activerHTTP=HTTP aktíválás
+#desactiverHTTP=HTTP deaktíválás
+#HTTPactif=HTTP aaktíválva
+#desactive_HTTP=Deactivation of HTTP for uploading files
+#specialPourHTTP=Special for HTTP
+#installer_storefile1=Do you want to install with FTP the ^1file
+#installer_storefile2=in the ^1directory of the distant machine
+#installer_storefile3=in order to send files with HTTP ?
+#au_moins_6=Minimum 6 karakter
+#redonner_pass=Add meg a jelszót mégegyszer
+#pass_trop_court=A megadott jelszó túl rövid
+#pass_different=A megadott két jelszó különbözõ
+#car_interdit=Tiltott karakter
+#utiliser=Használ
+
+#organisme=szervezet
+#event=esemény
+#tournoi=Esemény
+#tournoi_gen=Esemény[|ek]
+
+#pret_competition=Ready for this competition
+#pas_de_compe=the competition does not exist
+#pas_event=the event does not exist
+#pas_organisme=A szervezet nem létezik
+
+#pas_chemin_domaine=elérési út nem található a domainban
+#pas_connexion_ou=nincs internet csatlakozás vagy domain hiba
+#si_appli_pas_ici=Ha a(z) ^1 alkalmazás nincs telepítve, akkor az FTB beállításokkal lehet telepíteni
+#fichiers_attente=függõben lévõ fájlok
+#matchs_attente=függõben lévõ mérkõzések 
+
+#interrompre=Interrupt
+#reprendre=Resume
+
+#envoi_fic_html=upload of HTML files
+#site_org=Organizer Website
+#rep_depose_fic=Mappa ahová a  fájlok feltöltésre kerülnek, Pl.: http://www.club.org/competitions/junior
+
+#faire_tab_sans_publi=Make the tableaux without publishing
+
+#envoi_match=upload of ongoing matches
+#files_attente=Waiting lists
+#taille_files=Size fo the files
+#vider_file_fichiers=Empty the waiting list of files
+#vider_file_matchs=Empty the waiting list of matches
+#console=Console
+
+#useNomsCourts=Use the short names
+#fonc_non_acces=This functionnality is not yet accessible
+
+#compe_commencee=The competition began
+#suppr_toutes_eq=Delete all the teams
+
+#Licence_LicenceNat=Use the ^1 Licences as National Licences 
+#LicenceFIE_LicenceNat=Use the ^1 FIE Licences as National Licences
+#LicenceNat_LicenceFIE=Use the ^1 National Licences as FIE Licences 
+
+#heure_avant_arbitre=ERÕSEN AJÁNLOTT az idõ és pást beosztás a zsûribepsztás elõtt,
+#eviter_meme_heure=hogy elkerüljük, hogy egy zsûrinek két meccse legyen egyszerre
+#arbitre_sans_heure=Azonban lehetséges a zsûrik beosztása idõpont nélkül is, a pipa kiszedésével:
+
+#entite_deja_table=^1 entit[1|y|ies] suppressed, because already in the table
+
+#PublierlesEquipes=Csapatok publikálása az interneten
+#RefaireIndex=Web menü újrakészítése
+#ViderIndex=Web menü törlése
+#refaire_doc_web=Újra kell készíteni a weboldalakat az Engarde web menüpont, csoportok és tábla ablakok menüjébõl
+#Deposerlescss=CSS fáljol feltöltése az internetre
+#docu_actualise0=Ez az oldal automatikusan frissül
+#docu_actualise1=Az oldal automatikus frissítési ideje ^1
+#docu_actualise2=manuálisan gyakrabban frissíthetõ
+#refaire_demande=^1 fájl várakozik, próbálja késõbb
+#minute=perc[|]
+#seconde=másodperc[|]
+#info_probables=A "Továbbjutó", "+", "-" és "Kiesett" információk valószínûek, de nem biztosak
+#qual_probable=valószínû továbbjutó
+#elim_probable=valószínû kiesõ
+#menu_document=Használja menüt a tartalom megjelenítéséhez
+#cliquer_titre=Kattintson a linkre, hogy megjelen a jobb oldalt
+#cliquer_ F5=Kattintson az F5-re, hogy teljesn oldalon nyissa meg a dokumentumot, ezután a teljes ablakos módot megõrízve tud frissíteni az F5-ös billentyûvel
+#menu_apparaitra=Egy menü fog megjelenni, amikor a versenyeredmények publikálása megkezdõdik
+
+#site_web=Weboldal
+
+#pas_de_live=Ennek a versenynek ninsc élõ aláírása
+
+#periodeAutoRefreshMatchs=Tábla mérkõzések idõközönkénti frissítése, minimum 2mp
+#onlyScoreChange=Csak a pontszám változás küldése
+#supprMatchsFinisApres=Véget ért mérkõzések törlése ..., minimum 30 másodperc
+#supprTousMatchsApres=Összes mérkõzés törlése ..., minimum 300 másodperc
+#message-suppr=Üzenet, mindegyik törlésére ..., minimum 10 másodperc
+#supprTousMatchs=Összes mérkõzés törlése
+#supprMatchsFinis=Végetért mérkõzések törlése
+
+#tireurs_disponibles=^1 elérhetõ új vívó 
+
+#utiliser_dossards=Maszk számok használata
+#cocher_si_bonne_raison=Csak akkor pipáld be ezt a dobozt, ha jó okod van rá
+#pas_dossard=Nincs maszk szám
+#dossard_en_double=Duplázott maszk szám
+#pb_dossard=Maszk szám probléma
+#corriger_dossard=Javítsd ki vagy ne használd a maszk számokat a pást berendezéssel
+#remplacant_pris=Csere ^1 a ^2. mérközésnél
+#pasRemplacement=nem volt csere
+#remplacementFait=volt csere
+#remplacementAFaire=Végrehajtandó csere
+#voir_ecran_piste=Eredményjelzõ mutatása 
+#cacher_ecran_piste=Eredményjelzõ elrejtése 
+
+#saut_page=Oldaltörés
+
+#partie_tableau=Tábla részlet
+#serie_non_classe_menu=Sorszám hozzárendelése a nem rangsorolt vívókhoz
+#serie_non_classe=Sorszám a nem rangsorolt vívókhoz
+
+#message_clas=üzenet
+#cle_messages=Üzenetek kulcsa
+#messages_pour_clas=Üzenetek bizonyos rangsorokhoz
+#ecrire_lignes=ENGARDE-dal írás, nem a DiapoEngarde-dal, ûrlap sorai:
+#exemple_mes1=A: 1-32: továbbjutott vasárnapra
+#exemple_mes2=A: 33-64: továbbjutott a B táblára, délután 3-ra
+#expli_mes1=A egy üzenetcsoport kulcsa. Több csoport lehet: A, B, C, stb.
+#expli_mes2=Amikor az A kulcs van kiválasztva, ha Kovács rangja 1 és 32 között van, azt az üzenetet kapja, hogy továbbjutott vasárnapra
+
+#id_to_use=Azonosítók használatra
+#cle_engarde=Engarde kulcs (ajánlott)
+#cle_engarde_seule=Engarde kulcs
+#pas_id=nincs "azonosító"
+#id_en_double=duplázott "azonosító"
+#pb_id=PROBLÉMA AZ AZONOSÍTÓ MEZÕBEN
+#corriger_id=Javítsd ki vagy ne használd az azonosító mezõt a pást berendezéssel
+
+#use_langue_doc=Válaszd ki a nyelvet a dokumentumokhoz
+
+#handisport=Wheelchair
+#dedouble_poules=Split certain poules ?
+#dedouble_cette_poule=Split this poule
+#dedouble_poules_a=Split poules from
+#choisir_odm=Choose match order
+#monter=Up
+#descendre=Down
+#avecCopierColler=Copy-paste possible
+#il_manque=missing
+#matchs_en_double=doublon match
+#incorrect=incorrect item
+#corriger_odm_incorrect=The entered match order is incorrect, change it?
+#sinon_auto=if not, default match order will be used
+#poules_dedoublables=Egyes csoprtok több páston
+#poules_sur_n_pistes=Poules of ^1 on how many pistes
+#cette_poules_sur_n_pistes=&This poule  of ^1 on how many pistes
+#poule_n_pistes=poule on ^1 pistes
+#verifier=verify
+#prendre=take
+#solution=^1 sorsolás[|ok]
+#liste_solutions=Sorsolás lista
+#add_liste_solutions=Hozzáadás a sorsolás listához
+#voir_liste_solutions=Sorsolás lista megtekintése
+#prendre_solution=Sorsolás kiválasztása
+#matchs_se_suivent=matches following each other
+#ordre_fourni=entered match order
+#ordre_engendre=generated match order
+#limite_poule_mini=Poules of ^1 maxi in mode mini
+
+#save_copy=Másolat mentése
+#connexion_pistes_ip=Csatlakozás IP-vel rendelkezõ pástokhoz
+#deconnexionPistes=Pástok lecsatlakoztatása
+
+#titre=Cím
+#avec_video=videóval
+#lancer=Indítás
+#menu=Menü
+#charger_pistes=Pástok betöltése fájlból
+#save_copy_pistes=Másolat mentése a pástokról
+#CacherToutesPistes=Összes pást elrejtése
+#mode_envoi=Átviteli mód a fõ Engarde mérkõzéseihez
+#depot_fichiers=fájl lerakással/tárolással
+#par_UDP=UDP-vel
+#expli_depot_fichiers=fájl lerakás/tárolás, régi módja az Engardenak, lassabb
+#expli_par_UDP=UDP, új módja az Engardnak, gyorsabb, IP címet és portot használ
+#ip_engarde_ppal=Fõ Engarde kliens IP címe
+#port_engarde_ppal=Fõ Engarde kliens portszáma
+#raz=törlés
+#si_score_modifie=Pontszám változásnál
+#si_situation_modifie=állapot változásnál
+#chaque_10s=állapot változásnál és 10 másodpercenként
+#chaque_5s=állapot változásnál és 5 másodpercenként
+#toujours=mindig
+#sans_pilotage=megfigyelés nélkül
+#pilotage_de=Megfigyelés: 
+#envoyer_principal=Elküldés a fõ kliensnek
+#envoyer=Küldés
+#nepasenvoyer=NEM küldés
+#affiche_dans_table=megjelenítés táblázatban
+
+#refus_message=Elutasított üzenet, ^1 pást nincs csatlakoztatva
+#pas_piste_cet_ip=^1: üzenet érkezett, ez az IP nem tartozik egy pásthoz sem
+#next_ou_prev=Vége ennek a körnek, lépj a következõ vagy elõzõ meccsre
+#conflit_piste=KONFLIKTUS az IP címek vagy pást nevek között
+#ordi_connecte_piste=^1 számítógép össze van kapcsolva a(z) ^2 pásttal
+
+#call_next_match=Következõ mérkõzés lekérése ^1 páston
+#utiliser_next=Hívd le a következõ mérkõzést a pástnál, hogy újra lekérd ezt a mérkõzést.
+#reset_possible=Lehet le kell RESET-elned a mérkõzést a pástnál, hogy le tudd hívni a következõ mérkõzést.
+#no_match_this_poule=^1 csoport folyamatban ezen a páston: nincs levívandó mérközés
+#match_prec_manuel=Az elõzõ mérkõzés még nem fejezõdött be, elérheted a pástnál az elõzõ mérkõzés lehívásával vagy manuális módban
+#matchs_sans_heure=Még van levívandó mérkõzés azon a páston, de nincs idõpont hozzárendelve
+#no_match_other_poules=Nincs másik mérközés, egy másik csoportban, ehhez a pásthoz
+#no_match_in_poules=Nincs további csoportmérkõzés ezen a páston
+#no_poule_this_piste=Nincs csoport ezen a páston
+#no_match_this_piste=Nincs további mérkõzés ezen a páston
+#no_tableau_this_piste=Nincs további táblamérkõzés ezen a páston
+#tab_pas_ds_tab=táblamérkõzés érkezett, tábla még nem kezdõdött el
+#est_pas_tab_en_cours=nincs folyamatban lévõ táblán
+#bad_num_match=rossz mérkõzés szám érkezett
+#bad_cle_tir=versenyzõ kulcsa nem megfelelõ
+#modif_match_fini=lezárt mérkõzése módosítása (elfogadott)
+#modif_match_fini_non=lezárt mérkõzés módosítása (elutasított)
+#refuse=ELUTASÍTVA
+
+#demande_con_deja=Csatlakozási kérelem már folyamatban
+#progression_auto=automatikus haladás 
+#periode_auto=automatikus haladás idõköze
+
+#remplacer=Cserél
+
+#tableauWebDefaut=Tábla webfájl definiálása
+#change_style_css=CSS stílus cseréje
+
+#imp_rencontre_sans_ordre=Mérkõzések nyomtatása akkor is, ha a sorrend nem volt megadva?
+
+18 JUILLET 2015
+
+#titulaire=Tartalék visszacserélése
+#RemettreTitulaireEnX=^1 csapat lecserélt vívójának visszacserélése X. mérkõzésnél
+#RemettreTitulaireNow=^1 csapat lecserélt vívójának visszacserélése most
+#RemettreTituAssautX=^1 lecserélt vívójának visszacserélése ... asszóban
+#num_match_titulaire=Mérkõzés szám, ahol a lecserélt vívó visszatér
+#zero_aucun=Adj meg 0-át a semmiért
+
+30 decembre 2015
+
+#id_sm=Smart ID
+#pass_sm=Smart jelszó
+#envoi_smart=Információ elküldése az Engarde okostelefonnak
+#ConnectwithSmartId=Kapcsolódás Smart ID-val
+#pas_envoi_smart=Az adatok nincsenek elküldve az Engarde Smartnak
+#identifiant=Azonosítók
+#lancer_smart=Engarde Smart indítása
+#obtenir_identifiant=Új verseny azonosító kérése
+#obtenir_autre_identifiant=Másik verseny azonosító kérése összetartozó versenyhez
+#autre_identifiant=Másik verseny azonosítója
+#id_is=Az azonosító: ^1
+#pass_is=A jelszó: ^1 kérjük jegyezd fel
+#meme_pass=A jelszó azonos
+#pass_saisi_smart=Jelszó beállítva az Engarde Smartban
+#user_deja_pass=A felhasználónak már van jelszava 
+#clic_connex=Utána kattints a csatlakozásra
+#stat_du_groupe=Csoport statisztika
+#reception_donnees_smart=Adatok fogadása az Engarde Smart Asszisztensen keresztül
+#pas_reception_donnees_smart=Az adatok nincsenek fogadva az Engerde Smart Asszisztensen keresztül
+#envoyees_par=Adatok ezen keresztül lettek küldve:
+#renvoyer_donnees=Összes adat feltöltése újre a szerverre
+#supprimer_donnees=Összes adat törlése a szerverrõl és küldés leállítása
+
+#delaientreenvoisfichiers=Késleltetés HTML fájlok feltöltése között: ^1s
+#tempsmaxicom=Max idõ HTTP: ^1s
+#sous_titre=Alcím
+#message=üzenet
+#bleu=kék
+#marron=barna
+#info_compe=Információ a versenyrõl
+#tous_tableaux=összes tábla
+#all_match_clas=Összes csoport- és táblamérközés, és összes rangsorolás
+#detruire_compe=Verseny törlése
+#detruire_compe_smart=Verseny törlése a Smart szerveren
+#tireurs_envoyes=Elküldött vívók
+#titres_differents=A verseny címe ^1 és a smart szerveren lévõ cím ^2 különbözik
+#veut_meme_titre=Szeretnét, hogy ugyanaz legyen a cím?
+#is_it_right_id=Ez a jó azonsító ennek a versenynek
+#cliquer_modifier=Kattints a Módosításra és add meg a címet és alcímet
+
+5 juillet 2016
+
+#mixte=Mix
+#garcons=fiúk
+#filles=lányok
+#qui_commence=Ki kezd?
+#re_qui_commence=Sorsolás újrakészítése, hogy ki kezd (fiúk vagy lányok)?
+#garcons_commencent=Fiúk kezdenek
+#filles_commencent=Lányok kezdenek
+#quand_garcons_commencent=Amikor a fiúk kezdenek:
+#quand_filles_commencent=Amikor a lányok kezdenek:
+#devrait_gars_filles=^1 2 vagy 3 fiúval és 2 vagy 3 lánnyal kell rendelkeznie
+#melange_rang_mixte=Mix-nél 1, 2, 3, 4 és 5, 6, 7, 8 van egy csapatban
+#mettre_rang1234=Tegyen 12R-t a fiúkhoz, 34R-t a lányokhoz az egyik csapathoz
+#mettre_rang5678=Tegyen 56R-t a fiúkhoz, 78R-t a lányokhoz a másik csapathoz 
+#gars1256=A fiúk rangja 1256 kell hogy legyen
+#filles3478=A lányok rangja 3478 kell hogy legyen
+#erreur_gars_fille=Hiba: lány a fiúkkal
+#n_gars=^1 fiú van.
+#n_filles=^1 lány van
+#compe_mixte=MIX verseny
+#rencontre_mixte=A jegyzõkönyv MIX
+#cela_signifie=Azt jelenti:
+#signifie2_2_2fois=A 2 fiú a másik két fiúval vív és a 2 lány a másik 2 lánnyal (8 mérkõzés)
+#compe_non_mixte=A verseny NEM MIX
+#rencontre_non_mixte=A jegyzõkönyv NEM MIX
+#signifie3_3=A 3 vívó másik 3-al vív (9 mérközés) 
+#changer_sexe=Szeretné módosítani a 'nem' paramétert a verenyben?
+#dabord_arbitres_moins=Kevesebb mérkõzést vezetõk
+#non_favorise=&not favoured
+#pret=készen
+#deja_fait=már kész
+#deter_qui_commence=Ki kezd eldöntése
+#tableau_pas_pret=A tábla még nincs kész
+#on_effectue=Mindenképp végrehajtod?
+#meme_tirage_tabs=Véletlenszerû sorsolás ^1 táblához?
+#deter_qui_1-4_5-8=Ki az 1234 és ki az 5678 eldöntése
+#qui_1-4_5-8=Ki az 1234, ki az 5678?
+#deter_qui_1-3_4-6=Ki at 123 és ki a 456 eldöntése
+#qui_1-3_4-6=Ki az 123, ki a 456?
+#pas_remplacement=Nincs Cyrano csere 
+#remplacement_unefois=Cyrano csere
+#categories=kategóriák
+#categories_fie=FIE kategóriák
+#cat_pas_pour_championnat=A kategóriák nem felelnek meg a bajnokságnak
+
+2016/10/27
+
+#tableaux_par_niveau=Tábla ^1 szintenként
+#manque_tireurs=Nincs elég vívó
+#prend_tous_les_tir=Összes vívó holtversenyben
+
+#dernier_tour_par_niveau=Utolsó csoportkör szintenként
+
+#fic_pas_ecrit=A fájl nem lett elmentve
+#ajout_arbi_dispo=Összes jelenlévõ zsûri hozzáadása
+#presents=jelen
+#disponibles=elérhetõ
+#tir_meme_clas=Vívók azonos rangszámmal
+#qui_devant=Jelöld ki, ki van a többiek elõtt
+
+#app_broadcast=Találatjelzõk Közvetítõ (broadcast) módban vannak
+
+#formule_descri_tab=Formula egyedi táblával
+#utiliser_tab=Táblák használata úgy, ahogy vannak
+#recalculer_tab=A rangsoroló csoportok újraszámítódtak
+#erreur_cal=Hiba a rangsoroló csoportok újraszámítása közben
+
+2017-05-29
+
+#Pasdepoule=Nincs csoport
+#enlever_contraintes=Korlátozások törlése
+#choix_formule=Formula választása
+
+#nation2=nemzet 2
+#nation3=nemzet 3
+#nation4=nemzet 4
+#2eme=2.
+#3eme=3.
+#4eme=4.
+
+#dabord_fermer=Elõszõr be kell zárni a versenyt
+#rattacher=csatol
+#detacher=lecsatol
+#suivi=nyomon követés
+
+#RedTermineeMaintenant=Kész csoportok összecsukása
+#RedNonEnCoursMaintenant=Nem folyamatban lévõ csoportok összecsukása
+#RedTermineeAuto=Kész csoportok automatikus összecsukása
+#RedNonEnCoursAuto=Nem folyamatban lévõ csoportok automatikus összecsukása
+
+#multi_nat=Több nemzetes beosztás
+
+#eviter0=KEZELÉSEK CSAK HOZZÁÉRTÕKNEK
+#eviter1=ILYEN TÍPUSÚ VÁLTOZTATÁSOKAT KERÜLD FOLYAMATBAN LÉVÕ VERSENYEKEN
+#eviter2=TESZT VERSENYEN PRÓBÁLD KI ELÕSZÖR
+#modification_importante=Fontos változás
+#nb_vainqueurs_clas=Gyõztesek száma
+#nb_battus_clas=vesztesek száma
+#recalcule_poules=csoportok újrakalkulálása
+#vic_score_precise=Gyõzelem meghatározott pontszámmal
+#non_supprimable_now=Ez az egyed nem törölhetõ pillanatnyilag
+
+#noms_pistes=Pástok nevei
+#premier_IP=Elsõ IP cím
+#ex_noms_pistes=Például: 1-15 Pódium Kék Sárga Zöld Piros 
+#pistes_a_utiliser=Pástok használata
+#pistes_a_utiliser_ordre_IP=Pástok használata az IP címek sorrendjében
+#ajout_une_piste=Egy pást hozzáadása
+#ajout_pistes_ip=Néhány IP-s pást hozzáadása
+#ajout_pistes_semi=SEMI 1.0 pást hozzáadása 
+#piste_incorrecte=inkorrekt pást
+#heure_incorrecte=inkorrekt idõ
+#piste_dupliquee=Duplázott pást
+#ip_duplique=Duplázott IP cím
+#descri_formule=Formula leírása
+#charger_formule_perso=Egyéni formula betöltése
+
+#mettre_no_quart=Tedd a használt számokat ^1
+
+#maj_fichiers=Néhány fájl frissül
+#maj_succes=Sikeres frissítések
+#maj_echecs=Sikertelen frissítések
+
+#poule_entiere=levívott egy teljes csoportot
+#match_entier=befejezett egy mérkõzést
+#match_tire=befejezett egy mérkõzést
+#classe=Rangsorolt
+#non_classe=Nem rangsorolt
+#sans_rang=Rangszám rangsorolás nélkül (amikor a tábla még nincs befejezve)
+#sans_rang_en_fin=végsõ listában, rangszám nélkül (amikor a verseny befejezõdött)
+#statut_different=a listában lévõ állapot nem egyezik
+#present_ni_ni=jelen az induló listában, de nem szerepel csoportban vagy mérkõzésen
+
+#accueil=Kezdõoldal
+#affichage=Megjelenítés
+#ouvert_recent=Utoljára megnyitott
+#tables_dans_fenetre=Táblák az ABLAKOK menüben találhatók
+
+#cliquer_accueil=Kattints a kezdõoldalra, hogy visszatérj
+#montrer_svg=Verseny main backupjainak mutatása
+#faut_quitter_engarde=BE KELL ZÁRNI AZ ENGARDE-OT.
+#engarde_sauve=Engarde készít backupot.
+#relancer_engarde_svg=Újra kell indítani az Engarde-ot, hogy új backup készüljön
+#pas_svg_compe=Ennek a versenynek nincs backupja
+#passer_compe_rep=Szeretnéd áthelyezni a versenyt ebbõl a mappából: ^1
+#vers_rep=ebbe a mappába: ^1
+#passer_compe_parent=Verseny mozgatása szülõ könyvtárba
+#incoherence_formule=KÖVETKEZETLENSÉG A FORMULÁBAN, HIÁNYZIK A TÁBLA
+#charger_nouv_formule=ÚJ FORMULA BETÖLTÉSE
+#retour_poule_par_svg=Használj egy backup-ot vagy menj vissza a csoportok végéhez és tölts be egy új formulát
+#use_backup=Használj egy backup-ot
+#quand_meme_ouvrir=Még mindig szeretnéd megnyitni ezt a versenyt
+#err_load_formula=Hiba a formula betöltése közben: formula törlése
+#err_table=HIBA, tábla nincs betöltve
+
+#suppr_pistes_avant=Létezõ pástokat törölni kell elõtte
+
+#k_meme_place=nyomj k-t vagy ctrl+k-t a megjelenítõ ablakban, hogy ezt az eszköztárt megjelenítsd ugyanabban a pozícióban
+#esc_ferme=Az ablakokat be lehet zárni az Esc billentyûvel
+
+#connexion_eservice=Kapcsolat az engarde-service-hez
+#autre_connexion=Másik kapcsolat
+#transmission=A csoportok és táblák küldése minden ^1 másodperben.
+#aussi_periode=Ez az alapértelmezett frissítési periódus az Engarde Smart-ban.
+#periode_defaut=Ez az alapértelmezett periódus.
+#periode_achetee=A megvásárolt periódus ^1mp.
+#periode_plus_grande=Az alkalmazott periódus nagyobb, mert a vívók létszáma nagyobb, mint a vásárlásnál jelzett létszám.
+#periode_plus_courte=Rövidebb periódusért kapcsolódj a fiókodhoz az engarde-service.com-on 
+#modif_nb_tir=és változtasd meg a vívók számát
+#modif_periode=és módosítsd a periódust
+
+#date_diff=A dátum különbözõ
+#arme_diff=A fegyvernem különbözõ
+#sexe_diff=A nem különbözõ
+#type_diff=A típus különbözõ
+#smartID_diff=A Smart ID különbözõ
+
+#bloque=Blokkolva
+#bloquer_pass=Jelszó blokkolása
+#debloquer_pass=Jelszó feloldása
+#bloquer_les_pass=Összes jelszó blokkolása
+#debloquer_les_pass=Összes jelszó feloldása
+#match_bloque=Blokkolt mérkõzés
+#poule_bloquee=Blokkolt csoport
+#modifiable=Módosítható
+#verifie=Ellenõrzött
+
+#icone_verif=Az "Ellenõrzõtt" ikon az jelenti, hogy "Ellenõrizve, csak itt módósítható".
+#icone_cadenas=A "Lakat" ikon azt jelenti, hogy "Csak itt módosítható".
+#icone_non=Az "Áthúzott lakat" vagy ha nincs ikon az azt jelenti, hogy "Távolról módosítható".
+#icone_clic=Kattints az ikonra a módosításhoz.
+#menu_distance=A menü megengedi, hogy beállíts mindent "Távolról módosítható"-ra.
+#modif_distance=Minden "Távolról módosítható"
+#faible_itinerance=Rendezetebb adatok, kevesebb mobilnet forgalom
+
+#Interdireouvertureparfichier=Auxiliary és DiapoEngarde fájlként való megnyitásának tiltása
+#InterdireouvertureparfichierQ1=Szeretnét megtiltani az Engarde Auxiliary és DiapoEngarde számára, hogy a versenyt fájlként nyissa meg
+#InterdireouvertureparfichierQ2=és arra kényszeríteni õket, hogy szerver-kliens módban csatlakozhasson csak vagy a DiapoEngarde interneten keresztül (erõsen ajánlott)
+#dangereuxparfichier1=Veszélyes egy versenyt egyszerre Auxiliary-ként és DiapoEngarde-dal is megnyitni fájl üzemmódon keresztül
+#dangereuxparfichier2=Jobb, ha SZERVER-KLIENS-ként nyitjuk meg vagy a DiapoEngarde-ot interneten keresztül
+#interditparfichier1=Ezt a versenyt nem lehet megnyitni fájlként Auxiliary vagy DiapoEngarde-dal jelenleg.
+#interditparfichier2=Használd a SZERVER-KLIENS módot vagy a DiapoEngarde-ot interneten keresztül
+#client_serveur_vert=A megnyitható versenyek SZERVER-KLIENS módban zölddel jelennek meg
+
+#a_partir_donnes_smart=Interneten keresztül SMART adatokkal
+#ouvrir_internet=Megnyitás az interneten
+#get_data_internet=SMART adatok letöltése az internetrõl
+#smart_id=SMART azonosító
+
+#methode_globale=Teljes beosztás
+#methode_globale_val=Teljes beosztás intervallummal
+#methode_globale_formu=Teljes beosztás képlettel
+
+#pasApas=Beosztás fordulónként
+#phaseParPhase=&phase by phase
+#generer_pass=Jelszavak generálása
+#effacer_pass=Jelszavak törlése
+#imprimer_pass=Jelszavak nyomtatása
+
+#compe_aujourdhui=Mai versenyek
+#saisie_identifiant=Versenyazonosító megadása
+#saisie_date=Dátum megadása verseny kereséséhez
+#mois1=Jan.
+#mois2=Febr.
+#mois3=Márc.
+#mois4=Ápr.
+#mois5=Máj.
+#mois6=Jún.
+#mois7=Júl.
+#mois8=Aug.
+#mois9=Szept.
+#mois10=Okt.
+#mois11=Nov.
+#mois12=Dec.
+write o or y for month_before_day to get "jan. 4" - write n to get "4 jan."
+#month_before_day=y
+
+#bienvenue=Üdvözlünk az ^1-nál
+#bienvenue0=Üdvözlünk az Engard 10-nél
+
+#bienvenue11=Néhány változtatás miatt, a 10.1-es verzió és utániak nem kompatibilisek az elõzõ verziókkal.
+#bienvenue12=További információért kattints a súgóra.
+#bienvenue13=Az Engarde Smarttal a versenybírók vagy a pástbrigádosok a pást mellõl is beírhatják az eredményeket.
+
+#bienvenue14=Nem ajánlott a versenyeket fájlból megnyitni az Auxiliarybõl vagy DiapoEngarde-ból. Fájl írási/olvasási problémálat okozhatnak.
+#bienvenue15=Egyszerûbb és jobb megoldás ehelyett szerver-kliens módban megnyitni, zöld kerettel jelennek meg vagy a DiapoEngarde-ot interneten keresztül használni
+
+#bienvenue16=A 10.2-es verzió tartalmazza a 2019-es Budapesten rendezett Világbajnokság fejlesztéseit és a 2019 augusztusi módósításait
+#bienvenue17=Ezek a változtatások megtenkinthetõek az engarde-escrime.com oldalon.
+
+============= 2022-12-20
+
+#long_time=&Long-term competition
+#forfait_par_match=&Match-by-match forfeits
+#points_bonus=&Points and bonuses
+#clas_poule_points_bonus=&Poule rankings with points and bonuses
+
+#pas_abandon1=&In "Match-by-match forfeits" mode, Engarde doesn't register abandonments.
+#pas_abandon2=&Give a victory to the competitor opposite the one who abandons.
+#pas_abandon3=&If the opposing competitor has N points and the abandoning competitor has P points and N>P, put these points.
+#pas_abandon4=&If the opposing competitor has N points and the abandoning competitor has P points and N<=P, 
+#pas_abandon5=&give P points to the competitor who abandons and P+1 points to the opposite competitor.
+
+#expli_forfait1=&In "Match-by-match forfeits" mode,  type f as score for a forfeit
+#expli_forfait2=&Engarde will put a victory on the opposing competitor.
+#expli_forfait_plus_de_2=&To put more than ^1 forfeits in a competitor's poule, use Engarde Main
+#expli_efface_score_aux=&To delete a score in a pool, it's better to use Engarde Main
+
+#modification_symetrique=&modification of the symmetrical
+#modification=&modification
+#verif_fait_modif=&The poule check made ^1 changes
+#imp_formu_points_bonus=&Print the formula to view point and forfeit parameters
+
+#points_V=&Number of points for a victory
+#points_D=&Number of points for a defeat
+
+#bonus_offensif=&Offensive bonus
+#expli_bonus_V=&The offensive bonus is noted "Bonus V" or "bv".
+#seuil_bonus_V=&Seuil de bonus offensif, TD-TR >=
+#points_bonus_V=&Points for an offensive bonus
+
+#bonus_defensif=&Defensive bonus
+#expli_bonus_D=&The defensive bonus is noted "Bonus D" or "bd".
+#seuil_bonus_D=&Defensive bonus threshold, TR-TD <=
+#points_bonus_D=&Points for a defensive bonus
+
+#seuil_forfait_total=&Total forfeit threshold
+#pas_seuil_forfait_total=&No total forfeit threshold
+#seuil_forfait_total_expli_1=&Type 4 for 4 forfeits to become a forfeit for the entire pool
+#seuil_forfait_total_expli_2=&Type 0 to have no total forfeit 
+
+============= 2023-09-14
+
+#verif_num_serie=&Checking competitor numbers for initial classification
+#num_serie_titre=&competitor numbers for initial ranking
+#sans_rang_apos=&without rank
+#mettre=&put
+#il_faut_mettre=&You have to put
+#les_non_classes=&unranked competitors
+#garder _rangs_autres=&and keep ranks for other competitors
+#certains_competiteurs=&some competitors
+#competiteurs_concernes=&competitors concerned
+#a_partir_de=&from
+#sur_de=&Are you sure you want
+#passe_no=&step number ^1
+#ancienne_methode=&old method
+#non_c_ok=&no, it's ok
+#battus_demis_exaequo=&The semi-final losers are tied

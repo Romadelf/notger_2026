@@ -1,0 +1,5 @@
+{[type poule_ranking] [classedebase tireur] [champs_info_select (marge_gche rang
+ nomprenom club1 nation1 vic_match indice td groupe)] [champs_info_taille (17 35
+ 158 40 51 44 41 41 56)] [champs_info_format (0 100 "Times New Roman" 10 0 0 16777215
+ 10 10 10 10 10)] [ordre_select ordre_rang] [tempo 6] [grille grille] [tour 100]
+ [typeclas t] [ajustement 1]}

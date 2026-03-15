@@ -1,0 +1,4 @@
+{[classe club] [nom "CRES"] [ligue1 1] [nation1 1] [modifie vrai] [date_oed "36"] [cle 1]} 
+{[classe club] [nom "CHARLEMAGNE"] [ligue1 1] [nation1 1] [modifie vrai] [date_oed "45"] [cle 2]} 
+{[classe club] [nom "CREH"] [ligue1 1] [nation1 1] [modifie vrai] [date_oed "67"] [cle 3]} 
+

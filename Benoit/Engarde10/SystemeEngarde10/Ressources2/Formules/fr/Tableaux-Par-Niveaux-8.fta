@@ -1,0 +1,14 @@
+;61Tableaux de 8 par niveaux 
+;Les tireurs de rangs 1 à 8 sont mis dans un 1er tableau de 8 
+;Les tireurs de rangs 9 à 16 sont mis dans un 2e tableau de 8 etc.
+{[classe suite_tableaux]
+ [critere_constitution classement_initial]
+ [hasard_par_2 non]
+ [qualifies 0]
+ [nom "A"]
+ [nom_etendu "tableau direct"]
+ [nom_tableaux "tableau de ^1"]
+ [origine1 "classement_initial 1-1000"]
+ [tableaux_par_niveau 8]
+ [cle 1]
+}

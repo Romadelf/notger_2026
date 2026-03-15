@@ -1,0 +1,8 @@
+{[classe multi_affichage] [nom "T128"] [nom_etendu "Tableau 128"] [liste_tab_a_imp (((a128 a128)))] [max_min (128 65)] [global vrai] [cle 1] [date_oed "31"]} 
+{[classe multi_affichage] [nom "T256-128"] [nom_etendu "Tableaux 256-128"] [liste_tab_a_imp (((a256 a128)))] [max_min (256 129)] [global vrai] [cle 2] [date_oed "31"]} 
+{[classe multi_affichage] [nom "T512-128"] [nom_etendu "Tableaux 512-128"] [liste_tab_a_imp (((a512 a128)))] [max_min (512 257)] [global vrai] [cle 3] [date_oed "31"]} 
+{[classe multi_affichage] [nom "T16"] [nom_etendu "Tableau 16"] [liste_tab_a_imp (((a16 a16)))] [max_min (16 9)] [global vrai] [cle 4] [date_oed "31"]} 
+{[classe multi_affichage] [nom "T32-16"] [nom_etendu "Tableaux 32-16"] [liste_tab_a_imp (((a16 a16)))] [max_min (32 17)] [global vrai] [cle 5] [date_oed "31"]} 
+{[classe multi_affichage] [nom "T64-16"] [nom_etendu "Tableaux 64-16"] [liste_tab_a_imp (((a64 a16)))] [max_min (512 33)] [global vrai] [cle 6] [date_oed "31"]} 
+{[classe multi_affichage] [nom "T8"] [nom_etendu "Tableau final"] [liste_tab_a_imp (((a8 a2)))] [global vrai] [cle 7] [date_oed "31"]} 
+

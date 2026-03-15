@@ -1,0 +1,10 @@
+{[numsave 0]
+ [numsavecopie 0]
+ [preparation 0]
+ [date_oed "751"]
+ [nom k4]
+ [taille 4]
+ [etat vide]
+ [les_matches ({[match (() () () () () 1 4)] [numero 1] [date_oed "731"]} {[match (() () () () () 3 2)] [numero 2] [date_oed "731"]})]
+ [memoryfile ()]
+} 

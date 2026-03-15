@@ -1,0 +1,35 @@
+;26Formule avec repêchage dans les tableaux de 16 et 8 pour la 5e place
+;Le vainqueur du repêchage a la 5e place
+{[classe suite_tableaux]
+ [critere_constitution classement_initial]
+ [hasard_par_2 non]
+ [qualifies 0]
+ [nom "A"]
+ [nom_etendu "tableau principal"]
+ [nom_tableaux "tableau de ^1"]
+ [origine1 "classement-initial 1-1000"]
+ [minimum 9]
+ [cle 1]
+}  
+{[classe suite_tableaux]
+ [critere_constitution progression_naturelle]
+ [hasard_par_2 non]
+ [qualifies 4]
+ [nom "B"]
+ [nom_etendu "Tableaux G"]
+ [nom_tableaux "Tableau G de ^1"]
+ [origine1 "battus-tableau A16"]
+ [cle 2]
+}  
+{[classe suite_tableaux]
+ [critere_constitution classement_initial_par_groupes]
+ [hasard_par_2 non]
+ [qualifies 0]
+ [nom "C"]
+ [nom_etendu "Tableaux H"]
+ [nom_tableaux "Tableau H de ^1"]
+ [origine1 "battus-tableau A8"]
+ [origine2 "vainqueurs-suite B"]
+ [cle 3]
+}  
+

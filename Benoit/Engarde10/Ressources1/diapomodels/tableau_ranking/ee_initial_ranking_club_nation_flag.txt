@@ -1,0 +1,5 @@
+{[type tableau_ranking] [classedebase tireur] [champs_info_select (marge_gche rang
+ drapeau nomprenom club1 nation1 marge2 marge_dte)] [champs_info_taille (16 73 75
+ 477 216 103 16 16)] [champs_info_format (0 100 "Arial" 26 16777215 2 10485760 2
+ 2 22)] [ordre_select ordre_rang] [tempo 6] [grille grille] [typeclas i] [ajustement
+ 1]}

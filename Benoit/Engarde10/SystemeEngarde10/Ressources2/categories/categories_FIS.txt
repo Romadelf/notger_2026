@@ -1,0 +1,45 @@
+(def info_categorie
+
+  ; nessuno spazio ammesso prima di "(" e solo uno spazio dopo "(def"
+  ; il nome del file deve essere categories_xxx.txt dove xxx può essere quello che si vuole
+  ; ma categories_FIE.txt è riservato per la FIE, categories_FFE.txt per la FFE e categories_FIS.txt per la FIS
+
+  ; il campionato di riferimento
+  championnat FIS
+
+  ; la stagione di riferimento per le date
+  saison_reference "2017-2018" 
+
+  ; le categorie di età degli schermitori
+  ; >>> le date valgono per la stagione di riferimento
+  ; >>> ogni intervallo di det può comprendere una sola categoria
+  ; scrivere il nome della categoria tra " " quando non è un nome standard
+  ; così non verrà tradotto (diversamente verrebbe inserito tra due caratteri ??)
+  
+  info_categorie_dates ( 
+     ("4 Masters" "~1/1/1900"  "~31/12/1948") 
+     ("3 Masters" "~1/1/1949"  "~31/12/1958") 
+     ("2 Masters" "~1/1/1959"  "~31/12/1968") 
+     ("1 Masters" "~1/1/1969"  "~31/12/1978")
+     ("0 Masters" "~1/1/1979"  "~31/12/1993")
+     ("Assoluti" "~1/1/1994"  "~31/12/1997")
+     ("Giovani"  "~1/1/1998"  "~31/12/2000")
+     ("Cadetti"  "~1/1/2001"  "~31/12/2003")
+     ("Allievi/e"  "~1/1/2004"  "~31/12/2004")
+     ("Ragazzi/e"  "~1/1/2005"  "~31/12/2005")
+     ("Giovanissimi/e"  "~1/1/2006"  "~31/12/2006")
+     ("Bambine/Maschietti"  "~1/1/2007"  "~31/12/2007")
+     ("Prime Lame"  "~1/1/2008"  "~31/12/2008")
+     ("Esordienti"  "~1/1/2009"  "~31/12/2009")
+  )                
+  
+  ; altre categorie usate per le gare e non per gli schermitori
+  ; soltanto il nome è utilizzato
+
+  autre_categorie_dates ( 
+     ("U23"    "~1/1/1995"  "~31/12/1997")
+     ("U17"    "~1/1/2001"  "~31/12/2003")
+     ("Open"   "~1/1/1900"  "~31/12/2003")
+  )                  
+)
+

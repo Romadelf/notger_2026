@@ -1,0 +1,3017 @@
+#textes_engarde=Deutsch/German; German translation by M. Bunke & J. Münnix
+
+This file contains the texts of ENGARDE. It can be translated into another language.
+For this:
+* modify the first line:
+  - keep: "#textes_engarde="
+  - write after the name of the language in the language itself then "/"
+  - write after the name of the language in English then ";"
+  - write after the name of the translator and the date day/month/year
+* then translate the lines starting by # 
+
+A line starting with # and containing = describes a text, otherwise it's a comment
+which is ignored when loading.
+The part between # and = is the symbol that should not be modified.
+The part after = is the body of the text to be translated into your language.
+
+For some texts, we also give a reduced version
+we use the same symbol with% at the end
+example:
+normal text: #categorie=catégorie
+reduced text: #categorie%=cat
+
+It is recommended to write the text in lower case. ENGARDE takes in charge for uppercase
+in general.
+
+******************************************************************************
+
+Somes sentences have places denoted ^1 or ^2 which are replaced by a number or a word by ENGARDE 
+example:  #tour_no=tour No ^1
+
+******************************************************************************
+
+In several sentences, ENGARDE manages genders and numbers.
+First example: international[/e|s/es]
+between [] there are several way to complete the word:
+"|" separates numbers: singular|plural
+"/" separates gender: male/female
+
+In some sentences, ENGARDE manages genders and numbers related to a place:
+example:  #elimine=^1 éliminé[1|/e|s/es]
+the gender and number will be this of the word replacing ^1 because of 1| after [
+
+******************************************************************************
+
+The gender of some words is indicated with (f) ou (m) before the word
+example:  #competition=(f)compétition[|s]
+
+******************************************************************************
+
+THE SENTENCES TO BE TRANSLATED HAVE A & AFTER =
+example: #tour_no=&tour No ^1
+It helps to search the sentences to be translated
+REMOVE THE & WHEN YOU TRANSLATE A SENTENCE
+
+******************************************************************************
+
+Indicate here if the language uses latine letters (write oui or non)
+When non is written, the texts are not modified:
+- no transformation in upper/lower case
+- no suppression of spaces, no gender or number consideration.
+Texts must be written without [ / | ] and without (f) and (m)
+but ^ must be kept
+
+#alphabet_latin=oui
+
+Indicate below if you want Engarde manage upercase for title or not
+
+#majuscules_automatiques=non
+
+Indicate here the size of the labels for the input windows when you want a fixed size.
+0 means automatic size (use it for latin languages)
+another value is the precise size in pixels, usually between 100 and 200 (use it for 
+Chinese for example).
+
+#size_of_label=0
+
+******************************************************************************
+                        COMPETITION
+
+#competition=Wettbewerb
+#parametres=Parameter
+#parametres_principaux=Hauptparameter
+#individuelle=Einzel
+#par_equipes=Mannschaft
+#type_compe=Art des Wettbewerbs
+#national=national
+#international=international
+#domaine_compe=Bereich des Wettbewerbs
+#arme=Waffe
+#fleuret=Florett
+#epee=Degen
+#sabre=Säbel
+
+#organisateur=Organisator
+#liveURL=&Live results URL
+#videoURL=&Video URL
+#URLorganisateur=Webseite des Organisators
+#lieu=Ort des Wettbewerbs
+#federation=Verband
+#titre_reduit=Kurztitel
+#texte=Text
+#titreCourtTournoi=&short tournament title
+#titreLongTournoi=&tournament title
+
+#titre_ligne=einzeiliger Titel
+#titre_diapo=&DiapoEngarde title
+
+#titre1=Titel : Zeile 1
+#titre2=Titel : Zeile 2
+#titre3=Titel : Zeile 3
+#titre4=Titel : Zeile 4
+
+
+******************************************************************************
+
+                       THE ENTITIES OF THE TABLES
+
+All entities have a name
+for fencers and referees, the name is the last name, e.g., DUPONT
+#nom=Name
+
+The nations have a name in 3 letters and a full name
+#nom_etendu=vollständiger Name
+
+Entities have affiliations (club, nation ...)
+#affiliation=Zugehörigkeit
+#affiliation_possible=mögliche Nationalitäten
+
+For fencers, referees and teams
+#presence=Anwesenheit
+#presence%=Anw
+#present=anwesend[|e/e]
+#present%=A
+#absent=nicht anwesend
+#absent%=N
+#touspresents=Alle anwesend
+#tousabsents=Alle abwesend
+#absentpardefaut=nicht anwesend als Standardeinstellung
+#presentpardefaut=anwesend als Standardeinstellung
+
+For fencers and referees
+#sexe=Geschlecht
+#sexe%=Geschlecht
+les adjectifs associés [homme/dame|hommes/dames] ACCORDES AVEC LE MOT SEXE
+#masculin=Herren
+#masculin%=H
+#feminin=Damen
+#feminin%=D
+
+#categorie=Altersklasse
+#categorie%=Kat
+#veteran=Senioren
+#veteran%=S
+
+#veteranA=&veteran[/|s/s]A
+#veteranA%=&VA
+#veteranB=&veteran[/|s/s]B
+#veteranB%=&VB
+#veteranC=&veteran[/|s/s]C
+#veteranC%=&VC
+
+#veteran1=Senioren1
+#veteran1%=S1
+#veteran2=Senioren2
+#veteran2%=S2
+#veteran3=Senioren3
+#veteran3%=S3
+#veteran4=Senioren4
+#veteran4%=S4
+#senior=Aktive
+#senior%=A
+#junior=Junioren
+#junior%=J
+#cadet=Kadetten
+#cadet%=K
+#minime=B-Jugend älter
+#minime%=B
+#benjamin=B-Jugend jünger
+#benjamin%=U
+#pupille=Schüler älter
+#pupille%=C
+#poussin=Schüler jünger
+#poussin%=H
+
+for clubs, leagues, nations
+#effectif=möglich
+
+***********
+FENCERS
+
+#tireur=Fechter
+
+prenom is first name
+#prenom=Vorname
+#prenom%=Vorn
+#nomprenom=Name Vorname
+#nomprenom%=Name
+#date_nais=Geburt
+#date_nais%=Geb
+#licence_fie=Lizenz
+#licence_fie%=Liz
+#cle=Nummer
+#licence=Lizenz
+#licence%=Liz
+#dossard=Startnummer
+#dossard%=Stnr
+#serie=Systemnr.
+#serie%=Sysnr
+#points=(m+)Punkte
+#points%=(m+)Pkte
+#rang=Platz
+#rang%=Pl
+#rang_init=&initial rank
+#rang_init%=&i.r.
+#nb_poules=Zahl der Runden
+#nb_poules%=Runden
+#nb_matches=Zahl der Gefechte
+#nb_matches%=Gefechte
+#nb_finales=Zahl der Finals
+#nb_finales%=Finals
+
+#groupe=Platzierung
+#groupe%=Pl.
+#vic_match=Siege/Gefechte
+#vic_match%=S/G
+#vic=&victories
+#vic%=&V
+#def=&defeats
+#def%=&D
+#points_a_bonus=&points
+#points_a_bonus%=&pt
+#bonus=&bonus
+#bonus%=&bon
+#indice=Index
+#indice%=Ind
+#td=gegebene Treffer
+#td%=GT
+#tr=erhaltene Treffer
+#tr%=ET
+#bonus_v=&bonus V
+#bonus_v%=&bv
+#bonus_d=&bonus D
+#bonus_d%=&bd
+#phase=Durchgang
+#no=Num
+#rnd=Rnd
+#phase_incomplete=&phase ^1 incomplete
+#passe_phase_suiv=&move to the next phase
+
+***********
+
+#equipe=Mannschaft
+#serie_eq=Systemnummer
+#points_eq=Punkte
+
+***********
+
+#club=Verein
+
+#ville=&town
+
+#departement=&department[|s]
+
+#ligue=Liga
+
+#etat=Bundesland
+
+#region=Kreis
+
+#nation=Nation
+
+***********
+
+#arbitre=Kampfrichter
+
+******************************************************************************
+
+#formule=Modus
+#formu_compe=Modus des Wettbewerbs
+#pas_de_poule=der Modus enthält keine Runden
+#pas_de_tableau=der Modus enthält keine Direktauscheidung
+#pas_fini_poules=die Runden sind noch nicht beendet
+#clasmt_origine=ursprüngliche Rangfolge
+#tour_poules=^1 Rundendurchgänge
+#nombre_tireurs=Zahl der Fechter/innen
+#nombre_tours_poules=Zahl der Rundendurchgänge
+#qual_fin_poules_sur=Aufstieg aus den Runden nach "Durchgängen"
+#clas_fin_poules_sur=Platzierung aus den Runden nach "Durchgängen"
+#qual_fin_poules_sur_x=Aufstieg aus den Runden nach  ^1 Durchgängen
+#clas_fin_poules_sur_x=Platzierung aus den Runden nach ^1 Durchgängen
+#nombre_touches_poules=Zahl der Treffer in den Rundengefechten
+#nombre_touches_tableaux=Zahl der Treffer in der Direktausscheidung
+
+#max_touches=maximale Trefferzahl
+#matches_en=Gefechte auf ^1 Treffer
+#dans_poules=in den Runden
+#nombre_suites_tableaux=Zahl der Direktauscheidungsdurchgänge
+#tire_3e=3. Platz ausfechten
+#formule_poules=Modus der Runden
+#formule_tableaux=Modus der Direktausscheidung
+#tour_no=Durchg. Nr ^1
+#suite_tab_no=Fortsetzung der Direktausscheidung Nr ^1
+#trop_exemptes=zuviele Freilose
+#trop_poules=zuviele  Runden
+#trop_qualifies=zuviele Qualifizierte
+#trop_tireurs=zuviele Fechter/innen
+
+#bar_exemptes=Stichkampf um ein Freilos
+
+#modifier_valeurs=diesen Wert ändern
+#nb_change=die Zahl von ^1 hat sich geändert 
+#revoir_formule=der Modus muss neu eingegeben werden
+#au_depart=^1 zu Beginn
+#exempte=^1 Freilos
+#il_faut=es muss
+#exemptes=Freilose
+#non_exemptes=^1 ohne Freilos
+#pas_decalage=nicht verschieben
+#decalage_par=verschieben nach
+#limite_a=höchstens ^1
+#qualifies=Qualifizierten
+#qualifie=^1 qualifiziert
+#elimines=Ausgeschiedenen
+#elimine=^1 ausgeschieden
+#par_poule=^1 pro Runde
+#a_l_indice=^1 nach Index
+#a_la_fin=^1 am Ende
+
+#remp_auto_pou=automatisches Ausfüllen der Runden
+#simu=zur Simulation
+#est_fait=fertig
+#rien_faire=&do nothing
+
+#poules_finies=Runden beendet
+#compe_finie=Wettbewerb beendet
+#on_en_est=wir sind bei
+#const_poules=Aufstellen der Runden
+#ameliorer_poules=&First pass not optimal, try to improve?
+#const_tableau=Aufstellen der Direktausscheidung
+#saisie_poule=Eingeben der Runden
+#remplissageauto=automatisch Ausfüllen
+#feuilles_pou=Gefechtszettel
+#poules_const=aufgestellte Runden
+#poules_resu=Ergebnisse der Runden
+#poules_a_saisir=^1 Runde/n einzugeben
+#tableaux_a_saisir=^1 Direktausscheidungsgefecht/e einzugeben
+#matches_a_saisir=^1 Gefecht/e einzugeben
+#matches_a_imp=^1 Gefecht/e zu drucken
+#poules_a_imp=^1 Runde/n zu drucken
+#imp_toutes_pou=alle Runden drucken
+#imp_des_pou=einzelne Runden drucken
+#de_poule=von Runde
+#a_poule=bis Runde
+#poule_saisie=diese Runde ist bereits eingegeben
+#grille=Tabelle
+#imp_match_de=drucken der Gefechte von
+#imp_match_attente_de=drucken der nächsten Gefechte von
+
+#refaire_poules=Runden neu aufstellen
+#refaire_tableau=Direktausscheidung neu aufstellen
+#refaire_poules_tno=Runden des Durchgangs Nr ^1 neu aufstellen
+#poules_tno=Runden des Durchgangs Nr ^1
+#revenir_tour=eine Stufe zurück
+#revenir_tour_no=zurück zum Durchgang Nr ^1
+#modif_scores=alle Ergebnisse berichtigen
+#modif_raz=Runde ändern, Eingabe annullieren
+#modif_poule_int=diese Runde ändern?
+#repartition_poule=Neuverteilung in den Runden
+
+#toutes_saisies=alle Runden sind eingegeben
+#bar_dans_poule=Stichkampf in der Runde!
+#qual_poule=^1 qualifizierte in der Runde
+#pas_qual_poule=NICHT qualifizierte in der Runde
+#qual_indice=^1 qualifiziert nach Index
+#y_a_barrage=Stichkampf !!!
+#poules_saisies=^1 Runde/n eingegeben
+
+#perdre=wirklich löschen?
+#perdre_tab=Direktauscheidung wirklich löschen?
+
+#numero=Nummer
+#numero%=Nr
+#total_tireurs_depart=Fechter/innen zu Beginn
+#nombre_exemptes=ausgenommene Fechter/innen
+#tireurs_dans_poules=Fechter/innen der Runden
+#tireurs_dans_tableau=Fechter/innen der Direktausscheidung
+#nombre_poules=Zahl der Runden
+#tireurs_par_poule=Zahl der Fechter/innen pro Runde
+#critere_decal_1=verschieben nach Kriterium 1
+#critere_decal_2=verschieben nach Kriterium 2
+#critere_decal_3=verschieben nach Kriterium 3
+#critere_placement=Platzierung in den Runden nach
+#limite_decal=Verschieben begrenzen
+#qualifies_par_poule=Zahl der Qualifizierten pro Runde
+#qualifies_indice=Zahl der Qualifizierten nach Index
+#total_tireurs_fin=Fechter/innen am Ende
+#total_tireurs_depart%=Fechter/innen zu Beginn
+#nombre_exemptes%=Freilose
+#tireurs_dans_poules%=in den Runden
+#tireurs_dans_tableau%=in der Direktausscheidung
+#nombre_poules%=Rd.Zahl
+#tireurs_par_poule%=Fechter/Runde
+#critere_decal_1%=Kriterium 1
+#critere_decal_2%=Kriterium 2
+#critere_decal_3%=Kriterium 3
+#critere_placement%=Rundenpl.
+#limite_decal%=Limit Versch.
+#qualifies_par_poule%=Qualifizierte pro Runde
+#qualifies_indice%=Qualifizierte nach Index
+#qualifies%=Qualifizierte
+#total_tireurs_fin%=Fechter/innen am Ende
+
+#qualif_tour=Aufsteiger des Durchgangs Nr ^1
+
+******************************************************************************
+                       LES POULES
+
+#deroulement=Ablauf
+
+#poule=Runde
+#poules=Runden
+#x_poule=^1 Runde/n
+#x_poule_de=^1 Runde/n von ^2
+#x_poule_de_ou=^1 Runde/n von ^2 oder ^3
+#sais_poules=Runden eingeben
+#sais_matches=Gefechte eingeben
+#sais_scores=&entry of the scores
+#sais_pistes=Bahnen eingeben
+#sais_arbitres=Kampfrichter eingeben
+#sais_horaires=Zeitplan eingeben
+#sais_piste_arbi=Bahnen mit Kampfrichtern eingeben
+#modif_poules=Änderung der Runden
+#poule_no=Runde Nr ^1
+#match_no=Gefecht Nr ^1
+#piste_no=Bahn Nr ^1
+#piste=Bahn
+#piste%=B.
+#pas_bon_no_pou=falsche Rundennummer
+#pas_bon_no_match=falsche Gefechtsnummer
+#pas_bon_tab=ist keine Direktausscheidung
+#lettre_et_nombre=Buchstabe und Nummer erforderlich
+#reordonne=Runden neu aufstellen
+#garde_ordre=diese Reihenfolge beibehalten
+#ajout_tir_pas_ds_pou=Fechter einfügen, der nicht in Runden ist
+#les_tireurs=die Fechter/innen
+#enleves_poules=sind aus den Runden genommen worden
+#meme_heure_piste=&same hour, same piste
+
+******************************************************************************
+
+#tableau=Direktausscheidung
+#tableaux=&tableaux
+#ces_tableaux=&these tableaux
+#tableau_de=Direktausscheidung mit ^1
+#tableau_prelim_de=Direktausscheidung 1. Durchgang mit ^1
+#tableau_prince_de=Direktausscheidung Hauptdurchgang mit ^1
+#tableau_phase_de=Direktausscheidung Durchgang ^1 mit ^2
+#tableau_final=Direktausscheidung Finale
+#demi_finales=Halbfinale
+#finale=Finale
+
+******************************************************************************
+
+#classement=Platzierung
+#classements=&rankings
+#classement_des=Platzierung der ^1
+#classement_apres_pou=Platzierung nach der letzten Runde
+
+******************************************************************************
+
+#nouv_compe=neuer Wettbewerb
+#ouvrir_compe=Wettbewerb öffnen
+#fermer_compe=Wettbewerb schließen
+#sauvegarde=Sichern
+
+#faire_fic_trans=Transferiere Datei
+#fic_trans_FFF=Transferiere FFF Datei
+
+#fic_resu=Erstellen einer Ergebnisdatei
+#activiteArbitres=Kampfrichtertätigkeit
+#avec_series=mit Systemnummer
+#avec_rangs=mit Platz
+#du_rang=des Platzes
+#au_rang=auf Platz
+#in_tab_indiv=&In tableaux of individual competitions
+#ref1_match=&referee 1 is match referee
+#ref23_assistants=&referees 2 3 are assistants
+#in_team=&In team competitions
+#ref123_match=&referees 1 2 3 are match referees
+
+#enreg_compe=Wettbewerb erstellen
+#chargement=öffnen
+#prepa_tables=erstelle Listen
+#prepa_affi=Aufstellung vorbereiten
+#ecraser=löschen ^1
+#pas_sur_elle=der Wettbewerb kann nicht in sich selbst kopiert werden
+
+#copie_de=Kopie von ^1
+#choix_rpla=oder einen anderen Wettbewerb als Ersatz wählen
+#rep_pas_cree=Verzeichnis ^1 wurde nicht erstellt
+
+#modif_de=Ändern von ^1
+#val_convient_pas=dieser Wert ist falsch
+#pour_cela=um das zu tun
+#arriere=muss man eine Stufe zurueckgehen
+#dans_tableaux=in der Direktausscheidung
+#valeur_initiale=vorheriger Wert
+#pas_encore_tab=Direktausscheidung hat nicht begonnen
+
+******************************************************************************
+
+#table=Liste
+#tri=Auswahl
+
+#fiche=Datei
+#edition=Eingabe
+#curseur_init=Cursor
+#colonne1fixe=erste Spalte fest
+
+#import_fiche=Sicherungsdatei importieren
+#importer=importieren
+#importer_tous=alles importieren
+#effacer_champ=Feld löschen
+#effacer_fiche=Datei löschen
+
+#precedent=vorhergehende
+#suivant=folgende
+#premier=erste
+#dernier=letzte
+#symetrique=symmetrisch
+
+#nouveau=neu
+#saisir=eingeben
+#saisie=Eingabe
+#saisir_affil=Zugehörigkeit eingeben
+#modifier=ändern
+#chercher=suchen
+#chercher_compe=im Wettbewerb suchen
+#chercher_res=in Sicherungsdatei suchen
+#chercher_fic=in der Datei suchen
+#fermer=schliessen
+#suite=weiter
+#enregistrer=eingeben
+#enregistrement=Eingabe
+#quitter=Engarde verlassen
+#justequitter=beenden
+#retour_Engarde=zurück zu Engarde
+#retour_init=zurueck zum ursprünglichen Stand
+#maximum=maximum
+#vic_score=Siege mit Ergebnis
+
+#victoire=V/Sieg
+#defaite=D/Niederlage
+#abandon=Aufgabe
+#exclusion=Schwarze Karte
+#forfait=Nichtantreten
+#medical=&medical
+#pblack=pblack
+#sortie_except=&Exceptional exit
+#verif_sortie_except=&Do you want to check for exceptional exits before
+#abandon_med_expli=&Abandonment for medical reason
+#abandon_tech_expli=&Abandonment for technical reason
+#exclusion_expli=&Exclusion (disciplinary reason)
+#forfait_expli=&Forfeit (not present at their first match of the competition)
+#pblack_expli=&Defeat for non-combativity
+#faire_saisie_dans_poule=&Do this modification in the poule
+#faire_saisie_dans_tableau=&Do this modification in the tableau
+#modif_impossible=&Impossible modification
+
+juste one latin letter for each symbol, not x, not w, all different
+#victoire%=V
+#defaite%=D
+#abandon%=A
+#exclusion%=K
+#forfait%=N
+#pblack%=P
+
+#dns=&DNS
+#dnf=&DNF
+#exc=&EXC
+#ncb=NCB
+
+#efface_sym=symmetrisch geschlöscht
+#sym_pas_defaite=symmetrisch gegenüber keine Niederlage
+#sym_pas_vic=le symmetrisch gegenüber kein Sieg
+#vic_inf_defaite=Sieger/in hat weniger Treffer als Verlierer/in
+
+#navigation=Navigation
+#meme_champ=gleiches Feld
+#premier_champ=erstes Feld
+#oblige=^1 muss vergeben werden
+
+#deja_table=sind bereits in der Runde
+#on_prend_a_la_place=aufnehmen anstelle von
+#on_a_ici=ist bereits vorhanden
+
+  ^1 will be replaced by a number, ^2 by fencer or club
+#il_y_a=es gibt ^1 ^2
+
+  ^1 will be replaced for example by ranking
+#existe_pas=^1 gibt es nicht
+
+  ^1 will be replaced by fencers, rounds of poules...
+#nombre_de=Zahl der ^1
+#ajouter=hinzufügen
+#supprimer=löschen
+#suppress=löschen
+#suppress_x=löschen von ^1  ^2
+#pas_supp=kann nicht gelöscht werden
+#car_compe=weil er/sie im Wettbewerb ist
+#car_util=denn ^1 wird benutzt von
+
+#sur_premiere=erster Datensatz
+#sur_derniere=letzter Datensatz
+#taper_deb=Anfangsbuchstaben des Namens eingeben
+
+#agglomerer=zusammenführen
+#agglo_x=zusammenführen von ^1 ^2
+
+******************************************************************************
+
+#recherche=Suche
+#commencant_par=beginnt mit
+#contenant=enthält
+#exacte=genau
+#approchee=ähnlich wie
+
+#chercher_un=suchen nach ^1
+#chercher_autre=weitersuchen nach ^1
+#resultat=Ergebnis
+
+******************************************************************************
+
+#oui=ja
+#oui%=J
+#non=nein
+#non%=N
+#vrai=richtig
+#vrai%=R
+#faux=falsch
+#faux%=F
+#ok=ok
+#annuler=annullieren
+#aide=Hilfe
+#pas_aide=Hilfe nicht gefunden
+#pas_fic=Datei nicht gefunden
+#generalites=Allgemeines
+#contexte=Menü
+
+#et=und
+#ou=oder
+#date=Datum
+#zonehoraire=&time zone
+#au_lieu_de=anstelle von
+#repart_parfaite=Neuverteilung ok
+#n_imperfect=^1 nicht ok
+
+#exemple=Beispiel
+#signature=Unterschrift
+#pas_saisie=keine Eingabe
+#dbclick=Doppelklick
+#use_menu=Menü ^1 benutzen
+#liste_vide=Liste leer
+#liste_des=Liste der ^1
+
+#reserve=Sicherung
+#charger=öffnen
+#vider=löschen
+#fichier=Datei
+ ^1 will be replaced by file or competition
+#est_de_genre=^1 ist Typ ^2
+#on_charge_fic=Daten von ^1 öffnen
+#chargt_de=Öffnen von ^1
+#entites_chargees=^1 Daten geöffnet
+#entites_reserve=^1 ^2 Daten in Sicherungsdatei
+#reserve_vide=Sicherungsdatei ist leer
+#on_importe=^1 ^2 in den Wettbewerb importieren
+#reste_importer=noch zu importieren :
+
+#essai_trans=Test im format "DOS-Import"
+#prem_ligne=erste Zeile
+#est_fic_a_charger=diese Datei wirklich öffnen?
+#pas_type_connu=unbekanntes Dateiformat
+
+#page=Seite
+#marge=Rand
+
+#concerne_tir=betrifft die Fechter/innen
+#concerne_tir_pres=betrifft die anwesenden Fechter/innen
+#concerne_arbi=betrifft die Kampfrichter/innen
+#concerne_arbi_pres=betrifft die anwesenden Kampfrichter/innen
+#tous=alle
+#ordre=Reihenfolge
+#ordre_alpha=alphabetisch
+#ordre_structure=nach Nation
+#ordre_serie=nach Systemnummer
+#ordre_rang_init=&ordered by initial ranks
+#ordre_points=nach Punkten
+#ordre_rang=nach Platz
+#ordre_club=&ordered by clubs
+#ordre_ligue=&ordered by regions
+#ordre_etat=&ordered by states
+#ordre_CID=&ordered by CID
+#ordre_region=&ordered by regions
+#ordre_nation=&ordered by nations
+#ordre_ID=&ordered by ID
+#ordre_licence=&ordered by licences
+#ordre_licence_fie=&ordered by FIE licences
+#ordre_status=&ordered by status
+
+#selection=Auswahl
+#reglages_imp=Druck einrichten
+#rub_a_imp=Rubriken drucken
+#document=Dokumentation
+#document_global=&global report
+#contenu=Inhalt
+#police=Schriftart wählen
+#mise_en_page=Druckeinstellung
+#imprimer=drucken
+#ajuster=optimieren
+
+#non_modifiable=dieser Titel kann nicht geändert werden
+#non_modifiable_now=&this is not modifiable now
+#anomalie=Fehler
+#termine=beendet
+#termine_sans_AR=&Completed without AK
+#vide=leer
+#preparation=in Vorbereitung
+#en_cours=läuft gerade
+
+#dans=in
+#match_non_lance=Gefecht nicht begonnen
+#match_a_un=dieses Gefecht hat nur einen Fechter der deshalb aufsteigt
+#match_deja_saisi=Gefecht bereits eingegeben
+#jour=&day[|s]
+#heure=Zeit
+#heure_debut=&start time
+#pas_vainqueur=kein Sieger
+#vainqueur=Sieger/in
+#pb_match_suiv1=Gefecht hatte vorher einen anderen Sieger
+#pb_match_suiv2=der bereits das naechste Gefecht der Direktausscheidung gefochten hat
+#quand_meme_enreg=soll dieses Ergebnis dennoch eingegeben werden?
+#pb_match_suiv3=der bereits im nächsten Durchgang der Direktausscheidung eingegeben ist
+#refaire_tab_suiv=der nächste Durchgang der Direktausscheidung muss neu erstellt werden
+
+#refaire=neu erstellen?
+#modif=ändern?
+
+#clas_init_du_tab=ursprüngliche Reihenfolge in der Direktausscheidung
+#tab_fin=Direktausscheidung ist beendet
+#clas_du_tab=Platzierung eines Direktausscheidungsdurchgangs
+#clas_des_tab=Platzierungen der Direktausscheidung
+#clas_gene=Gesamtplatzierung
+#tir_en_lice=aufgestiegene Fechter/innen
+#medaille=&medal
+#medailles=&medals
+#or=&gold
+#argent=&silver
+#bronze=&bronze
+
+#de=von
+#a=bis
+#depuis=von
+#jusqua=bis
+
+#hasard_par_2=Auslosen in 2er gruppen
+#echange_2=^1=Tausch von 2 Fechter/innen aus ^2
+
+#permut_gpe2=Tausch von Fechtern in 2er Gruppen
+
+#chge_formu_tab=Modus der Direktausscheidung wurde geändert
+#on_cree=erstellen
+#on_conserve=erhalten
+#attention=Achtung
+#type_formule=Modus
+#formu_classique=klassischer Modus
+#formu_fie_seniors=Modus Aktiven Weltcup
+#formu_fie_juniors=Modus Junioren Weltcup
+#autre_formule=anderer Modus
+#choix_npoules=Zahl der Rundendurchgaenge wählen
+#choix_ntab=Zahl der Durchgänge der Direktausscheidung wählen
+
+#tous_tir_avec_series=alle Fechter/innen mit Systemnummer
+
+#en_lice_avec_rangs=aufgestiegene Fechter/innen mit Platz
+#clas_gene_avec_rangs=Ergebnisse : Gesamtplatzierung mit Platz
+
+#saisir_pistes=Bahnen eingeben
+#saisir_heures=Zeit eingeben
+#feuilles_ma_attente=Gefechtszettel für bereits feststehende Folgegefechte
+#feuilles_ma=Gefechtszettel
+#detail_rencontres=Manschaftskampfdetails
+#rencontres_encours=laufende Manschaftskämpfe
+#plusieurs_rencontres_encours=&Several ongoing bouts
+#tableauetpistes=Direktausscheidungsgefechte und Bahn
+#const_tab=Aufstellen eines Direktdurchgangs
+#refaire_tab=Direktdurchgang neu aufstellen
+#bad_taille_tab=Direktausscheidung nicht ok
+
+for percentages, one will obtain, for example: 20% makes 34
+#fait=^1% ergibt ^2
+#on_peut_faire=möglich sind
+#divers=Verschiedenes
+#ordre_special=besondere Gefechtsfolge
+#couleur=Farbe
+
+#information=Information
+#confirmation=Bestätigung
+#question=Frage
+#choix=Wahl
+#nouveautes=Neuerungen
+
+#est_absent=^1 abwesend
+#nouveau_tir=^1 neue Fechter/innen
+
+#supp_tour=aus dieser Runde entfernen
+#prend_pas=nicht in diese Runde
+
+#est_ce_ok=Ist es in Ordnung?
+
+#des_absents=es gibt abwesende Fechter
+#bon_nb_exemptes=die richtige Anzahl der Freilose eingeben
+
+#je_modifie=Ich ändere
+#il_y_a_tir_dans_tab=^1 Fechter in der Aufstellung
+#nb_qualifies=Zahl der Aufsteiger
+
+#status=Status
+#normal=normal
+
+#par_abandon=Aufgabe
+#par_exclusion=Ausschluss vom Wettbewerb
+#par_forfait=Nichtantreten
+#par_nbc=&by non-combativity
+
+example: Dupont has the status exclusion
+#a_pour_status=^1 hat Status ^2
+
+#faire_formu_tableau=erst den Modus der Direktauscheidung eingeben
+#mettre_qual_suite=die Aufsteiger in Durchgang ^1 eingeben
+#ou_supp_suite=Durchgang ^1 löschen
+
+#modif_incoherences=unlogische Eingaben werden berichtigt
+#nb_tir_approx=ungefähre Zahl der Fechter
+#plus_deux_tours_tab=mehr als 2 Direktausscheidungsdurchgaenge sind ungewöhnlich
+
+#creation_annulee=Erstellen abbrechen
+#repechage=Hoffnungslauf
+#poule_incomplete=Runde nicht vollständig
+#deux_fois_clas=^1 ist zwei Mal in der Wertung
+#deux_fois_poule=&^1 is twice in the poules
+#pas_dans_poule=&^1 is not in the poules
+#met_tir_abs=Fechter als abwesend markieren
+
+#deja_ouverte=&This competition is already open or readonly,
+#pasOuvrir2efois=Sie können ihn nicht ein 2. mal öffnen.
+
+#options=Optionen
+#avec_affil=mit Zugehörigkeitsabfrage
+#sans_affil=ohne Zugehörigkeitsabfrage
+#avec_contraintes_statut=&status WITH constraints (recommended)
+#sans_contraintes_statut=&status WITHOUT constraints (NOT recommended)
+#use_option_tt_poss=&Use the option menu to have all the possibilities. 
+#quand_meme_dans_tab=&He will still be placed in a tableau because he must be classified.
+#mettre_abandon_match=&Put him Abandonment in the match.
+#avec_menu_choix=&with choice boxes
+#sans_menu_choix=&without choice boxes
+#fermer_ouvrir_panneau=&The panel must be closed and reopened
+
+#non_qual=^1 nicht qualifiziert
+
+#non_exemp=Problème : ^1  Fechter mit Freilos sind nicht als solche markiert
+#non_places=Problème :  ^1 Fechter sind nicht platziert
+
+#cherche_fic=Suche nach Datei ^1
+#fic_existe_pas=Datei  ^1 existiert nicht
+#peux_pas_lire=&cannot read file ^1 
+#rep_existe_pas=&the directory does not exist
+#voir_fichier_svg=&See the menu File/Backup
+#fic_pas_charge=Datei ^1 wurde nicht geoeffnet
+#charge_essai=&has been loaded at try # ^1
+#fic_non_trouve=Datei nicht gefunden: ^1
+
+#est_deja_table=^1 ist schon in der Runde
+#que_fait_on_de=was soll geschehen mit
+#on_prend_pas=nicht akzeptieren
+#on_ajoute_pas=nicht hinzufügen
+#on_le_prend=hinzufügen
+
+#tirage_auto=automatisches Auslosen
+#tirage_manuel=von Hand Auslosen
+#on_echange=auswechseln
+#interligne=Zeilenabstand
+#coef_interligne=Zeilenabstand in Prozent, normal = 100
+
+#fic_pas_cree=die Datei ^1 wurde nicht erstellt
+
+#base_dossard=als Startnummer die Systemnummer verwenden plus
+#mettre_dos=Startnummern eingeben
+#ne_pas_mettre_dos=Startnummern nicht eingeben
+#efface_dos=Startnummern löschen
+
+#vouloir_copie_permente=möchten sie eine dauerhafte Kopie dieser Änderungen?
+#fic_existe=Datei ^1 gibt es bereits
+#lecture_seule=nur lesen
+#enreg_copie=Kopie des Wettbewerbs erstellen
+
+#est_copie1=dieser Wettbewerb ist eine Kopie
+#PerteStatutCopie=Wenn sie den Wettbewerb öffnen, verliert er den Status Kopie
+#nePasOuvrir=Diesen Wettbewerb NICHT öffnen
+#OuvrirCetteCompe=Diesen Wettbewerb öffnen
+
+#avec_copie=arbeiten mit einer Kopie in ^1
+#plus_copie=auf die Kopie in ^1 kann nicht zugegriffen werden
+
+#entree_progressive=progressives Hinzufügen
+#ajustement_tour=Durchgang Nr ^1 einrichten
+#entree_nouv_tir=neue/n Fechter/in eingeben
+
+#elidir=Direktausscheidung
+#type_elidir=Modus der Direktausscheidung
+#classique=klassisch
+#avec_exemptes=mit Freilosen
+#complexe=vollständig
+#pasTableau=keine Direktausscheidung
+
+#pas_change_type_elidir=Modus der Direktausscheidung kann zu diesem Zeitpunkt nicht geändert werden
+
+#type_3e_place=Modus für den 3. Platz
+#a_indice=nach Index
+#ex_aequo=2 dritte Plätze
+#par_match=3. Platz ausfechten
+
+#formu_avec_ex=Modus mit Freilosen
+#formule_avec_prog=Modus mit progressivem Hinzufuegen
+#ni_ex_ni_prog=keine Freilose und kein progressives Hinzufuegen
+
+#avec=mit ^1
+#sans=ohne ^1
+#choisir=wählen : ^1
+#special=spezial
+#remiseZero=&reset
+#raz_formule=den Modus löschen
+#champ_non_modifiable=dieses Feld kann nicht geändert werden
+
+#assistant=Hilfe
+#assistant_de=Hilfe ^1
+#choix_general=allgemeine Auswahl
+
+#tir_pas_pris=^1 Fechter nicht erfasst
+#eq_pas_pris=^1 Mannschaft nicht erfasst
+#nouvelle_eq=^1 neue Mannschaft
+#changer_statut=&to make a modification, refuse the creation and change the status.
+
+#si_fermer=wenn Sie jetzt schliessen
+#on_ferme=schliessen
+#nb_approx=ungefähre Zahl von ^1
+#ent_dans_poules=^1 in Runden
+#ent_par_poule=^1 pro Runde
+#ent_dans_tableau=^1 in der Direktausscheidung
+
+#equi_en_lice=aufgestiegene Mannschaften
+#concerne_eq=bezieht sich auf die Mannschaften
+#concerne_eq_pres=bezieht sich auf die anwesenden Mannschaften
+#attrib_equipe=fehlende Mannschaft zuweisen, wenn sie fehlt
+#on_prend= ^1 nimm
+#entite=Daten
+
+#nom_une_lettre=Bezeichnung durch einen Buchstaben
+
+#origine1=Herkunft 1
+#origine2=Herkunft 2
+#origine3=Herkunft 3
+#origine4=Herkunft 4
+#origine5=Herkunft 5
+#origine6=Herkunft 6
+
+#progression_naturelle=normale Progression
+#classement_initial_par_groupes=ursprüngliche Platzierung in Gruppen
+#classement_initial=ursprüngliche Platzierung
+#critere_constitution=Kriterium für das Erstellen
+
+#tour_de_poules=Rundendurchgänge
+#nom_tableaux=Bezeichnung der Direktausscheidung
+#suite_tableaux=folgende Direktausscheidungsdurchgänge
+#description_tableau=Beschreibung der Direktausscheidungsdurchgänge
+
+#description_modele=Beschreibung des Musters
+#enregister_modele=als Muster speichern
+#charger_modele=Muster öffnen
+#chargerFormule=Modus ändern
+#sur_changer_formu=Modus wirklich ändern?
+
+#classique_sans3=klassisch OHNE Ausfechten des 3. Platzes
+#classique_avec3=klassisch MIT Ausfechten des 3. Platzes
+
+#tab_dir_sans3=Direktausscheidung OHNE Ausfechten des 3. Platzes
+#tab_dir_avec3=Direktausscheidung MIT Ausfechten des 3. Platzes
+
+#tableau_direct=Direktausscheidung
+#tableau_prelim_32ex=Direktausscheidung erster Durchgang mit 32 Freilosen
+#tableau_prince64=Direktausscheidung Hauptdurchgang mit 64
+#tableau_place_n=Direktausscheidung um den ^1e Platz
+#match_troisieme_place=Gefecht um den 3. Platz
+#troisieme_place=3. Platz
+#neme_place=^1er Platz
+#quart_finales=Viertelfinale
+
+#prelim_et_ppal=Direktausscheidung erster Durchgang mit 32 Freilosen und Hauptdurchgang
+
+#non_supprimable=diese Daten können nicht gelöscht werden
+
+#err_formu_tab=Fehler im Modus der Direktausscheidung
+#nom_tab_err=falsche Bezeichnung der Gefechte der Direktausscheidung
+#nom_tab_dupli=doppelte Bezeichnung der Gefechte der Direktausscheidung
+#pas_org=keine Herkunft
+#org_err=Bezeichung des Quelldokuments falsch in
+#val_err=falscher Wert in
+#doit_etre=muss heissen
+#doit_etre_forme=muss folgenden Wert haben
+#lettre_etant_suite= Buchstabe als Bezeichnung von Gefechten der Direktausscheidung
+#suite_inconnue=Reihenfolge der Direktausscheidung nicht bekannt
+#tab_incorrect_inconnu=Direktausscheidung nicht bekannt oder fehlerhaft
+#circu_tab=unlogische Reihenfolge der Direktausscheidung
+#suites_ok=die richtige Reihenfolge ist
+
+#err_qualifes=Anzahl der Qualifizierten ist ungewöhnlich
+#zero_puis2=gewöhnlich sind es 0, 1, 2, 4, 8, 16, 32 ...
+
+#pas_tir_tab=Fechter der urspruenglichen Platzierung sind nicht in der Direktausscheidung
+#tir_tab2fois=Fechter der urspruenglichen Platzierung sind sind zwei Mal in der Direktausscheidung
+
+#dest_vain_dupli=die Aufsteiger aus ^1 sind  2 Mal in der Direktausscheidung
+#dest_bat_dupli=die Absteiger aus ^1 sind  2 Mal in der Direktausscheidung
+
+#classe_apres=Platzierung nach
+#destination_vainqueurs=Ziel für Aufsteiger
+#destination_battus=Ziel für Absteiger
+#groupe_clasmt_battus=Platzierung der Absteiger
+#rang_premier_battu=Platz des ersten Absteigers
+#groupe_clasmt_vainqueur=Platzierung des ersten Aufsteigers
+#rang_premier_vainqueur=Platz des ersten Aufsteigers
+
+#classe_apres%=Platzierung nach
+#destination_vainqueurs%=Ziel für Aufsteiger
+#destination_battus%= Absteiger
+#groupe_clasmt_battus%=Platzierung Absteiger
+#rang_premier_battu%=Platzierung erster Absteiger
+#groupe_clasmt_vainqueur%=Platzierung Aufsteiger 
+#rang_premier_vainqueur%=Platz Aufsteiger
+
+#calcul_tableaux=Direktausscheidung errechnen
+#calcul_groupes_clas=Gruppen für die Endplatzierung neu errechnen
+
+#avertissement=Verwarnung
+#modif_suites=Reihenfolge der Direktausscheidung ändern
+#modif_suites_expli1=wenn Sie hier die Reihenfolge der Direktausscheidung ändern,
+#modif_suites_expli2=wird die ganze Direktausscheidung neu berechnet
+#modif_destination=Änderung des Ziels der Direktausscheidung
+#modif_destination_expli1=wenn Sie hier die Bestimmung der Direktausscheidung ändern,
+#modif_destination_expli2=werden die Platzierungen neu berechnet
+#modif_gpe_clas=Änderung der Platzierungen
+#modif_gpe_clas_expli1=wenn Sie hier die Platzierungen ändern,
+#modif_gpe_clas_expli2=werden die ersten Plätze neu berechnet
+
+#creation_de=Erstellen von ^1
+#creation_1er_tab=Erstellen der ersten Aufstellung
+#suppr_du_tableau=löschen der Aufstellung ^1, Umbenennen in ".old"
+#pas_tab_en_cours=es gibt keine laufende Aufstellung
+#pas_tab_a_faire=es gibt keine zu erstellende Aufstellung
+
+#barrage_tableau=Stichkampf auf Platz ^1 um den Aufstieg in die Direktausscheidung
+#garde_rang=^1 Fechter oder Mannschaft[1||en] behalten diesen Platz
+#se_classe_apres=werden platziert nach
+#formule_prevue=der Modus ist vorgesehen für ^1
+#tableau_prevu=diese Aufstellung ist vorgesehen für ^1
+
+#pas_tab_refaisable=es gibt keine Aufstellung, die neu erstellt werden muss
+#tab_a_refaire=Aufstellung neu zu erstellen
+
+#gpe_clas_diff=zwei Gruppen der Aufstellung  ^1 haben verschiedene Platzierungen, ^2 und ^3
+
+#pas_match_en_cours=es gibt kein laufendes Gefecht
+#cherche_match=Suche nach einem Gefecht
+#les_matches_de=einzelne Gefechte einsehen ^1
+#en_cours_contre=laufendes Gefecht gegen ^1
+#gagne_contre=Gefecht gewonnen gegen ^1
+#perdu_contre=Gefecht verloren gegen ^1
+#match_perdu=Gefecht verloren
+#rec_adversaire=Suche nach dem Gegner
+#pas_adversaire=kein Gegner
+#score_trop_grand=Ergebnis zu hoch
+
+#erreur_ecrire=Fehler beim Lesen der Datei
+#on_ressaye=es wird noch einmal versucht
+#ressayer=noch einmal versuchen
+
+#rangPoule=Platzierung der Runde
+#rangPoule%=Pl.Rd
+
+#tableau_inacheve=Modus mit unvollständiger Direktausscheidung
+#nombre_exemptes_tab=Zahl der Freilose der Direktausscheidung
+#nb_qualifies_tab=Anzahl der Qualifizierten des Tableaus
+
+#on_limite_dec=Verschieben begrenzen auf Platz ^1
+#pour_les_tir=fuer die Fechter der Plätze 1 bis ^1
+#on_dec_pas_plus=nicht weiter Verschieben als bis ^1
+#on_dec_plus=eventuell weiter verschieben als  ^1
+
+#premier_est=der erste  ^1 der Liste ist ^2
+#premier_doit_etre=^1 als erste in die Datei eingeben
+
+#faire_sauvegarde=Sicherungsdatei speichern
+#echec_sauvegarde=Sicherung war nicht erfolgreich
+#echec_ouverture=&opening failed
+
+#importer_un=Import einer
+#importer_certains=Import mehrerer
+
+#documentation=Dokumentation
+
+#plusieurs_pou_arbi=mehrere Runden an einen Kampfrichter geben
+
+#criteres_arbitres=Kriterium für den Kampfrichtereinteilung
+#affectation_manu=manuelle Einteilung
+#affectation_auto=automatische Einteilung
+#affectation_arbi=Kampfrichtereinteilung
+#pour_n_tab=&for the ^1 tableaux starting at ^2
+#affectation_arbi_quarts=Einsatz der Kampfrichter nach Vierteln des Tableaus
+#reprise_arbitres=Kampfrichter wieder einsetzen aus dem dem Quartal :
+#raz_arbitres=Kampfrichtereinteilung auf Null setzen
+#tableauetarbitres=Direktausscheidung und Kampfrichter
+#continuer_alloc=&Continue current allocation
+#faire_new_alloc=&Do a new allocation
+#video_to_non=&Video referees are made non-video
+#non_annul_alloc=&Say No to cancel allocation
+#ya_n_arbi=&there are ^1 referees in the ^2
+
+#pas_arbitre=kein Kampfrichter
+#plus_arbitre=nicht genügend Kampfrichter
+#toutes_pou_arbi=alle Runden haben einen Kampfrichter
+
+#pas_arbi_ds_match=die laufenden Gefechte haben keinen Kampfrichter
+#pas_match_sans_arbi=es gibt kein laufendes Gefecht ohne Kampfrichter
+
+#exempte1=Freilos
+#qualifie1=qualifiziert
+#abandon1=gibt auf
+#elimine1=ausgeschieden
+#exclusion1=Schwarze Karte
+#forfait1=Nichtantreten
+#exempte1%=F
+#qualifie1%=Q
+#abandon1%=g
+#elimine1%=a
+#exclusion1%=s
+#forfait1%=t
+#exempte_ou_hors=&exempt or out-of-competition
+
+#infoRepertoires=Informationen über die Verzeichnisse...
+#CopiePermanente=Kopie mit dauerhafter Speicherung der Änderungen...
+#echec_copie=Die Kopie funktioniert nicht
+#rempla_copie=die Kopie ^1 ersetzen
+#capitaine=Mannschaftsführer
+#prem_dossard=Startnummer beginnen bei
+#faire_FicSpecial=Spezialdatei
+#faire_FicSwissTiming=SwissTiming MTS600 Datei
+#faire_FichierKabcom=Kabcom Datei
+
+#ordre_interne=Reihenfolge der Systemnummer
+
+#champ_mesure=das Feld ^1 misst ^2 cm
+#limite_champ=auf ^1 cm beschränken
+
+#equipe_a=Mannschaft ^1 hat ^2 Fechter
+#equipe_devrait=Sie muss 3 oder 4 Fechter haben
+#permuter=tauschen
+#erreur_equipe=Fehler, Mannschaft:
+#rang_haut_bas=Nummer 1,2,3, steht oben, Nr. 4,5,6, unten
+#rangs_manquants=die Nummern fehlen
+#rang_duplique=doppelte Nummer
+#rang_incorrect=Nummer falsch
+#melange_rang=Mische zwischen 1, 2, 3 und 4, 5, 6 in einer Mannschaft
+#mettre_rang123=Setze 1, 2, 3, R zu einer Mannschaft
+#mettre_rang456=Setze 4, 5, 6, R zur anderen Mannschaft
+
+#score=Ergebnis
+#sc=sc.
+#touche=Treffer
+
+#demi_grille=halbes Tableau
+#grille_rencontre=Mannschaftstableau
+
+#remplacant=ausgetauscht
+#rempla_equipe=Ersetzen in Mannschaft ^1
+#num_match_remplacement=Nummer des Gefechts, in dem ein Fechter ausgetauscht wird
+#zero_pas_remplacement=0 eingeben um nicht auszutauschen
+
+#Feuille_rencontre=Zettel für Mannschaftskampf
+#rencontres=Mannschaftskämpfe
+#rencontre_a_score=^1 Mannschaftskampf/-kämpfe mit detailliertem Ergebnis
+#rencontres_tableau=Mannschaftskämpfe des Durchgangs ^1
+#scores_detailles=detaillierte Ergebnisse
+#score_final=&final score
+
+#XML=XML
+#HTML=HTML
+#faire_document=Dokument erstellen
+#faire_fichier=Datei erstellen
+#plusieurs_tableaux=mehrere Tabellen
+
+#Tableau_en_fichier_HTML=Tabelle als HTML-Datei
+#Poules_en_fichier_HTML=Runden als HTML-Datei
+
+#produit_deja_tire=das Aufstellen des Durchgangs erzeugt ^1 Wiederholungsgefecht/e  
+#decale_deja_tire=Wiederholungsgefechte verschieben? 
+#pas_decale=^1 konnten nicht unterschieden werden
+#deja_tire=Gefecht wurde schon gefochten 
+#decalage=décalage 
+#traitement=traitement
+#mais_aussi=aber es gibt auch
+
+#dans_ordre=in Reihenfolge
+#pret_decouper=Abschneiden, ^1 pro Seite
+
+#exporter_table=in eine Textdatei exportieren
+#importer_table=eine Textdatei importieren
+#essai_texte=Prüfversion im Textformat
+#pas_ligne1=erste Zeile nicht anzeigen
+#ignore=ignoriert
+
+#calcul_serie=Ranglistenpunkte neu berechnen
+#calcul_points=Mannschaftspunkte berechnen
+#calcul_serie_de_tireurs=Ranglistenpunkte aus den Punkten der Fechter neu berechnen
+#calcul_points_de_tireurs=Mannschaftspunkte aus Fechterpunkten neu berechnen
+#faire_avec_table_eq=Dieses in der Mannschaftsliste tun
+#tireur_sans=Fechter ohne ^1
+#fiche_equipe=Liste der Mannschaften
+#attribution_eq=Zuordnung der Mannschaften
+
+#resultats_provisoires=vorläufige Ergebnisse
+#charger_pistes_heures=Bahnen und Zeiten laden
+#pas_tableau_actif=^1 ist kein aktiver Durchgang
+
+#paiement=bezahlt
+#mode=Zahlweise
+
+#equipes_select=die gewählten Mannschaften
+#toutes_equipes=alle Mannschaften
+#ordre_matches=Reihenfolge der Gefechte
+#equipe_adverse=gegnerische Mannschaft
+
+#essai_groupement=soll versucht werden, die Kampfrichter fuer zwei aufeinander folgende Kämpfe neu aufzustellen?
+#echec_groupement=Neuaufstellung von ^1 war nicht möglich
+#autre_tableau=eine andere Direktausscheidung ?
+#pas_creation_poules=keine Runden aufgestellt
+
+******************************************************************************
+      the new texts of January 1rt, 2004 (version 8.1)
+******************************************************************************
+
+#id=Bezeichnung
+#idtournoi=&identifier of the tournament
+#annee=Jahr
+#regional=regional
+#local=local
+#championnat=Meisterschaft
+#fic_trans_XML=XML-Transferdatei
+#fic_XML_resu=&XML results file
+#a_partir_fic_xml=aus einer XML-Transferdatei
+#fic_xml_pour_comp=XML zum Aufstellen eines Wettbewerbs
+#conv_utf8_vers=&Conversion of an XML file with UTF-8 encoding to
+ Below, do not translate DOCTYPE
+#doctype_incorrect=falsche DOCTYPE
+#doctype_correct_sont=richtige Typen sind:
+#entitesGen_chargees=^1 entit[1|y|ies] im Speicher
+#affecte_pistes_heures=Auswahl der Pisten und Zeiten
+#verification_pistes_heures=&Checking pistes and hours
+#Feuille_rencontre_non_faite=Gefechtszettel noch nicht erstellt
+
+#SansLicence=^1 hat keine FIE-Lizenz
+#doublonLicence=&same FIE licence 
+#SansID=&^1 has no ID
+#doublonID=&same ID 
+#error_nation=&^1 has an incorrect nation
+#tireursSansLicence=einige Fechter haben keine FIE-Lizenz
+#tireursSansID=&Some fencers/teams/referees do not have an ID 
+#tireursBadNation=&Some fencers/teams/referees have an incorrect nation
+#DansCompeFIE=fuer FIE-Wettbewerbe ist eine FIE-Linzennummer erforderlich
+#DansCompeFIE_ID=&In FIE competitions, ID is obligatory
+#DansCompeFIE_nat=&In FIE competitions, a correct nation is obligatory
+#CompleterFIE=&Complete the FIE data now
+#ContinuerCompe=den Wettbewerb fortführen
+
+******************************************************************************
+      the new texts of March 27, 2004 (version 8.1)
+******************************************************************************
+
+#PasDeTireur=Kein Fechter
+#NbMatchPP=Anzahl der Gefechte pro Seite
+#ToutesLesPoulesNarbi=Alle Runden von ^1 bis ^2 haben ^3 arbitre[3||s]
+#ToutesLesPoulesSaisies=Alle Runden von ^1 bis ^2 sind erfasst
+#arbitresPour=Kampfrichter für
+#FaireAffectation=Einsetzen ?
+#MauvaiseAffecteArbi=schlechte Einteilung der Kampfrichter, Gefechtsnummern : 
+#ReprendArbi=Setze Kampfrichter von 1/x wieder ein: 1/
+#affectation_arbi_8eme=Einteilung der Kampfrichter über 1/8 des Tableaus
+#affectation_arbi_16eme=Einteilung der Kampfrichter über 1/16 des Tableaus
+#matchesSansArbitre=Gefecht ohne Kampfrichter, versuche es erneut
+#matchs_SansArbitre=&^1 matches without referee
+#poules_SansArbitre=&^1 poules without referee
+#pasDeFichier=Keine Datei
+
+#pas_commence=&^1 fencers are set "Forfeit" because they did not start the competition
+
+#Restriction=Beschränkung
+#Restreindre1=Einen Wettbewerb zu Beschränken bedeutet, dass bestimmte Fechter/Mannschaften nicht beachtet werden
+#Restreindre2=in dem den Anderen der Status "Paket" gegeben wird. Beispiel: Nach einem Durchgang einer Runde,
+#Restreindre3=wenn man eine Gruppe  1 mit den Fechtern, die 1 bis 64 plaziert sind, machen möchte und eine
+#Restreindre4=Gruppe 2 mit den Fechtern 65 und höher, beginnt man mit der zweifachen duplizierung
+#Restreindre5=des Wettbewerbs (indem man zwei Backups machen) und beschränkt dann eines der Backups
+#Restreindre6=auf die Fechter 1 bis 64 und das Zweite auf die Fechter ab 64.
+#Restreindre7=Machen Sie dies im Moment der Festsetzung eines Rundendurchgangs
+#Restreindre8=oder bei der Erstellung des ersten Tableaus.
+#Restreindre9=Wollen Sie diesen Wettbewerb jetzt beschränken?
+
+#PlusTirEnCompe=Es ist kein Fechter mehr im Wettbewerb
+#Ilya=Es gibt
+#tirEqEnCompe=Fechter/Mannschaften im Wettbewerb
+#gardeApartirRang=Man hält von Platz
+#jusquAuRang=bis Platz
+
+#suppressTousAbsents=Alle Abwesenden löschen
+
+******************************************************************************
+      the new texts of December 24, 2007
+******************************************************************************
+
+#id_reseau=Name des Netzwerks
+#prendre_idsmart_pour_idreseau=&Use the SMART ID as network identifier (recommended)
+#id_reseau_double=&Note: Another competition has the same network identifier
+#fermer_cause_id_reseau=&You must close the competition (its network identifier has changed)
+#modif_id_reseau1=&Modification of the network identifier
+#modif_id_reseau2=&The modification obliges to close and reopen the DiapoEngarde and Engarde Auxiliary competitions that are connected to this competition.
+#modif_id_reseau3=&Do you want to modification the network identifier 
+
+#CreerRepSVG1=Erstelle einen Ordner für Backups
+#CreerRepSVGno2=&Creation of a 2nd directory for backup files
+anciens à conserver
+#SupprRepSVG1=&Delete the directory for backup files
+#SupprRepSVGno2=&Delete the 2nd directory for backup files
+nouveaux
+#StopSVG1=&Stop main backups
+#StopSVGno2=&Stop 2nd backups
+
+#CreerRepSVG2=Wähle einen Ordner.
+#no_backup=&NO BACKUP
+#non_accessible=Diesen Wettbewerb gibt es nicht mehr oder es kann nicht darauf zugegriffen werden
+
+#ouvrir_der_compe=öffne letzen Wettbewerb
+
+#affectation_2e_arbi=Einteilung 2. Kampfrichter
+
+#colonnes=Spalten
+#entete=Kopfzeile
+#haut=&top
+#bas=&bottom
+
+#nomSur10=Kurzer Name
+#drapeau=Flagge
+#drapeau%=Flagge
+#cadre_drapeau=&Flags with frame
+
+#formule_conserve_tireurs=Gemäß dem Modus, bleiben ^1 Fechter.
+#conserve_tireurs=Behalte ^1 Fechter.
+#possible_conserver_autre=Es ist möglich eine andere Anzahl von Fechtern zu behalten.
+#Selon_FIE_series=Gemäß FIE Regelement muss man Startnummern verwenden
+#series_entre_parentheses=Die Startnummern sind in Klammern geschrieben.
+
+******************************************************************************
+      the new texts of July 8, 2008
+******************************************************************************
+
+#appliquer=übernehmen
+#mode_eng=Modus
+#reseau=Netzwerk
+#Listesessions=Liste der Sessions
+#configuration=Einstellungen
+#langue=Sprache
+#Languedelaide=Sprache der Hilfe
+#done=Fertig
+
+#rep_appli=Verzeichnis der Anwendung : 
+#rep_compe=Verzeichnis des Wettbewerbs : 
+#rep_copie=Verzeichnis der Sicherungskopie : 
+
+exemple : par 1/4
+#par=über ^1
+#simple=einfach
+
+#effacer=Löschen
+#effacerFermer=Löschen und schließen
+
+#web=Web
+#parametresFTP=FTP Einstellungen
+#PublierlesTireurs=Veröffentliche Liste der Fechter im Internet
+#PublierlaFormule=Veröffentliche den Modus  im Internet
+#PublierClasGene=Veröffentliche das Classement  im Internet
+#PublierActiviteArbi=Veröffentliche die Kampfrichtereinsätze im Internet
+
+#cles=Schlüssel
+#VoirLesCles=Schlüssel anzeigen
+#InstallerCle=Schlüssel eingeben
+#AcheterCle=Schlüssel kaufen
+
+#EchecCreeFic=Die Erstellung der Datei ist gescheitert : ^1
+#PasModePro=Die PRO Version wurde nicht installiert
+
+#analyseCles=Prüfe die Schlüssel
+#supprCle=Lösche den Schlüssel ^1
+#CleInvalide=Schlüssel ^1 ist ungültig
+#badNoMac=Falsche MAC Adresse
+#badOrdi=Falsche Computer
+#clePerimee=Schlüssel abgelaufen
+#plus_tard=später validieren
+#valide=gültig
+#type_inconnu=unbekannter Typ
+
+#nlicencesValidesToDay=^1 Lizenz "^2" heute gültig[1||s]
+#pasLicenceValideToDay=Keine gültige Lizenz "^1"
+
+#IP_incorrect=Falsche IP Adresse
+#port_incorrect=Falscher Port
+#pas_licence_valide_ici=Es gibt keine gültige Lizenz für diesen Computer
+#chercher_licence_reseau=Wollen Sie eine Lizenz im lokalen Netzwerk suchen ?
+#attente_response=Warte auf Antwort
+#plus_licence_disponible=Keine Lizenzen verfügbar
+#licence_disponible=Lizenz verfügbar
+#pas_reponse_recue=Keine Antwort erhalten
+#licenceAttribuee=Lizenz zugeordnet
+
+#licence_jusquau=^1 Lizenz[1||s] "^2" ist gültig [1||s] bis ^3
+#cle_en_double=Doppelter Schlüssel
+
+#sessionsDisponibles=Verfügbare Lizenzen :  ^1 "^2"
+#licenceObtenueDe=Lizenz für ^1 Ip=^2 Port=^3
+#il_reste=Abgemeldet : ^1mn
+
+#session=Sitzung[|en]
+#Ip=IP Addresse
+#port=Port
+#No_port=Empfangender UDP Port
+#No_port_des_ordi=UDP Portnummer der Lizenzverteilenden Computer
+#Appli=Anwendung
+#ordinateur=Computer
+#cet_ordi_est=Dieser Computer heißt
+
+#cleAppli=Schlüssel
+#lenombre=Zahl
+#DateDebut=Startdatum
+#DateFin=Enddatum
+#TypeCle=Typ
+#NoMac=MAC Adressen - Physische Adressen
+#No_mac_cet_ordi=MAC Adresse dieses Computers
+#pasDeNoMac0=Es gibt im Moment keine aktive Netzwerkkarte 
+#unMacSuffit=Achtung : Eine gültige MAC Addresse ist genug
+#config=Einstellung
+#port_active=Der UDP Port ^1 wurde aktiviert.
+#port_non_active=Der UDP Port ^1 wurde nicht aktiviert. Er wird wahrscheinlich schon benutzt.
+#pas_de_port=Kein Empfangsport (UDP) ist aktiv
+
+#pasDeNoMac=Im moment keine aktive Netzwerkkarte in diesem Computer zu finden ist.
+
+#terminerSession=Sitzung beenden
+#ontermineSession=Soll die gewählte Sitzung beendet werden ?
+
+#N_appli_connectees=Es sind noch ^1 Session[1||s] der Anwendung verbunden. 
+#quitterontModePRO=Diese Anwendungen werden den PRO Modus in 10min beenden.
+#enregistrerSessions=Möchten Sie die Sessions speichern um sie beim nächsten Start von Engarde wieder zu benutzen?
+
+#N_appli_connectees_avant=Beim Beenden von Engarde PRO, waren ^1 Session[1||s] verbunden. 
+#reprendreSessions=Diese Sessions wiederherstellen?
+#N_sessions_out=1 Session[1||s] [1|wurde|wurden] nicht wiederhergestellt
+
+#passerModePro=in den PRO Modus wechseln
+#quitterModePro=PRO Modus beenden
+#passerModeFIE=in den "FIE" Modus wechseln
+#quitterModeFIE="FIE" Modus beenden
+#FIEdemandePro=Um in den Modus "FIE" zu wechseln, muss man im PRO Modus sein.
+
+#clesEtLicences=Schlüssel und Lizenzen von diesem Computer
+#sessionsAppli=Andere Sitzungen aus dem Netzwerk benutzen einen Schlüssel dieses Computers
+
+#onsupprimelacle=Verstecke die ausgewählten Schlüssel ?
+#supprimerPerimees=Verstecke die abgelaufenen Schlüssel
+
+#demande_licence=Lizenz beantragen
+#Ordi_distrib=Computer des lizenzverteilenden Netzwerks auf diesem UDP Port
+#un_Ordi_distrib=IP Adresse des lizenzverteilenden Computers
+#ChercheOrdi=Suche Computer
+#CliquerOrdi=Klicke auf einen Computer
+#DemanderLice=Frage diesen Computer nach einer Lizenz
+#DemanderLicePro=Frage nach einer PRO Lizenz
+#tapez_direct_ip=Tippen sie die IP Adresse unten ein.
+
+#jourOrdi=Datum des Computers
+#jourReference=Referenzdatum
+#jourReferenceUtilise=Das Datum ^1 wird benutzt, weil der Computer an diesem Tag benutzt wurde. Im Falle eines Fehlers, machen Sie eine Synchronisierung
+#Synchronisation=Synchronisierung
+#Synchroniser=Synchronisieren
+#ExlpiSynchro1=Die Synchronisierung überprüft das Computerdatum mit dem Internetdatum.
+#ExlpiSynchro2=Stellen Sie das Computerdatum korrekt ein, verbinden Sie sich mit dem Internet, und klicken sie dann auf den Button "Synchronisieren".
+
+#ErreurSynchro=Fehler während der Synchronisierung. Sind sie mit dem Internet verbunden? ?
+#SuccesSynchro=Erfolgreiche Synchronisierung.
+#badDateOrdi=Das Computerdatum ist falsch.
+#DateOrdiEst=Gemäß der Ländereinstellung ist das Datum ^1, einen Tag vorher oder später.
+#reglerDateOrdi=Korrigieren sie das Computerdatum und synchronisieren Sie erneut.
+#recul_heure=Die Uhrzeit oder das Datum des Computers wurden geändert. PRO Modus wird angehalten.
+#perte_connexion=Keine Verbindung mit Engarde(PRO MAIN) seit 10 Minuten. PRO Modus wird angehalten.
+#perte_connexion2=&The connection with the competition (Engarde Main) is interrupted.
+#fin_licence=Einige Lizenzen wurden beendet. BASIC/PRO Modus wird angehalten.
+#repasser_pro=Sie können in den PRO Modus zurückkehren, wenn sie noch weitere gültige Lizenzen haben.
+
+#gestionVersion=Verwaltung der Versionen
+#VersionNumero=Versionsnummer ^1
+#NumeroVersion=Versionsnummer
+#VersionNo=Version ^1
+#version0=Wenn die Versionsummer 0 ist, wird es nicht mit ausgedruckt.
+#version1=Versionsnummer 1 bedeutet ein normales, nicht modifiziertes Dokument.
+#version2=Eine Versionsnummer größer 1 bedeutet ein modifiziertes Dokument.
+#ModifDepuisVersion=Änderungen seit dieser Version
+#ModifToutes=Alle Änderungen
+#NumVersSuiv=Gehe zur nächsten Versionsnummer
+#MAJversion=Gehe zu Versionsnummer N
+#correction=KORREKTUR
+#set_version=Gehe zu Version ^1
+#modif_resu_poule=Änderung der schon beendeten Runde Nummer ^1
+#tableau_const=Zusammensetzunge des Tableaus
+#constitue=Zusammensetzung
+#resultats=Ergebnisse
+#modif_resu_tab=Änderung eines Gefechts eines beendeten Tableaus.
+
+#pas_date=Dieser Wettbewerb hat kein Datum
+#pas_id_reseau=Dieser Wettbewerb hat keinen Netzwerknamen
+#pas_ds_clasGene=ACHTUNG: aufgestiegende Fechter der letzten Runde sind nicht im Gesamtclassement.
+
+#ouv_fic_aff=Öffnen einer Datei um sie anzuzeigen
+#pas_copie_perm=Keine Kopie gefunden
+#installer=Möchten Sie eine installieren?
+#copie_non_active=KEINE aktive Kopie
+#activer=Wollen Sie sie aktivieren?
+#echec_active_copie=FEHLER bei der Aktivierung der permanenten aktiven Kopie
+#install_autre=Möchten Sie eine Andere installieren?
+#copie_active=Kopie AKTIV
+#conserver=Möchten Sie sie behalten?
+
+#imp_match=Gefechte ausdrucken
+#imp_ma_toutes_pou=Alle Gefechte dieser Runde drucken
+#imp_ma_des_pou=Die Gefechte ausgewählter Runden drucken
+#PasResultat=Keine aktuellen Ergebnisse
+#FaireFicWeb=Erstelle eine Web Datei
+#maintenant=jetzt
+
+#Autorisation_retour=Backtrack Erlaubnis
+#Objet=Objekt 
+#Motivation=Motivation
+#pourquoi=Begründung
+#SignaturePtDT=Unterschrift des Presidenten des technischen Direktoriums
+#document_signe=Wurde das Rückverfolgungsdokument unterschrieben ?
+#imprimer_et_signer=Drucke und lasse das Dokument unterschreiben.
+
+#historiqueDesRetours=Verlauf der Backtracks
+#DT=technisches Direktorium
+#fournir_composition=Nenne die Mitglieder des TD
+
+#participant=Teilnehmer[/e|s/es]
+#victoires_matches=Siege/Gefechte
+#lateralite=Waffenarm
+#droite=Rechts
+#gauche=Links
+#centre=&center
+#inconnu=Unbekannt
+#lateralite%=Waf.
+#droite%=R
+#gauche%=L
+#inconnu%=U
+#priorite=Vorteil
+#aucune=keiner
+
+#page_precedente=vorherige Seite
+#page_suivante=nächste Seite
+#premiere_page=Erste Seite
+#derniere_page=Letzte Seite
+#Periode_change_page=Zeit bis die Seite wechselt
+#Arreter_diapo=Stoppe diaporama
+#DiminuerPeriode=Verringere die Periode
+#AugmenterPeriode=Erhöhe die Periode
+#Pause=Pause
+#ReprendreDiapo=Starte diaporama
+
+#DiapoModeEval=DiapoEngarde ist im "Evaluations" Modus : es erscheint in einenem kleinen Fenster und stoppt alle 5 Minuten.
+#sansLimitation=Um eine uneingeschränkte Funktionalität zu bekommen, muss man eine Lizenz kaufen.
+#ArretDiapoModeEval=Unterbrechung von Diaporama nach 5 Minuten solange man im Modus "Evaluation" ist.
+#InterruptionDiapoModeEval=Unterbrechung des PRO Modus.
+
+#nation%=nat.
+#coach=Trainer
+#carton_coach =&coach yellow card
+#DemandeVideo=Videobeweis gefordert, M: Änderung, R: Abgelehnt - maximal : ^1 Ablehungen
+#NOemplacement=Ort nicht gefunden
+#banniere=Banner
+#choixBanniere=Wähle einen Banner (BMP oder JPG Dateien)
+#entitesPerdues=^1 Daten der Klasse ^2 nicht gefunden 
+#creeAlaPlace=Erstellung der Daten @XXX
+#clasDans=Fertig, die Rangliste wurde in Datei ^1 erstellt.
+#doublon=Doppel
+#doublons=doppelte
+#entre=zwischen
+#TailleNomsCourts=&Short name size
+#NomNoncalcules=Kurze Namen nicht berechnet
+#CalculerCourts=Berechne fehlende Kurznamen
+#ReCalculerCourts=Berechne alle Kurznamen neu
+#doublonsCourts=Suche Doppelte in den Kurznamen
+
+#formu_fie_equipes=Modus Mannschafsweltcup
+#suites_tableaux_charger=Schließen Sie das Fenster und dann gehen Sie zu den Phasen des Tableaus und laden Sie die Datei FIE-AvecPlaces1-16.fta
+
+#reglages=Einstellungen
+#margehaute=Oberer Rand
+#margeBasse=Unterer Rand
+
+#clas_special=Spezielle Ranglsite
+#clas_spe_rg_poule=MACHE EINE SPEZIELLE RANGLISTE mit dem Rang in den Runden als Hauptkriterium ?
+#prem_liste_nat=Erste Liste der Nationen getrennt nach ";"
+#deux_liste_nat=Zweite Liste der Nationen getrennt nach ";"
+#pb_poule=Problem in Runde ^1
+#pas_pb_poule=Keine Probleme zwischen ^1 und ^2
+#publi_clas=Veröffentliche die Rangliste im Internet
+#publi_ex=Veröffentliche die befreiten Fechter im Internet
+#publi_poules=Veröffentliche die Runden im Internet
+#publi_tableau=Veröffentliche die Tableaus im Internet
+#definir_tableaux_web=Definiere Web-Files des Tableaus
+#publi_clas_tour=Veröffentliche die Rangliste nach dem ^1 Durchgang im Internet
+#publi_ex_tour=Veröffentliche die befreiten Fechter des Durchgangs Nummer ^1 im INternet
+#publi_poules_tour=Veröffentliche die Rundes des Durchgangs Nummer ^1 im Internet
+
+#clas_gen_decale=Verschobene Gesamtrangliste
+#met_a_blanc_matches=Schreibe leere Gefechte bei Plätzen höher als :
+#nb_matches_vert=Anzahl der Gefechte die vertikal angezeigt werden sollen
+#moitie=Hälfte
+#quart=viertel
+#bon_quart=&right quarter
+#numero_de_aff=Nummer von "^1" zum Anzeigen
+#numero_dans_quart=Nummer des Gefechts im Viertel
+#bad_descri_fic_web=Die Beschreibung der Web-Datei ist nicht korrekt
+#pas_kabcom_eq=Die Datei Kabcom für Mannschaften exitiert nicht
+#cle_ni_tir_ni_remp=Der Schlüssel des Fechters ist weder der des Trägers, noch des Ersatzes
+#imp_rencontre=Drucken des Mannschaftskampfes
+#pas_ordre_tir=Es gibt keine Fechter Reihenfolge
+#pas_detail_assaut=Es gibt keine detaillierten Ergebnisse
+#manque_arbi_assaut=&bout referees are missing
+#matches_en_cours=Laufende Gefechte
+#rencontre_affi=anzeigbare Mannschaftskämpfe
+
+#conserve_n_tireurs=behalte ^1 Fechter
+#memoire=Arbeitsspeicher:
+
+#installCle=Einen Schlüssel aktivieren
+#PossCle1=Es ist möglich die Schlüssel "^1" und "^2" zu installieren
+#PossCle2=um die Funktionen von Engarde im PRO Modus und anderer Anwendungen nutzen zu können.
+#PossCle3=Um diese zu nutzen muss man einen Schlüssel kaufen und einen Code bekommen.
+#PossCle4=Man muss mit dem Internet verbunden sein, um einen Schlüssel zu installieren.
+#PossCle5=Eine oder mehrere Netzwerkkarten müssen ebenfalls aktiv sein,
+#PossCle6=denn Engarde nutzt die MAC Adressen (pysikalische Adressen) der Netzwerkkarten.
+
+#IdClient=Benutzername
+#CodeAchat=Code des Kaufs
+
+#fautIdClientEtCleAchat=Bitte füllen Sie die Felder "Benutzername" und "Code" aus.
+#BadCarDansCleAchat=Ein gekaufter Code enhält niemals ^1
+#PasReponse=Keine Verbindung. Überprüfen Sie bitte Ihre Interneteinstellungen.
+#pastrouvecleclient=Dieser Benutzername mit diesm Code wurde nicht auf der Webseite von Engarde gefunden.
+#CleDeja=Dieser Schlüssel wurde schon an einen Benutzer vergeben.
+#VoulezVousInstaller=Wollen sie ihn auf diesem Computer installieren ?
+#CleTrouveeInstallee=Der Schlüssel wurde auf diesem Computer installiert.
+#CleNonInstallee=Der Schlüssel KONNTE NICHT auf diesem Computer installiert werden
+
+#PourActiverCle1=Um neue schlüssel zu aktivieren, muss man den PRO Modus verlassen und danach wieder in den PRO Modus wechseln
+#PourActiverCle2=Um neue Schlüssel zu aktivieren muss man in den PRO Modus wechslen
+
+#usermanuel=Benutzerhandbuch
+#ModeProSeulement=Die Funktion gibt es nur im Modus PRO.
+#PasModeMini=Diese Funktion gibt es nicht um Modus MINI.
+
+#continent=Kontinent
+#statistiques=Statistiken
+
+^1 sera remplacé par participants ou participantes ou équipes
+#Nb_total=Gesamtzahl der ^1
+#Nb_parmi_32=Anzahl der ^1 gemäß den ersten 32 Fechtern der FIE Rangliste
+#Nb_AmeriqueNord=Anzahl der ^1 aus Nordamerika
+#Nb_AmeriqueSud=Anzahl der ^1 aus Südamerika
+#Nb_afrique=Anzahl der ^1 aus Afrika
+#Nb_asie=Anzahl der ^1 aus Asien
+#Nb_europe=Anzahl der ^1 aus Europa
+#Nb_oceanie=Anzahl der ^1 aus Ozeanien
+
+#match=Gefecht[|e]
+#round=Runde[|n]
+#periode=Drittel
+#Carton=Karte[|n]
+
+#fenetre_piste=Fenster der Piste
+#table_pistes=Tabelle der Pisten
+#con_nom_coul=Verbindungen - Name - Farbe
+#Matchsuivantmanuel=Nächstes Gefecht (Manuell)
+#Matchsuivantautomatique=Nächstes Gefecht (Automatisch)
+#Matchsuivantautosansnext=&Next match (automatic without waiting NEXT)
+#Matchsuivantauto_defaut=&Next match automatic by default
+#Fichierlogtousmessages=Logdatei der Bahnnachrichten
+#autreMatchMmPoule=Gehe zu einem anderen Gefecht der selben Runde
+#autreMatchMmeTab=Gehe zu einem anderen Gefecht des selben Tableaus
+#autreMatch=Gehe zu einem anderen Gefecht
+
+#ArretEnAnnulant=Unterbreche und starte das Gefecht neu
+#ArretlaisseEncours=Unterbreche das Gefecht und lasse es wie es ist.
+#ArretEnTerminant=Unterbreche das Gefecht und beende es.
+#ArretParAbandon=&Stop the match for abandonment, exclusion, non-combativity
+#Mettrexcartonsrougesdroite=Gib x rote Karten nach rechts...
+#Mettrexcartonsrougesgauche=Gib x rote Karten nach links...
+
+#inverser=wechseln
+#InverserLapiste=Wechseln der Bahn
+#InverserLestireurs=Drehen der Fechter
+#Explications=Erklärungen
+#voir=anzeigen
+#Roundsdecematch=Runden dieses Gefechts
+#Matchesprcdents1=Vorherige Gefechte
+#FinMatch=Gefechtsende
+#MatchSuivant=Nächstes Gefecht
+#MatchPrecedent=Vorheriges Gefecht
+
+#manuel=manuell
+#PasseAuto=Wechsel zu Automatisch
+#automatique=automatisch
+#PasseManuel=Wechsle zu Manuell
+
+#EnregMatchEnCours=Speichere das laufende Gefecht :
+#MatchSansVain=Gefecht ^1 - ^2 gespeichert ohne Sieger
+
+#SimulAppPisteSerie=Simuliere Melder der Bahn
+
+#tireur1=1. Fechter
+#tireur2=2. Fechter
+
+#Connexion=Verbindung
+#Deconnexion=Trennung
+#connexionPort=Verbindung, Port ^1
+#nonconnecte=nicht verbunden
+
+#ConnexionComPour=Verbinde mit COM ort für ^1
+#ErreurPortOccupe=Fehler, der Port wird wahrscheinlich schon benutzt
+#deconnexionPisteX=Trenne Verbindung zur Piste ^1
+#ConnexionCOM=Verbindung zu einem Apparat: Seriell (COM Port)
+
+#Choixmatch=Wähle ein Gefecht
+#prevuAilleurs=Dieses Gefecht wurde auf Bahn "^1" gelegt, bitte bestätigen. 
+#Pasdematch=Kein Gefecht
+#PasdematchPiste=Kein Gefecht mit Stunde für die Bahn ^1
+#MatchTermine=Gefecht beendet
+#voulez-vousLeModifier=Möchten Sie es laden um es zu verändern? ?
+#ordre_equipe_par_capitaine=&The fencers' order is entered by the team captain
+#sais_ordre_equipe=Geben Sie die Reihenfolge der Fechter für den Mannschaftskampf ein
+#pasRemplacant=Diese Mannschaft hat keinen Ersatzfechter
+#UseDejaRemplacant=Der Ersatzfechter wurde schon eingesetzt seit Gefecht ^1
+#PrendRemplacantEnX=Setze den Ersatzfechter der Mannschaft ^1 ein; ab Gefecht Nummer 
+#PrendRemplacantNow=Setze den Ersatzfechter der Mannschaft ^1 jetzt ein ?
+#PasUseRemplacant=Der Ersatzfechter wurde nicht eingesetzt
+#ChoixMatchDe=Wahl eines Gefechts von ^1
+#ChoixMatchPoule=Wahl eines Gefechts von Runde ^1
+
+#nbCartonsRougesDte=Anzahl der roten Karten gegen den rechten Fechter
+#nbCartonsRougesGche=Anzahl der roten Karten gegen den linken Fechter
+#inverseExpli1=Drehe die Bahn, wenn der Engarde Computer gegenüber des Kampfrichters ist
+#inverseExpli2=damit das Bild auf dem Computer zur Bahn korrespondiert
+#inverseExpli3=Drehe die Fechter, wenn sie vom Kampfrichter gedreht wurden.
+
+#machineLocale=Lokaler Rechner
+#cheminFTPexe=Pfad der FTP-Anwendung, oft c:\windows\system32\ftp.exe
+#Parcourir=Durchsuchen
+#machineDistante=Remote FTP Rechner
+#hote=Host
+#user=Benutzer
+#passwd=Passwort
+#passwd_initial=&initial password
+#repDistant=Verzeichnis des Remote Rechners, z.B.: Fechten oder Fechten/Wettbewerb
+#actionsGene=Allgemeine Aktion
+#ActiverFTP=Aktiviere FTP
+#ActiverToutCourt=&Activate
+#Desactiver=Deaktivieren
+#siActiveEchoue=Wenn die Aktivierung fehlschlägt (DOS Fenster), deaktivieren, den Fehler korrigieren und reaktivieren
+#ListeDistant=Liste de Remote Verzeichnisse
+#EnvoiTousHTML=Sende alle HTML Dateien
+#PoulEtTab=Runden und Tableaus
+#publiPouAuto=Veröffentliche die Runden automatisch
+#publiTabAuto=Veröffentliche die Tableaus automatisch
+#dureeMini=Minimale Zeit zwischen dem Senden von 2 Dateien
+#min5sec=Sekunden, min : 5
+#autorefresh=Intervall der Aktualisierung für die Dateien
+#min10sec=Sekunden, min : 10
+
+#badcheFTPexe=Der Pfad der FTP Anwendung ist ungültig
+#remplirChamp=Fülle Feld "^1" aus
+#FTPinactif=FTP ist nicht aktiv
+#ErreurListeFTP=Fehler FTP Liste
+#ErreurEnvoiFTP=Fehler beim Senden via FTP
+
+#AffectMatchesEntre=Einteilung der Gefechte, die zwischen beginnen
+#exemple10=Beispiel :  zwischen  10  und  11:20
+#TabConcernes=Zeige die betroffenen Tableaus an
+#seulsAvecHeure=Nur die Gefechte binnen einer Stunde sind betroffen
+#seulsAvecHeurePou=Nur die Runden mit einer Zeit sind ausgewählt
+#utiliser_groupesAB=&Use groups A and B
+#au_moins_1A=&At least 1 group A
+#selectEtPrecise=Wählen Sie ein Tableau aus und bestimmen Sie: einfach, 1/4, 1/8 oder 1/16
+#selectPlusieursTab=oder mehrere Tableaus auswählen (Shift+Klicken oder Strg+Klicken), einfache Auswahl
+#pourSelectPlusieursTab=&Use Shift+Clic ou Ctrl+Clic to  select several tableaux
+#enleverTab=Entferne dieses Tableau von der Liste
+#enleverDeListe=&Remove of the list
+#affectation=Einteilung
+#prendreTab=Wähle dieses Tableau
+#prendreLaListe=Wähle die ganze Liste
+
+#analyse=analysiere
+#fenetre=Fenster
+#horizontal=horizontal[/e|e/e]
+#vertical=vertikal[/e|e/e]
+
+^1 will be replaced by nothing or 1 or 2, etc.
+#SupprTousArbi=Lösche all dieses Kampfrichter ^1
+#arbi_par_match=Anzahl der Kampfrichter pro Gefecht
+#incluant_video=&including a video referee
+#maxi_par_arbi=Maximum der Gefechte pro Kampfrichter
+#NbArbiToUse=Anzahl der verfügbaren Kampfrichter
+#CalAffectAuto=Teile automatisch ein
+#PrendreCetteAffect=&Take this allocation
+#PrendreAffectAvant=&Return to previous allocation
+#affectManuelle=&Manual allocation
+#AjouterArbiSel=Füge den ausgewählten Kampfrichter hinzu
+#AjouterArbiVideo=&Take the referee as video
+#SupprArbitreN=Lösche Kampfrichter ^1
+#enlever=&Remove ^1 ^2
+#affectation_avancee=Erweiterte Einteilung
+#affect_avancee_arbi=Erweiterte Einteilung der Kampfrichter
+#matchNum=Gefecht ^1
+#arbiNum=Kampfrichter ^1
+#pasArbiSel=Kein Kampfrichter ausgewählt
+#pasMatchSel=Kein Gefecht gewählt
+#pasPouleSel=Keine Runde ausgewählt
+#arbiDejaCeMatch=Der gewählte Kampfrichter wurde dem ausgewählten Gefecht schon zugewiesen
+#arbiDejaCettePoule=Der ausgewählte Kampfrichter ist der der ausgewählten Runde schon zugeordnet
+#conflitDe=Konflikt von ^1 zwischen dem Gefecht und dem Kampfrichter
+#conflitDeDsPou=Der Kampfrichter hat einen Konfilkt ^1 in der Runde
+#arbiDejaHeure=Der ausgewählte Kampfrichter hat schon ein Gefecht zur selben Zeit
+#arbiDejaHeurePou=Der ausgewählte Kampfrichter hat schon eine Runde zur gleichen Zeit
+#MatchNonTrouve=Gefecht nicht gefunden
+#PouleNonTrouvee=Runde nicht gefunden
+#MatchSansArbi=Das gewählte Gefecht hat keine Kampfrichter
+#PouleSansArbi=Die ausgewählte Runde hat keinen Kampfrichter
+#assez_de=&enough ^1
+#pas_trop_de=&no too many ^1
+#tropMatches=zuviele Gefechte
+#tropPoules=zuviele Runden
+#manqueMatches=&not enough matches
+#manquePoules=&not enough poules
+#matchesMemeHeure=hat Gefechte zur gleichen Zeit
+#poulesMemeHeure=hat zur gleichen Zeit Runden
+#matchesHeureProche=a Gefechte fast zur gleichen Zeit
+#matchesConsecutifsPistesDifferentes=&piste change WITHOUT PAUSE
+#matchesNonConsecutifsPistesDifferentes=&piste change with pause
+#poulesHeureProche=hat Runden die hintereinander liegen
+#est2foisMatch=ist doppelt in einem Gefecht
+#est2foisPoule=ist 2x in einer Runde
+#aconflitNation=hat einen Nationalitätskonflikt in einem Gefecht
+#aconflitNationPou=hat einen Konflikt ^1 in einer Runde
+#supprConflit=&remove conflicts
+#aconflitNation2=hat einen Nationalitätskonflikt im 1/4, 1/8, 1/16
+#pas_bonquart=&^1 is not in the right ^2
+#pas_bon_quart=&is not in the right quarter
+#pas_groupeA=&has no referee of group A
+#matchestroparbi=Gefecht mit zu vielen Kampfrichtern
+#poulestroparbi=Runden mit zuvielen Kampfrichtern
+#matchestroppeuarbi=Gefecht mit zu wenigen Kampfrichtern
+#poulestroppeuarbi=Runden mit zuwenig Kampfrichtern
+#tauxSatisfation=Wert der allgemeinen Zufriedenheit
+#satisfaction=&satisfaction
+#cross_interet=^1 hat überkreuzenden Interessen mit ^2
+#n_fois=&^1 times
+
+#NbMatchesVert=Anzahl der Gefechte die vertical angezeigt werden sollen
+#NumZone=Nummer des Teils des Tableaus, der angezeigt werden soll
+#NbTabHz=Nummer der Tableaus, die horizontal angezeigt werden sollen
+
+#oldVersionFic=DiapoEngarde kann vorherige Versionen der Wettbewerbe nicht öffnen
+
+#PoulTab=Runde/Tab.
+#PoulTab%=Runde/Tab
+#comIn=Com In
+#comOut=Com Out
+#IPsortie=IP verloren
+#Connecte=Verbunden
+#Actif=Aktiv
+#Score1=Treffer
+#Score2=Treffer
+
+#Montrer=Zeigen
+#Cacher=&Hide
+#CacherToutes=Alles verstecken
+
+#dejaPiste=Die Bahn ^1 existiert schon
+#dejaIpPiste=Die IP Adresse gehört schon zu einem Melder
+
+#fonctionnement=Funktionen
+#ConnexionIP=IP Verbindung zu einem Melder (Lokales Netzwerk)   
+#ConnexionSerie=RS232 oder RS422 Verbindung zu einem Melder (serielles Kabel, COM Port)
+#ConnexionIPsortie=Output IP Verbindung (Lokales Netzwerk)  
+#saisirIpExemple=Gebe IP Adresse und Port an, Beispiel : 
+
+#versionDispo=Die Version ^1 von Engarde vom ^2 ist jetzt verfügbar.
+#versionComposantDispo=Eine neuere Version ist vorhanden.
+#versionLaPlusRecente=Diese Version ist die Neueste.
+#InfoVersion=Information über die vorherigen Versionen
+#pasInfoVersion=Keine Versionsinformationen verfügbar.
+#downloadMAJ=Download des neuesten Updates
+#downloadcomposant=Download der neuesten Komponenten
+
+
+#choix_contexte=Wahl des Kontext
+#Contexte_general=Allgemeiner Kontext
+#Contexte_x=Kontext ^1
+#fermer_ouvrir_ctxt=Schließen Sie bitte den Wettbewerb und öffnen Sie ihn erneut
+
+#auteur=Urheber :
+#distribue_par=Erhalten von ^1
+
+--------------------------------------------------------------------
+
+New messages of octobre 2008 
+
+--------------------------------------------------------------------
+
+#lancerLesPistes=Starte die wartenden IP Adressen
+#lancerPiste=Starte diese Bahn
+#pistesLancees=^1 Bahn[^1||en] IP gestartet
+#pistesNonLancees=^1 Bahn[^1||en] IP nicht gestartet.
+#deja_match=Auf der Bahn ^1 ist bereits ein Gefecht
+#pas_attente=Die Bahn ^1 wartet nicht.
+#lance_simu_pistes=&Start an automatic simulation on all the pistes
+#stop_simu=&Stop the simulation
+
+#confirmez_manuel=Bahn mit IP Verbindung, bestätigen Sie bitte den Wechsel zu Manuell.
+
+#bad_piste=Nachricht des Melders IP=^1 Bahn=^2 : Der Name der Bahn ist ^3
+#bad_compe=Nachricht der Bahn ^1 Wettbewerb ^2 : Der Wettbewerb heißt ^3
+#pas_compe=Nachricht der Bahn ^1 Wettbewerb ^2 : Hier ist kein Wettbewerb
+#bad_phase=Nachricht der Bahn ^1 Durchgang Nummer ^2 : Die Nummer des Durchgangs ist ^3
+#bad_poule=Nachricht der Bahn ^1 Runde Nummer ^2 : Die Nummer der Runde ist ^3
+#bad_tableau=Nachricht der Bahn ^1 Tableau ^2 : Das Tableau hier ist ^3
+#bad_match=Nachricht der Bahn ^1 Gefecht ^2 : Das Gefecht hier ist ^3
+#bad_round=Nachricht der Bahn ^1 Runde ^2 : Die Runde hier ist ^3
+#bad_tireur=Nachricht der Bahn ^1 : FALSCHE FECHTER
+#bad_match_fini=Nachricht der Bahn ^1 : Das Gefecht hier wurde beendet
+#bad_match_rien=Nachricht der Bahn ^1 : kein Gefecht hier
+#champ_piste_vide=Nachricht der Bahn ^1 : das Feld ^2 ist leer
+#Demande_suivant=Frage nach dem nächsten Gefecht der Bahn ^1 (wir sind in "Manuell nächstes Gefecht")
+#suivantManuel=Setze den Modus "Manuell nächstes Gefecht" ?
+
+#lampes=Lampen
+#blanc=Weiß
+#rouge=Rot
+#jaune=Gelb
+#vert=Grün
+#cartonrouge=Rote Karte
+#cartonjaune=Gelbe Karte
+#non_combativite=&non-combativity
+
+#erreur=FEHLER
+#auto=auto
+#chrono=uhr
+
+state of the apparatus (uses also #pause defined above)
+#etatAPP=Status
+#fencing=fechten
+#halt=halt
+#waiting=warte
+#ending=beende
+
+#SituationENG=Situation in Engarde
+#APP=Apparat der Bahn
+#deLarbitre=des Kampfrichters
+
+#fichier_web=Web Dateien
+#date_lim_depassee=Die Deadline der Anwendung ist erreicht, bitte installieren sie ein Update.
+
+#mode_mini=Bis dahin läuft das Programm im MINI Modus.
+#tousLesTextes=Um alle Texte angezeigt zu bekommen, muss die Anwendung geschlossen und neu gestartet werden
+#siPasTous=Wenn dann einige Texte nicht übersetzt sind, heißt das daß die Übersetzung nicht vollständig gemacht wurde.
+
+======================================
+
+#apropos=Über
+#SitewebdEngarde=Website von Engarde
+#install_update=Engarde : Installiere Updates
+#commande_inconnue=Unbekannter Befehl
+#argument_manquant=Fehlender Parameter
+#fermer_ca=Schließe die Datei oder die Anwendung und klicke dann auf OK
+#update_complete=Update erfolgreich
+#suppr_rep_install=Sie können das Installationsverzeichnis löschen
+#update_partial=Update beendet, ES GIBT NOCH DATEIEN DIE VON HAND KOPIERT WERDEN MÜSSEN.
+
+#MontrerPnlOption=Dieses feld erscheint wenn Sie CTRL / STRG + K drücken oder einen Doppelklick machen.
+
+#evaluation_pro=Testwettbewerb von Engarde PRO
+
+#XML_FIE=XML für die FIE
+#XML_etendu=erweitertes XML
+#xml_vigueur=&FORMAT XML FIE 2019 IS NOW IN EFFECT 
+#xml_pas_vigueur=&FORMAT XML FIE 2019 IS NOT YET IN EFFECT
+#pas_pour_fie=&WARNING, THIS XML FORMAT IS NOT SUITABLE FOR THE FIE
+#pas_pour_efc=&WARNING, THIS XML FORMAT IS NOT SUITABLE FOR THE EFC
+#voulez_continuer=&DO YOU WANT TO CONTINUE
+#cas_pb_xml=&If there is a problem with XML files, send an email to
+
+#extractXML=Extrahiere Fechter aus einer XML Datei um einen neuen Wettbewerb zu erstellen
+#extraction=Extraktion
+#extraire=extrahiere
+
+#cherche_doublons=Suche doppelte Einträge
+#doublons_possibles=Doppelte Einträge möglich :
+#n_doublons=Es scheint ^1 doppelte Einträge zu geben
+#Pour_fusionner=Um zwei ^1 zusammenzuführen, gehen Sie ins ^1 Tableau
+#use_agglomerer=und benutzen Sie den Menüpunkt Eingang/Zusammenführen
+#pas_doublon=Es scheint keine doppelten Einträge zu geben
+#faire_fusions=Möchten Sie die Beiden zusammenführen ?
+
+======================================
+
+new texts of august 2009
+
+#badpasswd=Falsches Passwort.
+#ouvrir=&Open
+#ouvrir_aux=Auf einem anderen Rechner öffnen
+#client_serveur=&client-server
+#serveur=server
+
+#FinRoundMatch=Ende der Runde / des Gefechts
+
+#PlacementTireurs=Platzierung des Fechters
+#PlacementEquipes=&Team placement
+#prem_droite=Erster Fechter nach rechts
+#droitier_droite=Rechtshänder nach rechts
+#prem_eq_droite=&First team on the right
+#max_droitier_droite=&Team with more right-handed on the right
+#droitier_en_plus=&When a team has no substitute, we count one more right-handed
+#droitier=Rechtshänder
+#gaucher=Linkshänder
+
+#MettreRemp=Setze den Ersatzfechter von ^1 jetzt ein
+#MettreRempAssautX=Setze den Ersatzfechter von ^1 im Gefecht Nr... ein
+#OterRemp=Entferne den Ersatzfechter von ^1
+
+#fermer_poule=Schließe die Runde
+
+#ouvrir_cette_compe=Öffne diesen Wettbewerb
+#ouvrir_cette_compe_aux=Öffne diesen Wettbewerb auf einem anderen Rechner...
+#fermer_reouvrir=Schließen und erneut öffnen
+#compe_non_accessible=&This competition no more exists or is not accessible
+#pasdeja_ouverte=Dieser Wettbewerb ist nicht im Modus normal geöffnet
+#voulezvous_aux=Möchten Sie ihn im Hilfsmodus öffnen?
+#gerer_liste_compe=Verwalte die Liste der Wettbewerbe
+#suppr_compe_caduc=Lösche alle Wettbewerbe aus, auf die nicht zugegriffen werden kann
+#pas_aux_poules_equipes=&Auxiliary mode is not available in poules by teams
+
+#reception_aux=Empfang der "Hilfs"ergebnisse
+#supp_match_fini=Lösche die beendeten Gefechte
+#supp_tous_match=Lösche alle Gefechte
+
+#ordre_saisi1=Die Reihenfolge der Fechter dieses Mannschaftskampfes wurde schon eingegeben
+#ordre_saisi2=und die Gefechte dieses Mannschaftskampfes wurden schon erfasst.
+#ordre_saisi3=Eine Neuordnung der Fechter wird die schon erfassten Gefechte beeinflussen.
+#ordre_saisi4=Wollen Sie die Reihenfolge der Fechter neu eingeben?
+
+#basic_payant=Achtung, ab dem 01.10.2009 ist Engarde Basic nicht mehr kostenlos.
+#preferer_basic=Um mehr Funktionen zu bekommen, kaufen Sie eine Lizenz für "Engarde Basic".
+#plusInfoWeb=Um mehr Information zu bekommen, besuchen Sie die Webseite von Engarde
+#ne_plus_afficher=Diese Meldung nicht mehr anzeigen.
+#arret_fonct=Unterbrechung der Funktion im Modus Mini durch ^1
+#actualiser=aktualisieren
+
+#demande_ignoree=Anfrage ignorieren
+#contexte_defaut=Gebrauch in einem fehlerhaften Kontext
+#donner_date_debut=Schlüssel für 5 Tage, geben Sie den ersten Tag des Gebrauchsan
+#date_avant_aujourdhui=^1 liegt vor dem heutigen Tag (^2)
+#installer_a_partir=Möchten Sie diesen Schlüssel installieren, so dass er für 5 Tage funktioniert, beginnend am ^1 ?
+
+#RepSVG=Verzeichnis für Backups:
+#periode_svg_auto=Zeitraum für automatische Backups
+#en_minutes=in Minuten
+
+#trop_de_tireurs_compe=Es sind zuviele Fechter oder Mannschaften in diesem Wettbewerb.
+#mini_limite_50=Engarde MINI ist begrenzt auf ^1 Fechter und ^2 Mannschaften.
+
+^1 will be replaced by 1/4 1/8 1/16
+#neutre_quart=Neutrale Kampfrichter für das ^1 Finale
+^1 will be replaced by nation, club
+#empecher_meme=Keine Kampfrichter [1|der gleichen|des gleichen]der gleichen ^1[1||s] in einem Gefecht
+#affil_diff=&Different affiliations
+#arbitres_meme=^1 ist bei einem Kampfrichter der gleichen/des gleichen ^2
+#respecter_temps=Minimale Zeitspanne
+#intervalle=&Interval
+#empecher_proxi=Vermeiden von Nähe
+#empecher_cross_interet=Vermeiden von Interessenkonflikten
+
+#arbiDeja=Der Kampfrichter hat schon ein Gefecht
+#arbitres_affectes=^1 Kampfrichter zugeteilt
+#changer_para_arbi=Ändern Sie die Parameter um die Rate zu erhöhen oder fügen Sie Kampfrichter hinzu
+#ajouter_arbi=ajouter des arbitres ou augmenter le maximum de matchs par arbitre
+#Autorisation_action=Berechtigung für spezielle Aktionen im Modus FIE
+#historiqueActions=Verlauf der speziellen Aktionen
+#interdit_FIE=Aktion verboten im Modus FIE
+#il_faut_pro_FIE=FIE Turniere müssen im PRO+FIE Modus durchgeführt werden
+#il_faut_pro_FIE2=Verlassen Sie den FIE Modus nur kurzzeitig und nur aus gutem Grund
+#modif_manuelle=Manuelle Änderungen vornehmen
+#changer_nom=Bitte den Namen ändern
+#dire_oui_pour_voir=Klicken Sie Ja wenn Sie nur die Liste ansehen möchten
+#doublon_possible=Doubletten möglich :
+#n_vrais_doublons=Es gibt ^1 Doublette[1||n], sie [1|muss|müssen] ausgeblendet werden
+#faire_suppressions=Wollen Sie die Ausblendungen vornehmen?
+#fusion_de=zusammenführen von
+#fusion_de_n_doublons=^1 Doublette[1||n] wurde[1||n] zusammengeführt
+#expli_no_quart=Button um Kampfrichter ^1 zu wechseln
+#expli_groupe=&Buttons for changing the referee group
+#arbiDejaN=Der ausgewählte Kampfrichter hat schon ^1 Gefechte
+#proximite_tir=^1 hat einen Interessenskonflikt mit einem Fechter aus dem benachbarten Gefecht
+#pas_neutre_sur=^1 ist nicht neutral für ^2
+#est_neutre_sur=&is neutral on the zones
+#pour_conflits=&has for number of conflicts
+#sont_neutre_sur=&neutral referees on zone
+#Arbi2ProSeulement=Die automatische Zuteilung eines 2. Kampfrichters ist nur im Modus PRO möglich.
+#affectation_auto_simple=Einfache automatische Zuteilung
+#bon_choix_arbi=Vor einer Einteilung brauchen Sie eine gute Liste von Kampfrichtern
+#activiteArbitresMatch=Aktivität der Kampfrichter der Gefechte
+#activiteArbitresVideo=Aktivität der Videokampfrichter
+
+#ajout_un_arbi=Kampfrichter zuweisen
+#ajout_des_arbi=Hinzufügen der Kamprfichter
+#ajout_tous_arbi=Alle anwesenden Kampfrichter zuweisen
+#ajout_arbi_table_gauche=Hinzufügen der Kampfrichter vom linken Tisch
+#ajout_arbi_tab_pred=Die Kampfrichter des vorherigen Tableaus zuweisen
+#suppr_un_arbi=Kampfrichter ausblenden
+#suppr_tous_arbi=Alle Kampfrichter ausblenden
+#transfer_arbi_pred=Übertragen der Kampfrichter des vorherigen Tableaus
+#defaire_der_act=Rückgängig
+#del_no_quart=Lösche die ^1 Nummern
+#del_groupe=&Delete groups
+#MatchesDesArbitres=Gefechte der Kampfrichter
+#ArbitresDesMatches=Kampfrichter der Gefechte
+
+#exemptes_tab=Liste der Befreiten eines Tableaus
+
+^1 sera remplacé par 1/4 ou 1/8 
+#x_pasdefaut=^1 als Standard
+#matches_a_traiter=Zu bearbeitende Gefechte
+#matches_termines=Beendete Gefechte
+#poules_a_traiter=Zu bearbeitende Runden
+#poules_termines=Beendete Runden
+#matches_hors_periode=Die Gefechte sind außerhalb des Zeitintervalls
+#poules_hors_periode=Runden ohne Uhrzeiten oder außerhalb des Zeitfensters
+#match_pas_periode=Dieses Gefecht ist außerhalb des Zeitintervalls
+#poule_pas_periode=Die Runde hat keine Uhrzeit oder ist nicht in dieser Periode
+#match_termine=Dieses Gefecht ist beendet
+#poule_terminee=Die Runde ist beendet
+^1 sera remplacé par un arbitre et ^2 par 1/4 ou 1/8 
+#plusieurs_quarts=^1 ist in mehreren ^2 eingesetzt
+
+nouveaux textes du 21/6/2011
+
+#noir=schwarz
+#duree=Dauer
+#NoSerieDeReserve=Man gibt den Fechtern des Wettbewerbs die Nummern der Serie die sie als Reservefechter haben
+#champ_associe=Indiziere den Datensatz über den die Fechter assoziiert werden
+#n_tireur_a_ceci=^1 Fechter als Reserve [1|ist|sind] ^2
+#TireursNonTrouves=^1 Fechter nicht gefunden
+#prendre_serie=Nutze die Nummern der Serie der Reservefechter
+
+#PoulesDesArbitres=Die Runden der Kampfrichter
+#ArbitresDesPoules=Die Kampfrichter der Runden
+#arbi_par_poule=Anzahl der Kampfrichter pro Runde
+#maxi_poule_arbi=Maximale Anzahl der Runden pro Kampfrichter
+
+nouveaux textes du 21/7/2011
+
+#pasDansPoules=Diese Aktion ist nicht möglich solange man nicht in den Runden arbeitet Opération impossible car on n'est pas dans les poules
+#prendQuandMeme=Es dauert noch immer?
+
+#tableau_non_utilise=Tableau wird nicht genutzt
+#video=Video
+#arbitre_video=Videokampfrichter
+#arbitre_match=Kampfrichter des Gefechts
+#arbitre_assistant=&Assistant referee
+#matchDeja3=Das ausgewählte Gefecht hat schon 3 Kampfrichter
+#pouleDeja3=Die ausgewählte Runde hat schon 3 Kampfrichter
+#matchDejaVideo=Das ausgewählte Gefecht hat schon einen Videokampfrichter
+#pouleDejaVideo=Die ausgewählte Runde hat schon einen Videokampfrichter
+#afficher=Anzeigen
+
+#avec_horaires=mit Uhrzeiten
+#sans_horaires=ohne Uhrzeiten
+#affectation_de=Zuordnung von
+#periode_matchs=Zeitraum für die Austragung der Gefechte
+
+#on_envoie=Es wird noch gesendet ?
+
+#matchHeure=Nur Gefechte mit Zeit
+#pouleHeure=Nur Runden mit Zeit
+#tir_arbi=Zwischen Fechtern und Kampfrichtern :
+#natdiff=unterschiedliche Nationen
+#liguediff=unterschiedliche Ligen
+#clubdiff=unterschiedliche Vereine
+#sipossible=wenn möglich
+#Affiliation_affi=Zugehörigkeit gespeichert
+#indiquer_periode=Wählen Sie einen Zeitraum
+
+#clas_init_des_tab=Startclassement der Tableaus
+#clas_init_un_tab=Startclassement eines Tableaus
+#clas_init_du=Startclassement von ^1
+#clas_du=classement von ^1
+
+#prevu_exaequos=^1 qualifizierte geplant, aber ^2 qualifizierte sind ex-aequo
+#modif_formu=Änderung des Modus Modification de la formule
+#compe_en_cours=Wettbewerb läuftCompétition en cours
+#clas_utiliser=zu nutzendes Classment
+#toutes_cat_sexe=Alle Kategorien und Geschlechter Toutes catégories et sexes
+
+#match_consecutif=2 aufeinander folgende Gefechte
+#non_sur_consecutif=^1 ist nicht bei dem Nachbargefecht
+
+#essais=^1 Versuch[1||e] durchgeführt
+#remplissage=Auffüllung
+#autres_essais=Ok ? Auf Nein klicken um andere Einstellungen vorzunehmen.
+
+#arbi_dispo=Es sind ^1 Kampfrichter verfügbar
+#remplis_arbi_n=mit ^1 Kampfrichter aufgefüllt
+
+#cycleHeures=Zyklen der Uhrzeiten mit den gleichen Bahnen eines Zyklus
+#cyclePistes=Zyklen der Bahnen mit den gleichen Uhrzeiten eines Zyklus
+#pasCycle=keine Zyklen
+#selonListe=Zyklus abhängig von der Länge der Liste
+#selonZone=Zyklen pro Aschnitt des Tableaus
+#zone_egal=Zone = 1 /
+#sauter_matchs_term=überspringen der beendeten Gefechte
+
+#use_max_piste=&Use the maximum of pistes
+
+#manque_heure_poule=^1 Runde[1||n] ohne Zeit
+#manque_heure_match=^1 Gefecht[1||e] ohne Zeit
+#manque_piste_poule=^1 Runde[1||n] ohne Bahn
+#manque_piste_match=^1 Gefecht[1||e] ohne Bahn
+#developper=développer
+
+^1 sera remplacé par tireurs, équipes ou arbitres
+#a_prendre=^1 auszuwählen
+^1 sera remplacé par tireurs, équipes ou arbitres
+#prendre_ces=Nimm diese ^1
+
+#alpha=alphabetisch
+#structure=strukturiert
+#select_all=Alle auswählen
+
+#select_multiple=Mehrfachauswahl mit Shift+klicken und Strg+Klicken 
+#drag_and_drop=Drag und Drop ist möglich
+
+#date_lim_mini=Enddatum für die Nutzung des MINI Modus : ^1
+
+#police_defaut=Standardschriftgröße
+
+#demonstrations=Demonstration
+
+#expli_quart1=Eine Auswal nach Vierteln, setzt alle Gefechte eines Kampfrichters in ein einziges Viertel
+#expli_quart2=Der Kampfrichter darf keinen Nationen/Vereinskonflikt mit einem Fechter aus dem Block haben.
+#expli_quart3=Analogue par 1/8 et 1/16.
+#expli_cross1=Es gibt Interessenskonflikte wenn ein Gefecht einen Kampfrichter einer Nation/eines ClLubs A und ein Fechter der Nation/des Clubs B
+#expli_cross2=und in einem anderen Gefecht ein Kampfrichter der Nation/des Clubs B und einen Fechter der Nation/des Clubs A sind.
+#expli_proxi1=Es besteht eine enge Übereinstimmung wenn in einem Gefecht ein Kampfrichter der Nation/des Clubs A ist und im Nachbargefecht
+#expli_proxi2=ein Fechter der Nation/des Clubs A ist. Benachbarte Gefechte sind : die 1 und die 2, die 3 und die 4, etc. 
+#expli_affillDiff1=Es gibt sogar Interessenskonflikte wenn ein Gefecht zwei Kampfrichter der gleichen Nation/club hat.
+#expli_temps=Demande de respecter l'intervalle de temps indiqué, exprimé en minutes, entre deux poules/matchs d'un arbitre.
+#expli_deux=Verlange jeden Kampfrichter zwei benachbarten Gefechten zuzuordnen : die 1 und die 2, die 3 und die 4, etc. 
+#expli_heures1=8:00+0:15*7 bedeutet von der Startzeit 8:00  7 mal 0:15 hinzuzufügen, das gleiche wie 8+15*7 
+
+nouveaux textes 5/9/2011
+
+#choix_tableau=Auswahl eines Tabelaus
+#avec_arbi=mit den Kmapfrichtern
+#avec_pistes_heures=mit Uhrzeiten und Bahnen
+#avec_nom_tab=mit dem Namen jeden Tableaus
+#sur2lignes=Name über 2 Zeilen
+#battus_a_gauche=Mit den Verlierern links
+#autre_tab_a_gauche=Mit einem anderen Tableau links
+
+nouveaux textes 7/9/2011
+
+#matchs=Gefechte
+
+#clasmt_prov=Vorläufiges Classement
+#poule_et_clas=Vorläufige Runden und Classement
+#NbPoulesPP=Maximale Anzahl der Runden pro Seite
+#NbLignesPP=Maximale Anzahl der Zeilen pro Seite
+#avec_soustitre=mit Untertitel
+#avec_noms_champs=Mit den Namen der Gewinneravec les noms des champs
+
+#raison=Grund
+
+nouveaux textes 26/10/2011
+
+#idem_prec=Das gleiche wie vorher
+#modele=Vorlage
+#selon_modele=In dieser Vorlage...
+#mauvais_modele=schlechte Vorlage
+#pour_der_tour=Für den letzten Durchgang
+#pour_tour_saisi=für einen Durchgang nehmen
+
+#une_seule_piste=Jeder Kampfrichter auf eine einzelne Bahn
+
+nouveaux textes 11/11/2011
+
+#une_piste_exactement=&Referee on all the matches of a piste
+
+#plus_police=&Increase the font size
+#moins_police=&Decrease the font size
+#plus_interligne=&Increase line spacing
+#moins_interligne=&Decrease line spacing
+
+#ecran=&screen
+#photos_dir=&Pictures of a directory
+#grand_diaporama=&Full screen diaporama
+#petit_diaporama=&Diaporama 
+#fin_diaporama_grand=&End of diaporama, large window
+#fin_diaporama_petit=&End of diaporama, small window
+
+#avec_pistes_heures_prets=&with hours and pistes of ready matchs
+#taille_noms_tableaux =&size of the names of the tableaux
+
+#matchs_a_imp_ou_reimp=&^1 ongoing match[1||es] to be printed or reprinted
+#matchs_imprimables=&^1 reprintable ongoing match[1||es] 
+#y_compris_pas_pret=&Including matchs which are not ready
+
+#apres_match=&after each match
+#au_changement_de=&when changing ^1
+#page_pleine=&when the page is full
+#heure_piste=&hours and pistes
+#matchs_prets=&All the matchs which not ready
+#toutes_poules=&All the poules
+#liste=&(f)list[|s]
+#col_etroite=&narrow columns
+
+#ajuste_col=&adjustment of columns
+#ajuste_col_modele=&adjustment of columns for this model
+#pas_ajuste_auto=&no automatic adjustment
+#ajuste_auto_sauf=&automatic adjustment except "name first name"
+#ajuste_auto=&automatic adjustment
+#global=&global
+
+#cacher_soustitre=&Hide the subtitle
+#cacher_noms_champs=&Hide the field names
+
+#arbitres_moins=&^1 referee[1||s] who officiated less
+#arbitres_hasard=&^1 referee[1||s] at random
+#menu_special_arbi=&Use the "Special" menu to show the panel of manual allocation
+#menu_special_arbi2=&To add criteria, use the "Special" menu
+
+#affecter_n_arbi=&allocate ^1 referee[1||s] per ^2
+#incluant_arbi_video=&including a video referee
+#using_groups=&using groups A and B
+#par_quart=&by quarter
+#equi_roles=&Balancing roles
+#change_roles=&Changing roles
+#permuter_arbi=&swap referees ^1 and referees ^2
+
+#fichiers_XML_en_attente=&There are ^1 waiting XML files of an auxiliary session
+#on_detruit=&delete the files
+#on_charge=trotzdem öffnen
+
+#saisie_affil_nouv_dans_ppal=&New clubs, regions and countries cannot be entered in auxiliary mode, enter them in main mode
+
+#echec_enregistrement=&Saving the competition has failed
+#nouvel_essai_enreg=&try again to save
+
+#celui_appli=&choose among the models of the application
+#celui_avec_compe=&choose among the models of the competition
+#enreg_celui_appli=&save among the models of the application
+#enreg_celui_avec_compe=&save among the models of the competition
+#enreg_sans_les_deux=&save among both
+#copier_les_modeles=&copy models of the competition in the application folder
+#models_eng_diapo=&models of 'Engarde and models of DiapoEngarde
+#erase_models=&erasing the models having the same name?
+#err_copie=&ERROR, interrupted copy
+#fichiers_copies=&^1 copied file[1||s]
+
+#cadre=&Frame
+#traits_hz=&Frame and horizontal lines
+#sans_traits=&No lines
+
+#simuler_remplissage=&Simulate the filling of an incomplete tableau 
+#ImprImmediate=&Immediate printing of new matchs
+
+#sans_defilement=&Area without scrolling
+#avec_classement=&With ranking
+#nb_ligne_pp=&number of lines per page
+#numero_match=&number of the match
+
+#FTPactif=&FTP is active
+#desactive_FTP=&Deactivation of FTP
+
+#panneau_web=&Web panel
+#parametresHTTP=&HTTP parameters 
+#activerHTTP=&Activate HTTP
+#desactiverHTTP=&Deactivate HTTP
+#HTTPactif=&HTTP activated
+#desactive_HTTP=&Deactivation of HTTP for uploading files
+#specialPourHTTP=&Special for HTTP
+#installer_storefile1=&Do you want to install with FTP the ^1file
+#installer_storefile2=&in the ^1directory of the distant machine
+#installer_storefile3=&in order to send files with HTTP ?
+#au_moins_6=&At least 6 characters
+#redonner_pass=&Enter the password again
+#pass_trop_court=&The password is too short
+#pass_different=&The two passwords different
+#car_interdit=&Forbidden character
+#utiliser=&use
+
+#organisme=&Organism
+#event=&Event
+#tournoi=&Tournament
+#tournoi_gen=&tournament[|s]
+
+#pret_competition=&Ready for this competition
+#pas_de_compe=&the competition does not exist
+#pas_event=&the event does not exist
+#pas_organisme=&the organism does not exist
+
+#pas_chemin_domaine=&path not found in the domain
+#pas_connexion_ou=&no internet connection or domain error
+#si_appli_pas_ici=&If the application ^1 is not installed, you can install it with the FTP settings
+#fichiers_attente=&Pending files
+#matchs_attente=&Pending matches 
+
+#interrompre=&Interrupt
+#reprendre=&Resume
+
+#envoi_fic_html=upload of HTML files
+#site_org=&Organizer Website
+#rep_depose_fic=&Directory where files are uploaded, example: http://www.club.org/competitions/junior
+
+#faire_tab_sans_publi=&Make the tableaux without publishing
+
+#envoi_match=upload of ongoing matches
+#files_attente=&Waiting lists
+#taille_files=&Size fo the files
+#vider_file_fichiers=&Empty the waiting list of files
+#vider_file_matchs=&Empty the waiting list of matches
+#console=&Console
+
+#useNomsCourts=&Use the short names
+#fonc_non_acces=&This functionnality is not yet accessible
+
+#compe_commencee=&The competition began
+#suppr_toutes_eq=&Delete all the teams
+
+#Licence_LicenceNat=&Use the ^1 Licences as National Licences 
+#LicenceFIE_LicenceNat=&Use the ^1 FIE Licences as National Licences
+#LicenceNat_LicenceFIE=&Use the ^1 National Licences as FIE Licences 
+
+#heure_avant_arbitre=&IT IS STRONGLY RECOMMANDED to hours and pistes before referees
+#eviter_meme_heure=&to avoid that referee have two matches at the same time
+#arbitre_sans_heure=&However, it is possible to allocate referees to matches without hour by unchecking:
+
+#entite_deja_table=&^1 entit[1|y|ies] suppressed, because already in the table
+
+#PublierlesEquipes=&Publish the teams on the web
+#RefaireIndex=&Redo the web menu
+#ViderIndex=&Empty the web menu
+#refaire_doc_web=&Now, you have to redo the web pages with the "Web" menus of the Engarde, Poules and Tableau windows
+#Deposerlescss=&Upload CSS on the web
+#docu_actualise0=&This document is automatically refreshed
+#docu_actualise1=&This document is refreshed every ^1
+#docu_actualise2=&you can refresh it yourself more frequently
+#refaire_demande=&There ^1 waiting files, please, ask again later
+#minute=&minute[|s]
+#seconde=&second[|s]
+#info_probables=&'Information "qualifier"  "+"  "-"  "eliminated" is very likely but are not certain
+#qual_probable=&most likely qualified
+#elim_probable=&most likely eliminated
+#menu_document=&Use the menu to display a document
+#cliquer_titre=&Click on a title to open a document on the right
+#cliquer_ F5=&Click on F5  to open a document in an entire window, you will have the possibility to refresh the window with F5 while preserving the position
+#menu_apparaitra=&A menu will appear when the display of competition results occurs
+
+#site_web=&Website
+
+#pas_de_live=&This competition has no LIVE subscription
+
+#periodeAutoRefreshMatchs=&Period-refresh of then match table, min 2s
+#onlyScoreChange=&Send only the changes in score
+#supprMatchsFinisApres=&Delete terminated matches after ... min 30s
+#supprTousMatchsApres=&Delete all matches after..., min 300s
+#message-suppr=&Sending the message to delete each... min 10s
+#supprTousMatchs=&Delete all matches
+#supprMatchsFinis=&Delete terminated matches
+
+#tireurs_disponibles=&^1 available new present  fencer[1||s] 
+
+#utiliser_dossards=&Use mask numbers
+#cocher_si_bonne_raison=&Check this box only if you have a good reason
+#pas_dossard=&No mask number
+#dossard_en_double=&Double mask number
+#pb_dossard=&MASK NUMBER PROBLEM
+#corriger_dossard=&Fix it or do not use mask numbers with piste apparatus
+#remplacant_pris=&The substitute ^1 is at bout ^2
+#pasRemplacement=&Substitution not made
+#remplacementFait=&Substitution made
+#remplacementAFaire=&Substitution to do
+#voir_ecran_piste=&See scoreboard 
+#cacher_ecran_piste=&Hide scoreboard 
+
+#saut_page=&Page break
+
+#partie_tableau=&Part of tableau
+#serie_non_classe_menu=&Assign a fencer number to unclassified fencer numbers
+#serie_non_classe=&Fencer number for unclassified fencer numbers
+
+#message_clas=&message
+#cle_messages=&Key of messages
+#messages_pour_clas=&Messages for certain rankings
+#ecrire_lignes=&Write WITH ENGARDE, not with DiapoEngarde,lines of the form:
+#exemple_mes1=&A:1-32:Qualified for Sunday
+#exemple_mes2=&A:33-64:Qualified for tableau B at 3 pm
+#expli_mes1=&A is the key of a group of messages. There may be groups A, B, C, etc.
+#expli_mes2=&When key A is chosen, if Smith has a rank between 1 and 32, he has the message: Qualified for Sunday
+
+#id_to_use=&Identifiers to be used
+#cle_engarde=&Engarde key (recommanded)
+#cle_engarde_seule=&Engarde key
+#pas_id=&No "Identification"
+#id_en_double=&duplicate "Identification"
+#pb_id=&PROBLEM OF IDENTIFICATION FIELD
+#corriger_id=&Correct this or don't une the identification field with the piste apparatus
+
+#use_langue_doc=&Use the language for documents
+
+#handisport=&Wheelchair
+#dedouble_poules=&Split certain poules ?
+#dedouble_cette_poule=&Split this poule
+#dedouble_poules_a=&Split poules from
+#choisir_odm=&Choose match order
+#monter=&Up
+#descendre=&Down
+#avecCopierColler=&Copy-paste possible
+#il_manque=&missing
+#matchs_en_double=&doublon match
+#incorrect=&incorrect item
+#corriger_odm_incorrect=&The entered match order is incorrect, change it?
+#sinon_auto=&if not, default match order will be used
+#poules_dedoublables=&Certain poules on several pistes
+#poules_sur_n_pistes=&Poules of ^1 on how many pistes
+#cette_poules_sur_n_pistes=&This poule  of ^1 on how many pistes
+#poule_n_pistes=&poule on ^1 pistes
+#verifier=&verify
+#prendre=&take
+#solution=&^1 solution[1||s]
+#liste_solutions=&solution list
+#add_liste_solutions=&add to solution list
+#voir_liste_solutions=&see solution list
+#prendre_solution=&take this solution
+#matchs_se_suivent=&matches following each other
+#ordre_fourni=&entered match order
+#ordre_engendre=&generated match order
+#limite_poule_mini=&Poules of ^1 maxi in mode mini
+
+#save_copy=&Save a copy
+#connexion_pistes_ip=&Connection of pistes IP
+#deconnexionPistes=&Disconnection of the pistes
+
+#titre=&title
+#avec_video=&with video
+#lancer=&Start
+#menu=&Menu
+#charger_pistes=&Load a file of pistes
+#save_copy_pistes=&Save a copy of the pistes
+#CacherToutesPistes=&Hide all pistes
+#mode_envoi=&Transmission mode to Engarde Main for matches
+#depot_fichiers=&by file deposit
+#par_UDP=&by UDP
+#expli_depot_fichiers=&File deposit, old mode of Engarde, slower
+#expli_par_UDP=&UDP, new mode of Engarde, faster, uses IP number and port
+#ip_engarde_ppal=&IP number of Engarde Main
+#port_engarde_ppal=&Port of Engarde Main
+#raz=auf Null setzen
+#si_score_modifie=&on score modification
+#si_situation_modifie=&on situation modification
+#chaque_10s=&on situation modification and each 10s
+#chaque_5s=&on situation modification and each 5s
+#toujours=&always
+#sans_pilotage=&without monitoring
+#pilotage_de=&Monitoring of
+#envoyer_principal=&Send to main
+#envoyer=&Send
+#nepasenvoyer=&Do not send
+#affiche_dans_table=&Display in a table
+
+#refus_message=&Rejection of message, piste ^1 is not connected
+#pas_piste_cet_ip=&Message received from ^1 , this  IP number does not correspond to a piste
+#next_ou_prev=&It is the end of round, please do a next or previous match
+#conflit_piste=&CONFLICT of IP number or name of pistes
+#ordi_connecte_piste=&Computer ^1 is connected to piste ^2
+
+#call_next_match=&Next match asked for piste ^1
+#utiliser_next=&Use "NEXT" on the piste apparatus to get this match again.
+#reset_possible=&You may have to reset the piste apparatus for getting the next match.
+#no_match_this_poule=&Poule ^1 running on this piste: no match to fence.
+#match_prec_manuel=&The previous match is not finished, you can get it by Prvious on the piste and in manual mode.
+#matchs_sans_heure=&There are matches to fence on that piste, but they do not have time.
+#no_match_other_poules=&No match to fence in the other poules for this piste.
+#no_match_in_poules=&No match of the poules to fence for this piste.
+#no_poule_this_piste=&No poule uses this piste.
+#no_match_this_piste=&No match to fence for this piste.
+#no_tableau_this_piste=&No match of a tableau to fence for this piste.
+#tab_pas_ds_tab=&match of tableau received, we are not in tableaux.
+#est_pas_tab_en_cours=&is not an ongoing tableau.
+#bad_num_match=&bad match number received
+#bad_cle_tir=&bad key of the fencer
+#modif_match_fini=&modification of completed match (accepted)
+#modif_match_fini_non=&modification of completed match (REFUSED)
+#refuse=&REFUSED
+
+#demande_con_deja=&There is already a connection request
+#progression_auto=&automatic progression 
+#periode_auto=&automatic progression period
+
+#remplacer=&replace
+
+#tableauWebDefaut=&Define default webfiles of tableaux
+#change_style_css=&Change of CSS style
+
+#imp_rencontre_sans_ordre=&Print bouts even when the fencer order was not provided?
+
+18 JUILLET 2015
+
+#titulaire=&holder
+#RemettreTitulaireEnX=&The team holder of ^1 is reused at bout # 
+#RemettreTitulaireNow=&The team holder of ^1 is reused now
+#RemettreTituAssautX=&Reuse the team holder of ^1 at bout...
+#num_match_titulaire=&Match number where the holder returns
+#zero_aucun=&give 0 for none
+
+30 decembre 2015
+
+#id_sm=&Smart ID
+#pass_sm=&Smart password
+#envoi_smart=&Sending information to Engarde Smartphone
+#ConnectwithSmartId=&Connect with Smart ID
+#pas_envoi_smart=&NOT sending data to Engarde Smart
+#identifiant=&Identifiers
+#lancer_smart=&Launch Engarde Smart
+#obtenir_identifiant=&Get a new competition identifier
+#obtenir_autre_identifiant=&Get a competitive identifier affiliated with another
+#autre_identifiant=&Identifier of the other competition
+#id_is=&The identifier is ^1
+#pass_is=&The password is ^1 please note it.
+#meme_pass=&The password is the same.
+#pass_saisi_smart=&Password entered on Engarde Smart
+#user_deja_pass=&the user already has a password 
+#clic_connex=&Then click on connection
+#stat_du_groupe=&Group statistics
+#reception_donnees_smart=&Reception of data entered with Engarde Smart Assistant
+#pas_reception_donnees_smart=&NO reception of data entered with Engarde Smart Assistant
+#envoyees_par=&Data sent by
+#renvoyer_donnees=&Reupload all the data to the server
+#supprimer_donnees=&Delete all the data on the server and stop sending
+
+#delaientreenvoisfichiers=&Delay between HTML uploads: ^1s
+#tempsmaxicom=&Max time HTTP: ^1s
+#sous_titre=&subtitle
+#message=&message
+#bleu=&blue
+#marron=&brown
+#info_compe=&The information of the competition
+#tous_tableaux=&All tableaux
+#all_match_clas=&All matches of poules and tableaux, and all rankings
+#detruire_compe=&Destroy the competition
+#detruire_compe_smart=&Détruire la compétition sur le serveur smart
+#tireurs_envoyes=&sent fencers
+#titres_differents=&The titles are different the competition 1 and the smart server 2
+#veut_meme_titre=&Do you want to have the same titles
+#is_it_right_id=&Is this the right identifier for this competition
+#cliquer_modifier=&Click on Modify and enter the title and subtitle
+
+5 juillet 2016
+
+#mixte=&mixed
+#garcons=&boys
+#filles=&girls
+#qui_commence=&Who starts?
+#re_qui_commence=&Redo the draw to see who starts (boys or girls)?
+#garcons_commencent=&The boys start
+#filles_commencent=&The girls start
+#quand_garcons_commencent=&When boys start:
+#quand_filles_commencent=&When girls start:
+#devrait_gars_filles=&^1 should have 2 or 3 boys and 2 or 3 girls
+#melange_rang_mixte=&Mix between ranges 1, 2, 3, 4 and 5, 6, 7, 8 in a team
+#mettre_rang1234=&Put a team: 12R for boys, 34R for girls
+#mettre_rang5678=&Put a team: 56R for boys, 78R for girls 
+#gars1256=&Boys must have the ranks in 1256
+#filles3478=&Girls must have the ranks in 1256 3478
+#erreur_gars_fille=&Error: girl with boy
+#n_gars=&There are ^1 boys.
+#n_filles=&There are ^1 girls.
+#compe_mixte=&The competition is MIXED
+#rencontre_mixte=&The bout sheet is MIXED
+#cela_signifie=&That means:
+#signifie2_2_2fois=&2 boys meet 2 boys and 2 girls meet 2 girls (8 matches)
+#compe_non_mixte=&The competition is NOT MIXED
+#rencontre_non_mixte=&The bout sheet is NOT MIXED
+#signifie3_3=&3 fencers meet 3 fencers (9 matches) 
+#changer_sexe=&Want to change the parameter 'Sex' of the competition?
+#dabord_arbitres_moins=&First referees who officiated less
+#non_favorise=&not favoured
+#pret=&ready
+#deja_fait=&already done
+#deter_qui_commence=&Determine who starts
+#tableau_pas_pret=&The tableau is not ready
+#on_effectue=&Do it anyway?
+#meme_tirage_tabs=&A unique random draw for these ^1 tableaux?
+#deter_qui_1-4_5-8=&Determine who is 1234, who is 5678
+#qui_1-4_5-8=&Who is 1234, who is 5678?
+#deter_qui_1-3_4-6=&Determine who is 123, who is 456
+#qui_1-3_4-6=&Who is 123, who is 456 ?
+#pas_remplacement=&No Cyrano substitution 
+#remplacement_unefois=&Cyrano substitution
+#categories=&Categories
+#categories_fie=&Categories of FIE
+#cat_pas_pour_championnat=&The categories do not correspond to the championship.
+
+2016/10/27
+
+#tableaux_par_niveau=&Tableaux of ^1 by levels
+#manque_tireurs=&Not enough fencers
+#prend_tous_les_tir=&take all fencers in barrage
+
+#dernier_tour_par_niveau=&Last round of poules by levels
+
+#fic_pas_ecrit=&The file has not been saved
+#ajout_arbi_dispo=&Add all the available referees
+#presents=&present
+#disponibles=&available
+#tir_meme_clas=&Fencers with same ranking
+#qui_devant=&Indicate who is before the others
+
+#app_broadcast=&Piste apparatuses in Broadcast mode
+
+#formule_descri_tab=&Formula with customed tableaux
+#utiliser_tab=&Use these tableaux as they are
+#recalculer_tab=&The ranking groups are recalculated
+#erreur_cal=&Error while recalculating the ranking groups
+
+2017-05-29
+
+#Pasdepoule=&No poule
+#enlever_contraintes=&or remove constraints
+#choix_formule=&Formula choice
+
+#nation2=&nation 2
+#nation3=&nation 3
+#nation4=&nation 4
+#2eme=&2nd
+#3eme=&3rd
+#4eme=&4th
+
+#dabord_fermer=&First you have to close the competition
+#rattacher=&attach
+#detacher=&detach
+#suivi=&follow-up
+
+#RedTermineeMaintenant=&Reduce completed poules
+#RedNonEnCoursMaintenant=&Reduce non ongoing poules
+#RedTermineeAuto=&Reduce completed poules automatically
+#RedNonEnCoursAuto=&Reduce non ongoing poules automatically
+
+#multi_nat=&Several nations
+
+#eviter0=&TREATMENTS RESERVED FOR EXPERTS
+#eviter1=&AVOID THIS TYPE OF CHANGE ON ONGOING COMPETITIONS
+#eviter2=&TO DO ON A TEST COMPETITION FIRST
+#modification_importante=&Important change
+#nb_vainqueurs_clas=&Number of winners
+#nb_battus_clas=&Number of losers
+#recalcule_poules=&poules are recalculated
+#vic_score_precise=&Victory with specified score
+#non_supprimable_now=&this entity cannot be deleted now
+
+#noms_pistes=&Names of the pistes
+#premier_IP=&First IP number
+#ex_noms_pistes=&Example: 1-15 Podium Blue Yellow Green Red 
+#pistes_a_utiliser=&Pistes to be used
+#pistes_a_utiliser_ordre_IP=&Pistes to be used in the order of IP numbers
+#ajout_une_piste=&Add one piste
+#ajout_pistes_ip=&Add several IP pistes
+#ajout_pistes_semi=&Add SEMI 1.0 pistes 
+#piste_incorrecte=&incorrecte piste
+#heure_incorrecte=&incorrect hour
+#piste_dupliquee=&duplicated piste
+#ip_duplique=&duplicated IP
+#descri_formule=&desription of the formula
+#charger_formule_perso=&load a personal formula
+
+#mettre_no_quart=&Put the used numbers of ^1
+
+#maj_fichiers=&Updating some files
+#maj_succes=&Successful Updates
+#maj_echecs=&Updates that failed
+
+#poule_entiere=&fenced a whole poule
+#match_entier=&finished a match
+#match_tire=&fenced de match
+#classe=&classified
+#non_classe=&not classified
+#sans_rang=&classified without ranking (when tableau finished)
+#sans_rang_en_fin=&in the final list without ranking (when competition ended)
+#statut_different=&the status in the list does not match
+#present_ni_ni=&present in the list but not in poule and not in match
+
+#accueil=&home
+#affichage=&display
+#ouvert_recent=&Recently opened
+#tables_dans_fenetre=&tables are in the WINDOWS menu
+
+#cliquer_accueil=&Click on Home to return to home
+#montrer_svg=&Show main backups of this competition
+#faut_quitter_engarde=&YOU MUST LEAVE ENGARDE.
+#engarde_sauve=&Engarde will make a backup.
+#relancer_engarde_svg=&You will then have to launch Engarde to start from the backup.
+#pas_svg_compe=&There is no backup for this competition
+#passer_compe_rep=&Do you want to move the competition from directory ^1
+#vers_rep=&to directory ^1
+#passer_compe_parent=&Move this competition to the parent directory
+#incoherence_formule=&INCOHERENCE IN THE FORMULA, MISSING TABLEAUX
+#charger_nouv_formule=&LOAD A NEW FORMULA
+#retour_poule_par_svg=&USE A BACKUP OR GO BACK TO THE END OF POULES AND LOAD A NEW FORMULA
+#use_backup=&USE A BACKUP
+#quand_meme_ouvrir=&Do you still want to open this competition
+#err_load_formula=&ERROR WHILE LOADING FORMULA : RESET FORMULA
+#err_table=&ERROR, TABLE NOT LOADED
+
+#suppr_pistes_avant=&Existing pistes must be suppressed before
+
+#k_meme_place=&type k or ctrl+k in the display window to show this toolbar at the same position
+#esc_ferme=&Windows can be closed with the Esc key
+
+#connexion_eservice=&Connection to engarde-service
+#autre_connexion=&Another connection
+#transmission=&The transmission of poules and tableaux is done every ^1s.
+#aussi_periode=&It is also the update period of Engarde Smart.
+#periode_defaut=&This is the default period.
+#periode_achetee=&The purchased period is ^1s.
+#periode_plus_grande=&The period applied is greater because the number of fencers is greater than that indicated in the purchase.
+#periode_plus_courte=&To have a shorter period, connect to your account on engarde-service.com 
+#modif_nb_tir=&and change the number of fencers.
+#modif_periode=&and change the period.
+
+#date_diff=&The date is different
+#arme_diff=&The weapon is different
+#sexe_diff=&The sex is different
+#type_diff=&The type is different
+#smartID_diff=&The Smart ID is different
+
+#bloque=&locked
+#bloquer_pass=&lock the password
+#debloquer_pass=&unlock the password
+#bloquer_les_pass=&lock all the passwords
+#debloquer_les_pass=&unlock all the passwords
+#match_bloque=&locked match
+#poule_bloquee=&locked poule
+#modifiable=&modifiable
+#verifie=&checked
+
+#icone_verif=&An icon "Verified" mean "Verified, modifiable only here".
+#icone_cadenas=&An icon "Padlock" means "Modifiable only here".
+#icone_non=&An icon "Crossed padlock" or no icon means "Modifiable remotely".
+#icone_clic=&Click the icon to modify it.
+#menu_distance=&The menu allows you to set everything "Modifiable remotely".
+#modif_distance=&Set everything "Modifiable remotely"
+#faible_itinerance=&finer access to data, small use of mobile data
+
+#Interdireouvertureparfichier=&Prohibit opening by files for Auxiliary and DiapoEngarde
+#InterdireouvertureparfichierQ1=&Do you want to forbid Engarde Auxiliary and DiapoEngarde to read the competition files,
+#InterdireouvertureparfichierQ2=&and thus force them to use the client-server mode or DiapoEngarde by internet (highly recommended)
+#dangereuxparfichier1=&It is dangerous to open a competition in Auxiliary and with DiapoEngarde.
+#dangereuxparfichier2=&It is better to use the CLIENT-SERVER mode or DiapoEngarde by internet.
+#interditparfichier1=&It is forbidden to open this competition in Auxiliary and with DiapoEngarde now. 
+#interditparfichier2=&Use the CLIENT-SERVER mode or DiapoEngarde by internet.
+#client_serveur_vert=&Openings in CLIENT-SERVER mode are displayed in green.
+
+#a_partir_donnes_smart=&From internet SMART data
+#ouvrir_internet=&Open on the internet
+#get_data_internet=&Loading SMART data from the internet
+#smart_id=&SMART identifier
+
+#methode_globale=&Global method
+#methode_globale_val=&Global method with interval
+#methode_globale_formu=&Global method with formula
+
+#pasApas=&Step by step
+#phaseParPhase=&phase by phase
+#generer_pass=&Generate passwords
+#effacer_pass=&Clear passwords
+#imprimer_pass=&Print passwords
+
+#compe_aujourdhui=&Les compétitions d'aujourd'hui
+#saisie_identifiant=&Saisie d'un identifiant de compétition
+#saisie_date=&Saisie d'une date pour chercher des compétitions
+#mois1=&Jan.
+#mois2=&Fev.
+#mois3=&March
+#mois4=&April
+#mois5=&May
+#mois6=&June
+#mois7=&July
+#mois8=&Aug.
+#mois9=&Sept.
+#mois10=&Oct.
+#mois11=&Nov.
+#mois12=&Dec.
+write o or y for month_before_day to get "jan. 4" - write n to get "4 jan."
+#month_before_day=&y
+
+#bienvenue=&Welcome to ^1
+#bienvenue0=&Welcome to Engarde 10
+
+#bienvenue11=&Because of a change in contexts, versions 10.1 and later are not compatible with earlier versions.
+#bienvenue12=&For more information, see "Help | Recent Manuals xx | versions".
+#bienvenue13=&With Engarde Smart the referees or the piste assistants can enter the results of the matches on the piste.
+
+#bienvenue14=&It is not recommended to open "by files" the competitions in auxiliary and with DiapoEngarde. It can produce read/write conflicts in files.
+#bienvenue15=&It is better to use the client-server mode (competitions shown in a green banner) or DiapoEngarde by internet.
+
+#bienvenue16=&Version 10.2 includes the evolutions made for the World Championships in Budapest 2019 and the evolutions of August 2019.
+#bienvenue17=&The list of these evolutions can be found on the engarde-escrime.com website in the version history.
+
+============= 2022-12-20
+
+#long_time=&Long-term competition
+#forfait_par_match=&Match-by-match forfeits
+#points_bonus=&Points and bonuses
+#clas_poule_points_bonus=&Poule rankings with points and bonuses
+
+#pas_abandon1=&In "Match-by-match forfeits" mode, Engarde doesn't register abandonments.
+#pas_abandon2=&Give a victory to the competitor opposite the one who abandons.
+#pas_abandon3=&If the opposing competitor has N points and the abandoning competitor has P points and N>P, put these points.
+#pas_abandon4=&If the opposing competitor has N points and the abandoning competitor has P points and N<=P, 
+#pas_abandon5=&give P points to the competitor who abandons and P+1 points to the opposite competitor.
+
+#expli_forfait1=&In "Match-by-match forfeits" mode,  type f as score for a forfeit
+#expli_forfait2=&Engarde will put a victory on the opposing competitor.
+#expli_forfait_plus_de_2=&To put more than ^1 forfeits in a competitor's poule, use Engarde Main
+#expli_efface_score_aux=&To delete a score in a pool, it's better to use Engarde Main
+
+#modification_symetrique=&modification of the symmetrical
+#modification=&modification
+#verif_fait_modif=&The poule check made ^1 changes
+#imp_formu_points_bonus=&Print the formula to view point and forfeit parameters
+
+#points_V=&Number of points for a victory
+#points_D=&Number of points for a defeat
+
+#bonus_offensif=&Offensive bonus
+#expli_bonus_V=&The offensive bonus is noted "Bonus V" or "bv".
+#seuil_bonus_V=&Seuil de bonus offensif, TD-TR >=
+#points_bonus_V=&Points for an offensive bonus
+
+#bonus_defensif=&Defensive bonus
+#expli_bonus_D=&The defensive bonus is noted "Bonus D" or "bd".
+#seuil_bonus_D=&Defensive bonus threshold, TR-TD <=
+#points_bonus_D=&Points for a defensive bonus
+
+#seuil_forfait_total=&Total forfeit threshold
+#pas_seuil_forfait_total=&No total forfeit threshold
+#seuil_forfait_total_expli_1=&Type 4 for 4 forfeits to become a forfeit for the entire pool
+#seuil_forfait_total_expli_2=&Type 0 to have no total forfeit 
+
+============= 2023-09-14
+
+#verif_num_serie=&Checking competitor numbers for initial classification
+#num_serie_titre=&competitor numbers for initial ranking
+#sans_rang_apos=&without rank
+#mettre=&put
+#il_faut_mettre=&You have to put
+#les_non_classes=&unranked competitors
+#garder _rangs_autres=&and keep ranks for other competitors
+#certains_competiteurs=&some competitors
+#competiteurs_concernes=&competitors concerned
+#a_partir_de=&from
+#sur_de=&Are you sure you want
+#passe_no=&step number ^1
+#ancienne_methode=&old method
+#non_c_ok=&no, it's ok
+#battus_demis_exaequo=&The semi-final losers are tied

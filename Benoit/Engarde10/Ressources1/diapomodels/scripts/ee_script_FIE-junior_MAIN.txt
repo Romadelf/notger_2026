@@ -1,0 +1,46 @@
+(
+
+; show fencer at the beginning / on affiche les tireurs au début
+(if (state start) then (show list "ee_fencer_nation_flag.txt"))
+
+; show fencer at the beginning / on affiche les tireurs au début
+(if (state poules) (substate creation) (round 1) then (show list "ee_fencer_nation_flag.txt"))
+
+; show poules and temporary ranking during poules
+; on affiche les poules et le classement provisoire pendant les poules
+(if (state poules) then (show poule "ee_Poules1-nation_flag_rank6.txt"))
+
+; show ranking at the end of poules when the poules are finished and the tableau is not created
+; there will be at least one full display
+; on affiche le classeent à la fin des poules quand les poules sont terminées et que le tableau 
+; n'est pas encore créé. Il y a au moins un affichage complet.
+(if (state tableaux) (substate creation) then (show poule_ranking "ee_poules_rank_nation.txt" 1))
+
+; show the tableau 512 256 128 64 when it is ongoing
+; write ";" before the line when the tableau does not exist if you want to avoid error notifications
+; delete ";" before the line when the tableau exists to display the tableau
+; note that error notifications do not prevent to run the script
+
+; on affiche le tableau 512 256 128 64 quand il est en cours
+; écrire ";" en début de ligne quand le tableau n'existe pas pour éviter les messages d'erreurs
+; enlever ";" en début de ligne quand le tableau existe pour afficher le tableau
+; noter que les messages d'erreurs n'empêchent pas le script de fonctionner
+
+; (if (tableau a512 ongoing) then (show tableau "ee_a512-rank2.txt"))
+; (if (tableau a256 ongoing) then (show tableau "ee_a256-rank2.txt"))
+(if (tableau a128 ongoing) then (show tableau "ee_a128-rank2.txt"))
+(if (tableau a64 ongoing) then (show tableau "ee_a64-rank2.txt"))
+
+; now show the ongoing tableau and the previous one 
+; maintenant on affiche le tableau en cours et le précédent
+(if (tableau a32 ongoing) then (show tableau "ee_a64-rank2.txt"))
+(if (tableau a16 ongoing) then (show tableau "ee_a32-rank2.txt"))
+(if (tableau a8 ongoing) then (show tableau "ee_a16-rank2.txt"))
+(if (tableau a4 ongoing) then (show tableau "ee_a8-rank2.txt"))
+(if (tableau a2 ongoing) then (show tableau "ee_a4-rank8.txt"))
+
+; show the general ranking at the end
+; à la fin, on affiche le classement général
+(if (state finished) then (show general_ranking "ee_general-rank_nation_flag.txt"))
+
+)

@@ -1,0 +1,13 @@
+(def contexte
+  nomFichier contexte_fis.txt
+  federation "Federazione Italiana Scherma"
+  texte_ligue ligue
+  fichiers (ficclubs ficligues ficnations)
+  ficclubs {[type club] [chemin "clubs_fis.txt"] [info_champs ((code 1 10) (nom 11 5))]}
+  ficligues {[type ligue] [chemin "ligues_fis.txt"] [info_champs ((code 1 2) (nom 3 21))]}
+  ficnations {[type nation] [chemin "nations.txt"] [info_champs ((nom 3 3) (continent 5 3) (nom_etendu 9 20))]}
+  nationDesLigues "ITA"
+  zoneLigueDansCodeClub (1 2)
+)
+
+

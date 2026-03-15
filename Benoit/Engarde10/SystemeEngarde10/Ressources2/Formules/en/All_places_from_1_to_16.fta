@@ -1,0 +1,139 @@
+;31Direct tableau with all places from 1 to 16 fenced
+;Used in World Cup Seniors Formula - Teams
+{[classe suite_tableaux]
+ [critere_constitution classement_initial]
+ [hasard_par_2 oui]
+ [qualifies 0]
+ [nom "A"]
+ [nom_etendu "main tableau"]
+ [nom_tableaux "tableau of ^1"]
+ [origine1 "classement_initial 1-1000"]
+ [cle 1]
+}
+{[classe suite_tableaux]
+ [critere_constitution progression_naturelle]
+ [hasard_par_2 non]
+ [qualifies 0]
+ [nom "B"]
+ [cle 2]
+ [nom_etendu "tableau for 9th place"]
+ [nom_tableaux "tableau 9-16 of ^1"]
+ [origine1 "battus-tableau a16"]
+}
+{[classe suite_tableaux]
+ [critere_constitution progression_naturelle]
+ [hasard_par_2 non]
+ [qualifies 0]
+ [nom "C"]
+ [nom_etendu "tableau for 13th place"]
+ [nom_tableaux "tableau 13-16 of ^1"]
+ [origine1 "battus-tableau b8"]
+ [cle 3]
+}
+{[classe suite_tableaux]
+ [critere_constitution progression_naturelle]
+ [hasard_par_2 non]
+ [qualifies 0]
+ [nom "D"]
+ [nom_etendu "match for 15th place"]
+ [nom_tableaux "15th place"]
+ [origine1 "battus-tableau c4"]
+ [cle 4]
+}
+{[classe suite_tableaux]
+ [critere_constitution progression_naturelle]
+ [hasard_par_2 non]
+ [qualifies 0]
+ [nom "E"]
+ [nom_etendu "match for 11th place"]
+ [nom_tableaux "11th place"]
+ [origine1 "battus-tableau b4"]
+ [cle 5]
+}
+{[classe suite_tableaux]
+ [critere_constitution progression_naturelle]
+ [hasard_par_2 non]
+ [qualifies 0]
+ [nom "F"]
+ [nom_etendu "tableau for 5th place"]
+ [nom_tableaux "tableau 5-8 of ^1"]
+ [origine1 "battus-tableau a8"]
+ [cle 6]
+}
+{[classe suite_tableaux]
+ [critere_constitution progression_naturelle]
+ [hasard_par_2 non]
+ [qualifies 0]
+ [nom "G"]
+ [nom_etendu "match for 7th place"]
+ [nom_tableaux "7th place"]
+ [origine1 "battus-tableau f4"]
+ [cle 7]
+}
+{[classe suite_tableaux]
+ [critere_constitution progression_naturelle]
+ [hasard_par_2 non]
+ [qualifies 0]
+ [nom "H"]
+ [nom_etendu "match for 3rd place"]
+ [nom_tableaux "3rd place"]
+ [origine1 "battus-tableau a4"]
+ [cle 8]
+}
+
+; ===========================
+
+{[classe multi_affichage]
+ [nom "T32"]
+ [nom_etendu "Tableau 32"]
+ [liste_tab_a_imp ( ((a32 a32)) )]
+ [max_min (32 17)]
+ [global vrai]
+ [cle 1]
+}
+
+{[classe multi_affichage]
+ [nom "T64-32"]
+ [nom_etendu "Tableaux 64-32"]
+ [liste_tab_a_imp ( ((a64 a32)) )]
+ [max_min (64 33)]
+ [global vrai]
+ [cle 2]
+}
+
+{[classe multi_affichage]
+ [nom "T128-32"]
+ [nom_etendu "Tableaux 128-32"]
+ [liste_tab_a_imp ( ((a128 a32)) )]
+ [max_min (128 65)]
+ [global vrai]
+ [cle 3]
+}
+
+{[classe multi_affichage]
+ [nom "T16ALL"]
+ [nom_etendu "All matches from T16"]
+ [liste_tab_a_imp ( ((a16 a2 b8 b2) (h2 e2)) ((c4 c2 d2 d2)) ((f4 f2 g2 g2)) )]
+ [global vrai]
+ [cle 4]
+}
+
+{[classe multi_affichage]
+ [nom "T16_et_battus"]
+ [nom_etendu "Tableau 16 and losers"]
+ [liste_tab_a_imp ( ((a16 a2 b8 b2) (h2 e2)) )]
+ [cle 5]
+}
+
+{[classe multi_affichage]
+ [nom "T13-16_5-8"]
+ [nom_etendu "Tableaux 13-16 and 5-8"]
+ [liste_tab_a_imp ( ((c4 c2 d2 d2)) ((f4 f2 g2 g2)) )]
+ [cle 6]
+}
+
+{[classe fichier_web] [fichier "tableau16.htm"] [depuis "a16"] [jusqua "a2"] [rang 1] [cle 1]} 
+{[classe fichier_web] [fichier "tableau4.htm"] [depuis "c4"] [jusqua "c2"] [rang 1] [cle 4]} 
+{[classe fichier_web] [fichier "tableau4.htm"] [depuis "f4"] [jusqua "f2"] [rang 2] [cle 7]} 
+{[classe fichier_web] [fichier "tableau64-32.htm"] [depuis "a64"] [jusqua "a32"] [rang 1] [cle 8]} 
+

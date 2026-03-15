@@ -1,0 +1,4 @@
+{[type list] [classedebase tireur] [champs_info_select (marge_gche nation1 club1
+ nomprenom presence serie date_nais)] [champs_info_taille (17 51 40 120 57 42 73)]
+ [champs_info_format (0 100 "Times New Roman" 10 0 0 16777215 10 10 10 10 10)] [selection_select
+ tous] [ordre_select ordre_structure] [tempo 6] [grille grille] [ajustement 1]}

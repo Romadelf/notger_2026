@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE BaseCompetitionIndividuelle> 
+<BaseCompetitionIndividuelle 
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  ID="902691"
+  Championnat="OphardtTeamSportevent"
+  Annee="2025/2026" 
+  Arme="S" 
+  Sexe="M" 
+  Category="Senior"
+  Class="" 
+  Domaine="R" 
+  Date="15.03.2026" 
+  TitreCourt="Tournoi Notger" 
+  Titrelong="Tournoi Notger" 
+  DateFichierXML="15.03.2026 07:39:06">
+  
+<Classements>
+</Classements>
+<Tireurs>
+<Tireur ID="537694" IDNat="" Ophardt_ID="537694" Nom="Bosch" Prenom="Vittorio" DateNaissance="01.01.2008" Sexe="M" Lateralite="D" Licence="" Club="" Ligue="" Nation="NED" Classement="99999" Points="" Attente="N" Ordre="" Payer="N" />
+<Tireur ID="418675" IDNat="" Ophardt_ID="418675" Nom="Dalla Vecchia" Prenom="Matteo" DateNaissance="07.10.2009" Sexe="M" Lateralite="D" Licence="" Club="CE Embourg" Ligue="FF" Nation="BEL" Classement="99999" Points="" Attente="N" Ordre="" Payer="N" />
+<Tireur ID="530997" IDNat="" Ophardt_ID="530997" Nom="Decortis" Prenom="Robert" DateNaissance="20.08.1959" Sexe="M" Lateralite="D" Licence="" Club="CE Embourg" Ligue="FF" Nation="BEL" Classement="99999" Points="" Attente="N" Ordre="" Payer="N" />
+<Tireur ID="465583" IDNat="" Ophardt_ID="465583" Nom="Gilles" Prenom="Laurent" DateNaissance="17.08.1990" Sexe="M" Lateralite="D" Licence="" Club="CRE Sauvenière" Ligue="FF" Nation="BEL" Classement="99999" Points="" Attente="N" Ordre="" Payer="N" />
+<Tireur ID="92817" IDNat="" Ophardt_ID="92817" Nom="Jacques" Prenom="Philippe" DateNaissance="19.01.1995" Sexe="M" Lateralite="G" Licence="" Club="SC Parcival Leuven" Ligue="VS" Nation="BEL" Classement="99999" Points="" Attente="N" Ordre="" Payer="N" />
+<Tireur ID="415776" IDNat="" Ophardt_ID="415776" Nom="Legrand" Prenom="Gauthier" DateNaissance="30.03.1993" Sexe="M" Lateralite="D" Licence="" Club="SC Parcival Leuven" Ligue="VS" Nation="BEL" Classement="99999" Points="" Attente="N" Ordre="" Payer="N" />
+<Tireur ID="430275" IDNat="" Ophardt_ID="430275" Nom="Leroux" Prenom="Lionel" DateNaissance="16.04.1988" Sexe="M" Lateralite="G" Licence="" Club="Sabre Noir" Ligue="FF" Nation="BEL" Classement="99999" Points="" Attente="N" Ordre="" Payer="N" />
+<Tireur ID="416206" IDNat="" Ophardt_ID="416206" Nom="Van Durme" Prenom="Loïc" DateNaissance="03.12.1980" Sexe="M" Lateralite="D" Licence="" Club="CRE Sauvenière" Ligue="FF" Nation="BEL" Classement="99999" Points="" Attente="N" Ordre="" Payer="N" />
+<Tireur ID="417774" IDNat="" Ophardt_ID="417774" Nom="Van Hecke" Prenom="Duarte" DateNaissance="11.08.2004" Sexe="M" Lateralite="G" Licence="" Club="CE Les 3 armes" Ligue="FF" Nation="BEL" Classement="99999" Points="" Attente="N" Ordre="" Payer="N" />
+<Tireur ID="344844" IDNat="" Ophardt_ID="344844" Nom="Vanquaethoven" Prenom="Brecht Pierrot" DateNaissance="07.03.2000" Sexe="M" Lateralite="G" Licence="" Club="SC Parcival Leuven" Ligue="VS" Nation="BEL" Classement="99999" Points="" Attente="N" Ordre="" Payer="N" />
+</Tireurs>
+<Arbitres>
+ <Arbitre ID="199121" Ophardt_ID="199121" Nom="Delrée" Prenom="César" DateNaissance="30.12.1949" Licence="" Club="CRE Sauvenière" Ligue="FF" Nation="BEL"  Sexe="M" Categorie="N" />
+ <Arbitre ID="205452" Ophardt_ID="205452" Nom="Terlinden" Prenom="Jacques" DateNaissance="19.07.1958" Licence="" Club="CRE Sauvenière" Ligue="FF" Nation="BEL"  Sexe="M" Categorie="Da" />
+ <Arbitre ID="144989" Ophardt_ID="144989" Nom="Van Loon" Prenom="Norbert" DateNaissance="29.11.1960" Licence="" Club="FEE Eupen" Ligue="FF" Nation="BEL" Club2="SC Parcival Leuven" Ligue2="VS" Nation2="BEL" Sexe="M" Categorie="N" />
+</Arbitres>
+</BaseCompetitionIndividuelle> 

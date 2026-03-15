@@ -1,0 +1,30 @@
+The .fta files describing formulas are loaded when formulas are loaded. These files are:
+- in the Resources2\Formules\fr directory for the provided formulas described in French
+- in the Resources2\Formules\en directory for the provided formulas described in English
+- in the Resources1\mesFromules directory for personal formulas
+
+It is possible to record as a model the current formula of a competition. It is saved in the Resources1\mesFormules directory
+
+.fta files are editable with a text editor. Their modification is delicate. It is necessary to test the modifications on simulations and when the suite_tableaux or the description_tableau have been modified, check that the overall ranking of a simulated competition is correct.
+
+The .fta formula description files can contain four kinds of entities.
+All entities have a "classe" that must be one of four types, for example: [classe suite_tableaux]
+All entities have a "cle" that must be an integer. All "cle" of the same "classe" must be different.
+
+Lines beginning with a semicolon are comments ignored at loading. Lines of this type at the beginning of the file are displayed when one wants to choose a formula (maximum three).
+
+1) suite_tableaux are mandatory and visible in the "Formula" tab of Engarde
+
+2) description_tableau are optional, they allow to assign specific names to tableaux. When they are absent, the description_tableau are built by Engarde. They are visible in the "Formula" tab of Engarde
+
+3) multi_affichage allow to place several tableaux in the same document. They are used with the "Document" button on the "Tableaux" tab and the "These tableaux" item. These entities are not visible in Engarde. It is only possible to add or modify them in .fta files Examples:
+[liste_tab_a_imp ( ((a256 a64)) )]   for a document showing tableau a256 to tableau a64
+[liste_tab_a_imp ( ((b8 b8)) ((c8 c8)) ((d8 d2)))]  for a document showing tableau b8 then tableau c8 then tableau d8 to tableau d2
+[liste_tab_a_imp ( ((c4 c2 d2 d2)) )] for a document showing tableau c4 to tableau c2 and on its left tableau d2 to tableau d2 (losers of c4 are in d2)
+
+[liste_tab_a_imp ( ((a16 a2 b8 b2) (h2 e2)) )]  for a document showing tableau a16 to tableau a2 and on its left tableau b8 to tableau b2 (losers of b16 are in b8) then below, on the right tableau h2 (losers of tableau a4) and on the left tableau e2 (losers of tableau b4). Put() instead of h2 if you don't want h2 and you want e2
+[liste_tab_a_imp ( ((a16 a2 b8 b2) (h2 e2)) ((c4 c2 d2 d2)) )] to put together the tableaux of the two previous descriptions. 
+
+4) the web_files allow to place several tableaux in the same web file. They are used with the "Web" button on the "Tableaux" tab and the "Publish the tableaux on the web" item. These entities are visible and modifiable in Engarde with the "Web" button of the "Tableaux" tab and the "Defines webfiles of tableaux" item.
+
+

@@ -1,0 +1,4 @@
+{[type tableau] [classedebase tireur] [champs_info_select (marge_gche rang num nomprenom
+ drapeau)] [champs_info_taille (16 70 57 517 96)] [champs_info_format (0 98 "Arial"
+ 36 16777215 2 8388608 2 2 22)] [tempo 6] [de a8] [a a4] [piste 1] [avec_nom vrai] [nomsur10 vrai]
+ [nombrematches 2] [jusquaurang 64] [lignes 8] [avec_clasmt vrai] [ajustement 0]}

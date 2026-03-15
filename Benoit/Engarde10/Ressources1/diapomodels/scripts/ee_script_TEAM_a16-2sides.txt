@@ -1,0 +1,5 @@
+(
+
+(if then (show tableau "ee_team_FIE_a16-2sides.txt"))
+
+)

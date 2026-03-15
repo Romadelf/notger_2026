@@ -1,0 +1,4 @@
+{[type list] [classedebase arbitre] [champs_info_select (marge_gche nomprenom presence
+ club1 nation1 date_nais)] [champs_info_taille (17 120 63 40 51 73)] [champs_info_format
+ (0 100 "Times New Roman" 10 0 0 16777215 10 10 10 10 10)] [selection_select tous]
+ [ordre_select ordre_alpha] [tempo 6] [grille grille] [ajustement 1]}

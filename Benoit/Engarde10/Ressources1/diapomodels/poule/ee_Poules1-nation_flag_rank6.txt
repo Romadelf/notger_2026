@@ -1,0 +1,5 @@
+{[type poule] [classedebase tireur] [champs_info_select (marge_gche rangg nomprenom
+ drapeau nation1 grille_feuille marge1 vic_match indice td groupeg matches)] [champs_info_taille
+ (16 79 276 81 109 441 16 111 100 100 156 147)] [champs_info_format (0 100 "Arial"
+ 28 16777215 2 8388608 2 2 22)] [tempo 6] [tour 100] [de 1] [a 1000] [nbpoulespage
+ 1] [avec_noms_champs vrai] [lignes 6] [avec_clasmt vrai] [ajustement 1] [nomsur10 vrai]}

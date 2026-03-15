@@ -1,0 +1,16 @@
+Pour personnaliser l'écran de transition de DiapoEngarde, aussi appelé Logo, il est possible de placer une bannière en haut et en bas de cet écran.
+
+La bannière du haut doit être un fichier JPEG et s'appeler TopScreenTransition.jpg
+La bannière du bas doit être un fichier JPEG et s'appeler BottomScreenTransition.jpg
+ 
+Ces deux fichiers doivent être placés dans le répertoire Ressources1\diapomodels\banners
+
+Il est possible de ne mettre que l'un des deux.
+
+avec un écran de largeur 1280 pixels :
+- pour la bannière du haut, la largeur conseillée est 1280 et la hauteur conseillée est 409
+- pour la bannière du bas, la largeur conseillée est 1280 et la hauteur conseillée est 204
+
+Les dimensions optimales sont affichées dans DiapoEngarde par le menu "Logo/Taille des bannières" de la fenêtre principale.
+
+Un exemple est fourni dans le répertoire Ressources1\diapomodels\banners\example

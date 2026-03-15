@@ -1,0 +1,93 @@
+;20Formule avec repêchage à partir de 16
+;Tableau final de 8 avec 4 qualifiés direct et 4 repêchés
+{[classe suite_tableaux]
+ [critere_constitution classement_initial]
+ [hasard_par_2 non]
+ [qualifies 4]
+ [nom "A"]
+ [nom_etendu "tableau principal"]
+ [nom_tableaux "tableau de ^1"]
+ [origine1 "classement-initial 1-1000"]
+ [cle 1]
+}
+{[classe suite_tableaux]
+ [critere_constitution progression_naturelle]
+ [hasard_par_2 non]
+ [qualifies 4]
+ [nom "B"]
+ [nom_etendu "battus du tableau de 16"]
+ [nom_tableaux "battus du tableau de 16"]
+ [origine1 "battus-tableau A16"]
+ [cle 2]
+}
+{[classe suite_tableaux]
+ [critere_constitution classement_initial_par_groupes]
+ [hasard_par_2 non]
+ [qualifies 4]
+ [nom "C"]
+ [nom_etendu "tableau D"]
+ [nom_tableaux "tableau D de ^1"]
+ [origine1 "battus-tableau A8"]
+ [origine2 "vainqueurs-suite B"]
+ [cle 3]
+}
+{[classe suite_tableaux]
+ [critere_constitution classement_initial_par_groupes]
+ [hasard_par_2 non]
+ [qualifies 0]
+ [nom "D"]
+ [nom_etendu "tableau final"]
+ [nom_tableaux "tableau final de ^1"]
+ [origine1 "vainqueurs-suite A"]
+ [origine2 "vainqueurs-suite C"]
+ [cle 5]
+}
+
+; ===========================
+
+{[classe multi_affichage]
+ [nom "T256"]
+ [nom_etendu "Tableau 256-256"]
+ [liste_tab_a_imp ( ((a256 a256)) )]
+ [max_min (1024 129)]
+ [global vrai]
+ [cle 1]
+}
+
+{[classe multi_affichage]
+ [nom "T128-32"]
+ [nom_etendu "Tableau 128-32"]
+ [liste_tab_a_imp ( ((a128 a32)) )]
+ [max_min (1024 33)]
+ [global vrai]
+ [cle 2]
+}
+
+{[classe multi_affichage]
+ [nom "T16-8"]
+ [nom_etendu "Tableau 16-8"]
+ [liste_tab_a_imp ( ((a16 a8 b8 b8)) )]
+ [global vrai]
+ [cle 4]
+}
+
+{[classe multi_affichage]
+ [nom "R8"]
+ [nom_etendu "Repêchage"]
+ [liste_tab_a_imp ( ((c8 c8)) )]
+ [global vrai]
+ [cle 5]
+}
+
+{[classe multi_affichage]
+ [nom "Tfinal"]
+ [nom_etendu "Tableau final"]
+ [liste_tab_a_imp ( ((d8 d2)) )]
+ [global vrai]
+ [cle 6]
+}
+
+{[classe fichier_web] [fichier "tableau256.htm"] [depuis "a256"] [jusqua "a32"] [rang 1] [cle 1]} 
+{[classe fichier_web] [fichier "tableau16.htm"] [depuis "a16"] [jusqua "a8"] [rang 1] [cle 3]} 
+{[classe fichier_web] [fichier "tableauRepech.htm"] [depuis "c8"] [jusqua "c8"] [rang 1] [cle 4]} 
+{[classe fichier_web] [fichier "tableau8.htm"] [depuis "d8"] [jusqua "d2"] [rang 1] [cle 5]} 

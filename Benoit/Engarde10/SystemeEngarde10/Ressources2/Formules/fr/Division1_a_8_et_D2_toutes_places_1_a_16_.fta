@@ -1,0 +1,92 @@
+;50On fait une 1re Division avec les tireurs de rangs 1 à 8 et une 2e Division avec les tireurs de rangs supérieurs à 8
+;On tire toutes les places de 1 à 16
+;On classe les tireurs de Division 1 avant ceux de division 2
+{[classe suite_tableaux]
+ [critere_constitution classement_initial]
+ [hasard_par_2 non]
+ [qualifies 0]
+ [nom "A"]
+ [nom_etendu "tableaux Division 1"]
+ [nom_tableaux "tableau D1 de ^1"]
+ [origine1 "classement_initial 1-8"]
+ [cle 1]
+}  
+
+{[classe suite_tableaux]
+ [critere_constitution progression_naturelle]
+ [hasard_par_2 non]
+ [qualifies 0]
+ [nom "B"]
+ [cle 2]
+ [nom_etendu "tableau pour la 5e place"]
+ [nom_tableaux "tableau 5-8 de ^1"]
+ [origine1 "battus-tableau a8"]
+}
+
+{[classe suite_tableaux]
+ [critere_constitution progression_naturelle]
+ [hasard_par_2 non]
+ [qualifies 0]
+ [nom "C"]
+ [nom_etendu "tableau pour la 7e place"]
+ [nom_tableaux "tableau pour la 7e place"]
+ [origine1 "battus-tableau b4"]
+ [cle 3]
+}
+
+{[classe suite_tableaux]
+ [critere_constitution progression_naturelle]
+ [hasard_par_2 non]
+ [qualifies 0]
+ [nom "D"]
+ [nom_etendu "tableau pour la 3e place"]
+ [nom_tableaux "tableau pour la 3e place"]
+ [origine1 "battus-tableau a4"]
+ [cle 4]
+}
+
+
+{[classe suite_tableaux]
+ [critere_constitution classement_initial]
+ [hasard_par_2 non]
+ [qualifies 0]
+ [nom "E"]
+ [nom_etendu "tableaux Division 2"]
+ [nom_tableaux "tableau D2 de ^1"]
+ [origine1 "classement_initial 9-1000"]
+ [cle 5]
+}  
+
+{[classe suite_tableaux]
+ [critere_constitution progression_naturelle]
+ [hasard_par_2 non]
+ [qualifies 0]
+ [nom "F"]
+ [cle 6]
+ [nom_etendu "tableau pour la 5e place D2"]
+ [nom_tableaux "tableau D2 5-8 de ^1"]
+ [origine1 "battus-tableau e8"]
+}
+
+{[classe suite_tableaux]
+ [critere_constitution progression_naturelle]
+ [hasard_par_2 non]
+ [qualifies 0]
+ [nom "G"]
+ [nom_etendu "tableau pour la 7e place D2"]
+ [nom_tableaux "tableau pour la 7e place D2"]
+ [origine1 "battus-tableau f4"]
+ [cle 7]
+}
+
+{[classe suite_tableaux]
+ [critere_constitution progression_naturelle]
+ [hasard_par_2 non]
+ [qualifies 0]
+ [nom "H"]
+ [nom_etendu "tableau pour la 3e place D2"]
+ [nom_tableaux "tableau pour la 3e place D2"]
+ [origine1 "battus-tableau e4"]
+ [cle 8]
+}
+

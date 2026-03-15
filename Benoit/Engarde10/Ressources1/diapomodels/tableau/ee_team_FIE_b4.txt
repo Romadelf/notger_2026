@@ -1,0 +1,4 @@
+{[type tableau] [classedebase equipe] [champs_info_select (marge_gche num nom drapeau)] 
+[champs_info_taille (8 43 333 116 100)] [champs_info_format (0 100 "Arial"
+ 35 16777215 2 8388608 2 2 28)] [tempo 8] [de b4] [a b2] [piste 0] [avec_nom vrai]
+ [nombrematches 4] [jusquaurang 0] [lignes 0] [ajustement 0]}

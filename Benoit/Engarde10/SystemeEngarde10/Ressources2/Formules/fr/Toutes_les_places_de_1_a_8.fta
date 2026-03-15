@@ -1,0 +1,83 @@
+;30Tableau direct avec tirage de toutes les places de 1 à 8
+{[classe suite_tableaux]
+ [critere_constitution classement_initial]
+ [hasard_par_2 oui]
+ [qualifies 0]
+ [nom "A"]
+ [nom_etendu "tableau principal"]
+ [nom_tableaux "tableau de ^1"]
+ [origine1 "classement_initial 1-1000"]
+ [cle 1]
+}
+
+{[classe suite_tableaux]
+ [critere_constitution progression_naturelle]
+ [hasard_par_2 non]
+ [qualifies 0]
+ [nom "B"]
+ [nom_etendu "tableau pour la 5e place"]
+ [nom_tableaux "tableau 5-8 de ^1"]
+ [origine1 "battus-tableau a8"]
+ [cle 2]
+}
+{[classe suite_tableaux]
+ [critere_constitution progression_naturelle]
+ [hasard_par_2 non]
+ [qualifies 0]
+ [nom "C"]
+ [nom_etendu "match pour la 7e place"]
+ [nom_tableaux "7e place"]
+ [origine1 "battus-tableau b4"]
+ [cle 3]
+}
+{[classe suite_tableaux]
+ [critere_constitution progression_naturelle]
+ [hasard_par_2 non]
+ [qualifies 0]
+ [nom "D"]
+ [nom_etendu "match pour la 3e place"]
+ [nom_tableaux "3e place"]
+ [origine1 "battus-tableau a4"]
+ [cle 4]
+}
+
+; ===========================
+
+{[classe multi_affichage]
+ [nom "T16"]
+ [nom_etendu "Tableau de 16"]
+ [liste_tab_a_imp ( ((a16 a16)) )]
+ [max_min (16 9)]
+ [global vrai]
+ [cle 1]
+}
+
+{[classe multi_affichage]
+ [nom "T32-16"]
+ [nom_etendu "Tableaux 32-16"]
+ [liste_tab_a_imp ( ((a32 a16)) )]
+ [max_min (32 17)]
+ [global vrai]
+ [cle 2]
+}
+
+{[classe multi_affichage]
+ [nom "T64-16"]
+ [nom_etendu "Tableaux 64-16"]
+ [liste_tab_a_imp ( ((a64 a16)) )]
+ [max_min (64 33)]
+ [global vrai]
+ [cle 3]
+}
+
+{[classe multi_affichage]
+ [nom "T8_et_battus"]
+ [nom_etendu "Tableau de 8 et battus"]
+ [liste_tab_a_imp ( ((a8 a2 b4 b2) (d2 c2)) )]
+ [cle 4]
+}
+
+
+{[classe fichier_web] [fichier "tableau128-16.htm"] [depuis "a128"] [jusqua "a16"] [rang 1] [cle 1]} 
+{[classe fichier_web] [fichier "tableau8.htm"] [depuis "a8"] [jusqua "a2"] [rang 1] [cle 2]} 
+

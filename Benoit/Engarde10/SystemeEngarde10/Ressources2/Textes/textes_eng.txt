@@ -1,0 +1,3017 @@
+#textes_engarde=English/English; English texts of 20/8/2019
+
+This file contains the texts of ENGARDE. It can be translated into another language.
+For this:
+* modify the first line:
+  - keep: "#textes_engarde="
+  - write after the name of the language in the language itself then "/"
+  - write after the name of the language in English then ";"
+  - write after the name of the translator and the date day/month/year
+* then translate the lines starting by # 
+
+A line starting with # and containing = describes a text, otherwise it's a comment
+which is ignored when loading.
+The part between # and = is the symbol that should not be modified.
+The part after = is the body of the text to be translated into your language.
+
+For some texts, we also give a reduced version
+we use the same symbol with% at the end
+example:
+normal text: #categorie=catégorie
+reduced text: #categorie%=cat
+
+It is recommended to write the text in lower case. ENGARDE takes in charge for uppercase
+in general.
+
+******************************************************************************
+
+Somes sentences have places denoted ^1 or ^2 which are replaced by a number or a word by ENGARDE 
+example:  #tour_no=tour No ^1
+
+******************************************************************************
+
+In several sentences, ENGARDE manages genders and numbers.
+First example: international[/e|s/es]
+between [] there are several way to complete the word:
+"|" separates numbers: singular|plural
+"/" separates gender: male/female
+
+In some sentences, ENGARDE manages genders and numbers related to a place:
+example:  #elimine=^1 éliminé[1|/e|s/es]
+the gender and number will be this of the word replacing ^1 because of 1| after [
+
+******************************************************************************
+
+The gender of some words is indicated with (f) ou (m) before the word
+example:  #competition=(f)compétition[|s]
+
+******************************************************************************
+
+THE SENTENCES TO BE TRANSLATED HAVE A & AFTER =
+example: #tour_no=&tour No ^1
+It helps to search the sentences to be translated
+REMOVE THE & WHEN YOU TRANSLATE A SENTENCE
+
+******************************************************************************
+
+Indicate here if the language uses latine letters (write oui or non)
+When non is written, the texts are not modified:
+- no transformation in upper/lower case
+- no suppression of spaces, no gender or number consideration.
+Texts must be written without [ / | ] and without (f) and (m)
+but ^ must be kept
+
+#alphabet_latin=oui
+
+Indicate below if you want Engarde manage upercase for title or not
+
+#majuscules_automatiques=oui
+
+Indicate here the size of the labels for the input windows when you want a fixed size.
+0 means automatic size (use it for latin languages)
+another value is the precise size in pixels, usually between 100 and 200 (use it for 
+Chinese for example).
+
+#size_of_label=0
+
+******************************************************************************
+                        COMPETITION
+
+#competition=(f)competition[|s]
+#parametres=parameters
+#parametres_principaux=main parameters
+#individuelle=individual[/|s/s]
+#par_equipes=team
+#type_compe=competition type
+#national=national[/|s/s]
+#international=international[/|s/s]
+#domaine_compe=competition domain
+#arme=weapon
+#fleuret=foil
+#epee=epee
+#sabre=sabre
+
+#organisateur=(m)organiser
+#liveURL=Live results URL
+#videoURL=Video URL
+#URLorganisateur=organiser URL
+#lieu=competition location
+#federation=(f)federation
+#titre_reduit=(m)short title
+#texte=text
+#titreCourtTournoi=short tournament title
+#titreLongTournoi=tournament title
+
+#titre_ligne=title on one line
+#titre_diapo=DiapoEngarde title
+
+#titre1=title: line 1
+#titre2=title: line 2
+#titre3=title: line 3
+#titre4=title: line 4
+
+
+******************************************************************************
+
+                       THE ENTITIES OF THE TABLES
+
+All entities have a name
+for fencers and referees, the name is the last name, e.g., DUPONT
+#nom=(m)name[|s]
+
+The nations have a name in 3 letters and a full name
+#nom_etendu=(m)full name[|s]
+
+Entities have affiliations (club, nation ...)
+#affiliation=affiliation
+#affiliation_possible=(f)possible affiliation[|s]
+
+For fencers, referees and teams
+#presence=(f)presence
+#presence%=(f)pres
+#present=present
+#present%=P
+#absent=absent
+#absent%=A
+#touspresents=All present
+#tousabsents=All absent
+#absentpardefaut=absent by default
+#presentpardefaut=present by default
+
+For fencers and referees
+#sexe=(m)sex[|s]
+#sexe%=(m)sex[|s]
+les adjectifs associés [homme/dame|hommes/dames] ACCORDES AVEC LE MOT SEXE
+#masculin=male
+#masculin%=M
+#feminin=female
+#feminin%=F
+
+#categorie=category
+#categorie%=cat
+#veteran=veteran[/|s/s]
+#veteran%=V
+
+#veteranA=veteran[/|s/s]A
+#veteranA%=VA
+#veteranB=veteran[/|s/s]B
+#veteranB%=VB
+#veteranC=veteran[/|s/s]C
+#veteranC%=VC
+
+#veteran1=veteran[/|s/s]1
+#veteran1%=V1
+#veteran2=veteran[/|s/s]2
+#veteran2%=V2
+#veteran3=veteran[/|s/s]3
+#veteran3%=V3
+#veteran4=veteran[/|s/s]4
+#veteran4%=V4
+#senior=senior[|s]
+#senior%=S
+#junior=junior[|s]
+#junior%=J
+#cadet=cadet[/|s/s]
+#cadet%=C
+#minime=minime[|s]
+#minime%=M
+#benjamin=benjamin[/|s/s]
+#benjamin%=B
+#pupille=pupille[|s]
+#pupille%=P
+#poussin=poussin[|s]
+#poussin%=O
+
+for clubs, leagues, nations
+#effectif=available
+
+***********
+FENCERS
+
+#tireur=fencer[/|s/s]
+
+prenom is first name
+#prenom=(m)first name[|s]
+#prenom%=(m)f. name
+#nomprenom=(m)name[|s] and first name[|s]
+#nomprenom%=(m)name[|s]
+#date_nais=(f)date[] of birth
+#date_nais%=(f)d.o.b.
+#licence_fie=(f)FIE licence
+#licence_fie%=(f)FIE lic.
+#cle=key
+#licence=(f)licence[|s]
+#licence%=(f)lic.
+#dossard=(m)mask number[|s]
+#dossard%=(m)mask nos.
+#serie=fencer/team number
+#serie%=number
+#points=(m+)points
+#points%=(m+)pts
+#rang=(m)ranking
+#rang%=(m)rank
+#rang_init=initial rank
+#rang_init%=i.r.
+#nb_poules=number of poules
+#nb_poules%=poules
+#nb_matches=number of matches
+#nb_matches%=matches
+#nb_finales=nbre of finales
+#nb_finales%=finales
+
+#groupe=group
+#groupe%=grp
+#vic_match=victory/match
+#vic_match%=V/M
+#vic=victories
+#vic%=V
+#def=defeats
+#def%=D
+#points_a_bonus=points
+#points_a_bonus%=pt
+#bonus=bonus
+#bonus%=bon
+#indice=indicator
+#indice%=ind.
+#td=hits scored
+#td%=HS
+#tr=hits received
+#tr%=HR
+#bonus_v=bonus V
+#bonus_v%=bv
+#bonus_d=bonus D
+#bonus_d%=bd
+#phase=phase
+#no=Num
+#rnd=Rnd
+#phase_incomplete=phase ^1 incomplete
+#passe_phase_suiv=move to the next phase
+
+***********
+
+#equipe=(f)team[|s]
+#serie_eq=(m)fencer number
+#points_eq=(m+)points
+
+***********
+
+#club=(m)club[|s]
+
+#ville=town
+
+#departement=department[|s]
+
+#ligue=region[|s]
+
+#etat=State[|s]
+
+#region=Region[|s]
+
+#nation=countr[y|ies]
+
+***********
+
+#arbitre=(m)referee[|s]
+
+******************************************************************************
+
+#formule=(f)formula[|e]
+#formu_compe=formula of the competition
+#pas_de_poule=this formula does not include poules
+#pas_de_tableau=this formula does not include direct elimination
+#pas_fini_poules=the poules are not complete
+#clasmt_origine=original ranking
+#tour_poules=^1 poules: round[1||s]
+#nombre_tireurs=number of fencers
+#nombre_tours_poules=number of rounds of poules
+#qual_fin_poules_sur=number of rounds for qualification
+#clas_fin_poules_sur=number of rounds for ranking
+#qual_fin_poules_sur_x=qualification at the end of the poules on ^1 round[1||s] 
+#clas_fin_poules_sur_x=ranking at the end of the poules on ^1 round[1||s]  
+#nombre_touches_poules=number of hits in matches in the poules
+#nombre_touches_tableaux=number of hits in matches in the direct elimination
+
+#max_touches=maximum number of hits
+#matches_en=matches of ^1 hit[1||s]
+#dans_poules=in the poules
+#nombre_suites_tableaux=number of phases of the direct elimination
+#tire_3e=3rd place will be fenced
+#formule_poules=formula for the poules
+#formule_tableaux=formula for the direct elimination
+#tour_no=round No ^1
+#suite_tab_no=phase No ^1 of the direct elimination
+#trop_exemptes=there are too many exempt fencers
+#trop_poules=there are too many poules
+#trop_qualifies=there are too many qualified fencers
+#trop_tireurs=there are too many fencers
+
+#bar_exemptes=barrage for exemptions
+
+#modifier_valeurs=change values
+#nb_change=the number of ^1 has changed
+#revoir_formule=the formula must be checked
+#au_depart=^1 at the start
+#exempte=^1 exemption[1|/|s/s]
+#il_faut=you must
+#exemptes=exemptions
+#non_exemptes=^1 non exempt
+#pas_decalage=no separation
+#decalage_par=separation by
+#limite_a=restricted to ^1
+#qualifies=qualifiers
+#qualifie=^1 qualifier[1|/|s/s]
+#elimines=eliminated
+#elimine=^1 eliminated
+#par_poule=^1 by  poule
+#a_l_indice=^1 by indicators
+#a_la_fin=^1 at the end
+
+#remp_auto_pou=automatic completion of the poules
+#simu=to run the simulation
+#est_fait=is complete
+#rien_faire=do nothing
+
+#poules_finies=poules completed
+#compe_finie=competition ended
+#on_en_est=you are currently at
+#const_poules=create the poules
+#ameliorer_poules=First pass not optimal, try to improve?
+#const_tableau=creation of the tableau
+#saisie_poule=enter the poules
+#remplissageauto=automatic completion
+#feuilles_pou=poule sheets
+#poules_const=constitution of the poules
+#poules_resu=results of the poules
+#poules_a_saisir=^1 poule[1||s] to enter
+#tableaux_a_saisir=^1 tableau[1||x] to enter
+#matches_a_saisir=^1 match[1||es] to enter
+#matches_a_imp=^1 match[1||es] to print
+#poules_a_imp=^1 poule[1||s] to print
+#imp_toutes_pou=print all poules
+#imp_des_pou=print certain poules
+#de_poule=from poule
+#a_poule=to poule
+#poule_saisie=this poule has already been entered
+#grille=grid
+#imp_match_de=print the matches of
+#imp_match_attente_de=print the pending matches for
+
+#refaire_poules=redo the poules
+#refaire_tableau=redo the tableau
+#refaire_poules_tno=redo the poules of round No ^1
+#poules_tno=poules of round No ^1
+#revenir_tour=go back to the previous round
+#revenir_tour_no=go back to round No ^1
+#modif_scores=change all the scores
+#modif_raz=re-enter the poule deleting the previous data
+#modif_poule_int=would you like to modify this poule
+#repartition_poule=separation in the poules
+
+#toutes_saisies=the poules are all entered
+#bar_dans_poule=there is a barrage in the poule
+#qual_poule=^1 qualifier[1||s] in the poule
+#pas_qual_poule=NON qualifiers in the poule
+#qual_indice=^1 qualifier[1||s] by indicators
+#y_a_barrage=there is a barrage
+#poules_saisies=^1 poule[1||s] [1|has|have] been entered
+
+#perdre=would you like to discard this
+#perdre_tab=would you like to discard the tableaux
+
+#numero=number
+#numero%=No
+#total_tireurs_depart=fencers at the start
+#nombre_exemptes=exemptions
+#tireurs_dans_poules=fencers in the poules
+#tireurs_dans_tableau=fencers in the tableau
+#nombre_poules=number of poules
+#tireurs_par_poule=number of fencers per poule
+#critere_decal_1=separation criteria 1
+#critere_decal_2=separation criteria 2
+#critere_decal_3=separation criteria 3
+#critere_placement=place in the poules by
+#limite_decal=limit of separation
+#qualifies_par_poule=number of qualifiers per poule
+#qualifies_indice=number of qualifiers by indicators
+#total_tireurs_fin=fencers at the end
+#total_tireurs_depart%=fencers at the start
+#nombre_exemptes%=exemptions
+#tireurs_dans_poules%=in the poules
+#tireurs_dans_tableau%=in the tableau
+#nombre_poules%=no poules
+#tireurs_par_poule%=no per poule
+#critere_decal_1%=criteria 1
+#critere_decal_2%=criteria 2
+#critere_decal_3%=criteria 3
+#critere_placement%=poule placement
+#limite_decal%=separation limit
+#qualifies_par_poule%=qualifiers/poule
+#qualifies_indice%=qualifiers/indicators
+#qualifies%=qualifiers
+#total_tireurs_fin%=fencers end
+
+#qualif_tour=qualification for round No ^1
+
+******************************************************************************
+                       LES POULES
+
+#deroulement=Control
+
+#poule=(f)poule[|s]
+#poules=(f)poules
+#x_poule=^1 poule[1||s]
+#x_poule_de=^1 (f)poule[1||s] of ^2
+#x_poule_de_ou=^1 (f)poule[1||s] of ^2 or ^3
+#sais_poules=entry of the poules
+#sais_matches=entry of the matches
+#sais_scores=entry of the scores
+#sais_pistes=entry of the pistes
+#sais_arbitres=entry of the referees
+#sais_horaires=entry of the times
+#sais_piste_arbi=entry of the pistes and the referees
+#modif_poules=modify the poules
+#poule_no=poule No ^1
+#match_no=match No ^1
+#piste_no=piste No ^1
+#piste=(f)piste[|s]
+#piste%=P.
+#pas_bon_no_pou=is not a correct poule number
+#pas_bon_no_match=is not a correct match number
+#pas_bon_tab=is not a tableau
+#lettre_et_nombre=a letter and number are needed
+#reordonne=re-order the poule
+#garde_ordre=keep this order
+#ajout_tir_pas_ds_pou=add a fencer absent from the poules
+#les_tireurs=the fencers
+#enleves_poules=removal from the poules
+#meme_heure_piste=same hour, same piste
+
+******************************************************************************
+
+#tableau=(m)tableau[|x]
+#tableaux=tableaux
+#ces_tableaux=these tableaux
+#tableau_de=tableau of ^1
+#tableau_prelim_de=prelimenary tableau of ^1
+#tableau_prince_de=main tableau of ^1
+#tableau_phase_de=tableau "phase ^1" of ^2
+#tableau_final=final tableau
+#demi_finales=semi-finals
+#finale=final
+
+******************************************************************************
+
+#classement=(m)ranking[|s]
+#classements=rankings
+#classement_des=ranking of ^1
+#classement_apres_pou=ranking at the end of the poules
+
+******************************************************************************
+
+#nouv_compe=new competition
+#ouvrir_compe=open competition
+#fermer_compe=close competition
+#sauvegarde=backup
+
+#faire_fic_trans=transfer file
+#fic_trans_FFF=FFF transfer file
+
+#fic_resu=creation of a results file
+#activiteArbitres=referee activities
+#avec_series=with fencer number
+#avec_rangs=with ranking
+#du_rang=from ranking
+#au_rang=to ranking
+#in_tab_indiv=In tableaux of individual competitions
+#ref1_match=referee 1 is match referee
+#ref23_assistants=referees 2 3 are assistants
+#in_team=In team competitions
+#ref123_match=referees 1 2 3 are match referees
+
+#enreg_compe=Create a competition
+#chargement=load
+#prepa_tables=preparing tables
+#prepa_affi=preparing listings
+#ecraser=delete ^1
+#pas_sur_elle=you cannot copy a competition onto itself
+
+#copie_de=copy of ^1
+#choix_rpla=or select another competition to overwrite it
+#rep_pas_cree=the directory ^1 has not been created
+
+#modif_de=modification of ^1
+#val_convient_pas=response not valid
+#pour_cela=to do that
+#arriere=you must return to a previous stage
+#dans_tableaux=in the tableaux
+#valeur_initiale=initial value
+#pas_encore_tab=tableau not started
+
+******************************************************************************
+
+#table=(f)table[|s]
+#tri=sort
+
+#fiche=(f)file[|s]
+#edition=entry
+#curseur_init=default field
+#colonne1fixe=column 1 fixed
+
+#import_fiche=import file
+#importer=import
+#importer_tous=import all
+#effacer_champ=blank the field
+#effacer_fiche=blank the file
+
+#precedent=previous
+#suivant=next
+#premier=first
+#dernier=last
+#symetrique=symmetric value
+
+#nouveau=new
+#saisir=input
+#saisie=entry
+#saisir_affil=enter affiliation
+#modifier=modify
+#chercher=search
+#chercher_compe=search in the competition
+#chercher_res=search in memory
+#chercher_fic=search in file
+#fermer=close
+#suite=continue
+#enregistrer=save
+#enregistrement=saving
+#quitter=quit Engarde
+#justequitter=quit
+#retour_Engarde=go back to Engarde
+#retour_init=return to initial state
+#maximum=maximum
+#vic_score=victory with score
+
+#victoire=victory
+#defaite=defeat
+#abandon=abandonment
+#exclusion=exclusion
+#forfait=forfeit
+#medical=medical
+#pblack=Pblack
+#sortie_except=Exceptional exit
+#verif_sortie_except=Do you want to check for exceptional exits before
+#abandon_med_expli=Abandonment for medical reason
+#abandon_tech_expli=Abandonment for technical reason
+#exclusion_expli=Exclusion (disciplinary reason)
+#forfait_expli=Forfeit (not present at their first match of the competition)
+#pblack_expli=Defeat for non-combativity
+#faire_saisie_dans_poule=Do this modification in the poule
+#faire_saisie_dans_tableau=Do this modification in the tableau
+#modif_impossible=Impossible modification
+
+juste one latin letter for each symbol, not x, not w, all different
+#victoire%=v
+#defaite%=d
+#abandon%=a
+#exclusion%=e
+#forfait%=f
+#pblack%=p
+
+#dns=DNS
+#dnf=DNF
+#exc=EXC
+#ncb=NCB
+
+#efface_sym=symmetric removal
+#sym_pas_defaite=the symmetric pair is not a defeat
+#sym_pas_vic=the symmetric pair is not a victory
+#vic_inf_defaite=victory with a score smaller than the defeat
+
+#navigation=move
+#meme_champ=same field
+#premier_champ=first field
+#oblige=you must give a ^1
+
+#deja_table=is already in the table
+#on_prend_a_la_place=will take the place of
+#on_a_ici=and we have here
+
+  ^1 will be replaced by a number, ^2 by fencer or club
+#il_y_a=^1 [1|^2]
+
+  ^1 will be replaced for example by ranking
+#existe_pas=th[1|is|ese] ^1 do[1|es/es|/] not exist
+
+  ^1 will be replaced by fencers, rounds of poules...
+#nombre_de=number of ^1
+#ajouter=add
+#supprimer=delete
+#suppress=suppress
+#suppress_x=deletion of ^1 [1|^2]
+#pas_supp=you cannot delete
+#car_compe=as [he/she|they/they] [is|are] in the competition
+#car_util=as this ^1 [1|is|are] used by
+
+#sur_premiere=first record
+#sur_derniere=last record
+#taper_deb=enter the start of the name
+
+#agglomerer=merge
+#agglo_x=merging of ^1 [1|^2]
+
+******************************************************************************
+
+#recherche=search
+#commencant_par=starting with
+#contenant=containing
+#exacte=exact
+#approchee=resembles
+
+#chercher_un=search [1|a/a|some/some] ^1
+#chercher_autre=search [1|another/another|more/more] ^1
+#resultat=the result is
+
+******************************************************************************
+
+#oui=yes
+#oui%=y
+#non=no
+#non%=n
+#vrai=true
+#vrai%=t
+#faux=false
+#faux%=f
+#ok=ok
+#annuler=cancel
+#aide=help
+#pas_aide=help not found
+#pas_fic=file not found
+#generalites=general options
+#contexte=context
+
+#et=and
+#ou=or
+#date=(f)date
+#zonehoraire=time zone
+#au_lieu_de=instead of
+#repart_parfaite=perfect separation
+#n_imperfect=^1 imperfection[1||s]
+
+#exemple=(m)example[|s]
+#signature=signature[|s]
+#pas_saisie=no input
+#dbclick=double click
+#use_menu=use menu ^1
+#liste_vide=empty list
+#liste_des=list of ^1
+
+#reserve=memory
+#charger=load
+#vider=empty
+#fichier=(m)file[|s]
+ ^1 will be replaced by file or competition
+#est_de_genre=the ^1 is of type ^2
+#on_charge_fic=load the file of ^1
+#chargt_de=loading the ^1
+#entites_chargees=^1 [1|^2] loaded in memory
+#entites_reserve=^1 [1|^2] in memory
+#reserve_vide=memory is empty
+#on_importe=loading ^1 [1|^2] into the competition
+#reste_importer=there remain to import:
+
+#essai_trans=test of format "DOS transfer"
+#prem_ligne=the first line gives
+#est_fic_a_charger=is this the file to import
+#pas_type_connu=file type not known
+
+#page=(f)page[|s]
+#marge=(f)margin[|s]
+
+#concerne_tir=about the fencer[s/s]
+#concerne_tir_pres=about the fencer[s/s] present
+#concerne_arbi=about the referees
+#concerne_arbi_pres=about the referees present
+#tous=all
+#ordre=order
+#ordre_alpha=alphabetic order
+#ordre_structure=structured order
+#ordre_serie=ordered by fencer numbers
+#ordre_rang_init=ordered by initial ranks
+#ordre_points=ordered by points
+#ordre_rang=ordered by ranking
+#ordre_club=ordered by clubs
+#ordre_ligue=ordered by regions
+#ordre_etat=ordered by states
+#ordre_CID=ordered by CID
+#ordre_region=ordered by regions
+#ordre_nation=ordered by nations
+#ordre_ID=ordered by ID
+#ordre_licence=ordered by licences
+#ordre_licence_fie=ordered by FIE licences
+#ordre_status=ordered by status
+
+#selection=selection
+#reglages_imp=print settings
+#rub_a_imp=fields to print
+#document=report
+#document_global=global report
+#contenu=contents
+#police=font settings
+#mise_en_page=print setup
+#imprimer=print
+#ajuster=adjust
+
+#non_modifiable=this entity is not modifiable
+#non_modifiable_now=this is not modifiable now
+#anomalie=anomaly
+#termine=complete
+#termine_sans_AR=Completed without AK
+#vide=empty
+#preparation=being prepared
+#en_cours=in progress
+
+#dans=in
+#match_non_lance=match not issued
+#match_a_un=this match has only one fencer who has therefore has a bye
+#match_deja_saisi=match already entered
+#jour=day[|s]
+#heure=(f)hour[|s]
+#heure_debut=start time
+#pas_vainqueur=no winner
+#vainqueur=winner
+#pb_match_suiv1=this match previously had a different winner
+#pb_match_suiv2=who has already fenced the next tableau
+#quand_meme_enreg=do you still want to enter this result
+#pb_match_suiv3=who has already been placed in the tableau of the next phase
+#refaire_tab_suiv=you must redo the tableau for the next phase
+
+#refaire=do you want to redo
+#modif=do you want to modify
+
+#clas_init_du_tab=initial ranking for the tableau phase
+#tab_fin=the tableau is complete
+#clas_du_tab=ranking of the tableau
+#clas_des_tab=ranking of all tableaux
+#clas_gene=overall ranking
+#tir_en_lice=fencers still in competition
+#medaille=medal
+#medailles=medals
+#or=gold
+#argent=silver
+#bronze=bronze
+
+#de=from
+#a=to
+#depuis=from
+#jusqua=to
+
+#hasard_par_2=draw at random in groups of 2
+#echange_2=^1 permutation[1||s] of 2 fencers out of ^2
+
+#permut_gpe2=permutations of fencers by groups of 2
+
+#chge_formu_tab=the formula of the tableaux has changed
+#on_cree=create
+#on_conserve=leave unchanged
+#attention=warning
+#type_formule=types of formula
+#formu_classique=classic formula
+#formu_fie_seniors=formula for World Cup - Seniors
+#formu_fie_juniors=formula for World Cup - Juniors
+#autre_formule=other formula
+#choix_npoules=select the number of rounds of poules
+#choix_ntab=select the number of phases of tableaux
+
+#tous_tir_avec_series=all fencers with fencer number
+
+#en_lice_avec_rangs=fencers still in competition with ranking
+#clas_gene_avec_rangs=results: final ranking
+
+#saisir_pistes=enter pistes
+#saisir_heures=enter times
+#feuilles_ma_attente=pending match sheets
+#feuilles_ma=match sheets
+#detail_rencontres=Details of bouts
+#rencontres_encours=One ongoing bout
+#plusieurs_rencontres_encours=Several ongoing bouts
+#tableauetpistes=tableaux and pistes
+#const_tab=create a tableau
+#refaire_tab=redo a tableau
+#bad_taille_tab=the size of tableau is no good
+
+for percentages, one will obtain, for example: 20% makes 34
+#fait=^1% gives ^2
+#on_peut_faire=one can do
+#divers=miscellaneous
+#ordre_special=special match order
+#couleur=colour
+
+#information=information
+#confirmation=confirmation
+#question=question
+#choix=choice
+#nouveautes=new features
+
+#est_absent=^1 is absent
+#nouveau_tir=^1 new fencer[1||s]
+
+#supp_tour=remove from this round
+#prend_pas=include within this round
+
+#est_ce_ok=confirm ok
+
+#des_absents=these fencers are absent
+#bon_nb_exemptes=define the number of exempt fencers
+
+#je_modifie=I change
+#il_y_a_tir_dans_tab=^1 fencer[1||s] in the tableau
+#nb_qualifies=number of qualifiers
+
+#status=status
+#normal=normal
+
+#par_abandon=by abandonment
+#par_exclusion=by exclusion
+#par_forfait=by forfeit
+#par_nbc=by non-combativity
+
+example: Dupont has the status exclusion
+#a_pour_status=^1 has the status of ^2
+
+#faire_formu_tableau=define the formula for the tableaux
+#mettre_qual_suite=create the qualifiers at the end of tableau number ^1
+#ou_supp_suite=or ou suppress the production of tableau number ^1
+
+#modif_incoherences=I correct the inconsistencies
+#nb_tir_approx=approximate number of fencers
+#plus_deux_tours_tab=it is extremely rare to have more than two phases of tableaux
+
+#creation_annulee=creation cancelled
+#repechage=repechage
+#poule_incomplete=incomplete poule
+#deux_fois_clas=^1 is in the ranking twice
+#deux_fois_poule=^1 is twice in the poules
+#pas_dans_poule=^1 is not in the poules
+#met_tir_abs=mark these fencers absent
+
+#deja_ouverte=This competition is already open or readonly,
+#pasOuvrir2efois=you cannot open it twice.
+
+#options=options
+#avec_affil=with affiliation prompt
+#sans_affil=without affiliation prompt
+#avec_contraintes_statut=status WITH constraints (recommended)
+#sans_contraintes_statut=status WITHOUT constraints (NOT recommended)
+#use_option_tt_poss=Use the option menu to have all the possibilities. 
+#quand_meme_dans_tab=He will still be placed in a tableau because he must be classified.
+#mettre_abandon_match=Put him Abandonment in the match.
+#avec_menu_choix=with choice boxes
+#sans_menu_choix=without choice boxes
+#fermer_ouvrir_panneau=The panel must be closed and reopened
+
+#non_qual=^1 non qualifier[1||s]
+
+#non_exemp=Error: ^1 exempt fencer[1||s] [1|is|are] not marked exempt in the file
+#non_places=Error: there [1|is|are] ^1  fencer[1||s] not placed
+
+#cherche_fic=search for file ^1
+#fic_existe_pas=file ^1 does not exist
+#peux_pas_lire=cannot read file ^1 
+#rep_existe_pas=the directory does not exist
+#voir_fichier_svg=See the menu File/Backup
+#fic_pas_charge=file ^1 not loaded
+#charge_essai=has been loaded at try # ^1
+#fic_non_trouve=file not found : ^1
+
+#est_deja_table=^1 is already in the table
+#que_fait_on_de=what to do
+#on_prend_pas=reject
+#on_ajoute_pas=do not add
+#on_le_prend=take it?
+
+#tirage_auto=automatic randomisation
+#tirage_manuel=manual randomisation
+#on_echange=swap
+#interligne=line spacing
+#coef_interligne=enter the line spacing in percentage, normal = 100
+
+#fic_pas_cree=the file ^1 has not been created
+
+#base_dossard=allocate as mask number the creation number offset by
+#mettre_dos=allocate mask numbers
+#ne_pas_mettre_dos=do not allocate mask numbers
+#efface_dos=erase mask numbers
+
+#vouloir_copie_permente=would you like to keep a permanent up to date copy
+#fic_existe=the file ^1 already exists
+#lecture_seule=read only
+#enreg_copie=save the copy of the competition
+
+#est_copie1=this competition is a copy
+#PerteStatutCopie=if you open the file, it will loses the status of being a copy
+#nePasOuvrir=DO NOT open this competition
+#OuvrirCetteCompe=open this competition
+
+#avec_copie=work with a copy in ^1
+#plus_copie=the copy is no more accessible
+
+#entree_progressive=progressive entry
+#ajustement_tour=modification of round No ^1
+#entree_nouv_tir=entry of new fencers
+
+#elidir=direct elimination
+#type_elidir=form of direct elimentation
+#classique=classic
+#avec_exemptes=with exemptions
+#complexe=complex
+#pasTableau=no tableau
+
+#pas_change_type_elidir=you cannot modify the form of direct elimination now
+
+#type_3e_place=type of 3rd place
+#a_indice=on indicators
+#ex_aequo=equal
+#par_match=by match
+
+#formu_avec_ex=formula with exemptions
+#formule_avec_prog=formula with progressive entry
+#ni_ex_ni_prog=no exemptions, no progressive entry
+
+#avec=with ^1
+#sans=without ^1
+#choisir=select : ^1
+#special=special
+#remiseZero=reset
+#raz_formule=erase the formula
+#champ_non_modifiable=this field cannot be modified
+
+#assistant=assistant[|s]
+#assistant_de=assistant of ^1
+#choix_general=general option[|s]
+
+#tir_pas_pris=^1 fencer[1||s] not entered
+#eq_pas_pris=^1 team[1||s] not entered
+#nouvelle_eq=^1 new team[1||s]
+#changer_statut=to make a modification, refuse the creation and change the status.
+
+#si_fermer=if you close now
+#on_ferme=close
+#nb_approx=approximate number of ^1
+#ent_dans_poules=^1 in poules
+#ent_par_poule=^1 per poule
+#ent_dans_tableau=^1 in the tableau
+
+#equi_en_lice=teams still in competition
+#concerne_eq=about the teams
+#concerne_eq_pres=about the teams present
+#attrib_equipe=allocate a team to someone who does not have one
+#on_prend=take ^1
+#entite=entit[y|ies]
+
+#nom_une_lettre=name and one letter
+
+#origine1=origin 1
+#origine2=origin 2
+#origine3=origin 3
+#origine4=origin 4
+#origine5=origin 5
+#origine6=origin 6
+
+#progression_naturelle=natural progression
+#classement_initial_par_groupes=initial ranking by groups
+#classement_initial=initial ranking
+#critere_constitution=criteria for constitution
+
+#tour_de_poules=round[|s] of poules
+#nom_tableaux=name of the tableaux
+#suite_tableaux=phase[|s] of tableaux
+#description_tableau=description[|s] of tableau[|x]
+
+#description_modele=description of template
+#enregister_modele=save as template
+#charger_modele=load a template
+#chargerFormule=load a formula
+#sur_changer_formu=are you certain you want to change the formula
+
+#classique_sans3=classic without match for 3rd place
+#classique_avec3=classic with match for 3rd place
+
+#tab_dir_sans3=direct elimentation without match for 3rd place
+#tab_dir_avec3=direct elimentation with match for 3rd place
+
+#tableau_direct=direct elimination
+#tableau_prelim_32ex=preliminary tableau with 32 exemptions
+#tableau_prince64=main tableau of 64
+#tableau_place_n=tableau for ^1th place
+#match_troisieme_place=match for third place
+#troisieme_place=third place
+#neme_place=^1th place
+#quart_finales=quarter-finals
+
+#prelim_et_ppal=Prelimenary tableau with 32 exemptions and a main tableau
+
+#non_supprimable=this entity may not be erased
+
+#err_formu_tab=error in the formula of the tableaux
+#nom_tab_err=name of phase of tableau incorrect
+#nom_tab_dupli=duplicate name for phase of tableau
+#pas_org=no origin
+#org_err=type of origin incorrect in
+#val_err=value incorrect in
+#doit_etre=must be
+#doit_etre_forme=must be in the form
+#lettre_etant_suite=the letter being the name of the phase of tableau
+#suite_inconnue=phase of tableau unknown
+#tab_incorrect_inconnu=tableau unknown or incorrect
+#circu_tab=looping in the phases of tableaux
+#suites_ok=the correct phases are
+
+#err_qualifes=bizarre number of qualifiers
+#zero_puis2=usually, it is 0, 1, 2, 4, 8, 16, 32 ...
+
+#pas_tir_tab=the fencers of the original ranking are not in the tableaux
+#tir_tab2fois=the fencers of the original ranking are not in the tableaux twice
+
+#dest_vain_dupli=the winners of ^1 are in two phases of tableau
+#dest_bat_dupli=the losers of ^1 are in two phases of tableau
+
+#classe_apres=ranked after
+#destination_vainqueurs=destination of the winners
+#destination_battus=destination of the losers
+#groupe_clasmt_battus=ranking group of the losers
+#rang_premier_battu=ranking of 1st loser
+#groupe_clasmt_vainqueur=ranking group of winner
+#rang_premier_vainqueur=ranking of winner
+
+#classe_apres%=rank after
+#destination_vainqueurs%=dest winner
+#destination_battus%=dest loser
+#groupe_clasmt_battus%=rank gp loser
+#rang_premier_battu%=rank 1st loser
+#groupe_clasmt_vainqueur%=rank gp loser
+#rang_premier_vainqueur%=rank 1st winner
+
+#calcul_tableaux=calculate the tableaux
+#calcul_groupes_clas=recalculate the groups for the final ranking
+
+#avertissement=warning
+#modif_suites=modify the phases of tableaux
+#modif_suites_expli1=when you modify the phases of tableaux
+#modif_suites_expli2=the tableaux are completely recalculated
+#modif_destination=modification of the destinations of tableaux
+#modif_destination_expli1=when you modify the destinations of tableaux
+#modif_destination_expli2=the ranking groups are recalculated
+#modif_gpe_clas=modification of ranking groups
+#modif_gpe_clas_expli1=when you modify the ranking groups
+#modif_gpe_clas_expli2=the first ranking of the groups is recalculated
+
+#creation_de=creation of ^1
+#creation_1er_tab=creation of first tableau
+#suppr_du_tableau=removal of tableau ^1, renamed ".old"
+#pas_tab_en_cours=there is no tableau in progress
+#pas_tab_a_faire=there is no tableau to create
+
+#barrage_tableau=barrage at ranking ^1 for entry into a tableau
+#garde_rang=^1 fencer[1||s] or team[1||s] keep this rank
+#se_classe_apres=are ranked after
+#formule_prevue=the formula is planned for ^1
+#tableau_prevu=this tableau is planned for ^1
+
+#pas_tab_refaisable=there is no tableau to redo
+#tab_a_refaire=tableau to redo
+
+#gpe_clas_diff=two ranking groups ^1 have different 1st rankings, ^2 and ^3
+
+#pas_match_en_cours=there is no match in progress
+#cherche_match=search for a match
+#les_matches_de=view the matches of ^1
+#en_cours_contre=match in progress against ^1
+#gagne_contre=match won against ^1
+#perdu_contre=match lost against ^1
+#match_perdu=match lost
+#rec_adversaire=search for an opponent
+#pas_adversaire=no opponent
+#score_trop_grand=score too high
+
+#erreur_ecrire=error in writing file
+#on_ressaye=let us retry
+#ressayer=RETRY
+
+#rangPoule=ranking in the poule
+#rangPoule%=rk poule
+
+#tableau_inacheve=formula with incomplete tableau
+#nombre_exemptes_tab=number of exemptions in the tableau
+#nb_qualifies_tab=number of qualifiers from the tableau
+
+#on_limite_dec=limit the separation to ranking ^1
+#pour_les_tir=For the fencers from ranking 1 to ^1
+#on_dec_pas_plus=no separation further than ^1
+#on_dec_plus=separation eventually further than ^1
+
+#premier_est=the first ^1 of the list is ^2
+#premier_doit_etre=^1 to place first in the file
+
+#faire_sauvegarde=backup
+#echec_sauvegarde=backup failed
+#echec_ouverture=opening failed
+
+#importer_un=import one
+#importer_certains=import range
+
+#documentation=documentation
+
+#plusieurs_pou_arbi=give several poules to a referee
+
+#criteres_arbitres=criteria for allocating the referees
+#affectation_manu=manual allocation
+#affectation_auto=automatic allocation
+#affectation_arbi=allocation of referees
+#pour_n_tab=for the ^1 tableaux starting at ^2
+#affectation_arbi_quarts=allocation of referees by quarter of tableau
+#reprise_arbitres=redo the referees for the quarters of:
+#raz_arbitres=erase the allocation of referees
+#tableauetarbitres=tableaux and referees
+#continuer_alloc=Continue current allocation
+#faire_new_alloc=Do a new allocation
+#video_to_non=Video referees are made non-video
+#non_annul_alloc=Say No to cancel allocation
+#ya_n_arbi=there are ^1 referees in the ^2
+
+#pas_arbitre=no referee
+#plus_arbitre=no more referees
+#toutes_pou_arbi=all poules have a referee
+
+#pas_arbi_ds_match=there is no referee for a match in progress
+#pas_match_sans_arbi=there is no match in progress without a referee
+
+#exempte1=exemption[|s]
+#qualifie1=qualifier[|s]
+#abandon1=abandonment
+#elimine1=eliminated
+#exclusion1=exclusion
+#forfait1=forfeit
+#exempte1%=ex
+#qualifie1%=Q
+#abandon1%=A
+#elimine1%=E
+#exclusion1%=xx
+#forfait1%=F
+#exempte_ou_hors=exempt or out-of-competition
+
+#infoRepertoires=Information on directories...
+#CopiePermanente=copy with permanent updates...
+#echec_copie=copy has failed
+#rempla_copie=overwrite the copy ^1
+#capitaine=captain[|s]
+#prem_dossard=start the mask numbers at
+#faire_FicSpecial=Special file
+#faire_FicSwissTiming=SwissTiming MTS600 file
+#faire_FichierKabcom=Kabcom file
+
+#ordre_interne=ordered by internal number
+
+#champ_mesure=the field ^1 measure ^2 cm
+#limite_champ=is limited to ^1 cm
+
+#equipe_a=the team ^1 has ^2 fencers
+#equipe_devrait=it should have 3 or 4 fencers
+#permuter=permutation
+#erreur_equipe=Error, team :
+#rang_haut_bas=Use numbers 1, 2, 3 on the top, 4, 5, 6 on the bottom
+#rangs_manquants=Numbers are missing
+#rang_duplique=duplicate number
+#rang_incorrect=incorrect number
+#melange_rang=Mix between ranks 1,2,3 and 4,5,6 in a team
+#mettre_rang123=Put 1, 2, 3, R to a team
+#mettre_rang456=Put 4, 5, 6, R to the other team
+
+#score=score
+#sc=sc.
+#touche=hit[|s]
+
+#demi_grille=half-grid
+#grille_rencontre=bout grid
+
+#remplacant=substitute
+#rempla_equipe=substitution in team ^1
+#num_match_remplacement=number of the match where the substitution occurs
+#zero_pas_remplacement=give 0 for no substitution
+
+#Feuille_rencontre=bout sheets
+#rencontres=bouts
+#rencontre_a_score=^1 bout[1||s] ha[1|s|ve] detailed scores
+#rencontres_tableau=bouts of tableau ^1
+#scores_detailles=detailed scores
+#score_final=final score
+
+#XML=XML
+#HTML=HTML
+#faire_document=make a document
+#faire_fichier=make a file
+#plusieurs_tableaux=several tableaux
+
+#Tableau_en_fichier_HTML=tableaux in HTML file
+#Poules_en_fichier_HTML=poules in HTML file
+
+#produit_deja_tire=the constitution of the tableau produces ^1 match[1||es] already fenced
+#decale_deja_tire=avoid already fenced matches?
+#pas_decale=cannot separate ^1
+#deja_tire=already fenced match
+#decalage=separation 
+#traitement=treatment
+#mais_aussi=but there is also
+
+#dans_ordre=order of the numbers
+#pret_decouper=ready to cut, ^1 per page
+
+#exporter_table=export to a text file
+#importer_table=import from a text file
+#essai_texte=trying the text format
+#pas_ligne1=delete the first line
+#ignore=ignored
+
+#calcul_serie=Calculate the teams numbers
+#calcul_points=Calculate the teams points
+#calcul_serie_de_tireurs=Recalculate the teams numbers with the fencers numbers
+#calcul_points_de_tireurs=Recalculate the teams points with the fencers points
+#faire_avec_table_eq=Please do that in the team table
+#tireur_sans=fencer without ^1
+#fiche_equipe=Team form
+#attribution_eq=allocate teams
+
+#resultats_provisoires=temporary results
+#charger_pistes_heures=load pistes and time
+#pas_tableau_actif=^1 is not an active tableau
+
+#paiement=payment
+#mode=mode
+
+#equipes_select=the selected teams
+#toutes_equipes=all the teams
+#ordre_matches=match order
+#equipe_adverse=opponent team
+
+#essai_groupement=Try to group referees on two successive matches?
+#echec_groupement=The grouping of ^1 failed
+#autre_tableau=Another tableau?
+#pas_creation_poules=The poules are not created
+
+******************************************************************************
+      the new texts of January 1rt, 2004 (version 8.1)
+******************************************************************************
+
+#id=identification
+#idtournoi=identifier of the tournament
+#annee=year
+#regional=regional
+#local=local
+#championnat=championship
+#fic_trans_XML=XML transfer file
+#fic_XML_resu=XML results file
+#a_partir_fic_xml=from an XML file
+#fic_xml_pour_comp=XML to create competition
+#conv_utf8_vers=Conversion of an XML file with UTF-8 encoding to
+ Below, do not translate DOCTYPE
+#doctype_incorrect=incorrect DOCTYPE
+#doctype_correct_sont=correct types are:
+#entitesGen_chargees=^1 entit[1|y|ies] loaded in memory
+#affecte_pistes_heures=Allocation of pistes and hours
+#verification_pistes_heures=Checking pistes and hours
+#Feuille_rencontre_non_faite=the bout sheet has not been done
+
+#SansLicence=^1 has no FIE licence number
+#doublonLicence=same FIE licence 
+#SansID=^1 has no ID
+#doublonID=same ID 
+#error_nation=^1 has an incorrect nation
+#tireursSansLicence=Some fencers/referees do not have an FIE licence number 
+#tireursSansID=Some fencers/teams/referees do not have an ID or have the same ID
+#tireursBadNation=Some fencers/teams/referees have an incorrect nation
+#DansCompeFIE=In FIE competitions, FIE licence numbers are obligatory
+#DansCompeFIE_ID=In FIE competitions, ID is obligatory
+#DansCompeFIE_nat=In FIE competitions, a correct nation is obligatory
+#CompleterFIE=Complete the FIE data now
+#ContinuerCompe=Continue the competition
+
+******************************************************************************
+      the new texts of March 27, 2004 (version 8.1)
+******************************************************************************
+
+#PasDeTireur=No fencer
+#NbMatchPP=number of matches per page
+#ToutesLesPoulesNarbi=All poules from ^1 to ^2 have ^3 referee[3||s]
+#ToutesLesPoulesSaisies=All poules from ^1 to ^2 are entered
+#arbitresPour=referees for
+#FaireAffectation=make the allocation?
+#MauvaiseAffecteArbi=Bad allocation of referees, matches #: 
+#ReprendArbi=USE AGAIN THE REFEREES OF 1/
+#affectation_arbi_8eme=allocation of referees by 1/8 of tableau
+#affectation_arbi_16eme=allocation of referees by 1/16 of tableau
+#matchesSansArbitre=matches without referee, make a new try
+#matchs_SansArbitre=^1 matches without referee
+#poules_SansArbitre=^1 poules without referee
+#pasDeFichier=no file
+
+#pas_commence=^1 fencers are set "Forfeit" because they did not start the competition
+
+#Restriction=Restrict
+#Restreindre1=Restrict a competition consists of keeping only certain fencers/teams
+#Restreindre2=by giving "Forfeit" status to others. For example, after one round of poule,
+#Restreindre3=to make a first division with fencers of rank 1 to 64 and a second division 
+#Restreindre4=with fencers of rank 65 to the end, first duplicate two times the competition
+#Restreindre5=(making 2 backups) then restrict a copy to  fencers of rank 1 to 64
+#Restreindre6=and the other to fencers of rank 65 to the end.
+#Restreindre7=This has to be done before the constitution of a round of poules 
+#Restreindre8=or the creation of a tableau.
+#Restreindre9=Do you want to restrict this competition now?
+
+#PlusTirEnCompe=There is no fencer in the competition
+#Ilya=There is 
+#tirEqEnCompe=fencers/teams in competition
+#gardeApartirRang=one keep from the rank
+#jusquAuRang=until the rank
+
+#suppressTousAbsents=Delete all absent persons
+
+******************************************************************************
+      the new texts of December 24, 2007
+******************************************************************************
+
+#id_reseau=network identifier
+#prendre_idsmart_pour_idreseau=Use the SMART ID as network identifier (recommended)
+#id_reseau_double=Note: Another competition has the same network identifier
+#fermer_cause_id_reseau=You must close the competition (its network identifier has changed)
+#modif_id_reseau1=Modification of the network identifier
+#modif_id_reseau2=The modification obliges to close and reopen the DiapoEngarde and Engarde Auxiliary competitions that are connected to this competition.
+#modif_id_reseau3=Do you want to modification the network identifier 
+
+#CreerRepSVG1=Creation of a directory for backups
+#CreerRepSVGno2=Creation of a 2nd directory for backups
+anciens à conserver
+#SupprRepSVG1=Delete the directory for backup files
+#SupprRepSVGno2=Delete the 2nd directory for backup files
+nouveaux
+#StopSVG1=Stop main backups
+#StopSVGno2=Stop 2nd backups
+
+#CreerRepSVG2=Choose the place.
+#no_backup=NO BACKUP
+#non_accessible=NOT ACCESSIBLE
+
+#ouvrir_der_compe=open last competition
+
+#affectation_2e_arbi=2nd referee allocation
+
+#colonnes=columns
+#entete=header
+#haut=top
+#bas=bottom
+
+#nomSur10=short name
+#drapeau=flag
+#drapeau%=flag
+#cadre_drapeau=Flags with frame
+
+#formule_conserve_tireurs=According to the formula, keep ^1 fencer[1||s].
+#conserve_tireurs=Keep ^1 fencer[1||s].
+#possible_conserver_autre=It is possible to keep a different number of fencers.
+#Selon_FIE_series=According to FIE rules, fencer numbers must be used.
+#series_entre_parentheses=Fencer numbers are written between parentheses.
+
+******************************************************************************
+      the new texts of July 8, 2008
+******************************************************************************
+
+#appliquer=Apply
+#mode_eng=Mode
+#reseau=Network
+#Listesessions=List of sessions
+#configuration=configuration
+#langue=language
+#Languedelaide=Language for help
+#done=Done
+
+#rep_appli=Application directory: 
+#rep_compe=Competition directory: 
+#rep_copie=Permanent copy directory: 
+
+exemple : par 1/4
+#par=by ^1
+#simple=simple
+
+#effacer=Clear
+#effacerFermer=Clear and close
+
+#web=Web
+#parametresFTP=FTP parameters
+#PublierlesTireurs=Publish the fencers on the web
+#PublierlaFormule=Publish the formula on the web
+#PublierClasGene=Publish the overall ranking on the web
+#PublierActiviteArbi=Publish the referee activities on the web
+
+#cles=Keys
+#VoirLesCles=See the keys
+#InstallerCle=Install a key
+#AcheterCle=Buy a key
+
+#EchecCreeFic=The creation of the file failed: ^1
+#PasModePro=The PRO mode has not been installed
+
+#analyseCles=Analysis of the keys
+#supprCle=Delete the key ^1
+#CleInvalide=Invalid key ^1
+#badNoMac=bad MAC number
+#badOrdi=bad computer
+#clePerimee=Out-of-date key
+#plus_tard=valid later
+#valide=valid
+#type_inconnu=unknown type
+
+#nlicencesValidesToDay=^1 valid licence[1||s] "^2" today
+#pasLicenceValideToDay=No valid licence "^1" today
+
+#IP_incorrect=Incorrect IP number
+#port_incorrect=Incorrect port number
+#pas_licence_valide_ici=There is no valid licence on this computer
+#chercher_licence_reseau=Search a licence on the network?
+#attente_response=Waiting an answer
+#plus_licence_disponible=No available licence
+#licence_disponible=Available licences
+#pas_reponse_recue=No answer
+#licenceAttribuee=Allocated licence
+
+#licence_jusquau=^1 valid Licence[1||s] "^2" until ^3
+#cle_en_double=Duplicate key
+
+#sessionsDisponibles=Available licences:  ^1
+#licenceObtenueDe=Licence of ^1 Ip=^2 Port=^3
+#il_reste=Déconnecté : ^1mn
+
+#session=session[|s]
+#Ip=IP number
+#port=Port
+#No_port=Reception UDP port
+#No_port_des_ordi=UDP port numbers of computers distributing licences
+#Appli=Application
+#ordinateur=Computer
+#cet_ordi_est=This computer is
+
+#cleAppli=key[|s]
+#lenombre=number
+#DateDebut=Start date
+#DateFin=End date
+#TypeCle=type
+#NoMac=MAC numbers - physical addresses
+#No_mac_cet_ordi=MAC numbers of this computer
+#pasDeNoMac0=Currently, there is no active network card
+#unMacSuffit=Remark: one valid MAC number is enough
+#config=Configuration
+#port_active=UDP port ^1 is activated.
+#port_non_active=UDP port ^1 has not been activated. It is probably already used.
+#pas_de_port=No reception UDP port is activated
+
+#pasDeNoMac=There is currently no active network card on this computer.
+
+#terminerSession=Terminate the session
+#ontermineSession=Terminate the selected session?
+
+#N_appli_connectees=There are ^1 connected session[1||s] of application[1||s]. 
+#quitterontModePRO=These applications will quit the PRO mode in 10mn.
+#enregistrerSessions=Save the sessions in order to recover them at the next launch of Engarde?
+
+#N_appli_connectees_avant=On exit of Engarde PRO, there was ^1 connected session[1||s] of application[1||s]. 
+#reprendreSessions=Recover these sessions?
+#N_sessions_out=^1 session[1||s] ha[1|s|ve] not been reinstalled.
+
+#passerModePro=Set PRO mode
+#quitterModePro=Quit PRO mode
+#passerModeFIE=Set FIE mode
+#quitterModeFIE=Quit FIE mode
+#FIEdemandePro=Setting FIE mode, requires being in PRO mode.
+
+#clesEtLicences=Keys and licences of this computer
+#sessionsAppli=Other network sessions using a licence of this computer
+
+#onsupprimelacle=Delete the selected key
+#supprimerPerimees=Delete the outdated keys
+
+#demande_licence=Ask for a licence
+#Ordi_distrib=Computers of the network distributing licences on this UDP port
+#un_Ordi_distrib=IP number of a computer distributing licences
+#ChercheOrdi=Search computers
+#CliquerOrdi=Click on a computer
+#DemanderLice=Ask this computer for a licence
+#DemanderLicePro=Ask for a licence PRO?
+#tapez_direct_ip=Input the IP number at the bottom.
+
+#jourOrdi=Computer date
+#jourReference=Reference date
+#jourReferenceUtilise=Date ^1 is used because this computer was used this day. In the case of an error, please make synchronization.
+#Synchronisation=synchronization
+#Synchroniser=Synchronize
+#ExlpiSynchro1=A synchronization consists in verifying the computer date with the Internet date.
+#ExlpiSynchro2=Set the computer to the right date, connect to the Internet, then click on the "Synchronize" button.
+
+#ErreurSynchro=Error during synchronization. Are you connected to the Internet?
+#SuccesSynchro=successful synchronization.
+#badDateOrdi=The computer date is incorrect.
+#DateOrdiEst=According to countries, the date is ^1, one day before or one day after.
+#reglerDateOrdi=Set the computer date then redo a synchronization.
+#recul_heure=The time of the computer has moved back. PRO mode is stopped.
+#perte_connexion=No connection with Engarde(PRO MAIN) for 10 minutes. PRO mode is stopped.
+#perte_connexion2=The connection with the competition (Engarde Main) is interrupted.
+#fin_licence=Some licences are just terminated. BASIC/PRO mode is stopped.
+#repasser_pro=You can set the PRO mode if there are valid licences.
+
+#gestionVersion=Version management
+#VersionNumero=Version number ^1
+#NumeroVersion=Version number
+#VersionNo=Version ^1
+#version0=When version number is 0, it is not printed on the document.
+#version1=Version number 1 corresponds to a normal unmodified document.
+#version2=Version number greater than 1 corresponds to a modified document.
+#ModifDepuisVersion=Modifications since this version
+#ModifToutes=All modifications
+#NumVersSuiv=Increase the version number
+#MAJversion=Set the version number to N
+#correction=CORRECTION
+#set_version=Move to version ^1
+#modif_resu_poule=Modification of completed poule number ^1
+#tableau_const=Tableau constitution
+#constitue=constitution
+#resultats=results
+#modif_resu_tab=Modification of a match of a completed tableau
+
+#pas_date=This competition has no date
+#pas_id_reseau=This competition has no network identifier
+#pas_ds_clasGene=Attention, qualified fencers of the last round of poules are not in the overall ranking.
+
+#ouv_fic_aff=Opening the file to be displayed
+#pas_copie_perm=There is no permanent copy
+#installer=Install one?
+#copie_non_active=INACTIVE permanent copy
+#activer=Activate?
+#echec_active_copie=FAILURE of permanent copy activation
+#install_autre=Install another?
+#copie_active=ACTIVE permanent copy
+#conserver=Keep it?
+
+#imp_match=print the matches
+#imp_ma_toutes_pou=print the matches of all these poules
+#imp_ma_des_pou=print matches of certain poules
+#PasResultat=No ongoing results
+#FaireFicWeb=Make a Web file
+#maintenant=now
+
+#Autorisation_retour=Backtrack permission
+#Objet=Object 
+#Motivation=Motivation
+#pourquoi=Explane why 
+#SignaturePtDT=Signature of the president of the technical directory
+#document_signe=Has the backtrack document been signed?
+#imprimer_et_signer=Print and have the document signed.
+
+#historiqueDesRetours=Journal of backtracks
+#DT=Technical directory
+#fournir_composition=Give the list of the technical directory
+
+#participant=participant[|s]
+#victoires_matches=victories/matches
+#lateralite=laterality
+#droite=right
+#gauche=left
+#centre=center
+#inconnu=unknown
+#lateralite%=lat.
+#droite%=R
+#gauche%=L
+#inconnu%=U
+#priorite=priority
+#aucune=none
+
+#page_precedente=Previous page
+#page_suivante=Next page
+#premiere_page=First page
+#derniere_page=Last page
+#Periode_change_page=Period for next screen
+#Arreter_diapo=Stop diaporama
+#DiminuerPeriode=Decrease the period
+#AugmenterPeriode=Increase the period
+#Pause=Pause
+#ReprendreDiapo=Start diaporama
+
+#DiapoModeEval=DiapoEngarde is in "Eval" mode: display occurs in a small window and stops each 5 minutes.
+#sansLimitation=Please, purchase a licence to get a full functioning.
+#ArretDiapoModeEval=Stop of the diaporama after 5mn because of the "Eval" mode.
+#InterruptionDiapoModeEval=Interruption of PRO mode.
+
+#nation%=nat.
+#coach=coach
+#carton_coach =coach yellow card
+#DemandeVideo=Video demand, M: modification, R: refusal - maximum: ^1 refusals
+#NOemplacement=Location not found
+#banniere=banner
+#choixBanniere=Choice of a banner (BMP or JPG file)
+#entitesPerdues=^1 entit[1|y|ies] of class ^2 not found
+#creeAlaPlace=Creation of entities @XXX
+#clasDans=Done, ranking is in file ^1
+#doublon=duplicate
+#doublons=duplicates
+#entre=between
+#TailleNomsCourts=Short name size
+#NomNoncalcules=Short names not computed
+#CalculerCourts=Compute missing short names
+#ReCalculerCourts=Compute again all the short names
+#doublonsCourts=Search duplicates in short names
+
+#formu_fie_equipes=Team world cup formula
+#suites_tableaux_charger=Close the next window then go to phases of direct elimination to load FIE-AvecPlaces1-16.fta
+
+#reglages=settings
+#margehaute=Top margin
+#margeBasse=Bottom margin
+
+#clas_special=Special ranking
+#clas_spe_rg_poule=DOING SPECIAL RANKING with the rank in the poules as main criterion?
+#prem_liste_nat=First list of nations separated by ";"
+#deux_liste_nat=Second list of nations separated by ";"
+#pb_poule=Problem in poule ^1
+#pas_pb_poule=No problem between ^1 and ^2
+#publi_clas=Publish ranking on the web
+#publi_ex=Publish exempt fencers on the web
+#publi_poules=Publish poules on the web
+#publi_tableau=Publish the tableaux on the web
+#definir_tableaux_web=Define webfiles of tableaux
+#publi_clas_tour=Publish ranking of round ^1 on the web
+#publi_ex_tour=Publish exempt fencers of round ^1 on the web
+#publi_poules_tour=Publish poules of round ^1 on the web
+
+#clas_gen_decale=Shifted overall ranking
+#met_a_blanc_matches=Write blank matches with rank greater than:
+#nb_matches_vert=Number of matches to display vertically
+#moitie=half
+#quart=quarter
+#bon_quart=right quarter
+#numero_de_aff=Number of "^1" to display
+#numero_dans_quart=Number of the match in the quarter
+#bad_descri_fic_web=Incorrect description of the web file
+#pas_kabcom_eq=No team Kabcom file
+#cle_ni_tir_ni_remp=the fencer key is neither the holder nor the substitute key
+#imp_rencontre=Print the bout
+#pas_ordre_tir=There is no fencer order
+#pas_detail_assaut=There are no detailed scores
+#manque_arbi_assaut=bout referees are missing
+#matches_en_cours=Ongoing matches
+#rencontre_affi=bout to display
+
+#conserve_n_tireurs=keep ^1 fencers
+#memoire=Data memory:
+
+#installCle=Install a key
+#PossCle1=It is possible to install keys
+#PossCle2=to run Engarde in BASIC or PRO mode and other applications.
+#PossCle3=For that purpose, it is necessary to purchase a key and get a purchase code.
+#PossCle4=Installing a key requires to be connected to the Internet 
+#PossCle5=A local network or Wifi card (several when possible) has also to be activated,
+#PossCle6=because Engarde uses the MAC numbers (physical addresses) of network cards.
+
+#IdClient=Client Identifier
+#CodeAchat=Purchase code
+
+#fautIdClientEtCleAchat=Please fill the fields "Client identifier" and "Purchase code of the key".
+#BadCarDansCleAchat=A purchase code never contains ^1
+#PasReponse=No answer. Please verify you are connected to the Internet.
+#pastrouvecleclient=This client with this purchase code is unknown of the Engarde website.
+#CleDeja=This key has already been provided to the client.
+#VoulezVousInstaller=Do you want to install it on this computer?
+#CleTrouveeInstallee=The key has been found on the Engarde website and has been installed on the computer.
+#CleNonInstallee=The key has NOT been installed on the computer.
+
+#PourActiverCle1=In order to activate the new keys, quit the PRO mode then set the PRO mode.
+#PourActiverCle2=In order to activate the new keys, set the PRO mode.
+
+#usermanuel=User manual
+#ModeProSeulement=This functionality is only accessible in mode PRO.
+#PasModeMini=This functionality is not accessible in mode MINI.
+
+#continent=continent
+#statistiques=statistics
+
+^1 sera remplacé par participants ou participantes ou équipes
+#Nb_total=Overall number of ^1
+#Nb_parmi_32=Number of ^1 among the 32 first fencers of the FIE ranking
+#Nb_AmeriqueNord=Number of ^1 of North-America
+#Nb_AmeriqueSud=Number of ^1 of South-America
+#Nb_afrique=Number of ^1 of Africa
+#Nb_asie=Number of ^1 of Asia
+#Nb_europe=Number of ^1 of Europ
+#Nb_oceanie=Number of ^1 of Oceania
+
+#match=match[|es]
+#round=round[|s]
+#periode=period[|s]
+#Carton=card[|s]
+
+#fenetre_piste=Piste window
+#table_pistes=Table of the pistes
+#con_nom_coul=Connections - Name - Colour
+#Matchsuivantmanuel=Next match (manual)
+#Matchsuivantautomatique=Next match (automatic)
+#Matchsuivantautosansnext=Next match (automatic without waiting NEXT)
+#Matchsuivantauto_defaut=Next match automatic by default
+#Fichierlogtousmessages=Log file of the piste messages
+#autreMatchMmPoule=Go to another match of the same poule
+#autreMatchMmeTab=Go to another match of the same tableau
+#autreMatch=Go to another match
+
+#ArretEnAnnulant=Stop and reset the match
+#ArretlaisseEncours=Stop the match as it is
+#ArretEnTerminant=Stop and end the match 
+#ArretParAbandon=Stop the match for abandonment, exclusion, non-combativity
+#Mettrexcartonsrougesdroite=Put x red cards on the right...
+#Mettrexcartonsrougesgauche=Put x red cards on the left...
+
+#inverser=reverse
+#InverserLapiste=Reverse the piste
+#InverserLestireurs=Reverse the fencers
+#Explications=explanations
+#voir=see
+#Roundsdecematch=Rounds of this match
+#Matchesprcdents1=Previous matches
+#FinMatch=End of match
+#MatchSuivant=Next match
+#MatchPrecedent=Previous match
+
+#manuel=manual
+#PasseAuto=Move to automatic
+#automatique=automatic
+#PasseManuel=Move to manual
+
+#EnregMatchEnCours=Save the current match:
+#MatchSansVain=MATCH ^1 - ^2 saved without winner
+
+#SimulAppPisteSerie=Simulation of piste apparatus 
+
+#tireur1=1rst fencer
+#tireur2=2nd fencer
+
+#Connexion=Connection
+#Deconnexion=Disconnection
+#connexionPort=Connection, port ^1
+#nonconnecte=not connected
+
+#ConnexionComPour=Connection to COM port for ^1
+#ErreurPortOccupe=Error, the port is probably already busy
+#deconnexionPisteX=Disconnection of piste ^1
+#ConnexionCOM=connection to a piste apparatus: serial line (COM port)
+
+#Choixmatch=Choice of a match
+#prevuAilleurs=This match was planned on piste "^1", please confirm. 
+#Pasdematch=No match
+#PasdematchPiste=No match with time for piste ^1
+#MatchTermine=Finished match
+#voulez-vousLeModifier=Charge or modify?
+#ordre_equipe_par_capitaine=The fencers' order is entered by the team captain
+#sais_ordre_equipe=Enter the fencers' order of a bout
+#pasRemplacant=This team has no substitute
+#UseDejaRemplacant=The substitute has already been used from round ^1
+#PrendRemplacantEnX=Use the substitute of team ^1 at round #
+#PrendRemplacantNow=Use the substitute of team ^1 now?
+#PasUseRemplacant=The substitute has not been used
+#ChoixMatchDe=Choice of a match of ^1
+#ChoixMatchPoule=Choice of a match of poule ^1
+
+#nbCartonsRougesDte=Number of red cards to put on the right
+#nbCartonsRougesGche=Number of red cards to put on the left
+#inverseExpli1=Reverse the piste when the Engarde computer is in front of the referee
+#inverseExpli2=so that the image on the computer corresponds to the piste.
+#inverseExpli3=Reverse the fencers when they have been reversed on the piste by the referee.
+
+#machineLocale=Local machine
+#cheminFTPexe=Path of the FTP application, generally c:\windows\system32\ftp.exe
+#Parcourir=Browse
+#machineDistante=Distant FTP machine
+#hote=host
+#user=user
+#passwd=password
+#passwd_initial=initial password
+#repDistant=Directory on the distant machine, e.g.: fencing  or  fencing/compe
+#actionsGene=General actions
+#ActiverFTP=Activate FTP
+#ActiverToutCourt=Activate
+#Desactiver=Deactivate
+#siActiveEchoue=When activation fails (DOS window), deactivate, correct the problem then reactivate
+#ListeDistant=List of the distant directory
+#EnvoiTousHTML=Send all the HTML files
+#PoulEtTab=Poules and tableaux
+#publiPouAuto=Publish the poules automatically
+#publiTabAuto=Publish the tableaux automatically
+#dureeMini=Minimal duration between sending 2 files
+#min5sec=seconds, min: 5
+#autorefresh=Auto-refresh period for the files
+#min10sec=seconds, min: 10
+
+#badcheFTPexe=The path of the FTP application is not valid
+#remplirChamp=Fill field "^1"
+#FTPinactif=FTP is not activated
+#ErreurListeFTP=Error FTP list
+#ErreurEnvoiFTP=Error sending FTP
+
+#AffectMatchesEntre=Allocation of matches beginning between
+#exemple10=Example:  between  10 and 11:20
+#TabConcernes=Display the concerned tableaux
+#seulsAvecHeure=Only matches with time are considered
+#seulsAvecHeurePou=Only poules with time are considered
+#utiliser_groupesAB=Use groups A and B
+#au_moins_1A=At least 1 group A
+#selectEtPrecise=Select a tableau and precise: simple, by 1/2, 1/4, 1/8
+#selectPlusieursTab=Or select several tableaux (Shift+Click or Ctrl+Click), simple allocation
+#pourSelectPlusieursTab=Use Shift+Clic ou Ctrl+Clic to  select several tableaux
+#enleverTab=Remove this tableau of the list
+#enleverDeListe=Remove of the list
+#affectation=allocation
+#prendreTab=Take this tableau
+#prendreLaListe=Take all the list
+
+#analyse=analyze
+#fenetre=window[|s]
+#horizontal=horizontal
+#vertical=vertical
+
+^1 will be replaced by nothing or 1 or 2, etc.
+#SupprTousArbi=Delete all referees ^1 of the matches
+#arbi_par_match=Number of referees by match
+#incluant_video=including a video referee
+#maxi_par_arbi=Maximum matches by referee
+#NbArbiToUse=Total number of referees to use
+#CalAffectAuto=Make an automatic allocation
+#PrendreCetteAffect=Take this allocation
+#PrendreAffectAvant=Return to previous allocation
+#affectManuelle=Manual allocation
+#AjouterArbiSel=Take the selected referee
+#AjouterArbiVideo=Take the referee as video
+#SupprArbitreN=Remove referee ^1
+#enlever=Remove ^1 ^2
+#affectation_avancee=Advanced allocation
+#affect_avancee_arbi=Advanced allocation of referees
+#matchNum=match ^1
+#arbiNum=referee ^1
+#pasArbiSel=No selected referee
+#pasMatchSel=No selected match
+#pasPouleSel=No selected poule
+#arbiDejaCeMatch=The selected referee is already allocated to the selected match
+#arbiDejaCettePoule=The selected referee is already allocated to the selected poule
+#conflitDe=Conflict of ^1 between the referee and the match
+#conflitDeDsPou=Conflict of ^1 between the referee and the poule
+#arbiDejaHeure=The selected referee has already a match at the same time
+#arbiDejaHeurePou=The selected referee has already a poule at the same time
+#MatchNonTrouve=Match not found
+#PouleNonTrouvee=Poule not found
+#MatchSansArbi=The selected match has no referee
+#PouleSansArbi=The selected poule has no referee
+#assez_de=enough ^1
+#pas_trop_de=no too many ^1
+#tropMatches=too many matches
+#tropPoules=too many poules
+#manqueMatches=not enough matches
+#manquePoules=not enough poules
+#matchesMemeHeure=has matches at the same time
+#poulesMemeHeure=has poules at the same time
+#matchesHeureProche=has matches at near the same time
+#matchesConsecutifsPistesDifferentes=piste change WITHOUT PAUSE
+#matchesNonConsecutifsPistesDifferentes=piste change with pause
+#poulesHeureProche=has poules at near the same time
+#est2foisMatch=is twice on a match
+#est2foisPoule=is twice on a poule
+#aconflitNation=has a conflict of ^1 on a match
+#aconflitNationPou=has a conflict of ^1 on a poule
+#supprConflit=remove conflicts
+#aconflitNation2=has a conflict of ^1 on 1/4, 1/8, 1/16
+#pas_bonquart=^1 is not in the right ^2
+#pas_bon_quart=is not in the right quarter
+#pas_groupeA=has no referee of group A
+#matchestroparbi=matches with too many referees
+#poulestroparbi=poules with too many referees
+#matchestroppeuarbi=matches with not enough referees
+#poulestroppeuarbi=poules with not enough referees
+#tauxSatisfation=Global satisfaction rate
+#satisfaction=satisfaction
+#cross_interet=^1 has a cross-interest with ^2
+#n_fois=^1 times
+
+#NbMatchesVert=Number of matches to display vertically
+#NumZone=Number of the part of the tableau to display
+#NbTabHz=Number of tableaux to display horizontally
+
+#oldVersionFic=^1 cannot open very old versions of competitions
+
+#PoulTab=Poule/Tab.
+#PoulTab%=Pou/Tab
+#comIn=Com In
+#comOut=Com Out
+#IPsortie=IP Out
+#Connecte=Connected
+#Actif=Active
+#Score1=Score
+#Score2=Score
+
+#Montrer=Show
+#Cacher=Hide
+#CacherToutes=Hide all
+
+#dejaPiste=Piste ^1 already exists in the table
+#dejaIpPiste=The IP number is already used by a piste apparatus
+
+#fonctionnement=functioning
+#ConnexionIP=IP connection to a piste apparatus (local network)   
+#ConnexionSerie=RS232 or RS422 connection to a piste apparatus (serial line, COM port)
+#ConnexionIPsortie=Output IP connection (local network)  
+#saisirIpExemple=Input IP numbers and port numbers, example: 
+
+#versionDispo=Version ^1 of Engarde of ^2 is now available.
+#versionComposantDispo=A more recent version of a component is available.
+#versionLaPlusRecente=This version is the most recent.
+#InfoVersion=Information about the recent versions
+#pasInfoVersion=Information concerning versions is not disponible.
+#downloadMAJ=Download last update
+#downloadcomposant=Download last components
+
+
+#choix_contexte=Choice of the contexte
+#Contexte_general=General context
+#Contexte_x=Context ^1
+#fermer_ouvrir_ctxt=Please, close and reopen the competition
+
+#auteur=author :
+#distribue_par=distributed by ^1
+
+--------------------------------------------------------------------
+
+New messages of octobre 2008 
+
+--------------------------------------------------------------------
+
+#lancerLesPistes=Launch the pistes
+#lancerPiste=Launch this piste
+#pistesLancees=^1 IP piste[^1||s] launched
+#pistesNonLancees=^1 IP piste[^1||s] IP launched
+#deja_match=Piste ^1 already has a match
+#pas_attente=Piste ^1 is not waiting
+#lance_simu_pistes=Start an automatic simulation on all the pistes
+#stop_simu=Stop the simulation
+
+#confirmez_manuel=Piste with IP connection, please confirme moving to manual.
+
+#bad_piste=Message of apparatus IP=^1 piste=^2: the piste here is ^3
+#bad_compe=Message of piste ^1 competition ^2: the competition here is ^3
+#pas_compe=Message of piste ^1 competition ^2: there is no competition here
+#bad_phase=Message of piste ^1 phase ^2: the phase number here is ^3
+#bad_poule=Message of piste ^1 poule ^2: the poule here is ^3
+#bad_tableau=Message of piste ^1 tableau ^2: the tableau here is ^3
+#bad_match=Message of piste ^1 match ^2: the match here is ^3
+#bad_round=Message of piste ^1 round ^2: the round here is ^3
+#bad_tireur=Message of piste ^1: BAD FENCERS
+#bad_match_fini=Message of piste ^1: the match here is finished
+#bad_match_rien=Message of piste ^1: there is no match here
+#champ_piste_vide=Message of piste ^1: the field ^2 is empty
+#Demande_suivant=Demand of next match for piste ^1 (we are in "manual next match")
+#suivantManuel=Set the mode "manual next match"?
+
+#lampes=light
+#blanc=white
+#rouge=red
+#jaune=yellow
+#vert=green
+#cartonrouge=red card
+#cartonjaune=yellow card
+#non_combativite=non-combativity
+
+#erreur=ERROR
+#auto=auto
+#chrono=chrono
+
+state of the apparatus (uses also #pause defined above)
+#etatAPP=state
+#fencing=fencing
+#halt=halt
+#waiting=waiting
+#ending=ending
+
+#SituationENG=Situation in Engarde
+#APP=Piste apparatus
+#deLarbitre=of referee
+
+#fichier_web=Web files
+#date_lim_depassee=The application deadline is reached, please get an update.
+
+#mode_mini=No valid licence, Engarde runs in mode MINI.
+#tousLesTextes=In order to have all the texts displayed, the application must be closed and reopened.
+#siPasTous=If after that certain texts are not translated, this means that the translation is not complete.
+
+======================================
+
+#apropos=About
+#SitewebdEngarde=engarde-escrime.com Website
+#install_update=Engarde : Installation of an update
+#commande_inconnue=Unknown command
+#argument_manquant=Missing argument
+#fermer_ca=Close the following file or application then click on OK
+#update_complete=Update complete
+#suppr_rep_install=You can delete the installation directory.
+#update_partial=Update is finished. THERE ARE STILL FILES TO BE MOVED BY HAND.
+
+#MontrerPnlOption=This panel appears when you type CTRL + K or double click.
+
+#evaluation_pro=Competition of Engarde PRO evaluation
+
+#XML_FIE=XML for FIE
+#XML_etendu=Extended XML
+#xml_vigueur=FORMAT XML FIE 2019 IS NOW IN EFFECT 
+#xml_pas_vigueur=FORMAT XML FIE 2019 IS NOT YET IN EFFECT
+#pas_pour_fie=WARNING, THIS XML FORMAT IS NOT SUITABLE FOR THE FIE
+#pas_pour_efc=WARNING, THIS XML FORMAT IS NOT SUITABLE FOR THE EFC
+#voulez_continuer=DO YOU WANT TO CONTINUE
+#cas_pb_xml=If there is a problem with XML files, send an email to
+
+#extractXML=Extraction of fencers of the competition towards an XML file in order to create later a new competition
+#extraction=Extraction 
+#extraire=Extract
+
+#cherche_doublons=Searching duplicates
+#doublons_possibles=Possible duplicates:
+#n_doublons=There seems to be ^1 duplicates
+#Pour_fusionner=To merge two ^1, go to the ^1 table
+#use_agglomerer=and use the menu entry/merge
+#pas_doublon=There seems to be no duplicate
+#faire_fusions=Would you like to merge entities?
+
+======================================
+
+new texts of august 2009
+
+#badpasswd=Bad password.
+#ouvrir=Open
+#ouvrir_aux=Open in auxiliary mode
+#client_serveur=client-server
+#serveur=server
+
+#FinRoundMatch=End of round/match
+
+#PlacementTireurs=Fencer placement
+#PlacementEquipes=Team placement
+#prem_droite=First fencer on the right
+#droitier_droite=Right-handed fencer on the right
+#prem_eq_droite=First team on the right
+#max_droitier_droite=Team with more right-handed on the right
+#droitier_en_plus=When a team has no substitute, we count one more right-handed
+#droitier=right-handed
+#gaucher=left-handed
+
+#MettreRemp=Put the substitute of ^1 now
+#MettreRempAssautX=Put the substitute of ^1 at round #
+#OterRemp=Remove the substitute of ^1
+
+#fermer_poule=Close the poule
+
+#ouvrir_cette_compe=Open this competition
+#ouvrir_cette_compe_aux=Open this competition in auxiliary mode...
+#fermer_reouvrir=Close and reopen
+#compe_non_accessible=This competition no more exists or is not accessible
+#pasdeja_ouverte=This competition is not open in normal mode.
+#voulezvous_aux=Do you want to open it in auxiliaire mode?
+#gerer_liste_compe=Management of the list of competitions
+#suppr_compe_caduc=Suppress the non accessible competitions
+#pas_aux_poules_equipes=Auxiliary mode is not available in poules by teams
+
+#reception_aux=Reception of results of auxiliary sessions
+#supp_match_fini=Suppress finished matches
+#supp_tous_match=Suppress all matches
+
+#ordre_saisi1=The fencers' order of this bout is already entered
+#ordre_saisi2=and rounds of this bout are already entered.
+#ordre_saisi3=Re-entering the fencers' order will clear the rounds.
+#ordre_saisi4=Do you want to re-enter the fencers' order?
+
+#basic_payant=Attention, from 15/10/2009, Engarde Basic will no more be free.
+#preferer_basic=In order to have more functionalities, purchase an "Engarde Basic" licence.
+#plusInfoWeb=For more information, see Engarde Website.
+#ne_plus_afficher=Stop display this message.
+#arret_fonct=Functioning in mode MINI will stop by ^1
+#actualiser=Refresh
+
+#demande_ignoree=The demand is ignored
+#contexte_defaut=Use of the default context
+#donner_date_debut=5 days licence, enter the first day of functioning
+#date_avant_aujourdhui=^1 is before today ^2
+#installer_a_partir=Do you want to install this key so that it functions during 5 days from ^1?
+
+#RepSVG=Directory for backup:
+#periode_svg_auto=Period for automatic backup
+#en_minutes=in minutes
+
+#trop_de_tireurs_compe=There are too many fencers or teams in this competition.
+#mini_limite_50=Engarde MINI has a maximum of ^1 fencers and ^2 teams.
+
+^1 will be replaced by 1/4 1/8 1/16
+#neutre_quart=Neutral referees on the ^1
+^1 will be replaced by nation, club
+#empecher_meme=No referees of same affiliation 
+#affil_diff=Different affiliations
+#arbitres_meme=^1 is with a referee with same ^2
+#respecter_temps=Minimum interval of time
+#intervalle=Interval
+#empecher_proxi=Prevent proximity
+#empecher_cross_interet=Prevent cross-interest
+
+#arbiDeja=The referee already has a match/poule
+#arbitres_affectes=^1 allocated referee[1||s] 
+#changer_para_arbi=In order to improve the result, modify the parameters or
+#ajouter_arbi=add referees or increment the maximum of matches by referee
+#Autorisation_action=Authorization for a special action in FIE mode
+#historiqueActions=History of the special actions
+#interdit_FIE=Forbidden action in FIE mode
+#il_faut_pro_FIE=FIE competitions must be managed in mode PRO+FIE
+#il_faut_pro_FIE2=Quit the FIE mode only briefly and for good reasons
+#modif_manuelle=Manual modifications
+#changer_nom=the name must be changed
+#dire_oui_pour_voir=Say yes if you just want to see the list
+#doublon_possible=possible duplicate:
+#n_vrais_doublons=There [1|is|are] ^1 duplicate[1||s], [1|it|they] must be suppressed
+#faire_suppressions=Do you want to suppress?
+#fusion_de=merging of
+#fusion_de_n_doublons=^1 duplicate[1||s] have been merged
+#expli_no_quart=Buttons for changing the referee ^1
+#expli_groupe=Buttons for changing the referee group
+#arbiDejaN=The selected referee already has ^1 matches
+#proximite_tir=^1 has an interest with a fencer of the nearby match
+#pas_neutre_sur=^1 is not neutral for the ^2 
+#est_neutre_sur=is neutral on the zones
+#pour_conflits=has for number of conflicts
+#sont_neutre_sur=neutral referees on zone
+#Arbi2ProSeulement=The automatic allocation of a second referee is only accessible in the mode PRO.
+#affectation_auto_simple=Simple automatic allocation
+#bon_choix_arbi=Before performing an allocation, have a good list of referees
+#activiteArbitresMatch=Activities of the match referees
+#activiteArbitresVideo=Activities of the video referees
+
+#ajout_un_arbi=Add a referee
+#ajout_des_arbi=Add referees
+#ajout_tous_arbi=Add all the present referees
+#ajout_arbi_table_gauche=Add the referees of the left table
+#ajout_arbi_tab_pred=Add the referees of the previous tableau
+#suppr_un_arbi=Suppress a referee
+#suppr_tous_arbi=Suppress all the referees
+#transfer_arbi_pred=Transfer the referees of the previous tableau
+#defaire_der_act=Undo last action
+#del_no_quart=Delete the ^1 numbers
+#del_groupe=Delete groups
+#MatchesDesArbitres=Matches of the referees
+#ArbitresDesMatches=Referees of the matches 
+
+#exemptes_tab=List of exemptions in a tableau
+
+^1 sera remplacé par 1/4 ou 1/8 
+#x_pasdefaut=^1 by default
+#matches_a_traiter=Matches to be treated
+#matches_termines=Finished matches
+#poules_a_traiter=Poules to be treated
+#poules_termines=Finished poules
+#matches_hors_periode=Matches without hour or out of the interval of time
+#poules_hors_periode=Poules without hour or out of the interval of time
+#match_pas_periode=The match has no hour or is out of the interval of time
+#poule_pas_periode=The poule has no hour or is out of the interval of time
+#match_termine=The match is finished
+#poule_terminee=The poule is finished
+^1 sera remplacé par un arbitre et ^2 par 1/4 ou 1/8 
+#plusieurs_quarts=^1 is on several ^2
+
+nouveaux textes du 21/6/2011
+
+#noir=black
+#duree=duration
+#NoSerieDeReserve=Fencers of the competition are given then fencer number they have in the memory
+#champ_associe=Indicate the field on which fencers are associated
+#n_tireur_a_ceci=^1 fencer[1||s] in memor ha[1|s|ve] ^2
+#TireursNonTrouves=^1 fencer[1||s] not found
+#prendre_serie=Use the fencer number of the memory
+
+#PoulesDesArbitres=Poules of referees
+#ArbitresDesPoules=Referees of poules
+#arbi_par_poule=Nomber of referees per poule
+#maxi_poule_arbi=Maximum of poules per referee 
+
+nouveaux textes du 21/7/2011
+
+#pasDansPoules=Impossible operation because we are not in poules
+#prendQuandMeme=Taking it even so?
+
+#tableau_non_utilise=Unused tableau
+#video=video
+#arbitre_video=Video referee
+#arbitre_match=Match referee
+#arbitre_assistant=Assistant referee
+#matchDeja3=The selected match has already 3 referees
+#pouleDeja3=The selected poule has already 3 referees
+#matchDejaVideo=The selected match has already a video referee
+#pouleDejaVideo=The selected poule has already a video referee
+#afficher=Display
+
+#avec_horaires=with hours
+#sans_horaires=without hours
+#affectation_de=Allocation of
+#periode_matchs=Period on which we treat the matches
+
+#on_envoie=Sending even so?
+
+#matchHeure=Only matches with time
+#pouleHeure=Only poules with time
+#tir_arbi=Fencers and referees:
+#natdiff=Different countries
+#liguediff=Different regions
+#clubdiff=Different clubs 
+#sipossible=if possible
+#Affiliation_affi=Displayed affiliations
+#indiquer_periode=Choose a period
+
+#clas_init_des_tab=initial ranking for the tableau phase 
+#clas_init_un_tab=initial ranking for a tableau
+#clas_init_du=initial ranking for ^1
+#clas_du=ranking for ^1
+
+#prevu_exaequos=^1 forseen qualifiers, but ^2 qualifiers because of ex-aequos
+#modif_formu=Modification of the formula
+#compe_en_cours=On goinf competition
+#clas_utiliser=Ranking to be used
+#toutes_cat_sexe=Any categories and sexes
+
+#match_consecutif=2 consecutive matches
+#non_sur_consecutif=^1 is not on the nearby match
+
+#essais=^1 performed tr[1|y|ies]
+#remplissage=filling
+#autres_essais=Ok? Click on "no" to make new tries.
+
+#arbi_dispo=There [1|is|are] ^1 available referee[1||s] 
+#remplis_arbi_n=Filling referee ^1
+
+#cycleHeures=cycle on hours with same piste on a cycle
+#cyclePistes=cycle on pistes with same hour on a cycle
+#pasCycle=no cycle
+#selonListe=cycle according to the length of the list
+#selonZone=cycle per part of the tableau
+#zone_egal=Part = 1 /
+#sauter_matchs_term=skip finished matches 
+
+#use_max_piste=Use the maximum of pistes
+
+#manque_heure_poule=^1 poule[1||s] without hour
+#manque_heure_match=^1 match[1||es] without hour
+#manque_piste_poule=^1 poule[1||s] without piste
+#manque_piste_match=^1 match[1||es] without piste
+#developper=expand
+
+^1 sera remplacé par tireurs, équipes ou arbitres
+#a_prendre=^1 to use
+^1 sera remplacé par tireurs, équipes ou arbitres
+#prendre_ces=use these ^1
+
+#alpha=alphabetic
+#structure=structured
+#select_all=select all
+
+#select_multiple=Multiple selection with Shift+Clic ad Ctrl+Clic 
+#drag_and_drop=Possible use of drag and drop
+
+#date_lim_mini=Deadline of use in mode MINI: ^1
+
+#police_defaut=Default font
+
+#demonstrations=Demos
+
+#expli_quart1=An allocation by quarter places all the matches of a referee in a unique quarter,
+#expli_quart2=the referee must not have a country/club conflict with one of the fencers of the quarter.
+#expli_quart3=Analoguous by 1/2 and 1/8.
+#expli_cross1=There is a cross-interest when a match has a referee of country/club A and a fencer of country/club B
+#expli_cross2=and when another match has a referee of country/club B and a fencer of country/club A.
+#expli_proxi1=There is proximity when a match has a referee of country/club A and when the nearby match
+#expli_proxi2=has a fencer of country/club A. Nearby matches are: 1 and 2, 3 and 4, etc. 
+#expli_affillDiff1=There is same affiliation when a match has two referees of same country/club.
+#expli_temps=Demand to respect the indicated time interval, expressed in minutes, between two poules/matches of a referee.
+#expli_deux=Demand to place each referee on two nearby matches: 1 and 2, and 4, etc. 
+#expli_heures1=8:00+0:15*7 means use time 8:00 then add 7 times 0:15, same thing for 8+15*7 
+
+nouveaux textes 5/9/2011
+
+#choix_tableau=Choice of a tableau
+#avec_arbi=with referees
+#avec_pistes_heures=with hours and pistes 
+#avec_nom_tab=with the name of each tableau
+#sur2lignes=name over 2 lines
+#battus_a_gauche=with losers on the left
+#autre_tab_a_gauche=with another tableau on the left
+
+nouveaux textes 7/9/2011
+
+#matchs=matches
+
+#clasmt_prov=Temporary ranking
+#poule_et_clas=Poules and temporary ranking
+#NbPoulesPP=maximum number of poules per page
+#NbLignesPP=maximum number of lines per page
+#avec_soustitre=with subtitle
+#avec_noms_champs=with the names of the fields
+
+#raison=reason
+
+nouveaux textes 26/10/2011
+
+#idem_prec=The same as previously
+#modele=model
+#selon_modele=According to this model...
+#mauvais_modele=bad model
+#pour_der_tour=for the last round
+#pour_tour_saisi=for a round to enter
+
+#une_seule_piste=Each referee on a single piste
+
+nouveaux textes 11/11/2011
+
+#une_piste_exactement=Referee on all the matches of a piste
+
+#plus_police=Increase the font size
+#moins_police=Decrease the font size
+#plus_interligne=Increase line spacing
+#moins_interligne=Decrease line spacing
+
+#ecran=screen
+#photos_dir=Pictures of a directory
+#grand_diaporama=Full screen diaporama
+#petit_diaporama=Diaporama 
+#fin_diaporama_grand=End of diaporama, large window
+#fin_diaporama_petit=End of diaporama, small window
+
+#avec_pistes_heures_prets=with hours and pistes of ready matchs
+#taille_noms_tableaux =size of the names of the tableaux
+
+#matchs_a_imp_ou_reimp=^1 ongoing match[1||es] to be printed or reprinted
+#matchs_imprimables=^1 reprintable ongoing match[1||es] 
+#y_compris_pas_pret=Including matchs which are not ready
+
+#apres_match=after each match
+#au_changement_de=when changing ^1
+#page_pleine=when the page is full
+#heure_piste=hours and pistes
+#matchs_prets=All matches that are ready
+#toutes_poules=All the poules
+#liste=(f)list[|s]
+#col_etroite=narrow columns
+
+#ajuste_col=adjustment of columns
+#ajuste_col_modele=adjustment of columns for this model
+#pas_ajuste_auto=no automatic adjustment
+#ajuste_auto_sauf=automatic adjustment except "name first name"
+#ajuste_auto=automatic adjustment
+#global=global
+
+#cacher_soustitre=Hide the subtitle
+#cacher_noms_champs=Hide the field names
+
+#arbitres_moins=^1 referee[1||s] who officiated less
+#arbitres_hasard=^1 referee[1||s] at random
+#menu_special_arbi=Use the "Special" menu to show the panel of manual allocation
+#menu_special_arbi2=To add criteria, use the "Special" menu
+
+#affecter_n_arbi=allocate ^1 referee[1||s] per ^2
+#incluant_arbi_video=including a video referee
+#using_groups=using groups A and B
+#par_quart=by quarter
+#equi_roles=Balancing roles
+#change_roles=Changing roles
+#permuter_arbi=swap referees ^1 and referees ^2
+
+#fichiers_XML_en_attente=There are ^1 waiting XML files of an auxiliary session
+#on_detruit=delete the files
+#on_charge=load the files
+
+#saisie_affil_nouv_dans_ppal=New clubs, regions and countries cannot be entered in auxiliary mode, enter them in main mode
+
+#echec_enregistrement=Saving the competition has failed
+#nouvel_essai_enreg=try again to save
+
+#celui_appli=choose among the models of the application
+#celui_avec_compe=choose among the models of the competition
+#enreg_celui_appli=save among the models of the application
+#enreg_celui_avec_compe=save among the models of the competition
+#enreg_sans_les_deux=save among both
+#copier_les_modeles=copy models of the competition in the application folder
+#models_eng_diapo=models of 'Engarde and models of DiapoEngarde
+#erase_models=erasing the models having the same name?
+#err_copie=ERROR, interrupted copy
+#fichiers_copies=^1 copied file[1||s]
+
+#cadre=Frame
+#traits_hz=Frame and horizontal lines
+#sans_traits=No lines
+
+#simuler_remplissage=Simulate the filling of an incomplete tableau 
+#ImprImmediate=Immediate printing of new matchs
+
+#sans_defilement=Area without scrolling
+#avec_classement=With ranking
+#nb_ligne_pp=number of lines per page
+#numero_match=number of the match
+
+#FTPactif=FTP is active
+#desactive_FTP=Deactivation of FTP
+
+#panneau_web=Web panel
+#parametresHTTP=HTTP parameters 
+#activerHTTP=Activate HTTP
+#desactiverHTTP=Deactivate HTTP
+#HTTPactif=HTTP activated
+#desactive_HTTP=Deactivation of HTTP for uploading files
+#specialPourHTTP=Special for HTTP
+#installer_storefile1=Do you want to install with FTP the ^1file
+#installer_storefile2=in the ^1directory of the distant machine
+#installer_storefile3=in order to send files with HTTP ?
+#au_moins_6=At least 6 characters
+#redonner_pass=Enter the password again
+#pass_trop_court=The password is too short
+#pass_different=The two passwords are different
+#car_interdit=Forbidden character
+#utiliser=use
+
+#organisme=Organism
+#event=Event
+#tournoi=Tournament
+#tournoi_gen=tournament[|s]
+
+#pret_competition=Ready for this competition
+#pas_de_compe=the competition does not exist
+#pas_event=the tournament does not exist
+#pas_organisme=the organism does not exist
+
+#pas_chemin_domaine=path not found in the domain
+#pas_connexion_ou=no internet connection or domain error
+#si_appli_pas_ici=If the application ^1 is not installed, you can install it with the FTP settings
+#fichiers_attente=Pending files
+#matchs_attente=Pending matches 
+
+#interrompre=Interrupt
+#reprendre=Resume
+
+#envoi_fic_html=upload of HTML files
+#site_org=Organizer Website
+#rep_depose_fic=Directory where files are uploaded, example: http://www.club.org/competitions/junior
+
+#faire_tab_sans_publi=Make the tableaux without publishing
+
+#envoi_match=upload of ongoing matches
+#files_attente=Waiting lines
+#taille_files=Size of the waiting lines
+#vider_file_fichiers=Empty the waiting lines of files
+#vider_file_matchs=Empty the waiting lines of matches
+#console=Console
+
+#useNomsCourts=Use the short names
+#fonc_non_acces=This functionnality is not yet accessible
+
+#compe_commencee=The competition began
+#suppr_toutes_eq=Delete all the teams
+
+#Licence_LicenceNat=Use the ^1 Licences as National Licences 
+#LicenceFIE_LicenceNat=Use the ^1 FIE Licences as National Licences
+#LicenceNat_LicenceFIE=Use the ^1 National Licences as FIE Licences 
+
+#heure_avant_arbitre=IT IS STRONGLY RECOMMANDED to hours and pistes before referees
+#eviter_meme_heure=to avoid that referee have two matches at the same time
+#arbitre_sans_heure=However, it is possible to allocate referees to matches without hour by unchecking:
+
+#entite_deja_table=^1 entit[1|y|ies] suppressed, because already in the table
+
+#PublierlesEquipes=Publish the teams on the web
+#RefaireIndex=Redo the web menu
+#ViderIndex=Empty the web menu
+#refaire_doc_web=Now, you have to redo the web pages with the "Web" menus of the Engarde, Poules and Tableau windows
+#Deposerlescss=Upload CSS on the web
+#docu_actualise0=This document is automatically refreshed
+#docu_actualise1=This document is refreshed every ^1
+#docu_actualise2=you can refresh it yourself more frequently
+#refaire_demande=There ^1 pending files, please, ask again later
+#minute=minute[|s]
+#seconde=second[|s]
+#info_probables='Information "qualifier"  "+"  "-"  "eliminated" is very likely but are not certain
+#qual_probable=most likely qualified
+#elim_probable=most likely eliminated
+#menu_document=Use the menu to display a document
+#cliquer_titre=Click on a title to open a document on the right
+#cliquer_ F5=Click on F5  to open a document in an entire window, you will have the possibility to refresh the window with F5 while preserving the position
+#menu_apparaitra=A menu will appear when the display of competition results occurs
+
+#site_web=Website
+
+#pas_de_live=This competition has no LIVE subscription
+
+#periodeAutoRefreshMatchs=Period-refresh of then match table, min 2s
+#onlyScoreChange=Send only the changes in score
+#supprMatchsFinisApres=Delete terminated matches after ... min 30s
+#supprTousMatchsApres=Delete all matches after..., min 300s
+#message-suppr=Sending the message to delete each... min 10s
+#supprTousMatchs=Delete all matches
+#supprMatchsFinis=Delete terminated matches
+
+#tireurs_disponibles=^1 available new present  fencer[1||s] 
+
+#utiliser_dossards=Use mask numbers
+#cocher_si_bonne_raison=Check this box only if you have a good reason
+#pas_dossard=No mask number
+#dossard_en_double=Double mask number
+#pb_dossard=MASK NUMBER PROBLEM
+#corriger_dossard=Fix it or do not use mask numbers with piste apparatus
+#remplacant_pris=The substitute ^1 is at bout ^2
+#pasRemplacement=Substitution not made
+#remplacementFait=Substitution made
+#remplacementAFaire=Substitution to do
+#voir_ecran_piste=See scoreboard 
+#cacher_ecran_piste=Hide scoreboard 
+
+#saut_page=Page break
+
+#partie_tableau=Part of tableau
+#serie_non_classe_menu=Assign a fencer number to unclassified fencer numbers
+#serie_non_classe=Fencer number for unclassified fencer numbers
+
+#message_clas=message
+#cle_messages=Key of messages
+#messages_pour_clas=Messages for certain rankings
+#ecrire_lignes=Write WITH ENGARDE, not with DiapoEngarde,lines of the form:
+#exemple_mes1=A:1-32:Qualified for Sunday
+#exemple_mes2=A:33-64:Qualified for tableau B at 3 pm
+#expli_mes1=A is the key of a group of messages. There may be groups A, B, C, etc.
+#expli_mes2=When key A is chosen, if Smith has a rank between 1 and 32, he has the message: Qualified for Sunday
+
+#id_to_use=Identifiers to be used
+#cle_engarde=Engarde key (recommanded)
+#cle_engarde_seule=Engarde key
+#pas_id=No "Identification"
+#id_en_double=duplicate ID
+#pb_id=PROBLEM OF ID FIELD
+#corriger_id=Correct this or don't use the ID field with the piste apparatus
+
+#use_langue_doc=Use the report language
+
+#handisport=Wheelchair
+#dedouble_poules=Split certain poules ?
+#dedouble_cette_poule=Split this poule
+#dedouble_poules_a=Split poules from
+#choisir_odm=Choose match order
+#monter=Up
+#descendre=Down
+#avecCopierColler=Copy-paste possible
+#il_manque=missing
+#matchs_en_double=doublon match
+#incorrect=incorrect item
+#corriger_odm_incorrect=The entered match order is incorrect, change it?
+#sinon_auto=if not, default match order will be used
+#poules_dedoublables=Certain poules on several pistes
+#poules_sur_n_pistes=Poules of ^1 on how many pistes
+#cette_poules_sur_n_pistes=This poule  of ^1 on how many pistes
+#poule_n_pistes=poule on ^1 pistes
+#verifier=verify
+#prendre=take
+#solution=^1 solution[1||s]
+#liste_solutions=solution list
+#add_liste_solutions=add to solution list
+#voir_liste_solutions=see solution list
+#prendre_solution=take this solution
+#matchs_se_suivent=matches following each other
+#ordre_fourni=entered match order
+#ordre_engendre=generated match order
+#limite_poule_mini=Poules of ^1 maxi in mode mini
+
+#save_copy=Save a copy
+#connexion_pistes_ip=Connection of pistes IP
+#deconnexionPistes=Disconnection of the pistes
+
+#titre=title
+#avec_video=with video
+#lancer=Start
+#menu=Menu
+#charger_pistes=Load a file of pistes
+#save_copy_pistes=Save a copy of the pistes
+#CacherToutesPistes=Hide all pistes
+#mode_envoi=Transmission mode to Engarde Main for matches
+#depot_fichiers=by file deposit
+#par_UDP=by UDP
+#expli_depot_fichiers=File deposit, old mode of Engarde, slower
+#expli_par_UDP=UDP, new mode of Engarde, faster, uses IP number and port
+#ip_engarde_ppal=IP number of Engarde Main
+#port_engarde_ppal=Port of Engarde Main
+#raz=Reset
+#si_score_modifie=on score modification
+#si_situation_modifie=on situation modification
+#chaque_10s=on situation modification and each 10s
+#chaque_5s=on situation modification and each 5s
+#toujours=always
+#sans_pilotage=without monitoring
+#pilotage_de=Monitoring of
+#envoyer_principal=Send to main
+#envoyer=Send
+#nepasenvoyer=Do not send
+#affiche_dans_table=Display in a table
+
+#refus_message=Rejection of message, piste ^1 is not connected
+#pas_piste_cet_ip=Message received from ^1 , this  IP number does not correspond to a piste
+#next_ou_prev=It is the end of round, please do a next or previous match
+#conflit_piste=CONFLICT of IP number or name of pistes
+#ordi_connecte_piste=Computer ^1 is connected to piste ^2
+
+#call_next_match=Next match asked for piste ^1
+#utiliser_next=Use "NEXT" on the piste apparatus to get this match again.
+#reset_possible=You may have to reset the piste apparatus for getting the next match.
+#no_match_this_poule=Poule ^1 running on this piste: no match to fence.
+#match_prec_manuel=The previous match is not finished, you can get it by Prvious on the piste and in manual mode.
+#matchs_sans_heure=There are matches to fence on that piste, but they do not have time.
+#no_match_other_poules=No match to fence in the other poules for this piste.
+#no_match_in_poules=No match of the poules to fence for this piste.
+#no_poule_this_piste=No poule uses this piste.
+#no_match_this_piste=No match to fence for this piste.
+#no_tableau_this_piste=No match of a tableau to fence for this piste.
+#tab_pas_ds_tab=match of tableau received, we are not in tableaux.
+#est_pas_tab_en_cours=is not an ongoing tableau.
+#bad_num_match=bad match number received
+#bad_cle_tir=bad key of the fencer
+#modif_match_fini=modification of match completed (accepted)
+#modif_match_fini_non=modification of match completed (REFUSED)
+#refuse=REFUSED
+
+#demande_con_deja=There is already a connection request
+#progression_auto=automatic progression 
+#periode_auto=automatic progression period
+
+#remplacer=replace
+
+#tableauWebDefaut=Define default webfiles of tableaux
+#change_style_css=Change of CSS style
+
+#imp_rencontre_sans_ordre=Print bouts even when the fencer order was not provided?
+
+18 JUILLET 2015
+
+#titulaire=holder
+#RemettreTitulaireEnX=The team holder of ^1 is reused at bout # 
+#RemettreTitulaireNow=The team holder of ^1 is reused now
+#RemettreTituAssautX=Reuse the team holder of ^1 at bout...
+#num_match_titulaire=Match number where the holder returns
+#zero_aucun=give 0 for none
+
+30 decembre 2015
+
+#id_sm=Smart ID
+#pass_sm=Smart password
+#envoi_smart=Sending data to Engarde Smart
+#ConnectwithSmartId=Connect with Smart ID
+#pas_envoi_smart=NOT sending data to Engarde Smart
+#identifiant=Identifiers
+#lancer_smart=Launch Engarde Smart
+#obtenir_identifiant=Get a new competition identifier
+#obtenir_autre_identifiant=Get a competitive identifier affiliated with another
+#autre_identifiant=Identifier of the other competition
+#id_is=The identifier is ^1
+#pass_is=The password is ^1 please note it.
+#meme_pass=The password is the same.
+#pass_saisi_smart=Password entered on Engarde Smart
+#user_deja_pass=the user already has a password 
+#clic_connex=Then click on connection
+#stat_du_groupe=Group statistics
+#reception_donnees_smart=Reception of data entered with Engarde Assistant
+#pas_reception_donnees_smart=NO reception of data entered with Engarde Assistant
+#envoyees_par=Data sent by
+#renvoyer_donnees=Reupload all the data to the server
+#supprimer_donnees=Delete all the data on the server and stop sending
+
+#delaientreenvoisfichiers=Delay between HTML uploads: ^1s
+#tempsmaxicom=Max time HTTP: ^1s
+#sous_titre=subtitle
+#message=message
+#bleu=blue
+#marron=brown
+#info_compe=The information of the competition
+#tous_tableaux=All tableaux
+#all_match_clas=All matches of poules and tableaux, and all rankings
+#detruire_compe=Destroy the competition
+#detruire_compe_smart=Détruire la compétition sur le serveur smart
+#tireurs_envoyes=sent fencers
+#titres_differents=The titles are different between the web and the competition
+#veut_meme_titre=Do you want to have the same titles
+#is_it_right_id=Is this the right identifier for this competition
+#cliquer_modifier=Click on Modify and enter the title
+
+5 juillet 2016
+
+#mixte=mixed
+#garcons=boys
+#filles=girls
+#qui_commence=Who starts?
+#re_qui_commence=Redo the draw to see who starts (boys or girls)?
+#garcons_commencent=The boys start
+#filles_commencent=The girls start
+#quand_garcons_commencent=When boys start:
+#quand_filles_commencent=When girls start:
+#devrait_gars_filles=^1 should have 2 or 3 boys and 2 or 3 girls
+#melange_rang_mixte=Mix between ranges 1, 2, 3, 4 and 5, 6, 7, 8 in a team
+#mettre_rang1234=Put a team: 12R for boys, 34R for girls
+#mettre_rang5678=Put a team: 56R for boys, 78R for girls 
+#gars1256=Boys must have the ranks in 1256
+#filles3478=Girls must have the ranks in 1256 3478
+#erreur_gars_fille=Error: girl with boy
+#n_gars=There are ^1 boys.
+#n_filles=There are ^1 girls.
+#compe_mixte=The competition is MIXED
+#rencontre_mixte=The bout sheet is MIXED
+#cela_signifie=That means:
+#signifie2_2_2fois=2 boys meet 2 boys and 2 girls meet 2 girls (8 matches)
+#compe_non_mixte=The competition is NOT MIXED
+#rencontre_non_mixte=The bout sheet is NOT MIXED
+#signifie3_3=3 fencers meet 3 fencers (9 matches) 
+#changer_sexe=Want to change the parameter 'Sex' of the competition?
+#dabord_arbitres_moins=Favour referees who have officiated less
+#non_favorise=not favoured
+#pret=ready
+#deja_fait=already done
+#deter_qui_commence=Determine who starts
+#tableau_pas_pret=The tableau is not ready
+#on_effectue=Do it anyway?
+#meme_tirage_tabs=A unique random draw for these ^1 tableaux?
+#deter_qui_1-4_5-8=Determine who is 1234, who is 5678
+#qui_1-4_5-8=Who is 1234, who is 5678?
+#deter_qui_1-3_4-6=Determine who is 123, who is 456
+#qui_1-3_4-6=Who is 123, who is 456 ?
+#pas_remplacement=No Cyrano substitution 
+#remplacement_unefois=Cyrano substitution
+#categories=Categories
+#categories_fie=Categories of FIE
+#cat_pas_pour_championnat=The categories do not correspond to the championship.
+
+2016/10/27
+
+#tableaux_par_niveau=Tableaux of ^1 by levels
+#manque_tireurs=Not enough fencers
+#prend_tous_les_tir=take all fencers in barrage
+
+#dernier_tour_par_niveau=Last round of poules by levels
+
+#fic_pas_ecrit=The file has not been saved
+#ajout_arbi_dispo=Add all the available referees
+#presents=present
+#disponibles=available
+#tir_meme_clas=Fencers with same ranking
+#qui_devant=Indicate who is before the others
+
+#app_broadcast=Piste apparatuses in Broadcast mode
+
+#formule_descri_tab=Formula with customed tableaux
+#utiliser_tab=Use these tableaux as they are
+#recalculer_tab=The ranking groups are recalculated
+#erreur_cal=Error while recalculating the ranking groups
+
+2017-05-29
+
+#Pasdepoule=No poule
+#enlever_contraintes=or remove constraints
+#choix_formule=Formula choice
+
+#nation2=nation 2
+#nation3=nation 3
+#nation4=nation 4
+#2eme=2nd
+#3eme=3rd
+#4eme=4th
+
+#dabord_fermer=First you have to close the competition
+#rattacher=attach
+#detacher=detach
+#suivi=follow-up
+
+#RedTermineeMaintenant=Reduce completed poules
+#RedNonEnCoursMaintenant=Reduce non ongoing poules
+#RedTermineeAuto=Reduce completed poules automatically
+#RedNonEnCoursAuto=Reduce non ongoing poules automatically
+
+#multi_nat=Several nations
+
+#eviter0=TREATMENTS RESERVED FOR EXPERTS
+#eviter1=AVOID THIS TYPE OF CHANGE ON ONGOING COMPETITIONS
+#eviter2=TO DO ON A TEST COMPETITION FIRST
+#modification_importante=Important change
+#nb_vainqueurs_clas=Number of winners
+#nb_battus_clas=Number of losers
+#recalcule_poules=poules are recalculated
+#vic_score_precise=Victory with specified score
+#non_supprimable_now=this entity cannot be deleted now
+
+#noms_pistes=Names of the pistes
+#premier_IP=First IP number
+#ex_noms_pistes=Example: 1-15 Podium Blue Yellow Green Red 
+#pistes_a_utiliser=Pistes to be used
+#pistes_a_utiliser_ordre_IP=Pistes to be used in the order of IP numbers
+#ajout_une_piste=Add one piste
+#ajout_pistes_ip=Add IP pistes
+#ajout_pistes_semi=Add SEMI 1.0 pistes 
+#piste_incorrecte=incorrect piste
+#heure_incorrecte=incorrect hour
+#piste_dupliquee=duplicated piste
+#ip_duplique=duplicated IP
+#descri_formule=desription of the formula
+#charger_formule_perso=load a personal formula
+
+#mettre_no_quart=Put the used numbers of ^1
+
+#maj_fichiers=Updating some files
+#maj_succes=Successful Updates
+#maj_echecs=Updates that failed
+
+#poule_entiere=fenced a whole poule
+#match_entier=finished a match
+#match_tire=fenced a match
+#classe=classified
+#non_classe=not classified
+#sans_rang=in the final list without ranking 
+#sans_rang_en_fin=in the final list without ranking (when competition ended)
+#statut_different=the status in the list has been changed
+#present_ni_ni=present in the list but not in poule and not in match
+
+#accueil=home
+#affichage=display
+#ouvert_recent=Recently opened
+#tables_dans_fenetre=tables are in the WINDOWS menu
+
+#cliquer_accueil=Click on Home to return to home
+#montrer_svg=Show main backups of this competition
+#faut_quitter_engarde=YOU MUST LEAVE ENGARDE.
+#engarde_sauve=Engarde will make a backup.
+#relancer_engarde_svg=You will then have to launch Engarde to start from the backup.
+#pas_svg_compe=There is no backup for this competition
+#passer_compe_rep=Do you want to move the competition from directory ^1
+#vers_rep=to directory ^1
+#passer_compe_parent=Move this competition to the parent directory
+#incoherence_formule=INCOHERENCE IN THE FORMULA, MISSING TABLEAUX
+#charger_nouv_formule=LOAD A NEW FORMULA
+#retour_poule_par_svg=USE A BACKUP OR GO BACK TO THE END OF POULES AND LOAD A NEW FORMULA
+#use_backup=USE A BACKUP
+#quand_meme_ouvrir=Do you still want to open this competition
+#err_load_formula=ERROR WHILE LOADING FORMULA : RESET FORMULA
+#err_table=ERROR, TABLE NOT LOADED
+
+#suppr_pistes_avant=Existing pistes must be suppressed before
+
+#k_meme_place=type k or ctrl+k in the display window to show this toolbar at the same position
+#esc_ferme=Windows can be closed with the Esc key
+
+#connexion_eservice=Connection to engarde-service
+#autre_connexion=Another connection
+#transmission=The transmission of poules and tableaux is done every ^1s.
+#aussi_periode=It is also the update period of Engarde Smart.
+#periode_defaut=This is the default period.
+#periode_achetee=The purchased period is ^1s.
+#periode_plus_grande=The period applied is greater because the number of fencers is greater than that indicated in the purchase.
+#periode_plus_courte=To have a shorter period, connect to your account on engarde-service.com 
+#modif_nb_tir=and change the number of fencers.
+#modif_periode=and change the period.
+
+#date_diff=The date is different
+#arme_diff=The weapon is different
+#sexe_diff=The sex is different
+#type_diff=The type is different
+#smartID_diff=The Smart ID is different
+
+#bloque=locked
+#bloquer_pass=lock the password
+#debloquer_pass=unlock the password
+#bloquer_les_pass=lock all the passwords
+#debloquer_les_pass=unlock all the passwords
+#match_bloque=locked match
+#poule_bloquee=locked poule
+#modifiable=modifiable
+#verifie=checked
+
+#icone_verif=An icon "Verified" mean "Verified, modifiable only here".
+#icone_cadenas=An icon "Padlock" means "Modifiable only here".
+#icone_non=An icon "Crossed padlock" or no icon means "Modifiable remotely".
+#icone_clic=Click the icon to modify it.
+#menu_distance=The menu allows you to set everything "Modifiable remotely".
+#modif_distance=Set everything "Modifiable remotely"
+#faible_itinerance=finer access to data, small use of mobile data
+
+#Interdireouvertureparfichier=Prohibit opening by files for Auxiliary and DiapoEngarde
+#InterdireouvertureparfichierQ1=Do you want to forbid Engarde Auxiliary and DiapoEngarde to read the competition files,
+#InterdireouvertureparfichierQ2=and thus force them to use the client-server mode or DiapoEngarde by internet (highly recommended)
+#dangereuxparfichier1=It is dangerous to open a competition in Auxiliary and with DiapoEngarde.
+#dangereuxparfichier2=It is better to use the CLIENT-SERVER mode or DiapoEngarde by internet.
+#interditparfichier1=It is forbidden to open this competition in Auxiliary and with DiapoEngarde now. 
+#interditparfichier2=Use the CLIENT-SERVER mode or DiapoEngarde by internet.
+#client_serveur_vert=Openings in CLIENT-SERVER mode are displayed in green.
+
+#a_partir_donnes_smart=From internet SMART data
+#ouvrir_internet=Open on the internet
+#get_data_internet=Loading SMART data from the internet
+#smart_id=SMART identifier
+
+#methode_globale=Global method
+#methode_globale_val=Global method with interval
+#methode_globale_formu=Global method with formula
+
+#pasApas=Step by step
+#phaseParPhase=phase by phase
+#generer_pass=Generate passwords
+#effacer_pass=Clear passwords
+#imprimer_pass=Print passwords
+
+#compe_aujourdhui=Les compétitions d'aujourd'hui
+#saisie_identifiant=Saisie d'un identifiant de compétition
+#saisie_date=Saisie d'une date pour chercher des compétitions
+#mois1=Jan.
+#mois2=Fev.
+#mois3=March
+#mois4=April
+#mois5=May
+#mois6=June
+#mois7=July
+#mois8=Aug.
+#mois9=Sept.
+#mois10=Oct.
+#mois11=Nov.
+#mois12=Dec.
+write o or y for month_before_day to get "jan. 4" - write n to get "4 jan."
+#month_before_day=y
+
+#bienvenue=Welcome to ^1
+#bienvenue0=Welcome to Engarde 10
+
+#bienvenue11=Because of a change in contexts, versions 10.1 and later are not compatible with earlier versions.
+#bienvenue12=For more information, see "Help | Recent Manuals xx | versions".
+#bienvenue13=With Engarde Smart the referees or the piste assistants can enter the results of the matches on the piste.
+
+#bienvenue14=It is not recommended to open "by files" the competitions in auxiliary and with DiapoEngarde. It can produce read/write conflicts in files.
+#bienvenue15=It is better to use the client-server mode (competitions shown in a green banner) or DiapoEngarde by internet.
+
+#bienvenue16=Version 10.2 includes the evolutions made for the World Championships in Budapest 2019 and the evolutions of August 2019.
+#bienvenue17=The list of these evolutions can be found on the engarde-escrime.com website in the version history.
+
+============= 2022-12-20
+
+#long_time=Long-term competition
+#forfait_par_match=Match-by-match forfeits
+#points_bonus=Points and bonuses
+#clas_poule_points_bonus=Poule rankings with points and bonuses
+
+#pas_abandon1=In "Match-by-match forfeits" mode, Engarde doesn't register abandonments.
+#pas_abandon2=Give a victory to the competitor opposite the one who abandons.
+#pas_abandon3=If the opposing competitor has N points and the abandoning competitor has P points and N>P, put these points.
+#pas_abandon4=If the opposing competitor has N points and the abandoning competitor has P points and N<=P, 
+#pas_abandon5=give P points to the competitor who abandons and P+1 points to the opposite competitor.
+
+#expli_forfait1=In "Match-by-match forfeits" mode,  type f as score for a forfeit
+#expli_forfait2=Engarde will put a victory on the opposing competitor.
+#expli_forfait_plus_de_2=To put more than ^1 forfeits in a competitor's poule, use Engarde Main
+#expli_efface_score_aux=To delete a score in a pool, it's better to use Engarde Main
+
+#modification_symetrique=modification of the symmetrical
+#modification=modification
+#verif_fait_modif=The poule check made ^1 changes
+#imp_formu_points_bonus=Print the formula to view point and forfeit parameters
+
+#points_V=Number of points for a victory
+#points_D=Number of points for a defeat
+
+#bonus_offensif=Offensive bonus
+#expli_bonus_V=The offensive bonus is noted "Bonus V" or "bv".
+#seuil_bonus_V=Seuil de bonus offensif, TD-TR >=
+#points_bonus_V=Points for an offensive bonus
+
+#bonus_defensif=Defensive bonus
+#expli_bonus_D=The defensive bonus is noted "Bonus D" or "bd".
+#seuil_bonus_D=Defensive bonus threshold, TR-TD <=
+#points_bonus_D=Points for a defensive bonus
+
+#seuil_forfait_total=Total forfeit threshold
+#pas_seuil_forfait_total=No total forfeit threshold
+#seuil_forfait_total_expli_1=Type 4 for 4 forfeits to become a forfeit for the entire pool
+#seuil_forfait_total_expli_2=Type 0 to have no total forfeit 
+
+============= 2023-09-14
+
+#verif_num_serie=Checking competitor numbers for initial classification
+#num_serie_titre=competitor numbers for initial ranking
+#sans_rang_apos=without rank
+#mettre=put
+#il_faut_mettre=You have to put
+#les_non_classes=unranked competitors
+#garder _rangs_autres=and keep ranks for other competitors
+#certains_competiteurs=some competitors
+#competiteurs_concernes=competitors concerned
+#a_partir_de=from
+#sur_de=Are you sure you want
+#passe_no=step number ^1
+#ancienne_methode=old method
+#non_c_ok=no, it's ok
+#battus_demis_exaequo=The semi-final losers are tied

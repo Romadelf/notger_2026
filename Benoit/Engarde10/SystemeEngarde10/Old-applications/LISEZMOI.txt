@@ -1,0 +1,2 @@
+Vous pouvez executer une ancienne application en la transferant du repertoire "Old-applications" vers le repertoire "SystemeEngarde10". À partir de la version 10.01, vous pouvez executer une ancienne application dans le repertoire "Old-applications"
+

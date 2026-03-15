@@ -1,0 +1,4 @@
+{[type list] [classedebase tireur] [champs_info_select (marge_gche serie nomprenom
+ drapeau nation1 presence marge1 marge_dte)] [champs_info_taille (16 121 552 102
+ 129 178 16 16)] [champs_info_format (0 110 "Arial" 34 0 2 16777215 2 2 22)] [tempo 8] [selection_select
+ tous] [ordre_select ordre_alpha] [grille grille] [ajustement 1]}

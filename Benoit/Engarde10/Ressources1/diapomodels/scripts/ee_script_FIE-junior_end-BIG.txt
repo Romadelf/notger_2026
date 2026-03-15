@@ -1,0 +1,13 @@
+(
+
+; show, big size, the tableau 8 4 2 with ranking when it is ongoing
+; on affiche en gros le tableau 8 4 24 avec les classement quand il est en cours
+(if (tableau a8 ongoing) then (show tableau "ee_Big-a8-rank8.txt"))
+(if (tableau a4 ongoing) then (show tableau "ee_Big-a4-rank8.txt"))
+(if (tableau a2 ongoing) then (show tableau "ee_Big-a2-rank8.txt"))
+
+; show, big size, the fianl with ranking when it ithe competition is finished
+; on affiche en gros la finale avec les classement quand la compétition est terminée
+(if (state finished) then (show tableau "ee_Big-a2-rank8.txt"))
+
+)

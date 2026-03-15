@@ -1,0 +1,3017 @@
+#textes_engarde=Galego/Galician; Tradución de 100tolos
+
+This file contains the texts of ENGARDE. It can be translated into another language.
+For this:
+* modify the first line:
+  - keep: "#textes_engarde="
+  - write after the name of the language in the language itself then "/"
+  - write after the name of the language in English then ";"
+  - write after the name of the translator and the date day/month/year
+* then translate the lines starting by # 
+
+A line starting with # and containing = describes a text, otherwise it's a comment
+which is ignored when loading.
+The part between # and = is the symbol that should not be modified.
+The part after = is the body of the text to be translated into your language.
+
+For some texts, we also give a reduced version
+we use the same symbol with% at the end
+example:
+normal text: #categorie=catégorie
+reduced text: #categorie%=cat
+
+It is recommended to write the text in lower case. ENGARDE takes in charge for uppercase
+in general.
+
+******************************************************************************
+
+Somes sentences have places denoted ^1 or ^2 which are replaced by a number or a word by ENGARDE 
+example:  #tour_no=tour No ^1
+
+******************************************************************************
+
+In several sentences, ENGARDE manages genders and numbers.
+First example: international[/e|s/es]
+between [] there are several way to complete the word:
+"|" separates numbers: singular|plural
+"/" separates gender: male/female
+
+In some sentences, ENGARDE manages genders and numbers related to a place:
+example:  #elimine=^1 éliminé[1|/e|s/es]
+the gender and number will be this of the word replacing ^1 because of 1| after [
+
+******************************************************************************
+
+The gender of some words is indicated with (f) ou (m) before the word
+example:  #competition=(f)compétition[|s]
+
+******************************************************************************
+
+THE SENTENCES TO BE TRANSLATED HAVE A & AFTER =
+example: #tour_no=&tour No ^1
+It helps to search the sentences to be translated
+REMOVE THE & WHEN YOU TRANSLATE A SENTENCE
+
+******************************************************************************
+
+Indicate here if the language uses latine letters (write oui or non)
+When non is written, the texts are not modified:
+- no transformation in upper/lower case
+- no suppression of spaces, no gender or number consideration.
+Texts must be written without [ / | ] and without (f) and (m)
+but ^ must be kept
+
+#alphabet_latin=oui
+
+Indicate below if you want Engarde manage upercase for title or not
+
+#majuscules_automatiques=oui
+
+Indicate here the size of the labels for the input windows when you want a fixed size.
+0 means automatic size (use it for latin languages)
+another value is the precise size in pixels, usually between 100 and 200 (use it for 
+Chinese for example).
+
+#size_of_label=0
+
+******************************************************************************
+                        COMPETITION
+
+#competition=(f)competencia[|s]
+#parametres=parametros
+#parametres_principaux=parámetros principais
+#individuelle=individu[/|al/is]
+#par_equipes=por equipos
+#type_compe=tipo de competencia
+#national=naciona[l/is]
+#international=internaciona[l/is]
+#domaine_compe=tipo de competencia
+#arme=arma
+#fleuret=florete
+#epee=espada
+#sabre=sabre
+
+#organisateur=(m)organizador
+#liveURL=&Live results URL
+#videoURL=&Video URL
+#URLorganisateur=URL del organizador
+#lieu=lugar da competencia
+#federation=(f)federación
+#titre_reduit=(m)título reducido
+#texte=texto
+#titreCourtTournoi=&short tournament title
+#titreLongTournoi=&tournament title
+
+#titre_ligne=título nunha líña
+#titre_diapo=&DiapoEngarde titulo
+
+#titre1=título : líña 1
+#titre2=título : líña 2
+#titre3=título : líña 3
+#titre4=título : líña 4
+
+
+******************************************************************************
+
+                       THE ENTITIES OF THE TABLES
+
+All entities have a name
+for fencers and referees, the name is the last name, e.g., DUPONT
+#nom=(m)apelido-nom[|s]
+
+The nations have a name in 3 letters and a full name
+#nom_etendu=(m)nome[|s] completo[|s]
+
+Entities have affiliations (club, nation ...)
+#affiliation=afiliación
+#affiliation_possible=(f)afiliación[|s] posible[|s]
+
+For fencers, referees and teams
+#presence=(f)presenza
+#presence%=(f)pres.
+#present=present[e/e|es/es]
+#present%=P
+#absent=ausente[/|s/s]
+#absent%=A
+#touspresents=Todos presentes
+#tousabsents=Todos ausentes
+#absentpardefaut=ausente por definición
+#presentpardefaut=presente por definición
+
+For fencers and referees
+#sexe=(m)sexo[|s]
+#sexe%=(m)sexo[|s]
+les adjectifs associés [homme/dame|hommes/dames] ACCORDES AVEC LE MOT SEXE
+#masculin=masculino
+#masculin%=M
+#feminin=feminino
+#feminin%=F
+
+#categorie=categoria
+#categorie%=cat
+#veteran=veteran[o/a|os/as]
+#veteran%=V
+
+#veteranA=veteran[o/a|os/as]A
+#veteranA%=VA
+#veteranB=veteran[o/a|os/as]B
+#veteranB%=VB
+#veteranC=veteran[o/a|os/as]C
+#veteranC%=VC
+
+#veteran1=veteran[o/a|os/as]1
+#veteran1%=V1
+#veteran2=veteran[o/a|os/as]2
+#veteran2%=V2
+#veteran3=veteran[o/a|os/as]3
+#veteran3%=V3
+#veteran4=veteran[o/a|os/as]4
+#veteran4%=V4
+#senior=maior[|es]
+#senior%=S
+#junior=xuvenil[|is]
+#junior%=X
+#cadet=cadet[e/e|es/es]
+#cadet%=C
+#minime=infantil-c
+#minime%=M
+#benjamin=infantil-b
+#benjamin%=B
+#pupille=infantil-a
+#pupille%=P
+#poussin=infantil[|is]-aa
+#poussin%=O
+
+for clubs, leagues, nations
+#effectif=actual
+
+***********
+FENCERS
+
+#tireur=tirad[or/ora|ores/oras]
+
+prenom is first name
+#prenom=(m)nome[|s]
+#prenom%=(m)nome
+#nomprenom=(m)apelido[|s] nome[|s]
+#nomprenom%=(m)ap-nom[|s]
+#date_nais=(f)data[|s] de nacemento
+#date_nais%=(f)data[|s] Nac.
+#licence_fie=(f)licenza[|s] FIE
+#licence_fie%=(f)lic. FIE
+#cle=clave
+#licence=(f)licenza[|s]
+#licence%=(f)lic.
+#dossard=(f)afiliación[|s]
+#dossard%=(f)afil.
+#serie=(m)no de serie
+#serie%=serie
+#points=(m+)puntos
+#points%=(m+)pts
+#rang=(m)clas
+#rang%=(m)cl.
+#rang_init=&initial rank
+#rang_init%=&i.r.
+#nb_poules=no.de poules
+#nb_poules%=poules
+#nb_matches=no.de encontros
+#nb_matches%=encontros
+#nb_finales=no de finais
+#nb_finales%=finais
+
+#groupe=grupo
+#groupe%=gpo
+#vic_match=V/M
+#vic_match%=V/M
+#vic=&victories
+#vic%=&V
+#def=&defeats
+#def%=&D
+#points_a_bonus=&points
+#points_a_bonus%=&pt
+#bonus=&bonus
+#bonus%=&bon
+#indice=TD-TR
+#indice%=ind.
+#td=toques dados
+#td%=TD
+#tr=toques recibidos
+#tr%=TR
+#bonus_v=&bonus V
+#bonus_v%=&bv
+#bonus_d=&bonus D
+#bonus_d%=&bd
+#phase=fase
+#no=Num
+#rnd=Vta
+#phase_incomplete=&phase ^1 incomplete
+#passe_phase_suiv=&move to the next phase
+
+***********
+
+#equipe=(f)equipo[|s]
+#serie_eq=(m)no.serie
+#points_eq=(m+)puntos 
+
+***********
+
+#club=(m)club[|es]
+
+#ville=&cidade
+
+#departement=&department[|s]
+
+#ligue=(f)liga[|s]
+
+#etat=(m)estado[|s]
+
+#region=(f)rexión[|s]
+
+#nation=(f)nación[|s]
+
+***********
+
+#arbitre=(m)Arbitro[|s]
+
+******************************************************************************
+
+#formule=(f)fórmula[|s]
+#formu_compe=fórmula da competencia
+#pas_de_poule=a fórmula non inclue poules
+#pas_de_tableau=a fórmula non inclue taboas de eliminación directa
+#pas_fini_poules=as poules non remataron
+#clasmt_origine=clasificación de orixen
+#tour_poules=^1 volta[1||s] de poules
+#nombre_tireurs=número de tiradores
+#nombre_tours_poules=número de voltas de poules
+#qual_fin_poules_sur=calificación ao remate da volta de poules
+#clas_fin_poules_sur=clasificación ao remate da volta de poules
+#qual_fin_poules_sur_x=calificación a remate da ^1 volta[1||s]
+#clas_fin_poules_sur_x=clasificación ao remte de poules sobre ^1 volta[1||s]
+#nombre_touches_poules=número de toques nos encontros de poules
+#nombre_touches_tableaux=número de toques nos encontros de taboa
+
+#max_touches=máximo número de toques
+#matches_en=encontros en ^1 toques[1||s]
+#dans_poules=nas poules
+#nombre_suites_tableaux=número de encontros nas taboas
+#tire_3e=tirase polo 3er lugar
+#formule_poules=fórmula de poules
+#formule_tableaux=fórmula da taboa de eliminación directa
+#tour_no=volta No ^1
+#suite_tab_no=encontro de taboa No ^1
+#trop_exemptes=hai moitos exentos
+#trop_poules=hai moitas poules
+#trop_qualifies=hai moitos calificados
+#trop_tireurs=hai moitos tiradores
+
+#bar_exemptes=desempate para os exentos
+
+#modifier_valeurs=modificar estos valores
+#nb_change=o número de ^1 cambiou
+#revoir_formule=revise a fórmula
+#au_depart=^1 ao empezar
+#exempte=^1 exent[1|o/a|os/as]
+#il_faut=debese
+#exemptes=exentos
+#non_exemptes=^1 no exent[1|o/a|os/as]
+#pas_decalage=sen décalage
+#decalage_par=décalage para
+#limite_a=limitado a ^1
+#qualifies=calificados
+#qualifie=^1 calificad[1|o/a|os/as]
+#elimines=eliminados
+#elimine=^1 eliminad[1|o/a|os/as]
+#par_poule=^1 por poule
+#a_l_indice=^1 ao indice
+#a_la_fin=^1 ao fin
+
+#remp_auto_pou=simulación automática de poules
+#simu=facer a simulación
+#est_fait=efectuouse
+#rien_faire=&do nothing
+
+#poules_finies=poules rematadas
+#compe_finie=competencia rematada
+#on_en_est=estase en
+#const_poules=creación de poules
+#ameliorer_poules=Primeira pasada, Non óptima Desexa Mellorar?
+#const_tableau=creación de taboa
+#saisie_poule=captura de poules
+#remplissageauto=simulación automática
+#feuilles_pou=follas de poule
+#poules_const=poules constituidas
+#poules_resu=resultados de poules
+#poules_a_saisir=^1 poule[1||s] a capturar
+#tableaux_a_saisir=^1 taboa[1||s] a capturar
+#matches_a_saisir=^1 encuentro[1||s] a capturar
+#matches_a_imp=^1 encuentro[1||s] a imprimir
+#poules_a_imp=^1 poule[1||s] a imprimir
+#imp_toutes_pou=imprimense todas as poules
+#imp_des_pou=imprimense algunhas poules
+#de_poule=da poule
+#a_poule=á poule
+#poule_saisie=esta poule foi capturada
+#grille=reixa
+#imp_match_de=imprimir os encontros de
+#imp_match_attente_de=imprimir os encontros en espera de
+
+#refaire_poules=refacer as poules
+#refaire_tableau=refacer a taboa
+#refaire_poules_tno=refacer as poules da volta No ^1
+#poules_tno=poules da volta No ^1
+#revenir_tour=regresar á volta precedente
+#revenir_tour_no=regresar á volta No ^1
+#modif_scores=modificanse todas as puntuacións
+#modif_raz=modificar a poule borrar a captura
+#modif_poule_int=desexa Vd. Modificar esta poule ?
+#repartition_poule=distribución nas poules
+
+#toutes_saisies=capturáronse todas as poules
+#bar_dans_poule=hai empate na poule
+#qual_poule=^1 calificado[1||s] na poule
+#pas_qual_poule=NO calificados na poule
+#qual_indice=^1 calificado[1||s] ao índice
+#y_a_barrage=hai empate
+#poules_saisies=^1 poule[1||s] [1|esta|estan] capturada[1||s]
+
+#perdre=desexa Vd. Perder isto ?
+#perdre_tab=desexa Vd. Perder as taboas ?
+
+#numero=(m)número[|s]
+#numero%=No
+#total_tireurs_depart=tiradores ao comezar
+#nombre_exemptes=tiradores exentos
+#tireurs_dans_poules=tiradores en poules
+#tireurs_dans_tableau=tiradores en taboa
+#nombre_poules=número de poules
+#tireurs_par_poule=número de tiradores por poule
+#critere_decal_1=criterio de decalage 1
+#critere_decal_2=criterio de decalage 2
+#critere_decal_3=criterio de decalage 3
+#critere_placement=colocación nas poules por
+#limite_decal=limitación do decalage
+#qualifies_par_poule=número de calificados por poule
+#qualifies_indice=número de calificados ao índice
+#total_tireurs_fin=tiradores totais
+#total_tireurs_depart%=tiradores ao comezar
+#nombre_exemptes%=exentos
+#tireurs_dans_poules%=en poules 
+#tireurs_dans_tableau%=en tabloa
+#nombre_poules%=no.poules
+#tireurs_par_poule%=no.tir por poule
+#critere_decal_1%=criterio 1
+#critere_decal_2%=criterio 2
+#critere_decal_3%=criterio 3
+#critere_placement%=coloc. poules
+#limite_decal%=limite de decalage
+#qualifies_par_poule%=calificados por poule
+#qualifies_indice%=calificados ao índice
+#qualifies%=calificados
+#total_tireurs_fin%=tot tir
+
+#qualif_tour=calificados da volta No ^1
+
+******************************************************************************
+                       LES POULES
+
+#deroulement=desenvolvemento
+
+#poule=(f)poule[|s]
+#poules=(f)poules
+#x_poule=^1 poule[1||s]
+#x_poule_de=^1 (f)poule[1||s] de ^2
+#x_poule_de_ou=^1 (f)poule[1||s] de ^2 o ^3
+#sais_poules=captura de poules
+#sais_matches=captura de encontros
+#sais_scores=&entry of the scores
+#sais_pistes=captura de encontros/pistas
+#sais_arbitres=captura de árbitros
+#sais_horaires=captura de horarios
+#sais_piste_arbi=captura de pistas e árbitros
+#modif_poules=modificación de poules
+#poule_no=poule No ^1
+#match_no=encontro No ^1
+#piste_no=pista No ^1
+#piste=(f)pista[|s]
+#piste%=P.
+#pas_bon_no_pou=non é un número de poule correcto
+#pas_bon_no_match=non é un número de encontro correcto
+#pas_bon_tab=non é una taboa
+#lettre_et_nombre=fai falta una letra e un número
+#reordonne=reordenase a poule
+#garde_ordre=conservase esta orde
+#ajout_tir_pas_ds_pou=engadese tirador ausente nas poules
+#les_tireurs=os tiradores
+#enleves_poules=quítanse das poules
+#meme_heure_piste=&same hour, same piste
+
+******************************************************************************
+
+#tableau=Taboa[|s]
+#tableaux=taboas
+#ces_tableaux=&these tableaux
+#tableau_de=taboa de ^1
+#tableau_prelim_de=taboa preliminar de ^1
+#tableau_prince_de=taboa principal de ^1
+#tableau_phase_de=taboa "fase ^1" de ^2
+#tableau_final=taboa final
+#demi_finales=semi-finais
+#finale=final
+
+******************************************************************************
+
+#classement=(f)clasificación[|]
+#classements=clasificaciones
+#classement_des=clasificación de ^1
+#classement_apres_pou=clasificación despois de poules
+
+******************************************************************************
+
+#nouv_compe=nova competencia
+#ouvrir_compe=abrir una competencia
+#fermer_compe=pechar una competencia
+#sauvegarde=respaldar
+
+#faire_fic_trans=directorio de intercambio
+#fic_trans_FFF=directorio de intercambio FFF
+
+#fic_resu=creación dun arquivo de resultados
+#activiteArbitres=actividade de árbitros
+#avec_series=cos números de serie
+#avec_rangs=cos lugares
+#du_rang=do lugar
+#au_rang=ao lugar
+#in_tab_indiv=&In tableaux of individual competitions
+#ref1_match=&referee 1 is match referee
+#ref23_assistants=&referees 2 3 are assistants
+#in_team=&In team competitions
+#ref123_match=&referees 1 2 3 are match referees
+
+#enreg_compe=dar de alta a competencia
+#chargement=cargar
+#prepa_tables=preparación de taboas
+#prepa_affi=preparación do rexistro
+#ecraser=falla ^1
+#pas_sur_elle=non se pode copiar a competencia sobre si misma
+
+#copie_de=copia de ^1
+#choix_rpla=ou escoller una competencia para remplazarla
+#rep_pas_cree=o directorio ^1 non foi creado
+
+#modif_de=modificación de ^1
+#val_convient_pas=este valor non convén
+#pour_cela=para facer isto
+#arriere=é preciso regresar
+#dans_tableaux=ás taboas
+#valeur_initiale=valor inicial
+#pas_encore_tab=taboa non iniciada
+
+******************************************************************************
+
+#table=(f)lista[|s]
+#tri=en proceso
+
+#fiche=(m)rexistro[|s]
+#edition=edición
+#curseur_init=cursor inicial
+#colonne1fixe=columna 1 fixa
+
+#import_fiche=importar do arquivo
+#importer=importar
+#importer_tous=importar todos
+#effacer_champ=borrar o campo
+#effacer_fiche=borrar o rexistro
+
+#precedent=precedente[//s]
+#suivant=seguinte[/|s/s]
+#premier=prime[ro/ra|ros/ras]
+#dernier=últim[o/a|os/as]
+#symetrique=simétrico
+
+#nouveau=nov[o/a|os/as]
+#saisir=capturar
+#saisie=captura
+#saisir_affil=capturar afiliación
+#modifier=modificar
+#chercher=buscar
+#chercher_compe=buscar na competencia
+#chercher_res=buscar na memoria
+#chercher_fic=buscar no arquivo
+#fermer=pechar
+#suite=continuar
+#enregistrer=inscribir
+#enregistrement=incripción
+#quitter=sair de Engarde
+#justequitter=sair
+#retour_Engarde=Regresar a Engarde
+#retour_init=regresar ao estado inicial
+#maximum=máximo
+#vic_score=victoria con puntuación
+
+#victoire=victoria
+#defaite=derrota
+#abandon=abandono
+#exclusion=exclusión
+#forfait=cesión
+#medical=&medical
+#pblack=&Pblack
+#sortie_except=&Exceptional exit
+#verif_sortie_except=&Do you want to check for exceptional exits before
+#abandon_med_expli=&Abandonment for medical reason
+#abandon_tech_expli=&Abandonment for technical reason
+#exclusion_expli=&Exclusion (disciplinary reason)
+#forfait_expli=&Forfeit (not present at their first match of the competition)
+#pblack_expli=&Defeat for non-combativity
+#faire_saisie_dans_poule=&Do this modification in the poule
+#faire_saisie_dans_tableau=&Do this modification in the tableau
+#modif_impossible=&Impossible modification
+
+juste one latin letter for each symbol, not x, not w, all different
+#victoire%=v
+#defaite%=d
+#abandon%=a
+#exclusion%=e
+#forfait%=c
+#pblack%=&p
+
+#dns=&DNS
+#dnf=&DNF
+#exc=&EXC
+#ncb=&NCB
+
+#efface_sym=simetrico, borrado
+#sym_pas_defaite=o simétrico non é una derrota
+#sym_pas_vic=o simétrico non é una victoria
+#vic_inf_defaite=victoria con puntuación inferior á derrota
+
+#navigation=exploración
+#meme_champ=mesmo campo
+#premier_champ=primeiro campo
+#oblige=falta dar un[1|/a] ^1
+
+#deja_table=tense xa na taboa
+#on_prend_a_la_place=tomaselle o lugar
+#on_a_ici=e temos agora
+
+  ^1 will be replaced by a number, ^2 by fencer or club
+#il_y_a=^1 [1|^2]
+
+  ^1 will be replaced for example by ranking
+#existe_pas=est[1|e/ta|os/as] ^1 non existe[1|n|n]
+
+  ^1 will be replaced by fencers, rounds of poules...
+#nombre_de=número de ^1
+#ajouter=engadir
+#supprimer=suprimir
+#suppress=supresión
+#suppress_x=supresión de ^1 [1|^2]
+#pas_supp=non se puido suprimir
+#car_compe=xa que está dentro da competencia
+#car_util=xa que est[1|e/a|os] ^1 [1|é|son] empregad[1|o/a|os/as] por
+
+#sur_premiere=está no primeiro rexistro
+#sur_derniere=está no último rexistro
+#taper_deb=teclee o inicio do apelido
+
+#agglomerer=unir
+#agglo_x=unión  de ^1 [1|^2]
+
+******************************************************************************
+
+#recherche=busqueda
+#commencant_par=comezando por
+#contenant=contendo
+#exacte=exactamente
+#approchee=aproximadamente
+
+#chercher_un=buscando [1|un/unha|uns/unhas] ^1
+#chercher_autre=buscar [1|un/unha|outros/outras] ^1
+#resultat=o resultado é
+
+******************************************************************************
+
+#oui=si
+#oui%=s
+#non=non
+#non%=n
+#vrai=verdadeiro
+#vrai%=v
+#faux=falso
+#faux%=f
+#ok=ok
+#annuler=anular
+#aide=axuda
+#pas_aide=axuda non encontrada
+#pas_fic=arquivo non encontrado
+#generalites=xeralidades
+#contexte=contexto
+
+#et=e
+#ou=ou
+#date=(f)data
+#zonehoraire=&time zone
+#au_lieu_de=no lugar de
+#repart_parfaite=distribución perfecta
+#n_imperfect=^1 imperfeción[1||s]
+
+#exemple=(m)exemplo[|s]
+#signature=sinatura[|s]
+#pas_saisie=sen captura
+#dbclick=doble clic
+#use_menu=utilizar o menu ^1
+#liste_vide=lista valeira
+#liste_des=lista de ^1
+
+#reserve=memoria
+#charger=cargar
+#vider=valeirar
+#fichier=(m)arquivo[|s]
+ ^1 will be replaced by file or competition
+#est_de_genre=l[1|e/a] ^1 é de xénero ^2
+#on_charge_fic=cargase o arquivo de ^1
+#chargt_de=carga de ^1
+#entites_chargees=^1 [1|^2] cargad[2|o/a|os/as] en memoria 
+#entites_reserve=^1 [1|^2] en memoria
+#reserve_vide=a memoria está valeira
+#on_importe=importase ^1 [1|^2] á competencia
+#reste_importer=queda a importar :
+
+#essai_trans=proba de formato "intercambio DOS"
+#prem_ligne=a primeira líña dá
+#est_fic_a_charger=é este o arquivo a cargar
+#pas_type_connu=este arquivo non é dun tipo coñecido
+
+#page=(f)páxina[/s]
+#marge=(f)marxen[/es]
+
+#concerne_tir=respecto a tirado[res/ras]
+#concerne_tir_pres=respecto a tirado[res/ras] presente[s/s]
+#concerne_arbi=respecto aos árbitros
+#concerne_arbi_pres=respecto aos árbitros presentes
+#tous=tod[os/as|os/as]
+#ordre=orde
+#ordre_alpha=orde alfabética
+#ordre_structure=orde estructurada
+#ordre_serie=orde por no de serie
+#ordre_rang_init=&ordered by initial ranks
+#ordre_points=orde por puntos
+#ordre_rang=orde por lugar
+#ordre_club=&ordered by clubs
+#ordre_ligue=&ordered by regions
+#ordre_etat=&ordered by states
+#ordre_CID=&ordered by CID
+#ordre_region=&ordered by regions
+#ordre_nation=&ordered by nations
+#ordre_ID=&ordered by ID
+#ordre_licence=&ordered by licences
+#ordre_licence_fie=&ordered by FIE licences
+#ordre_status=&ordered by status
+
+#selection=selección
+#reglages_imp=axustes de impresión
+#rub_a_imp=datos a imprimir
+#document=documento
+#document_global=&global report
+#contenu=contido
+#police=fonte
+#mise_en_page=config-imp
+#imprimer=imprimir
+#ajuster=axustar
+
+#non_modifiable=esta entidad non é modificable
+#non_modifiable_now=&this is not modifiable now
+#anomalie=anomalía
+#termine=terminado
+#termine_sans_AR=&Completed without AK
+#vide=valeiro
+#preparation=en preparación
+#en_cours=en proceso
+
+#dans=dentro
+#match_non_lance=encontro non programado
+#match_a_un=este encontro ten un tirador xa calificado
+#match_deja_saisi=encontro xa capturado
+#jour=&day[|s]
+#heure=(f)hora[|s]
+#heure_debut=&hora de comezo
+#pas_vainqueur=sen vencedor
+#vainqueur=vencedor
+#pb_match_suiv1=este encontro xa ten un vencedor diferente
+#pb_match_suiv2=que tirou na taboa seguinte
+#quand_meme_enreg=desexa polo menos rexistrar este resultado
+#pb_match_suiv3=que foi colocado na taboa da fase seguinte
+#refaire_tab_suiv=deberase refacer a taboa da fase seguinte
+
+#refaire=desexa Vd. refacer
+#modif=desexa Vd. modificar
+
+#clas_init_du_tab=clasificación inicial da taboa
+#tab_fin=a taboa terminouse
+#clas_du_tab=clasificación da taboa
+#clas_des_tab=clasificación das taboas
+#clas_gene=clasificación xeral final
+#tir_en_lice=tiradores en contenda
+#medaille=&medal
+#medailles=&medals
+#or=&gold
+#argent=&silver
+#bronze=&bronze
+
+#de=de
+#a=a
+#depuis=dende
+#jusqua=ata
+
+#hasard_par_2=sorteo ao azar en grupos de 2
+#echange_2=^1 permutación[1||s] de 2 tiradores en ^2
+
+#permut_gpe2=permutacións de tiradores en grupos de 2
+
+#chge_formu_tab=a fórmula das taboas cambiou
+#on_cree=crease
+#on_conserve=conservase
+#attention=atención
+#type_formule=tipo de fórmula
+#formu_classique=fórmula clásica
+#formu_fie_seniors=fórmula copa do mundo seniors
+#formu_fie_juniors=fórmula copa do mundo juniors
+#autre_formule=outra fórmula
+#choix_npoules=escoller o número de voltas de poules
+#choix_ntab=escoller o número de secuencias da taboa de E.D.
+
+#tous_tir_avec_series=todos os tiradores con No de serie
+
+#en_lice_avec_rangs=tiradores en contenda co seu lugar
+#clas_gene_avec_rangs=resultados : clasificación xeral co seu lugar
+
+#saisir_pistes=capturar pistas
+#saisir_heures=capturar horarios
+#feuilles_ma_attente=follas de encontro en espera
+#feuilles_ma=follas de encontro
+#detail_rencontres=Detalle dos encontros
+#rencontres_encours=Encontros en curso 
+#plusieurs_rencontres_encours=&Several ongoing bouts
+#tableauetpistes=taboas e pistas
+#const_tab=creación dunha taboa
+#refaire_tab=refacer unha taboa
+#bad_taille_tab=o tamaño da taboa non é conveniente
+
+for percentages, one will obtain, for example: 20% makes 34
+#fait=^1% danos ^2
+#on_peut_faire=podese facer
+#divers=diversos
+#ordre_special=orde especial de encontros
+#couleur=color
+
+#information=información
+#confirmation=confirmación
+#question=pregunta
+#choix=escolla
+#nouveautes=novidades
+
+#est_absent=^1 está ausente
+#nouveau_tir=^1 novo[1||s] tirador[1||es]
+
+#supp_tour=suprimeselle a partir desta volta
+#prend_pas=non se lle toma máis nesta volta
+
+#est_ce_ok=é isto o que quere ?
+
+#des_absents=algúns tiradores están ausentes
+#bon_nb_exemptes=do número exacto de tiradores exentos
+
+#je_modifie=eu modifico
+#il_y_a_tir_dans_tab=^1 tirador[1||es] na taboa
+#nb_qualifies=número de calificados
+
+#status=condición
+#normal=normal
+
+#par_abandon=por abandono
+#par_exclusion=por exclusión
+#par_forfait=por cesión
+#par_nbc=&by non-combativity
+
+example: Dupont has the status exclusion
+#a_pour_status=^1 ten por condición ^2
+
+#faire_formu_tableau=faga a fórmula das taboas
+#mettre_qual_suite=introduza os calificados a secuencia da taboa ^1
+#ou_supp_suite=o suprimir a secuencia da taboa ^1
+
+#modif_incoherences=corrixo as inconsistencias
+#nb_tir_approx=número aproximado de tiradores
+#plus_deux_tours_tab=é moi raro ter máis de dous secuencias de taboa
+
+#creation_annulee=anulase a creación
+#repechage=repechage
+#poule_incomplete=poule incompleta
+#deux_fois_clas=^1 está dúas veces na clasificación
+#deux_fois_poule=^1 está dúas veces nas poules
+#pas_dans_poule=^1 Non esta nas poules
+#met_tir_abs=metese a estes tiradores ausentes
+
+#deja_ouverte=Esta competencia esta aberta ou en modo de lectura,
+#pasOuvrir2efois=non se lle pode abrir unha segunda vez.
+
+#options=opcións
+#avec_affil=con afiliacións propuesta
+#sans_affil=sen afiliacións propuesta
+#avec_contraintes_statut=&status WITH constraints (recommended)
+#sans_contraintes_statut=&status WITHOUT constraints (NOT recommended)
+#use_option_tt_poss=&Use the option menu to have all the possibilities. 
+#quand_meme_dans_tab=&He will still be placed in a tableau because he must be classified.
+#mettre_abandon_match=&Put him Abandonment in the match.
+#avec_menu_choix=&with choice boxes
+#sans_menu_choix=&without choice boxes
+#fermer_ouvrir_panneau=&The panel must be closed and reopened
+
+#non_qual=^1 non calificado[1||s]
+
+#non_exemp=Problema : ^1 tirador[1||es] exento[1||s] [1|non é|non son]  marcado[1||s] exento[1||s] no directorio
+#non_places=Problema : hai ^1 tirador[1||es||as] non colocado[1|s|s]
+
+#cherche_fic=búsqueda de directorio ^1
+#fic_existe_pas=o directorio  ^1 non existe
+#peux_pas_lire=non se pode ler o arquivo ^1 
+#rep_existe_pas=o directorio non existe 
+#voir_fichier_svg=Ver o menu Arquivo/Respaldo 
+#fic_pas_charge=o directorio ^1 non foi cargado
+#charge_essai=foi cargado ao intento # ^1
+#fic_non_trouve=directorio non encontrado: ^1
+
+#est_deja_table=^1 se encontra xa na taboa
+#que_fait_on_de=que facer de 
+#on_prend_pas=non se lle toma 
+#on_ajoute_pas=non se lle agade
+#on_le_prend=tomaselle
+
+#tirage_auto= sorteo automático
+#tirage_manuel=sorteo manual
+#on_echange=intercambiase
+#interligne=interliñado
+#coef_interligne=do interliñado en porcentaxe, normal = 100
+
+#fic_pas_cree=o arquivo ^1 non foi creado 
+
+#base_dossard=tomar como filiación un número progresivo
+#mettre_dos=tomar os números de filiación
+#ne_pas_mettre_dos=non tomar os números de filiación
+#efface_dos=borrar os números de filiación
+
+#vouloir_copie_permente=desexa unha copia actualizada en forma permanente ?
+#fic_existe=o arquivo ^1 xa existe
+#lecture_seule=só de lectura
+#enreg_copie=grabar a copia da competencia 
+
+#est_copie1=esta competencia é unha copia 
+#PerteStatutCopie=se abre o arquivo, perderá o seu estado de copia
+#nePasOuvrir=NON ABRIR esta competencia
+#OuvrirCetteCompe=abra esta competencia 
+
+#avec_copie=traballase cunha copia en ^1
+#plus_copie=á copia en ^1 xa non se pode acceder
+
+#entree_progressive=entradas progresivas 
+#ajustement_tour=axuste da volta No ^1
+#entree_nouv_tir=entrada de tiradores novos
+
+#elidir=eliminación directa
+#type_elidir=tipo de eliminación directa
+#classique=clásica
+#avec_exemptes=con exentos
+#complexe=complexa
+#pasTableau=sen taboa
+
+#pas_change_type_elidir=Non se pode efectuar agora o cambio do tipo de eliminación directa 
+
+#type_3e_place=tipo de 3er lugar
+#a_indice=ao índice de clasificación
+#ex_aequo=empatado
+#par_match=por encontro
+
+#formu_avec_ex=fórmula con exentos
+#formule_avec_prog=fórmula con entradas progresivas
+#ni_ex_ni_prog=sen exentos e sen entradas progresivas
+
+#avec=con ^1
+#sans=sen ^1
+#choisir=escoller : ^1
+#special=especial
+#remiseZero=cancelar
+#raz_formule=cancelar a fórmula
+#champ_non_modifiable=este campo non é modificable
+
+#assistant=asistente
+#assistant_de=asistente de ^1
+#choix_general=selección xera[l|l/is]
+
+#tir_pas_pris=^1 tirador[1||es] non tomado[1||s]
+#eq_pas_pris=^1 equipo[1||s] non tomado[1||s]
+#nouvelle_eq=^1 novo[1||s] equipo[1||s]
+#changer_statut=&to make a modification, refuse the creation and change the status.
+
+#si_fermer=se agora pecha
+#on_ferme=se pecha
+#nb_approx=número aproximado de ^1
+#ent_dans_poules=^1 nas poules
+#ent_par_poule=^1 por poule
+#ent_dans_tableau=^1 na tabla
+
+#equi_en_lice=equipos en contenda 
+#concerne_eq=concirne aos equipos
+#concerne_eq_pres=concirne aos equipos presentes
+#attrib_equipe=asigne un equipo a aqueles que non teñen un 
+#on_prend=tomanse ^1
+#entite=(f)entidad[|es]
+
+#nom_une_lettre=nome nunha letra 
+
+#origine1=orixen 1
+#origine2=orixen 2 
+#origine3=orixen 3
+#origine4=orixen 4
+#origine5=orixen 5
+#origine6=orixen 6
+
+#progression_naturelle=progresión natural
+#classement_initial_par_groupes=clasificación inicial por grupos 
+#classement_initial=clasificación inicial
+#critere_constitution=criterio de constitución
+
+#tour_de_poules=volta[|s] de poule[|s]
+#nom_tableaux=nomes das taboas
+#suite_tableaux=secuencia ou fase de taboa[|s] 
+#description_tableau=descripción[|s] de taboa[|s]
+
+#description_modele=descripción de exemplo
+#enregister_modele=grabar como exemplo
+#charger_modele=cargar un exemplo
+#chargerFormule=cargar fórmula
+#sur_changer_formu=está seguro de querer cambiar a fórmula ?
+
+#classique_sans3=Clásica sen tirar polo 3er lugar
+#classique_avec3=Clásica tirando polo 3er lugar
+
+#tab_dir_sans3=Taboa directa sen tirar polo 3er lugar
+#tab_dir_avec3=Taboa directa tirando polo 3er lugar
+
+#tableau_direct=taboa de eliminación directa
+#tableau_prelim_32ex=taboa preliminar con 32 exentos
+#tableau_prince64=taboa principal de 64
+#tableau_place_n=taboa para o ^1er lugar
+#match_troisieme_place=encontro polo terceiro lugar
+#troisieme_place=terceiro lugar
+#neme_place=^1er lugar
+#quart_finales=cuartos de final
+
+#prelim_et_ppal=Taboa preliminar con 32 exentos e taboa principal
+
+#non_supprimable=este dato non se pode suprimir
+
+#err_formu_tab=error na fórmula das Taboas 
+#nom_tab_err=nome incorrecto de secuencia de taboa
+#nom_tab_dupli=nome de secuencia de taboa duplicado
+#pas_org=o organismo non existe
+#org_err=tipo incorrecto de orixen en
+#val_err=valor incorrecto en
+#doit_etre=debe ser
+#doit_etre_forme=debe ser da forma
+#lettre_etant_suite=a letra é o nome dunha secuencia de taboa 
+#suite_inconnue=secuencia de taboa descoñecida
+#tab_incorrect_inconnu=taboa descoñecida ou incorrecta
+#circu_tab=redundancia nas secuencias das taboas
+#suites_ok=as secuencias correctas son
+
+#err_qualifes=número anormal de calificados
+#zero_puis2=normalmente son: 0, 1, 2, 4, 8, 16, 32 ...
+
+#pas_tir_tab=tiradores da clasificación de orixen non están nas taboas
+#tir_tab2fois=tiradores da clasificación de orixen encontranse duplicados nas taboas
+
+#dest_vain_dupli=os vencedores de ^1 van en dúas secuencias de taboa
+#dest_bat_dupli=os vencidos de ^1 van en dúas secuencias de taboa
+
+#classe_apres=clasificados despois 
+#destination_vainqueurs=destino de vencedores
+#destination_battus=destino de vencidos
+#groupe_clasmt_battus=clasificación do grupo de vencidos
+#rang_premier_battu=lugar do 1er vencido
+#groupe_clasmt_vainqueur=clasificación do grupo de vencedores
+#rang_premier_vainqueur=clasificación do vencedor
+
+#classe_apres%=clasificados despois
+#destination_vainqueurs%=destino de vencedores
+#destination_battus%=destino de vencidos
+#groupe_clasmt_battus%=clasificación do grupo de vencidos
+#rang_premier_battu%=lug 1er vencido
+#groupe_clasmt_vainqueur%=clasificación do grupo de vencedores
+#rang_premier_vainqueur%=lug vencedor
+
+#calcul_tableaux=cálculo das taboas
+#calcul_groupes_clas=recalculanse os grupos para a clasificación final
+
+#avertissement=advertencia
+#modif_suites=modificación das secuencias de taboas
+#modif_suites_expli1=se vostede modifica aquí as secuencias de taboas,
+#modif_suites_expli2=estas recalcularanse na súa totalidad
+#modif_destination=modificación de destino a taboas
+#modif_destination_expli1=se vostede modifica aquí os destinos a taboas
+#modif_destination_expli2=os grupos de clasificación recalcularanse
+#modif_gpe_clas=modificación deos grupos de clasificación
+#modif_gpe_clas_expli1=se vostede modifica aquí os grupos de clasificación,
+#modif_gpe_clas_expli2=os primeiros lugares dos grupos recalcularanse
+
+#creation_de=creación de ^1
+#creation_1er_tab=creación da primeira taboa
+#suppr_du_tableau=supresión da taboa ^1, renomear en ".old"
+#pas_tab_en_cours=xa non hai taboa en curso 
+#pas_tab_a_faire=non hai taboa a crear 
+
+#barrage_tableau=empate ao lugar ^1 para entrar en taboa
+#garde_rang=^1 tirador[1||es] ou equipo[1||s] te[1||n/ñen] este lugar
+#se_classe_apres=clasificanse despois 
+#formule_prevue=a fórmula esta prevista para ^1
+#tableau_prevu=a taboa esta prevista para ^1
+
+#pas_tab_refaisable=non hai taboa a refacer
+#tab_a_refaire=taboa a refacer
+
+#gpe_clas_diff=dos grupos de clasificación ^1 teñen primeiros lugares diferentes, ^2 e ^3
+
+#pas_match_en_cours=non hai encontro en curso
+#cherche_match=búsqueda dun encontro
+#les_matches_de=ver os encontros de ^1
+#en_cours_contre=encontro en curso contra ^1
+#gagne_contre=encontro gañado contra ^1
+#perdu_contre=encontro perdido contra ^1
+#match_perdu=encontro perdido
+#rec_adversaire=búsqueda do adversario
+#pas_adversaire=sen adversario
+#score_trop_grand=puntuación demasiado grande
+
+#erreur_ecrire=error na escritura do arquivo
+#on_ressaye=intente de novo 
+#ressayer=probe de novo
+
+#rangPoule=lugar na poule
+#rangPoule%=lg poule
+
+#tableau_inacheve= fórmula co taboa incompleta 
+#nombre_exemptes_tab=número de exentos na taboa
+#nb_qualifies_tab=número de calificados da taboa
+
+#on_limite_dec=limitase o decalage ao lugar ^1
+#pour_les_tir=para os tiradores do lugar 1 ao ^1
+#on_dec_pas_plus=non se decala máis alá de ^1
+#on_dec_plus=decalagase eventualmente máis alá de  ^1
+
+#premier_est=o primeiro ^1 da lista é ^2
+#premier_doit_etre=^1 a entrar en primeiro no arquivo
+
+#faire_sauvegarde=efectue un respaldo
+#echec_sauvegarde=o respaldo fallou
+#echec_ouverture=a apertura fallou
+
+#importer_un=importar un 
+#importer_certains=importar algúns
+
+#documentation=documentación
+
+#plusieurs_pou_arbi=danselle varias poules a un arbitro
+
+#criteres_arbitres=criterios de asignación de árbitros
+#affectation_manu=asignación manual
+#affectation_auto=asignación automática
+#affectation_arbi=asignación de árbitros
+#pour_n_tab=&for the ^1 tableaux starting at ^2
+#affectation_arbi_quarts=asignación de árbitros por cuartos de taboa
+#reprise_arbitres=tomanse os árbitros dos cuartos de :
+#raz_arbitres=cancelar todos os árbitros
+#tableauetarbitres=taboas e árbitros
+#continuer_alloc=&Continue current allocation
+#faire_new_alloc=&Do a new allocation
+#video_to_non=&Video referees are made non-video
+#non_annul_alloc=&Say No to cancel allocation
+#ya_n_arbi=&there are ^1 referees in the ^2
+
+#pas_arbitre=sen árbitro
+#plus_arbitre=ainda sen árbitro
+#toutes_pou_arbi=todas as poules teñen un árbitro
+
+#pas_arbi_ds_match=non hai árbitro asignado nas poules en curso
+#pas_match_sans_arbi=non hai encontro en curso sen árbitro
+
+#exempte1=exent[o/a|os/as]
+#qualifie1=calificad[o/a|os/as]
+#abandon1=abandono
+#elimine1=eliminad[o/a|os/as]
+#exclusion1=exclusión
+#forfait1=cesión
+#exempte1%=ex
+#qualifie1%=C
+#abandon1%=a
+#elimine1%=E
+#exclusion1%=xx
+#forfait1%=cs
+#exempte_ou_hors=&exempt or out-of-competition
+
+#infoRepertoires=Informacion nas carpetas....
+#CopiePermanente=copia con actualización permanente
+#echec_copie=a copia fallou
+#rempla_copie=reemplace a copia ^1
+#capitaine=capitán[|s]
+#prem_dossard=comenze a afiliación co número
+#faire_FicSpecial=Arquivo especial 
+#faire_FicSwissTiming=Facer arquivo SwissTiming MTS600
+#faire_FichierKabcom=Facer arquivo Kabcom
+
+#ordre_interne=ordeados por numeración interna 
+
+#champ_mesure=o campo ^1 mide ^2 cm
+#limite_champ=limitase a ^1 cm
+
+#equipe_a=o equipo ^1 ten ^2 tiradores
+#equipe_devrait=debe ter 3 ou 4 tiradores
+#permuter=permutar
+#erreur_equipe=Error, equipo:
+#rang_haut_bas=Empregar lugares 1, 2, 3 para arriba e, 4, 5, 6 para abaixo
+#rangs_manquants=Faltan lugares
+#rang_duplique=lugar duplicado
+#rang_incorrect=lugar incorrecto
+#melange_rang=Mestura entre os lugares 1, 2, 3 y 4, 5, 6 nun equipo 
+#mettre_rang123=Designe 1, 2, 3, R a un equipo 
+#mettre_rang456=Designe 4, 5, 6, R ao outro equipo 
+
+#score=puntuación
+#sc=pt.
+#touche=toque[|s]
+
+#demi_grille=media-reixa
+#grille_rencontre=reixa de encontro
+
+#remplacant=suplente
+#rempla_equipe=suplencia no equipo ^1
+#num_match_remplacement=número de encontro onde se efectúa o reemplazo
+#zero_pas_remplacement=dar un 0 se non hai reemplazo
+
+#feuille_rencontre=folla de encontro
+#rencontres=encontros
+#rencontre_a_score=^1 encontro[1||s] onde a puntuación detallase
+#rencontres_tableau=encontros de taboa ^1
+#scores_detailles=puntuacións detalladas
+#score_final=&final score
+
+#XML=XML
+#HTML=HTML
+#faire_document=facer un documento
+#faire_fichier=facer un arquivo
+#plusieurs_tableaux=multiples taboas
+
+#Tableau_en_fichier_HTML=taboa en arquivo HTML
+#Poules_en_fichier_HTML=poules en arquivo HTML
+
+#produit_deja_tire=a creación da taba produciu ^1 encontro[1||s] xa tirado[1||s] 
+#decale_deja_tire=evitanse os encontros xa tirados? 
+#pas_decale=^1 non sepuido decalar
+#deja_tire=encontro xa tirado  
+#decalage=decalar 
+#traitement=procesamento
+#mais_aussi=tamén se ten
+
+#dans_ordre=en orde numérica 
+#pret_decouper=listo a cortar, ^1 por folla
+
+#exporter_table=exportar a un arquivo de texto
+#importer_table=importar un arquivo de texto
+#essai_texte=proba de formato de texto 
+#pas_ligne1=suprímese a primeira líña 
+#ignore=ignorar
+
+#calcul_serie=Calcular os números de serie dos equipos
+#calcul_points=Calcular os puntos dos equipos
+#calcul_serie_de_tireurs=Recalcular os números de serie dos equipos cos números dos tiradores
+#calcul_points_de_tireurs=Recalcular os puntos dos equipos cos puntos dos tiradores
+#faire_avec_table_eq= Facer isto na taboa dos equipos 
+#tireur_sans=tirador sen^1
+#fiche_equipe=Forma para equipo
+#attribution_eq=asignación de equipos
+
+#resultats_provisoires=resultados provisionales
+#charger_pistes_heures=cargar pistas e horarios 
+#pas_tableau_actif=^1 non é unha taboa activa 
+
+#paiement=pago
+#mode=modo
+
+#equipes_select=os equipos seleccionados
+#toutes_equipes=todos os equipos
+#ordre_matches=orde de encontros
+#equipe_adverse=equipo opositor
+
+#essai_groupement=Proba de reagrupamento de arbitros en dous encontros consecutivos? 
+#echec_groupement=o reagrupamento de ^1 fallou
+#autre_tableau=Outra taboa ?
+#pas_creation_poules=Non hai creación de poules
+
+******************************************************************************
+      the new texts of January 1rt, 2004 (version 8.1)
+******************************************************************************
+
+#id=identificación
+#idtournoi=&identifier of the tournament
+#annee=ano
+#regional=rexiona[/|l/is]
+#local=loca[/|l/is]
+#championnat=campeonato
+#fic_trans_XML=arquivo de transferencia XML 
+#fic_XML_resu=&XML results file
+#a_partir_fic_xml=dun arquivo de transferencia XML 
+#fic_xml_pour_comp=arquivo XML para creación de competencia
+#conv_utf8_vers=&Conversion of an XML file with UTF-8 encoding to
+ Below, do not translate DOCTYPE
+#doctype_incorrect=DOCTYPE incorrecto
+#doctype_correct_sont=os tipos correctos son:
+#entitesGen_chargees=^1 entidade[1||s] cargadas en memoria
+#affecte_pistes_heures=Asignación de pistas e horarios 
+#verification_pistes_heures=&Checking pistes and hours
+#Feuille_rencontre_non_faite=folla de encontro non feita
+
+#SansLicence=^1 non ten número de liciencia FIE
+#doublonLicence=&same FIE licence 
+#SansID=&^1 has no ID
+#doublonID=&same ID 
+#error_nation=&^1 has an incorrect nation
+#tireursSansLicence=algúns tiradores non teñen números de licencia FIE
+#tireursSansID=&Some fencers/teams/referees do not have an ID 
+#tireursBadNation=&Some fencers/teams/referees have an incorrect nation
+#DansCompeFIE=En competencias FIE,os números de Licencia son obligatorios
+#DansCompeFIE_ID=&In FIE competitions, ID is obligatory
+#DansCompeFIE_nat=&In FIE competitions, a correct nation is obligatory
+#CompleterFIE=&Complete the FIE data now
+#ContinuerCompe=Cotinue coa competencia
+
+******************************************************************************
+      the new texts of March 27, 2004 (version 8.1)
+******************************************************************************
+
+#PasDeTireur=Sen tirador
+#NbMatchPP=número de encontros por páxina 
+#ToutesLesPoulesNarbi=Todas as poules de ^1 a ^2 teñen ^3 arbitro[3||s]
+#ToutesLesPoulesSaisies=Todas as poules de ^1 a ^2 foron capturadas
+#arbitresPour=arbitros para
+#FaireAffectation=efectuase a asignación?
+#MauvaiseAffecteArbi=Mala asignación de arbitros, encontros número: 
+#ReprendArbi=TOMASE DE NOVO OS ARBITROS DE 1/
+#affectation_arbi_8eme=asignación de arbitros por 1/8 de taboa
+#affectation_arbi_16eme=asignación de arbitros por 1/16 de taboa
+#matchesSansArbitre=encontros sen arbitro, efectue un novo intento
+#matchs_SansArbitre=&^1 matches without referee
+#poules_SansArbitre=&^1 poules without referee
+#pasDeFichier=sen archivo
+
+#pas_commence=&^1 tiradores son postos en "Perdedor" porque non comezaron a competencia
+
+#Restriction=Restrinxir
+#Restreindre1=Restrinxir una competencia consiste en conservar só a algúns tiradores/equipos
+#Restreindre2=dandolles o estatuto de "Cesión" aos outros. Por exemplo despois dunha volta de poule,
+#Restreindre3=para facer unha primeira división cos tiradores clasificados do 1 ao 64 e unha
+#Restreindre4=segunda división cos tiradores clasificados do 65 ao ultimo, comeze por duplicar
+#Restreindre5=duas veces a competencia (efectuando os respaldos) posteriormente restrinxese un dos respaldos 
+#Restreindre6=para os tiradores do 1 ao 64 e o outro para os tiradores do 65 ao último.
+#Restreindre7=Haga isto ao momento de constituir unha volta de poules ou de  
+#Restreindre8=a constitución da primeira taboa 
+#Restreindre9=Desexa Vd. restrinxir esta competencia agora?
+
+#PlusTirEnCompe=Non hai tirador na competencia 
+#Ilya=Hai 
+#tirEqEnCompe=tiradores/equipos en competencia 
+#gardeApartirRang=tomaselles a partir do lugar de clas.
+#jusquAuRang=ata o lugar de clas.
+
+#suppressTousAbsents=Supresión de todos os ausentes 
+
+******************************************************************************
+      the new texts of December 24, 2007
+******************************************************************************
+
+#id_reseau=identificador de rede 
+#prendre_idsmart_pour_idreseau=&Use the SMART ID as network identifier (recommended)
+#id_reseau_double= Nota: Outra competencia ten o mesmo identificador 
+#fermer_cause_id_reseau= Debe cerrar a competencia (seu identificador de rede cambiou) 
+#modif_id_reseau1=&Modification of the network identifier
+#modif_id_reseau2=&The modification obliges to close and reopen the DiapoEngarde and Engarde Auxiliary competitions that are connected to this competition.
+#modif_id_reseau3=&Do you want to modification the network identifier 
+
+#CreerRepSVG1=Creación de carpeta para os respaldos 
+#CreerRepSVGno2=Creación dunha segunda carpeta para arquivos de respaldo 
+anciens à conserver
+#SupprRepSVG1=Eliminar a carpeta de arquivos de respaldo
+#SupprRepSVGno2=Eliminar a segunda carpeta de arquivos de respaldo 
+nouveaux
+#StopSVG1=Pare os respaldos principais
+#StopSVGno2=Pare os respaldos secundarios 
+
+#CreerRepSVG2=Escolla o lugar 
+#no_backup=Sen respaldo
+#non_accessible=Competencia inexistente ou inaccesible 
+
+#ouvrir_der_compe=abra a última competencia
+
+#affectation_2e_arbi=Asignación de segundo arbitro 
+
+#colonnes=columnas 
+#entete=cabeceira
+#haut=&top
+#bas=&bottom
+
+#nomSur10=nome curto 
+#drapeau=bandeira
+#drapeau%=band.
+#cadre_drapeau=&Flags with frame
+
+#formule_conserve_tireurs=Segundo a fórmula,conserve ^1 tirador[1||es].
+#conserve_tireurs=Debese conservar ^1 tirador[1||es].
+#possible_conserver_autre=É posible conservar un número diferente de tiradores.
+#Selon_FIE_series=Segundo o regramento de FIE debense empregar os números de serie (clasificación).
+#series_entre_parentheses=Os números de serie están escritos entre paréntese.
+
+******************************************************************************
+      the new texts of July 8, 2008
+******************************************************************************
+
+#appliquer=Aplicar
+#mode_eng=Modo
+#reseau=Rede
+#Listesessions=Lista de sesións
+#configuration=configuración
+#langue=lingua
+#Languedelaide=Lingua da axuda
+#done=Feito
+
+#rep_appli=Carpeta da aplicación : 
+#rep_compe=Carpeta da competencia : 
+#rep_copie=Carpeta da copia permanente : 
+
+exemple : par 1/4
+#par=por ^1
+#simple=simple
+
+#effacer=Despexar
+#effacerFermer=Despexar y pechar
+
+#web=Web
+#parametresFTP=Parametros FTP
+#PublierlesTireurs=Publicar os tiradores na Intranet
+#PublierlaFormule=Publicar a fórmula na Intranet
+#PublierClasGene=Publicar a clasificación xeral final na Intranet
+#PublierActiviteArbi=Publicar a actividade dos arbitros na Intranet
+
+#cles=Claves
+#VoirLesCles=Ver as claves
+#InstallerCle=Instalar unha clave
+#AcheterCle=Comprar unha clave
+
+#EchecCreeFic=A creación do arquivo fallou: ^1
+#PasModePro=A modalidad PRO non foi instalada 
+
+#analyseCles=Analise das claves
+#supprCle=Suprimir a clave ^1
+#CleInvalide=Clave ^1 non valida
+#badNoMac=número MAC malo 
+#badOrdi=Computadora mala 
+#clePerimee=A clave prescribiu
+#plus_tard=valida máis tarde
+#valide=valida
+#type_inconnu=de tipo descoñecido
+
+#nlicencesValidesToDay=^1 licencia[1||s] "^2" valida[1||s] hoxe
+#pasLicenceValideToDay=Non ten licencia "^1" valida hoxe
+
+#IP_incorrect=Número IP incorrecto
+#port_incorrect=Número de porto incorrecto
+#pas_licence_valide_ici=Non hai licencia valida para esta computadora
+#chercher_licence_reseau=Desexa Vd. buscar unha licencia na rede local?
+#attente_response=Espere unha resposta
+#plus_licence_disponible=Non hai licencia dispoñible
+#licence_disponible=Licencia dispoñible
+#pas_reponse_recue=Non se recibiu resposta 
+#licenceAttribuee=Licencia xa asignada 
+
+#licence_jusquau=^1 Licencia[1||s] "^2" valida[1||s] ata ^3
+#cle_en_double=Clave duplicada 
+
+#sessionsDisponibles=Licencias dispoñibles:  ^1 "^2"
+#licenceObtenueDe=Licencia de ^1 Ip=^2 Porto=^3
+#il_reste=Desconectase : ^1mn
+
+#session=(f)sesión[|s]
+#Ip=Número IP
+#port=Porto
+#No_port=Porto UDP de recepción
+#No_port_des_ordi=Números dos portos UDP das computadoras con licencias a repartir
+#Appli=Aplicación
+#ordinateur=Computadora
+#cet_ordi_est=Esta computadora é
+
+#cleAppli=(f)Clave[|s]
+#lenombre=nome
+#DateDebut=data de inicio
+#DateFin=data de vencemento
+#TypeCle=tipo
+#NoMac=números MAC - direccións físicas 
+#No_mac_cet_ordi=Números MAC desta computadora
+#pasDeNoMac0=non hai tarxeta de rede activa neste momento 
+#unMacSuffit=Remarque : un só número de MAC é suficiente 
+#config=Configuración
+#port_active=O porto UDP ^1 está activado.
+#port_non_active=O porto ^1 non foi activado. Está probablemente en uso.
+#pas_de_port=Non hai porto de recepción UDP activado
+
+#pasDeNoMac=non hai tarxeta de rede activa nesta computadora neste momento. 
+
+#terminerSession=Termine a sesión
+#ontermineSession=Terminarase a sesión seleccionada ?
+
+#N_appli_connectees=Hai ^1 sesión[1||s] de aplicación[1||s] conectada[1||s]. 
+#quitterontModePRO=Estas aplicacións terminaran en 10mn.
+#enregistrerSessions=Desexa Vd. respaldar estas sesiones para retomalas na seguinte carga de Engarde ?
+
+#N_appli_connectees_avant=Ao sair de Engarde PRO, hai ^1 sesión[1||s] de aplicación[1||s] conectada[1||s]. 
+#reprendreSessions=Reanudanse estas sesións ?
+#N_sessions_out=^1 sesión[1||s] non fo[1||i/ron] reanudada[1||s]
+
+#passerModePro=Ir ao modo PRO
+#quitterModePro=Sair do modo PRO
+#passerModeFIE=Ir ao modo "FIE"
+#quitterModeFIE=Sair do modo "FIE"
+#FIEdemandePro=Para pasar ao modo, é preciso estar en modo PRO.
+
+#clesEtLicences=Claves e licencias desta computadora
+#sessionsAppli=Outras sesións de rede Autres sesións empregando unha licencia desta computadora
+
+#onsupprimelacle=Suprimese a clave selecionada ? 
+#supprimerPerimees=Suprimense as claves vencidas ?
+
+#demande_licence=Solicite unha licencia
+#Ordi_distrib=Computadoras da rede distribuindo licencias neste porto UDP 
+#un_Ordi_distrib=Número IP dunha computadora distrubuindo as licencias
+#ChercheOrdi=Búsqueda de computadoras
+#CliquerOrdi=Faga click nunha computadora 
+#DemanderLice=Solicite unha licencia a esta computadora 
+#DemanderLicePro=Solicita Vd. unha licencia PRO ? 
+#tapez_direct_ip=Teclee na parte inferior o númeto IP. 
+
+#jourOrdi=Data da computadora 
+#jourReference=Data de referencia 
+#jourReferenceUtilise=Empregase a data ^1 xa que esta computadora foi utilizada este día en caso de error efectue unha
+#Synchronisation=Sincronización
+#Synchroniser=Sincronizar
+#ExlpiSynchro1=Asincronización consiste en verificar a data da computadora coa data da intranet.
+#ExlpiSynchro2=Fixe a computadora na data correcta, conectese á intranet e faga click no botón "sincronizar".  
+
+#ErreurSynchro=Error durante a sicronización. Está Vd. conectado á intranet ? 
+#SuccesSynchro=Sincronización satisfactoria. 
+#badDateOrdi=A data da computadora é incorrecta.
+#DateOrdiEst=Segundo o país,a data ^1, un día adiante ou un día despois.
+#reglerDateOrdi=Corrixa a data da computadora e efectue novamente a sincronización.
+#recul_heure=A data ou a hora da computadoraretrocederon. O modo PRO foi detido.
+#perte_connexion=Non houbo conexión con Engarde(PRO MAIN) despois de 10 minutos.Detivose o modo PRO.
+#perte_connexion2=A conexión coa competencia (Engarde Main) interrumpiuse. 
+#fin_licence=Terminou(aron)se a(s) licencia(s). Detivose o modo BASIC/PRO.
+#repasser_pro=Vd. pode reinstalar o modo PRO se hai licencias validas. 
+
+#gestionVersion=Manexo de versións
+#VersionNumero=Versión número ^1
+#NumeroVersion=Numero de versión
+#VersionNo=Versión ^1
+#version0=Se o numero de versión é 0, non se imprime nos documentos.
+#version1=O número de versión 1 corresponde a un documento normal non modificado.
+#version2=Un número de versión maior a 1 corresponde a un documento modificado.
+#ModifDepuisVersion=Modificacións posteriores a ésta versión.
+#ModifToutes=Todas as modificacións
+#NumVersSuiv=Pase ao número de versión seguinte 
+#MAJversion=Pase ao número de versión N 
+#correction=CORRECCIÓN
+#set_version=Pase á versión ^1
+#modif_resu_poule=Modificación da Poule terminada No ^1
+#tableau_const=Taboa constituida
+#constitue=constitución
+#resultats=resultados
+#modif_resu_tab=Modificación de encontro de taboa terminada 
+
+#pas_date=Esta competencia non ten data
+#pas_id_reseau=Esta competencia non ten identificador de Rede 
+#pas_ds_clasGene=Atención, os tiradores calificados na última volta de poules non se atopan dentro da clasificación xeral.
+
+#ouv_fic_aff=Apertura do arquivo a desplegar 
+#pas_copie_perm=Non hai copia permanente 
+#installer=Desexa instalar unha ? 
+#copie_non_active=Copia permanente INACTIVA
+#activer=Desexa activar ? 
+#echec_active_copie=FALLO na activación da copia permanente 
+#install_autre=Desexa instalar outra ? 
+#copie_active=Copia permanente ACTIVA 
+#conserver=Desexa conservala ? 
+
+#imp_match=impresión de encontros 
+#imp_ma_toutes_pou=imprimense os encontros de todas as poules 
+#imp_ma_des_pou=impremense os encontros de algunhas poules 
+#PasResultat=Non hai resultados dispoñibles
+#FaireFicWeb=Facer o arquivo de web 
+#maintenant=agora
+
+#Autorisation_retour=Autorización para retroceder 
+#Objet=Obxecto 
+#Motivation=Motivo
+#pourquoi=explicar o porque
+#SignaturePtDT=Sinatura do presidente do directorio Técnico 
+#document_signe=Encontrase asinado o documento para retroceder ?
+#imprimer_et_signer=Imprima o seguinte documento e que lle asinen. 
+
+#historiqueDesRetours=Historico de regresos 
+#DT=Directorio Técnico 
+#fournir_composition=Lista de composición do directorio técnico 
+
+#participant=participant[e/e|es/es]
+#victoires_matches=victorias/encontros
+#lateralite=lateralidade
+#droite=dereita
+#gauche=esquerda
+#centre=&center
+#inconnu=descoñecida
+#lateralite%=lat.
+#droite%=D
+#gauche%=E
+#inconnu%=NC
+#priorite=prioridade
+#aucune=ningunha
+
+#page_precedente=Páxina anterior 
+#page_suivante=Páxina seguinte
+#premiere_page=Primeira páxina
+#derniere_page=Última páxina
+#Periode_change_page=Período para cambiar a pantalla seguinte
+#Arreter_diapo=deter o diaporama
+#DiminuerPeriode=Diminuir o período 
+#AugmenterPeriode=Aumentar o período 
+#Pause=Pausa
+#ReprendreDiapo=Comezar o diaporama
+
+#DiapoModeEval=DiapoEngarde esta en modo de "Evaluación": mostarse nunha pequena ventá, ye detense cada 5 minutos.
+#sansLimitation=É preciso comprar unha licencia para ver o funcionamiento sen limitacións.
+#ArretDiapoModeEval=Paro do Diaporama despois de 5 min xa que está en modo de "Evaluacion".
+#InterruptionDiapoModeEval=Interrupción do modo PRO. 
+
+#nation%=nac.
+#coach=COACH
+#carton_coach =&coach yellow card
+#DemandeVideo=Solicitar video, M: modificación, R: rechazo - máximo : ^1 rechazos
+#NOemplacement=Localidade non encontrada
+#banniere=cabeceira (banner)
+#choixBanniere=Escoller unha cabeceira (banner) (arquivo BMP ou JPG)
+#entitesPerdues=^1 entitid[1|ade|ades] da clase ^2 non localizad[1|a|as] 
+#creeAlaPlace=Creación de entidades @XXX 
+#clasDans=Feito, a clasificación esta no arquivo ^1
+#doublon=duplicado
+#doublons=duplicados
+#entre=entre
+#TailleNomsCourts=&Short name size
+#NomNoncalcules=Nomes curtos non programados
+#CalculerCourts=Calcular os nomes curtos faltantes
+#ReCalculerCourts=Recalcular todos os nomes curtos
+#doublonsCourts=Buscar duplicados nos nomes curtos 
+
+#formu_fie_equipes=Fórmula de Copa do Mundo por Equipos 
+#suites_tableaux_charger=Peche a ventá seguinte e pase ás secuencias das taboas de eliminación directa cargando a fórmula FIE-AvecPlaces1-16.fta
+
+#reglages=configuración
+#margehaute=Marxen superior
+#margeBasse=Marxen inferior
+
+#clas_special=Clasificación especial
+#clas_spe_rg_poule=EFECTUASE UNHA CLASIFICACION ESPECIAL tomando a clasificación de poules como criterio principal?
+#prem_liste_nat=Primeira lista de nacións separadas por ";"
+#deux_liste_nat=Segunda lista de nacións separadas por ";"
+#pb_poule=Problema na poule ^1
+#pas_pb_poule=Non hai problema entre ^1 e ^2
+#publi_clas=Publicar a clasificación na Intranet 
+#publi_ex=Publicar os exentos na Intranet 
+#publi_poules=Publicar as poules na Intranet 
+#publi_tableau=Publicar a taboa na Intranet 
+#definir_tableaux_web=Defina os arquivos web das taboas 
+#publi_clas_tour=Publicar a clasificación da volta No ^1 na Intranet
+#publi_ex_tour=Publicar os exentos da volta No ^1 na Intranet
+#publi_poules_tour=Publicar as poules da volta No ^1 na Intranet
+
+#clas_gen_decale=Clasificación xeral recorrida (décalé)
+#met_a_blanc_matches=Anote os encontros en branco cunha clasificación maior a:
+#nb_matches_vert=Número de encontros a publicar verticalmente
+#moitie=a metade
+#quart=un cuarto 
+#bon_quart=&right quarter
+#numero_de_aff=Número de "^1" a publicar 
+#numero_dans_quart=Número de encontros nun cuarto 
+#bad_descri_fic_web=Descripción de arquivo web incorrecto 
+#pas_kabcom_eq=Non hai arquivo Kabcom para equipos 
+#cle_ni_tir_ni_remp=a clave do tirador non é a do titular nin tampouco a do suplente 
+#imp_rencontre=Impresión do encontro 
+#pas_ordre_tir=Non está a orde dos tiradores 
+#pas_detail_assaut=Non hai detalle dos resultados dos encontros 
+#manque_arbi_assaut=&bout referees are missing
+#matches_en_cours=Encontros en curso 
+#rencontre_affi=Encontro a publicar 
+
+#conserve_n_tireurs=conservase a ^1 tiradores 
+#memoire=Memoria de datos :
+
+#installCle=Instale unha clave
+#PossCle1=É posible instalar claves
+#PossCle2=para correr Engarde en modo BASIC e PRO e outras aplicaciones.
+#PossCle3=Para isto é necesario comprar unha clave e obte o seu código de compra.
+#PossCle4=Para instalar unha clave é necesario estar conectado á Intranet.
+#PossCle5=Necesitase tamén activar unha rede local ou tarxeta wifi (varias se é posible)
+#PossCle6=xa que Engarde emprega os números MAC - direccións físicas das tarxetas de rede.
+
+#IdClient=Identificador de cliente 
+#CodeAchat=código de compra
+
+#fautIdClientEtCleAchat=Fai falta encher os campos "Identificador de Cliente" e "Código de compra da Clave"
+#BadCarDansCleAchat=Un código de compra xamais conten ^1
+#PasReponse=Non hai resposta. Por favor verifique que esté conectado á Intranet.
+#pastrouvecleclient=Este cliente con este código de clave non se atopa rexistrado no sitio web de Engarde.
+#CleDeja=Esta clave xa foi suministrada ao cliente.
+#VoulezVousInstaller=Desexa Vd. instalar nesta computadora ?
+#CleTrouveeInstallee=A clave esta instalada na computadora.
+#CleNonInstallee=A clave NON SE PUIDO INSTALAR na computadora.
+
+#PourActiverCle1=Para activar as novas claves, salga do modo PRO e pase de novo ao modo PRO.
+#PourActiverCle2=Para activar as novas claves, deberase pasar ao modo PRO.
+
+#usermanuel=Manual do usuario.
+#ModeProSeulement=Esta función só está dispoñible no modo PRO.
+#PasModeMini=Esta función non é accesible en modo MINI.
+
+#continent=continente
+#statistiques=estadisticas 
+
+^1 sera remplacé par participants ou participantes ou équipes
+#Nb_total=Número total de ^1
+#Nb_parmi_32=Número de ^1 entre os 32 primeiros da clasificación. 
+#Nb_AmeriqueNord=Número de ^1 de Norte-América 
+#Nb_AmeriqueSud=Número de ^1 de Sur-América 
+#Nb_afrique=Número de ^1 de África
+#Nb_asie=Número de ^1 de Asia
+#Nb_europe=Número de ^1 de Europa 
+#Nb_oceanie=Número de ^1 de Oceanía 
+
+#match=(m)encontro[|s]
+#round=(f)volta[|s]
+#periode=(m)período[|s]
+#Carton=(f)tarxeta[|s]
+
+#fenetre_piste=Ventá de pista
+#table_pistes=Taboa de pistas 
+#con_nom_coul=Conexións - Nome - Cor
+#Matchsuivantmanuel=Encontro seguinte (manual)
+#Matchsuivantautomatique=Encontro seguinte (automático)
+#Matchsuivantautosansnext=&Next match (automatic without waiting NEXT)
+#Matchsuivantauto_defaut=&Next match automatic by default
+#Fichierlogtousmessages=Arquivo (log) de todos os mensaxes de pista
+#autreMatchMmPoule=Pasar a outro encontro da mesma poule 
+#autreMatchMmeTab=Pase a outro encontro da mesma taboa 
+#autreMatch=Pase a outro encontro 
+
+#ArretEnAnnulant=Pare o encontro reiniciando a cero 
+#ArretlaisseEncours=Pare o encontro deixandoo como esta
+#ArretEnTerminant=Pare e de fin ao encontro 
+#ArretParAbandon=&Stop the match for abandonment, exclusion, non-combativity
+#Mettrexcartonsrougesdroite=Coloque x tarxetas vermellas á dereita...
+#Mettrexcartonsrougesgauche=Coloque x tarxetas vermellas á esquerda...
+
+#inverser=Revertir
+#InverserLapiste=Revertir a pista 
+#InverserLestireurs=Revertir os tiradores 
+#Explications=explicación
+#voir=ver
+#Roundsdecematch=As voltas deste encontro 
+#Matchesprcdents1=Os encontros precedentes 
+#FinMatch=Fin do encontro 
+#MatchSuivant=Encontro seguinte 
+#MatchPrecedent=Encontro precedente 
+
+#manuel=manual
+#PasseAuto=Pasar en automático 
+#automatique=automático 
+#PasseManuel=Pasar en manual 
+
+#EnregMatchEnCours=Gardar o encontro en curso :
+#MatchSansVain=Encontro ^1 - ^2 gardado (s) sen vencedor 
+
+#SimulAppPisteSerie=Simulación de aparato de pista 
+
+#tireur1=1er tirador 
+#tireur2=2o tirador
+
+#Connexion=Conexión
+#Deconnexion=Desconexión
+#connexionPort=Conexión, porto ^1
+#nonconnecte=non conectado 
+
+#ConnexionComPour=Conexión ao porto COM para ^1
+#ErreurPortOccupe=Error, o porto esta xa en uso 
+#deconnexionPisteX=Desconexión da pista ^1
+#ConnexionCOM=conexión a un aparato de pista: liña serie (porto COM)
+
+#Choixmatch=Selección de encontro 
+#prevuAilleurs=Este encoentro programouse na pista "^1", desexa confirmar? 
+#Pasdematch=Non hai encontro 
+#PasdematchPiste=Non hai encontro con hora na pista ^1
+#MatchTermine=Encontro terminado 
+#voulez-vousLeModifier=Desexa Vd. cargar para modificalo ?
+#ordre_equipe_par_capitaine=&The fencers' order is entered by the team captain
+#sais_ordre_equipe=Captura da orde dos tiradores dun encontro 
+#pasRemplacant=Non hai suplente neste equipo
+#UseDejaRemplacant=O suplente xa foi empregado dende o encuentro ^1
+#PrendRemplacantEnX=Tomase o suplente do equipo ^1 no encontro No 
+#PrendRemplacantNow=Tomar o suplente do equipo ^1 agora ?
+#PasUseRemplacant=O suplente non foi utilizado 
+#ChoixMatchDe=Selección dun encontro de ^1
+#ChoixMatchPoule=Selección dun encontro da poule ^1
+
+#nbCartonsRougesDte=Número de tarxetas vermellas a colocar á dereita
+#nbCartonsRougesGche=Número de tarxetas vermellas a colocar á esquerda
+#inverseExpli1=Intervense a pista cando a computadora de Engarde esta de frente ao arbitro 
+#inverseExpli2=para que a imaxen na computadora corresponda coa da pista. 
+#inverseExpli3=Revirtense os tiradores cando o árbitro os revirte na pista. 
+
+#machineLocale=Máquina local 
+#cheminFTPexe=Ruta da aplicación FTP, normalmente c:\windows\system32\ftp.exe
+#Parcourir=Buscar
+#machineDistante=Máquina FTP distante 
+#hote=hóspede
+#user=usuario
+#passwd=contrasinal
+#passwd_initial=&initial password
+#repDistant=Carpeta na maquina distante, ex: esgrima ou esgrima/compe 
+#actionsGene=Accións xenerais 
+#ActiverFTP=Activar FTP 
+#ActiverToutCourt=Activar
+#Desactiver=Desactivar 
+#siActiveEchoue=Cando a activación falla (ventá DOS), desactive, corrixa o problema e reactive novamente 
+#ListeDistant=Lista da carpeta distante 
+#EnvoiTousHTML=Enviar todos os arquivos HTML 
+#PoulEtTab=Poules e taboas 
+#publiPouAuto=Publicar as poules en forma automática 
+#publiTabAuto=Publicar as tablas en forma automática 
+#dureeMini=Duración mínima entre dous envios 
+#min5sec=segundos,min : 5
+#autorefresh=Período de autoactualización de arquivos 
+#min10sec=segundos, min : 10
+
+#badcheFTPexe=A ruta da aplicación FTP non é valida 
+#remplirChamp=Encher o campo "^1"
+#FTPinactif=FTP non está activado 
+#ErreurListeFTP=Error na lista FTP
+#ErreurEnvoiFTP=Error no envio FTP
+
+#AffectMatchesEntre=Asignación de encontros que comezan entre 
+#exemple10=Exemplo: entre 10 e 11:20 
+#TabConcernes=Mostrar as taboas afectadas 
+#seulsAvecHeure=Só se consideran os encontros xa con tempo 
+#seulsAvecHeurePou=Só as poules con horario son tomadas en conta 
+#utiliser_groupesAB=&Use groups A and B
+#au_moins_1A=&At least 1 group A
+#selectEtPrecise=Seleccionar unha taboa e precisar : simple, por 1/4, 1/8 ou 1/16
+#selectPlusieursTab=Ou seleccione varias taboas (Shift+Clic ou Ctrl+Clic), asignación simple
+#pourSelectPlusieursTab=&Use Shift+Clic ou Ctrl+Clic to  select several tableaux
+#enleverTab=Elimine esta taboa da lista 
+#enleverDeListe=&Remove of the list
+#affectation=asignación 
+#prendreTab=Tome esta taboa 
+#prendreLaListe=Tome toda a lista 
+
+#analyse=análise
+#fenetre=(f)Ventá[|s]
+#horizontal=horizonta[/|l/is]
+#vertical=vertica[/|l/is]
+
+^1 will be replaced by nothing or 1 or 2, etc.
+#SupprTousArbi=Suprimir a todos os árbitros ^1
+#arbi_par_match=Número de árbitros por encontro 
+#incluant_video=&including a video referee
+#maxi_par_arbi=Máximo de encontros por arbitro 
+#NbArbiToUse=Número total de árbitros a empregar
+#CalAffectAuto=Calcular unha asignación automática 
+#PrendreCetteAffect=&Take this allocation
+#PrendreAffectAvant=&Return to previous allocation
+#affectManuelle=&Manual allocation
+#AjouterArbiSel=Engadir o árbitro seleccionado 
+#AjouterArbiVideo=&Take the referee as video
+#SupprArbitreN=Suprimir árbitro ^1
+#enlever=&Remove ^1 ^2
+#affectation_avancee=Asignación avanzada 
+#affect_avancee_arbi=Asignación avanzada de árbitros 
+#matchNum=encontro ^1
+#arbiNum=árbitro ^1
+#pasArbiSel=Non ha árbitro seleccionado 
+#pasMatchSel=Non hai encontro seleccionado 
+#pasPouleSel=Non hai poule seleccionada 
+#arbiDejaCeMatch=O árbitro seleccionado foi asignado ao encontro seleccionado
+#arbiDejaCettePoule=O árbitro seleccionado xa esta asignado a esta poule 
+#conflitDe=Conflicto de ^1 entre o árbitro e o encontro 
+#conflitDeDsPou=Hai conflicto de ^1 entre o árbitro e a poule 
+#arbiDejaHeure=O árbitro seleccionado ten xa un encontro á mesma hora 
+#arbiDejaHeurePou=O árbitro seleccionado ten xa unha poule á mésma hora 
+#MatchNonTrouve=Encontro non localizado 
+#PouleNonTrouvee=Poule non encontrada 
+#MatchSansArbi=O encontro seleccionado non ten árbitro 
+#PouleSansArbi=A poule seleccionada non ten árbitro 
+#assez_de=&enough ^1
+#pas_trop_de=&no too many ^1
+#tropMatches=demasiados encontros 
+#tropPoules=demasiadas poules 
+#manqueMatches=&not enough matches
+#manquePoules=&not enough poules
+#matchesMemeHeure=ten encontros á mesma hora 
+#poulesMemeHeure=ten poules á mesma hora 
+#matchesHeureProche=ten encontros en horarios próximos 
+#matchesConsecutifsPistesDifferentes=&piste change WITHOUT PAUSE
+#matchesNonConsecutifsPistesDifferentes=&piste change with pause
+#poulesHeureProche=ten poules en horarios próximos
+#est2foisMatch=está dúas veces nun encontro 
+#est2foisPoule=está dúas veces nunha poule 
+#aconflitNation=ten un conflicto de ^1 nun encuentro 
+#aconflitNationPou=ten un conflicto de ^1 nunha poule 
+#supprConflit=&remove conflicts
+#aconflitNation2=ten un conflicto de ^1 en 1/4, 1/8 e 1/16
+#pas_bonquart=&^1 is not in the right ^2
+#pas_bon_quart=&is not in the right quarter
+#pas_groupeA=&has no referee of group A
+#matchestroparbi=encontros con moitos árbitros 
+#poulestroparbi=poules con moitos árbitros 
+#matchestroppeuarbi=encontros con falta de árbitros 
+#poulestroppeuarbi=poules con falta de árbitros 
+#tauxSatisfation=Grado global de satisfacción 
+#satisfaction=&satisfaction
+#cross_interet=^1 ten un cruce de intereses con ^2
+#n_fois=&^1 times
+
+#NbMatchesVert=Número de encontros a publicar verticalmente 
+#NumZone=Número da zona da taboa a publicar 
+#NbTabHz=Número da taboa a publicar horizontalmente 
+
+#oldVersionFic=^1 non pode abrir antiguas versións de competencias 
+
+#PoulTab=Poule/Tab.
+#PoulTab%=Pou/Tab
+#comIn=Entrada Com In
+#comOut=Saida Com Out
+#IPsortie=Saida IP OUT 
+#Connecte=Conectado
+#Actif=Activo
+#Score1=Puntuación
+#Score2=Puntuación
+
+#Montrer=Mostrar
+#Cacher=&Hide
+#CacherToutes=Ocultar todos 
+
+#dejaPiste=A pista ^1 esta xa na taboa 
+#dejaIpPiste=O número IP está xa en uso por un aparato de pista 
+
+#fonctionnement=funcionando
+#ConnexionIP=Conexión IP a un aparato de pista (rede local)   
+#ConnexionSerie=Conexión RS232 ou RS422 a un aparato de pista (cable serial, porto COM)
+#ConnexionIPsortie=Conexion de saida IP (rede local)   
+#saisirIpExemple=Capturar os números IP e os números do porto, por exemplo: 
+
+#versionDispo=A versión ^1 de Engarde de ^2 esta xa dispoñible.
+#versionComposantDispo=Está dispoñible unha versión máis recente de un compoñente.
+#versionLaPlusRecente=Esta versión é a máis recente.
+#InfoVersion=Información sobre as versións máis recentes 
+#pasInfoVersion=Sen información da versión.
+#downloadMAJ=Descarga da última actualización.
+#downloadcomposant=Descarga de compoñentes recentes.
+
+
+#choix_contexte=Escolla o contexto 
+#Contexte_general=Contexto xeral 
+#Contexte_x=Contexto ^1
+#fermer_ouvrir_ctxt=Peche e reabra a competencia 
+
+#auteur=Autor  :
+#distribue_par=distribuido por ^1
+
+--------------------------------------------------------------------
+
+New messages of octobre 2008 
+
+--------------------------------------------------------------------
+
+#lancerLesPistes=Lanzar as pistas IP en espera 
+#lancerPiste=Lanzar esta pista 
+#pistesLancees=^1 pista[^1||s] IP lanzada[^1||s]
+#pistesNonLancees=^1 pista[^1||s] IP NON lanzada[^1||s]
+#deja_match=A pista ^1 ten xa un encontro 
+#pas_attente=A pista ^1 non está en espera.
+#lance_simu_pistes=Comezar unha simulación automática en todas as pistas 
+#stop_simu=Parar a simulación 
+
+#confirmez_manuel=Pista con conexión IP,confirme Vd. pasando a manual.
+
+#bad_piste=Mensaxe do aparato IP=^1 pista=^2 : o Num. de pista aquí é ^3
+#bad_compe=Mensaxe de pista ^1 competencia ^2 : a competencia aquí é ^3
+#pas_compe=Mensaxe de pista ^1 competencia ^2 : non hai competencia aquí 
+#bad_phase=Mensaxe de pista ^1 volta ou fase No ^2 : o No de volta ou fase aquí é ^3
+#bad_poule=Mensaxe de pista ^1 poule No ^2 : o No de poule aquí é ^3
+#bad_tableau=Mensaxe de pista ^1 taboa ^2 : a taboa aquí é ^3
+#bad_match=Mensaxe de pista ^1 encontro ^2 : o encontro aquí é ^3
+#bad_round=Mensaxe de pista ^1 volta ^2 : a volta aquí é ^3
+#bad_tireur=Mensaxe de pista ^1 : ERROR DE TIRADORES 
+#bad_match_fini=Mensaxe de pista ^1 : o encontro aquí rematou
+#bad_match_rien=Mensaxe de pista ^1 : non hai encontro aquí 
+#champ_piste_vide=Mensaxe de pista ^1 : o campo ^2 está valeiro
+#Demande_suivant=Solicitude de encontro seguinte para a pista ^1 (se está en programación manual de encontros)
+#suivantManuel=Pasase a programación manual de encontros?
+
+#lampes=luz
+#blanc=branca
+#rouge=vermella
+#jaune=amarela
+#vert=verde
+#cartonrouge=tarxeta vermella
+#cartonjaune=tarjeta amarela
+#non_combativite=&non-combativity
+
+#erreur=ERROR
+#auto=auto
+#chrono=crono
+
+state of the apparatus (uses also #pause defined above)
+#etatAPP=estado
+#fencing=en esgrima 
+#halt=alto 
+#waiting=en espera
+#ending=rematando
+
+#SituationENG=Situación en Engarde 
+#APP=Aparato de pista 
+#deLarbitre=do árbitro 
+
+#fichier_web=Arquivos da Web
+#date_lim_depassee=A data límite do programa foi rebasada, é preciso obter unha actualización.
+
+#mode_mini=O programa funcionará en modo MINI ata efectuar a actualización.
+#tousLesTextes=Para que todos os textos se mostren deberá pechar e reabrir Engarde.
+#siPasTous=Se despois de isto algúns textos non aparecen traducidos indica que a traducción non foi actualizada.
+
+======================================
+
+#apropos=Sobre Engarde
+#SitewebdEngarde=Sitio Web engarde-escrime.com 
+#install_update=Engarde : Instalar actualización 
+#commande_inconnue=comando descoñecido 
+#argument_manquant=argumento faltante 
+#fermer_ca=Peche o arquivo ou o programa, despois faga clic en OK 
+#update_complete=Actualización rematada 
+#suppr_rep_install=Pode Vd. suprimir o arquivo de instalación.
+#update_partial=Actualización rematada,HAI ALGÚNS ARQUIVOS A SER ELIMINADOS MANUALMENTE. 
+
+#MontrerPnlOption=Este taboleiro aparece cando Vd. teclea CTRL + K ou efectua un doble clic.
+
+#evaluation_pro=Competencia de evaluación de Engarde PRO
+
+#XML_FIE=XML para la FIE
+#XML_etendu=XML Ampliado
+#xml_vigueur=&FORMAT XML FIE 2019 IS NOW IN EFFECT 
+#xml_pas_vigueur=&FORMAT XML FIE 2019 IS NOT YET IN EFFECT
+#pas_pour_fie=&WARNING, THIS XML FORMAT IS NOT SUITABLE FOR THE FIE
+#pas_pour_efc=&WARNING, THIS XML FORMAT IS NOT SUITABLE FOR THE EFC
+#voulez_continuer=&DO YOU WANT TO CONTINUE
+#cas_pb_xml=&If there is a problem with XML files, send an email to
+
+#extractXML=Extracción de tiradores da competencia cara un arquivo XML para crear deseguida unha nova competencia
+#extraction=Extracción 
+#extraire=Extraer
+
+#cherche_doublons=Búsqueda de entidades repetidas
+#doublons_possibles=Entidades posiblemente repetidas:
+#n_doublons=Parece que hai  ^1 entidades repetidas
+#Pour_fusionner=Para unir dous ^1, vaia á ventá de  ^1
+#use_agglomerer=e empregue o menú edición/unir
+#pas_doublon=Parece que non hai entidades repetidas
+#faire_fusions=Desexa unificar?
+
+======================================
+
+new texts of august 2009
+
+#badpasswd=Contrasinal non valida.
+#ouvrir=Abrir 
+#ouvrir_aux=Abrir en forma auxiliar
+#client_serveur=cliente-servidor 
+#serveur=server
+
+#FinRoundMatch=Fin de Volta/Encontro 
+
+#PlacementTireurs=Colocación de tiradores 
+#PlacementEquipes=&Team placement
+#prem_droite=Primeiro tirador á dereita 
+#droitier_droite=Tirador destro á dereita
+#prem_eq_droite=&First team on the right
+#max_droitier_droite=&Team with more right-handed on the right
+#droitier_en_plus=&When a team has no substitute, we count one more right-handed
+#droitier=destro
+#gaucher=zurdo 
+
+#MettreRemp=Introduza agora o suplente de ^1
+#MettreRempAssautX=Introduza o suplente de ^1 no encontro No...
+#OterRemp=Retirar ao suplente de ^1
+
+#fermer_poule=Pechar a poule
+
+#ouvrir_cette_compe=Abrir esta competencia 
+#ouvrir_cette_compe_aux=Abrir esta competencia en forma auxiliar...
+#fermer_reouvrir=Pechar e abrir novamente
+#compe_non_accessible=Esta competencia non existe ou xa non está dispoñible 
+#pasdeja_ouverte=Competencia non aberta de modo normal.
+#voulezvous_aux=Desexa Vd. abrir en modo auxiliar ?
+#gerer_liste_compe=Xenerar a lista de competencias 
+#suppr_compe_caduc=Suprimir as competencias non accesibles 
+#pas_aux_poules_equipes=&Auxiliary mode is not available in poules by teams
+
+#reception_aux=Recepción de resultados "auxiliares" 
+#supp_match_fini=Suprimir os encontros que haxan terminado
+#supp_tous_match=Suprimir todos os encontros 
+
+#ordre_saisi1=A orde dos tiradores deste encontro xa foi capturada 
+#ordre_saisi2=e os resultados dos encontros individuais foron capturados tamén.
+#ordre_saisi3=Refacer a orde dos tiradores borrar os encontros xa capturados.
+#ordre_saisi4=Desexa Vd. refacer a orde dos tiradores?
+
+#basic_payant=Atención, a partir do 15/10/2009, Engarde Basic non será un programa gratuito.
+#preferer_basic=Para contar cunha maior cantidad de funcións lle suxerimos adquirir unha licencia "Engarde Basic".
+#plusInfoWeb=Para obtener maior información visite o sitio web de Engarde.
+#ne_plus_afficher=Non mostrar máis esta mensaxe.
+#arret_fonct=Funcionamento en modo MINI deterase en ^1
+#actualiser=Actualizar
+
+#demande_ignoree=Petición negada
+#contexte_defaut=Emprego dun contexto por defecto
+#donner_date_debut=Clave de 5 días, indique o primeiro día de funcionamento
+#date_avant_aujourdhui=^1 é anterior ao día de hoxe  ^2
+#installer_a_partir=Desexa Vd. instalar esta clave para que funcione durante 5 días a partir do  ^1
+
+#RepSVG=Carpeta para respaldo:
+#periode_svg_auto=Período para respaldo automático
+#en_minutes=en minutos
+
+#trop_de_tireurs_compe=Hai demasiados tiradores ou de equipos nesta competencia. 
+#mini_limite_50=Engarde MINI está limitado a ^1 tiradores e ^2 equipos.
+
+^1 will be replaced by 1/4 1/8 1/16
+#neutre_quart=Árbitros neutrais en ^1 
+^1 will be replaced by nation, club
+#empecher_meme=Sen árbitros da mesma afiliación  
+#affil_diff=&Different affiliations
+#arbitres_meme=^1 está cun árbitro de igual ^2 
+#respecter_temps=Intervalo de tempo mínimo  
+#intervalle=&Intervalo
+#empecher_proxi=Impida a proximidade 
+#empecher_cross_interet=Impida os intereses cruzados  
+
+#arbiDeja=O árbitro xa ten un encontro  
+#arbitres_affectes=^1 árbitro[1||s] asignado[1||s] 
+#changer_para_arbi=Para mellorar a relación modifique os parámetros ou  
+#ajouter_arbi=engadir árbitros ou aumentar o número de encontros por árbitro 
+#Autorisation_action=Autorización especial para esta acción en modo FIE  
+#historiqueActions=Historia de accións especiales  
+#interdit_FIE=Acción prohibida en modo FIE  
+#il_faut_pro_FIE=Para as competencias da FIE, deberá estar na modalidade PRO+FIE 
+#il_faut_pro_FIE2=Non saia do modo FIE salvo temporalmente e por algunha boa razón  
+#modif_manuelle=Faga modificacións manualmente  
+#changer_nom=se debe cambiar o nome  
+#dire_oui_pour_voir=Diga si, se desexa ver únicamente a lista  
+#doublon_possible=posible duplicado : 
+#n_vrais_doublons=Hai ^1 duplicado[1||s], que hai que suprimir  
+#faire_suppressions=Desexa Vd. efectuar a supresión ? 
+#fusion_de= fusión de 
+#fusion_de_n_doublons=A fusión de ^1 duplicado[1||s] efectuouse
+#expli_no_quart=Botóns para cambiar o ^1 do árbitro  
+#expli_groupe=&Buttons for changing the referee group
+#arbiDejaN=O árbitro seleccionado ten xa ^1 encontros  
+#proximite_tir=^1 ten un interese co tirador dun encontro próximo
+#pas_neutre_sur=^1 non é neutral para o ^2 
+#est_neutre_sur=&is neutral on the zones
+#pour_conflits=&has for number of conflicts
+#sont_neutre_sur=&neutral referees on zone
+#Arbi2ProSeulement=A asignación automática dun 2º árbitro só é posible en modo PRO. 
+#affectation_auto_simple=Asignación automática simple  
+#bon_choix_arbi=Antes de efectuar unha asignación conte cunha bona lista de árbitros  
+#activiteArbitresMatch=actividade dos árbitros en encontros  
+#activiteArbitresVideo=actividade de árbitros en video  
+
+#ajout_un_arbi=Engadir un árbitro  
+#ajout_des_arbi=Engadir árbitros
+#ajout_tous_arbi=Engadir todos os árbitros presentes  
+#ajout_arbi_table_gauche=Engadir os árbitros da taboa da esquerda
+#ajout_arbi_tab_pred=Engadir os árbitros da taboa precedente 
+#suppr_un_arbi=Suprimir un árbitro  
+#suppr_tous_arbi=Suprimir todos os árbitros  
+#transfer_arbi_pred=Transferir os árbitros da taboa precedente 
+#defaire_der_act=Desfacer a última acción 
+#del_no_quart=Tomar os números de ^1 
+#del_groupe=&Delete groups
+#MatchesDesArbitres=Os encontros dos árbitros  
+#ArbitresDesMatches=Os árbitros dos encontros  
+
+#exemptes_tab=Lista de exentos nunha taboa 
+
+^1 sera remplacé par 1/4 ou 1/8 
+#x_pasdefaut=^1 por defecto
+#matches_a_traiter=Encontros a realizar
+#matches_termines=Encontros rematados
+#poules_a_traiter=Poules a realizar 
+#poules_termines=Poules rematadas
+#matches_hors_periode=Encontros fora do intervalo de tempo
+#poules_hors_periode=Poules sen horario ou fora do intervalo de tempo 
+#match_pas_periode=Este encontro está fora do intervalo de tempo
+#poule_pas_periode=A poule non ten horario ou está fora do periodo de tempo 
+#match_termine=Este encontro rematou
+#poule_terminee=A poule rematou
+^1 sera remplacé par un arbitre et ^2 par 1/4 ou 1/8 
+#plusieurs_quarts=^1 está en varios ^2
+
+nouveaux textes du 21/6/2011
+
+#noir=negro
+#duree=duración 
+#NoSerieDeReserve= Daselles aos tiradores da competencia os números de serie que xa teñen da memoria 
+#champ_associe=Indicar o campo no cal se asocia aos tiradores 
+#n_tireur_a_ceci=^1 tirador[1||es] en reserva [1|ten|teñen] ^2
+#TireursNonTrouves=^1 tirador[1||es] non encontrad[1|o|os]
+#prendre_serie=Tome os Números de Serie da Memoria 
+
+#PoulesDesArbitres=As poules dos árbitros 
+#ArbitresDesPoules=Os arbitros das poules 
+#arbi_par_poule=Número de árbitros por poule 
+#maxi_poule_arbi=Máximo de poules por árbitro 
+
+nouveaux textes du 21/7/2011
+
+#pasDansPoules=Operación imposible xa que non se está en fase de poules 
+#prendQuandMeme=Ainda así tomaa ? 
+
+#tableau_non_utilise=Taboa non utilizada 
+#video=video 
+#arbitre_video=Arbitro para vídeo 
+#arbitre_match=Arbitro de encontro 
+#arbitre_assistant=&Assistant referee
+#matchDeja3=O encontro seleccionado ten xa 3 árbitros 
+#pouleDeja3=A poule seleccionada ten xa 3 árbitros 
+#matchDejaVideo=O encontro seleccionado xa ten un árbitro para vídeo 
+#pouleDejaVideo=A poule seleccionada xa ten un árbitro para vídeo 
+#afficher=Mostrar 
+
+#avec_horaires=cos horarios 
+#sans_horaires=sen os horarios 
+#affectation_de=Asignación de 
+#periode_matchs=período no cal se desenvolven os encontros 
+
+#on_envoie=Envianse ainda así ?
+
+#matchHeure=Só os encontros con horario 
+#pouleHeure=Só as poules con horario 
+#tir_arbi=Entre tiradores e árbitros : 
+#natdiff=Nacións diferentes 
+#liguediff=Ligas diferentes  
+#clubdiff=Clubes diferentes 
+#sipossible=se é posible 
+#Affiliation_affi=Mostrar Afiliacións
+#indiquer_periode=Seleccionar un período
+
+#clas_init_des_tab=clasificación inicial das taboas 
+#clas_init_un_tab=clasificación inicial dunha tabla 
+#clas_init_du=Clasificación inicial de ^1
+#clas_du=clasificación de ^1
+
+#prevu_exaequos=^1 calificados previstos,pero hai ^2 calificados polo feito de empates
+#modif_formu=Modificación da fórmula 
+#compe_en_cours=Competencia en curso 
+#clas_utiliser=Clasificación a utilizar 
+#toutes_cat_sexe=Todas as categorías e sexos 
+
+#match_consecutif=2 encontros consecutivos 
+#non_sur_consecutif=^1 non está no encuentro cercano 
+
+#essais=^1 proba[1||s] efectuada[1||s]
+#remplissage=recheo
+#autres_essais=Ok ? Diga Non para efectuar outros ensaios. 
+
+#arbi_dispo=Hai ^1 árbitro[1||s] dispoñible[1||s]
+#remplis_arbi_n=Cheando árbitro ^1
+
+#cycleHeures=ciclo de horarios coa mesma pista e durante un ciclo 
+#cyclePistes=ciclo de pistas co mesmo horario e durante un ciclo 
+#pasCycle=Non hai ciclo 
+#selonListe=ciclo de acordo á lonxitude da lista 
+#selonZone=ciclo por zona da taboa 
+#zone_egal=Zona = 1 /
+#sauter_matchs_term=omitir os encontros terminados 
+
+#use_max_piste=Utilizar o máximo de pistas 
+
+#manque_heure_poule=^1 poule[1||s] sen horario 
+#manque_heure_match=^1 encontro[1||s] sen horario 
+#manque_piste_poule=^1 poule[1||s] sen pista 
+#manque_piste_match=^1 encontro[1||s] sen pista 
+#developper=desenvolver
+
+^1 sera remplacé par tireurs, équipes ou arbitres
+#a_prendre=^1 a tomar
+^1 sera remplacé par tireurs, équipes ou arbitres
+#prendre_ces=tomar os ^1
+
+#alpha=alfabético
+#structure=estructurado
+#select_all=selecionar todo
+
+#select_multiple=Selección multiple con Shift+Clic y Ctrl+Clic 
+#drag_and_drop=Posibilidade de usar arrastrar-depositar 
+
+#date_lim_mini=Data límite de uso en modo MINI : ^1
+
+#police_defaut=Fonte de serie
+
+#demonstrations=Demostracións
+
+#expli_quart1=Unha asignación por cuarto de taboa coloca a todos os encontros dun árbitro nun só cuarto de taboa, 
+#expli_quart2=o árbitro non debe ter conflicto de nación/club con algún dos tiradores do cuarto de taboa.
+#expli_quart3=De maneira análoga para 1/8 e 1/16. 
+#expli_cross1=Hai un interese cruzado cando nun encontro hai un árbitro de nación/club A e un tirador de nación/club B 
+#expli_cross2=e que noutro encontro haxa un árbitro de nación/club B e un tirador de nación/club A. 
+#expli_proxi1=Existe proximidade cando nun encontro dun árbitro de nación/club A e que no encontro veciño 
+#expli_proxi2=haxa un tirador de nación/club A. Os veciños son o 1, o 2, o 3 o 4, etc. 
+#expli_affillDiff1=Hai mesma afiliación cando nun encontro a dous árbitros os dous sexan da mesma nación/club.
+#expli_temps=Solicitude de respetar o intervalo de tempo indicado, en minutos entre dous poules/encontros dun árbitro. 
+#expli_deux=Solicitude para colocar cada arbitro en dous encontros veciños : o 1, o 2. o 3, o 4 etc. 
+#expli_heures1=8:00+0:15*7 significa tomar a hora 8:00 e engadir despois 7 veces 0:15, de igual forma para 8+15*7 
+
+nouveaux textes 5/9/2011
+
+#choix_tableau=Selección dunha taboa
+#avec_arbi=cos árbitros
+#avec_pistes_heures=cos horarios e as pistas 
+#avec_nom_tab=co nome de cada taboa 
+#sur2lignes=nome en dúas líñas 
+#battus_a_gauche=Cos perdedores á esquerda
+#autre_tab_a_gauche=Con outra taboa á esquerda 
+
+nouveaux textes 7/9/2011
+
+#matchs=encontros
+
+#clasmt_prov=Clasificación provisional
+#poule_et_clas=Poules e clasificación provisional
+#NbPoulesPP=número máximo de poules por páxina
+#NbLignesPP=número máximo de liñas por páxina
+#avec_soustitre=con subtítulo
+#avec_noms_champs=Cos nomes dos campos
+
+#raison=razón
+
+nouveaux textes 26/10/2011
+
+#idem_prec=O mesmo que anteriormente
+#modele=modelo
+#selon_modele=Segundo este modelo...
+#mauvais_modele=modelo malo
+#pour_der_tour=para a última volta
+#pour_tour_saisi=para unha volta a capturar
+
+#une_seule_piste=Cada árbitro nunha pista
+
+nouveaux textes 11/11/2011
+
+#une_piste_exactement=Arbitro para todos os encontros dunha pista 
+
+#plus_police=Aumentar o tamaño da letra 
+#moins_police=Diminuir o tamaño da letra 
+#plus_interligne=Aumentar o interliñado 
+#moins_interligne=Diminuir o interliñado 
+
+#ecran=pantalla 
+#photos_dir=Fotos dun directorio 
+#grand_diaporama=Diaporama a pantalla máxima 
+#petit_diaporama=Diaporama pantalla mínima
+#fin_diaporama_grand=Fin  de diaporama, a pantalla máxima
+#fin_diaporama_petit=Fin de diaporama, a pantalla pequena 
+
+#avec_pistes_heures_prets=cos horarios e as pistas de encontros listos 
+#taille_noms_tableaux =tamaño do nome das taboas 
+
+#matchs_a_imp_ou_reimp=^1 encontro[1||s] en curso a imprimir ou reimprimir 
+#matchs_imprimables=^1 encontro[1||s] imprimible[1||s]
+#y_compris_pas_pret=Comprende os encontros non listos 
+
+#apres_match=despois de cada encontro 
+#au_changement_de=a cambio de ^1
+#page_pleine=cando se encha a páxina 
+#heure_piste=horarios e pistas 
+#matchs_prets=Todos os encontros que están listos 
+#toutes_poules=Todas as poules 
+#liste=(f)lista[|s]
+#col_etroite=columnas estreitas 
+
+#ajuste_col=axuste de columnas 
+#ajuste_col_modele=axuste de columnas para esta plantilla 
+#pas_ajuste_auto=sen axuste automático 
+#ajuste_auto_sauf=axuste automatico salvo ?apelido-nome? 
+#ajuste_auto=axuste automático 
+#global=&global
+
+#cacher_soustitre=ocultar o subtítulo 
+#cacher_noms_champs=ocultar os nomes dos campos 
+
+#arbitres_moins=^1 árbitro[1||s] que arbitrasen menos 
+#arbitres_hasard=^1 árbitro[1||s] ao azar 
+#menu_special_arbi=Para ter a ventá da asignación manual, utilice o menú ?Especial? 
+#menu_special_arbi2=&To add criteria, use the "Special" menu
+
+#affecter_n_arbi=&allocate ^1 referee[1||s] per ^2
+#incluant_arbi_video=&including a video referee
+#using_groups=&using groups A and B
+#par_quart=&by quarter
+#equi_roles=&Balancing roles
+#change_roles=&Changing roles
+#permuter_arbi=&swap referees ^1 and referees ^2
+
+#fichiers_XML_en_attente=Hai ^1 arquivos XML dunha sesión  
+#on_detruit=se les elimina 
+#on_charge=se les carga 
+
+#saisie_affil_nouv_dans_ppal=A captura de novos clubes, ligas, 
+
+#echec_enregistrement=O rexistro da competencia fallou 
+#nouvel_essai_enreg=Se intenta novamente o rexistro
+
+#celui_appli=escolla entre as plantillas do programa 
+#celui_avec_compe=escolla entre as plantillas da competencia 
+#enreg_celui_appli=gardar nas plantillas do ?programa?
+#enreg_celui_avec_compe=gardar nas plantillas da ?competencia?
+#enreg_sans_les_deux=gardar en ambos
+#copier_les_modeles=copiar as plantillas da competencia na carpeta  
+#models_eng_diapo=as plantillas de Engarde e as plantillas de DiapoEngarde
+#erase_models=borrar as plantillas co mesmo nome?
+#err_copie=ERROR, copia interrumpida 
+#fichiers_copies=^1 arquivo[1||s] copia[1do||dos]
+
+#cadre=Cadro
+#traits_hz=Cadro e trazos horizontais 
+#sans_traits=Sen trazos 
+
+#simuler_remplissage=Simular o enchido dunha taboa incompleta
+#ImprImmediate=Impresión inmediata de novos encontros
+
+#sans_defilement=Zona sen desplazamiento
+#avec_classement=Con clasificación
+#nb_ligne_pp=número de líñas
+#numero_match=número de encontro  
+
+#FTPactif=FTP activo
+#desactive_FTP=Desactivar FTP
+
+#panneau_web=&Web panel
+#parametresHTTP=Parámetros HTTP
+#activerHTTP=Activar HTTP
+#desactiverHTTP=Desactivar HTTP
+#HTTPactif=HTTP activo
+#desactive_HTTP=Desctivacion de HTTP para envío de arquivos
+#specialPourHTTP=Especial para  HTTP
+#installer_storefile1=Desexa instalar por  FTP o arquivo  ^1
+#installer_storefile2=na carpeta  ^1da máquina distante
+#installer_storefile3=para facer funcionar o envío de arquivos por  HTTP ?
+#au_moins_6=&At least 6 characters
+#redonner_pass=Escriba novamente a súa contrasinal
+#pass_trop_court=Contrasinal demasiado curta
+#pass_different=As contrasinais son diferentes
+#car_interdit=&Forbidden character
+#utiliser=&use
+
+#organisme=Organismo
+#event=Evento
+#tournoi=&Tournament
+#tournoi_gen=&tournament[|s]
+
+#pret_competition=Listo para está competencia
+#pas_de_compe=esta competencia non existe
+#pas_event=o evento non existe
+#pas_organisme=o organismo non existe 
+
+#pas_chemin_domaine=ruta non localizada no dominio
+#pas_connexion_ou=sen conexión a intranet ou error de dominio
+#si_appli_pas_ici=Se o programa  ^1 non está instalado Vd . pode instalarlo cos parámetros
+#fichiers_attente=Arquivos en espera
+#matchs_attente=Encontros en espera
+
+#interrompre=Interrumpir
+#reprendre=Reanudar
+
+#envoi_fic_html=upload of HTML files
+#site_org=Sitio Web do organizador
+#rep_depose_fic=Carpeta onde gardar os arquivos por exemplo: http://www.club.org/competitions/junior
+
+#faire_tab_sans_publi=Elaborar as taboas sen publicar
+
+#envoi_match=upload of ongoing matches
+#files_attente=Arquivos en espera
+#taille_files=Tamaño dos arquivos
+#vider_file_fichiers=Valeirar a lista de arquivos en espera
+#vider_file_matchs=Valeirar a lista de encontros en espera
+#console=Consola
+
+#useNomsCourts=Utilizar nomes curtos
+#fonc_non_acces=Esta función xa non se encontra dispoñible
+
+#compe_commencee=A competencia iniciou
+#suppr_toutes_eq=Suprimir todos os equipos
+
+#Licence_LicenceNat=Tomanse as  ^1 Licencias como Licencias Nacionais
+#LicenceFIE_LicenceNat=Tomanse as  ^1 Licencias FIE como licencias Nacionais
+#LicenceNat_LicenceFIE=Tomanse as ^1 Licencias Nacionais como Licencias FIE
+
+#heure_avant_arbitre=RECOMENDASE DE SOBREMAÑEIRA programar os horarios e as pistas antes que os árbitros
+#eviter_meme_heure=para evitar que un árbitro teña dous encontros á mesma hora
+#arbitre_sans_heure=Mentras é posible asignar árbitros a encontros sen horarios programados:
+
+#entite_deja_table=^1 entidade[1||s] suprimida[1||s], xa que están na taboa
+
+#PublierlesEquipes=Publicar os equipos na Web. 
+#RefaireIndex=Refacer o menú da Web. 
+#ViderIndex=Valeirar o menú da Web 
+#refaire_doc_web=É preciso refacer as páxinas da Web coas páxinas cos menús "Web" das ventás de Engarde, Poules e Tablas.
+#Deposerlescss=Subir os CSS á web 
+#docu_actualise0=&This document is automatically refreshed
+#docu_actualise1=Este documento renovase cada ^1
+#docu_actualise2=Vostede mesmo pode actualizalo con máis frecuencia 
+#refaire_demande=Hai ^1 arquivos en espera, Preguntar máis tarde?  
+#minute=minuto[|s]
+#seconde=segundo[|s]
+#info_probables='As informacións "calificado"  "+"  "-"  "eliminado" son probables mais non certas 
+#qual_probable=&most likely qualified
+#elim_probable=&most likely eliminated
+#menu_document= Utilice o Menú para mostrar un documento 
+#cliquer_titre=Faga clic nalgún título para abrir o documento á dereita
+#cliquer_ F5=Faga clic en F5 para abrir o documento nunha ventá completa e poder actualizala con F5 conservando a súa posición 
+#menu_apparaitra=Aparecerá un menú conforme se desplieguen os resultados da competencia 
+
+#site_web=Sitio Web
+
+#pas_de_live=Esta competencia non ten unha suscripción LIVE
+
+#periodeAutoRefreshMatchs=Período de actualización de encontros da taboa, min 2s.
+#onlyScoreChange=Só enviar os cambios de resultados.
+#supprMatchsFinisApres=Eliminar encontros terminados despois de... min 30s
+#supprTousMatchsApres=Eliminar todos os encontros  despois de?min 300s
+#message-suppr=Envio de mensaxe para eliminar cada ..., min 10s
+#supprTousMatchs=Eliminar todos os encontros 
+#supprMatchsFinis=Eliminar os encontros rematados 
+
+#tireurs_disponibles=^1 novo[1||s] tirador[1||es] presente[1||s] disponible[1||s]
+
+#utiliser_dossards=Utilizar os Números da Careta 
+#cocher_si_bonne_raison=Marque esta casilla só se ha unha boa razón n
+#pas_dossard=Sen número de afiliación
+#dossard_en_double=Número de afiliación duplicado
+#pb_dossard=PROBLEMA co número de afiliación DE DOSSARD
+#corriger_dossard=Corrixa isto ou non utilice os números de afiliación cos aparatos de pista
+#remplacant_pris=O suplente.^1 entrou no encontro ^2 
+#pasRemplacement=Suplencia non efectuada 
+#remplacementFait=Suplencia efectuada 
+#remplacementAFaire=Suplencia a efectuar 
+#voir_ecran_piste=Ver a pantalla de pista 
+#cacher_ecran_piste=Esconder a pantalla de pista
+
+#saut_page=Salto de páxina
+
+#partie_tableau=Parte dunha taboa
+#serie_non_classe_menu=Adxudicar un número de serie aos non clasificados
+#serie_non_classe=No de serie para non clasificados 
+
+#message_clas=mensaxe 
+#cle_messages=Clave dos mensaxes 
+#messages_pour_clas=Mensaxes para algunhas clasificacións
+#ecrire_lignes=Escriba con ENGARDE,(non con DiapoEngarde) líñas con formato:
+#exemple_mes1=A:1-32:Calificado para o domingo 
+#exemple_mes2=A:33-64:Calificado para a taboa B das 15 Horas 
+#expli_mes1=A é a clave dun grupo de mensaxes, e pode conter grupos A, B, C, etc. 
+#expli_mes2=Cando se selecciona a clave A, se García ten unha clasificación entre 1 e 32, tendrá a mensaxe : Calificado para o domingo 
+
+#id_to_use=Identificadores a usar 
+#cle_engarde=Clave Engarde (suxerida)
+#cle_engarde_seule=&Engarde key
+#pas_id=Sen ?Identificación? 
+#id_en_double= ?Identificación? duplicada 
+#pb_id=PROBLEMA NO CAMPO DE IDENTIFICACIÓN 
+#corriger_id=Corrixa isto ou non empregue o campo identificación cos aparatos de pista 
+
+#use_langue_doc=Usar a lingua dos documentos 
+
+#handisport=Handisport
+#dedouble_poules=¿Dividense as poules?
+#dedouble_cette_poule=Dividir esta poule 
+#dedouble_poules_a=Dividense as poules a partir de  
+#choisir_odm=Escoller a orde dos encontros 
+#monter=Subindo 
+#descendre=Baixando 
+#avecCopierColler=Posibilidade de Copiar-pegar  
+#il_manque=falta(n) 
+#matchs_en_double=encontros divididos 
+#incorrect=dato incorrecto 
+#corriger_odm_incorrect=A orde dos encontros dados é incorrecta, ¿desexa correxila? 
+#sinon_auto=en caso contrario será dado por predeterminado ou calculado  
+#poules_dedoublables=Algunhas poules sobre varias pistas 
+#poules_sur_n_pistes=As poules de ^1 en cantas pistas? 
+#cette_poules_sur_n_pistes=&This poule  of ^1 on how many pistes
+#poule_n_pistes=poule en ^1 pistas 
+#verifier=verificar 
+#prendre=tomar 
+#solution=&^1 solution[1||s]
+#liste_solutions=&solution list
+#add_liste_solutions=&add to solution list
+#voir_liste_solutions=&see solution list
+#prendre_solution=&take this solution
+#matchs_se_suivent=encontros sucesivos 
+#ordre_fourni=orde de encontros dada 
+#ordre_engendre=orde de encontros xenerada  
+#limite_poule_mini=Poules de ^1 max. en modo mini
+
+#save_copy=Gardar copia
+#connexion_pistes_ip=Conexión IP de pistas  
+#deconnexionPistes=Desconectar pistas 
+
+#titre=título
+#avec_video=con video 
+#lancer=Correr
+#menu=Menú
+#charger_pistes=Cargar un arquivo das pistas  
+#save_copy_pistes=Gardar unha copia das pistas 
+#CacherToutesPistes=Ocultar todas as pistas 
+#mode_envoi=Modo de envío de encontros a Engarde Principal  
+#depot_fichiers=por valeirado de arquivos 
+#par_UDP=por UDP 
+#expli_depot_fichiers=Valeirado de arquivos, é modo antiguo de Engarde que é máis lento 
+#expli_par_UDP=UDP, novo modo de Engarde, máis rápido, emprega o No. IP e o porto
+#ip_engarde_ppal=Número IP de Engarde Principal 
+#port_engarde_ppal=Porto de Engarde Principal 
+#raz=Actualiza 
+#si_score_modifie=cando unha puntuación modificase
+#si_situation_modifie=cando algunha situación modificase  
+#chaque_10s=cando algunha situación modificase e cada 10 seg 
+#chaque_5s= cando algunha situación modificase e cada 5 seg  
+#toujours=sempre 
+#sans_pilotage=sen manexo 
+#pilotage_de=Manexo de 
+#envoyer_principal=Enviar a Principal 
+#envoyer=Enviar
+#nepasenvoyer=&Do not send
+#affiche_dans_table=Anunciar nunha taboa 
+
+#refus_message=Mensaxe rechazado, a pista ^1 non está conectada  
+#pas_piste_cet_ip=Mensaxe recibido de ^1 , este No IP non corresponde a unha pista 
+#next_ou_prev=Se está ao final dunha volta, debese efectuar un encontro seguinte ou un anterior 
+#conflit_piste=CONFLICTO de No IP ou de nome de pista  
+#ordi_connecte_piste=A computadora ^1 está conectada á pista ^2
+
+#call_next_match=Encontro seguinte solicitado poa pista ^1 
+#utiliser_next=&Use "NEXT" on the piste apparatus to get this match again.
+#reset_possible=&You may have to reset the piste apparatus for getting the next match.
+#no_match_this_poule=Poule ^1 en curso nesta pista : sen encontro a tirar.
+#match_prec_manuel=O encontro precedente non rematou, Vd. pode obtelo por Previo na pista e en funcionamento manual. 
+#matchs_sans_heure=Hai encontros a tirarse nesta pista, pero non contan con horario asignado.
+#no_match_other_poules=Sen encontro a tirar nas outras poules para esta pista. 
+#no_match_in_poules=Sen encontro a tirar nas poules para esta pista. 
+#no_poule_this_piste=Non hai poule empregando esta pista. 
+#no_match_this_piste=Sen encontro a tirar nesta pista. 
+#no_tableau_this_piste=Non hai encontro de taboa en curso empregando esta pista. 
+#tab_pas_ds_tab=encontro de taboa recibido, non estamos nas taboas. 
+#est_pas_tab_en_cours=Non é unha taboa en curso 
+#bad_num_match=recibiuse número de encontro erroneo 
+#bad_cle_tir=a clave do tirador non é boa
+#modif_match_fini=modificación do encontro terminado (aceptase) 
+#modif_match_fini_non=modificación do encontro terminado (rechazase) 
+#refuse=&REFUSED
+
+#demande_con_deja=Xa hai unha solicitude de conexión.  
+#progression_auto=progresión automática 
+#periode_auto=Período de envío automático 
+
+#remplacer=reemplazar
+
+#tableauWebDefaut=Definir os arquivos Web por defecto
+#change_style_css=Cambiar de modo CSS 
+
+#imp_rencontre_sans_ordre=¿Imprimense os encontros ainda que a orde dos tiradores non se capturou?
+
+18 JUILLET 2015
+
+#titulaire=titular
+#RemettreTitulaireEnX=Regresase ao titular do equipo ^1 no encontro No
+#RemettreTitulaireNow= Regresase ao titular do equipo ^1  agora 
+#RemettreTituAssautX=Regresar ao titular de ^1 no encontro No... 
+#num_match_titulaire=Número do encontro onde regresa o titular  
+#zero_aucun=dar un 0 para ningún
+
+30 decembre 2015
+
+#id_sm= ID Smart
+#pass_sm= contrasinal Smart
+#envoi_smart=Envío de infornmación para Engarde Smartphone 
+#ConnectwithSmartId=&Connect with Smart ID
+#pas_envoi_smart=&NOT sending data to Engarde Smart
+#identifiant=Identificador 
+#lancer_smart=Lanzar Engarde Smart 
+#obtenir_identifiant=Obteña un novo identificador de para a competencia
+#obtenir_autre_identifiant=Obteña un indetificador de competencia dun grupo afiliado con outro
+#autre_identifiant=Identificador de outra competencia  
+#id_is=O identificador é ^1
+#pass_is=A contrasinal é ^1 tome nota.
+#meme_pass=A contrasinal é a mesma.
+#pass_saisi_smart=&Password entered on Engarde Smart
+#user_deja_pass=&the user already has a password 
+#clic_connex=Facer click para a conexión  
+#stat_du_groupe=Estadisticas do grupo  
+#reception_donnees_smart=&Reception of data entered with Engarde Smart Assistant
+#pas_reception_donnees_smart=&NO reception of data entered with Engarde Smart Assistant
+#envoyees_par=&Data sent by
+#renvoyer_donnees=&Reupload all the data to the server
+#supprimer_donnees=&Delete all the data on the server and stop sending
+
+#delaientreenvoisfichiers=&Delay between HTML uploads: ^1s
+#tempsmaxicom=&Max time HTTP: ^1s
+#sous_titre=subtítulo 
+#message=mensaxe 
+#bleu=azul 
+#marron=marrón 
+#info_compe=A información da competencia
+#tous_tableaux=Todas as taboas
+#all_match_clas=Todos os encontros de poules, taboas e clasificacións
+#detruire_compe=Desfacer a competencia
+#detruire_compe_smart=Desfacer a competencia no servidor smart 
+#tireurs_envoyes=tiradores enviados
+#titres_differents=Os títulos son diferentes entre a competencia 1 e o servidor smart 2
+#veut_meme_titre=&Do you want to have the same titles
+#is_it_right_id=É este o correcto identificador para esta competencia?  
+#cliquer_modifier=Seleccione Modificar e capture o título e subtítulo 
+
+5 juillet 2016
+
+#mixte=mixto(a)
+#garcons=nenos
+#filles=nenas
+#qui_commence=Quen comeza?
+#re_qui_commence=Refacer o sorteo para saber quen comeza (nenos ou nenas) ?
+#garcons_commencent=Os nenos comezan  
+#filles_commencent=As nenas comezan
+#quand_garcons_commencent=Cando os nenos comezan : 
+#quand_filles_commencent=Cando as nenas comezan : 
+#devrait_gars_filles=^1 debe haber 2 ou 3 nenos e 2 ou 3 nenas
+#melange_rang_mixte=Mesturar os rangos entre 1, 2, 3, 4 e 5, 6, 7, 8 dentro dun equipo
+#mettre_rang1234=Colocar un equipo : 12R para os nenos, 34R para as nenas
+#mettre_rang5678=Colocar un equipo : 56R para os nenos, 78R para as nenas
+#gars1256=os nenos deberán ter os rangos 1256
+#filles3478=as nenas deberán ter os rangos 3478
+#erreur_gars_fille=Error: nena con neno
+#n_gars=Hai ^1 nenos.
+#n_filles=Hai ^1 nenas.
+#compe_mixte=A competencia é MIXTA.
+#rencontre_mixte=A folla do encontro é MIXTA
+#cela_signifie=Isto significa :
+#signifie2_2_2fois=2 nenos enfrentaranse a 2 nenos e 2 nnenas enfrentaranse a 2 nenas (8 encontros)
+#compe_non_mixte=A competencia é NON-MIXTA
+#rencontre_non_mixte= A folla do encontro é NON-MIXTA
+#signifie3_3=3 tiradores enfrentaránse a 3 tiradores (9 encontros) 
+#changer_sexe=Desexa Vd. cambiar o parámetro ?Sexo? da competencia? 
+#dabord_arbitres_moins=Iniciar con árbitros que haxan arbitrado menos
+#non_favorise=&not favoured
+#pret=listo
+#deja_fait=feito(a)
+#deter_qui_commence=Determinar quen comeza
+#tableau_pas_pret=A taboa non está lista
+#on_effectue=Facela de todas formas?
+#meme_tirage_tabs=Un único sorteo para estas  ^1 taboas ? 
+#deter_qui_1-4_5-8=Determine quen serán 1234, e quen serán 5678
+#qui_1-4_5-8=Quen son 1234, e quen son 5678 ?
+#deter_qui_1-3_4-6=Determine quen serán 123, e quen serán 456
+#qui_1-3_4-6=Quen son 123, e quen son 456 ?
+#pas_remplacement=Sen suplente Cyrano
+#remplacement_unefois=Suplente Cyrano 
+#categories=Categorías 
+#categories_fie=Categorías da FIE
+#cat_pas_pour_championnat=As categorías non corresponden a éste campeonato.
+
+2016/10/27
+
+#tableaux_par_niveau=Taboas de ^1 por niveis
+#manque_tireurs=Falta de Tiradores
+#prend_tous_les_tir=Tomanse a todos os tiradores en descenso
+
+#dernier_tour_par_niveau=Última volta de poules por niveis
+
+#fic_pas_ecrit= O arquivo non foi gardado 
+#ajout_arbi_dispo= Engadir os árbitros dispoñibles 
+#presents=presentes 
+#disponibles=dispoñibles
+#tir_meme_clas=Tiradores coa mesma clasificación 
+#qui_devant=Indicar quen vai diante de quen 
+
+#app_broadcast=Aparatos de pista en modo de Transmisión 
+
+#formule_descri_tab=Fórmula con Taboas a medida 
+#utiliser_tab=Empregar as Taboas como están 
+#recalculer_tab= Recalcular os grupos da Clasificación  
+#erreur_cal=Error ao recalcular os grupos da Clasificación a Taboas 
+
+2017-05-29
+
+#Pasdepoule=sen poule
+#enlever_contraintes=ou levantar as restriccións
+#choix_formule=escoller tipo de fórmula
+
+#nation2=nación 2
+#nation3=nación 3
+#nation4=nación 4
+#2eme=2a
+#3eme=3a
+#4eme=4a
+
+#dabord_fermer=Primeiro terase que pechar a competencia 
+#rattacher=engadir
+#detacher=remover
+#suivi=seguir
+
+#RedTermineeMaintenant=Reducir as poules terminadas 
+#RedNonEnCoursMaintenant=Reducir as poules non en curso 
+#RedTermineeAuto=Reducir automaticamente as poules terminadas 
+#RedNonEnCoursAuto=Reducir automaticamente as poules non en curso 
+
+#multi_nat=Varias nacións
+
+#eviter0=FORMA DE TRATAMENTO RESERVADO A EXPERTOS 
+#eviter1=EVITE ESTE TIPO DE MODIFICACIÓN A UNHA COMPETENCIA XA EN CURSO 
+#eviter2= EFECTUESE A UNHA COMPETENCIA DE PRUEBA PRIMEIRAMENTE 
+#modification_importante=modificación importante
+#nb_vainqueurs_clas=Número de vencedores 
+#nb_battus_clas=Número de perdedores  
+#recalcule_poules=recalcularanse as poules 
+#vic_score_precise=Victoria con puntuación exacta 
+#non_supprimable_now=esta anotación xa non se pode suprimir 
+
+#noms_pistes=Nombre das pistas 
+#premier_IP=Primeiro número IP 
+#ex_noms_pistes=Por exemplo: 1-15 Podium Azul Amarela Verde Vermella 
+#pistes_a_utiliser=Pistas a utilizar 
+#pistes_a_utiliser_ordre_IP=Pistas a utilizar na orde dos números IP 
+#ajout_une_piste=Engadir unha pista 
+#ajout_pistes_ip=Engadir pistas IP 
+#ajout_pistes_semi=Engadir pistas SEMI 1.0 
+#piste_incorrecte=pista incorrecta 
+#heure_incorrecte=&incorrect hour
+#piste_dupliquee=pista duplicada 
+#ip_duplique=IP duplicado 
+#descri_formule=descripción da fórmula 
+#charger_formule_perso=cargar unha fórmula personal 
+
+#mettre_no_quart=Poñer os números de ^1 empregados
+
+#maj_fichiers=Actualizando algúns arquivos 
+#maj_succes=Actualización exitosa
+#maj_echecs=Actualización fallida 
+
+#poule_entiere=tirou unha poule completa
+#match_entier=terminou un encontro 
+#match_tire=&fenced de match
+#classe=clasificado(a)
+#non_classe=non clasificado(a)
+#sans_rang=clasificado(a) sen ranking (ao término da taboa)
+#sans_rang_en_fin=&in the final list without ranking (when competition ended)
+#statut_different=o estado na lista non concorda 
+#present_ni_ni=&present in the list but not in poule and not in match
+
+#accueil=inicio 
+#affichage=mostrar en pantalla 
+#ouvert_recent=Aberto(a) recientemente 
+#tables_dans_fenetre=as taboas encontranse no menú de WINDOWS.
+
+#cliquer_accueil=faga click en incio para regresar á páxina inicial
+#montrer_svg=mostrar os respaldos desta competencia 
+#faut_quitter_engarde=VD DEBERÁ SAIR DE ENGARDE. 
+#engarde_sauve=Engarde efectuará un respaldo. 
+#relancer_engarde_svg=Vd deberá correr Engarde dende o respaldo.
+#pas_svg_compe=Non ha respaldo para esta competencia 
+#passer_compe_rep=Desexa Vd mover a competencia do directorio ^1
+#vers_rep=ao directorio ^1
+#passer_compe_parent=Mova esta competencia ao directorio principal
+#incoherence_formule=INCOHERENCIA NA FÓRMULA, FALTAN TABOAS 
+#charger_nouv_formule=CARGUE UNHA NOVA FÓRMLA 
+#retour_poule_par_svg=USE UN RESPALDO OU REGRESE AO FINAL DE POULES E CARGUE UNHA NOVA FÓRMULA 
+#use_backup=USE UN RESPALDO 
+#quand_meme_ouvrir=Ainda desexa Vd abrir esta competencia 
+#err_load_formula=ERROR AO CARGAR A FÓRMULA : RESTABLEZCA A FÓRMULA 
+#err_table=ERROR, TABOA NON CARGADA 
+
+#suppr_pistes_avant=pistas existentes deberán suprimirse de antemano 
+
+#k_meme_place=&type k or ctrl+k in the display window to show this toolbar at the same position
+#esc_ferme=&Windows can be closed with the Esc key
+
+#connexion_eservice=&Connection to engarde-service
+#autre_connexion=&Another connection
+#transmission=&The transmission of poules and tableaux is done every ^1s.
+#aussi_periode=&It is also the update period of Engarde Smart.
+#periode_defaut=&This is the default period.
+#periode_achetee=&The purchased period is ^1s.
+#periode_plus_grande=&The period applied is greater because the number of fencers is greater than that indicated in the purchase.
+#periode_plus_courte=&To have a shorter period, connect to your account on engarde-service.com 
+#modif_nb_tir=&and change the number of fencers.
+#modif_periode=&and change the period.
+
+#date_diff=&The date is different
+#arme_diff=&The weapon is different
+#sexe_diff=&The sex is different
+#type_diff=&The type is different
+#smartID_diff=&The Smart ID is different
+
+#bloque=&locked
+#bloquer_pass=&lock the password
+#debloquer_pass=&unlock the password
+#bloquer_les_pass=&lock all the passwords
+#debloquer_les_pass=&unlock all the passwords
+#match_bloque=&locked match
+#poule_bloquee=&locked poule
+#modifiable=&modifiable
+#verifie=&checked
+
+#icone_verif=&An icon "Verified" mean "Verified, modifiable only here".
+#icone_cadenas=&An icon "Padlock" means "Modifiable only here".
+#icone_non=&An icon "Crossed padlock" or no icon means "Modifiable remotely".
+#icone_clic=&Click the icon to modify it.
+#menu_distance=&The menu allows you to set everything "Modifiable remotely".
+#modif_distance=&Set everything "Modifiable remotely"
+#faible_itinerance=&finer access to data, small use of mobile data
+
+#Interdireouvertureparfichier=&Prohibit opening by files for Auxiliary and DiapoEngarde
+#InterdireouvertureparfichierQ1=&Do you want to forbid Engarde Auxiliary and DiapoEngarde to read the competition files,
+#InterdireouvertureparfichierQ2=&and thus force them to use the client-server mode or DiapoEngarde by internet (highly recommended)
+#dangereuxparfichier1=&It is dangerous to open a competition in Auxiliary and with DiapoEngarde.
+#dangereuxparfichier2=&It is better to use the CLIENT-SERVER mode or DiapoEngarde by internet.
+#interditparfichier1=&It is forbidden to open this competition in Auxiliary and with DiapoEngarde now. 
+#interditparfichier2=&Use the CLIENT-SERVER mode or DiapoEngarde by internet.
+#client_serveur_vert=&Openings in CLIENT-SERVER mode are displayed in green.
+
+#a_partir_donnes_smart=&From internet SMART data
+#ouvrir_internet=&Open on the internet
+#get_data_internet=&Loading SMART data from the internet
+#smart_id=&SMART identifier
+
+#methode_globale=&Global method
+#methode_globale_val=&Global method with interval
+#methode_globale_formu=&Global method with formula
+
+#pasApas=&Step by step
+#phaseParPhase=&phase by phase
+#generer_pass=&Generate passwords
+#effacer_pass=&Clear passwords
+#imprimer_pass=&Print passwords
+
+#compe_aujourdhui=&Les compétitions d'aujourd'hui
+#saisie_identifiant=&Saisie d'un identifiant de compétition
+#saisie_date=&Saisie d'une date pour chercher des compétitions
+#mois1=&Jan.
+#mois2=&Fev.
+#mois3=&March
+#mois4=&April
+#mois5=&May
+#mois6=&June
+#mois7=&July
+#mois8=&Aug.
+#mois9=&Sept.
+#mois10=&Oct.
+#mois11=&Nov.
+#mois12=&Dec.
+write o or y for month_before_day to get "jan. 4" - write n to get "4 jan."
+#month_before_day=&y
+
+#bienvenue=&Welcome to ^1
+#bienvenue0=Benvido a Engarde 10
+
+#bienvenue11=&Because of a change in contexts, versions 10.1 and later are not compatible with earlier versions.
+#bienvenue12=&For more information, see "Help | Recent Manuals xx | versions".
+#bienvenue13=&With Engarde Smart the referees or the piste assistants can enter the results of the matches on the piste.
+
+#bienvenue14=&It is not recommended to open "by files" the competitions in auxiliary and with DiapoEngarde. It can produce read/write conflicts in files.
+#bienvenue15=&It is better to use the client-server mode (competitions shown in a green banner) or DiapoEngarde by internet.
+
+#bienvenue16=&Version 10.2 includes the evolutions made for the World Championships in Budapest 2019 and the evolutions of August 2019.
+#bienvenue17=&The list of these evolutions can be found on the engarde-escrime.com website in the version history.
+
+============= 2022-12-20
+
+#long_time=&Long-term competition
+#forfait_par_match=&Match-by-match forfeits
+#points_bonus=&Points and bonuses
+#clas_poule_points_bonus=&Poule rankings with points and bonuses
+
+#pas_abandon1=&In "Match-by-match forfeits" mode, Engarde doesn't register abandonments.
+#pas_abandon2=&Give a victory to the competitor opposite the one who abandons.
+#pas_abandon3=&If the opposing competitor has N points and the abandoning competitor has P points and N>P, put these points.
+#pas_abandon4=&If the opposing competitor has N points and the abandoning competitor has P points and N<=P, 
+#pas_abandon5=&give P points to the competitor who abandons and P+1 points to the opposite competitor.
+
+#expli_forfait1=&In "Match-by-match forfeits" mode,  type f as score for a forfeit
+#expli_forfait2=&Engarde will put a victory on the opposing competitor.
+#expli_forfait_plus_de_2=&To put more than ^1 forfeits in a competitor's poule, use Engarde Main
+#expli_efface_score_aux=&To delete a score in a pool, it's better to use Engarde Main
+
+#modification_symetrique=&modification of the symmetrical
+#modification=&modification
+#verif_fait_modif=&The poule check made ^1 changes
+#imp_formu_points_bonus=&Print the formula to view point and forfeit parameters
+
+#points_V=&Number of points for a victory
+#points_D=&Number of points for a defeat
+
+#bonus_offensif=&Offensive bonus
+#expli_bonus_V=&The offensive bonus is noted "Bonus V" or "bv".
+#seuil_bonus_V=&Seuil de bonus offensif, TD-TR >=
+#points_bonus_V=&Points for an offensive bonus
+
+#bonus_defensif=&Defensive bonus
+#expli_bonus_D=&The defensive bonus is noted "Bonus D" or "bd".
+#seuil_bonus_D=&Defensive bonus threshold, TR-TD <=
+#points_bonus_D=&Points for a defensive bonus
+
+#seuil_forfait_total=&Total forfeit threshold
+#pas_seuil_forfait_total=&No total forfeit threshold
+#seuil_forfait_total_expli_1=&Type 4 for 4 forfeits to become a forfeit for the entire pool
+#seuil_forfait_total_expli_2=&Type 0 to have no total forfeit 
+
+============= 2023-09-14
+
+#verif_num_serie=&Checking competitor numbers for initial classification
+#num_serie_titre=&competitor numbers for initial ranking
+#sans_rang_apos=&without rank
+#mettre=&put
+#il_faut_mettre=&You have to put
+#les_non_classes=&unranked competitors
+#garder _rangs_autres=&and keep ranks for other competitors
+#certains_competiteurs=&some competitors
+#competiteurs_concernes=&competitors concerned
+#a_partir_de=&from
+#sur_de=&Are you sure you want
+#passe_no=&step number ^1
+#ancienne_methode=&old method
+#non_c_ok=&no, it's ok
+#battus_demis_exaequo=&The semi-final losers are tied

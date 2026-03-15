@@ -1,0 +1,14 @@
+(def options
+ vitesse_timer 5
+ langue "French"
+ textes_engarde "textes_fra.txt"
+ prem_edit vrai
+ avec_affil vrai
+ statutsaveccontrainte vrai
+ contexte "contexte_gene.txt"
+ info_categorie "categories_FFCEB.txt"
+ taillenomscourts 10
+ chemindercompe ("Competitions\\NOTGER_2026_EF\\competition.egw" "Competitions\\NOTGER_2026_SF\\competition.egw" "Competitions\\NOTGER_2026_SH\\competition.egw" "Competitions\\NOTGER_2026_EH\\competition.egw" "Competitions\\NOTGER_2026_EH\\TournoiInternationalNotger-Epefminine\\competition.egw" "Competitions\\TEST2\\competition.egw" "Competitions\\NOTGER-TEST\\competition.egw")
+ organismehttpfichier "escrime_sauveniere"
+)  
+

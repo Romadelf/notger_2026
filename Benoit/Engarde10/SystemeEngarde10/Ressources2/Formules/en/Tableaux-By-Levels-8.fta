@@ -1,0 +1,14 @@
+;61Tableaux of 8 by levels 
+;Fencers ranked 1 to 8 are placed in a 1rst tableau of 8 
+;Fencers ranked 9 to 16 are placed in a 2nd tableau of 8 etc.
+{[classe suite_tableaux]
+ [critere_constitution classement_initial]
+ [hasard_par_2 non]
+ [qualifies 0]
+ [nom "A"]
+ [nom_etendu "tableau direct"]
+ [nom_tableaux "tableau of ^1"]
+ [origine1 "classement_initial 1-1000"]
+ [tableaux_par_niveau 8]
+ [cle 1]
+}

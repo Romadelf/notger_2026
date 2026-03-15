@@ -1,0 +1,84 @@
+;11Direct Tableau WITHOUT 3rd place
+{[classe suite_tableaux]
+ [critere_constitution classement_initial]
+ [hasard_par_2 non]
+ [qualifies 0]
+ [nom "A"]
+ [nom_etendu "direct tableau"]
+ [nom_tableaux "tableau of ^1"]
+ [origine1 "classement_initial 1-1000"]
+ [cle 1]
+}
+
+;---------------
+
+{[classe multi_affichage]
+ [nom "T128"]
+ [nom_etendu "Tableau 128"]
+ [liste_tab_a_imp ( ((a128 a128)) )]
+ [max_min (128 65)]
+ [global vrai]
+ [cle 1]
+}
+
+{[classe multi_affichage]
+ [nom "T256-128"]
+ [nom_etendu "Tableaux 256-128"]
+ [liste_tab_a_imp ( ((a256 a128)) )]
+ [max_min (256 129)]
+ [global vrai]
+ [cle 2]
+}
+
+{[classe multi_affichage]
+ [nom "T512-128"]
+ [nom_etendu "Tableaux 512-128"]
+ [liste_tab_a_imp ( ((a512 a128)) )]
+ [max_min (512 257)]
+ [global vrai]
+ [cle 3]
+}
+
+;---------------
+
+{[classe multi_affichage]
+ [nom "T16"]
+ [nom_etendu "Tableau 16"]
+ [liste_tab_a_imp ( ((a16 a16)) )]
+ [max_min (16 9)]
+ [global vrai]
+ [cle 4]
+}
+
+{[classe multi_affichage]
+ [nom "T32-16"]
+ [nom_etendu "Tableaux 32-16"]
+ [liste_tab_a_imp ( ((a16 a16)) )]
+ [max_min (32 17)]
+ [global vrai]
+ [cle 5]
+}
+
+{[classe multi_affichage]
+ [nom "T64-16"]
+ [nom_etendu "Tableaux 64-16"]
+ [liste_tab_a_imp ( ((a64 a16)) )]
+ [max_min (512 33)]
+ [global vrai]
+ [cle 6]
+}
+
+;---------------
+
+{[classe multi_affichage]
+ [nom "T8"]
+ [nom_etendu "Tableau final"]
+ [liste_tab_a_imp ( ((a8 a2)) )]
+ [global vrai]
+ [cle 7]
+}
+
+
+{[classe fichier_web] [fichier "tableau16.htm"] [depuis "a16"] [jusqua "a2"] [rang 1] [cle 1]} 
+{[classe fichier_web] [fichier "tableau128-32.htm"] [depuis "a128"] [jusqua "a32"] [rang 1] [cle 2]} 
+{[classe fichier_web] [fichier "tableau512-256.htm"] [depuis "a512"] [jusqua "a256"] [rang 1] [cle 3]} 

@@ -1,0 +1,10 @@
+{[numsave 0]
+ [numsavecopie 0]
+ [preparation 0]
+ [date_oed "699"]
+ [nom h2]
+ [taille 2]
+ [etat vide]
+ [les_matches ({[match (() () () () () 1 2)] [numero 1] [date_oed "698"]})]
+ [memoryfile ()]
+} 

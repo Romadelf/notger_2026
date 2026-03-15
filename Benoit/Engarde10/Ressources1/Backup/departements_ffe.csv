@@ -1,0 +1,103 @@
+001;AIN;Lyonnais;14;Auvergne-Rhône-Alpes
+002;AISNE;Picardie;2;Hauts-de-France
+003;ALLIER;Auvergne;6;Auvergne-Rhône-Alpes
+004;ALPES-DE-HAUTE-PROVENCE;Provence;1;Région Sud
+005;HAUTES-ALPES;Provence;1;Région Sud
+006;ALPES-MARITIMES;Côte d'Azur;19;Région Sud
+007;ARDECHE;Dauphiné-Savoie;8;Auvergne-Rhône-Alpes
+008;ARDENNES;Champagne-Ardenne;22;Grand Est
+009;ARIEGE;Midi-Pyrénées;25;Occitanie
+010;AUBE;Champagne-Ardenne;22;Grand Est
+011;AUDE;Languedoc-Roussillon;16;Occitanie
+012;AVEYRON;Midi-Pyrénées;25;Occitanie
+013;BOUCHES-DU-RHONE;Provence;1;Région Sud
+014;CALVADOS;Basse-Normandie;5;Normandie
+015;CANTAL;Auvergne;6;Auvergne-Rhône-Alpes
+016;CHARENTE;Poitou-Charentes;21;Nouvelle-Aquitaine
+017;CHARENTE-MARITIME;Poitou-Charentes;21;Nouvelle-Aquitaine
+018;CHER;Centre;20;Centre-Val de Loire
+019;CORREZE;Limousin;30;Nouvelle-Aquitaine
+021;CÔTE-D'OR;Bourgogne;9;Bourgogne-Franche-Comté
+022;COTES-D'ARMOR;Bretagne;23;Bretagne
+023;CREUSE;Limousin;30;Nouvelle-Aquitaine
+024;DORDOGNE;Aquitaine;4;Nouvelle-Aquitaine
+025;DOUBS;Franche-Comté;3;Bourgogne-Franche-Comté
+026;DROME;Dauphiné-Savoie;8;Auvergne-Rhône-Alpes
+027;EURE;Basse-Normandie;11;Normandie
+028;EURE-ET-LOIR;Centre;20;Centre-Val de Loire
+029;FINISTERE;Bretagne;23;Bretagne
+030;GARD;Languedoc-Roussillon;16;Occitanie
+031;HAUTE-GARONNE;Midi-Pyrénées;25;Occitanie
+032;GERS;Midi-Pyrénées;25;Occitanie
+033;GIRONDE;Aquitaine;4;Nouvelle-Aquitaine
+034;HERAULT;Languedoc-Roussillon;16;Occitanie
+035;ILLE-ET-VILAINE;Bretagne;23;Bretagne
+036;INDRE;Centre;20;Centre-Val de Loire
+037;INDRE-ET-LOIRE;Centre;20;Centre-Val de Loire
+038;ISERE;Dauphiné-Savoie;8;Auvergne-Rhône-Alpes
+039;JURA;Franche-Comté;3;Bourgogne-Franche-Comté
+040;LANDES;Aquitaine;4;Nouvelle-Aquitaine
+041;LOIR-ET-CHER;Centre;20;Centre-Val de Loire
+042;LOIRE;Lyonnais;14;Auvergne-Rhône-Alpes
+043;HAUTE-LOIRE;Auvergne;6;Auvergne-Rhône-Alpes
+044;LOIRE-ATLANTIQUE;Pays de la Loire;18;Pays de la Loire
+045;LOIRET;Centre;20;Centre-Val de Loire
+046;LOT;Midi-Pyrénées;25;Occitanie
+047;LOT-ET-GARONNE;Aquitaine;4;Nouvelle-Aquitaine
+048;LOZERE;Languedoc-Roussillon;16;Occitanie
+049;MAINE-ET-LOIRE;Pays de la Loire;18;Pays de la Loire
+050;MANCHE;Basse-Normandie;5;Normandie
+051;MARNE;Champagne-Ardenne;22;Grand Est
+052;HAUTE-MARNE;Champagne-Ardenne;22;Grand Est
+053;MAYENNE;Pays de la Loire;18;Pays de la Loire
+054;MEURTHE-ET-MOSELLE;Lorraine;17;Grand Est
+055;MEUSE;Lorraine;17;Grand Est
+056;MORBIHAN;Bretagne;23;Bretagne
+057;MOSELLE;Lorraine;17;Grand Est
+058;NIEVRE;Bourgogne;9;Bourgogne-Franche-Comté
+059;NORD;Nord-Pas-de-Calais;13;Hauts-de-France
+060;OISE;Picardie;2;Hauts-de-France
+061;ORNE;Basse-Normandie;5;Normandie
+062;PAS-DE-CALAIS;Nord-Pas-de-Calais;13;Hauts-de-France
+063;PUY-DE-DOME;Auvergne;6;Auvergne-Rhône-Alpes
+064;PYRENEES-ATLANTIQUES;Aquitaine;4;Nouvelle-Aquitaine
+065;HAUTES-PYRENEES;Midi-Pyrénées;25;Occitanie
+066;PYRENEES-ORIENTALES;Languedoc-Roussillon;16;Occitanie
+067;BAS-RHIN;Alsace;24;Grand Est
+068;HAUT-RHIN;Alsace;24;Grand Est
+069;RHONE;Lyonnais;14;Auvergne-Rhône-Alpes
+070;HAUTE-SAONE;Franche-Comté;3;Bourgogne-Franche-Comté
+071;SAONE-ET-LOIRE;Bourgogne;9;Bourgogne-Franche-Comté
+072;SARTHE;Pays de la Loire;18;Pays de la Loire
+073;SAVOIE;Dauphiné-Savoie;8;Auvergne-Rhône-Alpes
+074;HAUTE-SAVOIE;Dauphiné-Savoie;8;Auvergne-Rhône-Alpes
+075;PARIS;Paris;27;Île-de-France
+076;SEINE-MARITIME;Basse-Normandie;11;Normandie
+077;SEINE-ET-MARNE;Créteil;26;Île-de-France
+078;YVELINES;Île de France Ouest;28;Île-de-France
+079;DEUX-SEVRES;Poitou-Charentes;21;Nouvelle-Aquitaine
+080;SOMME;Picardie;2;Hauts-de-France
+081;TARN;Midi-Pyrénées;25;Occitanie
+082;TARN-ET-GARONNE;Midi-Pyrénées;25;Occitanie
+083;VAR;Côte d'Azur;19;Région Sud
+084;VAUCLUSE;Provence;1;Région Sud
+085;VENDEE;Pays de la Loire;18;Pays de la Loire
+086;VIENNE;Poitou-Charentes;21;Nouvelle-Aquitaine
+087;HAUTE-VIENNE;Limousin;30;Nouvelle-Aquitaine
+088;VOSGES;Lorraine;17;Grand Est
+089;YONNE;Bourgogne;9;Bourgogne-Franche-Comté
+090;TERRITOIRE DE BELFORT;Franche-Comté;3;Bourgogne-Franche-Comté
+091;ESSONNE;Île de France Ouest;28;Île-de-France
+092;HAUTS-DE-SEINE;Île de France Ouest;28;Île-de-France
+093;SEINE-SAINT-DENIS;Créteil;26;Île-de-France
+094;VAL-DE-MARNE;Créteil;26;Île-de-France
+095;VAL-D'OISE;Île de France Ouest;28;Île-de-France
+098;MONACO;Côte d'Azur;19;Région Sud
+971;GUADELOUPE;Guadeloupe;10;Guadeloupe
+972;MARTINIQUE;Martinique;15;Martinique
+973;GUYANE;Guyane;12;Guyane
+974;LA REUNION;La Réunion;29;La Réunion
+988;;Nouvelle-Calédonie;31;Nouvelle-Calédonie
+999;;FFE;99;FFE
+02A;CORSE-DU-SUD;Corse;7;Corse
+02B;HAUTE-CORSE;Corse;7;Corse

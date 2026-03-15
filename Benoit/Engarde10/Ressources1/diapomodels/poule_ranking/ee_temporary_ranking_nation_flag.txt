@@ -1,0 +1,5 @@
+{[type poule_ranking] [classedebase tireur] [champs_info_select (marge_gche rangg
+ nomprenom drapeau nation1 vic_match indice td groupeg matches)] [champs_info_taille
+ (16 79 355 81 109 111 100 100 156 147)] [champs_info_format (0 100 "Arial" 28 0
+ 2 16777215 2 2 22)] [ordre_select ordre_rang] [tempo 6] [grille grille] [tour 100]
+ [typeclas p] [ajustement 1]}

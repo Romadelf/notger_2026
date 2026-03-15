@@ -1,0 +1,1 @@
+You can run an old application by moving it from the "Old-applications" directory to the "SystemeEngarde10" directory. From version 10.01, you can run an old application in the "Old-applications" directory

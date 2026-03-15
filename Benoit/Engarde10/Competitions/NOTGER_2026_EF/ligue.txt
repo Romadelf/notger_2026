@@ -1,0 +1,4 @@
+{[classe ligue] [nom "FF"] [nation1 2] [cle 1] [date_oed "163"]} 
+{[classe ligue] [nom "FF"] [nation1 1] [cle 2] [date_oed "170"]} 
+{[classe ligue] [nom "VS"] [nation1 1] [cle 3] [date_oed "174"]} 
+

@@ -1,0 +1,83 @@
+;1Formule Coupe du Monde Seniors - Individuel
+;Tableau prélimiaire avec 32 exemptés puis tableau principal de 64
+{[classe suite_tableaux]
+ [critere_constitution classement_initial]
+ [hasard_par_2 non]
+ [qualifies 32]
+ [nom "A"]
+ [nom_etendu "tableau préliminaire avec 32 exemptés"]
+ [nom_tableaux "tableau préliminaire de ^1"]
+ [origine1 "classement_initial 33-1000"]
+ [entites_dans_tableau 83]
+ [cle 1]
+}
+{[classe suite_tableaux]
+ [critere_constitution classement_initial]
+ [hasard_par_2 oui]
+ [qualifies 0]
+ [nom "B"]
+ [nom_etendu "tableau principal de 64"]
+ [nom_tableaux "tableau principal de ^1"]
+ [origine1 "classement_initial 1-32"]
+ [origine2 "vainqueurs_suite A"]
+ [entites_dans_tableau 64]
+ [cle 2]
+}
+
+; ===========================
+
+{[classe multi_affichage]
+ [nom "T64p"]
+ [nom_etendu "Tableau préliminaire 64"]
+ [liste_tab_a_imp ( ((a64 a64)) )]
+ [max_min (96 65)] ; (64+32 33+32) car 32 exemptés
+ [global vrai]
+ [cle 1]
+}
+
+{[classe multi_affichage]
+ [nom "T128-64p"]
+ [nom_etendu "Tableaux préliminaires 128-64"]
+ [liste_tab_a_imp ( ((a128 a64)) )]
+ [max_min (160 97)] ; (128+32 65+32) car 32 exemptés
+ [global vrai]
+ [cle 2]
+}
+
+{[classe multi_affichage]
+ [nom "T256-64p"]
+ [nom_etendu "Tableaux préliminaires 256-64"]
+ [liste_tab_a_imp ( ((a256 a64)) )]
+ [max_min (288 161)] ; (256+32 129+32) car 32 exemptés
+ [global vrai]
+ [cle 3]
+}
+
+{[classe multi_affichage]
+ [nom "T512-64p"]
+ [nom_etendu "Tableaux préliminaires 512-64"]
+ [liste_tab_a_imp ( ((a512 a64)) )]
+ [max_min (544 289)] ; (512+32 257+32) car 32 exemptés
+ [global vrai]
+ [cle 4]
+}
+
+{[classe multi_affichage]
+ [nom "MAIN64"]
+ [nom_etendu "Tableaux 64-16"]
+ [liste_tab_a_imp ( ((b64 b16)) )]
+ [global vrai]
+ [cle 5]
+}
+
+{[classe multi_affichage]
+ [nom "MAIN8"]
+ [nom_etendu "Tableau final"]
+ [liste_tab_a_imp ( ((b8 b2)) )]
+ [global vrai]
+ [cle 6]
+}
+
+{[classe fichier_web] [fichier "tableauPreliminaire.htm"] [depuis "a256"] [jusqua "a64"] [rang 1] [cle 1]} 
+{[classe fichier_web] [fichier "tableau64.htm"] [depuis "b64"] [jusqua "b32"] [rang 1] [cle 2]} 
+{[classe fichier_web] [fichier "tableau16.htm"] [depuis "b16"] [jusqua "b2"] [rang 1] [cle 3]} 

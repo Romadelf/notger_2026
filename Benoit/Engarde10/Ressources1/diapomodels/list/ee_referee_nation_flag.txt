@@ -1,0 +1,4 @@
+{[type list] [classedebase arbitre] [champs_info_select (marge_gche nomprenom drapeau
+ nation1 presence)] [champs_info_taille (16 369 100 109 199)] [champs_info_format
+ (0 100 "Arial" 28 0 2 16777215 2 2 22)] [selection_select tous] [ordre_select ordre_alpha]
+ [tempo 6] [grille grille] [ajustement 1]}

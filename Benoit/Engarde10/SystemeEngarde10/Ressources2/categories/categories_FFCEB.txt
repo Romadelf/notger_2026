@@ -1,0 +1,40 @@
+(def info_categorie
+
+  ; below: no space before "(" and only one space after "(def"
+  ; the name of the file must be categories_xxx.txt where xxx is what you want
+  ; but categories_FIE.txt is reserved for FIE and categories_FFE.txt is reserved for FFE
+
+  ; the concerned competitions
+  championnat FFCEB
+
+  ; the reference saison for the dates
+  saison_reference "2016-2017" 
+
+  ; the fencer categories 
+  ; >>> dates are for the reference saison
+  ; >>> any date must be in a unique categorie
+  ; write the name between double quotes when it is not a standard name
+  ; so that it is not translated (which would insert question mark when not possible)
+  info_categorie_dates ( 
+     ("Vétéran 70+" "~1/1/1900"  "~31/12/1947") 
+     ("Vétéran 60-69" "~1/1/1948"  "~31/12/1957")
+     ("Vétéran 50-59" "~1/1/1958"  "~31/12/1967")
+     ("Vétéran 40-49" "~1/1/1968"  "~31/12/1977")     
+     (senior   "~1/1/1978"  "~31/12/1996")
+     ("U 20"   "~1/1/1997"  "~31/12/1999")
+     ("U 17"   "~1/1/2000"  "~31/12/2002")
+     ("U 14"   "~1/1/2003"  "~31/12/2004")
+     ("U 12"   "~1/1/2005"  "~31/12/2006")
+     ("U 10"   "~1/1/2007"  "~31/12/2008")
+     ("Mini"   "~1/1/2009"  "~31/12/2015")
+  )                  
+
+  ; other categories which are used for competitions and not for fencers
+  ; only the name is used
+  autre_categorie_dates ( 
+     (veteran  "~1/1/1900"  "~31/12/1977") 
+     ("M23"    "~1/1/1994"  "~31/12/1996")
+  ) 
+
+)
+

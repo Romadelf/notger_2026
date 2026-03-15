@@ -1,0 +1,1672 @@
+#aides_engarde=Français/French; Aide en français (21/09/2017)
+
+Ce fichier contient les aides d'ENGARDE. Il peut être traduit dans une autre langue.
+Pour cela la première ligne doit être modifiée :
+- en conservant le début : #aides_engarde=
+- en indiquant ensuite le nom de la langue dans cette langue puis en anglais
+- en traduisant et adaptant le texte se trouvant ensuite
+
+Les aides sont les textes contenus entre un nom d'aide comme ##aide_recherche
+et ##fin_aide
+Il faut traduire tout le texte sauf les symboles commençant par # qui seront remplacés
+par les textes associés à ces symboles dans le fichier de textes
+(par exemple textes_fra.res).
+
+******************************************************************************
+
+##documentation
+
+                      MANUEL D'UTILISATION D'ENGARDE version 10
+##fin_aide
+
+
+##aide_engarde_gene
+
+                      GENERALITES SUR ENGARDE version 10
+
+Engarde 10 est un logiciel de gestion de compétitions d'escrime fonctionnant
+sous Windows XP, Vista, 7, 8 et 10.
+
+Le logiciel fonctionne sous trois modes :
+- le mode mini qui est gratuit,
+- le mode Basic qui est payant et comporte plus de fonctionnalités
+- le mode PRO qui est payant, comporte plus de fonctionnalités et qui respecte le cahier des charges de la FIE.
+
+Pour fonctionner en mode Basic ou PRO, il faut acheter une licence en se connectant au site web http://engarde-escrime.com
+
+##fin_aide
+
+***********
+
+##aide_diapoengarde_gene
+
+
+                      GENERALITES SUR DIAPOENGARDE version 10
+
+DiapoEngarde 10 est un logiciel d'affichage sur écrans plasma ou autre des résultats de
+compétitions d'escrime gérées par Engarde. Il fonctionne
+sous Windows XP, Vista, 7, 8 et 10.
+
+DiapoEngarde produit une image sur l'écran de l'ordinateur qu'il faut transférer
+à l'écran plasma ou autre concerné (on peut l'envoyer à plusieurs écrans qui afficheront alors la même image).
+
+Le logiciel fonctionne sous deux modes :
+- le mode évaluation (Eval) qui est gratuit et qui permet d'évaluer le logiciel ;
+dans ce mode, la taille de l'affichage est réduite et la durée des diaporamas est limitée ;
+- le mode PRO qui est payant et qui n'a pas les limitations ci-dessus.
+
+Pour que DiapoEngarde puisse fonctionner en mode PRO, il faut qu'il y ait un Engarde PRO 
+fonctionnant avec des licences de type "competition" disponibles. 
+
+Les licences "competition" s'achètent en se connectant au site web http://engarde-escrime.com
+Les licences "competition" fonctionnent par abonnement pour 3 jours, un jour pour la mise en 
+place et deux jours pour la compétition.
+
+
+##fin_aide
+
+***********
+
+##aide_diapoengarde_comp
+
+
+                      FONCTIONNEMENT DE DiapoEngarde 
+
+DiapoEngarde a :
+- la même structure de fenêtres qu'Engarde,
+- les menus d'affichage d'Engarde (avec quelques rubriques additionnelles),
+- un mode Diaporama dans l'affichage permettant de faire tourner les pages automatiquement.
+
+DiapoEngarde ouvre les compétitions comme Engarde : il faut aller sur le réseau ouvrir le fichier 
+".egw" de la compétition choisie. On peut aussi ouvrir le fichier ".egw" de sa copie permanente
+lorsqu'elle en a une.
+La compétition ou la copie que l'on ouvre ainsi doit donc être dans une zone partagée de l'ordinateur
+sur lequel elle se trouve. Si l'on veut assurer une bonne sécurité, on utilise une copie placée en
+zone partagée, la compétition elle-même étant en zone non partagée.
+
+Dans la barre d'outils des documents, le bouton ayant avec un écran permet de passer en mode diaporama.
+Pour quitter le mode diaporama, il suffit de taper sur la touche Echap (esc).
+En mode diaporama, un double clic fait apparaître la barre d'outils pendant 10 secondes pour affiner
+les réglages.
+Dans la barre d'outils, il y a des boutons pour régler la durée d'affichage de chaque page.
+
+Lorsque des modifications sont apportées sur les tireurs (ajouts de tireurs, 
+modifications de nom), il est nécessaire de fermer et réouvrir la compétition pour que 
+DiapoEngarde les prenne en compte.
+               
+##fin_aide
+
+***********
+
+##aide_engarde_langues
+
+                      LES LANGUES
+
+Engarde est traduit dans plusieurs langues.
+
+Comme les nouveaux textes d'Engarde ne sont pas traduits immédiatement, il est possible de faire
+fonctionner Engarde avec deux langues : une langue principale et une langue secondaire.
+La langue secondaire est utilisée pour les messages qui n'ont pas encore été traduits dans la 
+langue principale. Il est conseillé d'utiliser le français ou l'anglais comme langue secondaire.
+Le choix " Fichier | Langue - Language " permet de choisir ces langues.
+
+De même, l'aide fonctionne avec une langue principale et une langue secondaire. Le choix
+" Aide | Langue de l'aide " permet de choisir ces langues.
+
+##fin_aide
+
+***********
+
+##aide_engarde_licences
+
+                      LES LICENCES
+
+Une licence "EngardePro" permet de fonctionner en mode PRO avec une seule session. Si l'on veut pouvoir
+ouvrir N sessions simultanées d'Engarde PRO sur un ordinateur, ou sur plusieurs ordinateurs
+reliés en réseau, il faut acheter N licences.
+
+Les licences "EngardePro" sont placées dans des clés qui sont installées automatiquement sur l'ordinateur,
+après l'achat, par le menu " Clés | Installer une clé ". Une clé contient les numéros MAC de
+l'ordinateur qui a effectué " Installer une clé " ; elle ne peut pas fonctionner sur un autre 
+ordinateur.
+
+Lorsqu'une clé comporte plusieurs licences, on peut avoir plusieurs sessions d'Engarde PRO 
+sur l'ordinateur où se trouve la clé. La première session d'Engarde se met directement en 
+mode PRO. La deuxième session se met en mode basic. Il faut faire " Mode | Passer en mode PRO "
+pour qu'elle demande une licence à la première session. Cela peut être fait aussi depuis un autre 
+ordinateur qui a Engarde mais n'a pas de clé, et qui est relié au premier par le réseau.
+La première session est la session principale, indiquée Engarde(PRO MAIN) en haut de la fenêtre.
+C'est elle qui distribue les licences. Le menu " Réseau " permet de voir les licences attribuées
+et les licences disponibles.
+
+Engarde est complété par DiapoEngarde, un logiciel payant qui permet d'afficher des poules,
+tableaux, classements, etc. sur des écrans plasma, TV, etc.
+DiapoEngarde a besoin d'une licence "competition" pour fonctionner et a besoin qu'il y ait une 
+session d'Engarde PRO ouverte sur le réseau (c'est elle qui lui fournit une licence). 
+Les licences "competition" s'achètent pat abonnement pour 3 jours (un peu plus que le temps 
+d'une compétition). Elles se trouvent dans des clés "competition" qui s'obtiennent avec Engarde 
+(pas avec DiapoEngarde), comme les autres clés.
+
+Ce sont les sessions principales d'Engarde qui distribuent les licences "competition".
+Les licences "competition" permettent d'ouvrir des sessions de DiapoEngarde mais aussi d'Engarde PRO.
+
+Lorsqu'il ne dispose pas d'une licence, DiapoEngarde fonctionne en mode "eval" avec une fenêtre de 
+taille réduite et des diaporamas à durée limitée.
+
+
+##fin_aide
+
+***********
+
+##aide_engarde_fichiers
+
+                          Le menu FICHIER
+
+#nouv_compe permet de créer une nouvelle compétition.
+
+ENGARDE crée un répertoire pour chaque compétition dans lequel il place tous les fichiers
+de la compétition. Il affiche ce nom dans la zone de titre de certaines fenêtres.
+
+#ouvrir_compe permet d'ouvrir une compétition. Il faut d'abord ouvrir le répertoire
+de la compétition puis le fichier competition.egw
+
+#fermer permet de fermer la compétition ce qui est nécessaire pour en ouvrir une autre avec 
+la même session.
+
+#CopiePermanente permet de d'avoir une copie permanente de la compétition dans un autre 
+répertoire, par exemple dans un répertoire partagé pour que les informations puissent être 
+lues par DiapoEngarde et être affichée sur des écrans
+
+#faire_fic_trans permet de faire des fichiers d'échange de format XML ou FFF.
+
+#ouvrir_aux permet d'ouvrir en mode auxiliaire une compétition qui est déjà ouverte 
+sur un autre ordinateur. On peut alors saisir des poules et des matches, produire 
+des documents, sur deux ordinateurs en même temps. En mode Pro, une session ouverte 
+en auxiliaire permet aussi la connexion aux appareils de piste. Lorsque des 
+modifications sont apportées sur les tireurs (ajouts de tireurs, modifications de 
+nom), il est nécessaire de fermer et réouvrir la compétition pour qu'Engarde les 
+prenne en compte.
+
+##fin_aide
+
+***********
+
+##aide_sauvegardes
+
+                          LES SAUVEGARDES
+
+Des sauvegardes sont effectuées automatiquement à chaque étape importante. Il est possible d'en 
+demander aussi (menu #fichier de ENGARDE, menu #deroulement des poules et des tableaux). C'est 
+conseillé lorsque l'on a saisi un nombre important de résultats.
+Les sauvegardes sont faites dans un répertoire spécial pour les sauvegardes qui a été choisi 
+lors de la création de la compétition. Chacune est faire dans un sous-répertoire dont le nom 
+se termine par l'heure de la sauvegarde.
+Pour reprendre une sauvegarde, il suffit de la charger avec ENGARDE.
+
+A la fin de la compétition, il est suggéré de supprimer le répertoire des sauvegardes pour gagner 
+de la place sur le disque.
+
+##fin_aide
+
+***********
+
+##aide_engarde_xml
+
+                          Fichier XML pour la FIE
+
+Les compétitions de la FIE se créent depuis 2004 à partir d'un fichier XML que l'organisateur
+se procure auprès de la FIE. Ce fichier contient toutes les informations pour la compétition.
+A la fin de la compétition, l'organisateur doit produire un fichier XML de résultats 
+et le fournir à la FIE.
+
+             Création d'une compétition à partir d'un fichier XML
+
+Il faut demander une nouvelle compétition et choisir "à partir d'un fichier XML"
+Engarde place les tireurs, les équipes (en compétition par équipes) et 
+les arbitres en réserve. Il faut ensuite depuis la table des tireurs importer les tireurs
+de la réserve (cela importe aussi les équipes en compétitions par équipes) et d'importer
+les arbitres un à un.
+
+                Chargement en réserve à partir d'un fichier XML
+
+Dans une compétition déjà créée, il est possible de charger en réserve des données venant d'un 
+fichier XML: des tireurs ou des équipes ou des arbitres. 
+
+             Production d'un fichier XML de résultats
+
+Dans le menu #fichier choisir #faire_fic_trans et choisir le format XML.
+Il faut le faire en fin de compétition pour les compétitions de la FIE et envoyer
+le fichier à la FIE. 
+
+##fin_aide
+
+***********
+
+##aide_engarde_contexte
+
+                               LES CONTEXTES
+
+Deux contextes sont actuellement utilisables avec ENGARDE : 
+- le contexte général à utiliser partout sauf en France
+- le contexte FFE (Fédération Française d'Escrime) qui permet d'utiliser un fichier des 
+ligues et un fichier des clubs français.
+
+Le contexte précise :
+- éventuellement un nom de fédération,
+- la façon de nommer l'affiliation intermédiaire,
+- les âges des différentes catégories (senior, junior, etc.),
+- éventuellement des fichiers de clubs, de ligues, de nations.
+
+Lors de la création de la première création de compétition, si la langue est le français,
+Engarde demande de choisir le contexte. Si la langue n'est pas le français, il prend le 
+contexte général.
+
+Lors de la création des autres compétitions, il prend le dernier contexte utilisé.
+
+On peut changer le contexte à l'aide du menu #competition
+
+##fin_aide
+
+***********
+
+##aide_mode
+
+                          LES MODES
+
+Engarde a 2 modes possibles "basic" et "PRO". En mode PRO, on peut être dans une session 
+principale appelée "PRO MAIN", celle qui distribue les licences, ou dans une session "PRO" 
+simple. Le mode est indiqué en haut de la fenêtre. La couleur de la fenêtre dépend du mode.
+
+Lorsqu'Engarde est lancé sur un ordinateur qui possède une clé valide et qu'aucune session
+d'Engarde n'est ouverte, Engarde se met directement en mode PRO MAIN, prêt à distribuer
+des licences s'il y en a à distribuer. Il est à l'écoute des ordinateurs du réseau sur
+un port UDP indiqué dans la fenêtre d'Engarde. Ce port est 50100 sauf s'il n'a pas pu être
+ouvert parce qu'il est déjà occupé.
+
+Le menu #mode_eng permet de passer en mode PRO et de quitter le mode PRO. Lorsque l'on demande
+à passer en mode PRO et qu'on n'est pas dans la situation de première session sur un ordinateur 
+qui possède une clé valide, Engarde ouvre une fenêtre permettant de demander une licence
+sur un ordinateur du réseau (ou le même ordinateur). Pour que cela fonctionne, il faut avoir
+une session principale ouverte - Engarde(PRO MAIN) sur le réseau (ou le même ordinateur). 
+On doit :
+- vérifier que le port UDP en haut de la fenêtre est celui d'Engarde(PRO MAIN), au besoin 
+le changer,
+- cliquer sur le bouton #ChercheOrdi ce qui fait apparaître les ordinateurs du réseau prêts
+à fournir des licences
+- cliquer sur un ordinateur proposant des licences, cela place son numéro IP dans la zone de 
+saisie du bas
+- cliquer sur #DemanderLice
+
+Le menu #mode_eng permet aussi d'activer ou de désactiver le mode FIE. Le mode FIE est obligatoire
+pour les compétitions de la FIE, il a les effets suivants provenant du cahier des charges 
+de la FIE :
+- les retours en arrière se font après impression d'un document les justifiant et signature
+du Président du Directoire Technique,
+- les documents principaux ont des numéros de version indiqués sous les sous-titres qu'il faut 
+gérer correctement, voir l'aide #document
+- les documents principaux ont identifiant de la forme FE_FIE_xxxx, voir l'aide #document
+
+##fin_aide
+
+***********
+
+##aide_reseau
+
+                          RESEAU
+
+Le menu #reseau permet :
+- si l'on est dans une session principale (PRO MAIN), avec #Listesessions de voir 
+les licences attribuées et les licences encore disponibles ; on peut aussi terminer des
+sessions
+- avec #configuration on peut changer le port UDP de réception des messages
+
+##fin_aide
+
+***********
+
+LES AIDES DE COMPETITION
+
+##aide_parametres
+
+                          LES PARAMETRES
+
+Pour les compétitions de la FIE, les données sont fournies par un fichier XML qui contient
+des valeurs pour certains paramètres.
+Pour ces compétitions, il ne faut pas changer les champs : #domaine_compe #championnat #id 
+Le champ #titre_ligne peut être changé.
+
+#titre_reduit est le nom court de la compétition. Engarde l'utilise pour nommer le répertoire 
+de la compétition (mais cela peut être changé). Exemples :
+Dourdan08-SMJ   et   Dourdan08-SMJ-eq    (le 2ème titre étant pour une compétition par équipe)
+
+#titre_ligne est le titre utilisé par ENGARDE lorsqu'il met le titre sur une seule ligne.
+Choisir un titre significatif comme :
+Dourdan 2000 - Sabre Hommes Juniors
+
+#id_reseau est utilisé lorsque l'on utilise Engarde ou DiapoEngarde sur plusieurs ordinateurs
+et lorsque l'on connecte Engarde à des appareils de piste. Dans ce cas, il faut mettre des 
+identifiants différents pour toutes les compétitions se déroulant en même temps, par exemple
+SMJ-in et SMJ-eq si l'on a une compétition individuelle et une compétition par équipe en 
+sabre masculin junior
+
+#titre1 sert à indiquer le nom officiel de la compétition, par exemple : 
+"Coupe du Monde - Coupe de la ville de Dourdan"
+
+#titre2 sert à indiquer l'arme, le sexe et la catégorie, par exemple :
+"Sabre Masculin Juniors"
+
+#titre3 sert à indiquer la date, par exemple :
+"21 février 2000"
+
+#titre4 sert à indiquer le lieu s'il n'est pas dans #titre1
+
+##fin_aide
+
+***********
+
+##aide_dt
+
+                          DIRECTOIRE TECHNIQUE
+
+Le choix #DT du menu #competition ouvre une fenêtre pour saisir la composition du
+directoire technique et éventuellement d'autres commissions. Un document peut ensuite 
+être imprimé à l'aide du menu #document
+
+##fin_aide
+
+***********
+
+##aide_historique
+
+                        #historiqueDesRetours
+
+#historiqueDesRetours permet de voir les retours en arrière qui ont été effectués.  
+
+##fin_aide
+
+***********
+
+##aide_extraction
+
+                        #extraction
+
+#extractXML
+
+##fin_aide
+
+***********
+
+##aide_restriction
+
+                        #restriction
+
+#Restreindre1
+#Restreindre2
+#Restreindre3
+#Restreindre4
+#Restreindre5
+#Restreindre6
+#Restreindre7
+#Restreindre8
+
+##fin_aide
+
+***********
+
+##aide_document_engarde
+
+                          Le menu document d'ENGARDE
+
+Ce menu permet d'imprimer :
+- le directoire technique. En compétition FIE, imprimer ce document en passant en version 1 
+(ou plus si besoin), cela produit le document officiel FE_FIE_0003
+- le classement général (avec éventuellement un décalage des rangs pour des cas particuliers
+comme une compétition de division 2 dont on veut que le premier soit 32 du fait que 32 
+tireurs participent à la compétition de division 1). En compétition FIE, imprimer ce classement
+en passant en version 1 (ou plus si besoin), cela produit le document officiel FE_FIE_0011
+- la liste des tireurs en lice (encore en compétition),
+- les statistiques selon le cahier des charges de la FIE. En compétition FIE, imprimer ce 
+document en passant en version 1 (ou plus si besoin), cela produit le document officiel 
+FE_FIE_0016
+- l'activité des arbitres. En compétition FIE, imprimer ce document en passant en version 1 
+(ou plus si besoin), cela produit le document officiel FE_FIE_0017
+
+
+##fin_aide
+
+***********
+##aide_html 
+
+                          Le menu HTML
+
+Ce menu permet de produire des fichiers ou des documents HTML :
+- depuis la fenêtre Engarde, on peut produire les tireurs, les équipes, la formule, 
+le classement général et l'activité des arbitres,
+- depuis la fenêtre des Poules, on peut produire les exemptés, le classement d'un 
+tour de poules, le classement à la fin des poules,
+- depuis la fenêtre des Tableaux, on peut produire des tableaux.
+
+Lorsque l'on est en mode #faire_document ENGARDE produit un fichier HTML dans le répertoire
+auxiliaire et le fait ouvrir par le navigateur de l'ordinateur. Il est possible d'imprimer 
+ce document avec le navigateur.
+Lorsque l'on est en mode #faire_fichier ENGARDE produit un fichier HTML à l'endroit choisi
+par l'utilisateur et avec un nom choisi par l'utilisateur. Ce type de fichier est fait en 
+particulier pour être placé sur les sites Web.
+
+Le mode se choisit avec le menu HTML.
+
+##fin_aide
+
+***********
+
+##aide_web
+
+                          Le menu Web
+
+Le menu Web permet d'envoyer automatiquement des fichiers HTML sur un site Web 
+en utilisant le protocole FTP et l'application FTP.exe de Windows.
+
+Chaque envoi d'un fichier s'effectue en ouvrant une fenêtre DOS dans laquelle FTP.exe 
+s'exécute. Cette fenêtre apparaît seulement dans la barre des tâches. On peut la rendre
+visible en cliquant dessus. Elle disparaît automatiquement quand le transfert est
+terminé.
+
+Lorsqu'on effectue des envois automatiques, il faut surveiller les fenêtres FTP. En cas 
+de problèmes (coupure d'Internet, surcharge de la machine distante) qui empêchent de
+terminer les transferts, elles s'accumulent. Il faut alors désactiver FTP, les fermer
+et régler le problème avant de le réactiver.
+
+#parametresFTP ouvre une fenêtre pour paramétrer les envois FTP
+- sur la machine locale il faut fournir le chemin de l'application ftp.exe, 
+c'est généralement c:\windows\system32\ftp.exe
+- sur la machine locale il faut fournir le chemin du répertoire où Engarde place
+les fichiers à transférer
+- sur la machine distante (serveur Web recevant les fichiers) il faut fournir le 
+nom de l'hôte (de la machine, hostname), le nom de l'utilisateur FTP et son mot de passe
+- sur la machine distante, il faut aussi fournir le chemin du répertoire où FTP doit
+placer les fichiers (ce champ est vide quand on les place au sommet).
+
+Pour faire fonctionner ces transferts, il faut d'abord activer FTP (bouton). Cela ouvre
+une fenêtre DOS et exécute l'application FTP en demandant une connexion. Quand la connexion
+est obtenue, on peut fermer cette fenêtre en tapant "Quit". 
+
+Il est possible :
+- de faire des transferts un à un à l'aide des menus "Publier xxx" du menu "Web"
+- de faire des transferts automatiques des poules ou des tableaux en cochant la case
+correspondante de la fenêtre. Dans ce cas, il faut choisir la fréquence des envois.
+Il faut choisir la période d'autorafraichissement des fichiers, c'est l'intervalle 
+de temps que mettra le fichier chez la personne qui observe les résultats pour
+demander un rafraichissement. Plus elle est faible, plus cela charge le serveur;
+
+##fin_aide
+
+***********
+
+##aide_cles
+
+                          LES CLES
+
+#VoirLesCles ouvre une fenêtre qui montre les clés stockées sur l'ordinateur. En haut
+de cette fenêtre, on trouve les numéros MAC de l'ordinateur (adresse physique des cartes
+réseau) et la date de référence qui est en principe la date du jour sauf si celle-ci a 
+été changée manuellement.
+
+Chaque ligne de la table correspond à une clé et indique en particulier sa date de début 
+et sa date de fin ainsi que les numéros MAC de l'ordinateur sur laquelle elle est valide.
+
+Pour être valide, la date de référence de la clé doit être comprise entre la date de début 
+et la date de fin. Si ça n'est pas le cas parce que la date de référence est erronée (du
+fait de modifications manuelles de la date de l'ordinateur), il est possible de corriger
+la date de référence en effectuant une synchronisation (menu du même nom) qui va chercher
+la date du jour sur internet (il faut être connecté à internet à ce moment).
+
+Pour être valide, l'un des numéros MAC de clé doit être l'un des numéros MAC de l'ordinateur.
+
+L'état de la clé est donné dans le champ état, le nombre de licences dans le champ nombre
+et le type dans le champ type. 
+
+#InstallerCle permet d'installer une clé que l'on a achetée. Cela ouvre une fenêtre dans
+laquelle if faut fournir l'identifiant de client et le code d'achat ; ces informations
+sont fournies au moment de l'achat.
+
+#AcheterCle permet d'aller sur le site Web d'Engarde pour acheter une clé.
+
+##fin_aide
+
+******************************************************************************
+
+##aide_tables
+                    LES TABLES
+
+Les tables sont formées d'entités (tireurs, arbitres, clubs, etc.).
+ou d'informations sur la compétition (paramètres, formule, etc.).
+
+Elles comportent toutes les informations sur ces entités. Elles ne permettent
+pas de saisir ou de modifier directement ces informations, pour cela il faut
+lancer une action de saisie ou de modification à l'aide du menu ou des boutons.
+
+UN DOUBLE CLIC sur une ligne demande la modification de l'entité de cette ligne.
+
+Il est possible d'ajuster la taille des rubriques et de choisir l'ordre des rubriques :
+- pour changer la taille d'une colonne, placer la souris sur le bord droit de
+  la cellule du haut de la colonne et déplacer ce bord,
+- pour changer l'ordre des colonnes, placer la souris sur le milieu de la cellule
+  du haut d'une colonne et déplacer cette colonne.
+
+L'ordre des colonnes de la table est celui qui est utilisé pour la saisie.
+Lorsque l'on veut utiliser un lecteur de codes-barres, il faut mettre les champs
+dans l'ordre des informations à lire, par exemple nom, prénom, licence.
+
+Pendant les saisies et modifications des entités contenues dans les tables, les informations
+ne sont pas enregistrées à chaque instant. Le menu #enregistrer permet de les enregistrer.
+
+On peut sélectionner plusieurs entités (plusieurs lignes) avec la souris pour appliquer
+une action comme #supprimer ou #present ou #absent.
+
+Les actions sur les tables sont :
+
+* menu #fichier
+- #exporter_table pour exporter dans un fichier texte.
+- #importer_table pour importer des entités dans la réserve
+Le menu fichier peut contenir d'autres éléments en rapport avec la lecture ou l'écriture de fichiers, selon la table  
+considérée.
+
+
+
+* menu #reserve
+
+Le menu #reserve permet de mettre en réserve des tireurs que l'on prend dans
+certains fichiers pour ajouter certains d'entre eux à la compétition.
+
+- #charger pour charger un fichier en réserve (on peut charger plusieurs fichiers dans la
+   même réserve)
+- #vider pour vider la réserve
+- #effectif pour connaître le nombre de tireurs de la réserve
+- #importer_un pour copier un tireur de la réserve dans la compétition
+- #importer_certains pour copier de la réserve dans la compétition
+    les tireurs dont les numéros de série sont compris entre deux valeurs fournies.
+- #importer_tous pour copier tous les tireurs de la réserve dans la compétition.
+
+* bouton #document 
+- tireurs : En compétition FIE, imprimer la liste des tireurs présents en passant en version 1 
+(ou plus si besoin). Cela produit le document officiel FE_FIE_0001
+- arbitres : En compétition FIE, imprimer la liste des arbitres présents avec leur catégorie
+et leur nation, en passant en version 1 (ou plus si besoin). Cela produit le document officiel 
+FE_FIE_0002
+
+* menu #edition
+- #saisir pour ouvrir une fenêtre de saisie afin de saisir une nouvelle entité
+- #modifier pour modifier l'entité de la ligne sélectionnée
+- #supprimer pour supprimer les entités des lignes sélectionnées. Les entités
+  qui sont référencées ne peuvent pas être supprimées.
+- #chercher pour recherche une entité dans la table en donnant une partie de son nom
+- #agglomerer sert à faire une seule entité avec deux, à utiliser par exemple, si l'on a
+  deux clubs dans une table qui sont en fait le même club
+- #colonne1fixe permet de fixer (ou ne plus fixer) la colonne 1. Lorsque la colonne 1
+  est fixe, elle ne disparaît pas lors de scrolling horizontal
+
+* boutons #ordre
+Les boutons de tri permettent un classement par ordre alphabétique, structuré ou numéro de série.
+
+* menu #ordre
+En plus des boutons de tri, le menu ordre permet de choisir d'autres options pour l'ordre des entités
+On peut maintenant trier la table dans l'ordre des numéros internes. Lorsque l'on fait des
+saisies, cela place les dernières fiches saisies à la fin.
+
+* boutons #presence
+Les boutons de présence permettent de définir comme présent ou absent en un clic.
+
+* menu #presence
+Le menu présence complète les boutons de présence.
+- #present pour mettre présentes les entités sélectionnées
+- #absent pour mettre absentes les entités sélectionnées
+- #presentpardefaut pour mettre, au départ de la saisie, les entités présentes
+- #absentpardefaut pour mettre, au départ de la saisie, les entités absentes
+
+Il est possible d'exporter dans des fichiers textes les tables des tireurs,
+des équipes et des arbitres. Il est possible d'importer de tels fichiers.
+Les commandes se trouvent dans le menu #fichier de la table. Les fichiers sont formés de
+lignes composées de champs séparés par ";". La première ligne contient le nom des champs.
+
+Lorsque l'on importe un fichier texte, le contenu est mis en réserve de la table. 
+Pour l'avoir dans la tables, il faut utiliser les commandes du menu #reserve
+
+Pour la table des équipes, il est possible de calculer les numéros de série (ou les points)
+des équipes à partir de ceux des tireurs (Engarde prend les trois meilleurs nombres).
+Cela se fait avec le menu Equipe de cette table.
+
+Pour la table des tireurs, lorsque l'on est en compétition par équipe, il est possible
+d'affecter automatiquement des équipes aux tireurs qui n'en n'ont pas si ces équipes
+sont les clubs, les ligues ou les nations. Cela se fait avec le menu Equipe de cette table.
+
+* Le menu EngardeSmart permet d'envoyer les informations de la table au service EngardeSmart.
+
+
+##fin_aide
+
+******************************************************************************
+
+             L'aide de la fenêtre de recherche
+
+##aide_recherche
+
+                     RECHERCHE
+
+Cette recherche est incrémentale. On tape lentement quelques lettres dans le champ
+de saisie. A chaque frappe de lettre, la liste des entités correspondant à ce champ est
+affichée (si elle ne comporte pas plus de 1000 entités).
+
+Dans le mode #commencant_par les entités correspondantes sont celles dont le début
+du nom correspond à ce qui est tapé.
+Dans le mode #contenant les entités correspondantes sont celles dont le nom contient
+à ce qui est tapé.
+Dans le mode #exacte la recherche fait seulement correspondre les majuscules et les
+minuscules.
+Dans le mode #approchee la recherche est plus souple.
+
+On choisit en cliquant sur une entité et en tapant sur OK ou avec un double clic
+sur une entité.
+
+##fin_aide
+
+******************************************************************************
+##aide_saisie_gene
+
+               FENETRE DE SAISIE ET MODIFICATION
+
+Cette fenêtre permet de saisir ou de modifier les tireurs, clubs, nations,
+ainsi que les informations sur la compétition (paramètres, formule, etc.).
+
+On passe au champ suivant par la touche Tab et au champ précédent par la
+touche Maj+Tab. On peut aller directement sur un champ par un clic souris.
+
+On peut effacer un champ (menu #edition ou touche shift+del).
+
+On peut quitter une fiche par #fermer. Si l'on travaille sur une fiche d'une table,
+on peut aussi quitter une fiche en passant à une autre fiche par une
+action du menu #fiche.
+
+Pour les fiches des tables :
+- lorsque l'on quitte une fiche et que le nom est vide, si l'on est en saisie,
+la fiche n'est pas mémorisée.
+- on ne peut pas quitter une fiche en modification si le nom est vide.
+
+Certains champs ont une valeur par défaut qui est installée par Engarde au début
+de la saisie (exemple : la présence).
+
+Quand un champ a une valeur par défaut et que l'on demande de l'effacer, Engarde ne l'efface
+pas mais lui donne la valeur par défaut.
+
+La saisie est contrôlée :
+- dans les champs nom, prénom, etc., il n'est pas nécessaire de s'occuper
+  des majuscules : le texte est mis en majuscules ou en titre,
+- dans les champs numériques entiers, seuls les chiffres sont acceptés ; lorsque
+  le réglage est correctement effectué, les autres caractères des touches
+  numériques sont transformés (par exemple, sur le clavier français, la
+  touche é est transformée en 2),
+- dans les champs numériques décimaux, le séparateur est le point. On peut aussi
+  taper une virgule qui est transformée par Engarde en point.
+- les champs énumérés comme la présence (présent/absent) se modifient en
+  tapant la première lettre de la valeur souhaitée ou par un double clic,
+- les affiliations (clubs, nations, etc.) ne sont pas saisies directement dans
+  le champ. Elles sont recherchées ou saisies dans une fenêtre particulière.
+
+##fin_aide
+
+*************
+
+##aide_navigation
+                                  NAVIGATION
+
+Lorsque l'on travaille sur une entité d'une fiche, les actions du menu #navigation
+permettent de passer à une autre fiche. Si l'on est en saisie, la fiche courante
+peut avoir un nom vide, elle est alors ignorée. Si l'on est en modification, la fiche
+en cours doit avoir un nom non vide, elle est mémorisée.
+
+Ces actions sont :
+- #nouveau pour passer à une nouvelle fiche en saisie.
+- #import_fiche pour prendre une entité en réserve.
+- #precedent pour revenir à la fiche précédente.
+- #suivant pour aller à la fiche suivante dans l'ordre de la table. Il n'y a pas
+ de fiche suivante lorsque l'on est en saisie.
+- #premier pour aller à la première fiche de la table.
+- #dernier pour aller à la dernière fiche de la table. On est sur la dernière
+ fiche lorsque l'on est en saisie.
+- #chercher pour chercher une fiche.
+
+##fin_aide
+
+*************
+
+##aide_saisie_divers
+
+                LES DATES
+
+Dans les dates, le séparateur de jour, mois, an est /
+
+On peut aussi taper : , ; . qui est transformé en /
+
+Si an<20, Engarde ajoute 2000 : ainsi, 3 devient 2003
+
+Si 20<=an<100, Engarde ajoute 1900 : ainsi, 68 devient 1968
+
+Les dates peuvent être incomplètes : juste l'année ou le mois et l'année.
+
+On peut aussi taper les dates dans les formats jjmmaa ou jjmmaaaa
+
+
+                LE STATUT
+
+Le statut d'un tireur sert lorsqu’il se passe un événement particulier (abandon,
+forfait, exclusion) en dehors d'un match. Attention, si l'événement se produit
+pendant un match de poule ou de tableau, c'est lors de la saisie de ce match
+qu'il faut indiquer l'événement (abandon, forfait, exclusion).
+
+Dans la table, on donne le statut abandon à un tireur ou une équipe qui est qualifié 
+pour la suite et qui abandonne en dehors d'un match, il sera dans le classement général.
+
+Le statut forfait sert pour un tireur ou une équipe qui ne s'est pas présenté, il n'apparaît
+pas dans le classement général.
+
+Le statut exclus sert pour un tireur ou une équipe qui a été exclus, il n'apparaît
+pas dans le classement général.
+
+
+                LES AFFILIATIONS
+
+Engarde utilise maintenant trois affiliations pour les tireurs : club, ligue, nation.
+ligue est intermédiaire entre club et nation. C'est une structure française, dans
+d'autres nations, il peut correspondre une autre structure par exemple état (state).
+
+Il n'est pas obligatoire d'utiliser les 3 affiliations. On peut utiliser seulement
+la nation, ou encore le club et la nation sans la ligue, etc.
+Ces affiliations servent à faire des décalages. Il faut donc remplir celles qui
+sont utilisées dans les décalages.
+
+Les affiliations ne sont pas saisies directement. Elles sont recherchées ou
+saisie dans une fenêtre particulière.
+
+Si l'affiliation existe déjà dans la compétition, il ne faut pas la saisir sinon
+elle sera en double.
+
+Il faut fournir la première affiliation, les autres viennent avec elle. Par
+exemple, on recherche ou on saisit le club d'un tireur. La nation et la ligue
+du club seront affectées au tireur.
+
+Lorsque l'on change une affiliation, on change en même temps ses parents et on
+efface ses descendants. Par exemple, si l'on change la ligue d'un tireur, sa
+nation est changée et son club est effacé.
+
+Les actions du menu #affiliation sont :
+- #chercher_compe pour chercher dans la compétition
+- #chercher_fic pour cherche en réserve (il faut avoir chargé un fichier en réserve)
+- #saisir pour saisir l'affiliation dans une autre fenêtre
+- #effacer_champ pour effacer l'affiliation
+
+##fin_aide
+
+******************************************************************************
+
+##aide_document_gene
+                              DOCUMENT
+
+Dans Engarde, cette fenêtre contient une page d'un document que vous pouvez imprimer.
+Dans DiapoEngarde, cette fenêtre contient une page d'un document que vous pouvez afficher
+en mode diaporama.
+
+Lors de la première utilisation de "document", après le lancement d'ENGARDE, il est
+conseillé, lorsque l'ordinateur est connecté à une imprimante, de demander
+une #mise_en_page (à l'aide du menu) pour que l'écran soit aux dimensions de l'imprimante.
+
+La grille qui se trouve au-dessus du document permet d'ajuster la taille des rubriques
+et des marges, elle permet aussi de choisir l'ordre des rubriques :
+- pour changer la taille de la rubrique R, placer la souris sur le bord droit de
+  la cellule contenant R et déplacer ce bord
+- pour changer l'ordre des rubriques, placer la souris sur le milieu d'une cellule
+  et déplacer cette cellule.
+
+Avec le bouton réglage, on ouvre une fenêtre permettant :
+- de modifier le contenu de l'affichage (les éléments affichés, l'ordre
+  d'affichage, les rubriques affichées),
+On peut utiliser une rubrique "nom prénom" ou les rubriques séparées 
+"nom" et "prénom" dans les documents concernant les tireurs et les arbitres.
+- de changer la police, sa taille ; de passer en gras ou en italique
+- de choisir l'espacement entre les lignes (interligne)
+- d'ajuster automatiquement la largeur des colonnes pour les listes
+- de choisir la bannière à afficher ou de ne pas afficher de bannière 
+- de régler l'imprimante (type de papier, sens du papier)
+- de modifier les marges haute et basse.
+
+Une bannière est une image au (fichier .bmp ou .jpg) qui est affichée en haut 
+des documents. Utiliser paint.exe ou un autre logiciel pour fabriquer votre
+bannière. Pour les compétitions FIE, mettre le logo de la FIE.
+
+Avec le bouton #imprimer on peut imprimer le document.
+
+Avec les flèches, on peut passer de pages en pages.
+
+##fin_aide
+
+******************************************************************************
+
+##aide_saisie_poule
+                                SAISIE DES POULES
+
+Cette fenêtre permet de saisir la piste, les arbitres ou les résultats d'une poule.
+La saisie ou modification des résultats n'est possible que pendant le tour de poules
+auquel elle appartient, la saisie de la piste et des arbitres est toujours possible.
+
+Pour arrêter le saisie, on peut cliquer sur OK, ce qui laisse la fenêtre ouverte
+pour traiter d'autres poules, ou cliquer sur fermer. Dans tous les cas, la poule
+est enregistrée, même si elle est incomplète.
+
+Pour les arbitres, on peut :
+- avec ajouter, faire une recherche parmi les arbitres de la compétition,
+- avec supprimer, enlever un arbitre de la liste,
+- avec saisir, saisir un nouvel arbitre.
+
+Les résultats se saisissent dans la grille. En situation classique, on tape V pour
+une victoire et le nombre de touches données pour une défaite. Si le maximum de touches
+est 5, en tapant 5 on obtient une défaite avec 5 touches. Il est possible de saisir une
+victoire avec moins du maximum de touches en tapant W, ou en cliquant sur le bouton
+adapté.
+
+Lorsque ce qui est fourni n'est pas compatible avec ce qu'il y a dans la case symétrique,
+un message l'indique et la case symétrique est mise à blanc.
+
+On peut effacer des cases avec la touche espace.
+
+Un bouton permet de changer le maximum de touches. Lorsqu'on change ce maximum, le
+changement est répercuté sur toutes les poules du tour.
+
+On peut mettre des abandons. Dans ce cas, Engarde met A sur toute la ligne du tireur et X
+sur toute la colonne. On ne peut pas taper directement un X. Si on efface un X, la poule
+se calcule normalement.
+
+On peut aussi mettre des exclusions ou des forfaits. Cela se passe comme pour les abandons.
+On peut consulter une aide spécifique pour les différences entre abandon, forfait et exclusion.
+
+Un bouton permet de passer à la case symétrique (même match), un autre à la première case
+libre qui suit.
+
+##fin_aide
+
+******************************************************************************
+
+##aide_modif_poules
+                      MODIFICATION DES POULES
+
+Cette fenêtre permet de modifier des poules, c'est-à-dire ajouter ou supprimer
+des tireurs dans la poule. Cela n'est possible que pendant le tour de poules.
+
+Pour charger une poule, il faut donner son numéro et cliquer sur charger.
+Pour enlever un tireur, on le sélectionne et on le fait passer dans la réserve
+avec le bouton >
+
+Pour ajouter un tireur qui est dans une autre poule, on charge d'abord l'autre poule,
+on fait passer les tireurs dans la réserve, puis on charge la poule dans laquelle il
+doit aller, on le sélectionne et on le fait passer dans la poule avec le bouton <
+
+Pour ajouter un tireur qui n'est pas dans une poule, on utilise le bouton
+"ajout d'un tireur absent des poules".
+
+Pour chaque poule, il faut choisir entre réordonner (opération normale) et garder l'ordre.
+
+Pour arrêter les modifications, ou cliquer sur fermer. ATTENTION, s'il reste des tireurs
+dans la réserve, ils ne sont plus dans les poules.
+
+##fin_aide
+
+******************************************************************************
+
+##aide_cre_poules
+                            CREATION DES POULES
+
+La création des poules se fait en début de compétition (bouton #Création des poules ou menu "déroulement" de la fenêtre  
+"#poules") avec les tireurs
+présents, ou à la suite d'un tour, avec les tireurs qualifiés et les tireurs exemptés.
+Cette création se fait selon la formule qui a été saisie auparavant. 
+La formule peut être modifiée au moment de créer les poules (Engarde montre les principaux paramètres et permet de les  
+modifier).
+
+La création des poules met de côté les tireurs exemptés puis place les autres tireurs 
+dans les poules en faisant des décalages si des décalages ont été
+demandés. Engarde essaie d'éviter les conflits sur tous les critères indiqués dans la
+formule. Lorsque ce n'est pas possible, il donne la priorité au premier critère, puis au
+deuxième. 
+
+Engarde tire au sort le rang des tireurs ex aequo.
+Après avoir fait les poules, lorsqu'il y a des décalages, Engarde présente la répartition.
+Les poules sont affichées directement dans la fenêtre et sont aussi accessibles dans le menu document.
+
+Les informations supplémentaires (#heure, #piste, #arbitre) seront automatiquement mise à jour dans la fenêtre des poules.
+
+Lorsque la répartition n'est pas
+satisfaisante, on peut refaire les poules pour essayer d'obtenir une meilleure répartition.
+Cela peut fonctionner quand il y a des ex aequo dans le classement. Sinon, on peut
+garder les poules comme elles sont, ou les modifier.
+
+Lorsque l'on a indiqué, dans la formule, qu'il y a des entrées progressives, Engarde
+demande de sélectionner les tireurs du premier tour de poules : entre quels numéros de série
+(ou nombre de points). Il demande ensuite de sélectionner les tireurs qui entrent aux autres
+tour de poules de la même façon.
+
+##fin_aide
+
+******************************************************************************
+
+##aide_clas_poules
+                       CLASSEMENT DES POULES
+
+Le classement doit être demandé (choix #classement du menu #deroulement) 
+à la fin de chaque tour.
+Il est fait selon la formule. Dans le cas classique, on sélectionne les tireurs
+à l'indice et on sélectionne les X meilleurs pour la phase suivante. Il peut y avoir
+un barrage. Engarde indique alors le nombre N de tireurs en barrage et le nombre P de 
+tireurs parmi eux devant être qualifiés selon la formule. Il est possible de ne pas 
+respecter ce nombre P, par exemple de ne pas faire de barrage et de prendre tous les
+tireurs. C'est ce qui est demandé dans les compétitions FIE.
+
+Lors du dernier tour, la sélection peut se faire sur l'indice des deux derniers tours.
+
+Il est possible de faire un classement spécial (choix #clas_special du menu #deroulement),
+dans ce cas, le critère principal pour classer les tireurs est le rang dans la poule.
+Si Martin est premier de poule avec 3 victoires pour 5 matches, et si Lefevre est deuxième
+de poule avec 4 victoires pour 5 matches, Martin est classé avant Lefevre. 
+
+Après la sélection, Engarde fait le classement d'origine du tour suivant. Pour cela,
+il prend les tireurs exemptés et les tireurs qualifiés. Le classement d'origine
+pour la phase suivante peut être fait sur un tour ou deux tours (il est forcément
+sur deux tours quand la sélection est sur deux tours).
+
+##fin_aide
+
+******************************************************************************
+
+##aide_refaire_poule
+                       REFAIRE LES POULES
+
+On peut refaire les poules en le demandant (bouton déroulement). Si des poules
+ont été saisies, elles sont perdues dans ce cas. 
+
+Si l'on est en "mode FIE" (c'est obligatoire dans le cas d'une compétition FIE), 
+il faut imprimer l'autorisation de retour en arrière et la faire signer par le 
+président du directoire technique.
+
+##fin_aide
+
+******************************************************************************
+
+##aide_retour_poule
+                     REVENIR AU TOUR PRECEDENT
+
+On peut revenir au tour précédent lorsque cela est nécessaire.
+
+Si l'on est au début du tour N, poules non faites ou faites et non saisies, cela
+se fait sans perte et l'on se retrouve au tour N-1, prêt à faire le classement.
+
+Si l'on est dans le tour N, avec des poules saisies, cela fait perdre les poules
+saisies du tour N.
+
+Si l'on est en "mode FIE" (c'est obligatoire dans le cas d'une compétition FIE), 
+il faut imprimer l'autorisation de retour en arrière et la faire signer par le 
+président du directoire technique.
+
+##fin_aide
+
+******************************************************************************
+
+##aide_arbitre_poule
+                      AFFECTATION DES ARBITRES AUX POULES
+
+L'affectation des arbitres dans les poules peut de faire de façon manuelle
+ou automatique. Lorsque cette affectation est faite avant d'imprimer les feuilles
+de poule, les noms des arbitres sont reportés sur les feuilles de poule.
+
+L'affectation manuelle des arbitres dans les poules (un arbitre ou plusieurs arbitres par poule) se fait par la fenêtre de  
+saisie des poules.
+
+L'#affectation_auto se fait par le bouton Pistes - Arbitres. Elle permet de faire une affectation automatique des arbitres  
+dans les poules (un seul arbitre par poule). Pour cela, Engarde prend les arbitres présents qui ne sont pas en train  
+d'arbitrer (un arbitre est en train d'arbitrer pour Engarde lorsqu'il a été affecté à une poule et que cette poule
+n'a pas été complètement saisie) et les affecte aux poules qui ne sont pas entièrement
+saisies et qui n'ont pas d'arbitre.
+
+#affectation_2e_arbi permet d'affecter automatique un 2e arbitre à chaque poule
+quand cela est possible.
+
+Avant de faire l'affectation, Engarde demande de préciser les
+#criteres_arbitres. Si l'on choisit nation, il cherchera à mettre dans chaque
+poule un arbitre qui a une nation différente de celle de tous les tireurs.
+S'il ne peut pas le faire, il cherchera à minimiser les conflits.
+On peut choisir plusieurs critères, par exemple nation et club.
+
+#raz_arbitres permet d'enlever tous les arbitres des poules
+qui ne sont pas entièrement saisies.
+
+##fin_aide
+
+******************************************************************************
+
+##aide_pistes
+
+                        AFFECTATION des PISTES
+
+Les fonctions relatives à l'affectation pistes sont accessibles par le bouton Pistes - Arbitres.
+
+#noms_pistes permet de définir les noms des pistes.
+
+#table_pistes permet de montrer la table de pistes qui sont connectée par câble série
+ou réseau local ainsi que celles qui sont gérées manuellement en touche par touche.
+Cette table permet d'ajouter des pistes, d'ouvrir des fenêtres de travail sur ces pistes
+et de supprimer des pistes.
+
+Le bouton "Paramètres" d'une piste permet:
+- d'indiquer le numéro ou le nom de la piste,
+- de choisir un fonctionnement manuel, ou par connexion série, ou par connexion IP pour
+les données en entrée,
+- de renvoyer par connexion IP en sortie les informations de la piste vers un ordinateur
+faisant fonctionner le logiciel ShowPiste.
+Le bouton "Montrer" d'une piste affiche une fenêtre permettant de fonctionner en manuel 
+(on fait avancer le score à la main) ou en automatique (le score suit l'appareil de piste). 
+Il est possible de passer au match suivant de façon manuelle ou automatique.
+
+#affecte_pistes_heures permet d'attribuer des pistes et des heures
+à toutes les poules ou tableaux.
+
+
+
+##fin_aide
+
+******************************************************************************
+
+##aide_document_poule
+
+                     LES DOCUMENTS DES POULES
+
+POULES CONSTITUEES
+Fournit la liste des poules telles qu'elles ont été constituées. 
+Les tireurs sont dans l'ordre de constitution (différent de l'ordre des feuilles 
+de poule) avec leur rang d'origine.
+En compétition FIE, lorsque les pistes, les heures et les arbitres ont été affectés,
+imprimer cette liste en passant en version 1 (ou plus si besoin). Cela 
+produit le document officiel FE_FIE_0006
+
+POULES
+Fournit la liste des poules avec une grille contenant les touches.
+En compétition FIE, lorsque les poules sont toutes saisies,
+imprimer cette liste en passant en version 1 (ou plus si besoin). Cela 
+produit le document officiel FE_FIE_0007
+
+FEUILLES DE POULES
+Fournit les feuilles de poule du tour en cours.
+
+REPARTITION DANS LES POULES
+Fournit la répartition des tireurs dans les poules du tour en cours, c'est-à-dire
+les poules ayant trop ou pas assez de tireurs d'un pays, d'un club...
+
+TIREURS, POULES, PISTES
+Fournit la liste alphabétique des tireurs avec les poules et les pistes
+
+CLASSEMENT D'ORIGINE
+Fournit le classement servant à faire les poules d'un tour.
+
+CLASSEMENT DES EXEMPTES
+Fournit le classement des exemptés d'un tour.
+En compétition FIE, imprimer cette liste en passant en version 1 (ou plus si besoin). 
+Cela produit le document officiel FE_FIE_0005
+
+Résultats provisoires
+Fournit les résultats provisoires du tour en cours tenant compte des matches saisis.
+
+CLASSEMENT
+Fournit le classement à la fin d'un tour avec les qualifiés et les éliminés.
+En compétition FIE, lorsque les poules sont toutes saisies et le classement fait,
+imprimer cette liste en passant en version 1 (ou plus si besoin). 
+Cela produit le document officiel FE_FIE_0008
+
+CLASSEMENT DES QUALIFIES
+Fournit le classement des qualifiés à la fin d'un tour.
+
+CLASSEMENT DES ELIMINES
+Fournit le classement des éliminés à la fin d'un tour
+
+CLASSEMENT A LA FIN DES POULES
+Fournit le classement à la fin d'un tour avec les qualifiés et les éliminés.
+
+##fin_aide
+
+******************************************************************************
+
+##aide_remplissage_poule
+
+                      REMPLISSAGE AUTOMATIQUE DES POULES
+
+Le remplissage automatique des poules sert à faire des simulations de compétitions.
+On peut ainsi réaliser des tours de poules sans saisir toutes les poules.
+
+##fin_aide
+
+******************************************************************************
+##aide_formule
+                        FORMULE
+
+Les formules possibles avec Engarde comportent des poules seules ou des tableaux
+seuls ou des poules suivies de tableaux.
+
+Les poules sont organisées en tours de poules en nombre quelconque. Chaque tour peut
+avoir des exemptés. Le nombre d'exemptés peut changer d'un tour à l'autre.
+Il n'y a pas de contrainte sur la taille des poules, on peut faire des poules
+de 3 comme des poules de 20.
+
+Les tableaux sont organisés en suites de tableaux. 
+
+5 façons sont proposées lors de la création de la formule en individuel :
+- #tab_dir_sans3
+- #tab_dir_avec3
+- #tableau_inacheve : tableau avec des exemptés possibles
+  et n'allant pas jusqu'à la fin
+- #formu_fie_seniors avec un tableau préliminaire
+  ayant 32 exemptés et un tableau principal de 64
+- #formu_fie_juniors : identique à #tab_dir_sans3
+- #autre_formule fournit d’autres possibilités (chargement d'un modèle ou construction
+d'une nouvelle formule).
+
+Lors de l'entrée dans la formule, la première fois, ENGARDE demande de choisir
+l'une des formules, de fournir le nombre approximatif de tireurs et de donner
+le nombre de tours de poules. Puis il présente la fenêtre des paramètres principaux.
+Lorsque l'on ferme cette fenêtre, on obtient la fenêtre principale de la formule.
+
+Une formule est toujours modifiable sur la partie qui ne s'est pas encore déroulée.
+
+La fenêtre de la formule comporte :
+- un menu #document qui permet d'imprimer la formule. En compétition FIE, imprimer 
+cette liste en passant en version 1 (ou plus si besoin). Cela produit le document 
+officiel FE_FIE_0004
+- quatre panneaux décrits ci-dessous. Les détails des panneaux peuvent être affichés ou masqué à l'aide d'un bouton.
+
+Le panneau des paramètres principaux comporte :
+- le nombre des tireurs,
+- le critère pour le classement d'origine (Numéro de série ou points),
+- les entrées progressives (oui ou non),
+- le nombre de touches dans les matches des poules,
+- le nombre de tours pour la qualification à la fin des poules (1 ou 2),
+- le nombre de tours pour le classement à la fin des poules (1 ou 2),
+- le nombre de touches dans les matches des tableaux.
+
+Le panneau des tours de poules contient une table qui permet d'ajouter, supprimer ou
+modifier les paramètres des tours de poules.
+Modification d'un tour de poule :
+- un critère de décalage peut être modifié (pour l'enlever, utiliser #edition / #effacer_champ),
+- #critere_placement indique le critère que l'on utilise
+  pour que les tireurs de même affiliation (selon ce critère) se rencontrent en premier,
+- les autres champs peuvent être modifiés.
+Lorsque l'on ferme la fenêtre de saisie et que les informations sont incohérentes,
+Engarde modifie si besoin le nombre de tireurs dans les poules, le nombre de poules,
+le nombre de tireurs à la fin.
+Lorsque l'on n'est pas en entrées progressives, Engarde reporte le nombre de tireurs
+à la fin d'un tour comme nombre de tireurs au début du tour suivant.
+
+Le panneau des suites de tableaux contient une table qui permet de changer de formule
+des tableaux ou de modifier certains paramètres des suites de tableaux :
+- le tirage au hasard par groupes de 2 (utilisé en FIE senior seulement),
+- le critère de décalage.
+Ne pas modifier les autres champs.
+
+Le panneau des descriptions de tableaux est une table qui montre tous les tableaux
+possibles de la formule (même des tableaux de 1024) et de modifier les noms de tableaux.
+
+Le bouton "Charger" permet de charger une formule parmi la liste des formules disponibles. Pour chaque formule une description  
+est donnée.
+
+Le bouton "Modification importante" permet de créer ou de modifier profondément des formules de tableaux. 
+Pour comprendre comment cela fonctionne, il est conseillé de charger les formules qui sont
+fournies et de les étudier.
+Cela n'est à utiliser qu'avec précaution. Toute nouvelle formule doit être essayée
+complètement en simulation avant d'être appliquée.
+
+Les origines sont le classement initial entre 2 bornes ou les battus d'un tableau
+ou les vainqueurs d'une suite de tableaux.
+
+Le critère de constitution est :
+- le classement initial : on fait le tableau avec le classement initial,
+- le classement initial par groupes : on classe origine 1 avant origine 2, etc.
+et dans chaque origine on classe les tireurs avec le classement initial,
+- progression naturelle : on place chaque tireur à la place se trouvant en face 
+de celle d'où il vient.
+Les mots battus-tableau et vainqueurs-suite ne doivent pas être traduits.
+
+Normalement, il n'y a pas à modifier la destination des tableaux, elle est calculée
+par ENGARDE.
+Normalement, il n'y a pas à modifier les groupes de classement des tableaux, elle 
+est calculée par ENGARDE.
+
+Pour enregistrer une formule comme modèle, lui donner un nom dans la place
+au-dessus de la table, puis choisir "suites de tableaux" 
+puis utiliser le bouton "Enregistrer comme modèle". Il faut l'enregistrer dans le répertoire mesFormules qui est proposé et  
+qui contient les formules personnelles. Quand on charge une formule, Engarde propose aussi les formules personnelles.
+
+##fin_aide
+
+******************************************************************************
+
+##aide_cre_tab
+
+                            CREATION D'UN TABLEAU
+
+La création d'un tableau (bouton création du tableau ou bouton déroulement) se fait au début de la phase des tableaux,
+puis, lorsqu'il y a plusieurs suites de tableaux, à chaque nouvelle suite de tableaux.
+
+Le classement d'origine des tableaux :
+- est le classement des tireurs à la fin des poules si la formule comporte des poules,
+- est le classement des tireurs présents selon les numéros de série si la formule 
+ne comporte pas de poules.
+
+Lorsqu'il y a des entrées progressives, on peut faire entrer des tireurs
+au début de la phase des tableaux (question posée par Engarde). Ces tireurs
+sont placés au début du classement d'origine des tableaux.
+
+Le classement d'origine des tableaux sert à faire le 1er tableau ainsi que le tableau
+principal en formule FIE seniors.
+
+Lorsqu’il y a des tireurs exemptés, il peut y avoir un barrage lors de la
+constitution du classement d'origine des tableaux. Dans le cas d'un barrage en compétition
+FIE, il faut exempter les tireurs ayant le meilleur classement FIE (ce classement
+est affiché à côté du nom des tireurs).
+
+Lorsqu'il y a des décalages, ils sont effectués par quarts de tableau : Engarde cherche
+à placer chaque tireur sur un quart ne contenant aucun tireur de même affiliation
+pour les critères indiqués dans la formule.
+
+On ne peut pas modifier un tableau.
+
+Lorsque l'on ne demande pas de décalage (par nation ou clubs), ENGARDE détecte les cas 
+où des tireurs qui se sont déjà rencontrés se rencontrent à nouveau (cela peut se 
+produire dans certaines formules, par exemple dans les formules avec repêchage).
+Lorsque cela arrive, il propose de faire des décalages pour éviter les matches déjà tirés.
+
+##fin_aide
+
+******************************************************************************
+
+##aide_clas_tab
+
+                       CLASSEMENT DES TABLEAUX
+
+Le classement est fait automatiquement dès qu'un tableau est terminé.
+Les tireurs éliminés dans un même tableau sont placés dans une même partie
+du classement et interclassées selon le classement d'origine des tableaux.
+
+##fin_aide
+
+******************************************************************************
+
+##aide_refaire_tab
+
+                       REFAIRE UN TABLEAU
+
+On peut refaire le tableau en le demandant (bouton déroulement). Si des matches
+ont été saisis, ils sont perdus dans ce cas.
+
+Si l'on en est à la 2e suite de tableaux, à la création du tableau, et que l'on
+demande de refaire le tableau, c'est le tableau de la 1re suite de tableaux qui est
+proposé pour être refait.
+
+Si l'on est en "mode FIE" (c'est obligatoire dans le cas d'une compétition FIE), 
+il faut imprimer l'autorisation de retour en arrière et la faire signer par le 
+président du directoire technique.
+
+##fin_aide
+
+******************************************************************************
+
+##aide_saisie_match
+
+                                SAISIE DES MATCHES
+
+Cette fenêtre permet de saisir la piste, l'heure, les arbitres et les résultats d'un match.
+La saisie des résultats est possible lorsque le match a été lancé et la modification
+reste toujours possible.
+
+Pour charger un match, il faut donner son identifiant qui est sur la feuille de match.
+Il est composé de la lettre de la suite de tableau (qui est omise lorsque c'est A), de la lettre
+du tableau (7 pour 128, 6 pour 64, 5 pour 32, etc.) et du numéro du match dans le tableau.
+Le document tableau constitué indique aussi les numéros des matches.
+On peut aussi charger un match avec le bouton "chercher" qui permet de chercher un tireur.
+
+Pour arrêter le saisie, on peut cliquer sur OK, ce qui laisse la fenêtre ouverte
+pour traiter d'autres matches, ou cliquer sur fermer. Dans tous les cas, le match
+est enregistré.
+
+On peut mettre des tireurs abandon, exclusion ou forfait à l'aide des boutons ou du clavier.
+Les tireurs mis forfait sont ceux qui ne se sont pas présentés à la compétition, ils ne sont 
+pas mis dans les classements.
+Les tireurs mis exclusion sont mis dans le classement des éliminés,
+ils ne sont pas mis dans le classement général.
+
+On peut taper une victoire 15/15 en mettant V15 dans une case et 15 dans l'autre.
+
+En compétition par équipes, après avoir validé, ENGARDE ouvre une fenêtre pour saisir le
+score détaillé de la rencontre. Il n'est pas obligatoire de remplir cette fiche.
+
+##fin_aide
+
+******************************************************************************
+
+##aide_remplissage_tab
+
+                      REMPLISSAGE AUTOMATIQUE D'UN TABLEAU
+
+Le remplissage automatique d'un tableau sert à faire des simulations de compétitions
+sans saisir toutes les matches
+
+##fin_aide
+
+******************************************************************************
+
+##aide_arbitre_tab
+
+                      SAISIE DES ARBITRES DES TABLEAUX
+
+L'affectation des arbitres dans les matches des tableaux peut de faire de façon manuelle,
+automatique ou avancée. Lorsque cette affectation est faite avant d'imprimer les feuilles
+de match, les noms des arbitres sont reportés sur les feuilles de match.
+
+Le bouton Pistes - Arbitres puis Affectation des arbitres permet de faire une affectation automatique des arbitres
+dans les matches. Pour cela, Engarde prend les arbitres présents qui ne sont pas
+en train d'arbitrer (un arbitre est en train d'arbitrer pour Engarde lorsqu'il a
+été affecté à un match et que ce match n'a pas été saisi) et les affecte aux
+matches qui ne sont pas saisie et qui n'ont pas d'arbitre.
+
+Avant de faire l'affectation, Engarde demande de préciser les
+#criteres_arbitres. Si l'on choisit nation, il mettra dans chaque
+match un arbitre qui a une nation différente des deux tireurs.
+Lorsqu'il y a moins d'arbitres disponibles que de matches à arbitrer, Engarde
+donne plusieurs matches aux arbitres.
+
+Pour les tableaux le permettant, Engarde donne le choix entre l'affectation de base
+qui est décrite dans le paragraphe précédent et une affectation par quarts, 1/8 ou 1/16
+de tableau. L'affectation par quarts de tableau doit être choisie en Coupe du monde 
+pour le tableau de 32. Cette affectation place dans chaque quart des arbitres qui ont 
+des nations différentes de celles de tous les tireurs du quart.
+Attention, l'affectation par quarts de tableau n'est proposée que si aucun arbitre
+n'a déjà été affecté à ce tableau. 
+
+Lorsque l'on demande l'affectation automatique d'un tableau et que le tableau
+précédent a reçu une affectation par quarts, 1/8 ou 1/16 de tableau, Engarde propose 
+de poursuivre cela. Il est possible d'accepter ou de refuser.
+
+Lorsqu'un tableau est partiellement rempli parce que les matches du tableau précédent
+ne sont pas tous terminé, il est possible de faire une affectation des arbitres 
+si c'est une affectation de base ou la poursuite d'une affectation par quarts,
+pas si c'est une affectation par quarts.
+
+#affectation_2e_arbi permet d'affecter automatique un 2e arbitre à chaque match
+quand cela est possible.
+
+Affectation avancée permet de faire une affectation qui prend en compte les pistes
+et les heures. Elle permet de combiner un mode automatique et un mode manuel : on peut
+faire une affectation automatique puis des modifications manuelles. Engarde montre à 
+tout moment les conflits et donne un taux de satisfaction. Ce mode permet d'affecter
+plusieurs arbitres.
+
+#raz_arbitres permet d'enlever tous les arbitres des matches non terminés d'un tableau.
+
+##fin_aide
+
+******************************************************************************
+
+##aide_document_tab
+
+                     LES DOCUMENTS DES TABLEAUX
+
+TABLEAU CONSTITUE
+Fournit un avec les numéros des matches, les noms des pistes, les heures et les arbitres.
+En compétition FIE, lorsque les pistes, les heures et les arbitres ont été affectés,
+imprimer cette liste en passant en version 1 (ou plus si besoin). Cela 
+produit le document officiel FE_FIE_0009
+
+TABLEAUX
+Fournit des tableaux avec les scores.
+Lorsqu'on tire la 3e place, le tableau de la 3e place est placé avec le tableau
+se terminant sur la finale.
+Il est fait de même dans les situations analogues. Par exemple, lorsque l'on tire toutes 
+les places, le tableau se terminant sur la 9e place est complété par le tableau de
+la 11e place.
+En compétition FIE, imprimer cette liste en passant en version 1 (ou plus si besoin). 
+Cela produit le document officiel FE_FIE_0010
+
+FEUILLES DE MATCH EN ATTENTE
+Fournit les feuilles de match qui n'ont pas encore été imprimées.
+
+FEUILLES DE MATCH
+Fournit des feuilles de match.
+
+#Feuille_rencontre
+Fournit, pour les compétitions par équipes, une feuille avec tous les matches à tirer.
+
+#rencontres
+Fournit, pour les compétitions par équipes, le détail des matches s'il a été saisi.
+
+CLASSEMENT D'ORIGINE
+Fournit le classement servant à faire une suite de tableaux.
+
+CLASSEMENT DES ELIMINES
+Fournit le classement des éliminés dans les tableaux.
+
+##fin_aide
+
+******************************************************************************
+
+##aide_definir_tableau
+
+                       Définir les fichiers Web de tableaux
+
+Le menu Web de la fenêtre tableaux contient un item #definir_tableaux_web
+qui fait apparaître une table contenant la description des fichiers web qui sont envoyés 
+automatiquement. Cette table est modifiable. Un fichier peut se trouver plusieurs fois
+dans la table, dans ce cas, il contiendra plusieurs tableaux et ces tableaux seront
+placés dans l'ordre indiqué par #rang .
+
+##fin_aide
+
+******************************************************************************
+
+##aide_feuille_rencontre
+
+                       La saisie des feuilles de rencontre
+
+Après avoir saisi le numéro du match, ou l'avoir cherché, les équipes sont affichées.
+Il faut que chacune ait 3 ou 4 tireurs.
+Il faut mettre les numéros 1, 2, 3 à une équipe et les numéros 4, 5, 6 à l'autre.
+Mettre un r pour le remplaçant.
+
+##fin_aide
+
+******************************************************************************
+##aide_scores_detailles
+
+                       La saisie des scores détaillés
+
+Il n'est pas obligatoire de remplir cette fiche.
+
+La remplir consiste à mettre l'évolution du score après chacun des matches de la rencontre.
+
+##fin_aide
+
+***********
+
+##affectation_arbitres_avancee
+
+      AFFECTATION AVANCEE DES ARBITRES
+
+L'affectation avancée des arbitres permet d'affecter des arbitres à des matches en tenant
+compte des horaires. Seuls les matches ayant une heure sont considérés.
+
+On peut faire une affectation sur des matches dont on ne connaît pas encore les tireurs 
+si l'on connaît les tireurs possibles avec les tableaux précédents.
+
+On peut affecter au maximum 4 arbitres à un match et attribuer au maximum 4 matches 
+à un arbitre. 
+
+On peut faire une affectation sur un tableau ou plusieurs tableaux en même temps. Par
+exemple, après la création d'un tableau de 64, on peut faire en même temps l'affectation sur 
+le tableau de 64 et le tableau de 32.
+
+Pour chaque tableau, on peut faire une affectation simple ou une affectation par 1/4,
+1/8e ou 1/16e quand la taille du tableau le permet.
+
+Lorsque l'on a fait une affectation par 1/4, 1/8e ou 1/16e, on peut reprendre les arbitres
+dans les mêmes parties du tableau suivant : quand on choisit UN SEUL TABLEAU, si le tableau
+précédent avait une affectation par 1/4, 1/8e ou 1/16e, Engarde demande si l'on veut reprendre
+les arbitres des 1/4, 1/8e ou 1/16e.
+
+Une fois les tableaux choisis, Engarde affiche dans la grille de gauche
+les matches de ces tableaux qui ne sont 
+pas terminés et qui ont une heure dans la plage indiquée. Il affiche les nations, les tireurs
+et les arbitres déjà affectés.
+
+Engarde affiche dans la grille de droite les arbitres présents avec les matches auxquels ils sont 
+déjà affectés. On peut avoir la liste d'arbitres que l'on souhaite en allant auparavant dans la 
+fiche des arbitres et en modifiant les présences (sauf dans le cas d'une reprise des arbitres 
+des 1/4, 1/8e ou 1/16e du tableau précédent).
+
+Le menu Fenêtre permet de placer la grille des arbitres à droite ou au-dessous de la grille des matches. 
+
+L'affectation combine un aspect manuel (on peut ajouter et supprimer des arbitres où l'on 
+veut) et un aspect automatique.
+
+AFFECTATION MANUELLE
+Les actions se font entre le match sélectionné et l'arbitre sélectionné. On utilise les boutons
+du panneau Affectation manuelle. Des contrôles sont effectués sur les nations de l'arbitre 
+et des tireurs du match (il n'y pas de contrôle sur les nations des 1/4, 1/8e ou 1/16e) et sur 
+les horaires (matches à la même heure). 
+A l'aide du menu Suppression, il est possible de supprimer tous les arbitres, ou tous les "arbitres n" 
+pour un n choisi entre 1 et 4.
+
+AFFECTATION AUTOMATIQUE
+L'affectation automatique utilise 4 paramètres : 
+- le "Nombre d'arbitres par match" entre 1 et 4.
+- le "Maximum de matches par arbitre" entre 1 et 4.
+- le "Nombre total d'arbitres à utiliser" car on peut avoir une liste de 16 arbitres 
+et vouloir n'en utiliser que 8.
+- le "Temps souhaité entre 2 matches (mn)" : Engarde essaiera de respecter ce temps.
+Lorsque les paramètres sont réglés, il suffit de cliquer sur le bouton 
+#CalAffectAuto pour avoir une affectation et son résultat dans la fiche.
+
+Engarde évite autant que possible le cross-intérêt (cas où un arbitre de nation A arbitre un tireur
+de nation B et un arbitre de nation B arbitre un tireur de nation A).
+
+L'affectation est incrémentale. On peut faire une affectation automatique puis compléter par une
+affectation manuelle si Engarde n'a pas fait une affectation complète ; on peut faire quelques 
+affectations manuelles puis demander une affectation automatique ; on peut affecter automatiquement 
+un arbitre par match puis en affecter un deuxième automatiquement dans un deuxième temps.
+
+Un #tauxSatisfation de l'affectation est présenté en haut et à droite. On peut avoir plus de 
+détail sur l'affectation présentée à l'aide du menu "Analyser".
+
+L'affectation place les arbitres dans la grille mais ne les place pas dans les matches. Quand on
+a obtenu un état satisfaisant, on place les arbitres dans les matches à l'aide du bouton 
+#PrendreAffectFermer.
+
+##fin_aide
+
+***********
+
+##aide_abandon
+
+ABANDON, FORFAIT et EXCLUSION
+
+Les fenêtres de saisie des poules et de saisie des matchs de tableaux permettent d'indiquer les cas où un tireur arrête une poule ou un match avant la fin. Le traitement effectué par Engarde suit le règlement de la FIE.
+
+Trois raisons sont distinguées par la FIE pour ces arrêts :
+- EXCLUSION : c'est un arrêt pour raison disciplinaire (carton noir disciplinaire). 
+- ABANDON : c'est un arrêt pour raison médicale.
+- FORFAIT : c'est un arrêt pour une autre raison, y compris un carton noir pour non présentation sur la piste ou pour matériel défectueux.
+La raison de la distinction entre abandon et forfait provient du fait que la FIE veut faire des statistiques sur les arrêts pour raison médicale. A part cela, leur traitement est identique.
+
+Les traitements pour le classement du tour en cours et le classement final sont :
+- EXCLUSION : le tireur n'apparaît pas dans ces classements.
+- ABANDON ou FORFAIT : le tireur apparaît dans ces classements. S'il a tiré au moins une poule entière ou un match de tableau, il est classé comme s'il était éliminé à ce moment. Dans les autres cas, il est placé en fin de classement et il n'a pas de rang.
+
+Dans le cas de pistes connectées, l’information peut être communiquée par la télécommande de l’appareil de piste si celle-ci dispose des fonctions Exclusion, Abandon ou Forfait.
+
+Quand un tireur est indiqué Exclusion, Abandon ou Forfait, son statut dans la table des tireurs devient Exclusion, Abandon ou Forfait.
+
+Il est possible de modifier le statut d'un tireur dans la table des tireurs. C'est à faire dans les cas suivants :
+- un tireur est qualifié pour le tour de poules suivant (ou un tableau à créer) et il est en Exclusion, Abandon ou Forfait. En lui donnant ce statut Exclusion, Abandon ou Forfait dans la table des tireurs, il ne sera pas intégré dans le tour de poule suivant (ou un tableau à créer).
+- suite à une erreur, un tireur a un statut Exclusion, Abandon ou Forfait. Il est possible de lui donner le statut Normal. Il faut éventuellement modifier des résultats ou refaire les poules ou refaire le tableau.
+
+Le menu "Document | Statistiques | Statistiques (abandons...)" indique les Exclusion, Abandon ou Forfait et leurs traitements.
+
+Dans les fichiers XML, les statuts pour Exclusion, Abandon ou Forfait sont notés respectivement E, A et F.
+
+
+##fin_aide
+
+***********
+
+##aide_recherche_rapide
+
+RECHERCHE RAPIDE
+
+La fenêtre de poules et la fenêtre de tableaux ont une fonction de recherche rapide.
+Pour effectuer une recherche sur l'ensemble des poules ou tableaux, il suffit de taper dans le champ de saisie les trois  
+premières lettres d'un nom. En dessous du champ, s'affichent le nombre d'arbitre et de tireurs dont le nom commence par ces  
+lettres. La poule ou le tableau est indiquée par un texte et les poules ou tableaux concernés sont encadrés.
+
+Pour le tableau cela permet également de visualiser les différents matchs d'un même tireur.
+
+##fin_aide
+
+***********
+##aide_table_piste
+
+TABLE DES PISTES
+
+*identifiant à utiliser
+par défaut : choisir clé Engarde
+identification : pour une utilisation avec l'affichage ShowPiste et les photos des tireurs.
+dossard : peut être nécessaire si Engarde doit communiquer avec un système qui s'appuie sur les dossards.
+
+*bouton menu
+-#lancerLesPistes : envoie aux pistes leur premier match à tirer.
+-#CacherToutesPistes : masque toutes les fenêtres de piste.
+-#charger_pistes
+-Enregistrer un fichier de piste
+Ces deux fonctions permettent de sauvegarder une configuration de piste et de la charger à nouveau si besoin.
+-Appareils de pistes en mode Broadcast: nécessaire pour la connexion aux appareils de pistes utilisant le Broadcast pour la  
+communication des messages
+Fonctions de dépannage permettant d'analyser la communication avec les appareils de pistes et d'éventuels conflits sur le  
+réseau.
+-Faire fichier log des messages de piste: les messages de piste sont enregistrés dans un fichier log
+-Tracer messages Cyrano: Les messages Cyrano sont affichés dans la console
+-Tester les conflits de no IP et de pistes: permet de vérifier l'absence de conflits sur le réseau.
+
+*Ajouter
+-nom des pistes : permet de définir le nom des pistes. Ces noms seront ensuite utilisés pour l'affectation des pistes et  
+heures.
+-ajouter une piste : Ajout standard d'une piste, ouvre la fenêtre de paramétrage de la piste pour définir ses connexions et  
+propriétés.
+-ajouter des pistes ip : permet d'ajouter toutes les pistes définies (par les noms de piste) à partir d'une adresse ip de  
+base. Configure automatiquement les adresses ip suivantes pour les autres pistes.
+-ajouter pistes SEMI 1.0 : même chose que précédemment, mais les adresses ip sont automatiquement attribuées dans la plage  
+définie par SEMI 1.0
+
+*Voir: Affiche la fenêtre de la piste sélectionnée
+
+*bouton "Edition" permet d'accéder au paramétrage de la fenêtre de piste.
+
+*bouton supprimer : supprime la piste courante.
+
+*Connexion/Déconnexion: connecter/déconnecter la piste courante.
+
+*Lancer: envoie le match à tirer à la piste courante.
+
+
+##fin_aide
+
+
+
+
+
